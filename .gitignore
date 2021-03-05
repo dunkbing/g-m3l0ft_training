@@ -8,3 +8,6 @@
 *.filters
 *.user
 *.sln
+/.vs
+/build
+/.vscode
