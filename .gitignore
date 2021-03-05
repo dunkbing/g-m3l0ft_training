@@ -1,0 +1,10 @@
+/.svn
+/Lib/Debug
+/Debug
+/.vs/ConsoleApplication1/v15
+/Tictactoe/Debug
+*.bin
+*.vcxproj
+*.filters
+*.user
+*.sln
