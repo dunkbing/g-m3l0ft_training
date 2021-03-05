@@ -2,9 +2,10 @@
 //
 
 #include <iostream>
+#include "src/FluVirus.h"
 
-int main()
-{
+int main() {
+    FluVirus f;
     std::cout << "Hello World!\n";
 }
 
