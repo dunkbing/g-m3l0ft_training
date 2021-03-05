@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <cstdio>
-#include "Game.h"
+#include <Game.h>
 
 int main() {
     Game b;
