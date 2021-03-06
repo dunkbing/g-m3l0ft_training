@@ -1,7 +1,6 @@
 #include <cstdio>
 #include <iostream>
 #include <fstream>
-#include <iterator>
 #include "Game.h"
 #include "Globals.h"
 
@@ -16,11 +15,9 @@ void Game::DisplayBoard(std::vector<char>& p_pieces) {
 
 void Game::Play() {
     running = true;
-    printf("Enter Player 1 Name: ");
-    std::cin.get(player1, NAME_SIZE);
-    std::cin.ignore();
-    printf("Enter Player 2 Name: ");
-    std::cin.get(player2, NAME_SIZE);
+    Utils::GetLine(player1, NAME_SIZE, "Enter Player 1 Name: ");
+    Utils::GetLine(player2, NAME_SIZE, "Enter Player 2 Name: ");
+
     CLS_SCR;
     while (running) {
         DisplayBoard(pieces);
@@ -83,31 +80,22 @@ void Game::Replay() {
 
 // players take their turn
 void Game::TurnPlay(char piece) {
-    size_t userIndex;
-    int temp, check = scanf_s("%d%c", &userIndex);
-    fflush(stdin);
     while (true) {
-        if (userIndex < 11 || userIndex > 33) {
-            while ((temp = getchar()) != EOF && temp != '\n');
+        size_t userIndex = Utils::GetInt(11, 33);
+        const size_t index = (userIndex / 10 - 1) * 3 + userIndex % 10 - 1;
+        if (index < pieces.size() && pieces[index] != 'T') {
             printf("invalid move: ");
-            check = scanf_s("%d%c", &userIndex);
-            fflush(stdin);
-        } else {
-            const size_t index = (userIndex / 10-1) * 3 + userIndex % 10 - 1;
-            if (index < pieces.size() && pieces[index] != 'T') {
-                printf("invalid move: ");
-                scanf_s("%d", &userIndex);
-                continue;
-            }
-            pieces[index] = piece;
-            steps.emplace_back(pieces);
-            // AddStep(pieces);
-            running = !CheckWin();
-            if (running) {
-                turn = turn == 1 ? 2 : 1;
-            }
-            break;
+            userIndex = Utils::GetInt(11, 33);
+            continue;
         }
+        pieces[index] = piece;
+        steps.emplace_back(pieces);
+        // AddStep(pieces);
+        running = !CheckWin();
+        if (running) {
+            turn = turn == 1 ? 2 : 1;
+        }
+        break;
     }
         
 }
@@ -136,14 +124,6 @@ bool Game::CheckWin() {
     return false;
 }
 
-//void Game::AddStep(const std::vector<char>& step) {
-//    std::string str;
-//    for (char c : step) {
-//        str += c;
-//    }
-//    steps.push_back(str);
-//}
-
 // init stuffs
 Game::Game() {
     pieces.assign(BOARD_SIZE, 'T');
@@ -159,11 +139,10 @@ Game::~Game() {
     delete player2;
 };
 
-// starting the games
+// start the games
 int Game::Welcome() {
     printf(WELCOME_MSG);
-    int choice;
-    scanf_s("%d%c", &choice);
+    const int choice = Utils::GetInt(1, 3);
     fflush(stdin);
     switch (choice) {
     case 1:
