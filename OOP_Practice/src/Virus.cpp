@@ -1,8 +1,12 @@
+#include <fstream>
+#include <string>
+#include <Globals.h>
 #include "Virus.h"
 
 Virus::Virus() {
     m_dna = nullptr;
     m_resistance = 0;
+    m_state = ALIVE;
 }
 
 Virus::Virus(Virus* p_virus): m_dna(nullptr) {
@@ -16,15 +20,29 @@ Virus::Virus(const Virus& p_virus): m_dna(nullptr) {
 }
 
 Virus::~Virus() {
-    if (m_dna) {
-        delete m_dna;
-        m_dna = nullptr;
-    }
+    SAFE_DEL(m_dna);
 }
 
 void Virus::LoadADNInformation() {
+    std::ifstream ifs("ATGX.bin", std::ifstream::in);
+    if (ifs.is_open()) {
+        std::string line;
+        std::getline(ifs, line);
+        ifs.close();
+        if (!m_dna) {
+            m_dna = new char[strlen(line.c_str())+1];
+        }
+        strcpy_s(m_dna, strlen(line.c_str()) + 1, line.c_str());
+    }
 }
 
 void Virus::ReduceResistance(int medicine_resistance) {
     m_resistance -= medicine_resistance;
+    if (m_resistance <= 0) {
+        m_state = DIE;
+    }
+}
+
+State Virus::GetState() const {
+    return m_state;
 }

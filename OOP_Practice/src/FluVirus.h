@@ -3,11 +3,13 @@
 
 class FluVirus : public Virus {
 public:
+    FluVirus();
+    ~FluVirus();
     void DoBorn() override;
-    void DoClone() override;
+    FluVirus* DoClone() override;
     void DoDie() override;
-    // void InitResistance() override;
+    void InitResistance() override;
 private:
-    int m_color;
+    int m_color = 0xffffff;
 };
 

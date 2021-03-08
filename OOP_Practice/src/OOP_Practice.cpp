@@ -2,11 +2,21 @@
 //
 
 #include <iostream>
-#include "FluVirus.h"
+#include "Patient.h"
 
 int main() {
-    FluVirus f;
-    std::cout << "Hello World!\n";
+    Patient p;
+    char t = 0;
+    while (p.GetState() == ALIVE) {
+        printf("Take Medicine (0 = NO, 1 = YES");
+        scanf_s("%c", &t);
+        if (t == 1) {
+            const int min = 1;
+            const int max = 60;
+            const int medicine_resistance = min + (rand() % (max - min + 1));
+            p.TakeMedicine(medicine_resistance);
+        }
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
