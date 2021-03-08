@@ -1,7 +1,7 @@
 add_library(
     Lib
-    include/Game.h
-    include/Game.cpp
+    include/tictactoe/Game.h
+    include/tictactoe/Game.cpp
     include/Globals.h
 )
 

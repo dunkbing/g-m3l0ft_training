@@ -5,7 +5,7 @@ class Game {
 public:
     Game();
     ~Game();
-    int Welcome();
+    int Start();
     static void DisplayBoard(std::vector<char>& p_pieces);
     void Play();
     void Replay();

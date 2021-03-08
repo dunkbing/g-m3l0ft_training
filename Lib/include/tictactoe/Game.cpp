@@ -56,6 +56,7 @@ bool Game::Save() {
 void Game::Replay() {
     std::ifstream ifs("save.bin", std::fstream::binary);
     if (ifs.fail()) {
+        printf("failed to load replay");
         return;
     }
     steps.clear();
@@ -72,6 +73,10 @@ void Game::Replay() {
         }
     }
     ifs.close();
+    if (steps.empty()) {
+        printf("no data");
+        return;
+    }
     for (auto step : steps) {
         DisplayBoard(step);
         printf("\n\n");
@@ -140,7 +145,7 @@ Game::~Game() {
 };
 
 // start the games
-int Game::Welcome() {
+int Game::Start() {
     printf(WELCOME_MSG);
     const int choice = Utils::GetInt(1, 3);
     fflush(stdin);
