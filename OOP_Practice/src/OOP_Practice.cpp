@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-#include "src/FluVirus.h"
+#include "FluVirus.h"
 
 int main() {
     FluVirus f;

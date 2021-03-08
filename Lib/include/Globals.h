@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <cctype>
 
 #define CLS_SCR system("cls")
 #define QUIT system("exit")

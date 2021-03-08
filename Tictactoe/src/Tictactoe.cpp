@@ -3,11 +3,12 @@
 
 #include <iostream>
 #include <cstdio>
-#include <Game.h>
+
+#include <tictactoe/Game.h>
 
 int main() {
     Game b;
-    b.Welcome();
+    b.Start();
 
     return EXIT_SUCCESS;
 }
