@@ -2,16 +2,50 @@
 #include <iostream>
 #include <string>
 #include <cctype>
+#include <ctime>
+#include <random>
 
 #define CLS_SCR system("cls")
 #define QUIT system("exit")
+
 constexpr auto WELCOME_MSG = "Welcome To Tic-tac-toe game! Play with your way!\nIf you find any problem, please contact Trainers by mailing list SEAsia - ProgrammersTraining@gameloft.com\nSELECT YOUR MODE (1 - PLAY GAME, 2 - REPLAY GAME, OTHERS - EXIT GAME): ";
 constexpr int ROW = 3;
 constexpr int COL = 3;
 constexpr int BOARD_SIZE = ROW * COL;
 constexpr int NAME_SIZE = 30;
 
+template<typename T>
+constexpr auto SAFE_DEL(T x) {
+    if (x) {
+        delete x;
+        x = nullptr;
+    }
+}
+
+template<typename T>
+constexpr auto SAFE_DEL_ARRAY(T x) {
+    if (x) {
+        delete[] x;
+        x = nullptr;
+    }
+}
+
+
 namespace Utils {
+
+    /**
+     * \brief generate a random number
+     * \param min min value
+     * \param max max value
+     * \return a random number
+     */
+    inline int Rng(int min, int max) {
+        std::random_device dev;
+        std::mt19937 rng(dev());
+        const std::uniform_int_distribution<std::mt19937::result_type> distribution(min, max); // distribution in range [min, max]
+
+        return distribution(rng);
+    }
     inline bool IsInt(const std::string& s) {
         std::string::const_iterator it = s.begin();
         while (it != s.end() && std::isdigit(*it)) ++it;
@@ -25,7 +59,7 @@ namespace Utils {
     /// <param name="max">max value</param>
     /// <param name="message">message display</param>
     /// <returns>valid integer value</returns>
-    static int GetInt(int min, int max, const std::string& message = "") {
+    inline int GetInt(int min, int max, const std::string& message = "") {
         while (true) {
             std::cout << message;
             std::string temp;
