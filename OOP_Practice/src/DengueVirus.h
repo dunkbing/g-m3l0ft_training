@@ -1,13 +1,14 @@
 #pragma once
+#include <list>
+
 #include "Virus.h"
 
 class DengueVirus final : public Virus {
 public:
     DengueVirus();
-    ~DengueVirus();
+    ~DengueVirus() override;
     void DoBorn() override;
-    Virus* DoClone() override;
-    std::array< DengueVirus*, 2> DoClone2();
+    DengueVirus* DoClone() override;
     void DoDie() override;
     void InitResistance() override;
 private:

@@ -18,12 +18,9 @@ void DengueVirus::DoBorn() {
     strcpy_s(m_protein, proteins[rand() % 3].c_str());
 }
 
-Virus* DengueVirus::DoClone() {
-    return nullptr;
-}
-
-std::array<DengueVirus*, 2> DengueVirus::DoClone2() {
-    return std::array< DengueVirus*, 2>({new DengueVirus(), new DengueVirus});
+DengueVirus* DengueVirus::DoClone() {
+    auto* clones = new std::list<DengueVirus*>({ new DengueVirus(), new DengueVirus });
+    return reinterpret_cast<DengueVirus*>(clones);
 }
 
 void DengueVirus::DoDie() {
