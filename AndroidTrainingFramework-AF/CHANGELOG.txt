@@ -1,0 +1,2 @@
+[1.0.0] - 03/15/2018 - tien.chuduc
+- implement porting framework using AndroidFramework instead of AndroidCorePacket
