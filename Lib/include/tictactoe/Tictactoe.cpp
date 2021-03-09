@@ -1,10 +1,10 @@
 #include <cstdio>
 #include <iostream>
 #include <fstream>
-#include "Game.h"
+#include "Tictactoe.h"
 #include "Globals.h"
 
-void Game::DisplayBoard(std::vector<char>& p_pieces) {
+void Tictactoe::DisplayBoard(std::vector<char>& p_pieces) {
     for (size_t i = 0; i < BOARD_SIZE; i++) {
         printf("%c ", p_pieces.at(i));
         if ((i + 1) % 3 == 0) {
@@ -13,7 +13,7 @@ void Game::DisplayBoard(std::vector<char>& p_pieces) {
     }
 }
 
-void Game::Play() {
+void Tictactoe::Play() {
     running = true;
     Utils::GetLine(player1, NAME_SIZE, "Enter Player 1 Name: ");
     Utils::GetLine(player2, NAME_SIZE, "Enter Player 2 Name: ");
@@ -36,7 +36,7 @@ void Game::Play() {
 }
 
 // saving game steps to binary file
-bool Game::Save() {
+bool Tictactoe::Save() {
     std::ofstream ofs("save.bin", std::ofstream::binary | std::ofstream::out);
     if (ofs.fail()) {
         return false;
@@ -53,7 +53,7 @@ bool Game::Save() {
 }
 
 // load games' steps from binary file
-void Game::Replay() {
+void Tictactoe::Replay() {
     std::ifstream ifs("save.bin", std::fstream::binary);
     if (ifs.fail()) {
         printf("failed to load replay");
@@ -84,7 +84,7 @@ void Game::Replay() {
 }
 
 // players take their turn
-void Game::TurnPlay(char piece) {
+void Tictactoe::TurnPlay(char piece) {
     while (true) {
         size_t userIndex = Utils::GetInt(11, 33);
         const size_t index = (userIndex / 10 - 1) * 3 + userIndex % 10 - 1;
@@ -106,7 +106,7 @@ void Game::TurnPlay(char piece) {
 }
 
 // checking for win conditions
-bool Game::CheckWin() {
+bool Tictactoe::CheckWin() {
     // cols
     for (size_t i = 0; i < ROW; i++) {
         if (pieces[i] == pieces[i + ROW] && pieces[i] == pieces[i + ROW * 2] && pieces[i] != 'T') {
@@ -130,7 +130,7 @@ bool Game::CheckWin() {
 }
 
 // init stuffs
-Game::Game() {
+Tictactoe::Tictactoe() {
     pieces.assign(BOARD_SIZE, 'T');
     running = false;
     player1 = new char[NAME_SIZE];
@@ -139,13 +139,13 @@ Game::Game() {
 }
 
 // release resources
-Game::~Game() {
+Tictactoe::~Tictactoe() {
     delete player1;
     delete player2;
 };
 
 // start the games
-int Game::Start() {
+int Tictactoe::Start() {
     printf(WELCOME_MSG);
     const int choice = Utils::GetInt(1, 3);
     fflush(stdin);

@@ -1,10 +1,10 @@
 #pragma once
 #include <vector>
 
-class Game {
+class Tictactoe {
 public:
-    Game();
-    ~Game();
+    Tictactoe();
+    ~Tictactoe();
     int Start();
     static void DisplayBoard(std::vector<char>& p_pieces);
     void Play();

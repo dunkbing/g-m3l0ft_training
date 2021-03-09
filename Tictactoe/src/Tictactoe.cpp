@@ -4,10 +4,10 @@
 #include <iostream>
 #include <cstdio>
 
-#include <tictactoe/Game.h>
+#include <tictactoe/Tictactoe.h>
 
 int main() {
-    Game b;
+    Tictactoe b;
     b.Start();
 
     return EXIT_SUCCESS;
