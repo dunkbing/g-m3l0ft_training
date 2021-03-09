@@ -4,6 +4,7 @@
 class FluVirus final : public Virus {
 public:
     FluVirus();
+    FluVirus(const FluVirus& otherFlu);
     ~FluVirus() override;
     void DoBorn() override;
     FluVirus* DoClone() override;

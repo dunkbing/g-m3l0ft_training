@@ -6,6 +6,10 @@
 
 FluVirus::FluVirus() = default;
 
+FluVirus::FluVirus(const FluVirus& otherFlu) : Virus(otherFlu) {
+    m_color = otherFlu.m_color;
+}
+
 FluVirus::~FluVirus() {
     FluVirus::DoDie();
 }

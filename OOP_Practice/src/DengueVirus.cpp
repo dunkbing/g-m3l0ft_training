@@ -8,6 +8,10 @@ DengueVirus::DengueVirus() : m_protein{""} {
     InitResistance();
 }
 
+DengueVirus::DengueVirus(const DengueVirus& otherDengue) : Virus(otherDengue) {
+    memcpy(m_protein, otherDengue.m_protein, sizeof(m_protein));
+}
+
 DengueVirus::~DengueVirus() = default;
 
 void DengueVirus::DoBorn() {
