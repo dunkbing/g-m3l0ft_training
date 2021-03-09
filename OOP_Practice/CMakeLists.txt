@@ -1,3 +1,4 @@
+project(OOP_Practice)
 FILE(
     GLOB oop_src "src/*.h" "src/*.cpp"
 )

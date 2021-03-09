@@ -1,3 +1,4 @@
+project(Library)
 add_library(
     Lib
     include/tictactoe/Game.h
