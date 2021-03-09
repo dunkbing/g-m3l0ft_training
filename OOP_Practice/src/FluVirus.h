@@ -1,10 +1,10 @@
 #pragma once
 #include "Virus.h"
 
-class FluVirus : public Virus {
+class FluVirus final : public Virus {
 public:
     FluVirus();
-    ~FluVirus();
+    ~FluVirus() override;
     void DoBorn() override;
     FluVirus* DoClone() override;
     void DoDie() override;
@@ -12,4 +12,3 @@ public:
 private:
     int m_color = 0xffffff;
 };
-
