@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <crtdbg.h>
 #include <Globals.h>
 #include "Patient.h"
 
@@ -11,6 +12,12 @@ int main() {
         if (p.TotalVirusesResist() <= 0) {
             std::cout << "viruses are dead" << std::endl;
             std::cout << p;
+            _CrtMemState s1;
+            _CrtMemCheckpoint(&s1);
+            // OutputDebugString("dump memory leak\n");
+            _CrtDumpMemoryLeaks();
+            // OutputDebugString("dump statistic\n");
+            _CrtMemDumpStatistics(&s1);
             return 0;
         }
         std::cout << p;
