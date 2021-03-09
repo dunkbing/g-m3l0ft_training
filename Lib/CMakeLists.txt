@@ -1,8 +1,12 @@
 project(Library)
+
+FILE(GLOB tictactoe "include/tictactoe/*.h" "include/tictactoe/*.cpp")
+FILE(GLOB math "include/math/*.h" "include/math/*.cpp")
+
 add_library(
     Lib
-    include/tictactoe/Game.h
-    include/tictactoe/Game.cpp
+    ${tictactoe}
+    ${math}
     include/Globals.h
 )
 
