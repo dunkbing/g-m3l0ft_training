@@ -43,6 +43,10 @@ void Virus::ReduceResistance(int medicine_resistance) {
     }
 }
 
+int Virus::GetResist() const {
+    return m_resistance;
+}
+
 State Virus::GetState() const {
     return m_state;
 }

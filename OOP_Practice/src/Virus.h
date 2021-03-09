@@ -1,5 +1,5 @@
 #pragma once
-#include "Patient.h"
+#include "State.h"
 constexpr int BLUE = 0x0000ff;
 constexpr int RED = 0xff0000;
 class Virus {
@@ -10,6 +10,7 @@ public:
     virtual  ~Virus();
     void LoadADNInformation();
     void ReduceResistance(int medicine_resistance);
+    int GetResist() const;
     State GetState() const;
 protected:
     virtual void DoBorn() = 0;
