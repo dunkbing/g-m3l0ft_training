@@ -1,9 +1,7 @@
-#include "DengueVirus.h"
-
-
 #include <array>
 #include <cstring>
 
+#include "DengueVirus.h"
 #include "Globals.h"
 
 DengueVirus::DengueVirus() : m_protein{""} {
@@ -19,7 +17,7 @@ void DengueVirus::DoBorn() {
 }
 
 DengueVirus* DengueVirus::DoClone() {
-    auto* clones = new std::list<DengueVirus*>({ new DengueVirus(), new DengueVirus });
+    auto* clones = new std::vector<DengueVirus*>({ new DengueVirus(), new DengueVirus });
     return reinterpret_cast<DengueVirus*>(clones);
 }
 

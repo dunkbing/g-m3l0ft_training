@@ -37,7 +37,7 @@ void Patient::TakeMedicine(int medicine_resistance) {
     for (Virus* virus : m_viruses) {
         virus->ReduceResistance(medicine_resistance);
     }
-    std::list<Virus*> clonedViruses;
+    std::vector<Virus*> clonedViruses;
     const std::function<bool(Virus*)> pred = [&clonedViruses](Virus* v)->bool {
         if (v->GetState() == ALIVE) {
             if (typeid(v).name() == typeid(FluVirus*).name()) {
@@ -45,7 +45,7 @@ void Patient::TakeMedicine(int medicine_resistance) {
                 clonedViruses.push_back(flu->DoClone());
             } else {
                 auto* dengue = dynamic_cast<DengueVirus*>(v);
-                auto* dengueClones = reinterpret_cast<std::list<DengueVirus*>*>(dengue->DoClone());
+                auto* dengueClones = reinterpret_cast<std::vector<DengueVirus*>*>(dengue->DoClone());
                 clonedViruses.insert(clonedViruses.end(), dengueClones->begin(), dengueClones->end());
             }
             return true;

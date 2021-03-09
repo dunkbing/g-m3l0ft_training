@@ -1,7 +1,5 @@
 #pragma once
-#include <list>
-#include <iostream>
-
+#include <vector>
 #include "State.h"
 #include "Virus.h"
 
@@ -19,7 +17,7 @@ public:
     friend std::ostream& operator << (std::ostream& os, Patient p);
 private:
     int m_resistance;
-    std::list<Virus*> m_viruses;
+    std::vector<Virus*> m_viruses;
     State m_state;
 
 };
