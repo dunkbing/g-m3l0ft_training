@@ -1,9 +1,10 @@
 #pragma once
 #include <list>
+#include <iostream>
+
+#include "State.h"
 #include "Virus.h"
-enum State {
-    DIE = 0, ALIVE = 1,
-};
+
 class Patient {
 public:
     Patient();
@@ -13,11 +14,13 @@ public:
     void TakeMedicine(int);
     void DoDie();
     State GetState() const;
+    int TotalResist() const;
+    int TotalVirusesResist() const;
+    friend std::ostream& operator << (std::ostream& os, Patient p);
 private:
     int m_resistance;
     std::list<Virus*> m_viruses;
     State m_state;
 
-    int TotalVirusesResist();
 };
 

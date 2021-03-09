@@ -1,10 +1,11 @@
 #include <numeric>
+#include <functional>
+
 #include <Globals.h>
 #include "Patient.h"
-
-
 #include "DengueVirus.h"
 #include "FluVirus.h"
+
 using namespace Utils;
 Patient::Patient() : m_resistance(0), m_state(ALIVE) {
     InitResistance();
@@ -36,12 +37,32 @@ void Patient::TakeMedicine(int medicine_resistance) {
     for (Virus* virus : m_viruses) {
         virus->ReduceResistance(medicine_resistance);
     }
-    for (Virus* virus : m_viruses) {
-        if (virus->GetState() == ALIVE) {
-            if (typeid(virus).name() == typeid(FluVirus).name()) {
-
+    std::list<Virus*> clonedViruses;
+    const std::function<bool(Virus*)> pred = [&clonedViruses](Virus* v)->bool {
+        if (v->GetState() == ALIVE) {
+            if (typeid(v).name() == typeid(FluVirus*).name()) {
+                auto* flu = dynamic_cast<FluVirus*>(v);
+                clonedViruses.push_back(flu->DoClone());
+            } else {
+                auto* dengue = dynamic_cast<DengueVirus*>(v);
+                auto* dengueClones = reinterpret_cast<std::list<DengueVirus*>*>(dengue->DoClone());
+                clonedViruses.insert(clonedViruses.end(), dengueClones->begin(), dengueClones->end());
             }
+            return true;
         }
+        return false;
+    };
+    m_viruses.erase(
+        std::remove_if(
+            m_viruses.begin(),
+            m_viruses.end(),
+            pred
+        ),
+        m_viruses.end()
+    );
+    m_viruses.insert(m_viruses.end(), clonedViruses.begin(), clonedViruses.end());
+    if (m_resistance < this->TotalVirusesResist()) {
+        DoDie();
     }
 }
 
@@ -58,6 +79,17 @@ State Patient::GetState() const {
     return m_state;
 }
 
-int Patient::TotalVirusesResist() {
-    return std::accumulate(m_viruses.begin(), m_viruses.end(), 0);
+int Patient::TotalResist() const {
+    return m_resistance;
+}
+
+int Patient::TotalVirusesResist() const {
+    return std::accumulate(m_viruses.begin(), m_viruses.end(), 0, [](int val, Virus* v) {
+        return val + v->GetResist();
+    });
+}
+
+std::ostream& operator<<(std::ostream& os, Patient p) {
+    os << "Patient's resistance: " << p.m_resistance << '\n' << "Viruses' resistance: " << p.TotalVirusesResist() << std::endl;
+    return os;
 }
