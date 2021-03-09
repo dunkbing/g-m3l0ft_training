@@ -2,14 +2,20 @@
 //
 
 #include <iostream>
+#include <Globals.h>
 #include "Patient.h"
 
 int main() {
     Patient p;
-    char t = 0;
     while (p.GetState() == ALIVE) {
-        printf("Take Medicine (0 = NO, 1 = YES");
-        scanf_s("%c", &t);
+        if (p.TotalVirusesResist() <= 0) {
+            std::cout << "viruses are dead" << std::endl;
+            std::cout << p;
+            return 0;
+        }
+        std::cout << p;
+        printf("Take Medicine (0 = NO, 1 = YES): ");
+        const int t = Utils::GetInt(0, 1);
         if (t == 1) {
             const int min = 1;
             const int max = 60;
