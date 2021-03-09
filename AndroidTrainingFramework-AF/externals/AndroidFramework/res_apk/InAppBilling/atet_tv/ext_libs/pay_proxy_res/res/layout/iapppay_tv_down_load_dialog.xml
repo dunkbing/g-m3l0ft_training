@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iapppay_tv_main_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="8"
+         >
+
+        <!-- <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="手机扫码下载ATET钱包"
+            android:textColor="#4fc7ff"
+            android:textSize="20sp"
+             /> -->
+             <Button
+                 android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iapppay_tv_close_btn"
+             android:id="@+id/dialog_close"
+             android:layout_alignParentRight="true"
+                 />
+             
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/barcode_white_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="#ffffff"
+                    android:padding="5dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/dialog_down_url"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         />
+                </LinearLayout>
+
+             
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="vertical" 
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="ATET钱包二维码"
+                    android:textSize="14sp"
+                    android:textColor="#d2d2d2"
+                    android:layout_weight="1" />
+
+                
+				 <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="目前不支持微信扫码下载，推荐使用360手机助手、豌豆荚、我查查、UC浏览器或者自带的扫码工具。"
+                    android:textSize="12sp"
+                    android:textColor="#5a5a5a"
+                    android:layout_weight="1" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:orientation="vertical" 
+                android:gravity="center">
+
+                <!-- <Button
+                    android:id="@+id/dialog_close"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:background="@drawable/iapppay_tv_button_selector"
+                    android:text="关闭"
+                    android:textColor="#7e4900"
+                    android:textSize="20sp" /> -->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

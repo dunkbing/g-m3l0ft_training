@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Help/Docs/Info: https://docs.gameloft.org/sln2gcc-compile-utility-tool/ -->
+
+<Makefile>
+
+<!--Solution: 	here you have to insert the path to VisualStudio Solution file aka sln file. You can use the relative or absolute path. 
+                Our advice it is to use relative path! -->
+<Solution Path="../../../_project_VisualStudio/Android.sln" /> 
+
+    
+    <CommonGccConfig>
+        
+        <GccConfig Name="x86">
+    
+            <Macro Name="MAIN_PROJECT" 			Value="Android" />
+            <Macro Name="GENERATE_DSYM"			Value="True" />
+            <Macro Name="STRIP_DEBUG_SYMBOLS_FOR_RELEASE"	Value="True" />
+            <Macro Name="STRIP_DEBUG_SYMBOLS_FOR_DEBUG"	    Value="False" />
+            
+            
+            <!--ANDROID_NDK_PATH: user defined macro. The value for this macro it is taken from Environment Variables. If ANDROID_NDK_HOME it is not declared the value for 
+                ANDROID_NDK_PATH will be blank/empty/nothing/nada :) -->
+            <Macro Name="ANDROID_NDK_PATH" 		Value="$(ANDROID_NDK_HOME)" />
+            <!--ANDROID_PLATFORM: user defined macro. -->
+            <Macro Name="ANDROID_PLATFORM" 		Value="android-$(NATIVE_API_LEVEL)" />
+            <!--TOOLCHAIN_FOLDERNAME: user defined macro. -->
+            <!-- <Macro Name="TOOLCHAIN_VERSION"		Value="4.4.3" /> -->
+            <Macro Name="TOOLCHAIN_VERSION"		Value="4.8" />
+            <Macro Name="TOOLCHAIN_FOLDERNAME"	Value="x86-$(TOOLCHAIN_VERSION)" />            
+            
+            
+            <!--TOOLCHAIN: required macro. This it is used to specify the path to the compile/link tools-->
+            <Macro Name="TOOLCHAIN" 			Value="$(ANDROID_NDK_PATH)\toolchains\$(TOOLCHAIN_FOLDERNAME)\prebuilt\windows-x86_64\bin\" />
+            <Macro Name="TOOLCHAIN_BACKUP"					Value="$(ANDROID_NDK_PATH)\toolchains\$(TOOLCHAIN_FOLDERNAME)\prebuilt\windows-x86_64\x86\bin\" />
+            
+            
+            
+            <!--DISTCC: this it is used if you want to speed up the compile process. DISTCC can distribute the compiling process on multiple computers-->	
+            <!--        HOST computer means the computer that must help your computer to compile the project. The HOST computer it is like a server that waits for requests.-->
+            <Macro Name="DISTCC_ENABLE" 		        Value="$(USE_DISTCC)" /> <!-- Enable or disable DISTCC. You can use 0, 1, false, true for Value.-->
+            <Macro Name="DISTCC_HOSTS" 		        	Value="$(USE_DISTCC_HOSTS)" /> <!-- the ip's of the HOSTS machines-->
+            <Macro Name="DITSCC_JOBS" 			        Value="8" /> <!-- How many threads will be created on HOST machine.-->
+            <Macro Name="DISTCC" 				        Value="$(CYGWIN_BIN)\distcc.exe" /> <!-- The path to distcc.exe . The path must be from HOST machine.-->
+            <Macro Name="DISTCC_USE_FULL_PATH"   		Value="1" /> <!-- Use or not the full path for compiler. You can use 0, 1, false, true for Value.-->
+        
+                        
+            
+            
+            
+            <!--CONVERT_ERRORS_TO_MSVC: used to convert the errors from gcc type to MSVC type-->
+            <Macro Name="CONVERT_ERRORS_TO_MSVC" Value="1" />
+            
+
+
+            
+            <!--CPP: 	the compiler for cpp files
+                CC: 	the compiler for c files
+                LD: 	the linker for dynamic libraryes, aka *.so files
+                LS: 	the linker for static libraryes, aka *.a files	
+                This macros are required!
+                -->
+				
+            <Macro Name="CPP" 			Value="$(TOOLCHAIN)\i686-linux-android-g++.exe" />
+            <Macro Name="CC" 			Value="$(TOOLCHAIN)\i686-linux-android-gcc.exe" />
+            <Macro Name="LD" 			Value="$(TOOLCHAIN)\i686-linux-android-g++.exe" />
+            <Macro Name="LS" 			Value="$(TOOLCHAIN)\i686-linux-android-ar.exe" />
+            <Macro Name="OBJCOPY"		Value="$(TOOLCHAIN)\i686-linux-android-objcopy.exe" />
+            <Macro Name="STRIP"		    Value="$(TOOLCHAIN)\i686-linux-android-strip.exe" />
+            
+            <!--COMPILE_CPP_COMMAND_LINE: this is the command line to compile the cpp files -->
+            <!--COMPILE_CC_COMMAND_LINE: this is the command line to compile the c files -->
+            <!--DYNAMIC_LINK_COMMAND_LINE: this is the command line that creates *.so files (dynamic libraryes)-->
+            <!--DYNAMIC_LINK_COMMAND_LINE: this is the command line that creates *.a files	(static libraryes)-->
+            <!--This Macro needs a little bit more explanation. You can see that this Macros use $(DEFINES), $(CFLAGS).
+                For instance if we have to compile a file from project Android, the final value of $(DEFINES) will be 
+                $(DEFINES) from <Project Name="Android">     +       $(DEFINES) from <CommonGccConfig> .
+                The same algorithm it is used also for $(INCLUDE_PATHS), $(CFLAGS) etc...-->
+            <Macro Name="COMPILE_CPP_COMMAND_LINE" 	Value="$(CPP) $(DEFINES) $(CFLAGS) $(INCLUDE_PATHS) -c $(SRC_FILE) -o $(OBJ_FILE)" />
+            <Macro Name="COMPILE_CC_COMMAND_LINE" 	Value="$(CC) $(DEFINES) $(CFLAGS) $(INCLUDE_PATHS) -c $(SRC_FILE) -o $(OBJ_FILE)" />
+            <Macro Name="DYNAMIC_LINK_COMMAND_LINE" Value="$(LD) -Wl,-soname,$(OUT) -shared $(OBJ_FILES) $(LDLIBS)  $(LDFLAGS) $(LINK_PATHS) -o $(OUT)" />
+            <Macro Name="STATIC_LINK_COMMAND_LINE" 	Value="$(LS) -r -s $(OUT) $(OBJ_FILES)" />
+            <Macro Name="EXE_LINK_COMMAND_LINE" 	Value="$(LD) $(OBJ_FILES) $(LDLIBS)  $(LDFLAGS) $(LINK_PATHS) -o $(OUT)" />
+            <Macro Name="DSYM_COMMAND_LINE" 	    Value="$(OBJCOPY) --only-keep-debug $(INPUT) $(OUT)" />
+            <Macro Name="STRIP_COMMAND_LINE" 	    Value="$(STRIP) --strip-debug --strip-unneeded $(INPUT)" />
+
+            
+            <!--TYPES_OF_FILES_TO_BE_COMPILED: this macro specify what files to compile. Add here the extension and ';' as a separator-->
+            <Macro Name="TYPES_OF_FILES_TO_BE_COMPILED"	Value="cpp;cc;c" />
+            
+            
+            <!--DEFINES: this is mandatory and it is very important. You can see here CommonValue, DebugValue and ReleaseValue. 
+                        The DEFINES for <CommonGccConfig> will be calculated like this:
+                            for release:  	DEFINES = CommonValue + ReleaseValue 
+                            for debug:		DEFINES = CommonValue + DebugValue 
+                        Separators: ';' space or new line -->
+            <Macro Name="DEFINES" 	CommonValue="	__ANDROID__;
+													ANDROID;
+													_ANDROID;
+													ANDROID_NDK;
+													OS_ANDROID;" 
+                                    DebugValue="_DEBUG"
+                                    ReleaseValue=""	/>
+                <!-- Note: _GLIBCXX_USE_C99_MATH=1 is needed to have std:isnan, which is used by the smath part of Jet engine -->
+                                    
+                                    
+            <!--CFLAGS: Represents the Gcc standard compiler flags that you want to use. 
+                        This is mandatory and it is very important. You can see here CommonValue, DebugValue and ReleaseValue. 
+                        The CFLAGS for <CommonGccConfig> will be calculated like this:
+                            for release:  	CFLAGS = CommonValue + ReleaseValue 
+                            for debug:		CFLAGS = CommonValue + DebugValue 
+                        Separators: ';' space or new line -->
+            <!-- -ffunction-sections -->
+            <Macro Name="CFLAGS" 	CommonValue="	-mandroid
+													-march=i686
+													-fpic
+													-ffunction-sections
+													-funwind-tables
+													-fstack-protector
+													-no-canonical-prefixes
+													-fomit-frame-pointer
+													-fno-strict-aliasing
+													-fno-unit-at-a-time
+													-funswitch-loops
+													-finline-limit=300
+													-ffast-math
+													-Wno-psabi
+													-Wno-write-strings
+													-fomit-frame-pointer
+													-fsigned-char
+													-libstdc++
+													-fpermissive
+													"
+                                    DebugValue="-g"
+                                    ReleaseValue="-w -g0 -Ofast"	/>
+                                    
+            <!--INCLUDE_PATHS: 	Specify the paths where the headers are searched 
+                                Do not use paths with space in it.
+                                Separators: ';' space or new line -->							
+            <Macro Name="INCLUDE_PATHS" CommonValue="$(ANDROID_NDK_PATH)\sources\cxx-stl\gnu-libstdc++\$(TOOLCHAIN_VERSION)\include
+                                                     $(ANDROID_NDK_PATH)\sources\cxx-stl\gnu-libstdc++\$(TOOLCHAIN_VERSION)\include\bits
+                                                     $(ANDROID_NDK_PATH)\sources\cxx-stl\gnu-libstdc++\$(TOOLCHAIN_VERSION)\libs\x86\include
+                                                     $(ANDROID_NDK_PATH)\toolchains\$(TOOLCHAIN_FOLDERNAME)\prebuilt\windows\include
+                                                     $(ANDROID_NDK_PATH)\platforms\$(ANDROID_PLATFORM)\arch-x86\usr\include
+													 $(ANDROID_TOOLBOX)\src\jni\" 
+                                        DebugValue="$(ANDROID_FRAMEWORK_CONFIG)\src\jni\debug\"
+                                        ReleaseValue="$(ANDROID_FRAMEWORK_CONFIG)\src\jni\release\"	/>
+            
+            
+            <!--LDLIBS: Here you can specify the static libraryes that you need use at linking step. You have to use the Gcc naming convention.
+                        For example: -lstdc++  means that you want to use libstdc++.a library file
+                        Separators: ';' space or new line -->							
+            <Macro Name="LDLIBS" Value="-lGLESv2 -llog -lc -lm -lz -ldl -lgnustl_static -lsupc++ -lgcc -landroid -lOpenSLES -lEGL" />
+            
+            
+            <!--LDFLAGS: Gcc standard linker flags used to create *.so files
+                         The LDFLAGS for <CommonGccConfig> will be calculated like this:
+                            for release:  	LDFLAGS = CommonValue + ReleaseValue 
+                            for debug:		LDFLAGS = CommonValue + DebugValue 
+                         Separators: ';' space or new line -->	
+            <Macro Name="LDFLAGS" 	CommonValue="	-Wl,--no-undefined -Wl,-z,noexecstack
+												    -Wl,-rpath-link=$(ANDROID_NDK_PATH)\platforms\$(ANDROID_PLATFORM)\arch-x86\usr\lib\
+												    --sysroot=$(ANDROID_NDK_PATH)\platforms\$(ANDROID_PLATFORM)\arch-x86
+												    -no-canonical-prefixes
+												    -march=i686
+												    -Wl,--fix-cortex-a8
+													-Wl,--allow-multiple-definition" 
+                                    DebugValue=""
+                                    ReleaseValue=""	/>
+                            
+                            
+            <!--LINK_PATHS: 	Specify the paths where the to search the libraries specified in LDLIBS
+                                Do not use paths with space in it.
+                                Separators: ';' space or new line -->			
+
+            <Macro Name="LINK_PATHS" Value="$(ANDROID_NDK_PATH)\sources\cxx-stl\gnu-libstdc++\$(TOOLCHAIN_VERSION)\libs\x86\
+										    $(ANDROID_NDK_PATH)\toolchains\$(TOOLCHAIN_FOLDERNAME)\prebuilt\windows\lib\gcc\i686-linux-android\$(TOOLCHAIN_VERSION)\
+										    $(ANDROID_NDK_PATH)\platforms\$(ANDROID_PLATFORM)\arch-x86\usr\lib\
+										    $(ANDROID_NDK_PATH)\toolchains\$(TOOLCHAIN_FOLDERNAME)\prebuilt\windows\i686-linux-android\lib\" />
+        </GccConfig>
+        
+    
+    </CommonGccConfig>
+
+    
+    
+    
+    
+    
+    
+    <Project Name="Android">
+	
+		<Macro Name="USE_SPECIFIC_OUTPUT_NAME" Value="$(SO_LIB_FILE)"/>
+        
+        <!--USE_ADDITIONAL_INCLUDE_DIRECTORIES_FROM_VS: Optional and if it is missing the default value it is 'true'.
+                                                        This it is used if you want, or not, to add the 
+                                                        'VisualStudio Project'> 'Properties' > 'C/C++' > 'General' > 'Additional Include Directories'  
+                                                        to INCLUDE_PATHS -->
+        <Macro Name="USE_ADDITIONAL_INCLUDE_DIRECTORIES_FROM_VS" Value="true" />
+
+        <Macro Name="USE_EXCLUDEFROMBUILD_VS_FLAG" Value="false" />
+
+        <Macro Name="USE_PCH_FILE" Value="" />
+        <Macro Name="USE_PCH_FILE_AS" Value="c++-header" />
+
+    
+        <!--INCLUDE_PATHS:     Specify the paths where the headers are searched 
+                    Do not use paths with space in it.
+                    Separators: ';' space or new line -->                            
+        <Macro Name="INCLUDE_PATHS" Value=" ../AndroidFramework/native/
+											..\AndroidFrameworkConfig\configs\generated
+											..\AndroidFrameworkConfig\configs\project
+											../GoogleTestingFramework/include;
+                                            ../GameSpecific/jni/;
+											../AndroidFramework/native/GameUtils" />
+                                            
+        <!--LINK_PATHS: Specify the paths where the to search the libraries specified in LDLIBS
+                        Do not use paths with space in it.
+                        Separators: ';' space or new line -->                                                        
+            <Macro Name="LINK_PATHS" Value="$(ANDROID_NDK_PATH)\samples\native-activity\obj\local\x86\
+                                            ..\ALicenseCheck\dist\bin\gnustl_static\x86\release\" />
+        
+        <!--CFLAGS: this is mandatory and it is very important. You can see here CommonValue, DebugValue and ReleaseValue. 
+                    The CFLAGS for <Project> will be calculated like this:
+                        for release:      CFLAGS = CommonValue + ReleaseValue 
+                        for debug:        CFLAGS = CommonValue + DebugValue -->              
+        <Macro Name="DEFINES" CommonValue="" DebugValue="DEBUG;_DEBUG;" ReleaseValue=""/>
+        
+        <!--LDLIBS: Here you can specify the static libraryes that you need use at linking step. You have to use the Gcc naming convention.
+                    For example: -lstdc++  means that you want to use libstdc++.a library file
+                    Separators: ';' space or new line -->                                    
+        <Macro Name="LDLIBS" Value="-lgtest" />
+                                    
+                <!-- LDLIBS that may be added later: -lManhattan -llibprotobuf -llibprotoc -llzma_lib -->
+        
+        <!--LDFLAGS: Gcc standard linker flags used to create *.so files
+                     Separators: ';' space or new line -->        
+        <Macro Name="LDFLAGS" Value="" />
+        
+        <!--CFLAGS: this is mandatory and it is very important. You can see here CommonValue, DebugValue and ReleaseValue. 
+                    The CFLAGS for <Project> will be calculated like this:
+                     for release:      CFLAGS = CommonValue + ReleaseValue 
+                     for debug:        CFLAGS = CommonValue + DebugValue -->              
+        <Macro Name="CFLAGS" Value="-g -Wall -Wextra -pthread" />
+
+        <!-- use AddSourceFileToProject  if you want to add special files to this project -->
+        <AddSourceFileToProject>
+           <File Name="$(ANDROID_NDK_PATH)\sources\android\cpufeatures\cpu-features.c"/>            
+        </AddSourceFileToProject>
+
+
+        <!-- use FileSpecific if you want add specific compile flags for a source file -->        
+        <FileSpecific>
+            <File Name="" CFLAGS=""/>
+            <File Name="" CFLAGS=""/>
+        </FileSpecific>
+        
+        <!--MSVCConfiguration:  Here you must specify the configuration used for release and debug.
+                                You can choose one of the configuration declared in 
+                                VisualStudio 'Project' > 'Propreties' > 'Configuration Properties' > 'Configuration Manager...' > 'Configuration' column  -->
+        <MSVCConfiguration Debug="Debug" Release="Release"/>
+
+        <!--Ignore: you can specify some file that will be ignored. You can specify the file with or without extension -->
+        <Ignore>		
+            <File Name="dummy_main" />
+        </Ignore>
+        
+        <!-- AutoGenerated: It is used to speed up the compileation. To enable this you have to specify the number of UnityBuids. Example UnityBuildsNumber="4" .
+                                      If UnityBuildsNumber="0" the AutoGenerated will be disabled.
+                                      Unity Buids it is the same thing with Compile Units!
+                                      This system works like that: the sln2gcc.exe will create some cpp files. In that files you will find all the source files from your project included like 
+                                        headers (Ex: #include "c:\path_to_project\src\stdafx.cpp"). So, instead to compile 450 files from your project will be compiled only 4 files. The compile time 
+                                        will decrease to 30%. The down side of this it is that not all the CompileUnits(i mean UnityBuids) can be compiled because of the structure of your project. In this case
+                                        all the files from that CompileUnit will be compiled as stand alone file. 
+                                      You can exclude some file from CompileUnits using  ExcludeFileFromUnityBuild node. Here you can use the file name of the file (including extension) but without path. Also
+                                        you can exclude all files with an extension by using *. (Ex: <ExcludeFileFromUnityBuild Name="*.cpp" />) .
+                                      -->
+        <UnityBuilds>									  
+            <AutoGenerated UnityBuildsNumber="0" >	
+                  <ExcludeFileFromUnityBuild Name="insert_here_the_filename_withowt_path" />
+            </AutoGenerated>	
+        </UnityBuilds>									  
+
+    </Project>
+      
+	<Project Name="gtest">
+        
+        <!--USE_ADDITIONAL_INCLUDE_DIRECTORIES_FROM_VS: Optional and if it is missing the default value it is 'true'.
+                                                        This it is used if you want, or not, to add the 
+                                                        'VisualStudio Project'> 'Properties' > 'C/C++' > 'General' > 'Additional Include Directories'  
+                                                        to INCLUDE_PATHS -->
+        <Macro Name="USE_ADDITIONAL_INCLUDE_DIRECTORIES_FROM_VS" Value="true" />
+
+        <Macro Name="USE_EXCLUDEFROMBUILD_VS_FLAG" Value="false" />
+
+
+    
+        <!--INCLUDE_PATHS:     Specify the paths where the headers are searched 
+                    Do not use paths with space in it.
+                    Separators: ';' space or new line -->                            
+        <Macro Name="INCLUDE_PATHS" Value="../../../include;
+											../../../;" />
+                                            
+        <!--LINK_PATHS: Specify the paths where the to search the libraries specified in LDLIBS
+                        Do not use paths with space in it.
+                        Separators: ';' space or new line -->                                                        
+            <Macro Name="LINK_PATHS" 	Value=" $(ANDROID_NDK_PATH)\sources\cxx-stl\gnu-libstdc++\$(TOOLCHAIN_VERSION)\libs\x86\
+												$(ANDROID_NDK_PATH)\toolchains\$(TOOLCHAIN_FOLDERNAME)\prebuilt\windows\lib\gcc\i686-linux-android\$(TOOLCHAIN_VERSION)\
+												$(ANDROID_NDK_PATH)\platforms\$(ANDROID_PLATFORM)\arch-x86\usr\lib\
+												$(ANDROID_NDK_PATH)\toolchains\$(TOOLCHAIN_FOLDERNAME)\prebuilt\windows\i686-linux-android\lib\" />
+        
+        <!--CFLAGS: this is mandatory and it is very important. You can see here CommonValue, DebugValue and ReleaseValue. 
+                    The CFLAGS for <Project> will be calculated like this:
+                        for release:      CFLAGS = CommonValue + ReleaseValue 
+                        for debug:        CFLAGS = CommonValue + DebugValue -->              
+        <Macro Name="DEFINES" CommonValue="ANDROID_NDK;
+										ANDROID;" DebugValue="" ReleaseValue=""/>
+        
+        <!--LDLIBS: Here you can specify the static libraryes that you need use at linking step. You have to use the Gcc naming convention.
+                    For example: -lstdc++  means that you want to use libstdc++.a library file
+                    Separators: ';' space or new line -->                                    
+        <Macro Name="LDLIBS" Value="" />
+                                    
+                <!-- LDLIBS that may be added later: -lManhattan -llibprotobuf -llibprotoc -llzma_lib -->
+        
+        <!--LDFLAGS: Gcc standard linker flags used to create *.so files
+                     Separators: ';' space or new line -->        
+        <Macro Name="LDFLAGS" Value="" />
+        
+        <!--CFLAGS: this is mandatory and it is very important. You can see here CommonValue, DebugValue and ReleaseValue. 
+                    The CFLAGS for <Project> will be calculated like this:
+                     for release:      CFLAGS = CommonValue + ReleaseValue 
+                     for debug:        CFLAGS = CommonValue + DebugValue -->              
+        <Macro Name="CFLAGS" Value="" />
+
+        <!-- use AddSourceFileToProject  if you want to add special files to this project -->
+        <AddSourceFileToProject>
+        </AddSourceFileToProject>
+
+
+        <!-- use FileSpecific if you want add specific compile flags for a source file -->        
+        <FileSpecific>
+            <File Name="" CFLAGS=""/>
+            <File Name="" CFLAGS=""/>
+        </FileSpecific>
+        
+        <!--MSVCConfiguration:  Here you must specify the configuration used for release and debug.
+                                You can choose one of the configuration declared in 
+                                VisualStudio 'Project' > 'Propreties' > 'Configuration Properties' > 'Configuration Manager...' > 'Configuration' column  -->
+        <MSVCConfiguration Debug="Debug" Release="Release"/>
+
+       
+        <!-- AutoGenerated: It is used to speed up the compileation. To enable this you have to specify the number of UnityBuids. Example UnityBuildsNumber="4" .
+                                      If UnityBuildsNumber="0" the AutoGenerated will be disabled.
+                                      Unity Buids it is the same thing with Compile Units!
+                                      This system works like that: the sln2gcc.exe will create some cpp files. In that files you will find all the source files from your project included like 
+                                        headers (Ex: #include "c:\path_to_project\src\stdafx.cpp"). So, instead to compile 450 files from your project will be compiled only 4 files. The compile time 
+                                        will decrease to 30%. The down side of this it is that not all the CompileUnits(i mean UnityBuids) can be compiled because of the structure of your project. In this case
+                                        all the files from that CompileUnit will be compiled as stand alone file. 
+                                      You can exclude some file from CompileUnits using  ExcludeFileFromUnityBuild node. Here you can use the file name of the file (including extension) but without path. Also
+                                        you can exclude all files with an extension by using *. (Ex: <ExcludeFileFromUnityBuild Name="*.cpp" />) .
+                                      -->
+        <UnityBuilds>									  
+            <AutoGenerated UnityBuildsNumber="0" >	
+                  <ExcludeFileFromUnityBuild Name="insert_here_the_filename_withowt_path" />
+            </AutoGenerated>	
+        </UnityBuilds>									  
+
+    </Project> 
+	  
+	  
+</Makefile>

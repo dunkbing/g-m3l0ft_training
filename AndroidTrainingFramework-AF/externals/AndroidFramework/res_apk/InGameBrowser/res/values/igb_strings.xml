@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IGB_LOADING_EN">Loading...</string>
+    <string name="IGB_LOADING_FR">Chargement...</string>
+    <string name="IGB_LOADING_DE">Lädt...</string>
+    <string name="IGB_LOADING_IT">Caricamento in corso...</string>
+    <string name="IGB_LOADING_SP">Cargando...</string>
+    <string name="IGB_LOADING_JP">読み込んでいます...</string>
+    <string name="IGB_LOADING_KR">불러오는 중...</string>
+    <string name="IGB_LOADING_CN">载入中……</string>
+    <string name="IGB_LOADING_BR">Carregando...</string>
+    <string name="IGB_LOADING_RU">Загрузка...</string>
+    <string name="IGB_LOADING_TR">Yüklüyor...</string>
+    <string name="IGB_LOADING_AR">جاري التحميل...</string>
+    <string name="IGB_LOADING_TH">กำลังโหลด...</string>
+    <string name="IGB_LOADING_ID">Memuat...</string>
+    <string name="IGB_LOADING_VI">Đang tải...</string>
+    <string name="IGB_LOADING_ZT">載入中...</string>
+	
+	<string name="IGB_NET_ERROR_EN">Cannot connect to server. No network found. Please try again later.</string>
+	<string name="IGB_NET_ERROR_FR">Impossible de se connecter au serveur. Aucun réseau trouvé. Veuillez réessayer plus tard.</string>
+	<string name="IGB_NET_ERROR_DE">Verbindung zum Server konnte nicht hergestellt werden. Kein Netzwerk gefunden. Versuche es bitte später noch einmal.</string>
+	<string name="IGB_NET_ERROR_IT">Impossibile connettersi al server. Rete non trovata. Si prega di riprovare più tardi.</string>
+	<string name="IGB_NET_ERROR_SP">No se puede conectar con el servidor. No se ha encontrado ninguna red disponible. Por favor, inténtalo más tarde.</string>
+	<string name="IGB_NET_ERROR_JP">サーバーに接続できません。ネットワークが見つかりません。のちほどもう一度お試しください。</string>
+	<string name="IGB_NET_ERROR_KR">서버에 연결할 수 없습니다. 네트워크를 찾을 수 없습니다. 나중에 다시 시도하세요.</string>
+	<string name="IGB_NET_ERROR_CN">無法連接伺服器。找不到網路。請稍後重試一次。</string>
+	<string name="IGB_NET_ERROR_BR">Não há conexão disponível. Certifique-se de que seu aparelho está conectado à internet.</string>
+	<string name="IGB_NET_ERROR_RU">Невозможно соединиться с сервером. Сеть не найдена. Пожалуйста, попробуйте позже.</string>
+	<string name="IGB_NET_ERROR_TR">Sunucuya bağlanamıyor. Ağ bulunamadı. Lütfen sonra tekrar dene.</string>
+    <string name="IGB_NET_ERROR_AR">لا يوجد اتصال بالإنترنت. يُرجى التحقق من أن جهازك متصل بالإنترنت.</string>
+    <string name="IGB_NET_ERROR_TH">ไม่พบ|การเชื่อมต่อ|อินเทอร์เน็ต |กรุณา|ตรวจสอบ|ว่า|เครื่อง|ของคุณ|ได้|เชื่อมต่อ|กับ|อินเทอร์เน็ต</string>
+    <string name="IGB_NET_ERROR_ID">Koneksi Internet saat ini tidak tersedia. Pastikan perangkatmu sudah terhubung dengan Internet.</string>
+    <string name="IGB_NET_ERROR_VI">Không có kết nối Internet. Xin đảm bảo thiết bị của bạn đã kết nối Internet.</string>
+    <string name="IGB_NET_ERROR_ZT">無可用網路連接，請確定您的設備已聯網。</string>
+	
+	<string name="IGB_OK_EN">OK</string>
+    <string name="IGB_OK_FR">OK</string>
+    <string name="IGB_OK_DE">OK</string>
+    <string name="IGB_OK_IT">OK</string>
+    <string name="IGB_OK_SP">Acep.</string>
+    <string name="IGB_OK_JP">OK</string>
+    <string name="IGB_OK_KR">OK</string>
+    <string name="IGB_OK_CN">OK</string>
+    <string name="IGB_OK_BR">OK</string>
+    <string name="IGB_OK_RU">OK</string>
+    <string name="IGB_OK_TR">Tamam</string>
+    <string name="IGB_OK_AR">موافق</string>
+    <string name="IGB_OK_TH">ตกลง</string>
+    <string name="IGB_OK_ID">OK</string>
+    <string name="IGB_OK_VI">OK</string>
+    <string name="IGB_OK_ZT">OK</string>
+</resources>

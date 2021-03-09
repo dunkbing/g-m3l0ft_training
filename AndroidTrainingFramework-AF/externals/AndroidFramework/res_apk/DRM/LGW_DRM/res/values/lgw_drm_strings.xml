@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <!-- License checking status messages -->
+    <string name="checklicense_dialog_message">Progressing...</string>
+
+    <string name="non_login_information_title">Please login to LGWorld</string>
+    <string name="non_login_information_message">You must login to get license for this application.</string>
+
+    <!-- Unlicensed dialog messages -->
+    <string name="unlicensed_dialog_title">Verification failed</string>
+    <string name="unlicensed_dialog_message">No matching records found in your purchase history.</string>
+    
+    <!-- Download LGWorld -->
+    <string name="no_lgworld_dialog_title">Verification needed</string>
+    <string name="no_lgworld_dialog_message">Please install latest version of  LG World to verify this app.</string>
+    
+    <!-- No Network -->
+    <string name="no_network_dialog_title">No network</string>
+    <string name="no_network_dialog_message">Please check your network connection.</string>
+    
+    <!-- Warning -->
+    <string name="warning_dialog_title">Warning</string>
+    <string name="warning_dialog_message">Service not available. Please try again.</string>
+
+    <!-- General Buttons -->
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="exit_button">Exit</string>
+</resources>

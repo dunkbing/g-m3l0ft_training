@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Utils">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/utils"/>
+			<preprocess>
+				<include path="../native/InAppBilling/InAppBillingConst.h"/>
+			</preprocess>
+		</java>
+		<res>
+			<dir path="../res_apk/utils/res"/>
+		</res>
+	</sources>
+</j2a>

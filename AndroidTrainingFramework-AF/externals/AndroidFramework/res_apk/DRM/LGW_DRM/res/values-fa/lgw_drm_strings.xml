@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<string name="checklicense_dialog_message">…پیشرفت</string>
+<string name="unlicensed_dialog_title">تاييد انجام نشد</string>
+<string name="unlicensed_dialog_message">مورد مشابه در سوابق خريد شما يافت نشد.</string>
+<string name="no_lgworld_dialog_title">تاييد ضروری است</string>
+<string name="no_lgworld_dialog_message">برای تاييد اين برنامه، جديدترين نسخه LG World را نصب کنيد.</string>
+<string name="no_network_dialog_title">شبکه ای موجود نیست</string>
+<string name="no_network_dialog_message">لطفاً اتصال شبکه خود را وارسی کنيد.</string>
+<string name="warning_dialog_title">هشدار</string>
+<string name="warning_dialog_message">سرويس قابل استفاده نيست. لطفاً دوباره امتحان کنيد.</string>
+<string name="ok_button">انتخاب</string>
+<string name="cancel_button">لغو</string>
+<string name="exit_button">خروج</string>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - In App Billing - KT Store">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/InAppBilling/kt"/>
+			<preprocess>
+				<include path="../native/InAppBilling/InAppBillingConst.h"/>
+			</preprocess>
+		</java>
+		<libs>
+			<dir path="../res_apk/InAppBilling/kt/libs">
+				<ignore type="file" name="InAppTablet.jar">
+			</dir>
+		</libs>
+	</sources>
+</j2a>

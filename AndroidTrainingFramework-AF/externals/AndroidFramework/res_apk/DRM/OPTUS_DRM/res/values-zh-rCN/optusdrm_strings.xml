@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="drmlib_optusjg_message_checking"><![CDATA[<div>正在检查游戏许可证。在连接服务器进行验证的过程中，请耐心等待。</div>]]></string>
+	<string name="drmlib_optusjg_message_validated"><![CDATA[<div>你的许可证已成功验证。<br/><br/><a href="action:finish">立刻开始游戏</a></div>]]></string>
+	<string name="drmlib_optusjg_message_noinet"><![CDATA[<div>我们无法验证该游戏的许可证。需要连接到网络。请<a href="action:retry">重试</a>或查阅我们的<a href="action:help">帮助</a>页面</div>]]></string>
+	<string name="drmlib_optusjg_message_refused"><![CDATA[<div>该游戏许可证无效。请阅读我们的<a href="action:help">帮助</a>区。</div>]]></string>
+	<string name="drmlib_optusjg_message_help"><![CDATA[<div><b>HELP</b><br/><br/>要验证游戏，你必须连接到网络（手机网络(GPRS)或WLAN）。<br/><br/>许可证仅在你的手机上可用，你无法安装到其他手机上。<br/><br/>如有问题，请查阅<a href="action:cs">客户服务</a>。]]></string>
+	<string name="DOWNLOAD_FILES_NO_WIFI_QUESTION_OPTUS">你可用选择WLAN或Optus网络下载该游戏。使用Optus网络下载该游戏将不会产生数据费用。</string>
+	<string name="USE_OPTUS">Optus网络</string>
+</resources>

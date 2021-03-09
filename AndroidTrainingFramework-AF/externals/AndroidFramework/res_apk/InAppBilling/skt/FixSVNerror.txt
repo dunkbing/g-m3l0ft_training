@@ -1,0 +1,7 @@
+If you tried to update to a revision higher then 3022 and encounter the following SVN error in this folder:
+
+External failed: X:\Package\res_apk\InAppBilling\skt\res 
+Error: The node Error: 'X:\Package\res_apk\InAppBilling\skt\res\res_apk\InAppBilling\skt\res\drawable\background.9.png' 
+Error: is not installable 
+
+please delete the res folder and update again.

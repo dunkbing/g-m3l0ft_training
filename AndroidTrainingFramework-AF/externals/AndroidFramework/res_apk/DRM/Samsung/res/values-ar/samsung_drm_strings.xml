@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="DRM_NETWORK_DIALOGUE_1">الاتصال بالإنترنت غير متوفر. هل تريد ضبط اتصالك بالإنترنت اللاسلكي الآن أم الاستمرار باستخدام شبكة مزود الخدمة؟</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">وجد النظام أن ترخيصك غير سارٍ على نظامك المحلي. سيستخدم التطبيق اتصال الشبكة لإيجاد ترخيص ساري. هل تريد الاستمرار؟</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">لقد اكتشف الخادم أن التطبيق لم يتم شراؤه لذلك لم يتم إرسال الترخيص إلى التطبيق.</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">لقد فحص الخادم مؤشرات التطبيق وعلى الأقل يوجد أحد المؤشرات دون إدخال. (هذا يحدث عندما يكون الهاتف مغلق)</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">بسبب خطأ في الخادم فإنه لم يتمكن من معرفة ما إذا تم شراء التطبيق، خطأ مثل الدخول إلى قاعدة البيانات.</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">لم يتم إرسال الترخيص إلى التطبيق بسبب خطأ في الشبكة. (لم يتمكن التطبيق من استلام رد من الخادم)</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">لم يتم إرسال الترخيص إلى التطبيق بسبب خطأ في الشبكة. (لم يتم إرسال الطلب من التطبيق إلى الخادم)</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">لم يتم حفظ التطبيق في القرص المحلي. أسباب هذا قد تكون : خطأ في القرص I/O ، عدم وجود مساحة كافية في المجلد، عدم وجود إذا بالسماح بحفظ الترخيص على القرص.</string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">سيحدث ذلك إذا طلب العميل ترخيص من خادم ليس من مكتبة زيركونيا.</string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">سيحدث ذلك إذا طلب العميل ترخيص من خادم ليس من مكتبة زيركونيا التي لا تدعم خادم الترخيص.</string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">الترخيص من الخادم ليس ساري المفعول.</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">تم إرسال الترخيص إلى التطبيق من خادم غير ساري الفعالية.</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">قام المستخدم بتعديل التطبيق.</string>
+	<string name="DRM_EZIRCONIA_SUCCESS_1">تم استلام ترخيص ساري الفعالية.</string>
+</resources>

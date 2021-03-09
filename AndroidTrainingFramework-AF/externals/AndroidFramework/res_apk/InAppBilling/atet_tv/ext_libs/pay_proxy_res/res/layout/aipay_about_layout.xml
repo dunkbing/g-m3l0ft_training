@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/aipay_margin_vertical"
+    android:layout_marginBottom="@dimen/aipay_margin_vertical"
+    android:layout_marginRight="@dimen/aipay_margin_horizontal"
+    android:layout_marginLeft="@dimen/aipay_margin_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/aipay_accountview_bg">
+    
+    <include android:id="@+id/v_title_aipay"
+        layout="@layout/aipay_title_bar"/>
+    
+    <ScrollView android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginBottom="10dp"
+    	android:fadingEdge="none"
+    	android:background="#dfe5ed">
+    	
+        <RelativeLayout android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:background="#f5f8fa">
+            <ImageView android:id="@+id/iv_logo_aipay"
+		        android:layout_width="65dp"
+		        android:layout_height="63dp"
+		        android:layout_marginTop="40dp"
+		        android:layout_marginBottom="11dp"
+		        android:scaleType="fitXY"
+		        android:layout_centerHorizontal="true"
+		        android:src="@drawable/aipay_spcial_aibei"
+		        android:contentDescription="@null"/>   
+	        
+		    <TextView android:id="@+id/tv_name_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="40dp"
+		        android:layout_below="@id/iv_logo_aipay"
+		        android:layout_centerHorizontal="true"
+		        android:textSize="16sp"
+		        android:textStyle="bold"
+		        android:textColor="@android:color/black"
+		        android:text="爱贝币"/>
+		    
+		    <TextView android:id="@+id/tv_description_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="11dp"
+		        android:layout_marginLeft="16dp"
+		        android:layout_marginRight="16dp"
+		        android:layout_below="@id/tv_name_aipay"
+		        android:textSize="16sp"
+		        android:textColor="#333333"
+		        android:text="        爱贝币:为您提供的虚拟币、在爱贝合作的游戏、音乐、阅读等产品中同行使用。"/>
+		     
+		    <TextView android:id="@+id/tv_exchange_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="54dp"
+		        android:layout_below="@id/tv_description_aipay"
+		        android:layout_centerHorizontal="true"
+		        android:textSize="16sp"
+		        android:textColor="#333333"
+		        android:text="兑换比例:1元 =10爱贝币"/>
+		    
+		    <View android:id="@+id/v_divide_aipay"
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:layout_below="@id/tv_exchange_aipay"
+		        android:background="#d7d7d7"/>
+		    
+		    <LinearLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:gravity="center_horizontal"
+		        android:background="#dfe5ed"
+		        android:layout_below="@id/v_divide_aipay">
+		        
+		        <ImageView android:id="@+id/iv_ic_aipay"
+			        android:layout_width="110dp"
+			        android:layout_height="34dp"
+			        android:layout_marginTop="30dp"
+			        android:layout_marginBottom="5dp"
+			        android:scaleType="fitXY"
+			        android:src="@drawable/aipay_ic_logo_about"
+			        android:contentDescription="@null"/>   
+		        
+			    <TextView android:id="@+id/tv_version_aipay"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="14dp"
+			        android:textSize="12sp"
+			        android:textColor="#797979"
+			        android:text="iapppay3.2.73"/>
+			    
+			    <TextView android:id="@+id/tv_right_ch_aipay"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="5dp"
+			        android:textSize="14sp"
+			        android:textColor="#aeaeae"
+			        android:text="爱贝信息版权所有"/>
+			     
+			    <TextView android:id="@+id/tv_right_en_aipay"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="10dp"
+			        android:textSize="13sp"
+			        android:textColor="#aeaeae"
+			        android:text="Copyright©2014iapppay.AllRights Reserved"/>
+		    </LinearLayout>
+    	</RelativeLayout>
+		    
+    </ScrollView>
+</LinearLayout>

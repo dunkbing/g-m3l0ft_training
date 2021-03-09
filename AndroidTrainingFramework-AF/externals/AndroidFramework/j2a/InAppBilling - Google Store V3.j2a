@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - In App Billing - Google Store V3">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/InAppBilling/google_play_v3"/>
+			<preprocess>
+				<include path="../native/InAppBilling/iab_strings_encoded.h"/>
+				<include path="../native/InAppBilling/InAppBillingConst.h"/>
+			</preprocess>
+		</java>
+		<aidl>
+			<dir path="../res_apk/InAppBilling/google_play_v3/libs"/>
+		</aidl>
+		<res>
+			<dir path="../res_apk/InAppBilling/google_play_v3/res"/>
+		</res>
+	</sources>
+</j2a>

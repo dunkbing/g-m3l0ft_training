@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - In App Billing - SKT Store">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/InAppBilling/skt"/>
+			<preprocess>
+				<include path="../native/InAppBilling/InAppBillingConst.h"/>
+			</preprocess>
+		</java>
+		<res>
+			<dir path="../res_apk/InAppBilling/skt/res"/>
+		</res>
+		<libs>
+			<dir path="../res_apk/InAppBilling/skt/libs"/>
+		</libs>
+		<jniLibs>
+			<dir path="../res_apk/InAppBilling/skt/libs/release/armeabi" type="armeabi"/>
+			<dir path="../res_apk/InAppBilling/skt/libs/release/armeabi-v7a" type="armeabi-v7a"/>
+		</jniLibs>
+	</sources>
+</j2a>

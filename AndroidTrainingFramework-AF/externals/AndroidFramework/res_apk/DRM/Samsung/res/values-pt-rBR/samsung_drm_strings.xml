@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DRM_NETWORK_DIALOGUE_1">Não há conexão à internet disponível. Deseja configurar sua rede Wi-Fi agora ou deseja conectar-se através da sua operadora?</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">O sistema determinou que a licença no sistema local é inválida. O aplicativo vai usar uma conexão à rede para verificar a licença. Deseja continuar?</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">O servidor identificou que o aplicativo não foi comprado, portanto a licença não foi enviada para o aplicativo.</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">O servidor verificou as configurações do aplicativo e determinou que pelo menos um dos parâmetros é nulo. (Isso pode acontecer se o telefone estiver desligado).</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">Devido a uma falha no servidor, como uma falha de acesso ao banco de dados, não foi possível confirmar se o aplicativo foi comprado.</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">A licença não foi enviada para o aplicativo devido a uma falha na rede (o aplicativo não pôde receber uma resposta do servidor).</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">A licença não foi enviada para o aplicativo devido a uma falha na rede (um pedido do aplicativo não pôde ser enviado ao servidor).</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">A licença não pôde ser gravada no disco local. Algumas possíveis razões: Erro de I/O do disco, espaço indisponível ou não há permissão para salvar a licença no disco.</string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">Isso pode acontecer se o cliente requisitar uma licença de um servidor que não está na biblioteca Zirconia.</string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">Isso ocorre se o cliente requisitar uma licença do servidor que pertence a uma versão inválida da biblioteca Zirconia e que não é suportado pelo servidor de licenças.</string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">A licença do servidor não é válida.</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">A licença foi enviada para o aplicativo de um servidor inválido.</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">O usuário modificou o aplicativo.</string>
+
+	<string name="DRM_EZIRCONIA_SUCCESS_1">Uma licença válida foi recebida com sucesso.</string>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="kddi_popup_message">auスマートパスユーザーのあなたに @{amount} @{objImage} のプレゼント！ プレゼントは毎月届くよ！楽しみながら@{objImage}をゲットしちゃおう！</string>
+</resources>

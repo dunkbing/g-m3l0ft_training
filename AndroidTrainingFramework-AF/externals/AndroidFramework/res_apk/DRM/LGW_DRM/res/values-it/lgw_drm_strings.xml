@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<string name="checklicense_dialog_message">Avanzamento in corso…</string>
+<string name="unlicensed_dialog_title">Verifica non riuscita</string>
+<string name="unlicensed_dialog_message">Nessun risultato corrispondente alla ricerca nella cronologia acquisti.</string>
+<string name="no_lgworld_dialog_title">Verifica necessaria</string>
+<string name="no_lgworld_dialog_message">Si prega di installare l\'ultima versione di LG World per verificare questa app.</string>
+<string name="no_network_dialog_title">Nessuna rete</string>
+<string name="no_network_dialog_message">Si prega di controllare la connessione di rete.</string>
+<string name="warning_dialog_title">Avviso</string>
+<string name="warning_dialog_message">Servizio non disponibile. Si prega di riprovare.</string>
+<string name="ok_button">OK</string>
+<string name="cancel_button">Annulla</string>
+<string name="exit_button">ESCI</string>
+
+</resources>

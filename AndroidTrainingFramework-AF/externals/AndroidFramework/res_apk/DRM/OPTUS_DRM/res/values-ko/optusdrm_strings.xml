@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="drmlib_optusjg_message_checking"><![CDATA[<div>이 게임에 대한 라이선스를 확인 중입니다. 인증을 위해 서버에 연결할 동안 잠시만 기다려 주세요.</div>]]></string>
+	<string name="drmlib_optusjg_message_validated"><![CDATA[<div>라이선스가 인증되었습니다.<br/><br/><a href="action:finish">지금 플레이</a></div>]]></string>
+	<string name="drmlib_optusjg_message_noinet"><![CDATA[<div>이 게임에 대한 라이선스를 확인할 수 없습니다. 인터넷 연결이 필요합니다. <a href="action:retry">다시 시도</a>하거나 <a href="action:help">도움말</a> 페이지를 참고하세요.</div>]]></string>
+	<string name="drmlib_optusjg_message_refused"><![CDATA[<div>이 게임에 대한 라이선스가 올바르지 않습니다. <a href="action:help">도움말</a> 항목을 읽어보시기 바랍니다.</div>]]></string>
+	<string name="drmlib_optusjg_message_help"><![CDATA[<div><b>HELP</b><br/><br/>게임을 인증하려면 모바일 네트워크(GPRS) 또는 Wi-Fi를 통해 인터넷에 연결해야 합니다.<br/><br/>라이선스는 본인의 휴대폰에만 적용되며, 다른 휴대폰에 게임을 설치할 수는 없습비다.<br/><br/>문제가 발생하면 <a href="action:cs">고객 서비스</a> 팀에 문의해주세요.]]></string>
+	<string name="DOWNLOAD_FILES_NO_WIFI_QUESTION_OPTUS">Wi-Fi 및 Optus 네트워크 중 하나를 선택하여 이 게임을 다운로드할 수 있습니다. Optus 네트워크에서 게임을 다운로드할 때 데이터 비용이 발생하지 않습니다.</string>
+	<string name="USE_OPTUS">Optus 네트워크</string>
+</resources>

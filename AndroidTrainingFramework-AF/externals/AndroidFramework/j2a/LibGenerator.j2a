@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Lib Generator">
+	<build type="Copy">
+	</build>
+	<sources>
+		<jniLibs>
+			<!--
+			<dir path="../res_apk/utils/armeabi" type="armeabi"/>
+			<dir path="../res_apk/utils/armeabi-v7a" type="armeabi-v7a"/>
+			<dir path="../res_apk/utils/x86" type="x86"/>
+			-->
+			
+			<dir path="../res_apk/utils/armeabi"/>
+			<dir path="../res_apk/utils/armeabi-v7a"/>
+			<dir path="../res_apk/utils/x86"/>
+			
+			<!--
+			<dir path="../res_apk/utils">
+				<ignore type="folder" name="external_libs"/>
+				<ignore type="folder" name="res"/>
+			</dir>
+			-->
+		</jniLibs>
+	</sources>
+</j2a>

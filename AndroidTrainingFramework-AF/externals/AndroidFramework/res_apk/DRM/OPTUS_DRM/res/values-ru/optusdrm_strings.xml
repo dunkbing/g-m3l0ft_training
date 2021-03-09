@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="drmlib_optusjg_message_checking"><![CDATA[<div>Проверка копии игры. Пожалуйста, подождите, пока идет соединение с сервером для проверки.</div>]]></string>
+	<string name="drmlib_optusjg_message_validated"><![CDATA[<div>Копия игры верна.<br/><br/><a href="action:finish">ИГРАТЬ</a></div>]]></string>
+	<string name="drmlib_optusjg_message_noinet"><![CDATA[<div>Не удалось проверить копию игры.Требуется соединение с Интернет. Пожалуйста, <a href="action:retry">ПОВТОРИТЕ ПРОВЕРКУ</a> или ознакомьтесь с разделом <a href="action:help">ПОМОЩЬ</a> page.</div>]]></string>
+	<string name="drmlib_optusjg_message_refused"><![CDATA[<div>Ваша копия игры недействительна. Ознакомьтесь с разделом <a href="action:help">ПОМОЩЬ</a>.</div>]]></string>
+	<string name="drmlib_optusjg_message_help"><![CDATA[<div><b>ПОМОЩЬ</b><br/><br/>Чтобы проверить копию игры, необходимо подключение к Интернет (Мобильная сеть GPRS или Wi-Fi).<br/><br/>Копия игры действительна только на вашем телефоне, установить ее на другое устройство нельзя.<br/><br/>Для получения помощи свяжитесь с<a href="action:cs">ОТДЕЛОМ ПОДДЕРЖКИ</a>.]]></string>
+	<string name="DOWNLOAD_FILES_NO_WIFI_QUESTION_OPTUS">Вы можете загрузить игру через Wi-Fi или через сеть Optus. Загрузка через сеть Optus бесплатна.</string>
+	<string name="USE_OPTUS">Сеть Optus</string>
+</resources>

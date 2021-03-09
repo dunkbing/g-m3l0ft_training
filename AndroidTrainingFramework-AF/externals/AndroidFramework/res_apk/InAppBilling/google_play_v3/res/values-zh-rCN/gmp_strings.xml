@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">无法进行购买</string>
+	<string name="billing_not_supported_message">Google Play Store的账单结算业务当前无法使用。你可以继续使用该应用程序，但不能进行任何购买。</string>
+	<string name="cannot_connect_title">无法连入Google Play Store</string>
+	<string name="cannot_connect_message">该应用程序无法连入Google Play Store。你的Google Play Store版本可能已经过时。你可以继续使用该应用程序，但不能进行任何购买。</string>
+	<string name="waitting_confirm">正在等待Google确认你的购买。购买成功后，我们会立刻更新你的物品列表。</string>
+	<string name="pending_transaction">你有1笔交易正在处理。</string>
+	<string name="purchase_success">购买成功。</string>
+	<string name="purchase_unsuccess">购买失败。</string>
+	<string name="iab_retry">重试</string>
+	<string name="iab_cancel">取消</string>
+	<string name="iab_ok">确认</string>
+</resources>

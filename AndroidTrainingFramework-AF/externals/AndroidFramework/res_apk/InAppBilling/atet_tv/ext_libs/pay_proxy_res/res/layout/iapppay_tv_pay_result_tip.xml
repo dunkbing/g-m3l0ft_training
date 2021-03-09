@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iapppay_tv_pay_result_tip_bg"
+    android:orientation="vertical" 
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center" 
+        android:background="@drawable/iapppay_tv_main_bg"
+       >
+        
+        <ImageView
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginRight="10dp"
+    		android:background="@drawable/iapppay_tv_pay_result_fial_tip"
+            />
+
+        <TextView 
+            android:id="@+id/iapppay_tv_pay_result_text"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textSize="40sp"
+    		android:textColor="#df6b27"
+    		android:text="添加银行卡失败！"
+            />
+    </LinearLayout>
+
+</LinearLayout>

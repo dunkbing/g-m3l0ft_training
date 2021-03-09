@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="pss_vzw_confirm_buy_title">{GAME}!</string>
+<string name="pss_vzw_confirm_buy">가격: USD{PRICE}\n\n\'게임 구매\'를 클릭하여 확인하세요.\n요금은 Verizon Wireless 계정으로 부과됩니다.\n\n요금제 또는 데이터량에 따라 다운로드 및 사용 중에 데이터 사용료가 부과될 수 있습니다.</string>
+<string name="pss_vzw_cancel">취소</string>
+<string name="pss_vzw_get_game">게임 구매</string>
+<string name="pss_vzw_please_wait">잠시 기다려 주십시오.</string>
+<string name="pss_vzw_try_again">계속하려면 Verizon Wireless Network에 연결해야 합니다.\n\n다시 시도하시겠습니까?</string>
+<string name="pss_vzw_try_again_glshop">계속하려면 Verizon Wireless Network에 연결해야 합니다.\n\n구매를 완료하려면 다시 시도하세요.</string>
+<string name="pss_vzw_yes">예</string>
+<string name="pss_vzw_no">아니요</string>
+<string name="pss_vzw_transaction_complete_title">구매 완료</string>
+<string name="pss_vzw_transaction_complete">\n{GAME} 구매에 감사드립니다!\n\n요금은 Verizon Wireless 요금 청구서에 표시됩니다.\n\n다운로드는 알림 바에서 시작됩니다.</string>
+<string name="pss_vzw_downlaod">다운로드 시작</string>
+</resources>

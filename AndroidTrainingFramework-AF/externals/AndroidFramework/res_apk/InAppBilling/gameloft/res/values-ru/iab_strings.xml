@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <string name="app_name">Android Billing</string> -->
+	<string name="IAB_PURCHASE_IN_PROGRESS">Пожалуйста, подождите... Производится покупка.</string>
+	<string name="IAB_TRANSACTION_FAILED">Ошибка транзакции</string>
+	<string name="IAB_TRANSACTION_FAILED_RETRY">Повторить?</string>
+	<string name="IAB_CC_PURCHASE_WITH_CCARD">Вы можете купить {GAME_NAME} с помощью кредитной карточки за {PRICE} *</string>
+	<string name="IAB_CC_CREATE_ACCOUNT_ONE_CLICK">Пожалуйста, введите данные, указанные ниже.</string>
+	<string name="IAB_CC_CREATE_ACCOUNT">Создать уч. запись</string>
+	<string name="IAB_CC_FORGOT_PASSWORD">Забыли пароль?</string>
+	<string name="IAB_CC_EMAIL">Ваш e-mail</string>
+	<string name="IAB_CC_PASSWORD">Пароль</string>
+	<string name="IAB_CC_NAME">Владелец карты</string>
+	<string name="IAB_CC_CARD_NUMBER">Номер карты</string>
+	<string name="IAB_CC_EXPIRATION_DATE">Действительна до:</string>
+	<string name="IAB_CC_EXPIRATION_DATE_FORMAT">ММ/ГГГГ</string>
+	<string name="IAB_CC_DF_MONTH">MM</string>
+	<string name="IAB_CC_DF_YEAR">ГГГГ</string>	
+	<string name="IAB_CC_SECURE_CODE">Код защиты</string>
+	<string name="IAB_CC_SECURE_CODE_HELP">Последние три цифры за оборотной стороне вашей карты</string>
+	<string name="IAB_CC_ALREADY_HAS_ACCOUNT">У вас уже есть уч. запись Gameloft</string>
+	<string name="IAB_CC_PAY_WO_ACCOUNT">Оплатить без создания уч. записи</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND">*гарантия Peace of Mind от Gameloft.</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND2">Для сохранности информации о вашей кредитной карте Gameloft использует улучшенную систему шифрования.</string>
+	<string name="IAB_CC_EMAIL_PRIVACY">**Ваш адрес email будет использован исключительно для отправки чека.</string>
+	<string name="IAB_CC_EMAIL_PRIVACY2">Полную версию соглашения можно прочитать здесь.</string>
+	<string name="IAB_CC_GAME">Игра</string>
+	<string name="IAB_CC_PRICE">Стоимость</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_WRONG_DATA">Вы ввели неправильную информацию. Пожалуйста, проверьте поля, отмеченные красным. </string>
+	<string name="IAB_CC_CREATING_ACCOUNT_EMAIL_EXISTS">Учетная запись с таким адресом email уже существует. Вы можете войти под этим адресом или создать новую уч. запись.</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_PAY_WO_ACCOUNT">Чтобы продолжить покупку, пожалуйста, введите данные, указанные ниже.</string>
+	<string name="IAB_CC_LOGIN_WRONG_EMAIL_PASSWORD">Введенный адрес email и/или пароль неверны. Пожалуйста, попробуйте еще раз.</string>
+	<string name="IAB_CC_CREDIT_CARD_EXPIRED">Ваша кредитная карта недействительна. Пожалуйста, введите данные, указанные ниже.</string>
+	<string name="IAB_CC_INVOICE_SENT">Чек только что был выслан на ваш адрес элетронной почты.</string>
+	<string name="IAB_CC_ACCOUNT_CREATED_SUCCESSFULLY">Учетная запись успешно создана!</string>
+	<string name="IAB_CC_FORGOT_PASSWORD_QUESTION">Забыли пароль?</string>
+	<string name="IAB_CC_ENTER_EMAIL_FOR_RECOVERY_PASSWORD">Пожалуйста, введите ваш адрес email. Через несколько секунд вы получите ваш пароль по почте.</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_FAIL">К сожалению, мы не смогли найти ваш адрес email. Пожалуйста, попробуйте еще раз или зарегистрируйтесь.</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_SUCCES">Новый пароль выслан. Пожалуйста, проверьте вашу почту.</string>
+	<string name="IAB_CC_SHORT_EMAIL_EXIST">Учетная запись с таким email уже существует.</string>
+	
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP_TITLE">Подтвердите покупку</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP">Пожалуйста, подтвердите, что вы хотите купить {ITEM} за {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_LAYOUT">Вы собираетесь купить {ITEM} за {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_TITLE">Оплатить кредитной картой</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC">Этот предмет можно купить только с помощью кредитной карты. Пожалуйста, подтвердите, что вы хотите купить {ITEM} за {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TITLE">Покупка не удалась.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE">Наш сервис не смог обработать вашу покупку. Хотите попробовать совершить эту покупку, используя другой метод оплаты?</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TRY_AGAIN">Ваша покупка не была обработана нашей службой. Хотите попробовать еще раз?</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_TITLE">Предмет успешно куплен.</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS">Спасибо за покупку, купленный предмет был добавлен к вашей учетной записи.</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING_TITLE">Контент успешно куплен.</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING">Спасибо за покупку, купленный предмет будет добавлен к вашей учетной записи чуть позднее в связи с проблемой на сервисе!</string>
+	<string name="IAB_PURCHASE_ITEM_CHARGE_APPLY">Стоимость передачи данных может быть добавлена к оплате.</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_INFO">Вы хотите купить {QUANTITY} {ITEM} за {PRICE}?</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_MESSAGE">Пожалуйста, выберите метод оплаты.</string>
+	<string name="IAB_NETWORK_ERROR_TITLE">Ошибка сети</string>
+
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD_TITLE">Выбор метода оплаты.</string>
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD">Перед тем, как перейти к покупке, пожалуйста, выберите предпочитаемый метод оплаты.</string>
+	<string name="IAB_BTN_OTHER">Изменить метод оплаты</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_TITLE">У вас есть приостановленная транзакция.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING">Ждем подтверждения покупки от Boku. Как только покупка будет завершена, мы обновим список ваших предметов.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_SUCCESSFUL">Успешная покупка.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_UNSUCCESSFUL">Покупка не удалась.</string>
+	
+	
+	<string name="IAB_PURCHASE_TITLE">Купить</string>
+	<string name="IAB_PURCHASE_PAY_FOR_THIS_WITH">Оплатить это с помощью</string>
+	<string name="IAB_PURCHASE_CHOOSE_PAYMENT_METHOD">Выберите метод оплаты.</string>
+	<string name="IAB_PURCHASE_CHANGE_PAYMENT_METHOD">Изменить метод оплаты</string>
+	<string name="IAB_PURCHASE_ITEM_CREDIT_CARD">Кредитная карта</string>
+	<string name="IAB_PURCHASE_ITEM_ACCOUNT">УЧ. ЗАПИСЬ GAMELOFT</string>
+	<string name="IAB_PURCHASE_ITEM_ADD_NEW_CREDIT_CARD">Добавить кредитную карту</string>
+	<string name="IAB_PURCHASE_ITEM_INFO">{ITEM} за {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_TOTAL">Всего:</string>
+	
+	<string name="IAB_PURCHASE_ITEM_PHONE_BILLL">Через оператора</string>
+	<string name="IAB_SKB_CONFIRM">Подтвердить</string>	
+	<string name="IAB_NETWORK_ERROR">Не удалось получить правильный список контента от вашего оператора.</string>
+
+	<string name="IAB_SKB_TCS">Пользовательское соглашение</string>
+	<string name="IAB_SKB_CANCEL">Отмена</string>
+	<string name="IAB_SKB_RETRY">Повтор</string>
+	<string name="IAB_SKB_EXIT">X</string>
+	<string name="IAB_SKB_LOGIN">Войти</string>
+	<string name="IAB_SKB_YES">Да</string>
+	<string name="IAB_SKB_NO">Нет</string>
+	<string name="IAB_SKB_OK">ОК</string>
+	<string name="IAB_SKB_PAY_WITH_CCARD">Оплатить кредитной картой</string>
+	<string name="IAB_SKB_NEXT">Далее</string>
+	<string name="IAB_SKB_CONTINUE">Продолжить</string>
+	<string name="IAB_SKB_BUY_NOW">Купить сейчас</string>
+	<string name="IAB_SKB_BACK">Назад</string>
+	<string name="IAB_SKB_PLAY_GAME">Играть!</string>
+	<string name="IAB_CONTINUE">Пожалуйста, нажмите ПРОДОЛЖИТЬ, чтобы завершить вашу покупку.</string>
+	<string name="IAB_LOADING">Загрузка...</string>
+	<string name="IAB_DOCOMO_CONTINUE">Пожалуйста, нажмите ПРОДОЛЖИТЬ, чтобы завершить вашу покупку.</string>
+
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_PSMS">Мы ждем подтверждения доставки предмета, чтобы завершить покупку. Как только покупка будет завершена, мы обновим ваш список предметов.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_PSMS">Предыдущая покупка не выполнена. Деньги со счета не сняты.</string>
+	
+	<string name="IAB_UMP_R3_PAYMENT_INFO">Информация о платеже</string>
+	<string name="IAB_UMP_R3_PRODUCT_NAME">Название продукта: {PRODUCT_NAME}</string>
+	<string name="IAB_UMP_R3_PRICE">Цена: {PRICE} (стоимость СМС не включена)</string>
+	<string name="IAB_UMP_R3_CUSTOMER_SERVICE">\nПоддержка пользователей: 4006125880</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_1">\n\nУважаемый пользователь, просим вас нажать на кнопку "Подтвердить информацию",  чтобы отправить СМС на номер {SHORTCODE1} для приобретения продукта.</string>
+	<string name="IAB_UMP_R3_BTN_CONFIRM_INFO">Подтвердить информацию</string>
+	<string name="IAB_UMP_R3_PLEASE_WAIT">Пожалуйста, подождите</string>
+	<string name="IAB_UMP_R3_SENDING_SMS">Отправка СМС...</string>
+	<string name="IAB_UMP_R3_CONFIRM_PAYMENT">Подтвердить оплату</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_2">Уважаемый пользователь, просим вас нажать на кнопку "Подтвердить оплату",  чтобы отправить еще одно СМС на номер {SHORTCODE2} для завершения оплаты.\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT_THANKS">Благодарим за использование UMP Billing Service.\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT">Вы приобрели {PRODUCT_NAME}, с вашего счета снято {PRICE}.\n</string>
+	<string name="IAB_UMP_R3_PAYMENT_FAILURE">Во время покупки произошла ошибка. Пожалуйста, убедитесь, что у вас достаточно денег на счету, и что сигнал оператора стабилен.</string>
+	<string name="IAB_UMP_R3_PAYMENT_FINISHED">Оплата завершена</string>
+
+</resources>

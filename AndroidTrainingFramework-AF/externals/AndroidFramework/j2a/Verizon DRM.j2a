@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Verison DRM">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/DRM/Verison"/>
+			<preprocess/>
+		</java>
+		<res>
+			<dir path="../res_apk/DRM/Verison/res"/>
+		</res>
+		<libs>
+			<dir path="../res_apk/DRM/Verison/libs"/>
+		</libs>
+	</sources>
+</j2a>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="TMO_SERVER_VALIDATE_REQUIRED">No hay conectividad de red, debe estar conectado a la red de T-Mobile para validar su licencia.</string>
+	<string name="INVALID_LICENSE">Usted necesita comprar la aplicación o la suscripción ha vencido.</string>
+	<string name="VALIDATING_LICENSE">Validando Licencia...</string>
+</resources>

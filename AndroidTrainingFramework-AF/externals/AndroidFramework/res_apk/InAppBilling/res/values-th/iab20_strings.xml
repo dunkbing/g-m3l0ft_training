@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB20_SK_OK">ตกลง</string>
+	<string name="IAB20_SK_BACK">กลับ</string>
+	<string name="IAB20_SK_NEXT">ถัดไป</string>
+</resources>

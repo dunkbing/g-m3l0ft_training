@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<java2android>
+
+	<project>
+		<build>
+			<minSdkVersion value="14" />
+			<targetSdkVersion value="22" />
+			<compileSdkVersion value="22" />
+			<buildToolsVersion value="22.0.1" />
+			
+<!--			<applicationId value="com.gameloft.android.ANMP.GloftCNRL"/>	-->
+			
+			<signature>
+				<keystorepath value="../scripts/GAMELOFT_KEY.keystore"/>
+				<keystorepass value="123456"/>
+				<keyname value="Gameloft"/>
+				<keypass value="123456"/>
+			</signature>
+			
+			<architectures>
+				<type name="armeabi-v7a"/>
+			</architectures>
+			
+			<incrementalbuild value="true"/>
+			
+			<lintOptions>
+			abortOnError false
+			disable 'MissingTranslation'
+			disable 'HardcodedDebugMode'
+			disable 'ResAuto'
+			</lintOptions>
+			
+			<packagingOptions>
+			exclude 'META-INF/LICENSE.txt'
+			exclude 'META-INF/NOTICE.txt'
+			</packagingOptions>
+			
+			<exclude>
+			</exclude>
+		</build>
+		
+		<workspace path="../_work">
+			<manifest path="AndroidManifest.xml"/>
+			<proguard path="proguard.cfg"/>
+			<java path="src"/>
+			<aidl path="aidl"/>
+			<res path="res"/>
+			<assets path="assets"/>
+			<libs path="../libs"/>
+			<jniLibs path="../libs"/>
+		</workspace>
+		
+		<flags path="../../AndroidFrameworkConfig/configs/generated/config_Android.h"/>
+		<preprocess>
+			<include path="../../AndroidFrameworkConfig/configs/generated/config_Android.h"/>
+			<macros path="../../AndroidFrameworkConfig/configs/generated/java_defines.h"/>
+		</preprocess>
+
+	</project>
+	
+	<libs>
+
+		<j2a if="" path="Common.j2a"/>
+		<!-- Google Analytics Tracking -->
+		<j2a if="USE_GOOGLE_ANALYTICS_TRACKING" path="GoogleAnalyticsTracking.j2a"/>
+		<!-- Installer -->
+		<j2a if="USE_INSTALLER" path="Installer.j2a"/>
+		<j2a if="USE_BEAM" path="Beam.j2a"/>
+		<j2a if="USE_BLUE_LOGO" path="Blue Logo.j2a"/>
+		
+		<j2a if="" path="LibGenerator.j2a"/>
+		
+		<!-- Utils -->
+		<j2a if="" path="Utils.j2a"/>
+		<!-- GooglePlayServices -->
+		<j2a if="ADD_GOOGLE_PLAY_SERVICES" path="../res_apk/utils/external_libs/google-play-services_lib/Google Play Services.j2a"/>
+		<!-- Anti-Piracy -->
+		<group>
+			<j2a if="VERIZON_DRM" path="Verison DRM.j2a"/>
+			<j2a if="GLOFT_DRM" path="Gloft DRM.j2a"/>
+			<j2a if="TMOBILE_DRM" path="TMobile DRM.j2a"/>
+			<j2a if="GOOGLE_DRM||GOOGLE_MARKET_DOWNLOAD" path="Google DRM.j2a"/>
+			<j2a if="GOOGLE_MARKET_DOWNLOAD" path="GoogleExpansionFiles.j2a"/> <!-- maybe not drm... maybe move it -->
+			<j2a if="USE_SKT_DRM" path="SKT DRM.j2a"/>
+			<j2a if="USE_PANTECH_ARM" path="Pantech ARM.j2a"/>
+			<j2a if="USE_LGU_DRM" path="LGU DRM.j2a"/>
+			<j2a if="USE_LGW_DRM" path="LGW DRM.j2a"/>
+			<j2a if="USE_KT_DRM" path="KT DRM.j2a"/>
+			<j2a if="USE_SAMSUNG_DRM" path="Samsung DRM.j2a"/>
+			<j2a if="USE_OPTUS_DRM" path="Optus DRM.j2a"/>
+			<j2a if="ORANGE_DRM" path="Orange DRM.j2a"/>
+		</group>
+		
+	<!--	<j2a if="!GLOFT_DRM&&!VERIZON_DRM&&!TMOBILE_DRM" path="No DRM.j2a"/> -->
+		<j2a if="USE_KDDI_GIFTING" path="KDDI Gift.j2a"/>
+		<j2a if="USE_VIDEO_PLAYER" path="Video Player.j2a"/>
+		<j2a if="USE_VZW_BILLING" path="Verizon Billing.j2a"/>
+		<j2a if="USE_BILLING" path="Billing.j2a"/>
+		<j2a if="USE_BOKU_FOR_BILLING" path="Boku For Billing.j2a"/>
+		<j2a if="USE_BILLING_FOR_CHINA" path="Billing For China.j2a"/>
+		
+		<!-- In App Billing -->
+		<j2a if="USE_BILLING&&USE_IN_APP_BILLING_CRM" path="InAppBilling - Common.j2a"/>		<!-- <}------+ -->
+		<group if="!USE_IN_APP_BILLING_CRM">													<!--         | -->
+			<j2a if="USE_IN_APP_BILLING" path="InAppBilling.j2a"/>								<!--         | -->
+			<j2a if="GOOGLE_STORE_V3" path="InAppBilling - Google Store V3.j2a"/>				<!--         | -->
+			<j2a if="BAZAAR_STORE" path="InAppBilling - Bazaar Store.j2a"/>						<!--         | -->
+			<j2a if="YANDEX_STORE" path="InAppBilling - Yandex Store.j2a"/>						<!--         | -->
+			<j2a if="AMAZON_STORE" path="InAppBilling - Amazon Store.j2a"/>						<!--         | -->
+			<j2a if="HUAWEI_STORE" path="InAppBilling - Huawei Store.j2a"/>						<!--         | -->
+			<j2a if="VXINYOU_STORE" path="InAppBilling - Vxinyou Store.j2a"/>					<!--         | -->
+			<j2a if="GAMELOFT_SHOP" path="InAppBilling - Gameloft Shop.j2a"/>					<!--         | -->
+			<j2a if="BOKU_STORE" path="InAppBilling - Boku Store.j2a"/>							<!--         | -->
+			<j2a if="PANTECH_STORE" path="InAppBilling - Pantech Store.j2a"/>					<!--         | -->
+			<j2a if="SKT_STORE" path="InAppBilling - SKT Store.j2a"/>							<!--         | -->
+			<group if="KT_STORE">																<!--         | -->
+				<j2a if="!KT_TABLET_API" path="InAppBilling - KT Store.j2a"/>					<!--         | -->
+				<j2a if="KT_TABLET_API" path="InAppBilling - KT Store - Tablet.j2a"/>			<!--         | -->
+			</group>																			<!--         | -->
+			<group if="VZW_STORE">																<!--         | -->
+				<j2a path="InAppBilling - Verizon Store.j2a"/>									<!--         | -->
+				<j2a if="VZW_SCM" path="InAppBilling - Verizon Store SCM.j2a"/>					<!--         | -->
+				<j2a if="VZW_MTX" path="InAppBilling - Verizon Store MTX.j2a"/>					<!--         | -->
+			</group>																			<!--         | -->
+			<j2a if="SAMSUNG_STORE" path="InAppBilling - Samsung Store.j2a"/>					<!--         | -->
+			<j2a if="SHENZHOUFU_STORE" path="InAppBilling - Shenzhoufu Store.j2a"/>				<!--         | -->
+			<j2a if="ATET_STORE" path="InAppBilling - ATET Store.j2a"/>							<!--         | -->
+			<j2a if="USE_IN_APP_BILLING||USE_BILLING" path="InAppBilling - Common.j2a"/>		<!-- <}------+ -->
+			<j2a if="ZTE_STORE" path="InAppBilling - ZTE Store.j2a"/>
+		</group>
+		
+<!--		<j2a if="USE_GLLIVE" path="GL Live.j2a"/>					DEPRECATED -->
+<!--		<j2a if="USE_GLLIVE_HTML5" path="GL Live HTML5.j2a"/>		DEPRECATED -->
+<!-- 		<j2a if="USE_IGP_ACTIVITY" path="IGP HTML.j2a"/>			DEPRECATED -->
+		<j2a if="USE_IGP_FREEMIUM" path="IGP Freemium.j2a"/>
+<!--		<j2a if="USE_DIRECT_IGP" path="IGP Direct.j2a"/>			DEPRECATED -->
+		<j2a if="USE_IN_GAME_BROWSER" path="In Game Browser.j2a"/>
+		<j2a if="USE_IN_GAME_VIDEO" path="In Game Video.j2a"/>
+		
+		<!-- Ads Server -->
+		<group if="USE_ADS_SERVER">
+			<j2a path="Ads Server.j2a"/>
+			<j2a if="ADS_USE_TAPJOY" path="Ads Server - Tapjoy.j2a"/>
+			<j2a if="ADS_USE_ADCOLONY" path="Ads Server - AddColony.j2a"/>
+			<j2a if="ADS_USE_FLURRY" path="Ads Server - Flurry.j2a"/>
+			<j2a if="ADS_USE_YUME" path="Ads Server - Yume.j2a"/>
+			<j2a if="ADS_USE_CHARTBOOST" path="Ads Server - ChartBoost.j2a"/>
+			<j2a if="USE_HAS_OFFERS_TRACKING" path="Ads Server - HasOffers.j2a"/>
+		</group>
+		
+		<j2a if="USE_PSS" path="PSS.j2a"/>
+		<j2a if="USE_WELCOME_SCREEN||USE_HOC_SCREEN" path="Splash Screen.j2a"/>
+		<j2a if="SIMPLIFIED_PN" path="Push Notification.j2a"/>
+
+		<!-- ... here be dragons ... -->
+		
+		<j2a if="USE_DATA_SHARING" path="Data Sharing.j2a"/>
+		<j2a if="USE_LZMA" path="Seven Zip.j2a"/>
+		
+		<!-- Plugin List -->
+		<j2a if="" path="Plugin List.j2a"/>
+		
+		
+		
+
+	</libs>
+	
+	
+
+</java2android>

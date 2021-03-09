@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">Satın alma gerçekleştirilemiyor</string>
+    <string name="billing_not_supported_message">Market faturalandirma sistemi su anda servis disi. Bu uygulamayi kullanmaya devam edebilirsin ancak bir sey satin alamazsin.</string>
+    <string name="waitting_confirm">Amazon\'un satin alma islemini onaylamasini bekliyoruz. Islem tamamlandiginda ürün listeni güncelleyecegiz.</string>
+    <string name="pending_transaction">Beklemede bir islem var.</string>
+	<string name="purchase_success">Satin alma basarili.</string>
+	<string name="purchase_unsuccess">Satin alma basarisiz.</string>
+	<string name="iab_retry">Tekrar Dene</string>
+</resources>

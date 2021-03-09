@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<InstallerSetup>
+<general>
+
+	<GLLegacy version="2.0"/>
+
+	<Installer version="1.3.1"/>
+
+    <platforms>
+        <Win32/>
+        <Android/>
+        <iOS/>    
+        <W8.1/>
+	<WP8/>
+    </platforms>    
+	
+</general>
+
+<tools>
+
+	<!-- Here you can add new tool. See help bellow-->
+	<!-- tool name="NameOfTheToolwithNoSpace" required="True" or "False" 
+											  platforms="" - one ore more platforms defines in <platforms> a '+' sign between them 
+											  AllowSpaceInPath="True" - ("False" is default) will allow to select a path with spaces or not-->
+											  
+		<!--InstallPath 	set posible path where the tool is intalled for automatic detection	from ENVIROMENT VAR, REGISTRY or by VALUE like:
+							GetFromEnvVar="EnviromentVarWithThePath" AddToPath="" (aditional string to add to path found in enviroment var)										
+							RegEntry="RegistryEntryWithThePath" Key="RegistryKeyWithThePath" AddToPath="" (aditional string to add to path found in registry)
+							value="AddThePathOfTool" - path of tool/-->
+		<!--Check			some tests to verify that the tool is installed correctly throw FILE EXISTANCE, FOLDER EXISTANCE, if FILE CONTAINS like:
+							name="GenericNameOfTest" file="$InstallPath$/AFileNameOfTool" CheckType="fileExist"	
+							or
+							name="GenericNameOfTest" file="$InstallPath$/AFolderNameOfTool" CheckType="folderExist"			
+							or
+							name="GenericNameOfTest" file="$InstallPath$/NameOfAFileOfTheTool" CheckType="fileContains" value="StringToLookAfterInFile" /-->							
+				
+	
+							
+	<tool name="VisualStudio2012" required="False" AllowSpaceInPath="True">
+        <InstallPath GetFromEnvVar="GLLEGACY_VS2012_HOME" AddToPath=""/>
+        <InstallPath GetFromEnvVar="VS110COMNTOOLS" AddToPath="\..\..\"/>
+        <InstallPath RegEntry="Microsoft\VisualStudio\11.0\Setup\VS" Key="InstallDir" AddToPath=""/>
+        <InstallPath RegEntry="Wow6432Node\Microsoft\VisualStudio\11.0\Setup\VS" Key="InstallDir" AddToPath=""/>
+        <InstallPath value=""/>
+        <Check name="vsvars32.bat" file="$InstallPath$/Common7/Tools/vsvars32.bat" CheckType="fileExist"/>
+        <EnvironmentVar name="GLLEGACY_VS2012_HOME" value="$InstallPath$"/>	
+        <link value="http://www.microsoft.com/en-us/download/details.aspx?id=34673"/>
+        <Description>
+            This tool does not need comments.
+        </Description>
+    </tool>
+	
+	<tool name="VisualStudio2013" required="False" AllowSpaceInPath="True">
+		<InstallPath GetFromEnvVar="GLLEGACY_VS2013_HOME" AddToPath=""/>
+	        <InstallPath GetFromEnvVar="VS120COMNTOOLS" AddToPath="\..\..\"/>
+	        <InstallPath RegEntry="Microsoft\VisualStudio\12.0\Setup\VS" Key="InstallDir" AddToPath=""/>
+	        <InstallPath RegEntry="Wow6432Node\Microsoft\VisualStudio\12.0\Setup\VS" Key="ProductDir" AddToPath=""/>
+	        <InstallPath value=""/>
+	        <Check name="vsvars32.bat" file="$InstallPath$/Common7/Tools/vsvars32.bat" CheckType="fileExist"/>
+	        <EnvironmentVar name="GLLEGACY_VS2013_HOME" value="$InstallPath$"/>	
+	        <link value="http://www.visualstudio.com/downloads/download-visual-studio-vs#d-express-windows-8"/>
+	        <Description>
+					Visual Studio Express 2013 for Windows
+	        </Description>
+    </tool>
+
+	<tool name="Cygwin" required="True" minVersion="1.7.23">
+        <InstallPath GetFromEnvVar="GLLEGACY_CYGWIN_HOME"/>
+		<InstallPath RegEntry="Cygwin\setup" Key="rootdir"/>
+        <InstallPath value="insert path here"/>
+		<Check name="bash.exe" file="$InstallPath$/bin/bash.exe" CheckType="fileExist"/>
+		<Check name="make.exe" file="$InstallPath$/bin/make.exe" CheckType="fileExist"/>
+		<Check name="gawk.exe" file="$InstallPath$/bin/gawk.exe" CheckType="fileExist"/>
+		<Check name="distcc.exe" file="$InstallPath$/bin/distcc.exe" CheckType="fileExist"/>
+		<Check name="gcc.exe" file="$InstallPath$/bin/gcc.exe" CheckType="fileExist"/>
+		<Check name="g++.exe" file="$InstallPath$/bin/g++.exe" CheckType="fileExist"/>
+        <Check name="rsync.exe" file="$InstallPath$/bin/rsync.exe" CheckType="fileExist"/>
+        <Check name="ssh.exe" file="$InstallPath$/bin/ssh.exe" CheckType="fileExist"/>
+		<Check name="sed.exe" file="$InstallPath$/bin/sed.exe" CheckType="fileExist"/>
+		<AddEnvPath value="$InstallPath$/bin"/>
+		<EnvironmentVar name="GLLEGACY_CYGWIN_HOME" value="$InstallPath$"/>		
+		<EnvironmentVar name="GLLEGACY_CYGWIN_BIN" value="$InstallPath$/bin"/>	
+		<InstallScript value="scripts\InstallCygwin.bat"/>		
+        <link value="http://www.cygwin.com/"/>
+        <Description>
+		This tool is required by Android and SandBox scripts.
+		</Description>
+	</tool>
+		
+	
+	<tool name="Python 2.7" required="True">
+        <InstallPath GetFromEnvVar="GLLEGACY_PYTHON_HOME"/>
+		<InstallPath RegEntry="Python/PythonCore/2.7/InstallPath" Key="(Default)"/>
+        <InstallPath value="insert path here"/>
+		<Check name="python.exe" file="$InstallPath$/python.exe" CheckType="fileExist"/>
+		<AddEnvPath value="$InstallPath$/"/>
+		<EnvironmentVar name="GLLEGACY_PYTHON_HOME" value="$InstallPath$"/>			
+        <link value="http://www.python.org/getit/"/>	
+		<InstallScript value="scripts\InstallPython.bat"/>
+        <Description>
+		This tool is required by the SandBox scripts.
+		</Description>
+	</tool>
+
+
+	<tool name="Python 2.7 with PIL" required="True">
+        <InstallPath GetFromEnvVar="GLLEGACY_PYTHON_HOME"/>
+		<InstallPath RegEntry="Python/PythonCore/2.7/InstallPath" Key="(Default)"/>
+        <InstallPath value="insert path here"/>
+		<Check name="python.exe" file="$InstallPath$/python.exe" CheckType="fileExist"/>
+		<Check name="PIL" file="$InstallPath$/Lib\site-packages\PIL" CheckType="folderExist"/>		
+		<AddEnvPath value="$InstallPath$/"/>
+		<EnvironmentVar name="GLLEGACY_PYTHON_HOME" value="$InstallPath$"/>			
+        <link value="http://www.python.org/getit/"/>	
+		<InstallScript value="scripts\InstallPythonWithPIL.bat"/>
+        <Description>
+		This tool is required by the SandBox scripts.
+		</Description>
+	</tool>
+
+	
+	<tool name="Java SDK (aka JDK)" required="True" >
+		<Var name="FamilyVersion" RegEntry="JavaSoft/Java Runtime Environment" Key="Java6FamilyVersion"/>
+		<InstallPath GetFromEnvVar="GLLEGACY_JAVA_HOME"/>
+        <InstallPath GetFromEnvVar="JAVA_HOME"/>
+		<InstallPath RegEntry="JavaSoft/Java Development Kit/$FamilyVersion$" Key="JavaHome"/>
+		<InstallPath RegEntry="JavaSoft/Java Development Kit/1.6.0_45" Key="JavaHome"/>
+		<InstallPath RegEntry="JavaSoft/Java Development Kit/1.6.0_43" Key="JavaHome"/>
+        <InstallPath RegEntry="JavaSoft/Java Development Kit/1.6.0_40" Key="JavaHome"/>
+		<InstallPath RegEntry="JavaSoft/Java Development Kit/1.6.0_33" Key="JavaHome"/>
+		<InstallPath RegEntry="JavaSoft/Java Development Kit/1.6.0_30" Key="JavaHome"/>
+        <InstallPath RegEntry="JavaSoft/Java Development Kit/1.6.0_21" Key="JavaHome"/>
+		<InstallPath RegEntry="JavaSoft/Java Development Kit/1.6.0_22" Key="JavaHome"/>
+		<InstallPath RegEntry="JavaSoft/Java Development Kit/1.6.0_18" Key="JavaHome"/>
+        <InstallPath RegEntry="JavaSoft/Java Development Kit/1.7.0_25" Key="JavaHome"/>
+        <InstallPath value="insert path here"/>
+		<Check name="javac.exe" file="$InstallPath$/bin/javac.exe" CheckType="fileExist"/>
+		<!-- Check name="HtmlConverter.exe" file="$InstallPath$/bin/HtmlConverter.exe" CheckType="fileExist"/ -->
+		<!-- <AddEnvPath value="$InstallPath$/bin/"> -->
+		<EnvironmentVar name="GLLEGACY_JAVA_HOME" value="$InstallPath$"/>				
+        <link value="http://www.oracle.com/technetwork/java/javase/downloads/index.html"/>
+		<InstallScript value="scripts\InstallJava.bat"/>
+        <Description>
+		This tool is required by Android compile system. 
+		</Description>
+	</tool>
+	
+	
+  	<tool name="Android NDK" required="True" virtual_drive="T">
+		<InstallPath GetFromEnvVar="GLLEGACY_NDK_HOME"/>
+        <InstallPath value="C:\"/>
+		<Check name="ndk-build" file="$InstallPath$/ndk-build" CheckType="fileExist"/>
+		<Check name="NDK version check" file="$InstallPath$/RELEASE.TXT" CheckType="fileContains" value="r" />
+		<Check name="NDK 32 check" file="$InstallPath$/toolchains\arm-linux-androideabi-4.8" CheckType="folderExist"/>
+		<EnvironmentVar name="GLLEGACY_NDK_HOME" value="$InstallPath$"/>		
+        <link value="http://developer.android.com/tools/sdk/ndk/index.html"/>
+		<InstallScript value="scripts\InstallNDK32_R10_64BIT.bat"/>
+        <Description>
+		This tool is required by Android compile system.
+		</Description>
+	</tool>  
+	
+	<tool name="Android SDK" required="True" minVersion="22.0.5">
+		<InstallPath GetFromEnvVar="GLLEGACY_ANDROID_SDK_HOME"/>
+        <InstallPath value="insert path here"/>
+        <Check name="platforms folder" file="$InstallPath$/platforms" CheckType="folderExist"/>
+        <Check name="platform-tools folder" file="$InstallPath$/platform-tools" CheckType="folderExist"/>
+        <Check name="tools folder" file="$InstallPath$/tools" CheckType="folderExist"/>
+        <AddEnvPath value="$InstallPath$/platform-tools/"/>
+		<EnvironmentVar name="GLLEGACY_ANDROID_SDK_HOME" value="$InstallPath$"/>		
+        <link value="http://developer.android.com/sdk/index.html"/>
+		<InstallScript value="scripts\InstallADT.bat"/>
+        <Description>
+		This tool is required by Android compile system. Get The "ADT Bundle for Windows". Inside ADT you will find the sdk.
+		</Description>
+	</tool>
+
+
+	<tool name="apache-ant" required="True" minVersion="1.9.2">
+		<InstallPath GetFromEnvVar="GLLEGACY_ANT_HOME"/>
+        <InstallPath value="insert path here"/>
+		<Check name="ant" file="$InstallPath$/bin/ant" CheckType="fileExist"/>
+		<Check name="ant.bat" file="$InstallPath$/bin/ant.bat" CheckType="fileExist"/>
+		<Check name="ant.cmd" file="$InstallPath$/bin/ant.cmd" CheckType="fileExist"/>
+		<EnvironmentVar name="GLLEGACY_ANT_HOME" value="$InstallPath$"/>		
+		<EnvironmentVar name="GLLEGACY_ANT_BIN" value="$InstallPath$/bin"/>		
+        <link value="http://ant.apache.org/bindownload.cgi"/>
+		<InstallScript value="scripts\InstallAnt.bat"/>
+        <Description>
+		This tool is required by Android compile system.
+		</Description>
+	</tool>
+	
+	<!--
+	<tool name="TortoiseSVN" required="True" AllowSpaceInPath="True">
+		<InstallPath GetFromEnvVar="GLLEGACY_SVNCLIENT_HOME"/>
+        <InstallPath RegEntry="TortoiseSVN" Key="Directory"/>
+        <InstallPath value="..\..\svn18\"/>
+		<Check name="TortoiseProc.exe" file="$InstallPath$/TortoiseProc.exe" CheckType="fileExist"/>
+        <Check name="svn.exe" file="$InstallPath$/svn.exe" CheckType="fileExist"/>
+        <Check name="svnversion.exe" file="$InstallPath$/svnversion.exe" CheckType="fileExist"/>
+		<AddEnvPath value="$InstallPath$/bin/"/>
+		<EnvironmentVar name="GLLEGACY_SVNCLIENT_HOME" value="$InstallPath$"/>				
+		<EnvironmentVar name="GLLEGACY_SVNCLIENT_BIN" value="$InstallPath$"/>				
+        <link value="http://tortoisesvn.net/downloads.html"/>
+        <Description>
+		This tool is required by the Installer to perform all svn related actions.
+
+        You can use TortoiseSVN with console client from:
+            http://tortoisesvn.net/downloads.html
+
+		</Description>
+	</tool>
+	
+	
+    <tool name="notepad++" required="False">
+        <InstallPath GetFromEnvVar="GLLEGACY_NOTEPAD"/>
+		<InstallPath RegEntry="Microsoft\Windows\CurrentVersion\App Paths\notepad++.exe" Key="(Default)"/>
+        <InstallPath value="..\..\Notepad"/>
+		<Check name="notepad++.exe" file="$InstallPath$/notepad++.exe" CheckType="fileExist"/>
+        <EnvironmentVar name="GLLEGACY_NOTEPAD" value="$InstallPath$"/>		
+        <link value="http://notepad-plus-plus.org/download/v6.2.3.html"/>
+		<InstallScript value="scripts\InstallNotepadPlus.bat"/>
+        <Description>
+		This tool is an optional tool. Is used by the BuildConfigurator . If does not exist, notepad.exe will be used!
+		</Description>
+	</tool>		
+	-->
+
+</tools>
+
+
+
+
+<libraries>
+
+</libraries>
+
+</InstallerSetup>

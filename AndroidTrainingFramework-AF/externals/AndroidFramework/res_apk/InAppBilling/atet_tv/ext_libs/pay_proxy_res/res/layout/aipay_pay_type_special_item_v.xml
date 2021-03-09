@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content">
+	<RelativeLayout android:id="@+id/rl_special_item_aipay"
+	    android:layout_width="match_parent" 
+	    android:layout_height="87dp"
+	    android:layout_marginRight="8dp"
+	    android:layout_marginLeft="8dp"
+	    android:layout_marginBottom="6dp">
+	    
+	    <ImageView android:id="@+id/iv_paytype_icon_aipay"
+	        android:layout_width="32dp"
+	        android:layout_height="32dp" 
+	        android:scaleType="fitXY"
+	        android:layout_marginLeft="11dp"
+	        android:layout_marginRight="9dp"
+	        android:layout_marginTop="7dp"
+	        android:layout_alignParentLeft="true"
+	        android:contentDescription="@null"/>
+	    
+	    <!-- 爱贝显示方式 -->
+	    <LinearLayout android:id="@+id/ll_aibei_aipay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/iv_paytype_icon_aipay"
+	        android:orientation="vertical"
+	        android:layout_marginTop="11dp"
+	        android:visibility="gone">
+	        
+	        <LinearLayout android:id="@+id/ll_name_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:layout_marginBottom="2dp">
+		        
+		        <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textSize="10sp"
+			        android:text="用户名:"
+			        android:textColor="#acffffff"/>
+		        
+		        <TextView android:id="@+id/tv_name_aipay"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textSize="12sp"
+			        android:textColor="#acffffff"/>
+	        
+		    </LinearLayout>
+		    
+		    <LinearLayout android:id="@+id/ll_balance_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+		        <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textSize="10sp"
+			        android:text="@string/aipay_balance_tip"
+			        android:textColor="#acffffff"/>
+		        
+		        <TextView android:id="@+id/tv_balance_aipay"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textSize="13sp"
+			        android:textColor="#acffffff"/>
+		        
+		        <TextView android:id="@+id/tv_unit_aipay"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textSize="11sp"
+			        android:textColor="#acffffff"/>       
+		    </LinearLayout>
+	        
+	    </LinearLayout>
+	    
+	    <!-- 银行卡显示呢方式  -->
+	    <LinearLayout android:id="@+id/ll_bank_aipay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/iv_paytype_icon_aipay"
+	        android:orientation="vertical"
+	        android:layout_marginTop="11dp"
+	        android:visibility="gone">
+		    
+	        <TextView android:id="@+id/tv_bankname_aipay"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="13sp"
+	            android:textColor="#acffffff"
+	            android:layout_marginBottom="2dp"/>
+	        
+	        <TextView android:id="@+id/tv_lastno_aipay"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="10sp"
+	            android:textColor="#acffffff"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout android:id="@+id/ll_paytype_aipay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginRight="11dp"
+	        android:layout_marginBottom="7dp"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical">
+	        
+	        <TextView android:id="@+id/tv_paytype_aipay"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="18sp"
+	            android:textColor="#acffffff"/>
+	        
+	        <ImageView android:id="@+id/iv_fastpay_aipay"
+	            android:layout_width="51dp"
+	            android:layout_height="15dp"
+	            android:scaleType="fitXY"
+	            android:src="@drawable/aipay_fastpay_special"
+	            android:contentDescription="@null"
+	            android:visibility="gone"/>
+	        
+	        <ImageView android:layout_width="12dp"
+	            android:layout_height="14dp"
+	            android:scaleType="fitXY"
+	            android:src="@drawable/aipay_arrow"
+	            android:contentDescription="@null"/>
+	        
+	     </LinearLayout>
+	     
+	    <!-- 爱贝特有显示，与 ll_aibei_aipay陪合 -->
+	    <TextView android:id="@+id/tv_pay_aipay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/ll_aibei_aipay"
+	        android:layout_above="@id/ll_paytype_aipay"
+	        android:layout_alignBottom="@id/ll_aibei_aipay"
+	        android:layout_alignLeft="@id/ll_paytype_aipay"
+	        android:textSize="11sp"
+	        android:textColor="#acffffff"
+	        android:visibility="gone"/>"
+	    
+	    <TextView android:id="@+id/tv_discount_aipay"
+	        android:layout_width="25dp"
+	        android:layout_height="17dp"
+	        android:layout_marginTop="11dp"
+	        android:paddingLeft="2dp"
+			android:paddingRight="2dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="2dp"
+	        android:layout_marginRight="23dp"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/aipay_discount_bg"
+	        android:textSize="12sp"
+	        android:textColor="#f2a5a8"
+	        android:visibility="gone"/>   
+	</RelativeLayout>
+</FrameLayout>

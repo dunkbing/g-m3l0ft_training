@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer name="iab_size_dialog">2</integer>
+	<dimen name="iab_select_billing_method_txtVPurchaseTitle_marginLeft">10dip</dimen>
+	<dimen name="iab_select_billing_method_itemspricelayout_marginLeftRight">40dip</dimen>
+	<dimen name="iab_select_billing_method_totalpriceLayout_marginLeftRight">40dip</dimen>
+	<dimen name="iab_select_billing_method_txtVPayWith_marginLeft">10dip</dimen>
+</resources>

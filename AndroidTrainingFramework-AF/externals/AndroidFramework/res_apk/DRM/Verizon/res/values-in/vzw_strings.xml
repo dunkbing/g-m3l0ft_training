@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="VZW_ITEM_NOT_FOUND">Item ini tidak tersedia untuk perangkatmu atau tidak tersedia lagi dalam katalog V Cast Apps.</string>
+	<string name="INVALID_LICENSE">Kamu belum membeli aplikasi ini atau periode pembelian telah berakhir. Aktifkan klien V Cast Apps untuk pembelian.</string>
+	<string name="VZW_GENERAL_ERROR">Tidak dapat memvalidasi game saat ini, coba lagi nanti.</string>
+	<string name="VZW_SERVER_VALIDATION_REQUIRED">Aktifkan sambungan Internet untuk memvalidasi game.</string>
+</resources>

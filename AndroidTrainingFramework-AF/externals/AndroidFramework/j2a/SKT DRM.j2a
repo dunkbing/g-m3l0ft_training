@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - SKT DRM">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/DRM/SKT_DRM"/>
+			<preprocess/>
+		</java>
+		<res>
+			<dir path="../res_apk/DRM/SKT_DRM/res"/>
+		</res>
+		<libs>
+			<dir path="../res_apk/DRM/SKT_DRM/libs"/>
+		</libs>
+		<jniLibs>
+			<dir path="../res_apk/DRM/SKT_DRM/libs" type="armeabi-v7a"/>
+		</jniLibs>
+	</sources>
+</j2a>

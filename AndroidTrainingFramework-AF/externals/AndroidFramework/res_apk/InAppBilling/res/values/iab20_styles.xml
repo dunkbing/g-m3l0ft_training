@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="iab20_Buttons" parent="android:Widget.Button"> 
+     	<item name="android:typeface">normal</item>
+     	<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+     	<item name="android:textColor">@color/iab20_button_text</item>
+     	<item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">false</item>
+		<item name="android:minWidth">@dimen/iab20_button_min_width</item>
+		<item name="android:minHeight">@dimen/iab20_button_min_height</item>
+		<item name="android:background">@drawable/iab20_button_selector</item>
+	</style>
+	
+	<style name="iab20_SelectedButtons" parent="iab20_Buttons">
+     	<item name="android:background">@drawable/iab20_sel_button_selector</item>
+	</style>
+	<style name="iab20_OptionButton" parent="iab20_Buttons">
+     	<item name="android:minWidth">@dimen/iab20_button_screen_choose_width</item>
+	</style>
+	
+	
+	<style name="iab20_checkButton" parent="iab20_Buttons">
+		<item name="android:minWidth">@dimen/iab20_button_min_height</item>
+	</style>
+	
+	<style name="iab20_SoftButton" parent="iab20_Buttons"> 
+     	<item name="android:textColor">#ffff0000</item>
+	</style>
+	<style name="iab20_BackButton" parent="iab20_Buttons"> 
+     	<item name="android:background">@drawable/iab20_back_button_selector</item>
+	</style>
+	<style name="iab20_Cancel_Button" parent="iab20_Buttons"> 
+     	<item name="android:background">@drawable/iab20_obutton_selector</item>
+	</style>
+	
+	<style name="iab20_Widget.TextView" parent="android:Widget.TextView">
+		<item name="android:typeface">sans</item><!--  normal, sans, serif, monospace -->
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/iab20_button_text_black</item>
+	</style>
+	
+	<style name="iab20_Widget_EditText" parent="@android:style/Widget.EditText">
+		<item name="android:focusable">true</item>
+		<item name="android:focusableInTouchMode">true</item>
+		<item name="android:clickable">true</item>
+		<item name="android:background">@drawable/iab20_textfield</item>
+		<item name="android:textColor">@color/iab20_button_text_black</item>
+	</style>
+
+</resources>

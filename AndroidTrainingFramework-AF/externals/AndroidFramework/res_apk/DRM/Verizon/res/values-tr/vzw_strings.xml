@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="VZW_ITEM_NOT_FOUND">Bu ürün cihazın için veya artık V Cast Apps listesinde mevcut olmayabilir.</string>
+	<string name="INVALID_LICENSE">Bu uygulamayı satın almamış olabilirsin veya satın alma süresi bitmiş olabilir. Satın almak için V Cast Apps istemcisini başlat.</string>
+	<string name="VZW_GENERAL_ERROR">Oyununu şu anda doğrulayamıyor, lütfen sonra tekrar dene.</string>
+	<string name="VZW_SERVER_VALIDATION_REQUIRED">Oyununun doğrulanması için lütfen internet bağlantını etkinleştir.</string>
+</resources>

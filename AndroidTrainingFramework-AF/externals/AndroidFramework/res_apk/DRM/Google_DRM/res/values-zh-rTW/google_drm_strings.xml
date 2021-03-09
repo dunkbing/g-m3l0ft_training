@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="GET_THE_GAME">取得遊戲</string>
+	<string name="CHECKING_LICENSE">檢查授權...</string>
+	<string name="UNLICENSED_DIALOG_TITLE">檢查授權</string>
+	<string name="UNLICENSED_DIALOG_BODY">無效的授權</string>
+	<string name="BUY_BUTTON">購買遊戲</string>
+	<string name="QUIT_BUTTON">離開</string>
+	<string name="RETRY">重試</string>
+	<string name="NETWORK_ERROR_TITLE">注意</string>
+	<string name="NETWORK_ERROR_BODY">發生網路錯誤。 您是否要再試一次？</string>
+</resources>

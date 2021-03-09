@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Pantech ARM">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/DRM/PANTECH_ARM"/>
+			<preprocess/>
+		</java>
+		<libs>
+			<dir path="../res_apk/DRM/PANTECH_ARM/libs"/>
+		</libs>
+	</sources>
+</j2a>

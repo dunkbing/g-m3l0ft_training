@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/iapppay_tv_keyboard_bg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                        android:nextFocusLeft="@+id/btn_del"
+                        android:text="1"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                        android:text="2"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                        android:text="3"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                        android:text="4"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                        android:text="5"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                        android:text="6"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                        android:text="7"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                        android:text="8"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                        android:text="9"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/btn_del"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:nextFocusRight="@+id/btn1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/iapppay_tv_del_x" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                    android:nextFocusRight="@+id/btn4"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnX"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                    android:nextFocusRight="@+id/btn7"
+                    android:text="X"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                    android:nextFocusRight="@+id/btn7"
+                    android:text="清空"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/iapppay_oneclickpay_tv_keyboard_btn_seletor"
+                android:nextFocusRight="@+id/btn6"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

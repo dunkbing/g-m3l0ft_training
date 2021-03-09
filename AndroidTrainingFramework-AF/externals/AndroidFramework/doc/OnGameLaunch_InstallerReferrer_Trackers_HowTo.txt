@@ -1,0 +1,92 @@
+How to integrate:
+- The ReferrerTracker will be sent only for Google Play builds (USE_MARKET_INSTALLER || GOOGLE_STORE || GOOGLE_STORE_V3).
+- The OnGameLaunch tracker will be sent in all the builds.
+- Don't forgget to update your manifest, the IReferrerInstaller receiver is now inside #if USE_MARKET_INSTALLER || GOOGLE_STORE || GOOGLE_STORE_V3
+- in your main activity, add the following code in order to send both trackers:
+
+imports:
+	#if USE_GAME_TRACKING || USE_MARKET_INSTALLER || GOOGLE_STORE || GOOGLE_STORE_V3
+	import APP_PACKAGE.GLUtils.Tracking;
+	#endif
+
+	#if USE_MARKET_INSTALLER || GOOGLE_STORE || GOOGLE_STORE_V3
+	import APP_PACKAGE.installer.IReferrerReceiver;
+	#endif
+
+declare the next variable:
+    
+    #if USE_GAME_TRACKING || USE_MARKET_INSTALLER || GOOGLE_STORE || GOOGLE_STORE_V3
+    private static boolean m_bTrackersSent = false;
+    #endif
+	
+add the next code at the end of onCreate:
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		...
+		#if USE_GAME_TRACKING || USE_MARKET_INSTALLER || GOOGLE_STORE || GOOGLE_STORE_V3
+		if(SUtils.getContext() == null)
+			SUtils.setContext(this);
+			
+		Tracking.init((android.telephony.TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE));//if your ACP revision is <= 4336
+	or
+		Tracking.init();//if your ACP revision is > 4336	
+		
+		#if USE_MARKET_INSTALLER || GOOGLE_STORE || GOOGLE_STORE_V3
+		String sd_folder = SD_FOLDER;
+		String DATA_PATH = sd_folder + "/";
+		String marketPath = android.os.Environment.getExternalStorageDirectory() + "/Android/obb/" + STR_APP_PACKAGE;
+		  
+		boolean testReferrer = SUtils.getOverriddenSettingBoolean(DATA_PATH + "qaTestingConfigs.txt", "INSTALL_REFERRER_TEST");
+		if(!testReferrer)
+		{
+			testReferrer = SUtils.getOverriddenSettingBoolean(marketPath + "/qaTestingConfigs.txt", "INSTALL_REFERRER_TEST");
+		}
+			
+		JDUMP("IReferrerReceiver",testReferrer);
+		if(testReferrer)
+			IReferrerReceiver.sendBroadcastIntent(this);
+		#endif
+		#endif
+	}
+
+and after you initialize the installer (in onResume or onStart), it will be better to add the code at the end of the funcion, 
+
+    @Override 
+    protected void onResume() 
+    {
+		m_sInstance = this;
+        Log.i(LOG_TAG, "GameActivity::onResume");
+        super.onResume();
+
+	    #if USE_INSTALLER
+        if(m_bInstallerNeedsToRun)
+        {
+            if(startInstallerIfPresent()) 
+            {
+                return;
+            }
+        }
+	    #endif
+
+		...
+
+		//send trackers
+		#if USE_GAME_TRACKING || USE_MARKET_INSTALLER || GOOGLE_STORE || GOOGLE_STORE_V3
+		if(m_bTrackersSent ==  false)
+		{
+			#if USE_GAME_TRACKING
+				#if USE_HEP_EXT_IGPINFO
+					String igpInfo[] = APP_PACKAGE.IGPInfo.getIGPInfo();
+					Tracking.onLaunchGame(Tracking.TYPE_LAUNCH_INSTALLER_MAIN, "&IGPcode=" + igpInfo[0]); //Producer Request
+					Tracking.onLaunchGame(Tracking.TYPE_LAUNCH_GAME, "&IGPcode=" + igpInfo[0]); //Producer Request
+				#else
+					Tracking.onLaunchGame(Tracking.TYPE_LAUNCH_INSTALLER_MAIN);
+					Tracking.onLaunchGame(Tracking.TYPE_LAUNCH_GAME);
+				#endif
+			#endif
+			m_bTrackersSent = true;
+		}
+		#endif  
+	    
+		...
+	}

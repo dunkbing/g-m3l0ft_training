@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Help/Docs/Info: https://docs.gameloft.org/sln2gcc-compile-utility-tool/ -->
+
+<Makefile>
+
+    <!--Solution represent the path\fileName to the *.sln file that will be compiled.-->
+    <!--The Path can full path or a relative path. Relative to sln2gcc.xml location.-->
+    <Solution Path="Hello_sln2gcc.sln" /> 
+
+
+	<CommonGccConfig>
+		
+		<GccConfig Name="gcc_config1">
+	
+            <!--MAIN_PROJECT means what project will generate the Target (aka exe or dll or so file)-->
+			<Macro Name="MAIN_PROJECT" 			Value="Hello_sln2gcc" />
+
+            <!-- generate the debug symbols file -->
+            <Macro Name="GENERATE_DSYM"			Value="True" />
+
+            <!-- stryp the debug symbols from the final Target -->
+            <Macro Name="STRIP_DEBUG_SYMBOLS_FOR_RELEASE"	Value="True" />
+            <Macro Name="STRIP_DEBUG_SYMBOLS_FOR_DEBUG"	    Value="False" />
+			
+			
+			    		
+    		
+		    <!--TOOLCHAIN: required macro. This it is used to specify the path to the compile/link tools-->
+		    <Macro Name="TOOLCHAIN" 			Value="C:\tools\MinGW32\bin" />
+            <Macro Name="TOOLCHAIN_BACKUP" 		Value="C:\tools\MinGW32\bin" />
+
+    		
+    		
+	        <!--DISTCC: this it is used if you want to speed up the compile process. DISTCC can distribute the compiling process on multiple computers-->	
+            <!--        HOST computer means the computer that must help your computer to compile the project. The HOST computer it is like a server that waits for requests.-->
+            <Macro Name="DISTCC_ENABLE" 		        Value="$(USE_DISTCC)" /> <!-- Enable or disable DISTCC. You can use 0, 1, false, true for Value.-->
+			<Macro Name="DISTCC_HOSTS" 		        	Value="$(USE_DISTCC_HOSTS)" /> <!-- the ip's of the HOSTS machines-->
+			<Macro Name="DITSCC_JOBS" 			        Value="15" /> <!-- How many threads will be created on HOST machine.-->
+            <Macro Name="DISTCC" 				        Value="$(CYGWIN_BIN)\distcc.exe" /> <!-- The path to distcc.exe . The path must be from HOST machine.-->
+			<Macro Name="DISTCC_USE_FULL_PATH"   		Value="1" /> <!-- Use or not the full path for compiler. You can use 0, 1, false, true for Value.-->
+        
+
+    		
+    		
+    		
+		    <!--CONVERT_ERRORS_TO_MSVC: used to convert the errors from gcc type to MSVC type-->
+		    <Macro Name="CONVERT_ERRORS_TO_MSVC" Value="1" />
+    		
+
+
+    		
+		    <!--CPP: 	the compiler for cpp files
+			    CC: 	the compiler for c files
+			    LD: 	the linker for dynamic libraryes, aka *.so files
+			    LS: 	the linker for static libraryes, aka *.a files	
+			    This macros are required!
+			    -->
+		    <Macro Name="CPP" 			Value="$(TOOLCHAIN)\g++.exe" />
+		    <Macro Name="CC" 			Value="$(TOOLCHAIN)\gcc.exe" />
+		    <Macro Name="LD" 			Value="$(TOOLCHAIN)\g++.exe" />
+		    <Macro Name="LS" 			Value="$(TOOLCHAIN)\ar.exe" />
+            <Macro Name="OBJCOPY"		Value="$(TOOLCHAIN)\objcopy.exe" />
+            <Macro Name="STRIP"		    Value="$(TOOLCHAIN)\strip.exe" />
+    		
+    		
+    		
+		    <!--COMPILE_CPP_COMMAND_LINE: this is the command line to compile the cpp files -->
+		    <!--COMPILE_CC_COMMAND_LINE: this is the command line to compile the c files -->
+		    <!--DYNAMIC_LINK_COMMAND_LINE: this is the command line that creates *.so files (dynamic libraryes)-->
+		    <!--DYNAMIC_LINK_COMMAND_LINE: this is the command line that creates *.a files	(static libraryes)-->
+		    <!--This Macro needs a little bit more explanation. You can see that this Macros use $(DEFINES), $(CFLAGS).
+			    For instance if we have to compile a file from project Android, the final value of $(DEFINES) will be 
+			    $(DEFINES) from <Project Name="Android">     +       $(DEFINES) from <CommonGccConfig> .
+			    The same algorithm it is used also for $(INCLUDE_PATHS), $(CFLAGS) etc...-->
+		    <Macro Name="COMPILE_CPP_COMMAND_LINE" 	Value="$(CPP) $(DEFINES) $(CFLAGS) $(INCLUDE_PATHS) -c $(SRC_FILE) -o $(OBJ_FILE)" />
+		    <Macro Name="COMPILE_CC_COMMAND_LINE" 	Value="$(CC) $(DEFINES) $(CFLAGS) $(INCLUDE_PATHS) -c $(SRC_FILE) -o $(OBJ_FILE)" />
+		    <Macro Name="DYNAMIC_LINK_COMMAND_LINE" Value="$(LD) -Wl,-soname,$(OUT) -shared $(OBJ_FILES) $(LDLIBS)  $(LDFLAGS) $(LINK_PATHS) -o $(OUT)" />
+		    <Macro Name="STATIC_LINK_COMMAND_LINE" 	Value="$(LS) -r -s $(OUT) $(OBJ_FILES)" />
+			<Macro Name="EXE_LINK_COMMAND_LINE" 	Value="$(LD) $(OBJ_FILES) $(LDLIBS)  $(LDFLAGS) $(LINK_PATHS) -o $(OUT)" />
+            <Macro Name="DSYM_COMMAND_LINE" 	    Value="$(OBJCOPY) --only-keep-debug $(INPUT) $(OUT)" />
+            <Macro Name="STRIP_COMMAND_LINE" 	    Value="$(STRIP) --strip-debug --strip-unneeded $(INPUT)" />
+
+    		
+		    <!--TYPES_OF_FILES_TO_BE_COMPILED: this macro specify what files to compile. Add here the extension and ';' as a separator-->
+		    <Macro Name="TYPES_OF_FILES_TO_BE_COMPILED"	Value="cpp;c" />
+    		
+    		
+		    <!--DEFINES: this is mandatory and it is very important. You can see here CommonValue, DebugValue and ReleaseValue. 
+					    The DEFINES for <CommonGccConfig> will be calculated like this:
+						    for release:  	DEFINES = CommonValue + ReleaseValue 
+						    for debug:		DEFINES = CommonValue + DebugValue 
+					    Separators: ';' space or new line -->
+		    <Macro Name="DEFINES" 	CommonValue="" 
+								    DebugValue=""
+								    ReleaseValue=""	/>
+
+    								
+    								
+		    <!--CFLAGS: Represents the Gcc standard compiler flags that you want to use. 
+					    This is mandatory and it is very important. You can see here CommonValue, DebugValue and ReleaseValue. 
+					    The CFLAGS for <CommonGccConfig> will be calculated like this:
+						    for release:  	CFLAGS = CommonValue + ReleaseValue 
+						    for debug:		CFLAGS = CommonValue + DebugValue 
+					    Separators: ';' space or new line -->
+            <!-- -ffunction-sections -->
+		    <Macro Name="CFLAGS" 	CommonValue="-g"
+									DebugValue="-O0"
+									ReleaseValue="-w -O3"	/>
+
+    								
+		    <!--INCLUDE_PATHS: 	Specify the paths where the headers are searched 
+							    Do not use paths with space in it.
+							    Separators: ';' space or new line -->							
+		    <Macro Name="INCLUDE_PATHS" CommonValue="$(TOOLCHAIN)\include"
+										DebugValue=""
+										ReleaseValue=""	/>
+    		
+    		
+		    <!--LDLIBS: Here you can specify the static libraryes that you need use at linking step. You have to use the Gcc naming convention.
+					    For example: -lstdc++  means that you want to use libstdc++.a library file
+					    Separators: ';' space or new line -->							
+			<Macro Name="LDLIBS" Value="-lLibrary1 -lLibrary2 -lLibrary3" />
+    		
+    		
+		    <!--LDFLAGS: Gcc standard linker flags used to create *.so files
+					     The LDFLAGS for <CommonGccConfig> will be calculated like this:
+						    for release:  	LDFLAGS = CommonValue + ReleaseValue 
+						    for debug:		LDFLAGS = CommonValue + DebugValue 
+					     Separators: ';' space or new line -->	
+		    <Macro Name="LDFLAGS" 	CommonValue="" 
+								    DebugValue=""
+								    ReleaseValue=""	/>
+    						
+    						
+		    <!--LINK_PATHS: 	Specify the paths where the to search the libraries specified in LDLIBS
+							    Do not use paths with space in it.
+							    Separators: ';' space or new line -->			
+
+		    <Macro Name="LINK_PATHS" Value="$(TOOLCHAIN)\lib" />
+		</GccConfig>
+		
+	
+	</CommonGccConfig>
+
+	
+	<!-- Project: In this file, must be for each project that you want to be compiled with gcc, a node called Project.                       -->
+    <!--          The 'Name' of the project must be exactyl the name from VisualStudio solution (aka *.sln file)                             -->
+    <!--          The 'TargetOutType': - means what will be the output.                                                                      -->
+    <!--                               - If this field is missed, the type will be - *.so if the project is the main project                 -->
+    <!--                                                                           - *.a if the project is NOT the main project              -->
+    <!--                               - possible values are: exe, so, a, lib, dll                                                           -->
+    <!--          The 'UseS2GFile': - Is used if you want to load the project settings from a file.                                          -->
+    <!--                            - When this flag value is "true" or "yes" , by default, the sln2gcc.exe will try to load a *.s2g file    -->
+    <!--                                Example: if the project called 'TestProject' is loaded from file c:\projects\TestProject.2008.vcproj -->
+    <!--                                         the corresponding *.s2g file will be c:\projects\TestProject.2008.s2g                       -->
+    <!--                            - When the value is "", "false" or "no", the sln2gcc.exe will load the settings from sln2gcc.xml         -->
+    <!--                            - When the value is "folder\filename.s2g" the sln2gcc.exe will try to load this file and if failed will  -->
+    <!--                              load settings from sln2gcc.xml. The "folder\filename.s2g" is relative to vcproj sln2gcc.xml folder.    -->
+    <!--          Example: <Project Name="Hello_sln2gcc" TargetOutType="exe" UseS2GFile="Hello_sln2gcc.s2g">                                 -->
+	<Project Name="Hello_sln2gcc" TargetOutType="exe" UseS2GFile="">
+
+
+            <!--USE_ADDITIONAL_INCLUDE_DIRECTORIES_FROM_VS: Optional and if it is missing the default value it is 'true'.
+                                                            This it is used if you want, or not, to add the 
+                                                            'VisualStudio Project'> 'Properties' > 'C/C++' > 'General' > 'Additional Include Directories'  
+                                                            to INCLUDE_PATHS -->
+            <Macro Name="USE_ADDITIONAL_INCLUDE_DIRECTORIES_FROM_VS" Value="true" />
+
+
+
+
+            <!--USE_EXCLUDEFROMBUILD_VS_FLAG: Setting up this on true, the files excluded from VisualStudio build will be excluded also from gcc build. -->
+            <!--                              Take care when you use this because some VS projects ignore, by default, the android speciffic files. -->
+            <Macro Name="USE_EXCLUDEFROMBUILD_VS_FLAG" Value="false" />
+
+
+            <!--USE_PCH_FILE: You can specify a precompiled header. -->
+            <!--                  This file will be compiled first and all the src files will use the generated precompiled header.  -->
+            <!--                  Take care, because the PCH used on Win32 may not work on GCC.  -->
+            <Macro Name="USE_PCH_FILE" Value="stdafx.h" />
+        <Macro Name="USE_PCH_FILE_AS" Value="c++-header" />
+
+
+            <!--INCLUDE_PATHS: 	Specify the paths where the headers are searched 
+                        Do not use paths with space in it.
+                        Separators: ';' space or new line -->							
+            <Macro Name="INCLUDE_PATHS" Value=" \libs\Library1\include\
+                                                \libs\Library2\include\
+                                                \libs\Library3\include\"/>
+                                                
+            <!--LINK_PATHS: Specify the paths where the to search the libraries specified in LDLIBS
+                            Do not use paths with space in it.
+                            Separators: ';' space or new line -->														
+            <Macro Name="LINK_PATHS" Value="" />
+
+            
+            <!--CFLAGS: this is mandatory and it is very important. You can see here CommonValue, DebugValue and ReleaseValue. 
+                        The CFLAGS for <Project> will be calculated like this:
+                            for release:  	CFLAGS = CommonValue + ReleaseValue 
+                            for debug:		CFLAGS = CommonValue + DebugValue -->  			
+            <Macro Name="DEFINES"   CommonValue="" 
+                                    DebugValue="DEBUG" 
+                                    ReleaseValue=""/>
+            
+            <!--LDLIBS: Here you can specify the static libraryes that you need use at linking step. You have to use the Gcc naming convention.
+                        For example: -lstdc++  means that you want to use libstdc++.a library file
+                        Separators: ';' space or new line -->									
+            <Macro Name="LDLIBS" Value="" />
+            
+            
+            <!--LDFLAGS: Gcc standard linker flags used to create *.so files
+                         Separators: ';' space or new line -->		
+            <Macro Name="LDFLAGS" Value="" />
+            
+            <!--CFLAGS: this is mandatory and it is very important. You can see here CommonValue, DebugValue and ReleaseValue. 
+                        The CFLAGS for <Project> will be calculated like this:
+                         for release:  	CFLAGS = CommonValue + ReleaseValue 
+                         for debug:		CFLAGS = CommonValue + DebugValue -->  			
+            <Macro Name="CFLAGS" Value="" />
+
+
+            <!-- use AddSourceFileToProject: if you want to add special files to this project -->
+            <!--                             You can use Macros defined above. Ex: $(TOOLCHAIN)\sources\android\native_app_glue\android_native_app_glue.c -->
+            <AddSourceFileToProject>
+                <File Name=""/>
+                <File Name=""/>
+            </AddSourceFileToProject>
+
+
+            <!-- use FileSpecific if you want add specific compile flags for a source file -->        
+            <FileSpecific>
+                <File Name="file_name_with_extension" CFLAGS="compile flags like -g or -O3"/>
+                <File Name="file_name_with_extension" CFLAGS="compile flags like -g or -O3"/>
+            </FileSpecific>
+            
+            <!-- You can ignore files of Filters (Filters means Visual Studio folders.)-->        
+            <Ignore>
+                <File Name="name_of_the_file_with_or_without_extension" />
+                <Filter Name="This_is_a_folder_from_VisualStudio" />
+            </Ignore>
+            
+            
+            <UnityBuilds>
+
+                <Custom Name="CustomUnityBuildName1.cpp">
+                    <Filter Name="" AddOnlyFilesThatMatch="*.cpp" recursive="0"/>
+                </Custom>
+
+                <Custom Name="CustomUnityBuildName2.cpp">
+                    <Filter Name="" AddOnlyFilesThatMatch="*.c" recursive="0"/>
+                </Custom>
+                
+                <AutoGenerated UnityBuildsNumber="1" >
+                    <ExcludeFileFromUnityBuild Name="" />
+                </AutoGenerated>
+
+            </UnityBuilds>
+            
+            
+            <!--MSVCConfiguration:  Here you must specify the configuration used for release and debug.
+                                    You can choose one of the configuration declared in 
+                                    VisualStudio 'Project' > 'Propreties' > 'Configuration Properties' > 'Configuration Manager...' > 'Configuration' column  -->
+            <MSVCConfiguration Debug="Debug" Release="Release"/>
+        
+        
+        
+    </Project>
+
+    
+    
+
+	<Project Name="Library1" >
+  
+		<Macro Name="USE_ADDITIONAL_INCLUDE_DIRECTORIES_FROM_VS" Value="true" />
+        <Macro Name="USE_EXCLUDEFROMBUILD_VS_FLAG" Value="false" />
+        <Macro Name="USE_PCH_FILE" Value="pch.h" />
+        <Macro Name="USE_PCH_FILE_AS" Value="c++-header" />
+
+		
+		<Macro Name="INCLUDE_PATHS" Value="include\" />
+		
+		<Macro Name="DEFINES" 	CommonValue=""
+								DebugValue="DEBUG;_DEBUG;"
+								ReleaseValue="" />
+								
+		<Macro Name="LDFLAGS" Value="" />
+		<Macro Name="CFLAGS" Value="" /> 
+		
+		<MSVCConfiguration 	Debug="Debug|Win32"					
+							Release="Release|Win32" />
+
+		<UnityBuilds>
+
+          <Custom Name="Func.cpp">
+            <Filter Name="Func" AddOnlyFilesThatMatch="*.*" recursive="0"/>
+          </Custom>
+
+          <Custom Name="Templates.cpp">
+            <Filter Name="Templates" AddOnlyFilesThatMatch="*.*" recursive="0"/>
+          </Custom>
+      
+          <AutoGenerated UnityBuildsNumber="0" >
+          </AutoGenerated>
+      
+        </UnityBuilds> 
+        
+	</Project>
+
+  <Project Name="Library2" >
+  
+		<Macro Name="USE_ADDITIONAL_INCLUDE_DIRECTORIES_FROM_VS" Value="true" />
+        <Macro Name="USE_EXCLUDEFROMBUILD_VS_FLAG" Value="false" />
+        <Macro Name="USE_PCH_FILE" Value="pch.h" />
+        <Macro Name="USE_PCH_FILE_AS" Value="c++-header" />
+
+		
+		<Macro Name="INCLUDE_PATHS" Value="" />
+		
+		<Macro Name="DEFINES" 	CommonValue=""
+								DebugValue="DEBUG;_DEBUG;"
+								ReleaseValue="" />
+								
+		<Macro Name="LDFLAGS" Value="" />
+		<Macro Name="CFLAGS" Value="" /> 
+		
+		<MSVCConfiguration 	Debug="Debug|Win32"					
+							Release="Release|Win32" />
+
+		<UnityBuilds>
+
+          <Custom Name="Test.cpp">
+            <Filter Name="Test" AddOnlyFilesThatMatch="*.cpp" recursive="0"/>
+          </Custom>
+
+          <Custom Name="OtherTemplates.cpp">
+            <Filter Name="OtherTemplates" AddOnlyFilesThatMatch="*.cpp" recursive="0"/>
+          </Custom>
+      
+          <AutoGenerated UnityBuildsNumber="0" >
+          </AutoGenerated>
+      
+        </UnityBuilds> 
+        
+	</Project>
+
+
+    <Project Name="Library3" >
+  
+		<Macro Name="USE_ADDITIONAL_INCLUDE_DIRECTORIES_FROM_VS" Value="true" />
+        <Macro Name="USE_EXCLUDEFROMBUILD_VS_FLAG" Value="false" />
+        <Macro Name="USE_PCH_FILE" Value="" />
+        <Macro Name="USE_PCH_FILE_AS" Value="c++-header" />
+
+		
+		<Macro Name="INCLUDE_PATHS" Value="include\" />
+		
+		<Macro Name="DEFINES" 	CommonValue=""
+								DebugValue="DEBUG;_DEBUG;"
+								ReleaseValue="" />
+								
+		<Macro Name="LDFLAGS" Value="" />
+		<Macro Name="CFLAGS" Value="" /> 
+		
+		<MSVCConfiguration 	Debug="Debug|Win32"					
+							Release="Release|Win32" />
+
+		<UnityBuilds>
+
+          <Custom Name="OtherFunc.cpp">
+            <Filter Name="OtherFunc" AddOnlyFilesThatMatch="*.cpp" recursive="0"/>
+          </Custom>
+
+          <Custom Name="Templates3.cpp">
+            <Filter Name="Templates3" AddOnlyFilesThatMatch="*.cpp" recursive="0"/>
+          </Custom>
+      
+          <AutoGenerated UnityBuildsNumber="0" >
+          </AutoGenerated>
+      
+        </UnityBuilds> 
+        
+	</Project>
+	
+</Makefile>

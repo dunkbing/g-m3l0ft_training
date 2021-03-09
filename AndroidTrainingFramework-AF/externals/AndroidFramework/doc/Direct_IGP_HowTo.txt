@@ -1,0 +1,16 @@
+Prerequisites:
+- update Android Core Package to the latest revision (rev. 2930 contains the latest code for DIGP)
+- make sure your Android NDK contains all the necessary libraries needed for the ndk-build tool (needed to make the libDirectIGP.so library that is needed for InAppBilling)
+- make sure your cygwin installation contains the following tools: GNU make(min version must be 3.81), bash
+
+How to integrate:
+- in config.bat add "set USE_DIRECT_IGP=1" and make sure the variable GL_DEMO_CODE is properly set to the value of your game's IGP demo code (this is used for tracking purchases in DIGP).
+- in your main activity, add the following function to launch the Direct IGP activity:
+#if USE_DIRECT_IGP
+	public void launchDirectIGP(int language)
+	{
+		Intent myIntent = new Intent(this, APP_PACKAGE.DirectIGP.DirectIGPActivity.class);
+		myIntent.putExtra("language", language);
+		startActivity(myIntent);
+	}
+#endif

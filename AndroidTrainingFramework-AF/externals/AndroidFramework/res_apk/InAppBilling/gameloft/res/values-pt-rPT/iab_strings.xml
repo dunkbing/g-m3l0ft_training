@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <string name="app_name">Android Billing</string> -->
+	<string name="IAB_PURCHASE_IN_PROGRESS">Por favor aguarda... A tua compra está a ser processada.</string>
+	<string name="IAB_TRANSACTION_FAILED">Transacção falhada</string>
+	<string name="IAB_TRANSACTION_FAILED_RETRY">Queres tentar novamente?</string>
+	<string name="IAB_CC_PURCHASE_WITH_CCARD">Podes comprar o {GAME_NAME} com o teu cartão de crédito, por {PRICE} *</string>
+	<string name="IAB_CC_CREATE_ACCOUNT_ONE_CLICK">Por favor insere abaixo os teus dados de facturação</string>
+	<string name="IAB_CC_CREATE_ACCOUNT">Criar uma conta</string>
+	<string name="IAB_CC_FORGOT_PASSWORD">Esqueceste-te da tua password?</string>
+	<string name="IAB_CC_EMAIL">O teu endereço de email</string>
+	<string name="IAB_CC_PASSWORD">Password</string>
+	<string name="IAB_CC_NAME">Detentor do cartão</string>
+	<string name="IAB_CC_CARD_NUMBER">Número do cartão</string>
+	<string name="IAB_CC_EXPIRATION_DATE">Data de expiração</string>
+	<string name="IAB_CC_EXPIRATION_DATE_FORMAT">MM/AAAA</string>
+	<string name="IAB_CC_DF_MONTH">MM</string>
+	<string name="IAB_CC_DF_YEAR">AAAA</string>	
+	<string name="IAB_CC_SECURE_CODE">Código de segurança</string>
+	<string name="IAB_CC_SECURE_CODE_HELP">Últimos 3 dígitos na parte de trás do teu cartão</string>
+	<string name="IAB_CC_ALREADY_HAS_ACCOUNT">Já possuis uma conta na Gameloft</string>
+	<string name="IAB_CC_PAY_WO_ACCOUNT">Pagar directamente, sem criar uma conta</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND">*Garantia de segurança Gameloft.</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND2">A Gameloft utiliza uma avançada tecnologia de segurança com encriptação, para proteger a informação do teu cartão de crédito.</string>
+	<string name="IAB_CC_EMAIL_PRIVACY">**O teu endereço de email será utilizado exclusivamente para te enviar a factura.</string>
+	<string name="IAB_CC_EMAIL_PRIVACY2">Termos e condições completos aqui.</string>
+	<string name="IAB_CC_GAME">Jogo</string>
+	<string name="IAB_CC_PRICE">Preço</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_WRONG_DATA">Algumas das informações inseridas estão incorrectas. Por favor verifica as secções a vermelho que se encontram abaixo.</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_EMAIL_EXISTS">Já existe uma conta associada a esse endereço de email. Podes fazer login com este endereço de email, ou criar uma conta nova.</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_PAY_WO_ACCOUNT">Para que possamos processar o teu pagamento, por favor insere os teus dados de facturação abaixo.</string>
+	<string name="IAB_CC_LOGIN_WRONG_EMAIL_PASSWORD">O endereço de email e/ou password inseridos estão incorrectos. Por favor tenta novamente.</string>
+	<string name="IAB_CC_CREDIT_CARD_EXPIRED">O teu cartão de crédito expirou ou é inválido. Por favor actualiza os teus dados de facturação abaixo.</string>
+	<string name="IAB_CC_INVOICE_SENT">Foi enviado um recibo para o teu endereço de email, como registo.</string>
+	<string name="IAB_CC_ACCOUNT_CREATED_SUCCESSFULLY">A tua conta foi criada com sucesso!</string>
+	<string name="IAB_CC_FORGOT_PASSWORD_QUESTION">Esqueceste-te da tua password?</string>
+	<string name="IAB_CC_ENTER_EMAIL_FOR_RECOVERY_PASSWORD">Por favor insere o teu endereço de email abaixo. Receberás a tua password daqui a alguns segundos.</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_FAIL">Lamentamos,\não conseguimos\encontrar o teu endereço de email. Por favor tenta novamente ou inscreve-te.</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_SUCCES">Por favor verifica o teu email, enviámos-te uma nova password.</string>
+	<string name="IAB_CC_SHORT_EMAIL_EXIST">Esta conta de email já existe.</string>
+	
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP_TITLE">Confirmar a tua compra</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP">Por favor confirma que desejas comprar o {ITEM} por {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_LAYOUT">Desejas comprar o {ITEM} por {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_TITLE">Compra com cartão de crédito</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC">Este objecto apenas pode ser comprado utilizando um cartão de crédito. Por favor confirma que desejas comprar o {ITEM} por {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TITLE">Falha na compra</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE">O nosso serviço foi incapaz de processar a tua compra. Desejas continuar a tua compra, utilizando outro método de pagamento?</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TRY_AGAIN">A tua compra não pôde ser processada pelo nosso serviço. Queres tentar de novo?</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_TITLE">O teu objecto foi comprado correctamente</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS">Obrigado pela tua compra, o teu objecto foi adicionado à tua conta!</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING_TITLE">O teu conteúdo foi comprado.</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING">Obrigado pela tua compra, o teu objecto será adicionado à tua conta mais tarde, devido a um problema com o serviço!</string>
+	<string name="IAB_PURCHASE_ITEM_CHARGE_APPLY">Poderão ser aplicadas taxas devido à transmissão de dados.</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_INFO">Desejas comprar {QUANTITY} {ITEM} por {PRICE}?</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_MESSAGE">Por favor, selecciona o teu método de facturação.</string>
+	<string name="IAB_NETWORK_ERROR_TITLE">Erro de rede</string>
+
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD_TITLE">Seleccionar método de pagamento</string>
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD">Por favor, selecciona o teu método de pagamento preferido antes de continuares a tua compra.</string>
+	<string name="IAB_BTN_OTHER">Alterar método de pagamento</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_TITLE">Tens uma transacção pendente.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING">Estamos a aguardar que o Boku valide a tua compra. Quando a compra for efectuada, actualizaremos a tua lista de objectos.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_SUCCESSFUL">Compra efectuada com sucesso.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_UNSUCCESSFUL">Falha na compra.</string>
+	
+	
+	<string name="IAB_PURCHASE_TITLE">Compra</string>
+	<string name="IAB_PURCHASE_PAY_FOR_THIS_WITH">Pagar com</string>
+	<string name="IAB_PURCHASE_CHOOSE_PAYMENT_METHOD">Selecciona o teu método de pagamento</string>
+	<string name="IAB_PURCHASE_CHANGE_PAYMENT_METHOD">Alterar método de pagamento</string>
+	<string name="IAB_PURCHASE_ITEM_CREDIT_CARD">Cartão de crédito</string>
+	<string name="IAB_PURCHASE_ITEM_ACCOUNT">CONTA GAMELOFT</string>
+	<string name="IAB_PURCHASE_ITEM_ADD_NEW_CREDIT_CARD">Adicionar um novo cartão de crédito</string>
+	<string name="IAB_PURCHASE_ITEM_INFO">{ITEM} por {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_TOTAL">Total: </string>
+	
+	<string name="IAB_PURCHASE_ITEM_PHONE_BILLL">Factura telefónica</string>
+	<string name="IAB_SKB_CONFIRM">Confirmar</string>	
+	<string name="IAB_NETWORK_ERROR">Foi impossível recuperar um perfil de conteúdos válido para o teu operador.</string>
+
+	<string name="IAB_SKB_TCS">Termos e condições</string>
+	<string name="IAB_SKB_CANCEL">Cancelar</string>
+	<string name="IAB_SKB_RETRY">Tentar novamente</string>
+	<string name="IAB_SKB_EXIT">X</string>
+	<string name="IAB_SKB_LOGIN">Entrar</string>
+	<string name="IAB_SKB_YES">Sim</string>
+	<string name="IAB_SKB_NO">Não</string>
+	<string name="IAB_SKB_OK">OK</string>
+	<string name="IAB_SKB_PAY_WITH_CCARD">Pagar com o meu cartão de crédito</string>
+	<string name="IAB_SKB_NEXT">Seguinte</string>
+	<string name="IAB_SKB_CONTINUE">Continuar</string>
+	<string name="IAB_SKB_BUY_NOW">Comprar agora</string>
+	<string name="IAB_SKB_BACK">Anterior</string>
+	<string name="IAB_SKB_PLAY_GAME">Joga!</string>
+	<string name="IAB_CONTINUE">Por favor toca em CONTINUAR para finalizar a compra.</string>
+	<string name="IAB_LOADING">A carregar...</string>
+	<string name="IAB_DOCOMO_CONTINUE">Por favor toca em CONTINUAR para finalizar a compra.</string>
+
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_PSMS">Estamos a aguardar a tua confirmação de entrega do item para validar a tua compra. Quando a compra estiver concluída, actualizaremos a tua lista de itens.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_PSMS">A tua compra anterior não foi bem-sucedida. Não foste cobrado.</string>
+	
+	<string name="IAB_UMP_R3_PAYMENT_INFO">Informação de pagamento</string>
+	<string name="IAB_UMP_R3_PRODUCT_NAME">Nome do produto: {PRODUCT_NAME}</string>
+	<string name="IAB_UMP_R3_PRICE">Preço: {PRICE} (Não inclui custos de SMS).</string>
+	<string name="IAB_UMP_R3_CUSTOMER_SERVICE">\nApoio ao Cliente:: 4006125880</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_1">\n\nCaro cliente, por favor clica em "Confirmar Informações" para concordar em enviar um SMS para {SHORTCODE1} para comprares o produto.</string>
+	<string name="IAB_UMP_R3_BTN_CONFIRM_INFO">Confirmar informações</string>
+	<string name="IAB_UMP_R3_PLEASE_WAIT">Por favor, aguarda</string>
+	<string name="IAB_UMP_R3_SENDING_SMS">A enviar SMS...</string>
+	<string name="IAB_UMP_R3_CONFIRM_PAYMENT">Confirmar o pagamento</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_2">Caro cliente, clica por favor em "Confirmar o Pagamento" para concordares com o envio de outro SMS para {SHORTCODE2}, e concluíres o pagamento.\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT_THANKS">Obrigado por utilizares o serviço de cobrança UMP.\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT">Compraste {PRODUCT_NAME} e foram-te cobrados {PRICE}.\n</string>
+	<string name="IAB_UMP_R3_PAYMENT_FAILURE">Ocorreu um erro ao proceder à compra do item. Por favor, verifica se tens crédito suficiente para a transacção, ou se estás a receber o sinal.</string>
+	<string name="IAB_UMP_R3_PAYMENT_FINISHED">Pagamento concluído</string>
+
+</resources>

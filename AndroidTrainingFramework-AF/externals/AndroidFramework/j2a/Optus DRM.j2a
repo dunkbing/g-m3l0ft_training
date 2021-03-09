@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Optus DRM">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/DRM/OPTUS_DRM"/>
+			<preprocess/>
+		</java>
+		<res>
+			<dir path="../res_apk/DRM/OPTUS_DRM/res"/>
+		</res>
+	</sources>
+</j2a>

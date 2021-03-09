@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="GET_THE_GAME">ゲームをゲット！</string>
+	<string name="CHECKING_LICENSE">ライセンスを確認中…</string>
+	<string name="UNLICENSED_DIALOG_TITLE">ライセンスチェック</string>
+	<string name="UNLICENSED_DIALOG_BODY">無効なライセンス</string>
+	<string name="BUY_BUTTON">ゲームを購入</string>
+	<string name="QUIT_BUTTON">終了</string>
+	<string name="RETRY">リトライ</string>
+	<string name="NETWORK_ERROR_TITLE">注意</string>
+	<string name="NETWORK_ERROR_BODY">ネットワークエラーが発生しました\nもう一度やり直しますか？</string>
+</resources>

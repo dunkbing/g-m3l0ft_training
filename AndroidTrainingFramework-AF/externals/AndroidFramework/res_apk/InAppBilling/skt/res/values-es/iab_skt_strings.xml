@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB_SKT_CONFIRM_DIALOG_TITLE">Confirmar compra</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_QUESTION">¿Quieres comprar el objeto siguiente?</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_ITEM_NAME">Nombre del objeto: {NAME}</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_ITEM_PRICE">Precio del objeto: {PRICE}</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_YES">Sí</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_NO">No</string>
+	<string name="IAB_SKT_RESTORING_TRANSACTIONS_TITLE">Recuperando compras anteriores.</string>
+	<string name="IAB_SKT_RESTORING_TRANSACTIONS">Por favor, espera mientras recuperamos tus compras anteriores.</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="drmlib_optusjg_message_checking"><![CDATA[<div>Memeriksa lisensi untuk game ini. Harap bersabar saat kami menyambung ke server untuk validasi.</div>]]></string>
+	<string name="drmlib_optusjg_message_validated"><![CDATA[<div>Lisensi telah divalidasi.<br/><br/><a href="action:finish">MAINKAN SEKARANG</a></div>]]></string>
+	<string name="drmlib_optusjg_message_noinet"><![CDATA[<div>Kami tidak dapat memverifikasi lisensi untuk game ini. Diperlukan sambungan Internet. <a href="action:retry">COBA LAGI</a> atau lihat halaman <a href="action:help">BANTUAN</a>.</div>]]></string>
+	<string name="drmlib_optusjg_message_refused"><![CDATA[<div>Lisensi untuk game ini tampaknya tidak valid. Baca bagian <a href="action:help">BANTUAN</a>.</div>]]></string>
+	<string name="drmlib_optusjg_message_help"><![CDATA[<div><b>BANTUAN</b><br/><br/>Untuk memvalidasi game, kamu harus tersambung ke Internet (Jaringan Seluler (GPRS) atau Wi-Fi).<br/><br/>Lisensi hanya ditujukan untuk ponsel yang tekait, kamu tidak dapat menginstal game di ponsel lain.<br/><br/>Jika mengalami masalah, hubungi <a href="action:cs">LAYANAN PELANGGAN</a>.]]></string>
+	<string name="DOWNLOAD_FILES_NO_WIFI_QUESTION_OPTUS">Kamu dapat memilih antara Wi-Fi dan jaringan Optus untuk men-download game ini. Tidak dikenakan tagihan data untuk men-download game ini di jaringan Optus.</string>
+	<string name="USE_OPTUS">Jaringan Optus</string>
+</resources>

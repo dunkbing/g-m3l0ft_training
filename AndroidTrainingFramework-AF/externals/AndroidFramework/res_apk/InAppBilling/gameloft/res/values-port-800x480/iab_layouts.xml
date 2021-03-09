@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="iab_main_layout_padding_top">35dp</dimen>
+	
+	<!-- Tittle Bar -->
+	<dimen name="iab_tittle_bar_size_h">40dp</dimen>
+	
+	<!-- Form -->
+	<dimen name="iab_center_margin_top">25dp</dimen>
+	
+	<dimen name="iab_select_billing_method_txtVPurchaseTitle_marginLeft">0dip</dimen>
+	<dimen name="iab_select_billing_method_itemspricelayout_marginLeftRight">0dip</dimen>
+	<dimen name="iab_select_billing_method_totalpriceLayout_marginLeftRight">0dip</dimen>
+	<dimen name="iab_select_billing_method_txtVPayWith_marginLeft">0dip</dimen>
+	
+	
+</resources>

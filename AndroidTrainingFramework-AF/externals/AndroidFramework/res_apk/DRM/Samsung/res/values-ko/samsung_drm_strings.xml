@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DRM_NETWORK_DIALOGUE_1">인터넷에 연결되어 있지 않습니다. Wi-Fi 연결을 구성하거나 통신사 네트워크를 통해 연결하시겠습니까?</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">로컬 시스템의 라이선스가 올바르지 않은 것으로 확인되었습니다. 애플리케이션은 네트워크 연결을 사용하여 라이선스를 확인합니다. 계속 진행하시겠습니까?</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">애플리케이션을 구매하지 않은 것으로 서버에서 확인되었으므로 라이선스가 애플리케이션으로 전송되지 않았습니다. </string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">서버에서 애플리케이션의 매개 변수를 확인한 결과, 값이 올바르지 않은 매개 변수가 하나 이상 있습니다. 전화기가 꺼져 있으면 이러한 결과가 발생할 수 있습니다.</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">데이터베이스 접근 실패 등의 서버 문제가 발생하여, 서버에서 애플리케이션 구매를 확인할 수 없습니다.</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">네트워크 연결 실패로 인해 라이선스가 애플리케이션에 전송되지 않았습니다. 애플리케이션이 서버로부터 응답을 받지 못했습니다.</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">네트워크 연결 실패로 인해 라이선스가 애플리케이션에 전송되지 않았습니다. 애플리케이션의 요청이 서버로 전송되지 않았습니다.</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">라이선스를 로컬 디스크에 저장하지 못했습니다. 디스크 입/출력 오류이거나, 폴더 내에 공간이 부족하거나, 디스크에 라이선스를 저장할 권한이 없기 때문일 수 있습니다. </string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">이러한 문제는 클라이언트가 Zirconia 라이브러리에 있지 않은 서버로부터 라이선스를 요청할 경우에 발생합니다. </string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">이러한 문제는 클라이언트가 잘못된 Zirconia 라이브러리 버전의 서버로부터 라이선스를 요청하여, 라이선스 서버의 지원이 불가능할 경우에 발생합니다. </string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">서버로부터의 라이선스가 올바르지 않습니다.</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">올바르지 않은 서버의 애플리케이션에 라이선스가 전송되었습니다.</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">사용자가 애플리케이션을 수정했습니다.</string>
+
+	<string name="DRM_EZIRCONIA_SUCCESS_1">올바른 라이선스를 성공적으로 받았습니다.</string>
+</resources>

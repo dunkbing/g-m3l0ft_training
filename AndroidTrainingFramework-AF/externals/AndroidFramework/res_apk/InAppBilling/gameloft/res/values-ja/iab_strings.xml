@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <string name="app_name">Android Billing</string> -->
+	<string name="IAB_PURCHASE_IN_PROGRESS">しばらくお待ちください。購入しています…</string>
+	<string name="IAB_TRANSACTION_FAILED">処理に失敗しました</string>
+	<string name="IAB_TRANSACTION_FAILED_RETRY">再度、試しますか？</string>
+	<string name="IAB_CC_PURCHASE_WITH_CCARD">お客様のクレジットカードで{GAME_NAME}を{PRICE}で購入できます。*</string>
+	<string name="IAB_CC_CREATE_ACCOUNT_ONE_CLICK">以下の支払い情報をご入力ください。</string>
+	<string name="IAB_CC_CREATE_ACCOUNT">アカウントを作成</string>
+	<string name="IAB_CC_FORGOT_PASSWORD">パスワードを忘れた場合</string>
+	<string name="IAB_CC_EMAIL">メールアドレス</string>
+	<string name="IAB_CC_PASSWORD">パスワード</string>
+	<string name="IAB_CC_NAME">クレジットカード名義人</string>
+	<string name="IAB_CC_CARD_NUMBER">クレジットカード番号</string>
+	<string name="IAB_CC_EXPIRATION_DATE">有効期限</string>
+	<string name="IAB_CC_EXPIRATION_DATE_FORMAT">MM/YYYY</string>
+	<string name="IAB_CC_DF_MONTH">MM</string>
+	<string name="IAB_CC_DF_YEAR">YYYY</string>	
+	<string name="IAB_CC_SECURE_CODE">確認番号</string>
+	<string name="IAB_CC_SECURE_CODE_HELP">ご署名欄に記載された数字の末尾３ケタ</string>
+	<string name="IAB_CC_ALREADY_HAS_ACCOUNT">既にアカウントが登録されています</string>
+	<string name="IAB_CC_PAY_WO_ACCOUNT">アカウントを作成せずに支払う</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND">*個人情報取り扱いについて</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND2">ゲームロフトはお客様のクレジットカード情報を保護するため、セキュリティの高い暗号技術を使用しております。</string>
+	<string name="IAB_CC_EMAIL_PRIVACY">**お客様のEメールアドレスはご請求書送信以外の目的に使用されることはありません。</string>
+	<string name="IAB_CC_EMAIL_PRIVACY2">利用規約につきましてはこちらをご確認ください。</string>
+	<string name="IAB_CC_GAME">ゲーム：</string>
+	<string name="IAB_CC_PRICE">価格：</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_WRONG_DATA">入力された情報に誤りがあります。赤字の項目をご確認ください。</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_EMAIL_EXISTS">入力されたメールアドレスは既に登録されています。こ ちらのメールアドレスでそのままログイン頂くか、もしくは別のメールアドレスで新しくアカウントを作成してください。</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_PAY_WO_ACCOUNT">支払い処理のために以下の支払い情報をご入力ください。</string>
+	<string name="IAB_CC_LOGIN_WRONG_EMAIL_PASSWORD">お客様が入力したメールアドレス、もしくはパスワードは正しくありません。もう一度ご確認下さい。</string>
+	<string name="IAB_CC_CREDIT_CARD_EXPIRED">お客様のクレジットカードは有効期限が過ぎています。再度ご確認ください。</string>
+	<string name="IAB_CC_INVOICE_SENT">ご登録頂いたメールアドレスに請求明細書を送信しました。</string>
+	<string name="IAB_CC_ACCOUNT_CREATED_SUCCESSFULLY">アカウントを作成しました！</string>
+	<string name="IAB_CC_FORGOT_PASSWORD_QUESTION">パスワードを忘れた場合</string>
+	<string name="IAB_CC_ENTER_EMAIL_FOR_RECOVERY_PASSWORD">以下にお客様のメールアドレスをご入力ください。数秒後にパスワードが送信されます。</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_FAIL">メールアドレスが見つかりません。再度お試しいただくか、再びご登録ください。</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_SUCCES">メールアドレスをご確認ください。新しいパスワードを送信しました。</string>
+	<string name="IAB_CC_SHORT_EMAIL_EXIST">このメールアドレスは既に登録されています。</string>
+	
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP_TITLE">購入確認</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP">{ITEM}を{PRICE}で購入します。よろしいですか？</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_LAYOUT">{ITEM}を{PRICE}で購入します。</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_TITLE">クレジットカード購入</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC">このアイテムはクレジットカードでのみ購入可能です。{ITEM}を{PRICE}で購入します。</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TITLE">購入処理できませんでした</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE">リトライするか、お支払い方法を変更の上、再度お試しください。</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TRY_AGAIN">購入できませんでした。|再度試しますか？</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_TITLE">アイテムを購入しました</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS">ご購入、ありがとうございます。アカウントにアイテムを追加しました。</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING_TITLE">コンテンツを購入しました。</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING">ご購入、ありがとうございます。ご購入いただいたアイテムは後ほどアカウントに追加されます。</string>
+	<string name="IAB_PURCHASE_ITEM_CHARGE_APPLY">データ転送に料金が発生する場合があります。</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_INFO">{QUANTITY}個の{ITEM}を{PRICE}で購入しますか？</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_MESSAGE">支払い方法をお選びください。</string>
+	<string name="IAB_NETWORK_ERROR_TITLE">ネットワークエラー</string>
+
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD_TITLE">支払い方法の選択</string>
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD">購入プロセスを進める前に支払い方法をお選びください。</string>
+	<string name="IAB_BTN_OTHER">支払い方法の変更</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_TITLE">処理が滞っている注文があります。</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING">Bokuによる確認中です。購入が完了次第アイテムリストがアップデートされます。</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_SUCCESSFUL">購入しました。</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_UNSUCCESSFUL">購入できませんでした。</string>
+	
+	
+	<string name="IAB_PURCHASE_TITLE">購入</string>
+	<string name="IAB_PURCHASE_PAY_FOR_THIS_WITH">支払い方法をお選びください。</string>
+	<string name="IAB_PURCHASE_CHOOSE_PAYMENT_METHOD">支払い方法を選択</string>
+	<string name="IAB_PURCHASE_CHANGE_PAYMENT_METHOD">支払い方法を変更する</string>
+	<string name="IAB_PURCHASE_ITEM_CREDIT_CARD">クレジットカード</string>
+	<string name="IAB_PURCHASE_ITEM_ACCOUNT">ゲームロフトアカウント</string>
+	<string name="IAB_PURCHASE_ITEM_ADD_NEW_CREDIT_CARD">新しいクレジットカードを追加する</string>
+	<string name="IAB_PURCHASE_ITEM_INFO">{ITEM}：{PRICE}</string>
+	<string name="IAB_PURCHASE_ITEM_TOTAL">総額： </string>
+	
+	<string name="IAB_PURCHASE_ITEM_PHONE_BILLL">携帯電話料金</string>
+	<string name="IAB_SKB_CONFIRM">決定</string>	
+	<string name="IAB_NETWORK_ERROR">現在、サーバーに接続できません。ご契約内容と、お持ちの携帯電話のネットワーク接続状況をご確認ください。</string>
+
+	<string name="IAB_SKB_TCS">利用規約</string>
+	<string name="IAB_SKB_CANCEL">キャンセル</string>
+	<string name="IAB_SKB_RETRY">リトライ</string>
+	<string name="IAB_SKB_EXIT">X</string>
+	<string name="IAB_SKB_LOGIN">ログイン</string>
+	<string name="IAB_SKB_YES">はい</string>
+	<string name="IAB_SKB_NO">いいえ</string>
+	<string name="IAB_SKB_OK">OK</string>
+	<string name="IAB_SKB_PAY_WITH_CCARD">クレジットカードで支払う</string>
+	<string name="IAB_SKB_NEXT">次へ</string>
+	<string name="IAB_SKB_CONTINUE">コンティニュー</string>
+	<string name="IAB_SKB_BUY_NOW">今すぐ購入</string>
+	<string name="IAB_SKB_BACK">戻る</string>
+	<string name="IAB_SKB_PLAY_GAME">ゲームをプレイ！</string>
+	<string name="IAB_CONTINUE">ゲームに戻ります。</string>
+	<string name="IAB_LOADING">読み込んでいます...</string>
+	<string name="IAB_DOCOMO_CONTINUE">ゲームに戻ります。</string>
+
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_PSMS">アイテムの送達が確認され次第、購入処理が完了し、アイテムリストが更新されます。</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_PSMS">購入できませんでした。料金は発生しません。</string>
+	
+	<string name="IAB_UMP_R3_PAYMENT_INFO">支払い情報</string>
+	<string name="IAB_UMP_R3_PRODUCT_NAME">商品名： {PRODUCT_NAME}</string>
+	<string name="IAB_UMP_R3_PRICE">価格： {PRICE} （SMS送信料は含まれていません）</string>
+	<string name="IAB_UMP_R3_CUSTOMER_SERVICE">\nカスタマーサポート： 4006125880</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_1">\n\n「入力内容確認」をクリックすると{SHORTCODE1}にSMSが送信され、商品を購入します。</string>
+	<string name="IAB_UMP_R3_BTN_CONFIRM_INFO">入力内容確認</string>
+	<string name="IAB_UMP_R3_PLEASE_WAIT">しばらくお待ちください</string>
+	<string name="IAB_UMP_R3_SENDING_SMS">SMSを送信中…</string>
+	<string name="IAB_UMP_R3_CONFIRM_PAYMENT">お支払い</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_2">「お支払い」をクリックすると{SHORTCODE2}にSMSが送信され、お支払いが完了します。\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT_THANKS">UMP支払いサービスをご利用いただきありがとうございました。\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT">{PRODUCT_NAME}の代金{PRICE}のお支払いが完了しました。\n</string>
+	<string name="IAB_UMP_R3_PAYMENT_FAILURE">購入処理を完了できませんでした。口座に十分な残高があるか、またお持ちの携帯電話のネットワーク接続状況をご確認ください。</string>
+	<string name="IAB_UMP_R3_PAYMENT_FINISHED">支払い完了</string>
+
+</resources>

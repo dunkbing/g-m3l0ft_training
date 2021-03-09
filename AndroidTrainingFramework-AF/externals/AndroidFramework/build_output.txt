@@ -1,0 +1,1340 @@
+
+
+
+_______________________________________________________________________________
+																				
+                 Checking tools	                     				
+_______________________________________________________________________________
+
+
+Loading all tool variables...
+Checking tools... 
+
+Done cheching all tools.
+
+
+_______________________________________________________________________________
+
+                 Basic project settings
+_______________________________________________________________________________
+
+
+Type of Build is debug
+Architecture type is arm
+
+Root folder is:   D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\
+Config folder is: D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\..\AndroidFrameworkConfig
+
+Building debug version.
+Building arm native SO.
+
+DistCC config
+GLLEGACY_DISTCC = 
+GLLEGACY_DISTCC_USE_HOSTS = 
+
+Android NDK location config 
+GLLEGACY_DISTCC_DRIVE_SELECTED = T
+GLLEGACY_NDK_HOME = D:\00_Devtools\android-ndk-r9d-x64
+"Using Android NDK r9d (64-bit) from T:\"
+
+SUCCESS: Specified value was saved.
+ANDROID_HOME = D:\00_Devtools\adt-bundle-windows-x86_64\sdk
+
+Create Cygwin user folder...
+Your group is currently "mkpasswd".  This indicates that your
+gid is not in /etc/group and your uid is not in /etc/passwd.
+
+The /etc/passwd (and possibly /etc/group) files should be rebuilt.
+See the man pages for mkpasswd and mkgroup then, for example, run
+
+mkpasswd -l [-d] > /etc/passwd
+mkgroup  -l [-d] > /etc/group
+
+Note that the -d switch is necessary for domain users.
+
+
+_______________________________________________________________________________
+
+                 Configuration settings
+_______________________________________________________________________________
+
+
+
+The folowing values depend of the current SHOP.					
+OPERATOR = ANMP												
+DOWNLOAD_SOURCE = 									
+GGI = 53959															
+GL_DEMO_CODE = CNRL										
+GGC_GAME_CODE = CNRL										
+
+
+
+_______________________________________________________________________________
+
+                 Writing config_Android.h
+_______________________________________________________________________________
+
+
+
+Building config file for ZORO events.
+Reading from file.
+moving to D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\native\GameUtils\_internal\zoro_strings\
+
+Building config_Android.h and config_Android.java
+:: [D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\..\AndroidFrameworkConfig\configs\generated\config_Android.h]
+
+Adding Android Framework defines
+Input value: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsYn2/6VQsECAQyqa5SZHczex2FOHpbPohJFVkujtX6vyElqRYxDPTenMz1gWCoGyPIETMiZMKA5Wop1HR0XRMncFOl5RNEt+/XNPqI7cH60GMj2NHcqpBPOQnJZQLV/3eXdJ43zA+onycjnA5f9UgqKPxCvqV8uKUzMaxldUOgkskqdh0MRMIB9WCdcZWh6By6rBvtX69Lg2XuG770ANNCypdqG4yoYt3gE29JFbqLuMFv/oA5lPwfUMOseOrwsFSSJufIFk0hZmRS4w6DearNNcImdzlgi8qqYrMw2FiNn2TC2h0mOp14azOEjetOgzV6GXS6FyAijwWcQ9sKrTYQIDAQAB
+Adding the define: AMP_EPK
+With the value: 1PLrEk6t+lAdmmGWvwh+GZTl/p8VvIZfbHCyRxYLp/T9wHMotP5wQrIxlmDO7CEt/PQKNcprwmnnue4lpGEYGT7+sj5xWRuOWo34vwOT/8QwvHwd6vtNoErAHhlUDv1bsp6H1OPnQk/x/7cvFxPzrjuSdrO5YmvNOt6aKjzrcXgMmU1rR40NqL2RQYaRgvf2gRzX8jDfv7zFdipVeCGw0PZiJNoUwyDmLO6ywszKJIidQSzCj148UUxy87C6VjXnZdRsmMCWvIC/26LrhfspZQV0bAwq/UZIurSrUUknlmyUXfZ6EmxWCwzGsI+Aspt2DnrI71rzk4iT6gpi2Qiee3nngUqebX3BAo1hlRtdzL2vuy2fJ9T2lPC2m5oUqqvjydFnZn73TYwv70My0nYkiOx4defFNezyx+K2eLMN7sDtPlBu65J+zKrpA3RZxL1s2JKCl85iQSeyWYmAl/0q9IlnR3v3K3ZkXsvIW0Jfucb44lCeeow5YFUBG4GYvLT3MOJeA7VzS7ZE+rwfb9thrQ==
+For the key: CNRL
+Into the file: D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\..\AndroidFrameworkConfig\configs\generated\config_Android.h
+File updated ok...
+The generated key was tested and its ok...
+Done
+
+Adding Legacy defines
+Done
+
+Adding Game Specific defines
+Done
+C:\Python27\python.exe D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\\tools\Config\Config.py D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\..\AndroidFrameworkConfig\configs\generated\config_Android.h
+
+
+_______________________________________________________________________________
+
+                 Compiling the ARM SO 
+_______________________________________________________________________________
+
+
+call D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\\tools\sln2gcc\bin\sln2gcc.exe  -i D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\..\AndroidFrameworkConfig\configs\project\sln2gcc.xml  -t debug  -p all  -g armeabi-v7a  -j 2     
+
+sln2gcc (c) Gameloft 2013 Bucharest, v1.8.0 created by cristian.vasile@gameloft.com .
+
+Input sln2gcc.xml: D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\configs\project\sln2gcc.xml
+Intermediate path: D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\build\generated
+Precompiled path:  D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\build\precompiled
+
+Type of Build: debug
+Gcc config:    armeabi-v7a
+
+No. jobs: 2
+Verbose:  0
+
+D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\configs\project\sln2gcc.xml(1): warning: 'GENERATE_BREAKPAD_SYM' does not have a value! Will assume default value '0'.
+DISTCC Jobs=8
+DISTCC Hosts= bucwks0330,
+Loading settings for project 'Android' from 'sln2gcc.xml' file -> main project!
+D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\configs\project\sln2gcc.xml(1): warning: 'USE_PROPERTY_GROUP_FROM_VS' does not have a value! Will assume default value '0'.
+Loading settings for project 'gtest' from 'sln2gcc.xml' file!
+D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\configs\project\sln2gcc.xml(1): warning: 'USE_PROPERTY_GROUP_FROM_VS' does not have a value! Will assume default value '0'.
+project 'Android'		ready!
+project 'gtest'		ready!
+Project 'gtest' parsing... 
+Project 'gtest' configuration Debug|Win32
+Project 'gtest' output will be 'libgtest.a' 
+Project 'gtest' checking src dependencies... 
+Project 'gtest' checking src dependencies... 1/1
+Project 'gtest' changed 1 file(s)
+Project 'Android' parsing... 
+Project 'Android' configuration Debug|Win32
+Project 'Android' has specific output name 'controller' (flag USE_SPECIFIC_OUTPUT_NAME used)
+Project 'Android' output will be 'libcontroller.so' 
+Project 'Android' checking src dependencies... 
+Project 'Android' checking src dependencies... 1/22
+Project 'Android' checking src dependencies... 2/22
+Project 'Android' checking src dependencies... 3/22
+Project 'Android' checking src dependencies... 4/22
+Project 'Android' checking src dependencies... 5/22
+Project 'Android' checking src dependencies... 6/22
+Project 'Android' checking src dependencies... 7/22
+Project 'Android' checking src dependencies... 8/22
+Project 'Android' checking src dependencies... 9/22
+Project 'Android' checking src dependencies... 10/22
+Project 'Android' checking src dependencies... 11/22
+Project 'Android' checking src dependencies... 12/22
+Project 'Android' checking src dependencies... 13/22
+Project 'Android' checking src dependencies... 14/22
+Project 'Android' checking src dependencies... 15/22
+Project 'Android' checking src dependencies... 16/22
+Project 'Android' checking src dependencies... 17/22
+Project 'Android' checking src dependencies... 18/22
+Project 'Android' checking src dependencies... 19/22
+Project 'Android' checking src dependencies... 20/22
+Project 'Android' checking src dependencies... 21/22
+Project 'Android' checking src dependencies... 22/22
+Project 'Android' changed 22 file(s)
+
+Start to compile 23 file(s)...
+(1/23) Compile: IABGMP.cpp                     	from 'Android'  DONE! (9s)
+distcc[2840] (dcc_connect_by_name) warning: failed to look up host "bucwks0330": Unknown host
+distcc[2840] Warning: failed to distribute D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/InAppBilling/IABGMP.cpp to bucwks0330, running locally instead
+(1): warning: Decrease the jobs for distcc (s_distccJobs=0) because host 'bucwks0330' failed!
+(1): warning: Remove host 'bucwks0330' from distcc hosts list because failed!
+(2/23) Compile: AdManager.cpp                  	from 'Android'  DONE! (9s)
+distcc[9700] (dcc_connect_by_name) warning: failed to look up host "bucwks0330": Unknown host
+distcc[9700] Warning: failed to distribute D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp to bucwks0330, running locally instead
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(2):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.h(27):38: warning: scoped enums only available with -std=c++11 or -std=gnu++11 [enabled by default]
+enum BannerSize : signed int
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(3): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(3):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/../package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(19):14: warning: unused parameter 'size' [-Wunused-parameter]
+void AdManager::SetBannerProperties(BannerSize size, BannerPosition pos)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(19):14: warning: unused parameter 'pos' [-Wunused-parameter]
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(38):14: warning: unused parameter 'language' [-Wunused-parameter]
+bool AdManager::ShowBanner(helpers::Language language)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(70):14: warning: unused parameter 'language' [-Wunused-parameter]
+void AdManager::ShowInterstitial(helpers::Language language, std::string tags)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(70):14: warning: unused parameter 'tags' [-Wunused-parameter]
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(97):14: warning: unused parameter 'language' [-Wunused-parameter]
+void AdManager::LoadFreeCash(helpers::Language language)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(129):14: warning: unused parameter 'language' [-Wunused-parameter]
+void AdManager::ShowFreeCash(helpers::Language language)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(144):14: warning: unused parameter 'isPau' [-Wunused-parameter]
+void AdManager::MarkPAU(bool isPau)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp: In static member function 'static std::string acp_utils::modules::AdManager::ResponseForUrlRequest(const string&)':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(180):3: warning: no return statement in function returning non-void [-Wreturn-type]
+}
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.cpp(160):15: warning: unused parameter 'i_url' [-Wunused-parameter]
+std::string AdManager::ResponseForUrlRequest(const std::string& i_url)
+^
+(3/23) Compile: ABundle.cpp                    	from 'Android'  DONE! (10s)
+distcc[5508] (dcc_connect_by_name) warning: failed to look up host "bucwks0330": Unknown host
+distcc[5508] Warning: failed to distribute D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/ABundle.cpp to bucwks0330, running locally instead
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/ABundle.cpp(7): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/ABundle.cpp(7):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils\package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+(4/23) Compile: package_utils.cpp              	from 'Android'  DONE! (11s)
+distcc[1004] (dcc_connect_by_name) warning: failed to look up host "bucwks0330": Unknown host
+distcc[1004] Warning: failed to distribute D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.cpp to bucwks0330, running locally instead
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.cpp(1): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.cpp(1):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.cpp(652):44: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+const float PackageUtils::GetWidthInInch()
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.cpp(657):45: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+const float PackageUtils::GetHeightInInch()
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.cpp(724):74: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+const acp_utils::helpers::GAIDStatus PackageUtils::GetGoogleAdIdStatus()
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.cpp(744):55: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+const bool PackageUtils::GetIsBatteryCharging()
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.cpp(749):51: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+const bool PackageUtils::GetIsUsbCharging()
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.cpp(754):50: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+const bool PackageUtils::GetIsACCharging()
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/package_utils.cpp(759):50: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+const int PackageUtils::GetBatteryStatus()
+^
+(5/23) Compile: InGameBrowser.cpp              	from 'Android'  DONE! (12s)
+distcc[6664] (dcc_connect_by_name) warning: failed to look up host "bucwks0330": Unknown host
+distcc[6664] Warning: failed to distribute D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/InGameBrowser.cpp to bucwks0330, running locally instead
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/InGameBrowser.cpp(4): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/InGameBrowser.cpp(4):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/InGameBrowser/../package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+(6/23) Compile: internal.cpp                   	from 'Android'  DONE! (3s)
+distcc[9400] (dcc_get_hostlist) Warning: no hostlist is set; can't distribute work
+distcc[9400] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/internal.cpp(3): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/internal.cpp(3):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/internal.cpp: In static member function 'static void acp_utils::acp_internal::Internal::RefreshCachedVars()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/internal.cpp(287):49: warning: unused variable 'bi' [-Wunused-variable]
+acp_utils::helpers::BatteryInfo bi;
+^
+(7/23) Compile: native_hid_controllers.cpp     	from 'Android'  DONE! (13s)
+distcc[5236] (dcc_connect_by_name) warning: failed to look up host "bucwks0330": Unknown host
+distcc[5236] Warning: failed to distribute D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/native_hid_controllers.cpp to bucwks0330, running locally instead
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/native_hid_controllers.cpp(4): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/native_hid_controllers.cpp(4):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/../package_utils.h(11):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/native_hid_controllers.cpp(4): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'thiz' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/native_hid_controllers.cpp(10):25: note: in expansion of macro 'JNI_FUNCTION'
+JNIEXPORT void JNICALL JNI_FUNCTION(GLUtils_controller_NativeBridgeHIDControllers_NativeControllerConnected)(JNIEnv*  env, jobject thiz, jstring ControllerName)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'env' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/native_hid_controllers.cpp(17):25: note: in expansion of macro 'JNI_FUNCTION'
+JNIEXPORT void JNICALL JNI_FUNCTION(GLUtils_controller_NativeBridgeHIDControllers_NativeControllerDisconnected)(JNIEnv*  env, jobject thiz)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'thiz' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/native_hid_controllers.cpp(17):25: note: in expansion of macro 'JNI_FUNCTION'
+JNIEXPORT void JNICALL JNI_FUNCTION(GLUtils_controller_NativeBridgeHIDControllers_NativeControllerDisconnected)(JNIEnv*  env, jobject thiz)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'env' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/native_hid_controllers.cpp(23):25: note: in expansion of macro 'JNI_FUNCTION'
+JNIEXPORT void JNICALL JNI_FUNCTION(GLUtils_controller_NativeBridgeHIDControllers_NativeHandleInputEvents)(JNIEnv*  env, jobject thiz, jint InternalValue, jdouble Value)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'thiz' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Controller/native_hid_controllers.cpp(23):25: note: in expansion of macro 'JNI_FUNCTION'
+JNIEXPORT void JNICALL JNI_FUNCTION(GLUtils_controller_NativeBridgeHIDControllers_NativeHandleInputEvents)(JNIEnv*  env, jobject thiz, jint InternalValue, jdouble Value)
+^
+(8/23) Compile: InAppBilling.cpp               	from 'Android'  DONE! (14s)
+distcc[9612] (dcc_connect_by_name) warning: failed to look up host "bucwks0330": Unknown host
+distcc[9612] Warning: failed to distribute D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/InAppBilling/InAppBilling.cpp to bucwks0330, running locally instead
+(9/23) Compile: app_ut.cpp                     	from 'Android'  DONE! (14s)
+distcc[8828] (dcc_connect_by_name) warning: failed to look up host "bucwks0330": Unknown host
+distcc[8828] Warning: failed to distribute D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp to bucwks0330, running locally instead
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/AndroidUnitTestLogPrinter.h(1): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(12): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/AndroidUnitTestLogPrinter.h(1):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(12): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(12):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/AndroidUnitTestLogPrinter.h: In member function 'virtual void AndroidUnitTestLogPrinter::OnTestEnd(const testing::TestInfo&)':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/AndroidUnitTestLogPrinter.h(130):92: warning: format '%%d' expects a matching 'int' argument [-Wformat=]
+sprintf(buff, "[  FAILED  ] %%s.%%s Time: %%d", test_info.test_case_name(), test_info.name());
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp: warning: In function 'void* runTests(void*)':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(27):6: warning: unused variable 'result' [-Wunused-variable]
+int result = RUN_ALL_TESTS();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(31):1: warning: no return statement in function returning non-void [-Wreturn-type]
+}
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(18):7: warning: unused parameter 'myself' [-Wunused-parameter]
+void* runTests(void *myself)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp: warning: In function 'int SimulateMain(int, char**)':
+D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\build\generated\debug\armeabi-v7a\Android\[-fpermissive] : D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(40):38: warning: invalid conversion from 'int' to 'int*'
+::testing::InitGoogleTest(argc, argv);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(11):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/GoogleTestingFramework/include/gtest/gtest.h(1331):17: warning:   initializing argument 1 of 'void testing::InitGoogleTest(int*, char**)' [-fpermissive]
+GTEST_API_ void InitGoogleTest(int* argc, char** argv);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(45):1: warning: no return statement in function returning non-void [-Wreturn-type]
+}
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp: warning: In function 'void OnGameInit()':
+D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\build\generated\debug\armeabi-v7a\Android\[-fpermissive] : D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(89):30: warning: invalid conversion from 'int*' to 'int'
+SimulateMain(&argc, &argv[0]);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(34):5: warning:   initializing argument 1 of 'int SimulateMain(int, char**)' [-fpermissive]
+int SimulateMain(int argc, char* argv[])
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(114):6: warning: unused parameter 'cs' [-Wunused-parameter]
+void splashScreenFunc(const char* cs)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(118):6: warning: unused parameter 'amount' [-Wunused-parameter]
+void OnIgpReward(int amount, char* type, char* message)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(118):6: warning: unused parameter 'type' [-Wunused-parameter]
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/app_ut.cpp(118):6: warning: unused parameter 'message' [-Wunused-parameter]
+(10/23) Compile: jni_bridge.cpp                 	from 'Android'  DONE! (3s)
+distcc[7152] (dcc_get_hostlist) Warning: no hostlist is set; can't distribute work
+distcc[7152] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(11): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(11):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/../package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(25):24: warning: unused parameter 'pvt' [-Wunused-parameter]
+JNIEXPORT jint JNICALL JNI_OnLoad( JavaVM *vm, void *pvt )
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/JNI_Bridge.h(4):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(15): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'env' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(42):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_SetConnectionType) (JNIEnv*  env, jobject obj, jint connType)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'obj' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(42):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_SetConnectionType) (JNIEnv*  env, jobject obj, jint connType)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'env' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(50):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_SetUserLocation) (JNIEnv*  env, jobject obj, jint usrLocStatus, jdouble usrLocationLatitude, jdouble usrLocationLongitude, jfloat usrLocationAccuracy, jstring usrLocationTime)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'obj' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(50):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_SetUserLocation) (JNIEnv*  env, jobject obj, jint usrLocStatus, jdouble usrLocationLatitude, jdouble usrLocationLongitude, jfloat usrLocationAccuracy, jstring usrLocationTime)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'jenv' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(71):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeInit)(JNIEnv* jenv, jobject obj)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'obj' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(71):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeInit)(JNIEnv* jenv, jobject obj)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'jenv' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(79):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeOnResume)(JNIEnv* jenv, jobject obj)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'obj' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(79):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeOnResume)(JNIEnv* jenv, jobject obj)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'jenv' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(90):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeOnPause) (JNIEnv* jenv, jobject obj)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'obj' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(90):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeOnPause) (JNIEnv* jenv, jobject obj)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'obj' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(100):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeSurfaceChanged)(JNIEnv* jenv, jobject obj, jobject surface, jint w, jint h)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'jenv' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(116):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeOnTouch)(JNIEnv* jenv, jobject obj, jint eventId, jfloat x, jfloat y, jint pointerId)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'obj' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(116):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeOnTouch)(JNIEnv* jenv, jobject obj, jint eventId, jfloat x, jfloat y, jint pointerId)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'jenv' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(122):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeKeyAction)(JNIEnv* jenv, jobject obj, jint keyCode, jboolean pressed)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'obj' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(122):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeKeyAction)(JNIEnv* jenv, jobject obj, jint keyCode, jboolean pressed)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'env' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(133):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeSendKeyboardData)(JNIEnv* env, jclass plugin, jstring textTyped)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'plugin' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(133):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeSendKeyboardData)(JNIEnv* env, jclass plugin, jstring textTyped)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'env' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(170):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeOnIGPClosed)(JNIEnv* env, jclass plugin)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'plugin' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(170):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NativeOnIGPClosed)(JNIEnv* env, jclass plugin)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'jenv' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(189):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_SetBatteryInfo)(JNIEnv* jenv, jobject obj, jboolean isCharging, jboolean usbCharge, jboolean acCharge, jint percent)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'obj' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(189):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_SetBatteryInfo)(JNIEnv* jenv, jobject obj, jboolean isCharging, jboolean usbCharge, jboolean acCharge, jint percent)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'jenv' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(201):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NotifyLowBattery)(JNIEnv* jenv, jobject obj)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'obj' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/jni_bridge.cpp(201):1: note: in expansion of macro 'JNI_FUNCTION'
+JNI_FUNCTION(PackageUtils_JNIBridge_NotifyLowBattery)(JNIEnv* jenv, jobject obj)
+^
+(11/23) Compile: gtest-all.cc                   	from 'gtest'  DONE! (19s)
+(12/23) Compile: cpu-features.c                 	from 'Android'  DONE! (19s)
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+T:/sources/android/cpufeatures/cpu-features.c: warning: In function 'get_file_size':
+T:/sources/android/cpufeatures/cpu-features.c(130):13: warning: unused variable 'ret' [-Wunused-variable]
+int fd, ret, result = 0;
+^
+T:/sources/android/cpufeatures/cpu-features.c: warning: In function 'extract_cpuinfo_field':
+T:/sources/android/cpufeatures/cpu-features.c(202):14: warning: unused variable 'ignore' [-Wunused-variable]
+int len, ignore;
+^
+T:/sources/android/cpufeatures/cpu-features.c: warning: In function 'android_cpuInit':
+T:/sources/android/cpufeatures/cpu-features.c(613):16: warning: unused variable 'architecture' [-Wunused-variable]
+char*  architecture = NULL;
+^
+T:/sources/android/cpufeatures/cpu-features.c(612):16: warning: unused variable 'features' [-Wunused-variable]
+char*  features = NULL;
+^
+(13/23) Compile: UnitTests_Controller.cpp       	from 'Android'  DONE! (3s)
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_Controller.cpp(24):6: warning: unused parameter 'isConnected' [-Wunused-parameter]
+void ControllerConnectedCB (bool isConnected)
+^
+(14/23) Compile: UnitTests_AssetReader.cpp      	from 'Android'  DONE! (3s)
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_AssetReader.cpp(4): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_AssetReader.cpp(4):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_AssetReader.cpp(7):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/AndroidUnitTestLogPrinter.h: In member function 'virtual void AndroidUnitTestLogPrinter::OnTestEnd(const testing::TestInfo&)':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/AndroidUnitTestLogPrinter.h(130):92: warning: format '%%d' expects a matching 'int' argument [-Wformat=]
+sprintf(buff, "[  FAILED  ] %%s.%%s Time: %%d", test_info.test_case_name(), test_info.name());
+^
+(15/23) Compile: UnitTests_LocalPushNotifications.cpp	from 'Android'  DONE! (3s)
+distcc[656] (dcc_get_hostlist) Warning: no hostlist is set; can't distribute work
+distcc[656] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_LocalPushNotifications.cpp(14):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_LocalPushNotifications.cpp: In static member function 'static void LocalPN_UT::AppDeviceTokenCB(const string&, void*)':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../logger.h(13):89: warning: format '%%x' expects argument of type 'unsigned int', but argument 5 has type 'void*' [-Wformat=]
+#define LOG_INFO(...) __android_log_print(ANDROID_LOG_INFO, ACP_LOGGER_TAG, __VA_ARGS__)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_LocalPushNotifications.cpp(93):3: note: in expansion of macro 'LOG_INFO'
+
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_LocalPushNotifications.cpp: In member function 'virtual void LocalPN_UT_SimplifiedPN_LocalNotificationTests_Test::TestBody()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_LocalPushNotifications.cpp(135):6: warning: unused variable 'del0' [-Wunused-variable]
+
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_LocalPushNotifications.cpp(136):6: warning: unused variable 'del1' [-Wunused-variable]
+EXPECT_TRUE(acp_utils::modules::SimplifiedPN::DeleteMessageGroup(1) == 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_LocalPushNotifications.cpp(137):6: warning: unused variable 'del2' [-Wunused-variable]
+EXPECT_TRUE(acp_utils::modules::SimplifiedPN::DeleteMessageGroup(0) == 1);
+^
+(16/23) Compile: virtual_keyboard.cpp           	from 'Android'  DONE! (2s)
+distcc[6016] (dcc_get_hostlist) Warning: no hostlist is set; can't distribute work
+distcc[6016] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/virtual_keyboard.cpp(2): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/virtual_keyboard.cpp(2):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Keyboard/../package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+(17/23) Compile: UnitTests_Package_Utils.cpp    	from 'Android'  DONE! (3s)
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_Package_Utils.cpp(3): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_Package_Utils.cpp(3):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+(18/23) Compile: UnitTests_Virtual_Keyboard.cpp 	from 'Android'  DONE! (3s)
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_Virtual_Keyboard.cpp(4): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_Virtual_Keyboard.cpp(4):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/../../package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/UnitTests_Virtual_Keyboard.cpp(7):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/AndroidUnitTestLogPrinter.h: In member function 'virtual void AndroidUnitTestLogPrinter::OnTestEnd(const testing::TestInfo&)':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/_internal/UnitTests/AndroidUnitTestLogPrinter.h(130):92: warning: format '%%d' expects a matching 'int' argument [-Wformat=]
+sprintf(buff, "[  FAILED  ] %%s.%%s Time: %%d", test_info.test_case_name(), test_info.name());
+^
+(19/23) Compile: native_sensors.cpp             	from 'Android'  DONE! (2s)
+distcc[6904] (dcc_get_hostlist) Warning: no hostlist is set; can't distribute work
+distcc[6904] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Orientation/native_sensors.cpp: In static member function 'static int acp_utils::modules::AndroidSensorManager::OnSensorChanged(int, int, void*)':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Orientation/native_sensors.cpp(291):12: warning: unused variable 'azimuth' [-Wunused-variable]
+float azimuth = event.vector.azimuth;
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Orientation/native_sensors.cpp: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Orientation/native_sensors.cpp(245):7: warning: unused parameter 'fd' [-Wunused-parameter]
+int AndroidSensorManager::OnSensorChanged(int fd, int events, void* data)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Orientation/native_sensors.cpp(245):7: warning: unused parameter 'events' [-Wunused-parameter]
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Orientation/native_sensors.cpp(245):7: warning: unused parameter 'data' [-Wunused-parameter]
+(20/23) Compile: DataSharing.cpp                	from 'Android'  DONE! (2s)
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/DataSharing.cpp(5): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/DataSharing.cpp(5):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/DataSharing/..\package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+(21/23) Compile: simplified_pn.cpp              	from 'Android'  DONE! (2s)
+distcc[10036] (dcc_get_hostlist) Warning: no hostlist is set; can't distribute work
+distcc[10036] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/simplified_pn.cpp(9): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/simplified_pn.cpp(9):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/..\package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+(22/23) Compile: jni_bridge_pn.cpp              	from 'Android'  DONE! (4s)
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/jni_bridge_pn.h(5):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/jni_bridge_pn.cpp(5): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'env' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/jni_bridge_pn.cpp(16):25: note: in expansion of macro 'JNI_FUNCTION'
+JNIEXPORT void JNICALL JNI_FUNCTION(PushNotification_SimplifiedAndroidUtils_nativeSendPNData) (JNIEnv* env, jclass thiz, jstring notificationData)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'thiz' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/jni_bridge_pn.cpp(16):25: note: in expansion of macro 'JNI_FUNCTION'
+JNIEXPORT void JNICALL JNI_FUNCTION(PushNotification_SimplifiedAndroidUtils_nativeSendPNData) (JNIEnv* env, jclass thiz, jstring notificationData)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'env' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/jni_bridge_pn.cpp(30):25: note: in expansion of macro 'JNI_FUNCTION'
+JNIEXPORT void JNICALL JNI_FUNCTION(PushNotification_SimplifiedAndroidUtils_nativeSendRegistrationData) (JNIEnv* env, jclass thiz, jstring regData)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFrameworkConfig/configs/generated/config_Android.h(37):33: warning: unused parameter 'thiz' [-Wunused-parameter]
+#define JNI_FUNCTION(function)  Java_com_gameloft_android_ANMP_GloftCNRL_ ## function
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/PushNotification/jni_bridge_pn.cpp(30):25: note: in expansion of macro 'JNI_FUNCTION'
+JNIEXPORT void JNICALL JNI_FUNCTION(PushNotification_SimplifiedAndroidUtils_nativeSendRegistrationData) (JNIEnv* env, jclass thiz, jstring regData)
+^
+(23/23) Compile: AssetReader.cpp                	from 'Android'  DONE! (2s)
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../package_utils.h(15):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/AssetReader.cpp(5): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Lock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../ScopeMutex.h(43):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_lock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../ScopeMutex.h: In member function 'void acp_utils::Mutex::Unlock()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../ScopeMutex.h(48):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_unlock(&mMutex);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../ScopeMutex.h: In constructor 'acp_utils::Mutex::Mutex()':
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../ScopeMutex.h(53):8: warning: unused variable 'result' [-Wunused-variable]
+int result = pthread_mutex_init(&mMutex, 0);
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/AssetReader.cpp(5):0: : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../package_utils.h: At global scope:
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../package_utils.h(751):71: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const acp_utils::helpers::GAIDStatus    GetGoogleAdIdStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../package_utils.h(855):47: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetWidthInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../package_utils.h(862):48: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const float          GetHeightInInch();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../package_utils.h(889):90: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsBatteryCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../package_utils.h(898):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsUsbCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../package_utils.h(907):85: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const bool                                       GetIsACCharging();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/../package_utils.h(917):86: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+static const int                                        GetBatteryStatus();
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/acp_utils.h(8):0, : In file included from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/AssetReader.cpp(11): : from
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/Ads/AdManager.h(27):38: warning: scoped enums only available with -std=c++11 or -std=gnu++11 [enabled by default]
+enum BannerSize : signed int
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/AssetReader.cpp(36):7: warning: unused parameter 'stream' [-Wunused-parameter]
+int AssetReader::write(void* stream, const char* ptr, int size)
+^
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/AssetReader.cpp(36):7: warning: unused parameter 'ptr' [-Wunused-parameter]
+D:/04_Project/training/AndroidFramework/DemoEntryPoint/AndroidFramework/native/GameUtils/AssetReader/AssetReader.cpp(36):7: warning: unused parameter 'size' [-Wunused-parameter]
+
+Start to execute 3 link command(s)...
+(1/3) Link: libgtest.a DONE! (0s)
+T:/toolchains/arm-linux-androideabi-4.8/prebuilt/windows-x86_64/bin/arm-linux-androideabi-ar.exe: creating libgtest.a
+(2/3) Link: libcontroller.so DONE! (1s)
+(3/3) Generate DSYM: libcontroller.dsym DONE! (0s)
+No new libs needs copying.
+
+Compile time 0m34s
+
+_______________________________________________________________________________
+
+
+D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\build\generated\debug\armeabi-v7a\Android\libcontroller.so -> D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\libs\armeabi-v7a\libcontroller.so
+1 File(s) copied
+D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\build\generated\debug\armeabi-v7a\Android\libcontroller.dsym -> D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\bin\libcontroller.dsym
+1 File(s) copied
+D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\build\generated\debug\armeabi-v7a\Android\libcontroller.dsym -> D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\build\bin\armeabi-v7a\libcontroller.dsym
+1 File(s) copied
+T:\prebuilt\android-arm\gdbserver\gdbserver -> D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\libs\armeabi-v7a\gdbserver
+1 File(s) copied
+
+
+Java build: type of build is debug.
+
+
+
+_______________________________________________________________________________
+
+                 Preprocessing java and resources
+_______________________________________________________________________________
+
+
+Using j2a resource management
+
+Installer Version: 3.7.12547
+Android SDK Version: 23.0.2
+Cleaning ...
+
+START Preprocess
+
+Reading Java2Android
+
+  STARTED the Java to Android process.
+
+    Acquiring project parameters.
+
+      Looking in "D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\j2a\java2android.xml".
+      End.
+
+      Looking in "D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\configs\project\java2android.xml".
+      End.
+
+    Done.
+
+
+    Filling up boolean flags table.
+
+      Looking in "D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\configs\generated\config_Android.h".
+      End.
+
+    Done.
+
+
+    Constructing additional libraries list.
+
+      Looking in "D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\j2a\java2android.xml".
+      End.
+
+      Looking in "D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFrameworkConfig\configs\project\java2android.xml".
+      End.
+
+    Done.
+
+
+    Processing additional libraries.
+
+      Processing "D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\j2a\Common.j2a".
+      End.
+
+      Processing "D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\j2a\GoogleAnalyticsTracking.j2a".
+      End.
+
+      Processing "D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\j2a\LibGenerator.j2a".
+      End.
+
+      Processing "D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\j2a\Utils.j2a".
+      End.
+
+      Processing "D:\04_Project\training\AndroidFramework\DemoEntryPoint\AndroidFramework\res_apk\utils\external_libs\google-play-services_lib\Google Play Services.j2a".
+Downloading https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Unzipping C:\Users\tale.developer\.gradle\wrapper\dists\gradle-2.2.1-all\6dibv5rcnnqlfbq9klf8imrndn\gradle-2.2.1-all.zip to C:\Users\tale.developer\.gradle\wrapper\dists\gradle-2.2.1-all\6dibv5rcnnqlfbq9klf8imrndn
+Download https://jcenter.bintray.com/com/android/tools/build/gradle/1.1.0/gradle-1.1.0.pom
+Download https://jcenter.bintray.com/com/android/tools/build/gradle-core/1.1.0/gradle-core-1.1.0.pom
+Download https://jcenter.bintray.com/com/android/tools/build/builder/1.1.0/builder-1.1.0.pom
+Download https://jcenter.bintray.com/com/android/tools/lint/lint/24.1.0/lint-24.1.0.pom
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1.pom
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-parent/5.1/proguard-parent-5.1.pom
+Download https://jcenter.bintray.com/com/android/tools/build/builder-model/1.1.0/builder-model-1.1.0.pom
+Download https://jcenter.bintray.com/com/android/tools/build/builder-test-api/1.1.0/builder-test-api-1.1.0.pom
+Download https://jcenter.bintray.com/com/android/tools/sdklib/24.1.0/sdklib-24.1.0.pom
+Download https://jcenter.bintray.com/com/android/tools/sdk-common/24.1.0/sdk-common-24.1.0.pom
+Download https://jcenter.bintray.com/com/android/tools/common/24.1.0/common-24.1.0.pom
+Download https://jcenter.bintray.com/com/android/tools/build/manifest-merger/24.1.0/manifest-merger-24.1.0.pom
+Download https://jcenter.bintray.com/com/android/tools/ddms/ddmlib/24.1.0/ddmlib-24.1.0.pom
+Download https://jcenter.bintray.com/com/squareup/javawriter/2.5.0/javawriter-2.5.0.pom
+Download https://jcenter.bintray.com/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+Download https://jcenter.bintray.com/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.pom
+Download https://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+Download https://jcenter.bintray.com/org/ow2/ow2/1.3/ow2-1.3.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.pom
+Download https://jcenter.bintray.com/com/android/tools/lint/lint-checks/24.1.0/lint-checks-24.1.0.pom
+Download https://jcenter.bintray.com/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4.pom
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-base/5.1/proguard-base-5.1.pom
+Download https://jcenter.bintray.com/com/android/tools/annotations/24.1.0/annotations-24.1.0.pom
+Download https://jcenter.bintray.com/com/android/tools/layoutlib/layoutlib-api/24.1.0/layoutlib-api-24.1.0.pom
+Download https://jcenter.bintray.com/com/android/tools/dvlib/24.1.0/dvlib-24.1.0.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/33/commons-parent-33.pom
+Download https://jcenter.bintray.com/org/apache/apache/13/apache-13.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-client/4.1.1/httpcomponents-client-4.1.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/project/4.1.1/project-4.1.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-client/4.1/httpcomponents-client-4.1.pom
+Download https://jcenter.bintray.com/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom
+Download https://jcenter.bintray.com/com/google/guava/guava/17.0/guava-17.0.pom
+Download https://jcenter.bintray.com/com/google/guava/guava-parent/17.0/guava-parent-17.0.pom
+Download https://jcenter.bintray.com/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.pom
+Download https://jcenter.bintray.com/com/android/tools/lint/lint-api/24.1.0/lint-api-24.1.0.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-core/4.1/httpcomponents-core-4.1.pom
+Download https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/5/commons-parent-5.pom
+Download https://jcenter.bintray.com/org/apache/apache/4/apache-4.pom
+Download https://jcenter.bintray.com/commons-codec/commons-codec/1.4/commons-codec-1.4.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/11/commons-parent-11.pom
+Download https://jcenter.bintray.com/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.pom
+Download https://jcenter.bintray.com/com/android/tools/build/gradle/1.1.0/gradle-1.1.0.jar
+Download https://jcenter.bintray.com/com/android/tools/build/gradle-core/1.1.0/gradle-core-1.1.0.jar
+Download https://jcenter.bintray.com/com/android/tools/build/builder/1.1.0/builder-1.1.0.jar
+Download https://jcenter.bintray.com/com/android/tools/lint/lint/24.1.0/lint-24.1.0.jar
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1.jar
+Download https://jcenter.bintray.com/com/android/tools/build/builder-model/1.1.0/builder-model-1.1.0.jar
+Download https://jcenter.bintray.com/com/android/tools/build/builder-test-api/1.1.0/builder-test-api-1.1.0.jar
+Download https://jcenter.bintray.com/com/android/tools/sdklib/24.1.0/sdklib-24.1.0.jar
+Download https://jcenter.bintray.com/com/android/tools/sdk-common/24.1.0/sdk-common-24.1.0.jar
+Download https://jcenter.bintray.com/com/android/tools/common/24.1.0/common-24.1.0.jar
+Download https://jcenter.bintray.com/com/android/tools/build/manifest-merger/24.1.0/manifest-merger-24.1.0.jar
+Download https://jcenter.bintray.com/com/android/tools/ddms/ddmlib/24.1.0/ddmlib-24.1.0.jar
+Download https://jcenter.bintray.com/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar
+Download https://jcenter.bintray.com/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar
+Download https://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar
+Download https://jcenter.bintray.com/com/android/tools/lint/lint-checks/24.1.0/lint-checks-24.1.0.jar
+Download https://jcenter.bintray.com/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4.jar
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-base/5.1/proguard-base-5.1.jar
+Download https://jcenter.bintray.com/com/android/tools/annotations/24.1.0/annotations-24.1.0.jar
+Download https://jcenter.bintray.com/com/android/tools/layoutlib/layoutlib-api/24.1.0/layoutlib-api-24.1.0.jar
+Download https://jcenter.bintray.com/com/android/tools/dvlib/24.1.0/dvlib-24.1.0.jar
+Download https://jcenter.bintray.com/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar
+Download https://jcenter.bintray.com/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar
+Download https://jcenter.bintray.com/com/google/guava/guava/17.0/guava-17.0.jar
+Download https://jcenter.bintray.com/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar
+Download https://jcenter.bintray.com/com/android/tools/lint/lint-api/24.1.0/lint-api-24.1.0.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar
+Download https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+Download https://jcenter.bintray.com/commons-codec/commons-codec/1.4/commons-codec-1.4.jar
+Download https://jcenter.bintray.com/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar
+
+BUILD FAILED
+
+Total time: 15 mins 59.392 secs
+
+  Error: Could not find build artefact
+
+
+_______________________________________________________________________________
+
+	Java2Android Failed. Stop the script and fix the issue.
+_______________________________________________________________________________
+
+
+
+
+

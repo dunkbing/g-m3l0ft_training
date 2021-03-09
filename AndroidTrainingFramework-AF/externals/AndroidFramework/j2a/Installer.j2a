@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Installer">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/installer"/>
+			<preprocess/>
+		</java>
+		<res>
+			<dir path="../res_apk/installer/res"/>
+		</res>
+	</sources>
+</j2a>

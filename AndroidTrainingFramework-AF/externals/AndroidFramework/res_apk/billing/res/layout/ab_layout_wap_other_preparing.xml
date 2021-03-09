@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/LinearLayout01" 
+				android:gravity="center" 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:background="@drawable/ab_background">
+				<FrameLayout android:id="@+id/FrameLayout00"
+							android:layout_height="fill_parent" 
+							android:layout_width="fill_parent">
+							<FrameLayout android:id="@+id/FrameLayoutDialog"
+										android:layout_height="fill_parent" 
+										android:layout_width="fill_parent"
+										android:padding="@dimen/ab_main_layout_padding">
+									    <LinearLayout android:id="@+id/LinearLayoutDialog" 
+									    			android:layout_width="fill_parent" 
+									    			android:layout_height="fill_parent"
+									    			android:orientation="vertical"
+									    			android:background="@drawable/ab_alpha_box">
+													<TextView android:id="@+id/lblMessagePleaseWait" 
+																android:layout_height="wrap_content" 
+																android:layout_width="wrap_content" 
+																android:text="@string/AB_ENTER_UNLOCK_CODE_PROGRESS" 
+																android:layout_marginTop="@dimen/ab_textview_margin_from_header"
+																android:layout_gravity="center|top">
+													</TextView>
+													<ProgressBar android:id="@+id/ProgressBar01" 
+																android:layout_width="wrap_content" 
+																android:layout_height="wrap_content" 
+																style="?android:attr/progressBarStyleInverse"
+																android:layout_gravity="center" android:layout_marginTop="@dimen/ab_progress_center_gap">
+													</ProgressBar>
+									</LinearLayout>
+							</FrameLayout>
+							<FrameLayout android:id="@+id/FrameLayoutHeader"
+										android:layout_width="fill_parent" 
+										android:layout_gravity="top"
+										android:background="@drawable/ab_top_bar"
+										android:layout_height="@dimen/ab_tittle_bar_size_h">
+										<ImageView android:id="@+id/ImageView01"
+													android:layout_width="wrap_content"
+													android:layout_height="wrap_content"
+													android:src="@drawable/ab_logo_tittle_horiz"
+													android:paddingTop="@dimen/ab_logo_tittle_gap"
+													android:paddingLeft="@dimen/ab_logo_tittle_gap">
+										</ImageView>
+							</FrameLayout>
+				</FrameLayout>
+</LinearLayout>

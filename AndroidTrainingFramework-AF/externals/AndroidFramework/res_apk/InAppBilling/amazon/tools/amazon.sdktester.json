@@ -1,0 +1,44 @@
+{
+  "com.gameloft.gllegacy.allcars" : {
+    "itemType": "CONSUMABLE",
+    "price": 1.99,
+	"title": "All cars",
+	"description": "Unlock all cars",
+    "smallIconUrl": "http://ico.url/mighty.eagle"
+  },
+  "com.gameloft.gllegacy.1month" : {
+    "itemType": "ENTITLED",
+    "price": 0.99,
+	"title": "1 Month Subscription",
+	"description": "Get 1 Month Subscription",
+    "smallIconUrl": "http://ico.url/mighty.eagle"
+  },
+  "com.gameloft.gllegacy.cash1" : {
+    "itemType": "CONSUMABLE",
+    "price": 1.99,
+	"title": "10 Cash",
+	"description": "Get 10 Cash",
+    "smallIconUrl": "http://ico.url/mighty.eagle"
+  },
+  "com.gameloft.gllegacy.ruby1" : {
+    "itemType": "CONSUMABLE",
+    "price": 0.99,
+    "title": "Pile of Diamonds!",
+    "description": "Pack of 20 Diamonds!",
+    "smallIconUrl": "http://ico.url/angry.birds.helper"
+  },
+  "com.gameloft.gllegacy.cash2" : {
+    "itemType": "CONSUMABLE",
+    "price": 2.99,
+    "title": "50 Cash!",
+    "description": "Get 50 Cash!",
+    "smallIconUrl": "http://ico.url/angry.birds.helper"
+  },
+  "com.gameloft.gllegacy.ruby2" : {
+    "itemType": "CONSUMABLE",
+    "price": 4.99,
+    "title": "A Tramcar of 100 Diamonds!",
+    "description": "Get a tramcar of 100 diamonds!",
+    "smallIconUrl": "http://ico.url/angry.birds.helper"
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/LinearLayout01" 
+				android:gravity="center" 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent" android:background="#000000">
+				<FrameLayout android:id="@+id/FrameLayout00"
+							android:layout_height="fill_parent" 
+							android:layout_width="fill_parent">
+					<WebView android:id="@+id/webview" android:layout_height="fill_parent" android:layout_width="fill_parent"></WebView>
+							
+				<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/bt_ly_wap_billing_next" android:minWidth="@dimen/iab_button_next_size" android:text="@string/IAB_SKB_PLAY_GAME" android:layout_gravity="bottom|center" android:textColor="@color/iab_black"></Button>
+<Button android:layout_width="wrap_content" android:text="@string/IAB_SKB_EXIT" android:id="@+id/bt_ly_wap_billing_exit" android:layout_height="wrap_content" android:minWidth="@dimen/iab_small_button_width" android:layout_gravity="top|right"></Button>
+</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="iab_button_text">#ff000000</color>
+   <color name="iab_info_text">#ff000000</color>
+   <color name="iab_tittle_text">#ff010101</color>
+   <color name="iab_black">#ff000000</color>
+   <color name="iab_background">#ffB8B8B8</color>
+   <color name="iab_separation">#ff000000</color>
+   <color name="iab_wrong_lbl_info">#ffff0000</color>
+   <color name="iab_light_blue">#ff075AA0</color>
+   <color name="iab_image_game_background">#ff000000</color>
+   <color name="iab_red">#FFFF0000</color>
+   
+   <color name="iab_fade">#af000000</color>
+
+   <color name="iab_green_start">#1DA221</color>
+   <color name="iab_green_end">#7CD577</color>
+</resources>

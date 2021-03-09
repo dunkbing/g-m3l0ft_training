@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">無法購買</string>
+    <string name="billing_not_supported_message">目前無法使用 Market 的付款服務。您可以繼續使用本應用程式，但無法購物。</string>
+    <string name="cannot_connect_title">無法連線至 Market</string>
+    <string name="cannot_connect_message">本應用程式無法連線至 Market。您的 Market 版本可能已過期。您可以繼續使用本應用程式，但無法購物。</string>
+    <string name="waitting_confirm">我們正在等候 Cafe Bazaar 確認您的訂單。完成訂購後，我們就會更新您的商品清單。</string>
+    <string name="pending_transaction">您有一筆交易待完成。</string>
+	<string name="purchase_success">購買成功。</string>
+	<string name="purchase_unsuccess">購買失敗。</string>
+	<string name="iab_retry">重試</string>
+	<string name="iab_cancel">取消</string>
+	<string name="iab_ok">確定</string>
+</resources>

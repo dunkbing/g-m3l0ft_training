@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="kddi_popup_message">As a Smart Pass user, you have received a @{amount} @{objImage} gift! Come and have fun every month to get more @{objImage}!</string>
+</resources>

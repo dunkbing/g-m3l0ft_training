@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="Google Play Services">
+	<build type="AndroidLibrary" artefact="google-play-services-v5.0.77-000">
+		<minSdkVersion value="9" />
+		<targetSdkVersion value="19" />
+		<compileSdkVersion value="19" />
+		<buildToolsVersion value="19.1" />
+	</build>
+	<sources>
+		<manifest path="AndroidManifest.xml"/>
+	<!--	<proguard path="proguard.txt"/> <!-- ??? --> 
+		<java>
+			<dir path="src"/>
+		</java>
+		<res>
+			<dir path="res"/>
+		</res>
+		<libs>
+			<dir path="libs"/>
+		</libs>
+	</sources>
+</j2a>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="TMO_SERVER_VALIDATE_REQUIRED">ネットワーク接続が見つかりません。ライセンスを有効にするためにはT-Mobileのネットワークに接続する必要があります。</string>
+	<string name="INVALID_LICENSE">登録の期限が切れているか、アプリを購入する必要があります。</string>
+	<string name="TMO_LICENSE">http://projps.t-mobile.com/DS/server/123/extCheckSubscriptionForItem?item_id={E}</string>
+	<string name="VALIDATING_LICENSE">ライセンスを有効にしています…</string>
+</resources>

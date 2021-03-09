@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB_SKT_CONFIRM_DIALOG_TITLE">Satin Almayi Onayla</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_QUESTION">Su ürünü satin almak istiyor musun?</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_ITEM_NAME">Ürün adi: {NAME}</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_ITEM_PRICE">Ürün fiyati: {PRICE}</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_YES">Evet</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_NO">Hayir</string>
+	<string name="IAB_SKT_RESTORING_TRANSACTIONS_TITLE">Restoring previous purchases.</string>
+	<string name="IAB_SKT_RESTORING_TRANSACTIONS">Please wait while your previous purchases are restored.</string>
+</resources>

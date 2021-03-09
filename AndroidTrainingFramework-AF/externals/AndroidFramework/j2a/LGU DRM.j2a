@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - LGU DRM">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/DRM/LGU_DRM"/>
+			<preprocess/>
+		</java>
+		<res>
+			<dir path="../res_apk/DRM/LGU_DRM/res"/>
+		</res>
+		<libs>
+			<dir path="../res_apk/DRM/LGU_DRM/libs"/>
+		</libs>
+	</sources>
+</j2a>

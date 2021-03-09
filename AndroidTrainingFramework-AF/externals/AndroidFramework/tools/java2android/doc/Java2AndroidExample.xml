@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<java2android>																		<!-- The root node can contain a <project> tag and a <libs> tag. -->
+																					<!-- Multiple java2android.xml files can be used. These will be processed in order. -->
+																					<!-- The values in the <project> node can be overwritten or appended to the former values, depending on the specific property. -->
+																					<!-- If not specified otherwise, you can assume the new values will overwrite the old ones -->
+																					<!-- The list of libraries in the <libs> node will be appended to the already existing list. -->
+	<project>																		<!-- The project node describes the project's build and environment properties. -->
+		<build>
+			<minSdkVersion value="9" />												<!-- This parameter is optional -->
+			<targetSdkVersion value="19" />											<!-- This parameter is optional -->
+			<compileSdkVersion value="19" />										<!-- This parameter mandatory. If not specified a warning will be printed and the default value will be used. -->
+			<buildToolsVersion value="19.1" />										<!-- This parameter mandatory. If not specified a warning will be printed and the default value will be used. -->
+			<applicationId value="com.gameloft.android.ANMP.GloftCNRL"/>			<!-- This parameter is optional. If not used, the manifest equivalent will be used instead. -->
+			<signature>																<!-- These are used for signing the release .apk file -->
+				<keystorepath value="GAMELOFT_KEY.keystore"/>						<!-- The keystore file path is relative to the java2android.xml file. -->
+				<keystorepass value="123456"/>										<!-- If any of the signature values are not set, a warning will be printed and the defaults will be used. -->
+				<keyname value="Gameloft"/>
+				<keypass value="123456"/>
+			</signature>
+			<architectures>															<!-- The node can be omitted but it must not be empty. -->
+																					<!-- If no architecture is specified, , a warning will be printed and the defaults will be used. -->
+				<type name="armeabi-v7a"/>											<!-- The value can be one of the following: "arm", "aremeabi", "armeabi-v7a", "x86", "arm-x64", "aremeabi-x64", "armeabi-v7a-x64", "x86-x64". -->
+				<type name="x86"/>													<!-- Each architecture type also set one of the following boolean variables to true: -->
+																					<!-- 		"use_arm", "use_aremeabi", "use_armeabi_v7a", "use_x86", "use_arm_x64", "use_aremeabi_x64", "use_armeabi_v7a_x64", "use_x86_x64". -->
+			</architectures>														
+			<incrementalbuild value="true"/>										<!-- If set to false every piece of the project will be rebuilt from scratch. -->
+																					<!-- If not specified, a warning will be printed and the default will be used. -->
+																					<!-- === THIS PARAMETER IS CURRENTLY NOT USED === -->
+			<lintOptions>
+				<!-- Gradle specific build commands go here. -->
+				<!-- New options will replace the old ones. -->
+			</lintOptions>
+			<packagingOptions>
+				<!-- Gradle specific build commands go here. -->
+				<!-- New options will be appended after the old ones. -->
+			</packagingOptions>
+			
+			<exclude>																<!-- List of elements to be excluded form the final build. -->
+				<jar name="nameOfJarFileInLibsFolder.jar">							<!-- Remove classes from a .jar file in the "libs" folder. -->
+					<class path="com/get/da/voodoo/MyClass.class"/>					<!-- Remove a specific class from the .jar file. -->
+					<class path="com/get/da/voodoo/MyOtherLarge*"/>					<!-- Remove all classes that fit the wildcard. -->
+					<class path="com/get/da/voodoo/mon"/>							<!-- Remove an entire package. -->
+					<class path="*"/>												<!-- Remove everything from the .jar file. -->
+				</jar>
+				<!-- ... -->
+				<jar name="moreJarFiles.jar">
+					<!-- ... -->
+				</jar>
+			</exclude>
+			
+		</build>
+		<workspace path="_work">													<!-- The path to the workspace relative to the java2android.xml file. -->
+			<manifest path="AndroidManifest.xml"/>									<!-- The rest of the paths in the workspace node are relative to the workspace folder. -->
+			<proguard path="proguard.cfg"/>											<!-- If any of the workspace paths are used but are not specified then a warning will be printed and the default value will be used -->
+			<java path="java"/>
+			<aidl path="aidl"/>
+			<res path="res"/>
+			<assets path="assets"/>
+			<libs path="libs"/>
+			<jniLibs path="libs"/>
+		</workspace>
+		<flags path="path/to/file/goes.here"/>										<!-- The path to the file used to populate the boolean table. The path is relative to the java2android.xml file.  -->
+																					<!-- New flag files are appended to the list. -->
+																					<!-- The files in the list are processed in order and the values each new file defines may overwrite old ones. -->
+		<preprocess>																<!-- The header files listed here are general files used in the preprocessing of all the sources. -->
+			<include path="path/to/file/goes.here"/>								<!-- Files described by the include tags define constants used in preprocessing -->
+			<!-- ... More include tags go here... -->
+			<macros path="path/to/file/goes.here"/>									<!-- Files described by the macros tags define macros used in preprocessing -->
+			<!-- ... More macros tags go here... -->
+																					<!-- The include and macros file function similar to the flags file, in the way that they are processed and in the way the overwrite values. -->
+																					<!-- The headers listed here are processed before any specific include and macros headers found in the ".j2a" files -->
+		</preprocess>
+	</project>
+	
+	<libs>																			<!-- The libs node contains <group> and <j2a> tags. -->
+		<group>																		<!-- Each group also contains "group" and "j2a" tags. -->
+			<group if="USE_THIS_LIB">												<!-- Each "group" and "j2a" tag can contain an optional "if" attribute describing a boolean expression. -->
+				<j2a 						path="ThiSubLib.j2a"/>					<!-- Each "j2a" tag also contains a mandatory "path" attribute for a .j2a file which describes a library. -->
+				<j2a if="TRUE_EXPRESSION"	path="Optional\Sub\Lib\Path_0.j2a"/>	<!-- If the expression is evaluated as true the respective tag will be processed further. -->
+				<j2a if="FALSE_EXPRESSION"	path="Optional\Sub\Lib\Path_1.j2a"/>	<!-- Otherwise it will not. -->
+				<j2a if=""					path="Sub\Lib\Path_0.j2a"/>				<!-- If the "if" argument is empty, -->
+				<j2a 						path="Sub\Lib\Path_1.j2a"/>				<!-- or if it is omitted completely, the respective tag will not be processed. -->
+			</group>
+			<j2a if="USE_LIB_0" path="lib_0.j2a"/>									<!-- The if expressions are used to determine which libraries will or will not make it in the final workspace folder. -->
+			<j2a if="USE_LIB_1" path="lib_1.j2a"/>									<!-- These four libraries are not mutually exclusive. -->
+			<j2a if="USE_LIB_2" path="lib_2.j2a"/>
+			<j2a if="USE_LIB_3" path="lib_3.j2a"/>
+		</group>
+		<group>																		<!-- The boolean expressions can contain the "not" ("!"), "and" ("&&") and "or" ("||") operators. -->
+			<j2a if="VAL_0&&VAL_1" path="libFOO.j2a"/>
+			<j2a if="VAL_2||VAL_3" path="libBAR.j2a"/>
+		</group>
+		<group if="THIS_GROUP">														<!-- Implicit "&&" operator with the expressions inside the group. -->
+			<j2a if="USE_TABLET_VERSION"	path="mylib_variation_0.j2a"/>			<!-- Some "j2a" tags may describe different build variations of the same library. -->
+			<j2a if="!USE_TABLET_VERSION"	path="mylib_variation_1.j2a"/>
+		</group>
+		<j2a if="VAR_0&&(VAR_1||VAR_2)"				path="file0.j2a"/>				<!-- The boolean expressions can also contain parenthesis. -->
+		<j2a if="(QAZ||!!(ASD)||((QWE&&ZXC)||WSX))"	path="file1.j2a"/>				<!-- And you can go crazy with them. -->
+		<j2a if="THIS && IS || NOT_WELL_FORMED"		path="file2.j2a"/>				<!-- But no spaces or separators are supported.. -->
+		<j2a if="!!(!(!(ASD))&&!QWE||ZXC)"			path="file3.j2a"/>				<!-- The libraries represented by the .j2a files are not processed in the order in which they appear in the file. -->
+	</libs>
+</java2android>

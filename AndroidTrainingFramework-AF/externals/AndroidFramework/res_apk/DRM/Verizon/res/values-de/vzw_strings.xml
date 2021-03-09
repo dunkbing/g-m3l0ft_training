@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="VZW_ITEM_NOT_FOUND">Dieser Artikel ist für dein Gerät nicht verfügbar oder im App-Katalog von V Cast nicht länger erhältlich.</string>
+	<string name="INVALID_LICENSE">Du hast diesen Artikel nicht gekauft oder die Kaufzeit ist abgelaufen. Starte den V Cast Apps Client, um den Einkauf abzuschließen.</string>
+	<string name="VZW_GENERAL_ERROR">Dein Spiel kann momentan nicht überprüft werden. Bitte versuche es später erneut.</string>
+	<string name="VZW_SERVER_VALIDATION_REQUIRED">Aktiviere bitte deine Internetverbindung, damit dein Spiel überprüft werden kann.</string>
+</resources>

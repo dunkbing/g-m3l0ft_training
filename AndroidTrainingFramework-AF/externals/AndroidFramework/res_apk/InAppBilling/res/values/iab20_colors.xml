@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="iab20_tittle">#ffffffff</color>
+   <color name="iab20_textview">#ff000000</color>
+   <color name="iab20_desc_text_color">#ff000000</color>
+   <color name="iab20_sub_total_text_color">#ffffffff</color>
+   
+   <color name="iab20_button_text">#ffffffff</color>
+   <color name="iab20_dialog_bg">#00ffffff</color>
+   <color name="iab20_fade">#af000000</color>
+   
+   <color name="iab20_black">#ff000000</color>
+   <color name="iab20_button_text_black">#ff000000</color>
+</resources>

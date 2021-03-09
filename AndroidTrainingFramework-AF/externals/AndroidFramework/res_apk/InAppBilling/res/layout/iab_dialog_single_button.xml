@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout android:id="@+id/LinearLayout01"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:gravity="left" 
+		android:orientation="vertical" 
+		android:background="#FFFFFF"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	    <FrameLayout android:id="@+id/frameLayout1" 
+	      	android:layout_width="fill_parent" 
+	      	android:layout_height="35dip" 
+	      	android:background="#95C400">
+
+	        <TextView
+	            android:id="@+id/txtTittle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="left"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="7dip"
+	            android:text="@string/app_name"
+	            android:textColor="#fff"
+	            android:textSize="15dip"
+	            android:textStyle="bold" >
+</TextView>
+	    </FrameLayout>
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical" >
+
+	        <FrameLayout
+	            android:id="@+id/frameLayout2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" android:padding="25dp">
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:gravity="center"
+	                android:paddingLeft="20dp"
+	                android:paddingRight="20dp"
+	                android:text=""
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#ff000000" />
+	        </FrameLayout>
+
+	        <LinearLayout
+	            android:id="@+id/linearLayout2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="@dimen/iab_dialog_button_height"
+	            android:background="@drawable/iab_button_gradient"
+	            android:gravity="center"
+	            android:orientation="vertical">
+
+	            <Button
+	                android:id="@+id/OkButton"
+	                android:layout_width="wrap_content"
+	                android:layout_height="@dimen/iab_dialog_button_height"
+	                android:text="@string/IAB_SKB_OK"
+	                android:textStyle="bold" android:minWidth="@dimen/iab_dialog_button_width"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	</LinearLayout>

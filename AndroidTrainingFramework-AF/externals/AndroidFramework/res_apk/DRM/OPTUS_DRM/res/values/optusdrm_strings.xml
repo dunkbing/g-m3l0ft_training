@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="drmlib_optusjg_message_checking"><![CDATA[<div>Checking your license for this game. Please be patient while we connect to our servers for validation.</div>]]></string>
+	<string name="drmlib_optusjg_message_validated"><![CDATA[<div>Your license has been validated.<br/><br/><a href="action:finish">PLAY NOW</a></div>]]></string>
+	<string name="drmlib_optusjg_message_noinet"><![CDATA[<div>We cannot verify your license for this game. An Internet connection is required. Please <a href="action:retry">TRY AGAIN</a> or consult our <a href="action:help">HELP</a> page.</div>]]></string>
+	<string name="drmlib_optusjg_message_refused"><![CDATA[<div>Your license for this game does not appear to be valid. Please read our <a href="action:help">HELP</a> section.</div>]]></string>
+	<string name="drmlib_optusjg_message_help">	<![CDATA[<div><b>HELP</b><br/><br/>To validate your game you must be connected to the Internet (Mobile Network (GPRS) or Wi-Fi).<br/><br/>The license is for your phone only, you cannot install the game on another phone.<br/><br/>If you have problems please consult our <a href="action:cs">CUSTOMER SERVICE</a>.]]></string>	
+	<string name="DOWNLOAD_FILES_NO_WIFI_QUESTION_OPTUS">You can choose between Wi-Fi and the Optus network to download this game. There are no data charges for downloading this game on the Optus network.</string>															
+	<string name="USE_OPTUS">Optus Network</string>
+</resources>

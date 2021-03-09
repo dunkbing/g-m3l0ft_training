@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Ads Server - AddColony">
+	<build type="Copy">
+	</build>
+	<sources>
+		<libs>
+			<dir path="../res_apk/AdServer/adcolony/libs"/>
+			<preprocess/>
+		</libs>
+	</sources>
+</j2a>

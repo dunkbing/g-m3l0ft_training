@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DRM_NETWORK_DIALOGUE_1">無可用的網路連線。您要現在設定 Wi-Fi 連線或是使用電信業者的網路？</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">系統認定您本機系統的授權無效。應用程式將使用網路連線以檢查授權。你確定要繼續？</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">伺服器發現您未購買應用程式，因此並未傳送授權至應用程式。</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">伺服器已檢查應用程式的參數，發現至少有一項參數值為零。（若手機關機可能出現此情形。）</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">因為無法存取資料庫等伺服器失敗問題，伺服器無法確認已購買應用程式。</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">因為網路連線失敗（應用程式無法接收伺服器回應），授權未傳送至應用程式。</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">因為網路連線失敗（應用程式的要求無法傳送至伺服器），授權未傳送至應用程式。</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">授權無法儲存於本機磁碟。可能的原因有：磁碟 I/O 錯誤、資料夾空間不足、磁碟不允許儲存授權。</string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">若用戶端向 Zirconia 資料庫以外的伺服器要求授權，則會發生此情形。</string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">若用戶端向無效 Zirconia 資料庫版本的伺服器要求授權或授權伺服器不支援該伺服器，則會發生此情形。</string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">伺服器的授權無效。</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">授權是經無效伺服器傳送至應用程式。</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">使用者已修改應用程式。</string>
+
+	<string name="DRM_EZIRCONIA_SUCCESS_1">已成功接收一個有效授權。</string>
+</resources>

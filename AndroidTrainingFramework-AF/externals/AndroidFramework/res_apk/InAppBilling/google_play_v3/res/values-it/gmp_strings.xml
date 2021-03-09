@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">Impossibile effettuare acquisti</string>
+	<string name="billing_not_supported_message">Il servizio di addebito di Google Play Store non è disponibile al momento. Puoi continuare a usare questa applicazione, ma non potrai effettuare alcun acquisto.</string>
+	<string name="cannot_connect_title">Impossibile connettersi a Google Play Store</string>
+	<string name="cannot_connect_message">Questa applicazione non può connettersi a Google Play Store. La tua versione di Google Play Store potrebbe non essere aggiornata. Puoi continuare a usare questa applicazione, ma non potrai effettuare alcun acquisto.</string>
+	<string name="waitting_confirm">Google sta verificando il tuo acquisto. Quando l\'acquisto sarà completato, aggiorneremo la lista dei tuoi oggetti.</string>
+	<string name="pending_transaction">Hai una transazione in corso.</string>
+	<string name="purchase_success">Acquisto riuscito.</string>
+	<string name="purchase_unsuccess">Acquisto non riuscito.</string>
+	<string name="iab_retry">Riprova.</string>
+	<string name="iab_cancel">Annulla</string>
+	<string name="iab_ok">OK</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAP_SAMSUNG_DIALOG_TITLE">การซื้อภายในแอป</string>
+	<string name="IAP_SAMSUNG_UPGRADE_REQUIRED">การซื้อภายในแอป Samsung ต้องการการอัพเกรด คุณต้องการดำเนินการต่อหรือไม่</string>
+	<string name="IAP_SAMSUNG_CLIENT_NOT_INSTALLED">การซื้อภายในแอป Samsung ยังไม่ได้ติดตั้งบนอุปกรณ์นี้ คุณต้องการติดตั้งมันหรือไม่</string>
+	<string name="IAP_SAMSUNG_APP_STORE_NOT_INSTALLED">บริการ Samsung Store ไม่สามารถใช้ได้ในขณะนี้ คุณสามารถใช้แอปนี้ได้ต่อไป แต่คุณจะไม่สามารถทำการซื้อใด ๆ ได้</string>
+	<string name="IAP_SAMSUNG_ERROR_ALREADY_PURCHASED">ไอเท็มนี้ซื้อไปแล้ว มันจะไม่ถูกคิดเงินในบัญชีของคุณ</string>
+	<string name="IAP_SAMSUNG_WAITING">โปรดรอ...</string>
+	<string name="IAP_SAMSUNG_OK_BUTTON">ตกลง</string>
+	<string name="IAP_SAMSUNG_CANCEL_BUTTON">ยกเลิก</string>
+</resources>

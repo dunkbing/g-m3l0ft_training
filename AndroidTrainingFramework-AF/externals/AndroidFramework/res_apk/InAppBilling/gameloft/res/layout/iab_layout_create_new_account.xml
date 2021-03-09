@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/LinearLayout01" 
+				android:gravity="center" 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent" 
+				android:background="@color/iab_background">
+				<FrameLayout android:id="@+id/FrameLayout00"
+							android:layout_height="fill_parent" 
+							android:layout_width="fill_parent">
+							<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+										android:layout_width="fill_parent" android:layout_height="fill_parent">
+							<FrameLayout android:id="@+id/FrameLayoutDialog"
+										android:layout_height="fill_parent" 
+										android:layout_width="fill_parent" 
+										android:paddingLeft="@dimen/iab_main_layout_padding" 
+										android:paddingRight="@dimen/iab_main_layout_padding" 
+										android:paddingTop="@dimen/iab_main_layout_padding_top">
+														<LinearLayout android:id="@+id/LinearLayoutParent"
+																		android:layout_width="fill_parent" 
+																		android:orientation="vertical" 
+																		android:layout_height="fill_parent">			
+																		<LinearLayout android:layout_width="fill_parent" 
+																						android:gravity="center" 
+																						android:layout_height="wrap_content" 
+																						android:id="@+id/LinearLayoutDialogTop">
+																						<TextView android:layout_width="wrap_content"
+																									android:layout_height="wrap_content"
+																									android:id="@+id/lblDialogTop" 
+																									android:text="@string/IAB_CC_PURCHASE_WITH_CCARD" 
+																									android:layout_gravity="center_horizontal|center"
+																									android:typeface="normal" 
+																									android:textSize="@dimen/iab_ccard_form_text_size">
+																						</TextView>
+																		</LinearLayout>
+																		<LinearLayout android:layout_width="fill_parent" 
+																						android:gravity="center" 
+																						android:layout_height="@dimen/iab_separation_height" 
+																						android:paddingLeft="@dimen/iab_separation_padding" 
+																						android:paddingRight="@dimen/iab_separation_padding" 
+																						android:background="@color/iab_separation"
+																						android:id="@+id/LinearLayoutSeparation">
+																		</LinearLayout>				
+																		<LinearLayout android:layout_width="fill_parent"
+																							android:orientation="vertical" 
+																							android:layout_height="wrap_content" 
+																							android:id="@+id/LinearLayoutForm">
+																						<TextView android:layout_height="wrap_content"
+																									android:id="@+id/lblFormTop" 
+																									android:text="@string/IAB_CC_CREATE_ACCOUNT_ONE_CLICK" 
+																									android:layout_gravity="center_horizontal|center" 
+																									android:textStyle="bold" 
+																									android:typeface="normal" 
+																									android:layout_width="fill_parent" 
+																									android:textSize="@dimen/iab_ccard_form_text_size">
+																						</TextView>
+																						<TableLayout android:id="@+id/TableLayoutForm" 
+																											android:layout_height="wrap_content" 
+																											android:layout_width="fill_parent">
+																											<TableRow android:id="@+id/TableRowEmail"
+																														android:layout_width="wrap_content" 
+																														android:layout_height="wrap_content">
+																														<TextView android:id="@+id/lblEmail"
+																																	android:layout_height="wrap_content"
+																																	android:text="@string/IAB_CC_EMAIL" 
+																																	android:textSize="@dimen/iab_ccard_form_text_size"
+																																	android:layout_gravity="left|center_vertical" 
+																																	android:layout_width="wrap_content" 
+																																	android:paddingLeft="@dimen/iab_form_padding_lr" 
+																																	android:maxWidth="@dimen/iab_left_column_max_width"
+																																	android:gravity="left">
+																														</TextView>
+																														<EditText android:id="@+id/etEmail"
+																																	android:layout_height="@dimen/iab_EditText_height" 
+																																	android:textSize="@dimen/iab_EditText_text_size" 
+																																	android:inputType="textEmailAddress" 
+																																	android:layout_width="fill_parent" 
+																																	android:layout_weight="1"
+																																	android:hint="@string/IAB_CC_EMAIL"
+																																	android:imeOptions="actionDone">
+																														</EditText>
+																														<ImageView android:id="@+id/ivEmailIcon"
+																														    android:layout_width="wrap_content"
+																														    android:layout_height="fill_parent"
+																														    android:layout_gravity="right|center_vertical"
+																														    android:src="@drawable/iab_mail_icon_ok" android:visibility="gone">
+																														</ImageView>																														
+																											</TableRow>
+																											<TableRow android:id="@+id/TableRowPassword"
+																														android:layout_width="wrap_content" 
+																														android:layout_height="wrap_content">
+																														<TextView android:id="@+id/lblPassword"
+																																	android:layout_width="wrap_content"
+																																	android:layout_height="wrap_content"
+																																	android:text="@string/IAB_CC_PASSWORD"
+																																	android:textSize="@dimen/iab_ccard_form_text_size" 
+																																	android:paddingLeft="@dimen/iab_form_padding_lr" 
+																																	android:layout_gravity="left|center_vertical"
+																																	android:maxWidth="@dimen/iab_left_column_max_width"
+																																	android:gravity="left">
+																														</TextView>
+																														<EditText android:id="@+id/etPassword"
+																																	android:layout_width="fill_parent"
+																																	android:layout_height="@dimen/iab_EditText_height" 
+																																	android:textSize="@dimen/iab_EditText_text_size"
+																																	android:inputType="textPassword"
+																																	android:layout_weight="1"
+																																	android:hint="@string/IAB_CC_PASSWORD"
+																																	android:imeOptions="actionDone">
+																														</EditText>
+																											</TableRow>
+																											<TableRow android:id="@+id/TableRowName"
+																														android:layout_width="wrap_content" 
+																														android:layout_height="wrap_content">
+																														<TextView android:id="@+id/lblName"
+																																	android:layout_width="wrap_content"
+																																	android:layout_height="wrap_content"
+																																	android:text="@string/IAB_CC_NAME"
+																																	android:textSize="@dimen/iab_ccard_form_text_size" 
+																																	android:paddingLeft="@dimen/iab_form_padding_lr" 
+																																	android:layout_gravity="left|center_vertical"
+																																	android:maxWidth="@dimen/iab_left_column_max_width"
+																																	android:gravity="left">
+																														</TextView>
+																														<EditText android:id="@+id/etName"
+																																	android:layout_width="fill_parent"
+																																	android:layout_height="@dimen/iab_EditText_height" 
+																																	android:textSize="@dimen/iab_EditText_text_size"
+																																	android:layout_weight="1" 
+																																	android:inputType="textPersonName"
+																																	android:nextFocusDown="@+id/etCardNumber1"
+																																	android:hint="@string/IAB_CC_NAME"
+																																	android:imeOptions="actionDone">
+																														</EditText>
+																											</TableRow>
+																											<TableRow android:id="@+id/TableRowCardNumber"
+																														android:layout_width="wrap_content" 
+																														android:layout_height="wrap_content">
+																														<TextView android:id="@+id/lblCardNumber"
+																																	android:layout_height="wrap_content"
+																																	android:textSize="@dimen/iab_ccard_form_text_size" 
+																																	android:layout_width="wrap_content"
+																																	android:text="@string/IAB_CC_CARD_NUMBER"
+																																	android:layout_gravity="left|center_vertical" 
+																																	android:paddingLeft="@dimen/iab_form_padding_lr" 
+																																	android:maxWidth="@dimen/iab_left_column_max_width"
+																																	android:gravity="left">
+																														</TextView>
+																														<LinearLayout android:layout_width="fill_parent"
+																																		android:id="@+id/LinearLayoutCN"
+																																		android:layout_height="wrap_content"
+																																		android:orientation="horizontal" 
+																																		android:layout_weight="1">
+																																		<EditText android:id="@+id/etCardNumber1"
+																																					android:layout_width="wrap_content"
+																																					android:textSize="@dimen/iab_EditText_text_size" 
+																																					android:layout_weight=".25" 
+																																					android:inputType="number"
+																																					android:layout_height="@dimen/iab_EditText_height" 
+																																					android:maxLength="4"
+																																					android:nextFocusDown="@+id/etCardNumber2"
+																																					android:hint="@string/IAB_CC_CARD_NUMBER"
+																																					android:imeOptions="actionDone">
+																																		</EditText>
+																																		<EditText android:id="@+id/etCardNumber2"
+																																					android:layout_width="wrap_content"
+																																					android:textSize="@dimen/iab_EditText_text_size" 
+																																					android:layout_weight=".25" 
+																																					android:inputType="number"
+																																					android:layout_height="@dimen/iab_EditText_height" 
+																																					android:maxLength="4"
+																																					android:nextFocusDown="@+id/etCardNumber3"
+																																					android:hint="@string/IAB_CC_CARD_NUMBER"
+																																					android:imeOptions="actionDone">
+																																		</EditText>
+																																		<EditText android:id="@+id/etCardNumber3"
+																																					android:layout_width="wrap_content"
+																																					android:textSize="@dimen/iab_EditText_text_size" 
+																																					android:layout_weight=".25"
+																																					android:inputType="number"
+																																					android:layout_height="@dimen/iab_EditText_height"
+																																					android:maxLength="4"
+																																					android:nextFocusDown="@+id/etCardNumber4"
+																																					android:hint="@string/IAB_CC_CARD_NUMBER"
+																																					android:imeOptions="actionDone">
+																																		</EditText>
+																																		<EditText android:id="@+id/etCardNumber4"
+																																					android:layout_width="wrap_content"
+																																					android:textSize="@dimen/iab_EditText_text_size" 
+																																					android:layout_weight=".25"
+																																					android:inputType="number"
+																																					android:layout_height="@dimen/iab_EditText_height" 
+																																					android:maxLength="4"
+																																					android:nextFocusDown="@+id/etExpirationMonth"
+																																					android:hint="@string/IAB_CC_CARD_NUMBER"
+																																					android:imeOptions="actionDone">
+																																		</EditText>
+																														</LinearLayout>
+																											</TableRow>
+																											<TableRow android:id="@+id/TableRowExpiration"
+																														android:layout_width="wrap_content" 
+																														android:layout_height="wrap_content">
+																														<LinearLayout 	android:id="@+id/LinearLayoutExpirationText"
+																																			android:layout_height="wrap_content"
+																																			android:orientation="vertical" 
+																																			android:layout_gravity="left|center_vertical" 
+																																			android:layout_width="wrap_content">	
+																																		<TextView android:id="@+id/lblExpiration"
+																																					android:layout_height="wrap_content"
+																																					android:textSize="@dimen/iab_ccard_form_text_size" 
+																																					android:layout_width="wrap_content" 
+																																					android:maxLines="1" 
+																																					android:text="@string/IAB_CC_EXPIRATION_DATE"
+																																					android:paddingLeft="@dimen/iab_form_padding_lr" 
+																																					android:paddingRight="@dimen/iab_textview_min_padding" 
+																																					android:layout_gravity="left|center_vertical"
+																																					android:maxWidth="@dimen/iab_left_column_max_width"
+																																					android:gravity="left">
+																																		</TextView>
+																																		<TextView android:id="@+id/lblExpirationHelp" 
+																																					android:layout_height="wrap_content" 
+																																					android:text="@string/IAB_CC_EXPIRATION_DATE_FORMAT" 
+																																					android:layout_width="wrap_content" 
+																																					android:layout_gravity="center_vertical"
+																																					android:maxLines="1" 
+																																					android:textSize="@dimen/iab_ccard_help_text_size"
+																																					android:gravity="center">
+																																		</TextView>	
+																														</LinearLayout>
+																														<LinearLayout android:layout_width="fill_parent"
+																																		android:id="@+id/LinearLayoutED"
+																																		android:layout_height="wrap_content"
+																																		android:orientation="horizontal"
+																																		android:paddingRight="@dimen/iab_expiration_padding_r"  
+																																		android:layout_weight="1">
+																																		<EditText android:id="@+id/etExpirationMonth"
+																																					android:layout_width="wrap_content"
+																																					android:textSize="@dimen/iab_EditText_text_size"
+																																					android:layout_weight=".5"  
+																																					android:inputType="number"
+																																					android:layout_height="@dimen/iab_EditText_height" 
+																																					android:maxLength="2"
+																																					android:nextFocusDown="@+id/etExpirationYear"
+																																					android:hint="@string/IAB_CC_DF_MONTH"
+																																					android:imeOptions="actionDone">
+																																		</EditText>
+																																		<EditText android:id="@+id/etExpirationYear"
+																																					android:layout_width="wrap_content"
+																																					android:textSize="@dimen/iab_EditText_text_size" 
+																																					android:layout_weight=".5" 
+																																					android:inputType="number"
+																																					android:layout_height="@dimen/iab_EditText_height" 
+																																					android:maxLength="4"
+																																					android:hint="@string/IAB_CC_DF_YEAR"
+																																					android:imeOptions="actionDone">
+																																		</EditText>
+																														</LinearLayout>
+																											</TableRow>
+																											<TableRow android:id="@+id/TableRowSecureCode"
+																														android:layout_width="wrap_content" 
+																														android:layout_height="wrap_content">
+																														<TextView android:id="@+id/lblSecureCode"
+																																			android:layout_height="wrap_content"
+																																			android:textSize="@dimen/iab_ccard_form_text_size" 
+																																			android:layout_width="wrap_content" 
+																																			android:text="@string/IAB_CC_SECURE_CODE"
+																																			android:layout_gravity="left|center_vertical" 
+																																			android:paddingLeft="@dimen/iab_form_padding_lr"
+																																			android:maxWidth="@dimen/iab_left_column_max_width"
+																																			android:gravity="left">
+																														</TextView>
+																														<LinearLayout android:id="@+id/LinearLayoutSecureCode"
+																																			android:layout_height="wrap_content"
+																																			android:orientation="horizontal" 
+																																			android:layout_width="fill_parent" 
+																																			android:layout_weight="1">
+																																<EditText android:id="@+id/etSecureCode"
+																																			android:textSize="@dimen/iab_EditText_text_size" 
+																																			android:layout_height="@dimen/iab_EditText_height" 
+																																			android:inputType="textPassword|number"
+																																			android:layout_width="@dimen/iab_secure_code_width" 
+																																			android:maxLength="3"
+																																			android:hint="@string/IAB_CC_SECURE_CODE"
+																																			android:imeOptions="actionDone">
+																																</EditText>
+																																<TextView android:id="@+id/lblSecureCodeHelp" 
+																																			android:layout_height="wrap_content" 
+																																			android:textSize="@dimen/iab_ccard_help_text_size" 
+																																			android:text="@string/IAB_CC_SECURE_CODE_HELP" 
+																																			android:layout_width="fill_parent" 
+																																			android:layout_gravity="center_vertical" 
+																																			android:gravity="left" 
+																																			android:paddingLeft="@dimen/iab_textview_min_padding" 
+																																			android:paddingRight="@dimen/iab_textview_min_padding" 
+																																			android:maxLines="2">
+																																</TextView>	
+																														</LinearLayout>
+																											</TableRow>
+																						</TableLayout>
+																						<RelativeLayout android:id="@+id/LinearLayoutButtonBuyNow"
+																										android:layout_height="wrap_content"
+																										android:layout_width="fill_parent"
+																										android:layout_gravity="center">
+																										<Button android:text="@string/IAB_SKB_BUY_NOW" 
+																													android:id="@+id/bt_ly_create_new_account_buy_now" 
+																													android:layout_width="wrap_content"
+																													android:textSize="@dimen/iab_button_text_size" 
+																													android:layout_gravity="center" 
+																													android:minWidth="@dimen/iab_large_button_width"
+																													android:layout_height="@dimen/iab_cc_button_height" 
+																													android:layout_centerHorizontal="true">
+																										</Button>
+																										<ImageView android:layout_width="wrap_content"
+																													android:layout_height="wrap_content"
+																													android:src="@drawable/iab_lock" 
+																													android:id="@+id/ImageViewLock" 
+																													android:layout_gravity="center" 
+																													android:layout_toRightOf="@+id/bt_ly_create_new_account_buy_now" 
+																													android:layout_centerVertical="true">
+																										</ImageView>
+																										<Button android:text="@string/IAB_SKB_BACK" 
+																													android:id="@+id/bt_ly_create_new_account_exit" 
+																													android:layout_width="wrap_content" 
+																													android:layout_height="@dimen/iab_cc_button_height" 
+																													android:layout_alignParentRight="true" 
+																													android:textSize="@dimen/iab_button_text_size"
+																													android:minWidth="@dimen/iab_small_button_width">
+																										</Button>
+																						</RelativeLayout>
+																														
+																		</LinearLayout>
+																		<LinearLayout android:layout_width="fill_parent" 
+																						android:gravity="center" 
+																						android:layout_height="@dimen/iab_separation_height" 
+																						android:paddingLeft="@dimen/iab_separation_padding" 
+																						android:paddingRight="@dimen/iab_separation_padding" 
+																						android:background="@color/iab_separation"
+																						android:id="@+id/LinearLayoutSeparation2">
+																		</LinearLayout>
+																		<LinearLayout android:layout_width="fill_parent" 
+																						android:orientation="vertical" 
+																						android:id="@+id/LinearLayoutGLAccount" 
+																						android:layout_height="wrap_content">
+																						<TextView android:id="@+id/lblGLAccount" 
+																									android:layout_height="wrap_content" 
+																									android:textSize="@dimen/iab_ccard_form_aux_text_size" 
+																									android:layout_width="wrap_content" 
+																									android:maxLines="1" 
+																									android:text="@string/IAB_CC_ALREADY_HAS_ACCOUNT" 
+																									android:layout_gravity="center">
+																						</TextView>
+																						<Button android:text="@string/IAB_SKB_LOGIN" 
+																									android:id="@+id/bt_ly_create_new_account_login" 
+																									android:layout_width="wrap_content" 
+																									android:layout_height="@dimen/iab_cc_button_height" 
+																									android:textSize="@dimen/iab_button_text_size" 
+																									android:layout_gravity="center" 
+																									android:minWidth="@dimen/iab_large_button_width">
+																						</Button>
+																		</LinearLayout>
+																		<RelativeLayout android:layout_width="fill_parent" 
+																						android:id="@+id/RelativeLayoutBottomMsg" 
+																						android:gravity="bottom" 
+																						android:layout_height="wrap_content">
+																						<LinearLayout android:id="@+id/LinearLayoutBottomMsg"
+																										android:layout_height="wrap_content"
+																										android:orientation="vertical" 
+																										android:layout_width="fill_parent" 
+																										android:layout_alignParentBottom="true">
+																										<RelativeLayout android:id="@+id/RelativeLayoutButtons" 
+																														android:layout_height="wrap_content" 
+																														android:layout_width="fill_parent">
+																														<Button android:text="@string/IAB_SKB_TCS" 
+																																	android:id="@+id/bt_ly_create_new_account_tcs" 
+																																	android:layout_width="wrap_content" 
+																																	android:textSize="@dimen/iab_button_tcs_text_size" 
+																																	android:layout_height="@dimen/iab_cc_button_height">
+																														</Button>
+																										</RelativeLayout>
+																										<LinearLayout android:layout_width="fill_parent" 
+																													android:gravity="center" 
+																													android:layout_height="@dimen/iab_separation_height" 
+																													android:paddingLeft="@dimen/iab_separation_padding" 
+																													android:paddingRight="@dimen/iab_separation_padding" 
+																													android:background="@color/iab_separation"
+																													android:id="@+id/LinearLayoutSeparation3">
+																										</LinearLayout>
+																										<TextView android:id="@+id/lblBottomMsg"
+																													android:layout_height="wrap_content"
+																													android:textSize="@dimen/iab_bottom_msg_text_size"
+																													android:layout_width="wrap_content" 
+																													android:text="@string/IAB_CC_GL_PEACE_OF_MIND" 
+																													android:paddingLeft="@dimen/iab_textview_min_padding"
+																													android:paddingRight="@dimen/iab_textview_min_padding"
+																													android:gravity="left">
+																										</TextView>
+																						</LinearLayout>
+																		</RelativeLayout>
+														</LinearLayout>	
+							</FrameLayout>
+							</ScrollView>
+							<FrameLayout android:id="@+id/FrameLayoutHeader"
+										android:layout_width="fill_parent" 
+										android:layout_gravity="top"
+										android:background="@drawable/iab_top_bar" 
+										android:layout_height="@dimen/iab_tittle_bar_size_h">
+										<ImageView android:id="@+id/ImageViewGLLogo"
+													android:layout_width="wrap_content"
+													android:layout_height="wrap_content"
+													android:src="@drawable/iab_logo_tittle_horiz"
+													android:paddingTop="@dimen/iab_logo_tittle_gap"
+													android:paddingLeft="@dimen/iab_logo_tittle_gap">
+										</ImageView>
+										<ImageView android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:paddingTop="@dimen/iab_logo_tittle_gap"
+											android:paddingRight="@dimen/iab_logo_tittle_gap" 
+											android:src="@drawable/iab_logo_creditcards" 
+											android:id="@+id/ImageViewCCLogos" 
+											android:layout_gravity="right">
+										</ImageView>
+							</FrameLayout>
+				</FrameLayout>
+</LinearLayout>
+

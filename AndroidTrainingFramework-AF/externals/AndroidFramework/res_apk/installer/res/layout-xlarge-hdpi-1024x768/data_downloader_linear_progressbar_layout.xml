@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:id="@+id/data_downloader_main_layout"
+	>
+	<ImageView 
+		android:layout_width="match_parent"
+       	 	android:layout_height="match_parent"
+        	android:layout_centerInParent="true"
+        	android:scaleType="fitCenter"
+		android:src="@drawable/data_downloader_background"
+		android:background="@android:color/black"
+	/>
+	<ImageView 
+		android:id="@+id/data_downloader_main_layout_image"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scaleType="fitXY"
+		android:visibility="gone"
+	/>
+	
+	<FrameLayout style="@style/data_downloader_frame_main_text_style">
+		
+		<LinearLayout style="@style/data_downloader_main_text_background_frame2">
+		
+			<com.gameloft.layout.DataDownloaderTextView
+				android:id="@+id/data_downloader_main_text"
+				style="@style/data_downloader_main_text"
+				android:text="" />
+				
+			<FrameLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="@dimen/data_downloader_progress_text_size"
+				android:layout_gravity="center_horizontal">
+				
+				<ProgressBar
+					android:id="@+id/data_downloader_linear_progress_bar"
+					style="@style/data_downloader_progreeBar"
+					android:layout_gravity="center" />
+					
+			    <com.gameloft.layout.DataDownloaderTextView
+					android:id="@+id/data_downloader_progress_text"
+					style="@style/data_downloader_progress_text" />
+					
+			</FrameLayout>
+			
+			<WebView android:id="@+id/data_downloader_webview"
+				style="@style/data_downloader_webview_style"
+				android:visibility="gone"/>
+				
+		</LinearLayout>
+		
+	</FrameLayout>
+	
+	<FrameLayout android:id="@+id/buttonsLayout" style="@style/data_downloader_buttons_frame_layout_style">
+		
+		<LinearLayout
+			style="@style/data_downloader_buttons_layout_style" >
+			
+			<FrameLayout style="@style/data_downloader_frame_button_style" android:id="@+id/data_downloader_yes_frame">
+				
+				<com.gameloft.layout.DataDownloaderButton
+					android:id="@+id/data_downloader_yes"
+					android:text="@string/YES"
+					style="@style/data_downloader_button_style" />
+					
+			</FrameLayout>
+			
+			<FrameLayout style="@style/data_downloader_frame_button_style" android:id="@+id/data_downloader_no_frame">
+				<com.gameloft.layout.DataDownloaderButton
+					android:id="@+id/data_downloader_no"
+					android:text="@string/NO"
+					style="@style/data_downloader_button_style" />
+			</FrameLayout>
+			
+			<FrameLayout style="@style/data_downloader_frame_button_style" android:id="@+id/data_downloader_cancel_frame">
+				<com.gameloft.layout.DataDownloaderButton
+					android:id="@+id/data_downloader_cancel"
+					android:text="@string/CANCEL"
+					style="@style/data_downloader_button_style" />
+			</FrameLayout>
+			
+		</LinearLayout>
+	</FrameLayout>
+	
+	<include
+		android:id="@+id/titleLayout"
+		style="@style/data_downloader_title_included"
+		layout="@layout/title_layout" />
+		
+</RelativeLayout>

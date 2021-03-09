@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB20_SK_OK">Tamam</string>
+	<string name="IAB20_SK_BACK">Geri</string>
+	<string name="IAB20_SK_NEXT">İleri</string>
+</resources>

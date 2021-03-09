@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <string name="app_name">Android Billing</string> -->
+	<string name="IAB_PURCHASE_IN_PROGRESS">请稍候……你的购买正在进行中。</string>
+	<string name="IAB_TRANSACTION_FAILED">交易失败</string>
+	<string name="IAB_TRANSACTION_FAILED_RETRY">你要重试吗？</string>
+	<string name="IAB_CC_PURCHASE_WITH_CCARD">你可以使用信用卡以{PRICE} *的价格购买{GAME_NAME}游戏</string>
+	<string name="IAB_CC_CREATE_ACCOUNT_ONE_CLICK">请在下方填写你的账单信息</string>
+	<string name="IAB_CC_CREATE_ACCOUNT">创建账号</string>
+	<string name="IAB_CC_FORGOT_PASSWORD">忘记密码？</string>
+	<string name="IAB_CC_EMAIL">你的电子邮箱地址</string>
+	<string name="IAB_CC_PASSWORD">密码</string>
+	<string name="IAB_CC_NAME">持卡人</string>
+	<string name="IAB_CC_CARD_NUMBER">卡号</string>
+	<string name="IAB_CC_EXPIRATION_DATE">有效期</string>
+	<string name="IAB_CC_EXPIRATION_DATE_FORMAT">MM/YYYY</string>
+	<string name="IAB_CC_DF_MONTH">MM</string>
+	<string name="IAB_CC_DF_YEAR">YYYY</string>	
+	<string name="IAB_CC_SECURE_CODE">安全码</string>
+	<string name="IAB_CC_SECURE_CODE_HELP">卡背面的最后3位数字</string>
+	<string name="IAB_CC_ALREADY_HAS_ACCOUNT">你已经拥有一个Gameloft账号</string>
+	<string name="IAB_CC_PAY_WO_ACCOUNT">不创建账号直接付款</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND">*Gameloft安全保证。</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND2">Gameloft采用高级编码安全技术来保护你的信用卡信息。</string>
+	<string name="IAB_CC_EMAIL_PRIVACY">**你的电子邮箱只会用于发送账单信息。</string>
+	<string name="IAB_CC_EMAIL_PRIVACY2">在此查看完整条款和条件。</string>
+	<string name="IAB_CC_GAME">游戏</string>
+	<string name="IAB_CC_PRICE">价格</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_WRONG_DATA">你输入的某些信息不正确。请查看下面的红色部分。</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_EMAIL_EXISTS">使用该电子邮箱注册的账号已存在。你可以用此邮箱直接登陆或创建新的账号。</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_PAY_WO_ACCOUNT">为使我们顺利处理您的支付，请在下方填入你的账单信息。</string>
+	<string name="IAB_CC_LOGIN_WRONG_EMAIL_PASSWORD">你输入的电子邮箱和/或密码不正确。请重试。</string>
+	<string name="IAB_CC_CREDIT_CARD_EXPIRED">你的信用卡已过期或无效。请在下方更新你的账单信息。</string>
+	<string name="IAB_CC_INVOICE_SENT">作为记录的发票已发送至你的电子邮箱。</string>
+	<string name="IAB_CC_ACCOUNT_CREATED_SUCCESSFULLY">你的账号创建成功！</string>
+	<string name="IAB_CC_FORGOT_PASSWORD_QUESTION">忘记密码？</string>
+	<string name="IAB_CC_ENTER_EMAIL_FOR_RECOVERY_PASSWORD">请将你的电子邮箱地址填入下方。你将在几秒后收到你的密码。</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_FAIL">很抱歉，我们未找到你的电子邮箱地址。请重试或注册。</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_SUCCES">新的密码已发送至你的电子邮箱，请查收。</string>
+	<string name="IAB_CC_SHORT_EMAIL_EXIST">该电子邮箱账号已经存在。</string>
+	
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP_TITLE">确认您的购买</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP">请确认您想要以{PRICE}购买{ITEM}。</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_LAYOUT">您想要以{PRICE}购买{ITEM}。</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_TITLE">信用卡购买</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC">该件物品只能使用信用卡进行购买。请确认您想要以{PRICE}购买{ITEM}。</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TITLE">购买失败</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE">我们的服务无法处理您的购买要求。您想要继续使用其他支付方式进行购买吗？</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TRY_AGAIN">您的购买无法通过我们的服务处理。要重试一次吗？</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_TITLE">感谢您的购买，物品已添加至您的账号中！</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS">感谢您的购买，物品已添加至您的账户中！</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING_TITLE">您的物品已购买。</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING">感谢您的购买，因服务器问题，物品将稍后添加至您的账号中！</string>
+	<string name="IAB_PURCHASE_ITEM_CHARGE_APPLY">可能会产生数据费</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_INFO">您想要以{PRICE}购买{QUANTITY}个{ITEM}吗？</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_MESSAGE">请选择您的支付方式。</string>
+	<string name="IAB_NETWORK_ERROR_TITLE">网络错误</string>
+
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD_TITLE">选择支付方式</string>
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD">在继续购买之前，请选择您喜欢的支付方式。</string>
+	<string name="IAB_BTN_OTHER">更换支付方式</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_TITLE">您有一项待定的交易。</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING">我们正在等候Boku验证您的购买。一旦确认购买完成，我们将立即更新您的物品列表。</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_SUCCESSFUL">购买成功。</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_UNSUCCESSFUL">购买失败。</string>
+	
+	
+	<string name="IAB_PURCHASE_TITLE">购买</string>
+	<string name="IAB_PURCHASE_PAY_FOR_THIS_WITH">选择您的支付方式</string>
+	<string name="IAB_PURCHASE_CHOOSE_PAYMENT_METHOD">选择您的支付方式</string>
+	<string name="IAB_PURCHASE_CHANGE_PAYMENT_METHOD">更换支付方式</string>
+	<string name="IAB_PURCHASE_ITEM_CREDIT_CARD">信用卡</string>
+	<string name="IAB_PURCHASE_ITEM_ACCOUNT">GAMELOFT账号</string>
+	<string name="IAB_PURCHASE_ITEM_ADD_NEW_CREDIT_CARD">添加一张新信用卡</string>
+	<string name="IAB_PURCHASE_ITEM_INFO">{ITEM} 单价{PRICE}。</string>
+	<string name="IAB_PURCHASE_ITEM_TOTAL">总计： </string>
+	
+	<string name="IAB_PURCHASE_ITEM_PHONE_BILLL">电话账单</string>
+	<string name="IAB_SKB_CONFIRM">确认</string>	
+	<string name="IAB_NETWORK_ERROR">无法检索到有关您运营商的有效内容简介。</string>
+
+	<string name="IAB_SKB_TCS">条款和条件</string>
+	<string name="IAB_SKB_CANCEL">取消</string>
+	<string name="IAB_SKB_RETRY">重试</string>
+	<string name="IAB_SKB_EXIT">X</string>
+	<string name="IAB_SKB_LOGIN">登录</string>
+	<string name="IAB_SKB_YES">是</string>
+	<string name="IAB_SKB_NO">否</string>
+	<string name="IAB_SKB_OK">确认</string>
+	<string name="IAB_SKB_PAY_WITH_CCARD">用信用卡支付</string>
+	<string name="IAB_SKB_NEXT">下一步</string>
+	<string name="IAB_SKB_CONTINUE">继续</string>
+	<string name="IAB_SKB_BUY_NOW">立刻购买</string>
+	<string name="IAB_SKB_BACK">返回</string>
+	<string name="IAB_SKB_PLAY_GAME">开始游戏！</string>
+	<string name="IAB_CONTINUE">请点击“继续”完成购买。</string>
+	<string name="IAB_LOADING">读取中……</string>
+	<string name="IAB_DOCOMO_CONTINUE">请点击“继续”完成购买。</string>
+
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_PSMS">我们正在等您确认物品递送以证实您的购买。购买完成后，我们将更新您的物品列表。</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_PSMS">你上次的购买未成功。你不会被扣费。</string>
+	
+	<string name="IAB_UMP_R3_PAYMENT_INFO">支付信息</string>
+	<string name="IAB_UMP_R3_PRODUCT_NAME">产品名： {PRODUCT_NAME}</string>
+	<string name="IAB_UMP_R3_PRICE">价格：{PRICE}（不包含短信费用）.</string>
+	<string name="IAB_UMP_R3_CUSTOMER_SERVICE">\n客户服务： 4006125880</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_1">\n\n"亲爱的用户：请点击“确认信息”以同意向{SHORTCODE1}发送一条短信来购买产品"</string>
+	<string name="IAB_UMP_R3_BTN_CONFIRM_INFO">确认信息</string>
+	<string name="IAB_UMP_R3_PLEASE_WAIT">请稍等</string>
+	<string name="IAB_UMP_R3_SENDING_SMS">发送短信中...</string>
+	<string name="IAB_UMP_R3_CONFIRM_PAYMENT">确认支付</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_2">"亲爱的用户： 请点击“确认支付”以同意向{SHORTCODE2}发送一条短信来完成你的支付。"\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT_THANKS">感谢您使用UMP付费服务。\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT">你已购买了{PRODUCT_NAME}，其价格为{PRICE}。\n</string>
+	<string name="IAB_UMP_R3_PAYMENT_FAILURE">在你购买物品的过程中出现问题。请确保你有足够的金额或稳定的服务信号以供交易进行。</string>
+	<string name="IAB_UMP_R3_PAYMENT_FINISHED">支付完成</string>
+
+</resources>

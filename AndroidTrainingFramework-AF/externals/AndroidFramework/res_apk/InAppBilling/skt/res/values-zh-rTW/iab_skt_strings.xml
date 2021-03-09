@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB_SKT_CONFIRM_DIALOG_TITLE">確認訂單</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_QUESTION">您要購買以下的商品嗎？</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_ITEM_NAME">商品名稱：{NAME}</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_ITEM_PRICE">商品價格：{PRICE}</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_YES">是</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_NO">否</string>
+	<string name="IAB_SKT_RESTORING_TRANSACTIONS_TITLE">回復購買清單。</string>
+	<string name="IAB_SKT_RESTORING_TRANSACTIONS">購買清單回復中，請稍候。</string>
+</resources>

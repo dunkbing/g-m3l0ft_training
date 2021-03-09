@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">Unable to make purchases</string>
+	<string name="billing_not_supported_message">The Google Play Store billing service is not available at this time. You can continue to use this app, but you won\'t be able to make any purchases.</string>
+	<string name="cannot_connect_title">Unable to connect to Google Play Store</string>
+	<string name="cannot_connect_message">This app cannot connect to Google Play Store. Your version of Google Play Store may be outdated. You can continue to use this app, but you won\'t be able to make any purchases.</string>
+	<string name="waitting_confirm">We are waiting for Google to validate your purchase. Once the purchase is complete, we\'ll update your item list.</string>
+	<string name="pending_transaction">You have a pending transaction.</string>
+	<string name="purchase_success">Purchase successful.</string>
+	<string name="purchase_unsuccess">Purchase unsuccessful.</string>
+	<string name="iab_retry">Retry</string>
+	<string name="iab_cancel">Cancel</string>
+	<string name="iab_ok">OK</string>
+</resources>

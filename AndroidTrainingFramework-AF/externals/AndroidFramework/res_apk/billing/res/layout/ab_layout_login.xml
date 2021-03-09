@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/LinearLayout01" 
+				android:gravity="center" 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent" 
+				android:background="@color/background">
+				<FrameLayout android:id="@+id/FrameLayout00"
+							android:layout_height="fill_parent" 
+							android:layout_width="fill_parent">
+							<FrameLayout android:id="@+id/FrameLayoutDialog"
+										android:layout_height="fill_parent" 
+										android:layout_width="fill_parent" 
+										android:paddingLeft="@dimen/ab_main_layout_padding" 
+										android:paddingRight="@dimen/ab_main_layout_padding" 
+										android:paddingTop="@dimen/ab_main_layout_padding_top">
+														<LinearLayout android:id="@+id/LinearLayoutParent"
+																		android:layout_width="fill_parent" 
+																		android:orientation="vertical" 
+																		android:layout_height="fill_parent">			
+																		<LinearLayout android:layout_width="fill_parent" 
+																						android:gravity="center" 
+																						android:layout_height="wrap_content" 
+																						android:id="@+id/LinearLayoutDialogTop">
+																						<TableLayout android:id="@+id/TableLayout01" 
+																								android:layout_width="fill_parent" 
+																								android:layout_height="wrap_content">
+																								<TableRow>
+																										<TextView android:layout_width="wrap_content"
+																													android:layout_height="wrap_content"
+																													android:id="@+id/lblGameNameInfo" 
+																													android:text="@string/AB_CC_GAME" 
+																													android:gravity="right|center"
+																													android:typeface="normal" 
+																													android:layout_weight=".5"
+																													android:textSize="@dimen/ab_ccard_header_text_size">
+																										</TextView>
+																										<TextView android:layout_width="wrap_content"
+																													android:layout_height="wrap_content"
+																													android:id="@+id/lblGameName" 
+																													android:gravity="left|center"
+																													android:typeface="normal"
+																													android:layout_weight=".5" 
+																													android:textSize="@dimen/ab_ccard_header_text_size">
+																										</TextView>
+																								</TableRow>
+																								<TableRow>
+																										<TextView android:layout_width="wrap_content"
+																													android:layout_height="wrap_content"
+																													android:id="@+id/lblGamePriceInfo" 
+																													android:text="@string/AB_CC_PRICE" 
+																													android:gravity="right|center"
+																													android:typeface="normal" 
+																													android:layout_weight=".5"
+																													android:textSize="@dimen/ab_ccard_header_text_size">
+																										</TextView>
+																										<TextView android:layout_width="wrap_content"
+																													android:layout_height="wrap_content"
+																													android:id="@+id/lblGamePrice"
+																													android:gravity="left|center"
+																													android:typeface="normal"
+																													android:layout_weight=".5" 
+																													android:textSize="@dimen/ab_ccard_header_text_size">
+																										</TextView>
+																								</TableRow>
+																						</TableLayout>
+																	</LinearLayout>
+																		<LinearLayout android:layout_width="fill_parent" 
+																						android:gravity="center" 
+																						android:layout_height="@dimen/ab_separation_height" 
+																						android:paddingLeft="@dimen/ab_separation_padding" 
+																						android:paddingRight="@dimen/ab_separation_padding" 
+																						android:background="@color/separation"
+																						android:id="@+id/LinearLayoutSeparation">
+																		</LinearLayout>				
+																		<LinearLayout android:layout_width="fill_parent"
+																							android:orientation="vertical" 
+																							android:layout_height="wrap_content" 
+																							android:id="@+id/LinearLayoutForm"
+																							android:layout_marginTop="@dimen/ab_center_margin_top">
+																						<TextView android:layout_height="wrap_content"
+																									android:id="@+id/lblFormTop" 
+																									android:text="@string/SKB_LOGIN" 
+																									android:layout_gravity="center_horizontal|center" 
+																									android:textStyle="bold" 
+																									android:typeface="normal" 
+																									android:layout_width="fill_parent" 
+																									android:textSize="@dimen/ab_ccard_form_text_size">
+																						</TextView>
+																						<TableLayout android:id="@+id/TableLayoutForm" 
+																											android:layout_height="wrap_content" 
+																											android:layout_width="fill_parent">
+																											<TableRow android:id="@+id/TableRowEmail"
+																														android:layout_width="wrap_content" 
+																														android:layout_height="wrap_content">
+																														<TextView android:id="@+id/lblEmail"
+																																	android:layout_height="wrap_content"
+																																	android:text="@string/AB_CC_EMAIL" 
+																																	android:textSize="@dimen/ab_ccard_form_text_size"
+																																	android:layout_gravity="left|center_vertical" 
+																																	android:layout_width="wrap_content" 
+																																	android:paddingLeft="@dimen/ab_form_padding_lr" 
+																																	android:maxWidth="@dimen/ab_left_column_max_width"
+																																	android:gravity="left">
+																														</TextView>
+																														<EditText android:id="@+id/etEmail"
+																																	android:layout_height="@dimen/ab_EditText_height" 
+																																	android:textSize="@dimen/ab_EditText_text_size" 
+																																	android:inputType="textEmailAddress" 
+																																	android:layout_width="fill_parent" 
+																																	android:layout_weight="1">
+																														</EditText>
+																											</TableRow>
+																											<TableRow android:id="@+id/TableRowPassword"
+																														android:layout_width="wrap_content" 
+																														android:layout_height="wrap_content">
+																														<TextView android:id="@+id/lblPassword"
+																																	android:layout_width="wrap_content"
+																																	android:layout_height="wrap_content"
+																																	android:text="@string/AB_CC_PASSWORD"
+																																	android:textSize="@dimen/ab_ccard_form_text_size" 
+																																	android:paddingLeft="@dimen/ab_form_padding_lr" 
+																																	android:layout_gravity="left|center_vertical"
+																																	android:maxWidth="@dimen/ab_left_column_max_width"
+																																	android:gravity="left">
+																														</TextView>
+																														<EditText android:id="@+id/etPassword"
+																																	android:layout_width="fill_parent"
+																																	android:layout_height="@dimen/ab_EditText_height" 
+																																	android:textSize="@dimen/ab_EditText_text_size"
+																																	android:inputType="textPassword"
+																																	android:layout_weight="1">
+																														</EditText>
+																											</TableRow>
+																						</TableLayout>
+																						<RelativeLayout android:id="@+id/LinearLayoutButtonBuyNow"
+																										android:layout_height="wrap_content"
+																										android:layout_width="fill_parent"
+																										android:layout_marginTop="@dimen/ab_button_center_margin"
+																										android:layout_gravity="center">
+																										<Button android:text="@string/SKB_BUY_NOW" 
+																													android:id="@+id/bt_ly_login_buy_now" 
+																													android:layout_width="wrap_content" 
+																													android:textSize="@dimen/ab_button_text_size" 
+																													android:layout_gravity="center" 
+																													android:minWidth="@dimen/ab_large_button_width"
+																													android:layout_height="@dimen/ab_cc_button_height"
+																													android:layout_centerHorizontal="true">
+																										</Button>
+																										<ImageView android:layout_width="wrap_content"
+																													android:layout_height="wrap_content"
+																													android:src="@drawable/ab_lock" 
+																													android:id="@+id/ImageViewLock" 
+																													android:layout_gravity="center" 
+																													android:layout_toRightOf="@+id/bt_ly_login_buy_now" 
+																													android:layout_centerVertical="true">
+																										</ImageView>
+																						</RelativeLayout>
+																						<Button android:text="@string/AB_CC_FORGOT_PASSWORD" 
+																									android:id="@+id/bt_ly_login_forgot_password" 
+																									android:layout_width="wrap_content" 
+																									android:textSize="@dimen/ab_button_text_size" 
+																									android:layout_gravity="center" 
+																									android:minWidth="@dimen/ab_large_button_width"
+																									android:layout_height="@dimen/ab_cc_button_height">
+																						</Button>
+																		</LinearLayout>
+																		<RelativeLayout android:layout_width="fill_parent" 
+																						android:id="@+id/RelativeLayoutBottomMsg" 
+																						android:gravity="bottom" 
+																						android:layout_height="wrap_content">
+																						<LinearLayout android:id="@+id/LinearLayoutBottomMsg"
+																										android:layout_height="wrap_content"
+																										android:orientation="vertical" 
+																										android:layout_width="fill_parent" 
+																										android:layout_alignParentBottom="true">
+																										<RelativeLayout android:id="@+id/RelativeLayoutButtons" 
+																														android:layout_height="wrap_content" 
+																														android:layout_width="fill_parent">
+																														<Button android:text="@string/SKB_BACK" 
+																																	android:id="@+id/bt_ly_login_back" 
+																																	android:layout_width="wrap_content" 
+																																	android:textSize="@dimen/ab_button_text_size" 
+																																	android:layout_height="@dimen/ab_cc_button_height">
+																														</Button>
+																														<Button android:text="@string/SKB_TCS" 
+																																	android:id="@+id/bt_ly_login_tcs" 
+																																	android:layout_width="wrap_content" 
+																																	android:textSize="@dimen/ab_button_tcs_text_size" 
+																																	android:layout_height="@dimen/ab_cc_button_height" 
+																																	android:layout_toRightOf="@+id/bt_ly_login_back">
+																														</Button>
+																														<Button android:text="@string/SKB_EXIT" 
+																																	android:id="@+id/bt_ly_login_exit" 
+																																	android:layout_width="wrap_content" 
+																																	android:layout_height="@dimen/ab_cc_button_height" 
+																																	android:layout_alignParentRight="true" 
+																																	android:textSize="@dimen/ab_button_text_size"
+																																	android:minWidth="@dimen/ab_small_button_width">
+																														</Button>
+																										</RelativeLayout>
+																										<LinearLayout android:layout_width="fill_parent" 
+																													android:gravity="center" 
+																													android:layout_height="@dimen/ab_separation_height" 
+																													android:paddingLeft="@dimen/ab_separation_padding" 
+																													android:paddingRight="@dimen/ab_separation_padding" 
+																													android:background="@color/separation"
+																													android:id="@+id/LinearLayoutSeparation">
+																										</LinearLayout>
+																										<TextView android:id="@+id/lblBottomMsg"
+																													android:layout_height="wrap_content"
+																													android:textSize="@dimen/ab_bottom_msg_text_size"
+																													android:layout_width="wrap_content" 
+																													android:text="@string/AB_CC_GL_PEACE_OF_MIND" 
+																													android:paddingLeft="@dimen/ab_textview_min_padding"
+																													android:paddingRight="@dimen/ab_textview_min_padding"
+																													android:gravity="left">
+																										</TextView>
+																						</LinearLayout>
+																		</RelativeLayout>
+														</LinearLayout>	
+							</FrameLayout>
+							<FrameLayout android:id="@+id/FrameLayoutHeader"
+										android:layout_width="fill_parent" 
+										android:layout_gravity="top"
+										android:background="@drawable/ab_top_bar" 
+										android:layout_height="@dimen/ab_tittle_bar_size_h">
+										<ImageView android:id="@+id/ImageViewGLLogo"
+													android:layout_width="wrap_content"
+													android:layout_height="wrap_content"
+													android:src="@drawable/ab_logo_tittle_horiz"
+													android:paddingTop="@dimen/ab_logo_tittle_gap"
+													android:paddingLeft="@dimen/ab_logo_tittle_gap">
+										</ImageView>
+										<ImageView android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:paddingTop="@dimen/ab_logo_tittle_gap"
+											android:paddingRight="@dimen/ab_logo_tittle_gap" 
+											android:src="@drawable/ab_logo_creditcards" 
+											android:id="@+id/ImageViewCCLogos" 
+											android:layout_gravity="right">
+										</ImageView>
+							</FrameLayout>
+				</FrameLayout>
+</LinearLayout>

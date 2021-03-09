@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="pss_vzw_confirm_buy_title">{GAME}!</string>
+<string name="pss_vzw_confirm_buy">Precio: {PRICE} USD\n\nHaz clic en \'Conseguir el juego\' para confirmar.\nLa compra será cargada a tu cuenta de Verizon Wireles en tu factura de teléfono.\n\nSe pueden aplicar costes por tráfico de datos durante la descarga y la compra, en función de tu plan de datos.</string>
+<string name="pss_vzw_cancel">Cancelar</string>
+<string name="pss_vzw_get_game">Conseguir el juego</string>
+<string name="pss_vzw_please_wait">Por favor espere...</string>
+<string name="pss_vzw_try_again">Necesitas estar conectado a la red Verizon Wireless Network para continuar.\n\nQuieres intentarlo de nuevo?</string>
+<string name="pss_vzw_try_again_glshop">Necesitas estar conectado a la red Verizon Wireless Network para continuar.\n\nPorfavor inténtalo de nuevo para completar la compra</string>
+<string name="pss_vzw_yes">Si</string>
+<string name="pss_vzw_no">No</string>
+<string name="pss_vzw_transaction_complete_title">Transacción Completa</string>
+<string name="pss_vzw_transaction_complete">Gracias por comprar \n{GAME}!\n\nEl precio aparecerá en tu factura de teléfono de Verizon Wireless.\n\nLa Descarga comenzara en la barra de notificaciones.</string>
+<string name="pss_vzw_downlaod">Comenzar la descarga</string>
+<string name="pss_vzw_wifi_checkbox_text">Descargar por Wi-FI</string>
+<string name="pss_vzw_data_warning">Se pueden aplicar costes por tráfico de datos durante la descarga através de Verizon Wireless Network.</string>
+<string name="pss_vzw_wait_connection_wifi">Habilitando Wi-Fi...</string>
+<string name="pss_vzw_unknown_sources_message">Para jugar {GAME} habilite el uso de aplicaciones que no pertenezcan a Market:</string>
+<string name="pss_vzw_unknown_sources_message_01">1. Presione \"Configuracion\"</string>
+<string name="pss_vzw_unknown_sources_message_02">2. Checar \"Orígenes Desconocidos\"</string>
+<string name="pss_vzw_unknown_sources_message_03">3. Presione \"Aceptar\" para habilitar Orígenes Desconocidos</string>
+<string name="pss_vzw_unknown_sources_message_04">4. Presione la tecla de retroceso para continuar.</string>
+<string name="pss_vzw_settings">Configuracion</string>
+<string name="pss_vzw_wait_disable_connection">Desabilitando Wi-Fi...</string>
+</resources>

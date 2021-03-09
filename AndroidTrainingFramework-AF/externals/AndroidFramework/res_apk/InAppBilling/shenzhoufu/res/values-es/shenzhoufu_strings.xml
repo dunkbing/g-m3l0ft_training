@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <string name="app_name">Android Billing</string> -->
+	<string name="IAB_SKB_BUY">Comprar</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_WARNING_MESSAGE">Usa Comprar para iniciar el proceso de compra</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_TYPE">Tipo de tarjeta prepago</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_DENOMINATION">Cantidad de tarjeta prepago</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_NUMBER">Número de tarjeta prepago</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_PASSWORD">Contraseña de tarjeta prepago</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_CHECKBOX_SAVE_INFO">Información almacenada de tarjeta prepago</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PREPAID_CARD_TYPE_CHINA_MOBILE">China Mobile</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PREPAID_CARD_TYPE_CHINA_UNICOM">China Unicom</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PREPAID_CARD_TYPE_CHINA_TELECOM">China Telecom</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_DIALOG_TITLE">Atención</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_DIALOG_MESSAGE">Podrías perder dinero si no seleccionas la cantidad correcta de la tarjeta prepago.</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PURCHASE_PROGRESS_TITLE">Pagando por Shenzhoufu...</string>	
+	<string name="IAB_SHENZHOUFU_LAYOUT_PURCHASE_PROGRESS_MESSAGE">Espera mientras se realiza la transacción...</string>	
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_SHENZHOUFU">Estamos esperando a la confirmación de entrega de tu objeto para validar la compra. Cuando se procese la compra actualizaremos tu lista de objetos.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_SHENZHOUFU">La compra anterior se ha procesado, y no se te ha cobrado nada.</string>	
+	<string name="IAB_PURCHASE_ITEM_FAILURE_INSUFFICIENT_BALANCE_SHENZHOUFU">Saldo insuficiente</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_VERIFICATION_FAILED">Error al verificar</string>	
+	<string name="IAB_PURCHASE_ITEM_FAILURE_VERIFICATION_INTERRUPTED">Se ha producido un error de red. Tu transacción ha quedado pendiente y se reanudará cuando se vuelva a activar la conexión.</string>	
+	<string name="IAB_SHENZHOUFU_PENDING_TITLE">Transacción pendiente</string>
+	<string name="IAB_SHENZHOUFU_CONFIRM_PENDING_TRANSACTION">Estimado cliente, por favor, selecciona "Aceptar" para continuar con tu compra pendiente.</string>
+	<string name="IAB_SHENZHOUFU_PENDING_TRANSACTION_FAILED">Tu compra anterior no se ha completado.</string>
+</resources>

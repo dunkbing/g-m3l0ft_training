@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="SERVER_VALIDATE_REQUIRED">يرجى تفعيل اتصالك بالانترنت لتسجيل نسختك من  {GAME_NAME}.</string>
+	<string name="INVALID_LICENSE">هذه ليست نسخة أصلية من {GAME_NAME}.</string>
+</resources>

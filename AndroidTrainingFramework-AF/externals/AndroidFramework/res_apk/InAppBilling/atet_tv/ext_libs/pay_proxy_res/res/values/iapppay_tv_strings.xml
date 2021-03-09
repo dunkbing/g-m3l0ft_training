@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <string name="aipay_tv_order_pay_amount">￥%1$s</string>    
+     
+</resources>

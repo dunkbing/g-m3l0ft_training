@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="SERVER_VALIDATE_REQUIRED">Aktifkan sambungan Internet untuk mendaftarkan salinan {GAME_NAME}.</string>
+	<string name="INVALID_LICENSE">Ini bukanlah salinan asli dari {GAME_NAME}.</string>
+</resources>

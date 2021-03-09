@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DRM_NETWORK_DIALOGUE_1">无网络连接可用。是否要配置你的WLAN连接，或浏览运营商网络？</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">系统检测出你的本地系统上的许可证无效。应用将会使用网络连接检查许可证。是否要继续？</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">服务器检测出该应用未经购买，所以未发送许可证到该应用。</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">服务器已对应用参数进行了检测，并检测出至少有一个参数为无效值（如果电话是关闭状态，有可能出现该问题）。</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">由于服务器故障，例如，连接数据库故障，服务器无法确认应用已购买。</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">由于网络故障，许可证未发送到应用（应用无法收到服务器回应）。</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">由于网络故障，许可证未发送到应用（应用无法将请求发送到服务器）。</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">许可证无法保存到本地磁盘。可能的原因有：磁盘I/O错误，文件夹空间不够，未得到将许可证保存到磁盘的权限。</string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">如果客户端请求服务器发送某个不在Zirconia文库内的许可证，就会发生该问题。</string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">如果客户端请求服务器发送某个来自无效版本的Zirconia文库的请求，并且许可证服务器不支持，就会发生该问题。</string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">服务器发送的许可证不可用。</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">许可证是由无效服务器发送到应用的。</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">用户修改过应用。</string>
+
+	<string name="DRM_EZIRCONIA_SUCCESS_1">已成功接收到有效许可证。</string>
+</resources>

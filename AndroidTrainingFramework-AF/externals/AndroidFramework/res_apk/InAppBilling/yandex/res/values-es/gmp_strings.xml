@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">Imposible realizar ninguna compra</string>
+    <string name="billing_not_supported_message">El servicio de facturación de Market no está disponible en estos momentos. Puedes seguir usando esta aplicación, pero no podrás realizar ninguna compra.</string>
+    <string name="cannot_connect_title">Imposible conectar al Market.</string>
+    <string name="cannot_connect_message">Esta aplicación no ha podido conectarse al Market. Es posible que tu versión de Market no sea la más reciente. Puedes seguir usando esta aplicación, pero no podrás realizar ninguna compra.</string>
+    <string name="waitting_confirm">Estamos esperando a que Yandex confirme tu compra. Actualizaremos tu lista cuando se haya completado el proceso.</string>
+    <string name="pending_transaction">Tienes una transacción pendiente.</string>
+	<string name="purchase_success">Compra realizada con éxito.</string>
+	<string name="purchase_unsuccess">No se ha podido completar la compra.</string>
+	<string name="iab_retry">Volver a intentar</string>
+	<string name="iab_cancel">Cancelar</string>
+	<string name="iab_ok">OK</string>
+</resources>

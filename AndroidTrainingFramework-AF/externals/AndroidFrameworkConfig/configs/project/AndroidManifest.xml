@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:tools="http://schemas.android.com/tools"
+#if SIMPLIFIED_PN && AMAZON_STORE
+	  xmlns:amazon="http://schemas.amazon.com/apk/res/android"
+#endif
+      package=MANIFEST_PACKAGE_LINE
+      android:versionCode=GAME_VERSION_CODE
+      android:versionName=GAME_VERSION_NAME
+#if USE_INSTALLATION_LOCATION
+	  android:installLocation="auto"
+#endif
+>
+
+	<!-- For SKT_STORE API v111128 minSdkVersion must be "7" -->
+	<uses-sdk android:minSdkVersion="9"
+            android:targetSdkVersion=TARGET_API_LEVEL/>
+
+#if GOOGLE_DRM || GOOGLE_MARKET_DOWNLOAD
+	<uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+#endif
+#if GOOGLE_STORE || GOOGLE_STORE_V3
+	<uses-permission android:name="com.android.vending.BILLING"/>
+#endif
+
+#if BAZAAR_STORE
+	<uses-permission android:name="com.android.vending.BILLING"/>
+	<uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
+#endif
+
+#if YANDEX_STORE
+	<uses-permission android:name="com.yandex.store.permission.BILLING" />
+	<uses-permission android:name="org.onepf.openiab.permission.BILLING" />
+#endif
+
+#if SKT_STORE || KT_STORE || GOOGLE_STORE || BOKU_STORE
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+#endif
+
+#if USE_ADS_SERVER
+	<!-- mandatory permissions -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	#if !REMOVE_READ_PHONE_STATE_PERMISSION
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	#endif
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />	
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+	#if ADS_USE_FLURRY && ADS_FLURRY_USE_LOCATION	
+		<!-- optional permissions to serve location based Ads -->
+		<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+		<!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+	#endif
+#endif
+
+#if USE_GLLIVE_HTML5 && GLIVE_GL_SHOP
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+#endif
+
+#if USE_DIRECT_IGP
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+#endif
+
+#if BOKU_STORE
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+	<!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+#endif
+
+#if SAMSUNG_STORE
+	<uses-permission android:name="com.sec.android.iap.permission.BILLING"/>
+#endif
+
+#if SKT_STORE
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<uses-permission android:name="com.tmoney.vending.INBILLING"/> <permission android:name="com.tmoney.vending.INBILLING"/>
+#endif
+
+#if KT_STORE
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+#endif
+
+#if ATET_STORE
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+#endif
+
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>	
+	#if !REMOVE_READ_PHONE_STATE_PERMISSION
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	#endif
+	
+#if USE_INSTALLER || USE_GLLIVE || USE_IGP_ACTIVITY || USE_IGP_FREEMIUM ||USE_BILLING || USE_IN_APP_BILLING || USE_WELCOME_SCREEN || USE_GLLIVE_HTML5 || USE_SKT_DRM
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+#endif
+
+#if USE_BLUETOOTH	
+	<uses-permission android:name="android.permission.BLUETOOTH"/>
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-feature android:name="android.hardware.bluetooth" />
+#endif
+
+#if USE_INSTALLER || USE_BILLING || USE_IN_APP_BILLING || USE_GLLIVE_HTML5
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	#if !USE_MARKET_INSTALLER
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	#endif
+#endif
+
+#if VERIZON_DRM
+	<uses-permission android:name="android.permission.START_BACKGROUND_SERVICE"/> 
+	<uses-permission android:name="com.verizon.vcast.apps.VCAST_APPS_LICENSE_SERVICE"/> 
+#endif	
+
+#if USE_BILLING	
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.SEND_SMS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<uses-permission android:name="android.permission.WRITE_SMS"/>
+	<uses-permission android:name="android.permission.READ_SMS"/>	
+#endif
+
+#if USE_GOOGLE_ANALYTICS_TRACKING
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+#endif
+
+#if SIMPLIFIED_PN
+	#if USE_NOKIA_API
+	<!-- This app has permission to register and receive data message -->
+	<uses-permission android:name="com.nokia.pushnotifications.permission.RECEIVE" />
+	#endif
+	#if AMAZON_STORE
+	<!-- This permission ensures that no other application can intercept your ADM messages. It
+	should have the form packagename.permission.RECIEVE_ADM_MESSAGE where packagename is the
+	name defined in the "package" property of the manifest tag. --> 
+    <permission android:name=STR_ADM_PERMISSION
+        android:protectionLevel="signature"/>
+    
+    <!-- Required permissions -->
+    <uses-permission android:name=STR_ADM_PERMISSION/>
+    <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+	#endif
+#endif
+
+#if USE_BEAM
+	<uses-permission android:name="android.permission.NFC" />
+#endif
+#if USE_DATA_SHARING
+	<permission android:name="glshare.permission.ACCESS_SHARED_DATA" android:protectionLevel="signature"/>
+	<uses-permission android:name="glshare.permission.ACCESS_SHARED_DATA" />
+#endif
+
+#if USE_MARKET_INSTALLER || GOOGLE_STORE || GOOGLE_STORE_V3
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+#endif
+
+	<application
+	#if RELEASE_VERSION
+		android:debuggable="false"
+	#else
+		android:debuggable="true"
+	#endif
+		android:label="@string/icon_label"
+		android:icon="@drawable/icon"
+		tools:replace="android:icon"
+		android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+#if USE_MANAGED_SPACE
+		android:manageSpaceActivity=".ManageSpace"
+#endif
+#if GOOGLE_DRM || GOOGLE_MARKET_DOWNLOAD
+		android:restrictedAccountType="com.google"
+#endif
+	>
+		<meta-data android:name="CHANNEL_ID" android:value="6"/>
+		
+		#if ADD_GOOGLE_PLAY_SERVICES
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		#endif
+		#if USE_GOOGLE_ANALYTICS_TRACKING
+		<meta-data android:name="com.google.android.gms.analytics.globalConfigResource" android:resource="@xml/global_config" />
+		#endif
+		
+		<activity android:name=".MainActivity"
+                android:label="@string/icon_label"
+                #if GAME_ORIENTATION_LANDSCAPE                
+                android:screenOrientation="landscape"
+                #else
+                android:screenOrientation="portrait"
+                #endif
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode|screenSize|layoutDirection"
+				android:multiprocess="false"
+		>
+		
+		#if USE_NATIVE_ACTIVITY
+		<meta-data android:name="android.app.lib_name" android:value=SO_LIB_FILE />
+		#endif
+					
+		#if !USE_SKT_DRM && !USE_LGU_DRM && !USE_KT_DRM && !USE_SAMSUNG_DRM && !USE_LGW_DRM && !USE_OPTUS_DRM && !USE_PANTECH_ARM
+
+
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+	            <category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		#endif
+        </activity>
+		
+		
+	#if USE_SOCIALLIB
+		<activity android:name="com.facebook.LoginActivity"
+			   android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			   android:label="@string/app_name"
+			 android:configChanges="mcc|mnc|locale|touchscreen|orientation|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize"
+			 android:windowSoftInputMode="stateHidden|adjustResize"
+			   />
+		<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+		<activity android:name="com.renren.mobile.rmsdk.oauth.auth.OAuthActivity" 
+					android:configChanges="orientation|navigation|keyboardHidden"/>
+		<activity android:name="com.renren.mobile.rmsdk.oauth.auth.ChooseAccountActivity"/>
+		<activity android:name="com.renren.mobile.rmsdk.component.share.ShareActivity" 
+					android:configChanges="orientation|keyboardHidden|navigation" 
+                    #if GAME_ORIENTATION_LANDSCAPE                
+                    android:screenOrientation="landscape"
+                    #else
+                    android:screenOrientation="portrait"
+                    #endif                    
+				 />
+		<activity android:name="com.renren.mobile.rmsdk.component.share.ChooseFriendActivity" 
+					android:configChanges="orientation|keyboardHidden|navigation" 
+					android:screenOrientation="portrait" /> 
+					
+		<activity android:name="com.gameloft.GLSocialLib.VK.VKLoginActivity"
+				android:theme="@android:style/Theme.NoTitleBar"
+				android:configChanges="mcc|mnc|locale|touchscreen|orientation|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize"
+				android:windowSoftInputMode="stateHidden|adjustResize"	/>
+				
+		<intent-filter>
+			<data android:scheme="kakao@string/kakao_app_id" />
+			<action android:name="android.intent.action.VIEW" />
+			<category android:name="android.intent.category.BROWSABLE" />
+			<category android:name="android.intent.category.DEFAULT" />
+		</intent-filter>
+		<meta-data android:name="com.gameloft.GLSocialLib.kakao.ApplicationId" android:value="@string/kakao_app_id"/>
+		<meta-data android:name="com.gameloft.GLSocialLib.kakao.ApplicationSecretKey" android:value="@string/kakao_app_secret_key"/>
+		<activity android:name="com.gameloft.GLSocialLib.kakao.KakaoGamePostStoryActivity"
+                #if GAME_ORIENTATION_LANDSCAPE                
+                android:screenOrientation="landscape"
+                #else
+                android:screenOrientation="portrait"
+                #endif        
+					/>
+				
+		#if USE_AMAZON_GAME_CIRCLE
+			<!-- Game circle -->
+			<activity
+				android:name="com.amazon.ags.html5.overlay.GameCircleUserInterface"
+				android:theme="@style/GCOverlay">
+			</activity>
+			<activity
+				android:name="com.amazon.identity.auth.device.authorization.AuthorizationActivity"
+				android:theme="@android:style/Theme.NoDisplay"
+				android:allowTaskReparenting="true"
+				android:launchMode="singleTask">
+				<intent-filter>
+					<action android:name="android.intent.action.VIEW" />
+					<category android:name="android.intent.category.DEFAULT" />
+					<category android:name="android.intent.category.BROWSABLE" />
+					<data android:host=STR_APP_PACKAGE android:scheme="amzn" />
+				</intent-filter>
+			</activity>       
+			<receiver
+				android:name="com.amazon.identity.auth.device.authorization.PackageIntentReceiver"
+				android:enabled="true" >
+				<intent-filter>
+					<action android:name="android.intent.action.PACKAGE_INSTALL" />
+					<action android:name="android.intent.action.PACKAGE_ADDED" />
+					<data android:scheme="package" />
+				</intent-filter>
+			</receiver>
+			<!-- end Game circle -->
+		#endif
+	  #endif
+		
+		
+#if USE_JAXS_GAME
+		<activity android:name=".JaxsStart"
+                android:label="@string/icon_label"
+                #if GAME_ORIENTATION_LANDSCAPE                
+                android:screenOrientation="landscape"
+                #else
+                android:screenOrientation="portrait"
+                #endif
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode"
+				android:finishOnTaskLaunch="true"
+				android:clearTaskOnLaunch="true"
+				android:launchMode="singleInstance"
+				android:multiprocess="false"
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+			</intent-filter>
+        </activity>
+		JAXSGAMESACTIVITY
+#endif
+
+#if USE_SKT_DRM
+		<activity android:name=".SKT_DRM"
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode"
+		>		
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>		
+		</activity>
+#endif
+#if USE_LGW_DRM
+		<activity android:name=".LGW_DRM"
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+#endif
+
+#if USE_LGU_DRM
+		<activity android:name=".LGU_DRM"
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode"
+		>		
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>		
+		</activity>
+#endif
+
+#if USE_KT_DRM
+		<activity android:name=".KT_DRM"
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode"
+		>		
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>		
+		</activity>
+#endif
+
+#if USE_SAMSUNG_DRM
+		<activity android:name=".SamsungDRM"
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode"
+		>		
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>		
+		</activity>
+#endif
+
+#if USE_OPTUS_DRM
+		<activity android:name="com.msap.store.drm.android.projects.optusjg.OptusGamesHelpActivity"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:label="Help" />
+		<activity android:name="com.msap.store.drm.android.WebsiteActivity"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:label="Checking your license" />
+		<activity android:name="com.msap.store.drm.android.SimpleCheckerActivity"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:label="Checking your license" />
+		
+		<activity android:name="com.msap.store.drm.android.CheckLicense"
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+		>
+				<intent-filter>
+						<action android:name="android.intent.action.MAIN" />
+						<category android:name="android.intent.category.LAUNCHER" />
+				</intent-filter>
+		</activity>
+#endif
+
+#if USE_PANTECH_ARM
+		<activity android:name=".PANTECH_ARM"
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode"
+		>		
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>		
+		</activity>
+#endif
+
+#if USE_INSTALLER
+		<activity
+			android:name=".installer.GameInstaller"
+            #if GAME_ORIENTATION_LANDSCAPE                
+            android:screenOrientation="landscape"
+            #else
+            android:screenOrientation="portrait"
+            #endif
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode|screenSize|layoutDirection"
+			android:label="@string/icon_label"
+			android:multiprocess="false"
+			android:launchMode="standard"
+			android:theme="@style/Theme.GameInstallerNoBG"
+		>
+        </activity>
+#endif
+#if USE_IN_APP_BILLING
+	#if GAMELOFT_SHOP
+		<activity
+			android:name=".iab.InAppBillingActivity"
+            #if GAME_ORIENTATION_LANDSCAPE                
+            android:screenOrientation="landscape"
+            #else
+            android:screenOrientation="portrait"
+            #endif
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode|screenSize|layoutDirection"
+			android:label="@string/icon_label"
+			android:multiprocess="false"
+			android:theme="@style/Theme.InAppBillingNoBG"
+		>
+        </activity>
+	#endif
+#if USE_MTK_SHOP_BUILD || ENABLE_IAP_PSMS_BILLING
+		<receiver android:name=".iab.SmsReceiver">
+			<intent-filter android:priority="100">
+				<action android:name = "android.provider.Telephony.SMS_RECEIVED" />
+			</intent-filter>
+		</receiver>
+#endif
+	#if GOOGLE_STORE	
+		<service android:name=".iab.BillingService" />
+		<receiver android:name=".iab.BillingReceiver">
+		  <intent-filter>
+			<action android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+			<action android:name="com.android.vending.billing.RESPONSE_CODE" />
+			<action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+		  </intent-filter>
+		</receiver>	
+	#endif
+	
+	#if GOOGLE_STORE_V3 || BAZAAR_STORE || YANDEX_STORE
+		<activity
+			android:name=".iab.GMPActivity"
+            #if GAME_ORIENTATION_LANDSCAPE                
+            android:screenOrientation="landscape"
+            #else
+            android:screenOrientation="portrait"
+            #endif
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode|screenSize"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			>
+		</activity>
+	#endif
+	
+	#if SKT_STORE
+			<meta-data android:name="iap:api_version" android:value="1" />
+		<activity
+			android:name=".iab.SktIabActivity"
+            #if GAME_ORIENTATION_LANDSCAPE                
+            android:screenOrientation="landscape"
+            #else
+            android:screenOrientation="portrait"
+            #endif
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|screenSize"
+			android:multiprocess="false"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name="com.skplanet.dodo.IapWeb" android:configChanges="orientation|screenSize|keyboardHidden|locale" android:excludeFromRecents="true" android:windowSoftInputMode="stateHidden"/>
+
+	#endif
+
+	#if KT_STORE
+		<activity
+			android:name=".iab.KtIabActivity"
+            #if GAME_ORIENTATION_LANDSCAPE                
+            android:screenOrientation="landscape"
+            #else
+            android:screenOrientation="portrait"
+            #endif
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|screenSize"
+			android:multiprocess="false"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+		</activity>
+		<service android:name="com.kt.olleh.inapp.TimerService" />
+	#endif	
+	
+	#if BOKU_STORE
+		<activity
+			android:name=".iab.BokuIABActivity"
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+		</activity>
+	#endif
+
+	#if BOKU_STORE
+		<activity android:name="com.boku.mobile.android.PaymentPanelActivity"
+			android:label="Payment Panel" 
+			android:configChanges="keyboard|keyboardHidden|navigation|orientation"
+			android:theme="@style/BokuModal" />
+	#endif
+	
+	#if AMAZON_STORE
+		<receiver android:name="com.amazon.inapp.purchasing.ResponseReceiver"
+				android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY"> 
+			<intent-filter> 
+				<action android:name="com.amazon.inapp.purchasing.NOTIFY"/> 
+			</intent-filter> 
+		</receiver>
+	#endif
+
+    #if SAMSUNG_STORE
+        <activity
+            android:name=".iab.SamsungIAB2Activity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+    #endif
+	
+	#if VXINYOU_STORE
+		<activity
+            android:name=".iab.VxinyouIABActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+		
+        <!--appid -->
+        <meta-data
+            android:name="VXINYOU_APPID"
+            android:value=VXINYOU_APPID />
+	#endif
+
+	#if ZTE_STORE
+		<activity
+            android:name=".iab.ZTEIABActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+	#endif
+	
+	#if VZW_STORE
+		<activity
+			android:name=".iab.VZWIABActivity"
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+			android:theme="@android:style/Theme.Dialog">
+		</activity>
+		#if VZW_MTX
+		<activity 
+			android:label="@string/app_name" android:name=".iab.MTXTransaction">
+			#if GAME_ORIENTATION_LANDSCAPE                
+            android:screenOrientation="landscape"
+            #else
+            android:screenOrientation="portrait"
+            #endif
+            >
+		</activity>
+		#endif
+	#endif
+	
+	#if PANTECH_STORE
+		<activity
+			android:name=".iab.PantechIabActivity"
+            #if GAME_ORIENTATION_LANDSCAPE                
+            android:screenOrientation="landscape"
+            #else
+            android:screenOrientation="portrait"
+            #endif
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+			android:multiprocess="false"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+		</activity>
+		
+		<receiver android:enabled="true" android:name="com.pantech.app.appsplay.iabl.PurchaseInfoReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.IN_APP_PURCHASE_INFO" />
+			</intent-filter>
+		</receiver>
+	#endif
+
+	#if ATET_STORE
+		<activity
+            android:name="com.iapppay.mpay.ifmgr.PayManagerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+ 		<activity
+            android:name="com.iapppay.oneclickpay.InputCardActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.oneclickpay.LLUnbindCardActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.oneclickpay.YPUnbindCardActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.oneclickpay.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.oneclickpay.AgreementActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.oneclickpay.CommUnbindCardActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.iapppay.oneclickpay.CallWaitingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivityEx"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <activity
+            android:name="com.iapppay.pay.tv.IApppayTVActivityGroup"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.iapppay.pay.tv.MobilePayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.pay.tv.OneClickPayActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.pay.tv.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <service 
+            android:name="com.iapppay.pay.tv.QueryOrderService">
+        </service>
+        
+        <activity
+            android:name=".iab.AtetIABActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        </activity>
+
+	#endif
+
+
+#endif
+
+#if USE_VIDEO_PLAYER
+		<activity android:name=".MyVideoView"
+                #if GAME_ORIENTATION_LANDSCAPE                
+                android:screenOrientation="landscape"
+                #else
+                android:screenOrientation="portrait"
+                #endif
+				  android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode"
+				  android:multiprocess="false"
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />	            
+			</intent-filter>
+        </activity>
+#endif        
+
+#if GA_CE_TRACK
+		<activity android:name=".HelpActivity"
+                #if GAME_ORIENTATION_LANDSCAPE                
+                android:screenOrientation="landscape"
+                #else
+                android:screenOrientation="portrait"
+                #endif
+				  android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode"
+				  android:multiprocess="false"
+		>
+        </activity>
+#endif    
+
+#if USE_GLLIVE		
+		<activity android:name=".GLiveMain"
+                #if GAME_ORIENTATION_LANDSCAPE                
+                android:screenOrientation="landscape"
+                #else
+                android:screenOrientation="portrait"
+                #endif
+				android:theme="@android:style/Theme.NoTitleBar"
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode"
+				android:multiprocess="false"
+				android:windowSoftInputMode="adjustPan"
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />	            
+			</intent-filter>
+		</activity>
+#endif
+
+#if USE_GLLIVE_HTML5	
+	<activity
+		android:name=".GLiveHTML.GLLiveActivity" 
+		android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+		android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|orientation|screenSize"
+		#if USE_AUTOROTATE
+			android:screenOrientation="sensorLandscape"
+		#else
+            #if GAME_ORIENTATION_LANDSCAPE                
+            android:screenOrientation="landscape"
+            #else
+            android:screenOrientation="portrait"
+            #endif
+		#endif
+		android:multiprocess="false"
+		android:windowSoftInputMode="stateAlwaysHidden"
+	>
+		<intent-filter >
+			<action android:name="android.intent.action.MAIN" />
+		</intent-filter>
+	</activity>
+	#if GLIVE_GL_SHOP
+		<activity
+			android:name=".GLiveHTML.iab.InAppBillingActivity"
+		#if USE_AUTOROTATE
+			android:screenOrientation="sensorLandscape"
+		#else
+			#if GAME_ORIENTATION_LANDSCAPE                
+            android:screenOrientation="landscape"
+            #else
+            android:screenOrientation="portrait"
+            #endif
+		#endif
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|screenSize"
+			android:label="@string/icon_label"
+			android:multiprocess="false"
+			android:theme="@style/Theme.InAppBillingNoBG"
+		>
+        </activity>
+		
+		<activity
+			android:name=".GLiveHTML.iab.BokuIABActivity"
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|screenSize"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+		</activity>
+		
+		<activity android:name="com.boku.mobile.android.PaymentPanelActivity"
+			android:label="Payment Panel" 
+			android:configChanges="keyboard|keyboardHidden|navigation|orientation"
+			android:theme="@style/BokuModal" />
+		
+		<activity android:name=".GLiveHTML.iab.PayPalIABActivity"
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|screenSize"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+		</activity>
+	#endif
+#endif
+
+#if USE_IGP_ACTIVITY
+		<activity android:name=".IGPActivity"
+				#if GAME_ORIENTATION_LANDSCAPE                
+                android:screenOrientation="landscape"
+                #else
+                android:screenOrientation="portrait"
+                #endif
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode"
+				android:finishOnTaskLaunch="true"
+				android:clearTaskOnLaunch="true"
+				android:multiprocess="false"
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />	            
+			</intent-filter>
+        </activity>
+#endif
+
+#if USE_IGP_FREEMIUM
+		<activity android:name=".IGPFreemiumActivity"
+				android:screenOrientation="unspecified"
+				android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+				android:hardwareAccelerated="true"
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" 
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />	            
+			</intent-filter>
+        </activity>
+#endif
+
+#if USE_DIRECT_IGP		
+		<activity android:name=".DirectIGP.DirectIGPActivity"
+			#if USE_AUTOROTATE
+				android:screenOrientation="sensorLandscape"
+			#else
+				#if GAME_ORIENTATION_LANDSCAPE                
+                android:screenOrientation="landscape"
+                #else
+                android:screenOrientation="portrait"
+                #endif
+			#endif				
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|layoutDirection"
+				android:multiprocess="false"
+				android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />	            
+			</intent-filter>
+        </activity>
+		
+		<activity
+			android:name=".DirectIGP.iab.InAppBillingActivity"
+		#if USE_AUTOROTATE
+			android:screenOrientation="sensorLandscape"
+		#else
+			#if GAME_ORIENTATION_LANDSCAPE                
+            android:screenOrientation="landscape"
+            #else
+            android:screenOrientation="portrait"
+            #endif
+		#endif
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|screenSize"
+			android:label="@string/icon_label"
+			android:multiprocess="false"
+			android:theme="@style/Theme.InAppBillingNoBG"
+		>
+        </activity>
+		
+		<activity
+			android:name=".DirectIGP.iab.BokuIABActivity"
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|screenSize"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+		</activity>
+		
+		<activity android:name="com.boku.mobile.android.PaymentPanelActivity"
+			android:label="Payment Panel" 
+			android:configChanges="keyboard|keyboardHidden|navigation|orientation"
+			android:theme="@style/BokuModal" />
+		
+		<receiver android:name=".DirectIGP.iab.SmsReceiver">
+			<intent-filter android:priority="100">
+				<action android:name = "android.provider.Telephony.SMS_RECEIVED" />
+			</intent-filter>
+		</receiver>
+#endif
+
+#if USE_IN_GAME_BROWSER
+		<activity
+            android:name=".InGameBrowser"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:configChanges="keyboard|keyboardHidden" >
+        </activity>
+#endif
+
+#if USE_ADS_SERVER
+		<activity android:name=".AdServerInterstitial" android:configChanges="keyboard|keyboardHidden|orientation|layoutDirection" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+		<activity
+            android:name=".AdServerVideos"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:screenOrientation="sensorLandscape"
+            android:hardwareAccelerated="true"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" >
+        </activity>
+		
+	#if !USE_MARKET_INSTALLER && !GOOGLE_STORE && !GOOGLE_STORE_V3
+		<receiver android:name="com.mobileapptracker.Tracker" android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
+	#endif
+		
+	#if ADS_USE_TAPJOY
+		<!--  Tapjoy -->
+		<activity
+			android:name="com.tapjoy.TJCOffersWebView"
+			android:configChanges="orientation|keyboardHidden|screenSize" />
+		<activity
+			android:name="com.tapjoy.TapjoyFullScreenAdWebView"
+			android:configChanges="orientation|keyboardHidden|screenSize" />
+		<activity
+			android:name="com.tapjoy.TapjoyDailyRewardAdWebView"
+			android:configChanges="orientation|keyboardHidden|screenSize" />
+		<activity
+			android:name="com.tapjoy.TapjoyVideoView"
+			android:configChanges="orientation|keyboardHidden|screenSize" />
+		<activity
+			android:name="com.tapjoy.TJAdUnitView"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+			android:hardwareAccelerated="true" />
+		<activity
+			android:name="com.tapjoy.mraid.view.ActionHandler"
+			android:configChanges="orientation|keyboardHidden|screenSize" />
+		<activity
+			android:name="com.tapjoy.mraid.view.Browser"
+			android:configChanges="orientation|keyboardHidden|screenSize" />
+	#endif
+	
+	#if ADS_USE_ADCOLONY
+		<!-- AdColony -->
+		<activity android:name="com.jirbo.adcolony.AdColonyOverlay"
+				android:configChanges="keyboardHidden|orientation|screenSize"
+				android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+		<activity android:name="com.jirbo.adcolony.AdColonyFullscreen"
+				android:configChanges="keyboardHidden|orientation|screenSize"
+				android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+		<activity android:name="com.jirbo.adcolony.AdColonyBrowser"
+				android:configChanges="keyboardHidden|orientation|screenSize"
+				android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+	#endif
+	
+	#if ADS_USE_YUME
+		<activity android:name=".YuMeActivity" 
+            android:configChanges="keyboardHidden|orientation">
+        </activity>
+		 <service android:name="com.yume.android.sdk.YuMeUUIDService">
+			<intent-filter>
+				<action android:name="com.yume.android.sdk.GETDEVICEUUID"/>
+			</intent-filter>
+		</service>
+	#endif
+	
+	#if ADS_USE_FLURRY
+		<activity android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"
+			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" 
+			android:hardwareAccelerated="true" >
+		</activity>
+	#endif
+#endif
+
+#if USE_BILLING
+	<activity android:name=".billing.AndroidBilling"
+		#if GAME_ORIENTATION_LANDSCAPE                
+        android:screenOrientation="landscape"
+        #else
+        android:screenOrientation="portrait"
+        #endif
+		android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode"
+		android:launchMode="singleTop"
+		android:theme="@style/Theme.AndroidBillingNoBG"
+	>
+	</activity>
+	<receiver android:name=".billing.SmsReceiver">
+		<intent-filter>
+			<action android:name = "android.provider.Telephony.SMS_RECEIVED" />
+		</intent-filter>
+	</receiver>
+	#if USE_BILLING_FOR_CHINA
+		<activity android:name=".billing.UMP4Activity"
+				#if GAME_ORIENTATION_LANDSCAPE                
+                android:screenOrientation="landscape"
+                #else
+                android:screenOrientation="portrait"
+                #endif
+				android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode"
+				android:multiprocess="false"
+		>
+		</activity>
+	#endif
+#endif
+#if USE_PSS
+		<activity
+			android:name=".pss.Pss"
+            #if GAME_ORIENTATION_LANDSCAPE                
+            android:screenOrientation="landscape"
+            #else
+            android:screenOrientation="portrait"
+            #endif
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:multiprocess="false"
+		>
+        </activity>
+#endif
+#if USE_BEAM
+		<activity android:name=".BeamReceiver">
+			<!--android:launchMode="singleTop">-->
+			<intent-filter>
+				<action android:name="android.nfc.action.NDEF_DISCOVERED" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType=BEAM_APLICATION />
+			</intent-filter>
+		</activity>
+#endif
+#if USE_MANAGED_SPACE
+		<activity android:name=".ManageSpace">
+			<!--android:launchMode="singleTop">-->			
+		</activity>
+#endif
+#if USE_PUSH_NOTIFICATION
+		<!-- In order to use the c2dm library, an
+			 application must declare a class with the name C2DMReceiver, in its 
+			 own package, extending com.google.android.c2dm.C2DMBaseReceiver
+			   
+			 It must also include this section in the manifest, replacing 
+			 "com.google.android.apps.chrometophone" with its package name. -->
+			 
+		<service android:name=".GCMIntentService" />
+		
+		<receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" 
+              android:permission="com.google.android.c2dm.permission.SEND" >
+		  <intent-filter>
+			<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+			<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+			<category android:name=STR_APP_PACKAGE />
+		  </intent-filter>
+		</receiver>
+		
+		<!--Alarm Receiver -->
+		<receiver android:name=".PushNotification.LocalPushReceiver">
+            <intent-filter>
+   				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+   			</intent-filter>
+        </receiver>
+		
+		<!--Push Notification Intent Receiver -->
+		<receiver android:name=".PushNotification.PushIntentReceiver">
+		   <intent-filter>
+			  <action android:name=PN_ACTION_RECEIVER />
+		   </intent-filter>
+		</receiver>
+		
+		<!--Push Notification Delete Receiver -->
+		<receiver android:name=".PushNotification.PushDeleteReceiver">
+		   <intent-filter>
+			  <action android:name=PN_DELETE_RECEIVER />
+		   </intent-filter>
+		</receiver>
+		
+#endif
+
+	<!-- Internet Status Update -->
+	<receiver android:name=".GLUtils.NetworkStateReceiver" android:exported="true">
+		<intent-filter>
+			<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+		</intent-filter>
+	</receiver>
+		
+#if USE_MARKET_INSTALLER || GOOGLE_STORE || GOOGLE_STORE_V3
+	 <receiver android:name=".BootCompletedReceiver"
+        android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </receiver>
+
+	<receiver android:name=".installer.IReferrerReceiver" android:exported="true">
+		<intent-filter>
+			<action android:name="com.android.vending.INSTALL_REFERRER" />
+		</intent-filter>
+	</receiver>
+#endif
+#if USE_GOOGLE_ANALYTICS_TRACKING
+		<receiver android:name=".ApplicationSetUp" android:exported="true">
+		    <intent-filter>
+		        <action android:name="com.gameloft.android.ApplicationSetUp" />
+		    </intent-filter>
+		</receiver>
+#endif
+#if USE_DATA_SHARING
+        <provider
+            android:authorities=STR_KEY_PROVIDER_AUTH
+            android:multiprocess="true"
+			android:exported="true"
+            android:name=".KeyProvider"
+			android:permission="glshare.permission.ACCESS_SHARED_DATA">
+		</provider>
+#endif
+
+#if USE_SOCIALLIB
+		<meta-data android:name="com.google.android.gms.games.APP_ID"
+        android:value="@string/game_api_app_id" />
+#endif
+		
+</application>	
+
+#if USE_GOOGLE_TV_BUILD
+	<uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+#else
+	<uses-feature android:name="android.hardware.touchscreen" />
+#endif
+#if USE_OPENGLES_20
+	<uses-feature android:glEsVersion="0x00020000"/>
+#else
+	<uses-feature android:glEsVersion="0x00030000"/>
+#endif
+#if USE_BEAM
+	<uses-feature android:name="android.hardware.nfc" android:required="false" />	
+#endif
+	<supports-screens
+		android:smallScreens="false"
+		android:anyDensity="true"
+		android:xlargeScreens="true"
+		android:largeScreens="true"
+		android:normalScreens="true">
+	</supports-screens>
+</manifest>

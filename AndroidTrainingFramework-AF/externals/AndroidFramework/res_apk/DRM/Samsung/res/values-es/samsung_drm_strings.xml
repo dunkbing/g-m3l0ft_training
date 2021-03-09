@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DRM_NETWORK_DIALOGUE_1">No hay ninguna conexión a internet disponible. ¿Quieres configurar tu conexión Wi-Fi ahora o  prefieres hacerlo con tu operadora?</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">El sistema indica que el permiso de tu sistema local no es válido. La aplicación usará una conexión de red para buscar un permiso. ¿Quieres continuar?</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">El servidor indica que la aplicación no se ha comprado, así que el permiso no se ha enviado a la aplicación.</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">El servidor ha comprobado los parámetros de la aplicación y ha determinado que al menos uno de ellos tiene un valor nulo. (Esto puede ocurrir cuando el teléfono está apagado).</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">Debido a un fallo del servidor en el acceso a la base de datos, el servidor no puede confirmar que la aplicación ha sido adquirida.</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">El permiso no se ha enviado a la aplicación debido a un fallo en la red (la aplicación no ha podido recibir una respuesta del servidor).</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">El permiso no se ha enviado a la aplicación debido a un fallo de red (no se ha podido enviar una solicitud de la aplicación al servidor).</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">El permiso no se ha podido guardar en el disco local. Esto puede deberse a un error en el I/O del disco, que no haya suficiente espacio libre en la carpeta o que no esté permitido guardar el permiso en el disco.</string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">Esto ocurre si el cliente pide un permiso de un servidor que no está en la biblioteca Zirconia.</string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">Esto ocurre si el cliente pide un permiso del servidor que procede de una versión no válida de la biblioteca Zirconia y no es compatible con el servidor del permiso.</string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">Esta permiso del servidor no es válido.</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">El permiso se ha enviado a la aplicación desde un servidor no válido.</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">El usuario ha modificado la aplicación.</string>
+
+	<string name="DRM_EZIRCONIA_SUCCESS_1">Se ha recibido un permiso válido.</string>
+</resources>

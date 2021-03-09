@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <string name="app_name">Android Billing</string> -->
+	<string name="IAB_PURCHASE_IN_PROGRESS">Proszę czekać... Zakup w toku.</string>
+	<string name="IAB_TRANSACTION_FAILED">Transakcja nieudana</string>
+	<string name="IAB_TRANSACTION_FAILED_RETRY">Chcesz spróbować jeszcze raz?</string>
+	<string name="IAB_CC_PURCHASE_WITH_CCARD">Możesz kupić grę {GAME_NAME} płacąc kartą kredytową {PRICE} *</string>
+	<string name="IAB_CC_CREATE_ACCOUNT_ONE_CLICK">Wypełnij dane dotyczące płatności</string>
+	<string name="IAB_CC_CREATE_ACCOUNT">Stwórz konto</string>
+	<string name="IAB_CC_FORGOT_PASSWORD">Nie pamiętasz hasła?</string>
+	<string name="IAB_CC_EMAIL">Twój adres email</string>
+	<string name="IAB_CC_PASSWORD">Hasło</string>
+	<string name="IAB_CC_NAME">Właściciel karty</string>
+	<string name="IAB_CC_CARD_NUMBER">Numer karty</string>
+	<string name="IAB_CC_EXPIRATION_DATE">Data ważności</string>
+	<string name="IAB_CC_EXPIRATION_DATE_FORMAT">MM/RRRR</string>
+	<string name="IAB_CC_SECURE_CODE">Kod bezpieczeństwa</string>
+	<string name="IAB_CC_SECURE_CODE_HELP">Ostatnie 3 cyfry z tyłu karty</string>
+	<string name="IAB_CC_ALREADY_HAS_ACCOUNT">Masz już konto Gameloft</string>
+	<string name="IAB_CC_PAY_WO_ACCOUNT">Zapłać bezpośrednio, bez tworzenia konta</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND">*Gwarancja Spokoju Gameloft</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND2">Gameloft korzysta z zaawansowanej technologii szyfrowania, by chronić dane twojej karty kredytowej.</string>
+	<string name="IAB_CC_EMAIL_PRIVACY">**Twój adres email zostanie użyty tylko i wyłącznie do przesłania ci rachunku.</string>
+	<string name="IAB_CC_EMAIL_PRIVACY2">Pełne warunki i zasady znajdują się tutaj.</string>
+	<string name="IAB_CC_GAME">Gra</string>
+	<string name="IAB_CC_PRICE">Cena</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_WRONG_DATA">Niektóre wprowadzone informacje są nieprawidłowe. Sprawdź pola oznaczone kolorem czerwonym.</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_EMAIL_EXISTS">Na tym koncie email istnieje już założone konto. Możesz się zalogować na ten email lub stworzyć nowe konto.</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_PAY_WO_ACCOUNT">W celu dokonania zakupu, wypełnij poniższe informacje o płatności.</string>
+	<string name="IAB_CC_LOGIN_WRONG_EMAIL_PASSWORD">Wprowadzony email i/lub hasło są nieprawidłowe. Spróbuj jeszcze raz.</string>
+	<string name="IAB_CC_CREDIT_CARD_EXPIRED">Karta kredytowa jest niewłaściwa lub upłynął jej termin ważności. Zaktualizuj poniższe informacje o płatności.</string>
+	<string name="IAB_CC_INVOICE_SENT">W celach informacyjnych, na twój adres email wysłana została faktura</string>
+	<string name="IAB_CC_ACCOUNT_CREATED_SUCCESSFULLY">Konto zostało stworzone poprawnie!</string>
+	<string name="IAB_CC_FORGOT_PASSWORD_QUESTION">Zapomniałeś hasła?</string>
+	<string name="IAB_CC_ENTER_EMAIL_FOR_RECOVERY_PASSWORD">Wprowadź poniżej swój adres email. Za kilka sekund otrzymasz hasło.</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_FAIL">Niestety, nie udało nam się znaleźć twojego adresu email. Spróbuj ponownie lub zarejestruj się.</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_SUCCES">Sprawdź email, twoje nowe hasło zostało wysłane.</string>
+	
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP_TITLE">Potwierdź zakup</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP">Potwierdź, że chcesz kupić element {ITEM} za {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_LAYOUT">Chcesz kupić element {ITEM} za {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_TITLE">Płatność kartą kredytową</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC">Za ten element można zapłacić tylko kartą kredytową. Potwierdź, że chcesz kupić element {ITEM} za {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TITLE">Zakup nieudany</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE">Przetworzenie Twojego zakupu jest niemożliwe. Chcesz kontynuować zakup wybierając inną metodę płatności?</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TRY_AGAIN">Twoja transakcja nie mogła zostać przetworzona przez nasz serwis. Chcesz spróbować raz jeszcze?</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_TITLE">Twój element został zakupiony właściwie</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS">Dziękujemy za zakup, Twój element został dodany do Twojego konta!</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING_TITLE">Zawartość została zakupiona.</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING">Dziękujemy za zakup, Twój element zostanie dodany później z powodu problemu z usługą!</string>
+	<string name="IAB_PURCHASE_ITEM_CHARGE_APPLY">Mogą zostać doliczone opłaty za dane</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_INFO">Chcesz kupić {QUANTITY} x {ITEM} za {PRICE}?</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_MESSAGE">Wybierz sposób płatności.</string>
+	<string name="IAB_NETWORK_ERROR_TITLE">Błąd sieci</string>
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD_TITLE">Wybierz sposób płatności</string>
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD">Przed kontynuowaniem zakupów wybierz preferowany sposób płatności.</string>
+	<string name="IAB_BTN_OTHER">Zmiana sposobu płatności</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_TITLE">Transakcja w toku.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING">Czekamy na potwierdzenie Twojego zakupu przez Boku. Po zakończeniu zakupu zaktualizujemy Twoją listę elementów.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_SUCCESSFUL">Zakup dokonany.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_UNSUCCESSFUL">Zakup nieudany.</string>
+	
+	
+	<string name="IAB_PURCHASE_TITLE">Kup</string>
+	<string name="IAB_PURCHASE_PAY_FOR_THIS_WITH">Zapłać za pomocą</string>
+	<string name="IAB_PURCHASE_CHOOSE_PAYMENT_METHOD">Zapłać za pomocą</string>
+	<string name="IAB_PURCHASE_CHANGE_PAYMENT_METHOD">Zmień sposób płatności</string>
+	<string name="IAB_PURCHASE_ITEM_CREDIT_CARD">Karta kredytowa</string>
+	<string name="IAB_PURCHASE_ITEM_ACCOUNT">KONTO GAMELOFT</string>
+	<string name="IAB_PURCHASE_ITEM_ADD_NEW_CREDIT_CARD">Dodaj nową kartę kredytową</string>
+	<string name="IAB_PURCHASE_ITEM_INFO">{ITEM} za {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_TOTAL">Suma:</string>
+	
+	<string name="IAB_PURCHASE_ITEM_PHONE_BILLL">Rachunek telefoniczny</string>
+	<string name="IAB_SKB_CONFIRM">Potwierdź</string>
+	<string name="IAB_NETWORK_ERROR">Nie udało się uzyskać ważnego profilu zawartości dla Twojego operatora.</string>
+
+	<string name="IAB_SKB_TCS">Warunki i zasady</string>
+	<string name="IAB_SKB_CANCEL">Anuluj</string>
+	<string name="IAB_SKB_RETRY">Ponów</string>
+	<string name="IAB_SKB_EXIT">X</string>
+	<string name="IAB_SKB_LOGIN">Login</string>
+	<string name="IAB_SKB_YES">Tak</string>
+	<string name="IAB_SKB_NO">Nie</string>
+	<string name="IAB_SKB_OK">OK</string>
+	<string name="IAB_SKB_PAY_WITH_CCARD">Płacę kartą kredytową</string>
+	<string name="IAB_SKB_NEXT">Dalej</string>
+	<string name="IAB_SKB_CONTINUE">Kontynuuj</string>
+	<string name="IAB_SKB_BUY_NOW">Kup teraz</string>
+	<string name="IAB_SKB_BACK">Wstecz</string>
+	<string name="IAB_SKB_PLAY_GAME">Graj!</string>
+	<string name="IAB_CONTINUE">Dotknij KONTYNUUJ, by sfinalizować zakup.</string>
+	<string name="IAB_LOADING">Wczytywanie...</string>
+	<string name="IAB_DOCOMO_CONTINUE">Dotknij KONTYNUUJ, by sfinalizować zakup.</string>
+</resources>

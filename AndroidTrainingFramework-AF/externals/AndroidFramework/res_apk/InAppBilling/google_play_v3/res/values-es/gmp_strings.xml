@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">No se pueden realizar compras</string>
+	<string name="billing_not_supported_message">El servicio de facturación de Google Play Store no está disponible en estos momentos. Puedes seguir usando esta aplicación pero no podrás realizar ninguna compra.</string>
+	<string name="cannot_connect_title">No se puede conectar con Google Play Store</string>
+	<string name="cannot_connect_message">Esta aplicación no puede conectar con Google Play Store. Puede que tu versión de Google Play Store esté obsoleta. Puedes seguir usando esta aplicación pero no podrás realizar ninguna compra.</string>
+	<string name="waitting_confirm">Estamos esperando a que Google valide tu compra. Cuando se complete, actualizaremos tu lista de objetos.</string>
+	<string name="pending_transaction">Tienes una transacción pendiente.</string>
+	<string name="purchase_success">Compra realizada.</string>
+	<string name="purchase_unsuccess">Compra no realizada.</string>
+	<string name="iab_retry">Reintentar</string>
+	<string name="iab_cancel">Cancelar</string>
+	<string name="iab_ok">Aceptar</string>
+</resources>

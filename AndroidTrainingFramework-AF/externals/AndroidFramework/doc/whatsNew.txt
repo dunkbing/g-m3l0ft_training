@@ -1,0 +1,132 @@
+What's New
+===========
+
+****************************************************************************************
+February 24, 2012
+	*	Push notifications mayor update, changed some methods, set posibility to call on
+		non-blocking, and bug fixes.
+	
+****************************************************************************************
+February 21, 2012
+	* 	Changing the way the installer and video player are interactiong with the game.
+		Their activities launch mode in no longer singleInstance.
+		Please check the file ConfigureGame.txt for more information how to change your
+		game's activity.
+		
+February 23, 2012
+	* Added flag INSTALL_REFERRER_TEST=true for qaTestingConfigs.txt, used for test 
+	install	referrer.
+	
+	
+****************************************************************************************
+February 16, 2012
+	* Added module AFile, for read resources from APK. more info on AFile_HowTo.
+
+****************************************************************************************
+December 14, 2011
+	* Added local push notifications support, changed push notifications natives to 
+	use AndroidOS.h env.
+	* Local notifications with 24 or less delay managed by alarms.
+
+****************************************************************************************
+December 6, 2011
+	* Adding Russian language support
+
+****************************************************************************************
+November 25, 2011
+	* modifying error dialog
+	* modifying information dialog
+	* adding HEP patch
+	* adding sim state
+	* adding a custom path option for resources
+	* bugfix canReach
+	* changing download fail message
+	* MyVideoView bugfixes
+	* modifying sd card no found message
+	* building only one texture compressiong data pack
+		call pack_server_data.bat [PVRT or ETC or ATC or DXT]
+	* Download manager retries downloading if any error occurs
+	* For Goolge DRM - adding check before downloading data
+	* For Gloft_DRM - readding check before downloading data
+	* Packaging Tool modification: Warning messages for packages having more than 5000 
+	files and files larger than 100MB
+	* removing SD_RESOURCES_VERSION
+	* The installer defaults to WIFI_3G
+	
+****************************************************************************************
+November 14, 2011
+	Added Amazon Store for IAB.
+
+****************************************************************************************	
+October 6, 2011
+	Adding ETC texture compression support
+
+****************************************************************************************		
+October 5, 2011
+	Adding GPU, display, and portal support for MKP
+	Back key implementation
+	Google default installation path support
+	Adding error dialogs
+	Adding installation path and data package code dialog in download_files_question state
+	Removing unused defines and defines that should always be on, or off
+	Changing layout font values to work as well with small, large or extra-large screens
+
+****************************************************************************************		
+September 26, 2011
+	Added Install referrer, collect information about marketing campaing, source & medium.
+
+
+****************************************************************************************		
+September 26, 2011
+	Added Push Notifications for Hermes.
+
+****************************************************************************************		
+September 26, 2011
+	Added Samsung Zirconia DRM.
+
+****************************************************************************************		
+August 24, 2011
+	Added T-Mobile DRM.
+	
+****************************************************************************************
+August 23, 2011
+	- notification support for the installer
+	- fixing Wifi download issue for IM-A780L (all games)
+
+****************************************************************************************		
+August 05, 2011
+	Added Timers to time functions
+
+****************************************************************************************		
+August 03, 2011
+	Added PSS, Promotional Splash Screen Module.
+
+****************************************************************************************		
+May 25, 2011
+Installer 3.1 GOLD for MKP
+	This Installer is now stable enough for both GL Shop and MKP.
+	- Installer 3.1 MKP:
+		+ Google Native DRM implemented
+		+ Change download server from Gameloft Shop to Akamai to speed up the download.
+		+ Auto-update passed
+		+ Installer Ads now redirect to Google MKP.
+		+ Many bugs fixed
+	- Installer 3.1
+		+ Remove unzip thread, it caused bugs when INT while downloading.
+		+ Many bugs fixed
+	- IGP  and GLLive:
+		+ Add support for MKP
+		+ Add support for SKT
+		+ Bug fixed with Youtube, backey
+		+ Many bugs fixed
+		
+****************************************************************************************		
+April 14, 2011
+Installer 3.1 released
+ - Improved download speed for data package
+ - Supports downloading the native code from the server so we can use a single apk to support all builds
+ - Added support for ads in the data download screen
+ - LZMA support for additional compression of data package (beta)
+ - Added new information to the generated report file
+ - A lot of bug fixes
+

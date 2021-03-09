@@ -1,0 +1,25 @@
+
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_height="wrap_content" android:id="@+id/frameLayout1" android:layout_weight="0.41" android:layout_width="wrap_content" android:layout_gravity="center_horizontal" android:background="@drawable/skt_background">
+
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <TextView android:layout_width="wrap_content" android:id="@+id/textView_question" android:layout_height="wrap_content" android:text="@string/IAB_SKT_CONFIRM_DIALOG_QUESTION" android:layout_gravity="center_horizontal" android:layout_margin="9dp"></TextView>
+
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/textView_item_name" android:layout_height="wrap_content" android:text="@string/IAB_SKT_CONFIRM_DIALOG_ITEM_NAME" android:layout_gravity="center_horizontal"></TextView>
+
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/textView_item_price" android:layout_height="wrap_content" android:text="@string/IAB_SKT_CONFIRM_DIALOG_ITEM_PRICE" android:layout_gravity="center_horizontal"></TextView>
+
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+
+            <Button android:id="@+id/buttonYES" android:layout_height="wrap_content" android:text="@string/IAB_SKT_CONFIRM_DIALOG_YES" android:layout_gravity="center_vertical" android:layout_weight="0.86" android:layout_width="50dp"></Button>
+
+            <Button android:id="@+id/buttonNO" android:layout_height="wrap_content" android:text="@string/IAB_SKT_CONFIRM_DIALOG_NO" android:layout_gravity="center_vertical" android:layout_weight="0.83" android:layout_width="50dp"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+    
+</LinearLayout>

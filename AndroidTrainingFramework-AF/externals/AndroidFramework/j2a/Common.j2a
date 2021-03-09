@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Common">
+	<build type="cpy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/common"/>
+			<preprocess/>
+		</java>
+	</sources>
+</j2a>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DRM_NETWORK_DIALOGUE_1">インターネット接続が見つかりません。今すぐWi-Fi接続を設定、またはご契約の通信業者のネットワークを利用しますか？</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">ご利用の機器にあるライセンスは無効です。アプリは自動的にネットワークを介してライセンスの確認をします。続けますか？</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">アプリの購入が済んでいないのでライセンスはアプリに送られませんでした。</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">サーバー側でアプリのパラメーターを確認したところ1つ以上のパラメーターの値が0でした。（携帯電話の電源が切られたときに起こることがあります。）</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">サーバーエラーによりアプリの購入を確認できませんでした。</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">サーバーの応答がなかったためアプリにライセンスが送られませんでした。</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">アプリからのリクエストがサーバーに送られなかったためライセンスが送られませんでした。</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">ローカルディスクにライセンスを保存できませんでした。ディスクI/Oエラーかフォルダの容量不足、ライセンスの保存権限がない可能性があります。</string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">クライアントがZirconiaライブラリにはないサーバーに対してライセンスをリクエストしたときに発生します。</string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">クライアントが無効なZirconiaライブラリの、ライセンスサーバーにサポートされていないサーバーからライセンスを要求したときに発生します。</string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">サーバーから取得したライセンスが無効です。</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">無効なサーバーからアプリに送られたライセンスです。</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">ユーザーがアプリを変更しました。</string>
+
+	<string name="DRM_EZIRCONIA_SUCCESS_1">有効なライセンスを取得しました。</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="VZW_ITEM_NOT_FOUND">이 항목은 현재 장치에서 사용할 수 없거나 더 이상 V Cast Apps 카탈로그에서 이용할 수 없습니다.</string>
+	<string name="INVALID_LICENSE">이 애플리케이션을 구매하지 않았거나 구매 기한이 만료되었습니다. V Cast Apps 클라이언트를 실행하여 구매하세요.</string>
+	<string name="VZW_GENERAL_ERROR">지금은 게임을 인증할 수 없습니다. 나중에 다시 시도하세요.</string>
+	<string name="VZW_SERVER_VALIDATION_REQUIRED">게임을 인증하려면 인터넷에 연결하세요.</string>
+</resources>

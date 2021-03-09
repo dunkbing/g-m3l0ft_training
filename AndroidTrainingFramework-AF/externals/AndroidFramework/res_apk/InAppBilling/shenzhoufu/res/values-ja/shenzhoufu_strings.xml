@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <string name="app_name">Android Billing</string> -->
+	<string name="IAB_SKB_BUY">購入</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_WARNING_MESSAGE">購入手続きを進めるには「購入」をクリックしてください。</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_TYPE">プリペイドカードの種類</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_DENOMINATION">プリペイドカードの額面金額</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_NUMBER">プリペイドカード番号</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_PASSWORD">プリペイドカードパスワード</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_CHECKBOX_SAVE_INFO">プリペイドカード記録</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PREPAID_CARD_TYPE_CHINA_MOBILE">チャイナ・モバイル</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PREPAID_CARD_TYPE_CHINA_UNICOM">チャイナ・ユニコム</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PREPAID_CARD_TYPE_CHINA_TELECOM">チャイナ・テレコム</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_DIALOG_TITLE">ご注意</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_DIALOG_MESSAGE">プリペイドカードの金額を正しく選択しないとお金を失う場合があります。</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PURCHASE_PROGRESS_TITLE">Shenzhoufuを使って支払い中…</string>	
+	<string name="IAB_SHENZHOUFU_LAYOUT_PURCHASE_PROGRESS_MESSAGE">購入処理が完了するまでお待ちください。</string>	
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_SHENZHOUFU">アイテムの到着確認をもって購入処理を完了します。購入処理が完了次第、アイテムリストを更新することができます。</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_SHENZHOUFU">前回の購入処理は完了しませんでした。料金は発生していません。</string>	
+	<string name="IAB_PURCHASE_ITEM_FAILURE_INSUFFICIENT_BALANCE_SHENZHOUFU">不足金額</string>	
+	<string name="IAB_PURCHASE_ITEM_FAILURE_VERIFICATION_FAILED">確認できませんでした。</string>	
+	<string name="IAB_PURCHASE_ITEM_FAILURE_VERIFICATION_INTERRUPTED">ネットワークエラーが発生したため、購入処理を完了できませんでした。ネットワークに接続後、再度お試しください。</string>	
+	<string name="IAB_SHENZHOUFU_PENDING_TITLE">未完了の購入処理</string>
+	<string name="IAB_SHENZHOUFU_CONFIRM_PENDING_TRANSACTION">「OK」を選択して購入処理を再開してください。</string>
+	<string name="IAB_SHENZHOUFU_PENDING_TRANSACTION_FAILED">前回の購入処理は完了しませんでした。</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="pss_vzw_confirm_buy_title">{GAME}!</string>
+<string name="pss_vzw_confirm_buy">Harga: {PRICE} USD\n\nKlik \'Dapatkan Game\' untuk mengkonfirmasi.\nPembelian akan dibebankan ke akun Verizon Wireless.\n\nTarif data mungkin dikenakan saat download dan penggunaan sesuai rencana atau paket data.</string>
+<string name="pss_vzw_cancel">Batal</string>
+<string name="pss_vzw_get_game">Dapatkan Game</string>
+<string name="pss_vzw_please_wait">Tunggu...</string>
+<string name="pss_vzw_try_again">Kamu harus tersambung ke Verizon Wireless Network untuk melanjutkan.\n\nIngin mencoba lagi?</string>
+<string name="pss_vzw_try_again_glshop">Kamu harus tersambung ke Verizon Wireless Network untuk melanjutkan.\n\nCoba lagi untuk menyelesaikan pembelian.</string>
+<string name="pss_vzw_yes">Ya</string>
+<string name="pss_vzw_no">Tidak</string>
+<string name="pss_vzw_transaction_complete_title">Transaksi selesai</string>
+<string name="pss_vzw_transaction_complete">Terima kasih atas pembelian\n{GAME}!\n\Biaya akan muncul pada tagihan Verizon Wireless.\n\nDownload akan dimulai di panel pemberitahuan.</string>
+<string name="pss_vzw_downlaod">Mulai download</string>
+<string name="pss_vzw_wifi_checkbox_text">Download through Wi-FI</string>
+<string name="pss_vzw_data_warning">Data rates may apply when downloaded through Verizon Wireless Network.</string>
+<string name="pss_vzw_wait_connection_wifi">Enabling Wi-Fi...</string>
+<string name="pss_vzw_unknown_sources_message">To Play {GAME} please allow for non-Market installations:</string>
+<string name="pss_vzw_unknown_sources_message_01">1. Press \"Settings\"</string>
+<string name="pss_vzw_unknown_sources_message_02">2. Check \"Unknown Sources\"</string>
+<string name="pss_vzw_unknown_sources_message_03">3. Press \"Yes\" to allow uknown sources</string>
+<string name="pss_vzw_unknown_sources_message_04">4. Press back key to resume transaction</string>
+<string name="pss_vzw_settings">Settings</string>
+<string name="pss_vzw_wait_disable_connection">Disabling Wi-Fi...</string>
+</resources>

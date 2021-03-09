@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="pss_title">{GAME_TITLE}</string>
+<string name="pss_LoadingText">Caricamento...</string>
+<string name="pss_PlayNowButton">Gioca!</string>
+<string name="pss_MoreGamesButton">Altri giochi</string>
+<string name="pss_MoreGamesText">Altri giochi HD tra i più venduti per </string>
+<string name="pss_checkBox1Text">Mostra sempre all\'avvio</string>
+<string name="pss_BuyConfirmTitle">{GAME_NAME}</string>
+<string name="pss_BuyConfirmText">Prezzo: {PRICE}.\nVuoi comprare questo oggetto?\n\nL\'addebito apparirà sulla tua bolletta del telefono.	\n\nSi applicano le tariffe di trasferimento dati durante l\'acquisto e il download, in base alla tua tariffa dati.</string>
+<string name="pss_BuyConfirmOK">Compra</string>
+<string name="pss_BuyConfirmNO">Annulla</string>
+</resources>

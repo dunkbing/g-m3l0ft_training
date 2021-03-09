@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="pss_vzw_confirm_buy_title">{GAME}!</string>
+<string name="pss_vzw_confirm_buy">Preço: US$ {PRICE}\n\nClique em \'Baixar o jogo\' para confirmar.\nA compra será cobrada na sua conta Verizon Wireless.\n\nTaxas de transferência de dados podem ser cobradas durante o download e uso, de acordo com seu plano ou pacote de dados.</string>
+<string name="pss_vzw_cancel">Cancelar</string>
+<string name="pss_vzw_get_game">Baixar o jogo</string>
+<string name="pss_vzw_please_wait">Favor aguardar...</string>
+<string name="pss_vzw_try_again">Você precisa estar conectado à rede Verizon Wireless para continuar.\n\nDeseja tentar de novo?</string>
+<string name="pss_vzw_try_again_glshop">Você precisa estar conectado à rede Verizon Wireless para continuar.\n\nFavor tentar de novo para concluir a compra.</string>
+<string name="pss_vzw_yes">Sim</string>
+<string name="pss_vzw_no">Não</string>
+<string name="pss_vzw_transaction_complete_title">Transação concluída</string>
+<string name="pss_vzw_transaction_complete">Obrigado por comprar \n{GAME}!\n\nO valor será cobrado na sua conta da Verizon Wireless.\n\nO download será iniciado na sua barra de notificação.</string>
+<string name="pss_vzw_downlaod">Iniciar download</string>
+</resources>

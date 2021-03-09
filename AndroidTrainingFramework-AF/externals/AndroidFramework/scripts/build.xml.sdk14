@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="GLGame" default="help">
+	<!-- keep reference to environment vars -->
+	<property environment="env"/>
+	<!-- set device as default output -->
+	<property name="adb.device.arg" value="-d" />
+	<!-- set default encoding ISO-8859-1 -->
+	<property name="java.encoding" value="ISO-8859-1" />
+  
+	<!-- load properties -->
+    <property file="build.properties" />
+
+    <fail
+            message="sdk.dir is missing. Make sure to generate local.properties using 'android update project'"
+            unless="sdk.dir"
+    />
+
+
+	<!-- extension targets.-->
+	<!--target name="-pre-build">
+		<echo>Preprocessing Manifest and sources and resources...</echo>
+		<exec executable="preprocess.bat"> </exec>
+	</target-->
+
+	<target name="-pre-compile">
+		<echo>Adding external jar libs to classpath...</echo>
+		<path id="tested.project.classpath">
+			<fileset dir="${ext.libs.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		</path>
+	</target>
+
+	<!-- Post compilation events-->
+	<target name="-post-compile">
+	</target>
+  
+  
+  <!-- Code Generation: compile resources (aapt -> R.java), aidl, renderscript -->
+    <target name="-code-gen">
+        <do-only-if-manifest-hasCode
+                elseText="hasCode = false. Skipping aidl/renderscript/R.java">
+            <echo>----------</echo>
+            <echo>Handling aidl files...</echo>
+            <aidl executable="${aidl}" framework="${android.aidl}"
+                    genFolder="${gen.absolute.dir}">
+                <source path="${source.absolute.dir}"/>
+            </aidl>
+
+            <!-- renderscript generates resources so it must be called before aapt -->
+            <echo>----------</echo>
+            <echo>Handling RenderScript files...</echo>
+            <renderscript executable="${renderscript}"
+                    framework="${android.rs}"
+                    genFolder="${gen.absolute.dir}"
+                    resFolder="${resource.absolute.dir}/raw"
+                    targetApi="${target.api}">
+                <source path="${source.absolute.dir}"/>
+            </renderscript>
+
+            <echo>----------</echo>
+            <echo>Handling Resources...</echo>
+            <aapt executable="${aapt}"
+                    command="package"
+                    verbose="${verbose}"
+                    manifest="${manifest.file}"
+                    androidjar="${android.jar}"
+                    rfolder="${gen.absolute.dir}"
+                    nonConstantId="${android.library}"
+                    projectLibrariesResName="project.libraries.res"
+                    projectLibrariesPackageName="project.libraries.package">
+                <res path="${resource.absolute.dir}" />
+            </aapt>
+        </do-only-if-manifest-hasCode>
+    </target>
+	
+	<target name="-package-resources" depends="-crunch">
+		<!-- only package resources if *not* a library project -->
+		<do-only-if-not-library elseText="Library project: do not package resources..." >
+			<aapt executable="${aapt}"
+					command="package"
+					versioncode="${version.code}"
+					versionname="${version.name}"
+					debug="${build.is.packaging.debug}"
+					manifest="${manifest.file}"
+					assets="${asset.absolute.dir}"
+					androidjar="${android.jar}"
+					apkfolder="${out.absolute.dir}"
+					nocrunch="${build.packaging.nocrunch}"
+					resourcefilename="${resource.package.file.name}"
+					resourcefilter="${aapt.resource.filter}"
+					projectLibrariesResName="project.libraries.res"
+					projectLibrariesPackageName="project.libraries.package"
+					previousBuildType="${build.last.target}"
+					buildType="${build.target}">
+				<res path="${out.res.absolute.dir}" />
+				<res path="${resource.absolute.dir}" />
+				<!-- <nocompress /> forces no compression on any files in assets or res/raw -->
+				<!-- <nocompress extension="xml" /> forces no compression on specific file extensions in assets and res/raw -->
+			</aapt>
+		</do-only-if-not-library>
+    </target>
+	
+	<target name="-set-debug-signed-mode">
+        <!-- record the current build target -->
+        <property name="build.target" value="debug" />
+        <property name="build.is.instrumented" value="false" />
+        <!-- whether the build is a debug build. always set. -->
+        <property name="build.is.packaging.debug" value="true" />
+        <!-- signing mode: debug -->
+        <property name="build.is.signing.debug" value="false" />
+    </target>
+	
+	<!-- Builds debug signed output package -->
+    <target name="-do-debug-signed" depends="-set-debug-signed-mode, -debug-obfuscation-check, -package">
+        <!-- Signs the APK -->
+        <echo>Signing final apk...</echo>
+        <signjar
+                jar="${out.packaged.file}"
+                signedjar="${out.unaligned.file}"
+                keystore="${key.store}"
+                storepass="${key.store.password}"
+                alias="${key.alias}"
+                keypass="${key.alias.password}"
+                verbose="${verbose}" />
+				
+		<!-- only create apk if *not* a library project -->
+        <do-only-if-not-library elseText="Library project: do not create apk..." >
+            <sequential>
+                <zipalign-helper in.package="${out.unaligned.file}" out.package="${out.final.file}" />
+                <echo>Debug Package: ${out.final.file}</echo>
+            </sequential>
+        </do-only-if-not-library>
+    </target>
+	
+    <!-- Builds debug signed output package -->
+    <target name="debug-signed" depends="-set-debug-files, -do-debug-signed"
+                description="Builds the application and signs it with release key.">
+        <record-build-info />
+    </target>
+	
+	
+    <!-- Import the actual build file.
+         To customize existing targets, there are two options:
+         - Customize only one target:
+             - copy/paste the target into this file, *before* the
+               <import> task.
+             - customize it to your needs.
+         - Customize the whole content of build.xml
+             - copy/paste the content of the rules files (minus the top node)
+               into this file, replacing the <import> task.
+             - customize to your needs.
+
+         ***********************
+         ****** IMPORTANT ******
+         ***********************
+         In all cases you must update the value of version-tag below to read 'custom' instead of an integer,
+         in order to avoid having your file be overridden by tools such as "android update project"
+    -->
+    <!-- version-tag: 2 -->
+    <import file="${sdk.dir}/tools/ant/build.xml"/>
+
+</project>

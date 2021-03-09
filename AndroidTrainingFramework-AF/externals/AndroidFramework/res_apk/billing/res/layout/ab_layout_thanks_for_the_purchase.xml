@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/LinearLayout01" 
+				android:gravity="center" 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:background="@drawable/ab_background">
+				<FrameLayout android:id="@+id/FrameLayout00"
+							android:layout_height="fill_parent" 
+							android:layout_width="fill_parent">
+							<FrameLayout android:id="@+id/FrameLayoutDialog"
+										android:layout_height="fill_parent" 
+										android:layout_width="fill_parent"
+										android:padding="@dimen/ab_main_layout_padding">
+									    <FrameLayout android:id="@+id/FrameLayout01" 
+									    			android:layout_width="fill_parent" 
+									    			android:layout_height="fill_parent"
+									    			android:background="@drawable/ab_alpha_box">
+													<TextView android:id="@+id/lblMessageInfo" 
+																android:layout_height="wrap_content" 
+																android:layout_width="wrap_content" 
+																android:text="@string/AB_THANKS_FOR_THE_PURCHASE" 
+																android:layout_marginTop="@dimen/ab_textview_margin_from_header"
+																android:layout_gravity="top|center">
+													</TextView>
+									    			<Button android:layout_gravity="center" android:minWidth="@dimen/ab_large_button_width" android:layout_width="wrap_content" android:id="@+id/bt_ly_thanks_for_the_purchase_play" android:layout_marginTop="@dimen/ab_button_center_margin" android:layout_height="wrap_content" android:text="@string/SKB_PLAY_GAME"></Button>
+										</FrameLayout>
+										<Button android:id="@+id/bt_ly_thanks_for_the_purchase_exit" 
+												android:layout_height="wrap_content" 
+												android:layout_gravity="bottom|right" 
+												android:text="@string/SKB_EXIT" 
+												android:layout_width="wrap_content" 
+												android:layout_marginBottom="@dimen/ab_button_bottom_margin" 
+												android:minWidth="@dimen/ab_small_button_width">
+										</Button>
+							</FrameLayout>
+							<FrameLayout android:id="@+id/FrameLayoutHeader"
+										android:layout_width="fill_parent" 
+										android:layout_gravity="top"
+										android:background="@drawable/ab_top_bar"
+										android:layout_height="@dimen/ab_tittle_bar_size_h">
+										<ImageView android:id="@+id/ImageView01"
+													android:layout_width="wrap_content"
+													android:layout_height="wrap_content"
+													android:src="@drawable/ab_logo_tittle_horiz"
+													android:paddingTop="@dimen/ab_logo_tittle_gap"
+													android:paddingLeft="@dimen/ab_logo_tittle_gap">
+										</ImageView>
+							</FrameLayout>
+				</FrameLayout>
+</LinearLayout>

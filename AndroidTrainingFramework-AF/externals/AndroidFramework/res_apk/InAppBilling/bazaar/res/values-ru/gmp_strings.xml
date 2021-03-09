@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">Невозможно совершить покупку</string>
+    <string name="billing_not_supported_message">В данный момент сервис Market недоступен. Вы можете продолжать использовать приложение, но вы не сможете делать новые покупки.</string>
+    <string name="cannot_connect_title">Не удалось связаться с Market</string>
+    <string name="cannot_connect_message">Данное приложение не может связаться с Market. Возможно, ваша версия Market устарела. Вы можете продолжать использовать приложение, но вы не сможете делать новые покупки.</string>
+    <string name="waitting_confirm">Ждем подтверждения покупки от Cafe Bazaar. Как только покупка будет завершена, мы обновим список ваших предметов.</string>
+    <string name="pending_transaction">У вас есть приостановленная транзакция</string>
+	<string name="purchase_success">Успешная покупка.</string>
+	<string name="purchase_unsuccess">Покупка не удалась.</string>
+	<string name="iab_retry">Повтор</string>
+	<string name="iab_cancel">Отмена</string>
+	<string name="iab_ok">OK</string>
+</resources>

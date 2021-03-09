@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="iab_main_layout_padding">20dp</dimen>
+	<dimen name="iab_main_layout_padding_top">35dp</dimen>
+	<dimen name="iab_form_padding_lr">5dp</dimen>
+
+	<!-- Tittle Bar -->
+	<dimen name="iab_tittle_bar_size_h">40dp</dimen>
+	<dimen name="iab_logo_tittle_gap">10dp</dimen>
+	<dimen name="iab_text_tittle_size">25dp</dimen>
+	
+	<!-- TextView -->
+	<dimen name="iab_textview_padding_lr">30dp</dimen>
+	<dimen name="iab_textview_min_padding">1dp</dimen>
+	<dimen name="iab_textview_margin_from_header">50dp</dimen>
+	<dimen name="iab_text_size">20sp</dimen>
+	<dimen name="iab_aux_text_size">15sp</dimen>
+	<dimen name="iab_ccard_form_text_size">12sp</dimen>
+	<dimen name="iab_ccard_form_aux_text_size">13sp</dimen>
+	<dimen name="iab_ccard_help_text_size">8sp</dimen>
+	<dimen name="iab_bottom_msg_text_size">8sp</dimen>
+	<dimen name="iab_ccard_header_text_size">17sp</dimen>
+	<dimen name="iab_ccard_header_padding">10dp</dimen>
+	<dimen name="iab_cc_holder_padding_right">12dp</dimen>
+	<dimen name="iab_cc_card_number_padding_right">15dp</dimen>
+	<dimen name="iab_cc_secure_code_margin_left">3dp</dimen>
+	<dimen name="iab_cc_transaction_failed_text_size">20sp</dimen>
+	<dimen name="iab_cc_transaction_success_text_size">14sp</dimen>
+
+	<dimen name="iab_tcs_text_size">18sp</dimen>
+	<dimen name="iab_tcs_top_margin">80dp</dimen>
+	<dimen name="iab_tcs_bottom_margin">60dp</dimen>
+	
+	
+	<!-- Button -->
+	<dimen name="iab_button_bottom_lr_margin">10dp</dimen>
+	<dimen name="iab_button_bottom_margin">5dp</dimen>
+	<dimen name="iab_button_center_margin">30dp</dimen>
+	<dimen name="iab_buttons_gap">7dp</dimen>
+	<dimen name="iab_webview_top_margin">9dp</dimen>
+	<dimen name="iab_webview_bottom_margin">22dp</dimen>
+	<dimen name="iab_button_text_size">14dp</dimen>
+	<dimen name="iab_button_next_size">2sp</dimen>
+	<dimen name="iab_button_tcs_text_size">9dp</dimen>
+	<dimen name="iab_button_width">80dp</dimen>
+	<dimen name="iab_large_button_width">200dp</dimen>
+	<dimen name="iab_small_button_width">40dp</dimen>
+	<dimen name="iab_cc_button_height">38dp</dimen>
+	<dimen name="iab_transaction_failed_yn_lr_margin">30dp</dimen>
+	
+	<!-- EditText -->
+	<dimen name="iab_unlock_code_width">175dp</dimen>
+	<dimen name="iab_unlock_code_gap">5dp</dimen>
+	<dimen name="iab_EditText_height">33dp</dimen>
+	<dimen name="iab_EditText_text_size">11sp</dimen>
+	<dimen name="iab_expiration_padding_r">30dp</dimen>
+	<dimen name="iab_secure_code_width">80dp</dimen>
+	<dimen name="iab_password_margin_left">6dp</dimen>
+	
+	<!-- Form -->
+	<dimen name="iab_center_margin_top">5dp</dimen>
+	<dimen name="iab_center_margin_bottom">20dp</dimen>
+	<dimen name="iab_left_column_max_width">125dp</dimen>
+	
+	<!-- ImageView -->
+	<dimen name="iab_image_game_width">213dp</dimen>
+	<dimen name="iab_image_game_height">120dp</dimen>
+	<dimen name="iab_image_game_border_size">2dp</dimen>
+
+	
+	<!-- ProgressBar -->
+	<dimen name="iab_progress_center_gap">40dp</dimen>
+	<dimen name="iab_progressBar_marginBottom">0dp</dimen>
+	
+	<!-- Separation lines -->
+	<dimen name="iab_separation_height">1px</dimen>
+	<dimen name="iab_separation_padding">5dp</dimen>
+	
+	<!-- InAppBilling -->
+	<dimen name="iab_left_margin_confirmation">100dp</dimen>
+	<dimen name="iab_right_margin_confirmation">100dp</dimen>
+	<dimen name="iab_top_margin_confirmation">50dp</dimen>
+	
+	<dimen name="iab_select_billing_method_top_offset_1">50dp</dimen>
+	<dimen name="iab_select_billing_method_top_offset_2">100dp</dimen>
+	<dimen name="iab_select_billing_method_options_frame">150dp</dimen>
+	<integer name="iab_size_dialog">1</integer>
+	
+	<integer name="iab_cplr_dialog_margin">5</integer>
+	<integer name="iab_cptb_dialog_margin">10</integer>
+</resources>

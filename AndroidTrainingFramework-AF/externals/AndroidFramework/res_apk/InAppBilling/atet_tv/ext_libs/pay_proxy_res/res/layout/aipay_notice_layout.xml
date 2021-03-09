@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+	    android:layout_marginBottom="@dimen/aipay_margin_vertical"
+	    android:background="@drawable/aipay_popupwindow_bg">
+	    
+	    <TextView android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:gravity="center"
+	        android:textSize="18sp"
+	        android:textColor="#868686"
+	        android:text="公告"/>
+	    
+	    <View android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="#353739"/>
+	    
+	    <TextView android:id="@+id/tv_notice_aipay"
+	        android:layout_width="match_parent"
+	        android:layout_height="80dp"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="8dp"
+	        android:layout_marginRight="8dp"
+	        android:textSize="13sp"
+	        android:textColor="#cbcccf"
+	        android:singleLine="false"
+	        android:scrollbars="vertical"/>
+	    
+	    <TextView android:id="@+id/tv_confirm_aipay"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:gravity="center"
+	        android:layout_marginLeft="8dp"
+	        android:layout_marginRight="8dp"
+	        android:layout_marginTop="25dp"
+	        android:layout_marginBottom="6dp"
+	        android:textSize="18sp"
+	        android:textColor="#cbcccf"
+	        android:text="知道了"
+	        android:background="@drawable/aipay_button_selector"/>
+	
+	</LinearLayout>
+</FrameLayout>

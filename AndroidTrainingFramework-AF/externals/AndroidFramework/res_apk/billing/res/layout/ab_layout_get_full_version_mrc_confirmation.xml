@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/LinearLayout01" 
+				android:gravity="center" 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:background="@drawable/ab_background">
+				<FrameLayout android:id="@+id/FrameLayout00"
+							android:layout_height="fill_parent" 
+							android:layout_width="fill_parent">
+							<FrameLayout android:id="@+id/FrameLayoutDialog"
+										android:layout_height="fill_parent" 
+										android:layout_width="fill_parent"
+										android:padding="@dimen/ab_main_layout_padding">
+									    <FrameLayout android:id="@+id/FrameLayout01" 
+									    			android:layout_width="fill_parent" 
+									    			android:layout_height="fill_parent"
+									    			android:background="@drawable/ab_alpha_box">
+													<LinearLayout android:id="@+id/LinearLayout02" 
+																		android:layout_height="wrap_content" 
+																		android:orientation="vertical" 
+																		android:layout_width="fill_parent" 
+																		android:layout_gravity="top" android:layout_marginTop="@dimen/ab_textview_mrc_margin_from_header">
+																		<TextView android:id="@+id/lblMessageInfo" 
+																				android:layout_height="wrap_content" 
+																					android:layout_width="wrap_content" 
+																					android:layout_gravity="center" android:text="@string/AB_MRC_MESSAGE" android:textSize="@dimen/ab_mrc_confirmation_textview1_text_size">
+																		</TextView>
+																		<LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/LinearLayout02" android:layout_gravity="center_vertical|center_horizontal" android:orientation="vertical">
+																			<FrameLayout android:layout_height="wrap_content" android:id="@+id/frameLayout1" android:layout_width="fill_parent">
+																				<Button android:text="@string/AB_GET_THE_GAME" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/ab_large_button_width" android:layout_gravity="center_vertical|center_horizontal" android:id="@+id/bt_ly_get_full_version_mrc_confirmation_pay"></Button>
+																				<ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:src="@drawable/ab_promo_star" android:paddingRight="@dimen/ab_mrc_price_right_margin_confirmation"></ImageView>
+																				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right|center_vertical" android:textSize="@dimen/ab_mrc_pricetext_size" android:layout_marginRight="@dimen/ab_mrc_pricetext_right_margin_confirmation" android:text="-40%" android:id="@+id/lblDiscount"></TextView>
+																			</FrameLayout>
+																			<Button android:layout_height="wrap_content" android:id="@+id/bt_ly_get_full_version_question_cancel" android:layout_width="wrap_content" android:text="@string/SKB_CANCEL" android:minWidth="@dimen/ab_large_button_width" android:layout_gravity="center"></Button>
+																			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblMessageInfo2" android:layout_gravity="center" android:textSize="@dimen/ab_mrc_confirmation_textview2_text_size" android:text="Subscription details stuff HERE :P"></TextView>
+																		</LinearLayout>
+													</LinearLayout>
+									    			<Button android:id="@+id/bt_ly_get_full_version_question_tcs" 
+									    					android:layout_height="wrap_content" 
+									    					android:layout_gravity="bottom|left" 
+									    					android:text="@string/SKB_TCS" 
+									    					android:layout_width="wrap_content" 
+															android:textSize="@dimen/ab_button_tcs_text_size" 
+															android:textStyle="normal"
+									    					android:layout_marginBottom="@dimen/ab_button_bottom_margin">
+									    			</Button>
+									    			<Button android:id="@+id/bt_ly_get_full_version_question_exit" 
+									    					android:layout_height="wrap_content" 
+									    					android:layout_gravity="bottom|right" 
+									    					android:text="@string/SKB_EXIT" 
+									    					android:layout_width="wrap_content" 
+									    					android:layout_marginBottom="@dimen/ab_button_bottom_margin" 
+															android:minWidth="@dimen/ab_small_button_width">
+									    			</Button>
+									</FrameLayout>
+							</FrameLayout>
+							<FrameLayout android:id="@+id/FrameLayoutHeader"
+										android:layout_width="fill_parent" 
+										android:layout_gravity="top"
+										android:background="@drawable/ab_top_bar" android:layout_height="@dimen/ab_tittle_mrc_bar_size_h">
+										<ImageView android:id="@+id/ImageView01"
+													android:layout_width="wrap_content"
+													android:layout_height="wrap_content"
+													android:src="@drawable/ab_logo_tittle_horiz"
+													android:paddingTop="@dimen/ab_logo_tittle_gap"
+													android:paddingLeft="@dimen/ab_logo_tittle_gap">
+										</ImageView>
+							</FrameLayout>
+				</FrameLayout>
+</LinearLayout>

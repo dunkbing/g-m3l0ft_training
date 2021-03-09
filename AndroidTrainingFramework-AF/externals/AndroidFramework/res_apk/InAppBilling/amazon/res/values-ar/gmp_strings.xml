@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">لا يمكن إتمام عملية الشراء</string>
+	<string name="billing_not_supported_message">خدمة متجر أمازون للتطبيقات ليست متوفرة الآن. يمكنك الاستمرار في استخدام هذا التطبيق لكن لن تتمكن من إتمام أي عملية شراء. </string>
+	<string name="waitting_confirm">نحن بانتظار رد أمازن لتأكيد عملية شرائك. عند إتمام العملية سنقوم بتحديث قائمة أغراضك.</string>
+	<string name="pending_transaction">لديك عملية تحويل معلّقة.</string>
+	<string name="purchase_success">تمت عملية الشراء بنجاح</string>
+	<string name="purchase_unsuccess">لم تتم عملية الشراء بنجاح</string>
+	<string name="iab_retry">إعادة المحاولة</string>
+</resources>

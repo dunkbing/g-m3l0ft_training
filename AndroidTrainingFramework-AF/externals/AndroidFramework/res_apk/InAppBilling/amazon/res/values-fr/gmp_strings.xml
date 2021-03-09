@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">Achats impossibles</string>
+    <string name="billing_not_supported_message">Le service Amazon Market n\'est pas disponible pour le moment. Vous pouvez continuer à utiliser cette application, mais vous ne pourrez effectuer aucun achat.</string>
+    <string name="waitting_confirm">Nous attendons qu\'Amazon valide votre achat. Lorsque l\'achat sera validé, nous mettrons à jour votre liste d\'items.</string>
+    <string name="pending_transaction">Vous avez une transaction en cours.</string>
+	<string name="purchase_success">Achat réussi.</string>
+	<string name="purchase_unsuccess">Échec de l\'achat</string>
+	<string name="iab_retry">Réessayer</string>
+</resources>

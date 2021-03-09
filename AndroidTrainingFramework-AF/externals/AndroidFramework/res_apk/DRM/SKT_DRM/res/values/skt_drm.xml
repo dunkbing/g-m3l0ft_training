@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="DRM_CHECK_FAIL">ARM 연동실패</string>
+	
+	<string name="DRM_TITLE_1">알림</string>
+	<string name="DRM_TITLE_2">확인</string>
+	
+	<string name="DRM_DEF_1">정의되지 않은 메시지입니다</string>	
+	<string name="DRM_DEF_2"></string>	
+	<string name="DRM_DEF_3"></string>
+	
+	<string name="DRM_F04_1">일시적인 장애로 라이선스 발급에 실패하였습니다.</string>	
+	<string name="DRM_F04_2">잠시후에 다시  시도해주십시요(04).</string>	
+	<string name="DRM_F04_3"></string>
+	
+	<string name="DRM_F08_1">일시적인 장애로 라이선스 발급에 실패하였습니다.</string>	
+	<string name="DRM_F08_2">잠시후에 다시  시도해주십시요(08).</string>	
+	<string name="DRM_F08_3"></string>
+	
+	<string name="DRM_F09_1">상품 구매내역 확인에 실패하였습니다.</string>	
+	<string name="DRM_F09_2">자세한 사항은 고객센터로 문의 바랍니다.(09)</string>	
+	<string name="DRM_F09_3"></string>
+	
+	<string name="DRM_F11_1">핸드폰 번호를 확인할수 없습니다.</string>	
+	<string name="DRM_F11_2">USIM 장착여부 확인 및 USIM 잠금이 된 경우 해제를 </string>	
+	<string name="DRM_F11_3">해주시기 바랍니다.(11)</string>
+	
+	<string name="DRM_F12_1">어플리케이션의 정보 확인이 불가능합니다.</string>	
+	<string name="DRM_F12_2">자세한 사항은 고객센터로 문의 바랍니다.(12)</string>	
+	<string name="DRM_F12_3"></string>
+	
+	<string name="DRM_F13_1">핸드폰에서 데이타통신(3G,WIFI)이 되고 있지</string>	
+	<string name="DRM_F13_2">않습니다. 핸드폰의 데이터 통신 설정부분을 </string>	
+	<string name="DRM_F13_3">확인 후 재 실행을해 주십시요.(13)</string>
+	
+	<string name="DRM_F14_1">Tstore 전용프로그램이 설치 되어있지 않습니다</string>	
+	<string name="DRM_F14_2">Tstore 전용프로그램을 설치하신 후 재 실행을</string>	
+	<string name="DRM_F14_3">해주십시요.(14)</string>
+	
+	<string name="DRM_F0A_1">Tstore 미가입된 단말입니다.</string>	
+	<string name="DRM_F0A_2">가입후 이용을 해주시기 바랍니다.(0A)</string>	
+	<string name="DRM_F0A_3"></string>
+	
+	<string name="DRM_F0C_1">일시적인 장애로 라이선스 발급에 실패하였습니다.</string>	
+	<string name="DRM_F0C_2">잠시후에 다시 시도해 주십시요.(0C)</string>	
+	<string name="DRM_F0C_3"></string>
+	
+	<string name="DRM_F0D_1">어플리케이션의 라이선스 정보 확인이 불가능합니다.</string>	
+	<string name="DRM_F0D_2">자세한 사항은 고객센터로 문의 바랍니다.(0D)</string>	
+	<string name="DRM_F0D_3"></string>
+	
+	<string name="DRM_F0E_1">일시적인 장애로 라이선스 발급에 실패하였습니다.</string>	
+	<string name="DRM_F0E_2">잠시후에 다시  시도해주십시요(0E).</string>	
+	<string name="DRM_F0E_3"></string>
+	
+	<string name="DRM_LOADING_TITLE">인증</string>
+	<string name="DRM_LOADING_MESSAGE">응용 프로그램 인증</string>
+	
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_marginBottom="@dimen/aipay_margin_vertical"
+    android:background="@drawable/aipay_popupwindow_bg">
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#868686"
+        android:text="客服联系方式"/>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#353739"
+        android:layout_marginBottom="15dp"/>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="4dp">
+        <ImageView android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/aipay_phone"
+            android:contentDescription="@null"/>
+        
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="13sp"
+	        android:textColor="#868686"
+	        android:text="客服电话:"/>
+        
+        <TextView android:id="@+id/tv_phone_aipay"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:textColor="#547989"
+	        android:linksClickable="true"
+	        android:text="0755-86371710"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="4dp">
+        <ImageView android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/aipay_qq"
+            android:contentDescription="@null"/>
+        
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="13sp"
+	        android:textColor="#868686"
+	        android:text="客服QQ:"/>
+        
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:textColor="#868686"
+	        android:text="1431190296"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <ImageView android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/aipay_weixin"
+            android:contentDescription="@null"/>
+        
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="13sp"
+	        android:textColor="#868686"
+	        android:text="微信公共账号:"/>
+        
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:textColor="#868686"
+	        android:text="爱贝计费"/>
+    </LinearLayout>
+    
+    <TextView android:id="@+id/tv_confirm_aipay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"
+        android:textColor="#cbcccf"
+        android:text="知道了"
+        android:background="@drawable/aipay_button_selector"/>
+
+</LinearLayout>
+    
+</FrameLayout>

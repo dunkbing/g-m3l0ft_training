@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">구매할 수 없음</string>
+    <string name="billing_not_supported_message">현재 본 Market의 결제 서비스를 사용할 수 없습니다. 본 애플리케이션을 계속 사용할 수 있으나 아이템을 구매할 수는 없습니다.</string>
+    <string name="cannot_connect_title">Market에 연결할 수 없음</string>
+    <string name="cannot_connect_message">본 애플리케이션에서 Market으로 연결할 수 없습니다. 귀하의 Market 버전이 오래되었을 수 있습니다. 이 애플리케이션을 계속 사용할 수 있으나 아이템을 구매할 수는 없습니다.</string>
+    <string name="waitting_confirm">Cafe Bazaar에서 귀하의 구매를 승인할 때까지 기다리고 있습니다. 일단 구매가 완료되면 귀하의 아이템 목록을 업데이트하겠습니다.</string>
+    <string name="pending_transaction">보류 중인 거래가 있습니다.</string>
+	<string name="purchase_success">구매 성공.</string>
+	<string name="purchase_unsuccess">구매 실패.</string>
+	<string name="iab_retry">재시도</string>
+	<string name="iab_cancel">취소</string>
+	<string name="iab_ok">확인</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB_PANTECH_NO_APPSPLAY">Der Benutzer muss die AppsPlay-Anwendung herunterladen.</string>
+	<string name="IAB_PANTECH_NO_LOGIN">Der Benutzer muss sich bei der AppsPlay-Anwendung anmelden.</string>
+	<string name="IAB_PANTECH_ERROR">Ein Fehler ist aufgetreten. Versuche es bitte später erneut.</string>
+</resources>

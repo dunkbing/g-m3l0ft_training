@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="DRM_NETWORK_DIALOGUE_1">Tidak tersedia sambungan Internet. Ingin mengkonfigurasi sambungan Wi-Fi sekarang atau menggunakan jaringan operator?</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">Sistem menunjukkan bahwa lisensi di sistem lokalmu tidak valid. Aplikasi akan menggunakan sambungan jaringan untuk memeriksa lisensi. Ingin melanjutkan?</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">Server menunjukkan bahwa aplikasi tidak dibeli, sehingga lisensi tidak dikirim ke aplikasi tersebut.</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">Server telah memeriksa parameter aplikasi dan menunjukkan bahwa minimal satu parameter memiliki nilai null. (Hal ini dapat terjadi jika ponsel tidak aktif).</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">Karena kegagalan server, misalnya kegagalan untuk mengakses database, server tidak dapat mengkonfirmasi bahwa aplikasi telah dibeli.</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">Lisensi tidak dikirim ke aplikasi karena kegagalan jaringan (aplikasi tidak dapat menerima respons dari server).</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">Lisensi tidak dikirim ke aplikasi karena kegagalan jaringan (permintaan dari aplikasi tidak dapat dikirim ke server).</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">Lisensi tidak dapat disimpan ke disk lokal. Kemungkinan penyebabnya antara lain: Kesalahan I/O disk, tidak ada ruang yang memadai dalam folder, tidak diizinkan menyimpan lisensi dalam disk.</string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">Hal ini terjadi jika klien meminta lisensi dari server yang tidak berada di pustaka Zirconia.</string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">Hal ini terjadi jika klien meminta lisensi dari server yang berasal dari pustaka Zirconia tidak valid dan tidak didukung oleh server lisensi.</string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">Lisensi dari server tidak valid.</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">Lisensi dikirim ke aplikasi dari server yang tidak valid.</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">Pengguna telah memodifikasi aplikasi.</string>
+	<string name="DRM_EZIRCONIA_SUCCESS_1">Lisensi yang valid berhasil diterima.</string>
+</resources>

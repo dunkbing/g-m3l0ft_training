@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#016585">
+	<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:gravity="center_vertical"
+			android:id="@+id/drmlib_optusjg_layout_header"
+			android:background="@drawable/drmlib_optusjg_shade_20110629">
+		<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:gravity="center_vertical"
+				android:id="@+id/drmlib_optusjg_layout_icon"
+				android:src="@drawable/drmlib_optusjg_logo_20110629"
+				android:height="20dp"
+				android:padding="6dp" />
+		<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:gravity="center_vertical"
+				android:src="@drawable/drmlib_optusjg_wheel_20110629"
+				android:height="20dp"
+				android:padding="6dp" />
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/drmlib_optusjg_layout_icon"
+				android:text="Games Store"
+				android:textColor="#ffffff"
+				android:textSize="20dp"
+				android:padding="6dp" />
+	</RelativeLayout>
+	<View
+			android:layout_width="fill_parent"
+			android:layout_height="48dp"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/drmlib_optusjg_shade_20110629" />
+
+	<!-- VTN add exit button -->
+	<Button android:id="@+id/exit"
+		    	android:layout_height="wrap_content"
+		    	android:text="     Exit     "
+				android:layout_width="wrap_content"
+    			android:layout_centerHorizontal="true"
+    			android:layout_alignParentBottom="true"
+    			android:layout_gravity="center_horizontal"/>
+
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_below="@id/drmlib_optusjg_layout_header"
+			android:gravity="center_vertical"
+			android:orientation="vertical"
+			android:padding="8dp">
+		<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="..."
+				android:gravity="center_vertical|center_horizontal"
+				android:id="@+id/drmlib_optusjg_layout_maintext"
+				android:textColor="#ffffff"
+				android:textColorLink="#f9db23"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:textSize="16sp" />
+
+		<ProgressBar android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"/>
+
+		</LinearLayout>
+
+
+
+</RelativeLayout>
+

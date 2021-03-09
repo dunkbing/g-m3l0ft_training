@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">Kein Einkauf möglich</string>
+    <string name="billing_not_supported_message">Der Market-Abrechnungsdienst ist zurzeit nicht verfügbar. Du kannst diese App weiterhin benutzen, aber keine Einkäufe tätigen.</string>
+    <string name="cannot_connect_title">Keine Verbindung zum Market möglich</string>
+    <string name="cannot_connect_message">Diese App kann keine Verbindung zum Market herstellen. Deine Market-Version ist möglicherweise veraltet. Du kannst diese App weiterhin benutzen, aber keine Einkäufe tätigen.</string>
+    <string name="waitting_confirm">Wir warten darauf, dass Cafe Bazaar deinen Einkauf bestätigt. Sobald der Einkauf abgeschlossen ist, wird deine Artikelliste aktualisiert.</string>
+    <string name="pending_transaction">Es liegt eine ausstehende Transaktion vor.</string>
+	<string name="purchase_success">Einkauf erfolgreich</string>
+	<string name="purchase_unsuccess">Einkauf fehlgeschlagen</string>	
+	<string name="iab_retry">Erneut versuchen</string>
+	<string name="iab_cancel">Abbrechen</string>
+	<string name="iab_ok">OK</string>
+</resources>

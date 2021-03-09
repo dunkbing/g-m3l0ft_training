@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">لا يمكن إجراء عملية شراء</string>
+	<string name="billing_not_supported_message">خدمة الدفع الخاصة بغوغل بلاي غير متوفرة الآن. يمكنك الاستمرار في استخدام هذا التطبيق لكن لا يمكنك إجراء أي عملية شراء.</string>
+	<string name="cannot_connect_title">لا يمكن الاتصال بمتجر غوغل بلاي</string>
+	<string name="cannot_connect_message">لا يمكن لهذا التطبيق الاتصال بمتجر غوغل بلاي. قد تكون نسختك من تطبيق متجر غوغل بلاي قديمة. يمكنك الاستمرار في استخدام هذا التطبيق لكن لا يمكنك إجراء أي عملية شراء.</string>
+	<string name="waitting_confirm">ننتظر غوغل لتأكيد عملية الشراء. عندما يتم إكمال العملية سنحدّث قائمة عناصرك.</string>
+	<string name="pending_transaction">لديك عملية شراء معلّقة</string>
+	<string name="purchase_success">تمت عملية الشراء بنجاح</string>
+	<string name="purchase_unsuccess">لم تتم عملية الشراء بنجاح</string>
+	<string name="iab_retry">إعادة المحاولة</string>
+	<string name="iab_cancel">إلغاء</string>
+	<string name="iab_ok">حسناً</string>
+</resources>

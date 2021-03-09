@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">Não foi possível fazer compras</string>
+    <string name="billing_not_supported_message">O serviço Amazon Market não está disponível neste momento. Você pode continuar a usar o aplicativo, mas não poderá fazer compras.</string>
+    <string name="waitting_confirm">Estamos aguardando a validação da compra pela Amazon. Assim que o processo for finalizado, sua lista de itens será atualizada.</string>
+    <string name="pending_transaction">Você tem uma transação pendente.</string>
+	<string name="purchase_success">Compra efetuada com sucesso.</string>
+	<string name="purchase_unsuccess">Falha na compra.</string>
+	<string name="iab_retry">Tentar de novo.</string>
+</resources>

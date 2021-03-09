@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>	
+	<!-- bg -->
+	<dimen name="iab20_lr_padding_bg">20dp</dimen>
+	<dimen name="iab20_top_padding_bg">10dp</dimen>
+	<dimen name="iab20_bottom_padding_bg">10dp</dimen>
+	
+	<integer name="iab20_cplr_dialog_margin">25</integer>
+	<integer name="iab20_cptb_dialog_margin">10</integer>
+	
+	<integer name="iab20_lr_dialog_margin">30</integer>
+	<integer name="iab20_tb_dialog_margin">20</integer>
+	
+	<dimen name="iab20_dialog_top_margin">20dp</dimen>
+	<integer name="iab20_dialog_button_text_size">?android:attr/textAppearanceLarge</integer>
+		
+	<dimen name="iab20_desc_margin">18dp</dimen>
+	<dimen name="iab20_sub_total_margin">1dp</dimen>
+	
+	<!-- buttons -->
+	<dimen name="iab20_button_min_width">160dp</dimen>
+	<dimen name="iab20_button_min_height">40dp</dimen>
+	<dimen name="iab20_button_screen_choose_width">150dp</dimen>	
+	<dimen name="iab20_button_gap">15dp</dimen>
+	<dimen name="iab20_large_button_width">200dp</dimen>
+	<dimen name="iab20_small_button_width">40dp</dimen>
+	<dimen name="iab20_button_next_size">2sp</dimen>
+	
+	<!-- form -->
+	<dimen name="iab20_form_element_gap">20dp</dimen>
+	<dimen name="iab20_left_column_max_width">200dp</dimen>
+	
+</resources>

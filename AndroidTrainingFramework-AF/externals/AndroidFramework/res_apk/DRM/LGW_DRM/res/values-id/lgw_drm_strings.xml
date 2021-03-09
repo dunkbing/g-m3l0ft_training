@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<string name="checklicense_dialog_message">Sedang diproses…</string>
+<string name="unlicensed_dialog_title">Verifikasi gagal</string>
+<string name="unlicensed_dialog_message">Tidak ada rekaman yang cocok ditemukan pada riwayat pembelian Anda.</string>
+<string name="no_lgworld_dialog_title">Dibutuhkan verifikasi</string>
+<string name="no_lgworld_dialog_message">Harap pasang versi LG World terbaru untuk memverifikasi aplikasi ini.</string>
+<string name="no_network_dialog_title">Tdk ada jaringan</string>
+<string name="no_network_dialog_message">Harap periksa koneksi jaringan Anda.</string>
+<string name="warning_dialog_title">Peringatan</string>
+<string name="warning_dialog_message">Layanan tidak tersedia. Silakan coba lagi.</string>
+<string name="ok_button">Pilih</string>
+<string name="cancel_button">Batalkan</string>
+<string name="exit_button">Keluar</string>
+
+</resources>

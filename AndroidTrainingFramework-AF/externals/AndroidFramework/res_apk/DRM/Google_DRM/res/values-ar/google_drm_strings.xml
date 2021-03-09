@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="GET_THE_GAME">احصل على اللعبة</string>
+	<string name="CHECKING_LICENSE">جاري التأكد من الترخيص...</string>
+	<string name="UNLICENSED_DIALOG_TITLE">تأكد من الترخيص</string>
+	<string name="UNLICENSED_DIALOG_BODY">ترخيص غير صحيح</string>
+	<string name="BUY_BUTTON">شراء اللعبة</string>
+	<string name="QUIT_BUTTON">خروج</string>
+	<string name="RETRY">إعادة المحاولة</string>
+	<string name="NETWORK_ERROR_TITLE">تنبيه بشأن حدوث خطأ ما</string>
+	<string name="NETWORK_ERROR_BODY">حدث خطأ في الشبكة ، هل تريد المحاولة مرة أخرى؟</string>
+</resources>

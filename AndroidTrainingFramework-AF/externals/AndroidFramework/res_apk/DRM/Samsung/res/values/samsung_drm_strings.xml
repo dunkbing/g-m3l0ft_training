@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="DRM_NETWORK_DIALOGUE_1">No Internet connection available. Do you want to configure your Wi-Fi connection now or go through your carrier network?</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">The system found that your license on your local system is invalid. The application will use a network connection to check for a valid license . Do you wish to proceed?</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">The server has discovered that the application has not been purchased, so the license has not been sent to the application. </string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">The server has checked the parameters of the application and at least one of the parameters does not have an entry. (This can occur with the phone is off) </string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">The server is unable to check whether the application has been purchased because of server failure, such as a database access failure. </string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">The license has not been sent to the application because of a network failure. (The application could not receive a response from the server) </string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">The license has not been sent to the application because of a network failure. (The request from the application could not be sent to the server ) </string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">The license could not be saved to the local disk. The reasons for this can be: Disk I/O error, not enough space in the folder, no permission to save the license on the disk. </string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">This occurs if the client requests a license from a server that is  not from the Zirconia library. </string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">This occurs if the client requests a license from the server that is from an invalid version of the Zirconia library that is not supported by the license server. </string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">The license from the server is not valid. </string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">The license was sent to the application from an invalid server.</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">The user has modified the application.</string>
+	<string name="DRM_EZIRCONIA_SUCCESS_1">A valid license has been successfully received.</string>
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<LinearLayout
+		android:id="@+id/llymv"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical" 
+		android:background="@color/iab20_fade">
+		<LinearLayout
+			android:id="@+id/llymvt"
+			android:layout_width="wrap_content"
+			android:layout_height="0dp"
+			android:layout_weight="@integer/iab20_tb_dialog_margin" >
+		</LinearLayout>    
+		
+		<LinearLayout
+			android:id="@+id/llymh"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:orientation="horizontal" 
+			android:layout_weight="100" >
+		
+			<LinearLayout
+				android:id="@+id/llymhl"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="@integer/iab20_lr_dialog_margin" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/llyroot"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="100"
+				android:orientation="vertical"
+				android:gravity="center">
+				
+					<LinearLayout
+						android:id="@+id/llyMainContent"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:background="@drawable/iab20_dlg_bg" 
+						android:orientation="vertical" >
+					
+					<TextView
+						android:id="@+id/tvHeader"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/app_name"
+						android:textAppearance="?android:attr/textAppearanceLarge"
+						android:textColor="@color/iab20_tittle" />
+
+					<RelativeLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content" >
+				
+						<LinearLayout
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical" 
+							android:layout_marginBottom="@dimen/iab20_form_element_gap" 
+							android:layout_marginTop="@dimen/iab20_form_element_gap">
+				
+							<LinearLayout
+								android:id="@+id/llycontent"
+								android:layout_width="fill_parent"
+								android:layout_height="0dp"
+								android:orientation="vertical" 
+								android:layout_weight="1" 
+								android:gravity="center">
+								<ScrollView
+									android:id="@+id/scrollView1"
+									android:layout_width="fill_parent"
+									android:layout_height="fill_parent" 
+									android:layout_gravity="center">
+									<LinearLayout
+										android:id="@+id/llyScontent"
+										android:layout_width="fill_parent"
+										android:layout_height="wrap_content"
+										android:gravity="center"
+										android:orientation="vertical" >
+
+										<LinearLayout
+											android:layout_width="match_parent"
+											android:layout_height="wrap_content"
+											android:orientation="vertical" 
+											android:gravity="center">
+
+											<ProgressBar
+												android:id="@+id/pbBarDialog"
+												style="?android:attr/progressBarStyleInverse"
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:visibility="gone" />
+
+											<TextView
+												android:id="@+id/tvInfo"
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:text="@string/app_name"
+												android:textAppearance="?android:attr/textAppearanceMedium"
+												android:textColor="@color/iab20_textview" />
+
+										</LinearLayout>
+										</LinearLayout>
+								</ScrollView>
+
+							</LinearLayout>
+				
+							<LinearLayout
+								android:id="@+id/llyBotton"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:paddingLeft="@dimen/iab20_lr_padding_bg" 
+								android:paddingRight="@dimen/iab20_lr_padding_bg"
+								android:paddingBottom="@dimen/iab20_bottom_padding_bg" 
+								android:paddingTop="@dimen/iab20_bottom_padding_bg">
+								<LinearLayout
+									android:layout_width="0dp"
+									android:layout_height="fill_parent"
+									android:orientation="horizontal"
+									android:layout_weight=".3" 
+									android:gravity="center">    
+
+									<Button
+										android:id="@+id/btId1"
+										style="@style/iab20_Cancel_Button"
+										android:layout_width="fill_parent"
+										android:layout_height="fill_parent"
+										android:text="@string/IAB20_SK_BACK"
+										android:minWidth="@dimen/iab20_button_min_width"
+													android:visibility="invisible"/>
+
+									</LinearLayout>
+								<LinearLayout
+									android:layout_width="0dp"
+									android:layout_height="fill_parent"
+									android:orientation="horizontal"
+									android:layout_weight=".3" 
+									android:gravity="center">        
+
+									<Button
+										android:id="@+id/btId2"
+										style="@style/iab20_Buttons"
+										android:textAppearance="?android:attr/textAppearanceMedium"
+										android:layout_width="fill_parent"
+										android:layout_height="fill_parent"
+										android:text="@string/IAB20_SK_OK"
+										android:minWidth="@dimen/iab20_button_min_width"/>
+
+								</LinearLayout>    
+								<LinearLayout
+									android:layout_width="0dp"
+									android:layout_height="fill_parent"
+									android:orientation="horizontal"
+									android:layout_weight=".3" 
+									android:gravity="center">
+
+									<Button
+										android:id="@+id/btId3"
+										style="@style/iab20_Buttons"
+										android:layout_width="fill_parent"
+										android:layout_height="fill_parent"
+										android:text="@string/IAB20_SK_NEXT"
+										android:minWidth="@dimen/iab20_button_min_width"
+										android:visibility="invisible"/>
+
+								</LinearLayout>    
+
+							</LinearLayout>
+				
+						</LinearLayout>
+				
+					</RelativeLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/llymhr"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="@integer/iab20_lr_dialog_margin" >
+			</LinearLayout>
+			</LinearLayout>
+		
+			<LinearLayout
+				android:id="@+id/llymvb"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="@integer/iab20_tb_dialog_margin" >
+			</LinearLayout>
+		
+		</LinearLayout>
+</merge>

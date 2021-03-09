@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - KDDI Gift">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/KDDIGifting"/>
+			<preprocess/>
+		</java>
+		<res>
+			<dir path="../res_apk/KDDIGifting/res"/>
+		</res>
+	</sources>
+</j2a>

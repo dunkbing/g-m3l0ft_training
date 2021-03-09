@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="pss_vzw_confirm_buy_title">{GAME}!</string>
+<string name="pss_vzw_confirm_buy">Price: {PRICE} USD\n\nClick \'Get The Game\' to confirm.\nPurchase will be charged to your Verizon Wireless account.\n\nData rates may apply during download and usage according to your plan or data package</string>
+<string name="pss_vzw_cancel">Cancel</string>
+<string name="pss_vzw_get_game">Get The Game</string>
+<string name="pss_vzw_please_wait">Please Wait...</string>
+<string name="pss_vzw_try_again">You need to be connected to the Verizon Wireless Network to continue.\n\nDo you want try again?</string>
+<string name="pss_vzw_try_again_glshop">You need to be connected to the Verizon Wireless Network to continue.\n\nPlease try again to complete purchase</string>
+<string name="pss_vzw_yes">Yes</string>
+<string name="pss_vzw_no">No</string>
+<string name="pss_vzw_transaction_complete_title">Transaction complete</string>
+<string name="pss_vzw_transaction_complete">Thank you for purchasing \n{GAME}!\n\nCharge will appear on your Verizon Wireless bill.\n\nDownload will start in your notification bar.</string>
+<string name="pss_vzw_downlaod">Start download</string>
+<string name="pss_vzw_wifi_checkbox_text">Download through Wi-FI</string>
+<string name="pss_vzw_data_warning">Data rates may apply when downloaded through Verizon Wireless Network.</string>
+<string name="pss_vzw_wait_connection_wifi">Enabling Wi-Fi...</string>
+<string name="pss_vzw_unknown_sources_message">To Play {GAME} please allow for non-Market installations:</string>
+<string name="pss_vzw_unknown_sources_message_01">1. Press \"Settings\"</string>
+<string name="pss_vzw_unknown_sources_message_02">2. Check \"Unknown Sources\"</string>
+<string name="pss_vzw_unknown_sources_message_03">3. Press \"Yes\" to allow uknown sources</string>
+<string name="pss_vzw_unknown_sources_message_04">4. Press back key to resume transaction</string>
+<string name="pss_vzw_settings">Settings</string>
+<string name="pss_vzw_wait_disable_connection">Disabling Wi-Fi...</string>
+</resources>

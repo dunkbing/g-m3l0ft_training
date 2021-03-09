@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="GET_THE_GAME">Купить игру</string>
+	<string name="CHECKING_LICENSE">Проверка лицензии...</string>
+	<string name="UNLICENSED_DIALOG_TITLE">Проверка лицензии...</string>
+	<string name="UNLICENSED_DIALOG_BODY">Неверная лицензия</string>
+	<string name="BUY_BUTTON">Купить игру</string>
+	<string name="QUIT_BUTTON">Выход</string>
+	<string name="RETRY">Повтор</string>
+	<string name="NETWORK_ERROR_TITLE">Внимание</string>
+	<string name="NETWORK_ERROR_BODY">Произошла ошибка соединения. Попробовать еще раз?</string>
+</resources>

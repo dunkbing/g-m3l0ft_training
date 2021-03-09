@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string name="KT_DRM_TITLE_1">Initialize</string>	
+	
+	<string name="KT_DRM_R0_1">초기화 성공</string>	
+	<string name="KT_DRM_R0_2"></string>	
+	<string name="KT_DRM_R0_3"></string>
+	
+	<string name="KT_DRM_R1_1">초기화 실패</string>	
+	<string name="KT_DRM_R1_2"></string>	
+	<string name="KT_DRM_R1_3"></string>
+	
+	<string name="KT_DRM_R2_1">USIM을 장착 후 프로그램을 실행 해 주세요</string>	
+	<string name="KT_DRM_R2_2"></string>	
+	<string name="KT_DRM_R2_3"></string>
+	
+	<string name="KT_DRM_R3_1">불법 복제 프로그램입니다.\n프로그램을 종료합니다.</string>	
+	<string name="KT_DRM_R3_2"></string>	
+	<string name="KT_DRM_R3_3"></string>
+	
+	<string name="KT_DRM_APP_REGAL">정상</string>
+	<string name="KT_DRM_APP_ILLEGAL_COPY">불법 복제된 어플리케이션</string>
+	<string name="KT_DRM_INVALID_CONTEXT">잘못된 Context 입력</string>
+	<string name="KT_DRM_OLLEHMARKET_NOT_INSTALLED">올레 마켓 어플리케이션 미설치</string>
+	<string name="KT_DRM_FUNC_INITIALIZING">불법 복제 체크 기능 초기화중</string>
+	<string name="KT_DRM_UNKNOWN_ERROR">알 수 없는 오류 발생</string>
+	<string name="KT_DRM_TITLE">Initialize</string>
+	
+</resources>

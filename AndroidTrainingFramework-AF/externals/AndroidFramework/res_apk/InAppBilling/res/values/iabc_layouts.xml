@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="iab_dialog_button_height">38dp</dimen>
+	<dimen name="iab_dialog_button_width">80dp</dimen>
+
+
+</resources>

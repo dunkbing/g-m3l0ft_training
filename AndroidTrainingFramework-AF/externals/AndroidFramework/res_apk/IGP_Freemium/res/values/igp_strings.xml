@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IGP_LOADING_EN">Loading...</string>
+    <string name="IGP_LOADING_FR">Chargement...</string>
+    <string name="IGP_LOADING_DE">Lädt...</string>
+    <string name="IGP_LOADING_IT">Caricamento in corso...</string>
+    <string name="IGP_LOADING_SP">Cargando...</string>
+    <string name="IGP_LOADING_JP">読み込んでいます...</string>
+    <string name="IGP_LOADING_KR">불러오는 중...</string>
+    <string name="IGP_LOADING_CN">载入中……</string>
+    <string name="IGP_LOADING_BR">Carregando...</string>
+    <string name="IGP_LOADING_RU">Загрузка...</string>
+    <string name="IGP_LOADING_TR">Yüklüyor...</string>
+    <string name="IGP_LOADING_AR">جاري التحميل...</string>
+    <string name="IGP_LOADING_TH">กำลังโหลด...</string>
+    <string name="IGP_LOADING_ID">Memuat...</string>
+    <string name="IGP_LOADING_VI">Đang tải...</string>
+    <string name="IGP_LOADING_ZT">載入中...</string>
+	
+	<string name="IGP_NET_ERROR_EN">No Internet connection available. Please make sure your device is connected to the Internet.</string>
+    <string name="IGP_NET_ERROR_FR">Aucune connexion Internet disponible. Veuillez vous assurer que votre appareil est connecté à Internet</string>
+    <string name="IGP_NET_ERROR_DE">Keine Internetverbindung verfügbar. Versichere dich bitte, dass dein Gerät mit dem Internet verbunden ist.</string>
+    <string name="IGP_NET_ERROR_IT">Connessione internet non disponibile. Assicurati che il tuo dispositivo sia connesso a internet.</string>
+    <string name="IGP_NET_ERROR_SP">No hay ninguna conexión a internet disponible. Por favor, asegúrate de que tu dispositivo esté conectado a internet.</string>
+    <string name="IGP_NET_ERROR_JP">インターネット接続を利用できません\nデバイスがインターネットに接続されているかご確認ください</string>
+    <string name="IGP_NET_ERROR_KR">인터넷에 연결되어 있지 않습니다. 장치가 인터넷에 연결되어 있는지 확인하세요.</string>
+    <string name="IGP_NET_ERROR_CN">无网络连接。请确认您的设备已经连入网络。</string>
+    <string name="IGP_NET_ERROR_BR">Não há conexão disponível. Certifique-se de que seu aparelho está conectado à internet.</string>
+    <string name="IGP_NET_ERROR_RU">Невозможно соединиться с сервером. Сеть не найдена. Пожалуйста, попробуйте позже.</string>
+    <string name="IGP_NET_ERROR_TR">İnternet bağlantısı yok. Lütfen cihazının internete bağlı olduğundan emin ol.</string>
+    <string name="IGP_NET_ERROR_AR">لا يوجد اتصال بالإنترنت. يُرجى التحقق من أن جهازك متصل بالإنترنت.</string>
+    <string name="IGP_NET_ERROR_TH">ไม่พบ|การเชื่อมต่อ|อินเทอร์เน็ต |กรุณา|ตรวจสอบ|ว่า|เครื่อง|ของคุณ|ได้|เชื่อมต่อ|กับ|อินเทอร์เน็ต</string>
+    <string name="IGP_NET_ERROR_ID">Koneksi Internet saat ini tidak tersedia. Pastikan perangkatmu sudah terhubung dengan Internet.</string>
+    <string name="IGP_NET_ERROR_VI">Không có kết nối Internet. Xin đảm bảo thiết bị của bạn đã kết nối Internet.</string>
+    <string name="IGP_NET_ERROR_ZT">無可用網路連接，請確定您的設備已聯網。</string>
+	
+	<string name="IGP_OK_EN">OK</string>
+	<string name="IGP_OK_FR">OK</string>
+	<string name="IGP_OK_DE">OK</string>
+	<string name="IGP_OK_IT">OK</string>
+	<string name="IGP_OK_SP">Acep.</string>
+	<string name="IGP_OK_JP">OK</string>
+	<string name="IGP_OK_KR">OK</string>
+	<string name="IGP_OK_CN">OK</string>
+	<string name="IGP_OK_BR">OK</string>
+	<string name="IGP_OK_RU">OK</string>
+	<string name="IGP_OK_TR">OK</string>
+	<string name="IGP_OK_AR">موافق</string>
+	<string name="IGP_OK_TH">ตกลง</string>
+	<string name="IGP_OK_ID">OK</string>
+	<string name="IGP_OK_VI">OK</string>
+	<string name="IGP_OK_ZT">OK</string>
+</resources>

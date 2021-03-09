@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <string name="app_name">Android Billing</string> -->
+	<string name="IAB_SKB_BUY">Kaufen</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_WARNING_MESSAGE">Klicke auf Kaufen, um den Kaufprozess einzuleiten.</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_TYPE">Art der Prepaid-Karte</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_DENOMINATION">Nennwert der Prepaid-Karte</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_NUMBER">Nummer der Prepaid-Karte</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_PASSWORD">Passwort der Prepaid-Karte</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_CHECKBOX_SAVE_INFO">Informationen zur Prepaid-Karte</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PREPAID_CARD_TYPE_CHINA_MOBILE">China Mobile</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PREPAID_CARD_TYPE_CHINA_UNICOM">China Unicom</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PREPAID_CARD_TYPE_CHINA_TELECOM">China Telecom</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_DIALOG_TITLE">Achtung</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_DIALOG_MESSAGE">Du verliert möglicherweise Guthaben, wenn der Wert der Prepaid-Karte falsch ausgewählt wird.</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PURCHASE_PROGRESS_TITLE">Mit Shenzhoufu bezahlen...</string>	
+	<string name="IAB_SHENZHOUFU_LAYOUT_PURCHASE_PROGRESS_MESSAGE">Bitte warten, während die Transaktion durchgeführt wird...</string>	
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_SHENZHOUFU">Wir warten auf die Lieferbestätigung für deine Elemente, um den Kauf zu bestätigen. Sobald der Kauf abgeschlossen ist, wird deine Elementeliste aktualisiert.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_SHENZHOUFU">Dein vorheriger Kauf war nicht erfolgreich und wurde nicht berechnet.</string>	
+	<string name="IAB_PURCHASE_ITEM_FAILURE_INSUFFICIENT_BALANCE_SHENZHOUFU">Guthaben nicht ausreichend.</string>	
+	<string name="IAB_PURCHASE_ITEM_FAILURE_VERIFICATION_FAILED">Überprüfung gescheitert.</string>	
+	<string name="IAB_PURCHASE_ITEM_FAILURE_VERIFICATION_INTERRUPTED">Netzwerkfehler. Deine Transaktion steht noch aus und wird fortgesetzt, sobald die Netzwerkverbindung wieder aktiv ist.</string>	
+	<string name="IAB_SHENZHOUFU_PENDING_TITLE">Ausstehende Transaktion</string>
+	<string name="IAB_SHENZHOUFU_CONFIRM_PENDING_TRANSACTION">Liebe/r Kundin/e, bitte wähle "OK", um mit deinem ausstehenden Kauf fortzufahren.</string>
+	<string name="IAB_SHENZHOUFU_PENDING_TRANSACTION_FAILED">Dein vorheriger Kauf war nicht erfolgreich.</string>
+</resources>

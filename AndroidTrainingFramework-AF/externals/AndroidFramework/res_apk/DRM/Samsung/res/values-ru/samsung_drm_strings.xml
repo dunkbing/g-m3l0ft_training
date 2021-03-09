@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DRM_NETWORK_DIALOGUE_1">Нет соединения с интернет. Настроить соединение Wi-Fi или использовать сеть оператора?</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">Система определила, что лицензия на вашем устройстве неверна. Приложение использует сетевое подключение для проверки и отправки лицензии. Продолжить? </string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">Сервер обнаружил, что данное приложение не было куплено, поэтому лицензия не была отправлена.</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">Сервер проверил параметры вашего приложения и определил, что как минимум один из них имеет нулевое значение (Возможно, телефон выключен).</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">Из-за ошибки на сервере или ошибки подключения к базе данных сервер не смог подтвердить, что приложение было куплено.</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">Лицензия для приложения не была отправлена из-за ошибки сетевого соединения (Приложению не удалось получить ответ от сервера).</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">Лицензия для приложения не была отправлена из-за ошибки сетевого соединения (Приложению не удалось отправить запрос на сервер).</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">Не удалось сохранить лицензию. Возможные причины: ошибка чтения диска I/O, недостаточный объем свободной памяти, нет разрешения на сохранения лицензии на диск.</string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">Ошибка могла произойти из-за запроса клиентом лицензии на сервере, который не внесен в библиотеку Zirconia.</string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">Ошибка могла произойти из-за запроса клиентом лицензии на сервере, который внесен в неверную версию библиотеки Zirconia и не поддерживается сервером лицензий.</string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">Лицензия с данного сервера недействительна.</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">Лицензия для приложения была отправлена с неправильного сервера.</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">Приложение модифицировано пользователем.</string>
+
+	<string name="DRM_EZIRCONIA_SUCCESS_1">Лицензия успешно получена.</string>
+</resources>

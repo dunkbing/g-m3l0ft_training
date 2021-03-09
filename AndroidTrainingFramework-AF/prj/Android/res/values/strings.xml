@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  YOU MUST EDIT THIS FILE  -->
+<!--  YOU MUST EDIT THIS FILE  -->
+<!--  YOU MUST EDIT THIS FILE  -->
+<!-- Add or change any line, accordingly with your game -->
+<!--  YOU MUST EDIT THIS FILE  -->
+<!--  YOU MUST EDIT THIS FILE  -->
+<!--  YOU MUST EDIT THIS FILE  -->
+
+<resources>
+    <!-- TODO: Replace this by your app's app name! -->
+	<string name="app_name">AndroidTrainingFramework</string>
+
+    <!-- TODO: Replace this by your app's app name! -->    
+	<string name="icon_label">AndroidTrainingFramework</string> 
+</resources>

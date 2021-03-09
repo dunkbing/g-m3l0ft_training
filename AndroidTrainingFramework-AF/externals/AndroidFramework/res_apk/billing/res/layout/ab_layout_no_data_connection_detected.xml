@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/LinearLayout01" 
+				android:gravity="center" 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:background="@drawable/ab_background">
+				<FrameLayout android:id="@+id/FrameLayout00"
+							android:layout_height="fill_parent" 
+							android:layout_width="fill_parent">
+							<FrameLayout android:id="@+id/FrameLayoutDialog"
+										android:layout_height="fill_parent" 
+										android:layout_width="fill_parent"
+										android:padding="@dimen/ab_main_layout_padding">
+									    <FrameLayout android:id="@+id/FrameLayout01" 
+									    			android:layout_width="fill_parent" 
+									    			android:layout_height="fill_parent"
+									    			android:background="@drawable/ab_alpha_box">
+													<LinearLayout android:id="@+id/LinearLayout02" 
+																		android:layout_height="wrap_content" 
+																		android:orientation="vertical" 
+																		android:layout_width="fill_parent" 
+																		android:layout_gravity="top" 
+																		android:layout_marginTop="@dimen/ab_textview_margin_from_header">
+																		<TextView android:id="@+id/lblMessageInfo" 
+																				android:layout_height="wrap_content" 
+																					android:layout_width="wrap_content" 
+																					android:text="@string/AB_NO_DATA_CONNECTION_DETECTED" 
+																					android:layout_gravity="center">
+																		</TextView>
+																		<LinearLayout android:layout_width="fill_parent" 
+																						android:gravity="center" 
+																						android:layout_height="1px" 
+																						android:layout_marginLeft="5dp" 
+																						android:layout_marginRight="5dp" 
+																						android:background="#ff505050"
+																						android:id="@+id/LinearLayoutSeparation">
+																		</LinearLayout>																			
+																		<TextView android:id="@+id/lblMessageInfo2" 
+																				android:layout_height="wrap_content" 
+																					android:layout_width="wrap_content" 
+																					android:layout_gravity="center" 
+																					android:text="@string/AB_ACTIVATE_WIFI" 
+																					android:textSize="@dimen/ab_aux_text_size">
+																		</TextView>
+																		<Button android:id="@+id/bt_ly_no_data_connection_detected_retry" 
+																				android:layout_height="wrap_content" 
+																				android:layout_gravity="center" 
+																				android:text="@string/SKB_RETRY" 
+																				android:layout_width="wrap_content" 
+																				android:layout_marginTop="@dimen/ab_buttons_gap" 
+																				android:minWidth="@dimen/ab_large_button_width">
+																		</Button>
+																		<Button android:id="@+id/bt_ly_no_data_connection_detected_cancel" 
+																				android:layout_height="wrap_content" 
+																				android:layout_gravity="center" 
+																				android:text="@string/SKB_CANCEL" 
+																				android:layout_width="wrap_content" 
+																				android:layout_marginTop="@dimen/ab_buttons_gap" 
+																				android:minWidth="@dimen/ab_large_button_width">
+																		</Button>
+																		<Button android:id="@+id/bt_ly_transaction_failed_ccard_wap_other" 
+																				android:layout_height="wrap_content" 
+																				android:layout_gravity="center" 
+																				android:text="@string/SKB_PAY_WITH_CCARD" 
+																				android:layout_width="wrap_content" 
+																				android:layout_marginTop="@dimen/ab_buttons_gap" 
+																				android:minWidth="@dimen/ab_large_button_width"
+																				android:visibility="gone"
+																				>
+																		</Button>
+													</LinearLayout>
+									    			<Button android:id="@+id/bt_ly_no_data_connection_detected_exit" 
+															android:layout_height="wrap_content" 
+															android:layout_gravity="bottom|right" 
+															android:text="@string/SKB_EXIT" 
+															android:layout_width="wrap_content" 
+															android:layout_marginBottom="@dimen/ab_button_bottom_margin" 
+															android:minWidth="@dimen/ab_small_button_width">
+													</Button>
+									</FrameLayout>
+							</FrameLayout>
+							<FrameLayout android:id="@+id/FrameLayoutHeader"
+										android:layout_width="fill_parent" 
+										android:layout_gravity="top"
+										android:background="@drawable/ab_top_bar"
+										android:layout_height="@dimen/ab_tittle_bar_size_h">
+										<ImageView android:id="@+id/ImageView01"
+													android:layout_width="wrap_content"
+													android:layout_height="wrap_content"
+													android:src="@drawable/ab_logo_tittle_horiz"
+													android:paddingTop="@dimen/ab_logo_tittle_gap"
+													android:paddingLeft="@dimen/ab_logo_tittle_gap">
+										</ImageView>
+							</FrameLayout>
+				</FrameLayout>
+</LinearLayout>

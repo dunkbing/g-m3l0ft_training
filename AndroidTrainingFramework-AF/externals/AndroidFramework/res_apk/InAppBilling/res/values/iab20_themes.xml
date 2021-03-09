@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 	<style parent="@style/Theme.acp.translucent.notitlebar.fullscreen" name="Theme.IAB20Theme">
+		<item name="android:buttonStyle">@style/iab20_Buttons</item>
+		<item name="android:textViewStyle">@style/iab20_Widget.TextView</item>
+		<item name="android:editTextStyle">@style/iab20_Widget_EditText</item>
+		<item name="android:windowAnimationStyle">@style/IAB20DialogAnimation</item>
+	</style>
+	<style name="IAB20DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+</resources>

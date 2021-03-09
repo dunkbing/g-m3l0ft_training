@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB_SKT_CONFIRM_DIALOG_TITLE">購入確認</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_QUESTION">下記の商品を購入します。よろしいですか？</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_ITEM_NAME">商品名：{NAME}</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_ITEM_PRICE">価格：{PRICE}</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_YES">はい</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_NO">いいえ</string>
+	<string name="IAB_SKT_RESTORING_TRANSACTIONS_TITLE">以前購入された商品を再インストール</string>
+	<string name="IAB_SKT_RESTORING_TRANSACTIONS">再インストール終了までしばらくお待ち下さい。</string>
+</resources>

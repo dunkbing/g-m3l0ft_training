@@ -1,0 +1,36 @@
+
+Here are some links about some Android modules documentation:
+
+Ho to create a native apk:
+https://docs.gameloft.org/creating-a-standalone-native-apk-on-android/
+
+In-app Billing module
+	https://docs.gameloft.org/android-inappbilling-module/
+
+General information about the Android Core Package
+https://docs.gameloft.org/android-core-package/  
+ 
+How to implement google drm 
+https://docs.gameloft.org/installer-getting-started/#How_to_implement_Google_DRM
+
+Documenation about Installer Module
+https://docs.gameloft.org/installer-getting-started/
+
+Ho to customize installer's layouts
+https://docs.gameloft.org/customize-data-downloader-layouts/
+
+About Development guideline for lg world	
+https://docs.gameloft.org/lg-world-development-guideline/
+
+Ho to upload data for google marketplace
+https://docs.gameloft.org/how-to-upload-data-for-google-marketplace/
+
+how to implement Orange License
+https://docs.gameloft.org/orange-license/
+
+Push Notification:
+	https://docs.gameloft.org/push-notification-for-androiddev-doc/
+
+*Note
+Some files from svn were removed and uploaded to documentation center
+All what is removed is provided here by these links

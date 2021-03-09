@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<string name="checklicense_dialog_message">מתקדם…</string>
+<string name="unlicensed_dialog_title">האימות נכשל</string>
+<string name="unlicensed_dialog_message">לא נמצאו רשומות תואמות בהיסטוריית הרכישה שלך.</string>
+<string name="no_lgworld_dialog_title">נדרש אימות</string>
+<string name="no_lgworld_dialog_message">נא להתקין את הגרסה האחרונה של LG World כדי לאמת יישום זה.</string>
+<string name="no_network_dialog_title">אין רשת</string>
+<string name="no_network_dialog_message">נא לבדוק את החיבור לרשת.</string>
+<string name="warning_dialog_title">אזהרה</string>
+<string name="warning_dialog_message">השירות אינו זמין. נא לנסות שוב.</string>
+<string name="ok_button">אישור</string>
+<string name="cancel_button">ביטול</string>
+<string name="exit_button">יציאה</string>
+
+</resources>

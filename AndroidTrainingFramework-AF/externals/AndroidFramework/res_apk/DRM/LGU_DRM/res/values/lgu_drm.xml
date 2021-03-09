@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="LGU_DRM_CHECK_FAIL">연동 프로그램이 설치되어 있지 않습니다. 휴대폰 업그레이드를 수행해주세요.</string>
+	
+	<string name="LGU_DRM_TITLE_1">알림</string>
+	<string name="LGU_DRM_TITLE_2">확인</string>
+	
+	<string name="LGU_DRM_DEF_1">예상치 못한 오류입니다. 다시 시도해 주세요.</string>	
+	<string name="LGU_DRM_DEF_2"></string>	
+	<string name="LGU_DRM_DEF_3"></string>
+	
+	<string name="LGU_DRM_F01_1">라이센스 발급이 성공하였습니다.(1)</string>	
+	<string name="LGU_DRM_F01_2"></string>	
+	<string name="LGU_DRM_F01_3"></string>
+	
+	<string name="LGU_DRM_F04_1">사용권한이 확인되지 않았습니다. 휴대폰의 컨텐츠관리자->어플리케이션 메뉴에서 com.lgt.arm을 다시 설치해 주세요.(4)</string>	
+	<string name="LGU_DRM_F04_2"></string>	
+	<string name="LGU_DRM_F04_3"></string>
+	
+	<string name="LGU_DRM_F08_1">사용권한이 확인되지 않았습니다. 다시 시도해 주세요.(8)</string>	
+	<string name="LGU_DRM_F08_2"></string>	
+	<string name="LGU_DRM_F08_3"></string>
+	
+	<string name="LGU_DRM_F09_1">구매이력이 확인되지 않았습니다. 고객센터(019114)로 문의하세요.(9)</string>	
+	<string name="LGU_DRM_F09_2"></string>	
+	<string name="LGU_DRM_F09_3"></string>
+	
+	<string name="LGU_DRM_F11_1">단말의 사용권한을 확인할 수 없습니다.(11)</string>	
+	<string name="LGU_DRM_F11_2"> </string>	
+	<string name="LGU_DRM_F11_3"></string>
+	
+	<string name="LGU_DRM_F12_1">어플리케이션의 사용권한을 확인할 수 없습니다. 고객센터(019114)로 문의하세요.(12)</string>	
+	<string name="LGU_DRM_F12_2"></string>	
+	<string name="LGU_DRM_F12_3"></string>
+	
+	<string name="LGU_DRM_F13_1">서비스 연결이 어렵습니다. 네트워크 설정을 WiFi 또는 3G로 설정하시고 잠시 후 다시 시도해주세요.(13)</string>	
+	<string name="LGU_DRM_F13_2"> </string>	
+	<string name="LGU_DRM_F13_3"></string>
+	
+	<string name="LGU_DRM_F14_1">사용권한이 확인되지 않았습니다. 휴대폰의 컨텐츠관리자->어플리케이션 메뉴에서 com.lgt.arm을 다시 설치해 주세요.(14)</string>	
+	<string name="LGU_DRM_F14_2"></string>	
+	<string name="LGU_DRM_F14_3"></string>
+	
+	<string name="LGU_DRM_F0A_1">OZ 스토어 사용권한이 등록되지 않았습니다. 가입 후 이용해주세요.(A)</string>	
+	<string name="LGU_DRM_F0A_2"></string>	
+	<string name="LGU_DRM_F0A_3"></string>
+	
+	<string name="LGU_DRM_F0C_1">사용권한 확인 시간을 초과하였습니다.다시 시도해주세요.(C)</string>	
+	<string name="LGU_DRM_F0C_2"></string>	
+	<string name="LGU_DRM_F0C_3"></string>
+	
+	<string name="LGU_DRM_F0D_1">어플리케이션의 사용권한이 등록되지 않았습니다. 고객센터(019114)로 문의하세요.(D)</string>	
+	<string name="LGU_DRM_F0D_2"></string>	
+	<string name="LGU_DRM_F0D_3"></string>
+	
+	<string name="LGU_DRM_F0E_1">사용권한을 확인할 수 없습니다. 다시 시도해 주세요.(E)</string>	
+	<string name="LGU_DRM_F0E_2"></string>	
+	<string name="LGU_DRM_F0E_3"></string>
+	
+</resources>

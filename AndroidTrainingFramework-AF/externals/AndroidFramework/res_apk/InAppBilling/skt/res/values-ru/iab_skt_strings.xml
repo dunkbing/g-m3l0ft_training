@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB_SKT_CONFIRM_DIALOG_TITLE">Подтвердите покупку</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_QUESTION">Вы действительно хотите приобрести данный предмет?</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_ITEM_NAME">Название предмета: {NAME}</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_ITEM_PRICE">Стоимость предмета: {PRICE}</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_YES">Да</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_NO">Нет</string>
+	<string name="IAB_SKT_RESTORING_TRANSACTIONS_TITLE">Восстановление предыдущих покупок.</string>
+	<string name="IAB_SKT_RESTORING_TRANSACTIONS">Пожалуйста, подождите восстановления предыдущих покупок.</string>
+</resources>

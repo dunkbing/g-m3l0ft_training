@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/LinearLayout01" 
+				android:gravity="center" 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:background="@drawable/ab_background">
+				<FrameLayout android:id="@+id/FrameLayout00"
+							android:layout_height="fill_parent" 
+							android:layout_width="fill_parent">
+							<FrameLayout android:id="@+id/FrameLayoutDialog"
+										android:layout_height="fill_parent" 
+										android:layout_width="fill_parent"
+										android:padding="@dimen/ab_main_layout_padding">
+									    <FrameLayout android:id="@+id/FrameLayout01" 
+									    			android:background="@drawable/ab_alpha_box" android:layout_gravity="top" android:layout_marginBottom="@dimen/ab_webview_bottom_margin" android:layout_height="fill_parent" android:layout_width="fill_parent">
+													
+									    			
+									<WebView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/webview"></WebView>
+</FrameLayout>
+							
+
+
+
+</FrameLayout>
+							
+				<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/bt_ly_wap_billing_next" android:minWidth="@dimen/ab_button_next_size" android:text="@string/SKB_PLAY_GAME" android:layout_gravity="bottom|center" android:textColor="@color/black"></Button>
+<Button android:layout_width="wrap_content" android:text="@string/SKB_EXIT" android:id="@+id/bt_ly_wap_billing_exit" android:layout_gravity="bottom|left" android:layout_height="wrap_content" android:minWidth="@dimen/ab_small_button_width"></Button>
+</FrameLayout>
+</LinearLayout>

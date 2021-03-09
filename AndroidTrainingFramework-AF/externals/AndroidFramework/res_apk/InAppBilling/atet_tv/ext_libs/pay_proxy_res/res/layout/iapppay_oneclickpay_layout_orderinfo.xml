@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <!-- 银行卡固定信息区域 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/line_margin"
+        android:background="#323233"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="应付金额"
+                android:textColor="#949494"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/pay_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#dc6d28"
+                android:textSize="50sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/bank_name"
+                style="@style/edit_common_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/card_no"
+                android:textColor="#949494"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/card_no"
+                style="@style/edit_common_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/card_no"
+                android:textColor="#949494"
+                android:textSize="28sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="SERVER_VALIDATE_REQUIRED">Aktywuj swoje połączenie internetowe, by zarejestrować swoją kopię gry {GAME_NAME}.</string>
+	<string name="INVALID_LICENSE">To nie jest oryginalna kopia gry {GAME_NAME}.</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="ab_main_layout_padding">5dp</dimen>
+	<dimen name="ab_main_layout_padding_top">65dp</dimen>
+	<dimen name="ab_form_padding_lr">5dp</dimen>
+
+	<!-- Tittle Bar -->
+	<dimen name="ab_tittle_bar_size_h">70dp</dimen>
+	<dimen name="ab_logo_tittle_gap">10dp</dimen>
+	<dimen name="ab_text_tittle_size">25dp</dimen>
+	
+	<!-- TextView -->
+	<dimen name="ab_textview_padding_lr">20dp</dimen>
+	<dimen name="ab_textview_min_padding">1dp</dimen>
+	<dimen name="ab_textview_margin_from_header">50dp</dimen>
+	<dimen name="ab_text_size">20sp</dimen>
+	<dimen name="ab_aux_text_size">15sp</dimen>
+	<dimen name="ab_ccard_form_text_size">12sp</dimen>
+	<dimen name="ab_ccard_form_aux_text_size">13sp</dimen>
+	<dimen name="ab_ccard_help_text_size">8sp</dimen>
+	<dimen name="ab_bottom_msg_text_size">8sp</dimen>
+	<dimen name="ab_ccard_header_text_size">17sp</dimen>
+	<dimen name="ab_ccard_header_padding">10dp</dimen>
+	<dimen name="ab_cc_holder_padding_right">12dp</dimen>
+	<dimen name="ab_cc_card_number_padding_right">15dp</dimen>
+	<dimen name="ab_cc_secure_code_margin_left">3dp</dimen>
+	<dimen name="ab_cc_transaction_failed_text_size">20sp</dimen>
+	<dimen name="ab_cc_transaction_success_text_size">14sp</dimen>
+	
+	<!-- Button -->
+	<dimen name="ab_button_bottom_lr_margin">10dp</dimen>
+	<dimen name="ab_button_bottom_margin">10dp</dimen>
+	<dimen name="ab_button_center_margin">30dp</dimen>
+	<dimen name="ab_buttons_gap">7dp</dimen>
+	<dimen name="ab_button_text_size">14dp</dimen>
+	<dimen name="ab_button_tcs_text_size">9dp</dimen>
+	<dimen name="ab_button_width">80dp</dimen>
+	<dimen name="ab_cc_button_height">38dp</dimen>
+	<dimen name="ab_large_button_width">200dp</dimen>
+	<dimen name="ab_small_button_width">40dp</dimen>
+	<dimen name="ab_transaction_failed_yn_lr_margin">30dp</dimen>
+	
+	
+	
+	<!-- EditText -->
+	<dimen name="ab_EditText_height">33dp</dimen>
+	<dimen name="ab_EditText_text_size">11sp</dimen>
+	<dimen name="ab_expiration_padding_r">30dp</dimen>
+	<dimen name="ab_secure_code_width">80dp</dimen>
+	<dimen name="ab_password_margin_left">6dp</dimen>
+	
+	<!-- Form -->
+	<dimen name="ab_center_margin_top">40dp</dimen>
+	<dimen name="ab_center_margin_bottom">20dp</dimen>
+	<dimen name="ab_left_column_max_width">125dp</dimen>
+	
+	<!-- ImageView -->
+	<dimen name="image_game_width">213dp</dimen>
+	<dimen name="image_game_height">120dp</dimen>
+	<dimen name="image_game_border_size">2dp</dimen>
+	
+</resources>

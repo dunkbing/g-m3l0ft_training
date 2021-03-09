@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+	<!-- Treat events as test events and dont send to google -->
+	<bool name="ga_dryRun">false</bool>
+	<!-- the Local LogLevel for Analytics -->
+	<string name="ga_logLevel">GA_LOG_TYPE</string>
+
+	<!--Set App Name-->
+	<string name="ga_appName">GA_APP_NAME</string>
+	<!--Set app version-->
+	<string name="ga_appVersion">GA_APP_VERSION</string>
+	<!--Enable app debug-->
+	<bool name="ga_debug">GA_APP_DEBUG</bool>
+	<!--Set Dispatch period-->
+	<integer name="ga_dispatchPeriod">GA_DISPATCH_PERIOD</integer>
+</resources>

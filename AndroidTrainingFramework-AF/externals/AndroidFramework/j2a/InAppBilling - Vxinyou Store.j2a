@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - In App Billing - Vxinyou Store">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/InAppBilling/vxinyou"/>
+			<preprocess>
+				<include path="../native/InAppBilling/iab_strings_encoded.h"/>
+				<include path="../native/InAppBilling/InAppBillingConst.h"/>
+			</preprocess>
+		</java>
+		<libs>
+			<dir path="../res_apk/InAppBilling/vxinyou/libs"/>
+		</libs>
+	</sources>
+</j2a>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <string name="app_name">Android Billing</string> -->
+	<string name="IAB_PURCHASE_IN_PROGRESS">Lütfen bekle... Satın alma işlemde.</string>
+	<string name="IAB_TRANSACTION_FAILED">İşlem başarısız oldu</string>
+	<string name="IAB_TRANSACTION_FAILED_RETRY">Tekrar denemek ister misin?</string>
+	<string name="IAB_CC_PURCHASE_WITH_CCARD">{GAME_NAME} oyununu kredi kartınla {PRICE} karşılığında satın alabilirsin  * </string>
+	<string name="IAB_CC_CREATE_ACCOUNT_ONE_CLICK">Lütfen aşağıda fatura bilgilerini doldur</string>
+	<string name="IAB_CC_CREATE_ACCOUNT">Bir hesap oluştur</string>
+	<string name="IAB_CC_FORGOT_PASSWORD">Şifreni mi unuttun?</string>
+	<string name="IAB_CC_EMAIL">E-posta adresin</string>
+	<string name="IAB_CC_PASSWORD">Şifren</string>
+	<string name="IAB_CC_NAME">Kart Sahibi</string>
+	<string name="IAB_CC_CARD_NUMBER">Kart Numarası</string>
+	<string name="IAB_CC_EXPIRATION_DATE">Son Kullanma Tarihi</string>
+	<string name="IAB_CC_EXPIRATION_DATE_FORMAT">AY/YIL</string>
+	<string name="IAB_CC_DF_MONTH">MM</string>
+	<string name="IAB_CC_DF_YEAR">YYYY</string>	
+	<string name="IAB_CC_SECURE_CODE">Güvenlik kodu</string>
+	<string name="IAB_CC_SECURE_CODE_HELP">Kartının arka yüzündeki 3 haneli kod</string>
+	<string name="IAB_CC_ALREADY_HAS_ACCOUNT">Zaten bir Gameloft hesabın var</string>
+	<string name="IAB_CC_PAY_WO_ACCOUNT">Hesap oluşturmadan doğrudan ödeme yap</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND">*Gameloft Rahat Alışveriş Garantisi</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND2">Gameloft kredi kartı bilgilerinizi korumak için ileri şifrelemeli bir güvenlik sistemi kullanır.</string>
+	<string name="IAB_CC_EMAIL_PRIVACY">**E-posta adresin sadece sana faturayı göndermek için kullanılır.</string>
+	<string name="IAB_CC_EMAIL_PRIVACY2">Şart ve Koşullar\'ın tamamı burada.</string>
+	<string name="IAB_CC_GAME">Oyun</string>
+	<string name="IAB_CC_PRICE">Fiyat</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_WRONG_DATA">Girilen bilginin bir kısmı hatalı. Lütfen kırmızı ile belirtilen bölgeleri kontrol et.</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_EMAIL_EXISTS">Bu e-posta adresiyle açılmış bir hesap zaten mevcut. Bu e-posta adresiyle oturum açabilir veya yeni bir hesap yaratabilirsin.</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_PAY_WO_ACCOUNT">Ödemeni işleme koyabilmemiz için lütfen aşağıda fatura bilgilerinizi doldurun.</string>
+	<string name="IAB_CC_LOGIN_WRONG_EMAIL_PASSWORD">Girdiğin e-posta adresi ve şifre hatalı. Lütfen tekrar dene.</string>
+	<string name="IAB_CC_CREDIT_CARD_EXPIRED">Kredi kartının süresi geçmiş veya geçersiz. Lütfen aşağıda fatura bilgilerinizi güncelleyin.</string>
+	<string name="IAB_CC_INVOICE_SENT">Kayıtlarında bulunması için e-posta adresine bir fatura gönderildi.</string>
+	<string name="IAB_CC_ACCOUNT_CREATED_SUCCESSFULLY">Hesabın başarıyla oluşturuldu!</string>
+	<string name="IAB_CC_FORGOT_PASSWORD_QUESTION">Şifreni mi unuttun?</string>
+	<string name="IAB_CC_ENTER_EMAIL_FOR_RECOVERY_PASSWORD">Lütfen aşağıda e-posta adresini gir. Birkaç saniye içinde şifren gelecek.</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_FAIL">Üzgünüz ancak e-posta adresini bulamadık. Lütfen tekrar dene veya kayıt yap.</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_SUCCES">Lütfen e-postalarını kontrol et, yeni bir şifre gönderildi.</string>
+	<string name="IAB_CC_SHORT_EMAIL_EXIST">This email account already exist.</string>
+	
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP_TITLE">Satın almayı onayla</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP">Lütfen {ITEM} ürününü {PRICE} karşılığında satın almak istediğini onayla.</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_LAYOUT">{ITEM} ürününü {PRICE} karşılığında satın almak istiyorsun.</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_TITLE">Kredi Kartlı Alışveriş</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC">Bu ürün sadece kredi kartıyla satın alınabilir. Lütfen {ITEM} ürününü {PRICE} karşılığında satın almak istediğini onayla.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TITLE">Satın Alma Başarısız Oldu</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE">Satın alman tarafımızca işleme koyulamadı. Başka bir ödeme yöntemiyle devam etmek istiyor musun?</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TRY_AGAIN">Satın alım servisimiz tarafından işleme koyulamadı. Tekrar denemek ister misin?</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_TITLE">Ürünün uygun biçimde satın alındı</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS">Alışverişin için teşekkür ederiz, ürünün başarıyla hesabına eklendi!</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING_TITLE">İçerik satın alındı.</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING">Alışverişin için teşekkür ederiz, serviste yaşanan bir sorun nedeniyle ürün hesabına daha sonra eklenecek!</string>
+	<string name="IAB_PURCHASE_ITEM_CHARGE_APPLY">Veri ücretlendirmesi yapılabilir</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_INFO">{PRICE} karşılığında {QUANTITY} {ITEM} satın almak istiyor musun?</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_MESSAGE">Lütfen faturalandırma yöntemini seç</string>
+	<string name="IAB_NETWORK_ERROR_TITLE">Ağ Hatası</string>
+
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD_TITLE">Ödeme Yöntemini Seç</string>
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD">Lütfen satın almaya devam etmeden önce tercih ettiğin ödeme yöntemini seç.</string>
+	<string name="IAB_BTN_OTHER">Ödeme Yöntemini Değiştir</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_TITLE">Beklemede bir işlem var.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING">Boku\'nun satın alma işlemini onaylamasını bekliyoruz. İşlem tamamlandığında ürün listeni güncelleyeceğiz.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_SUCCESSFUL">Satın alma başarılı.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_UNSUCCESSFUL">Satın alma başarısız.</string>
+	
+	
+	<string name="IAB_PURCHASE_TITLE">Satın alma</string>
+	<string name="IAB_PURCHASE_PAY_FOR_THIS_WITH">Ödeme yöntemi:</string>
+	<string name="IAB_PURCHASE_CHOOSE_PAYMENT_METHOD">Ödeme yöntemini seç</string>
+	<string name="IAB_PURCHASE_CHANGE_PAYMENT_METHOD">Ödeme yöntemini değiştir</string>
+	<string name="IAB_PURCHASE_ITEM_CREDIT_CARD">Kredi kartı</string>
+	<string name="IAB_PURCHASE_ITEM_ACCOUNT">GAMELOFT HESABI</string>
+	<string name="IAB_PURCHASE_ITEM_ADD_NEW_CREDIT_CARD">Yeni bir kredi kartı ekle</string>
+	<string name="IAB_PURCHASE_ITEM_INFO">{PRICE} karşılığında {ITEM}.</string>
+	<string name="IAB_PURCHASE_ITEM_TOTAL">Toplam: </string>
+	
+	<string name="IAB_PURCHASE_ITEM_PHONE_BILLL">Telefon faturası</string>
+	<string name="IAB_SKB_CONFIRM">Onayla</string>	
+	<string name="IAB_NETWORK_ERROR">Operatörün için geçerli bir içerik profili getirilemiyor.</string>
+
+	<string name="IAB_SKB_TCS">Şart ve Koşullar</string>
+	<string name="IAB_SKB_CANCEL">İptal</string>
+	<string name="IAB_SKB_RETRY">Tekrar Dene</string>
+	<string name="IAB_SKB_EXIT">X</string>
+	<string name="IAB_SKB_LOGIN">Giriş</string>
+	<string name="IAB_SKB_YES">Evet</string>
+	<string name="IAB_SKB_NO">Hayır</string>
+	<string name="IAB_SKB_OK">Tamam</string>
+	<string name="IAB_SKB_PAY_WITH_CCARD">Kredi kartıyla öde</string>
+	<string name="IAB_SKB_NEXT">İleri</string>
+	<string name="IAB_SKB_CONTINUE">Devam</string>
+	<string name="IAB_SKB_BUY_NOW">Şimdi Satın Al</string>
+	<string name="IAB_SKB_BACK">Geri</string>
+	<string name="IAB_SKB_PLAY_GAME">Oyunu oyna!</string>
+	<string name="IAB_CONTINUE">Lütfen alışverişi tamamlamak için DEVAM\'a tıkla</string>
+	<string name="IAB_LOADING">Yüklüyor...</string>
+	<string name="IAB_DOCOMO_CONTINUE">Lütfen alışverişi tamamlamak için DEVAM\'a tıkla</string>
+	
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_PSMS">We are waiting for your item delivery confirmation to validate your purchase. Once the purchase is complete, we will update your item list.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_PSMS">Your previous purchase was not successful. You were not charged.</string>
+	
+	<string name="IAB_UMP_R3_PAYMENT_INFO">Payment Information</string>
+	<string name="IAB_UMP_R3_PRODUCT_NAME">Product Name: {PRODUCT_NAME}</string>
+	<string name="IAB_UMP_R3_PRICE">Price: {PRICE} (SMS costs are not included).</string>
+	<string name="IAB_UMP_R3_CUSTOMER_SERVICE">\nCustomer Service: 4006125880</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_1">\n\nDear customer, please click "Confirm Information" to agree to send an SMS to {SHORTCODE1} to buy the product.</string>
+	<string name="IAB_UMP_R3_BTN_CONFIRM_INFO">Confirm Information</string>
+	<string name="IAB_UMP_R3_PLEASE_WAIT">Please wait</string>
+	<string name="IAB_UMP_R3_SENDING_SMS">Sending SMS...</string>
+	<string name="IAB_UMP_R3_CONFIRM_PAYMENT">Confirm Payment</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_2">Dear customer, please click "Confirm Payment" to agree to send another SMS to {SHORTCODE2} to complete your payment.\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT_THANKS">Thanks for using UMP Billing Service.\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT">You purchased {PRODUCT_NAME} and were charged {PRICE}.\n</string>
+	<string name="IAB_UMP_R3_PAYMENT_FAILURE">Theres was a problem while purchasing your item. Please verify you have enough credit for this transaction, or have service signal.</string>
+	<string name="IAB_UMP_R3_PAYMENT_FINISHED">Payment Completed</string>
+
+</resources>

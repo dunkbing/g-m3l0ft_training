@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <string name="app_name">Android Billing</string> -->
+	<string name="IAB_PURCHASE_IN_PROGRESS">Please wait... Your purchase is in progress.</string>
+	<string name="IAB_TRANSACTION_FAILED">Transaction failed</string>
+	<string name="IAB_TRANSACTION_FAILED_RETRY">Do you want to try again?</string>
+	<string name="IAB_CC_PURCHASE_WITH_CCARD">You can purchase {GAME_NAME} with your credit card for {PRICE} *</string>
+	<string name="IAB_CC_CREATE_ACCOUNT_ONE_CLICK">Please fill your billing information below</string>
+	<string name="IAB_CC_CREATE_ACCOUNT">Create an account</string>
+	<string name="IAB_CC_FORGOT_PASSWORD">Forgot your password?</string>
+	<string name="IAB_CC_EMAIL">Your email address</string>
+	<string name="IAB_CC_PASSWORD">Password</string>
+	<string name="IAB_CC_NAME">Cardholder</string>
+	<string name="IAB_CC_CARD_NUMBER">Card number</string>
+	<string name="IAB_CC_EXPIRATION_DATE">Expiration date</string>
+	<string name="IAB_CC_EXPIRATION_DATE_FORMAT">MM/YYYY</string>
+	<string name="IAB_CC_DF_MONTH">MM</string>
+	<string name="IAB_CC_DF_YEAR">YYYY</string>	
+	<string name="IAB_CC_SECURE_CODE">Security code</string>
+	<string name="IAB_CC_SECURE_CODE_HELP">Last 3 digits on the back of your card</string>
+	<string name="IAB_CC_ALREADY_HAS_ACCOUNT">You already have a Gameloft account</string>
+	<string name="IAB_CC_PAY_WO_ACCOUNT">Pay directly without creating an account</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND">*Gameloft Peace of Mind Guarantee.</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND2">Gameloft uses advanced encryption security technology to protect your credit card information.</string>
+	<string name="IAB_CC_EMAIL_PRIVACY">**Your email address will be used exclusively to send you the bill.</string>
+	<string name="IAB_CC_EMAIL_PRIVACY2">Full terms and conditions here.</string>
+	<string name="IAB_CC_GAME">Game</string>
+	<string name="IAB_CC_PRICE">Price</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_WRONG_DATA">Some of the information you entered is incorrect. Please check the sections in red below.</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_EMAIL_EXISTS">An account with that email address already exists. You can login with this email address or create a new account.</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_PAY_WO_ACCOUNT">In order for us to process your payment, please fill in your billing information below.</string>
+	<string name="IAB_CC_LOGIN_WRONG_EMAIL_PASSWORD">The email address and/or password you entered are not correct. Please try again.</string>
+	<string name="IAB_CC_CREDIT_CARD_EXPIRED">Your credit card has expired or is invalid. Please update your billing information below.</string>
+	<string name="IAB_CC_INVOICE_SENT">An invoice has just been sent to your email address as a record.</string>
+	<string name="IAB_CC_ACCOUNT_CREATED_SUCCESSFULLY">Your account has been successfully created!</string>
+	<string name="IAB_CC_FORGOT_PASSWORD_QUESTION">Forgot your password?</string>
+	<string name="IAB_CC_ENTER_EMAIL_FOR_RECOVERY_PASSWORD">Please enter your email address below. You will receive your password in a few seconds.</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_FAIL">We\'re sorry, we couldn\'t find your email address. Please try again or register.</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_SUCCES">Please check your email, a new password has been sent.</string>
+	<string name="IAB_CC_SHORT_EMAIL_EXIST">This email account already exist.</string>
+	
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP_TITLE">Confirm your purchase</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP">Please confirm that you want to buy {ITEM} for {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_LAYOUT">You want to buy {ITEM} for {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_TITLE">Credit Card Purchase</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC">This item can be purchased only by credit card. Please confirm that you want to buy {ITEM} for {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TITLE">Purchase Failed</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE">Your purchase could not be processed by our service. Do you want to continue your purchase using another payment method?</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TRY_AGAIN">Your purchase could not be processed by our service. Do you want to try again?</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_TITLE">Your item has been purchased correctly</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS">Thank you for your purchase, your item has been added to your account!</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING_TITLE">Your content has been purchased.</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING">Thank you for your purchase, your item will be added to your account later due a problem in the service!</string>
+	<string name="IAB_PURCHASE_ITEM_CHARGE_APPLY">Data rates may apply</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_INFO">Do you want to buy {QUANTITY} {ITEM} for {PRICE}?</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_MESSAGE">Please choose your billing method.</string>
+	<string name="IAB_NETWORK_ERROR_TITLE">Network Error</string>
+
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD_TITLE">Select Payment Method</string>
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD">Please choose your preferred payment method before continuing your purchase.</string>
+	<string name="IAB_BTN_OTHER">Change Payment Method</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_TITLE">You have a pending transaction.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING">We are waiting for Boku to validate your purchase. Once the purchase is complete, we will update your item list.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_SUCCESSFUL">Purchase successful.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_UNSUCCESSFUL">Purchase unsuccessful.</string>
+	
+	
+	<string name="IAB_PURCHASE_TITLE">Purchase</string>
+	<string name="IAB_PURCHASE_PAY_FOR_THIS_WITH">Pay for this with</string>
+	<string name="IAB_PURCHASE_CHOOSE_PAYMENT_METHOD">Choose your payment method</string>
+	<string name="IAB_PURCHASE_CHANGE_PAYMENT_METHOD">Change payment method</string>
+	<string name="IAB_PURCHASE_ITEM_CREDIT_CARD">Credit Card</string>
+	<string name="IAB_PURCHASE_ITEM_ACCOUNT">GAMELOFT ACCOUNT</string>
+	<string name="IAB_PURCHASE_ITEM_ADD_NEW_CREDIT_CARD">Add a new credit card</string>
+	<string name="IAB_PURCHASE_ITEM_INFO">{ITEM} for {PRICE}.</string>
+	<string name="IAB_PURCHASE_ITEM_TOTAL">Total: </string>
+	
+	<string name="IAB_PURCHASE_ITEM_PHONE_BILLL">Phone Bill</string>
+	<string name="IAB_SKB_CONFIRM">Confirm</string>	
+	<string name="IAB_NETWORK_ERROR">Unable to retrieve a valid content profile for your operator.</string>
+
+	<string name="IAB_SKB_TCS">Terms and Conditions</string>
+	<string name="IAB_SKB_CANCEL">Cancel</string>
+	<string name="IAB_SKB_RETRY">Retry</string>
+	<string name="IAB_SKB_EXIT">X</string>
+	<string name="IAB_SKB_LOGIN">Login</string>
+	<string name="IAB_SKB_YES">Yes</string>
+	<string name="IAB_SKB_NO">No</string>
+	<string name="IAB_SKB_OK">OK</string>
+	<string name="IAB_SKB_PAY_WITH_CCARD">Pay with my credit card</string>
+	<string name="IAB_SKB_NEXT">Next</string>
+	<string name="IAB_SKB_CONTINUE">Continue</string>
+	<string name="IAB_SKB_BUY_NOW">Buy Now</string>
+	<string name="IAB_SKB_BACK">Back</string>
+	<string name="IAB_SKB_PLAY_GAME">Play the game!</string>
+	<string name="IAB_CONTINUE">Please tap CONTINUE to finalize the purchase.</string>
+	<string name="IAB_LOADING">Loading...</string>
+	<string name="IAB_DOCOMO_CONTINUE">Please tap CONTINUE to finalize the purchase.</string>
+	
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_PSMS">We are waiting for your item delivery confirmation to validate your purchase. Once the purchase is complete, we will update your item list.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_PSMS">Your previous purchase was not successful. You were not charged.</string>
+	
+	<string name="IAB_UMP_R3_PAYMENT_INFO">Payment Information</string>
+	<string name="IAB_UMP_R3_PRODUCT_NAME">Product Name: {PRODUCT_NAME}</string>
+	<string name="IAB_UMP_R3_PRICE">Price: {PRICE} (SMS costs are not included).</string>
+	<string name="IAB_UMP_R3_CUSTOMER_SERVICE">\nCustomer Service: 4006125880</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_1">\n\nDear customer, please click "Confirm Information" to agree to send an SMS to {SHORTCODE1} to buy the product.</string>
+	<string name="IAB_UMP_R3_BTN_CONFIRM_INFO">Confirm Information</string>
+	<string name="IAB_UMP_R3_PLEASE_WAIT">Please wait</string>
+	<string name="IAB_UMP_R3_SENDING_SMS">Sending SMS...</string>
+	<string name="IAB_UMP_R3_CONFIRM_PAYMENT">Confirm Payment</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_2">Dear customer, please click "Confirm Payment" to agree to send another SMS to {SHORTCODE2} to complete your payment.\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT_THANKS">Thanks for using UMP Billing Service.\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT">You purchased {PRODUCT_NAME} and were charged {PRICE}.\n</string>
+	<string name="IAB_UMP_R3_PAYMENT_FAILURE">There was a problem while purchasing your item. Please verify that you have enough credits for this transaction and that you are getting a service signal.</string>
+	<string name="IAB_UMP_R3_PAYMENT_FINISHED">Payment Completed</string>
+
+</resources>

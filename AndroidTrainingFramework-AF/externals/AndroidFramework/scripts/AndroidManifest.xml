@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 	
+	Please don't change this file, its only used to allow ndk-build compile native libs.
+	The used manifest file is %ANDROID_FRAMEWORK_CONFIG%\configs\project\AndroidManifest.xml, BTW it will be preprocess into 
+	#work\AndroidManifest.xml 
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.gameloft.android.slib" 
+      android:versionCode="001"
+      android:versionName="0.0.1">
+	<application>
+        <activity android:name=".lib"
+                android:label="lib"
+				>
+			</activity>
+</application>
+<uses-sdk android:minSdkVersion="4"/>
+</manifest> 

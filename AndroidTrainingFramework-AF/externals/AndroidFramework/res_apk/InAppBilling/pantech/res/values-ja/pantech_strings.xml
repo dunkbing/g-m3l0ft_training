@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB_PANTECH_NO_APPSPLAY">AppsPlayアプリケーションをダウンロードしてください。</string>
+	<string name="IAB_PANTECH_NO_LOGIN">AppsPlayアプリケーションにサインインしてください。</string>
+	<string name="IAB_PANTECH_ERROR">エラーが発生しました。再度お試しください。</string>
+</resources>

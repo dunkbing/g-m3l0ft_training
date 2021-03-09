@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="GLGame" default="help">
+	<!-- keep reference to environment vars -->
+    <property file="ant.properties" />
+
+    <property environment="env" />
+	<!-- set device as default output -->
+	<property name="adb.device.arg" value="-d" />
+	<!-- set default encoding ISO-8859-1 -->
+	<property name="java.encoding" value="ISO-8859-1" />
+  
+	<!-- load properties -->
+    <property file="build.properties" />
+   
+   <path id="android.renderscript.include.path">
+        <pathelement location="${source.absolute.dir}" />
+    </path>
+	
+    <fail
+            message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through the ANDROID_HOME environment variable."
+            unless="sdk.dir"
+    />
+
+    <import file="custom_rules.xml" optional="true" />
+
+	<target name="-set-mode-check">
+        <fail if="build.is.mode.set"
+                message="Cannot run two different modes at the same time. If you are running more than one debug/release/instrument type targets, call them from different Ant calls." />
+    </target>
+
+	
+	<!-- extension targets.-->
+	<!--target name="-preprocess">
+		<echo>Preprocessing Manifest and sources and resources...</echo>
+		<exec executable="preprocess.bat"> </exec>
+	</target-->
+
+	<target name="-pre-compile">
+		<echo>Adding external jar libs to classpath...</echo>
+		<path id="tested.project.classpath">
+			<fileset dir="${ext.libs.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		</path>
+	</target>
+
+	<!-- Post compilation events-->
+	<target name="-post-compile">
+	</target>
+  
+   <property name="android.aidl" location="${sdk.dir}/platforms/${target}/framework.aidl" /> 
+   <property name="android.jar" location="${sdk.dir}/platforms/${target}/android.jar" /> 
+  
+  <!-- Code Generation: compile resources (aapt -> R.java), aidl, renderscript -->
+    <target name="-code-gen">
+        <do-only-if-manifest-hasCode
+                elseText="hasCode = false. Skipping aidl/renderscript/R.java">
+            <echo>----------</echo>
+            <echo>Handling aidl files...</echo>
+            <aidl executable="${aidl}" framework="${android.aidl}"
+                    genFolder="${gen.absolute.dir}"
+					aidlOutFolder="${aidl.tmp.source.dir}">
+                <source path="${source.absolute.dir}"/>
+            </aidl>
+
+            <!-- renderscript generates resources so it must be called before aapt -->
+            <echo>----------</echo>
+            <echo>Handling RenderScript files...</echo>
+            <renderscript executable="${renderscript}"
+                    includePathRefId="android.renderscript.include.path"
+                    genFolder="${gen.absolute.dir}"
+                    resFolder="${resource.absolute.dir}/raw"
+                    targetApi="${env.TARGET_API_LEVEL}">
+                <source path="${source.absolute.dir}"/>
+            </renderscript>
+
+            <echo>----------</echo>
+            <echo>Handling Resources...</echo>
+            <aapt executable="${aapt}"
+                    command="package"
+                    verbose="${verbose}"
+                    manifest="${manifest.file}"
+                    androidjar="${android.jar}"
+                    rfolder="${gen.absolute.dir}"
+                    nonConstantId="${android.library}"
+					libraryResFolderPathRefid="project.libraries.res"
+                    libraryPackagesRefid="project.libraries.package"
+                    >
+                <res path="${resource.absolute.dir}" />
+            </aapt>
+        </do-only-if-manifest-hasCode>
+    </target>
+	
+	<target name="-package-resources" depends="-crunch">
+		<!-- only package resources if *not* a library project -->
+		<do-only-if-not-library elseText="Library project: do not package resources..." >
+			<aapt executable="${aapt}"
+					command="package"
+					versioncode="${version.code}"
+					versionname="${version.name}"
+					debug="${build.is.packaging.debug}"
+					manifest="${manifest.file}"
+					assets="${asset.absolute.dir}"
+					androidjar="${android.jar}"
+					apkfolder="${out.absolute.dir}"
+					nocrunch="${build.packaging.nocrunch}"
+					resourcefilename="${resource.package.file.name}"
+					resourcefilter="${aapt.resource.filter}"
+					libraryResFolderPathRefid="project.libraries.res"
+					libraryPackagesRefid="project.libraries.package"
+					previousBuildType="${build.last.target}"
+					buildType="${build.target}">
+				<res path="${out.res.absolute.dir}" />
+				<res path="${resource.absolute.dir}" />
+				<!-- <nocompress /> forces no compression on any files in assets or res/raw -->
+				<!-- <nocompress extension="xml" /> forces no compression on specific file extensions in assets and res/raw -->
+			</aapt>
+		</do-only-if-not-library>
+    </target>
+	
+	<target name="-set-debug-signed-mode">
+        <!-- record the current build target -->
+        <property name="build.target" value="debug" />
+        <property name="build.is.instrumented" value="false" />
+        <!-- whether the build is a debug build. always set. -->
+        <property name="build.is.packaging.debug" value="true" />
+        <!-- signing mode: debug -->
+        <property name="build.is.signing.debug" value="false" />
+    </target>
+	
+	<!-- Builds debug signed output package -->
+    <target name="-do-debug-signed" depends="-set-debug-signed-mode, -debug-obfuscation-check, -package">
+        <!-- Signs the APK -->
+        <echo>Signing final apk...</echo>
+        <signjar
+                jar="${out.packaged.file}"
+                signedjar="${out.unaligned.file}"
+                keystore="${key.store}"
+                storepass="${key.store.password}"
+                alias="${key.alias}"
+                keypass="${key.alias.password}"
+                verbose="${verbose}" />
+				
+		<!-- only create apk if *not* a library project -->
+        <do-only-if-not-library elseText="Library project: do not create apk..." >
+            <sequential>
+                <zipalign-helper in.package="${out.unaligned.file}" out.package="${out.final.file}" />
+                <echo>Debug Package: ${out.final.file}</echo>
+            </sequential>
+        </do-only-if-not-library>
+    </target>
+	
+	<target name="-release-sign" if="has.keystore" >
+        <!-- only create apk if *not* a library project -->
+        <do-only-if-not-library elseText="Library project: do not create apk..." >
+            <sequential>
+                <property name="out.unaligned.file" location="${out.absolute.dir}/${ant.project.name}-release-unaligned.apk" />
+
+                <!-- Signs the APK -->
+                <echo level="info">Signing final apk...</echo>
+                <signjar
+                        jar="${out.packaged.file}"
+			signedjar="${out.unaligned.file}"
+                        keystore="${key.store}"
+                        storepass="${key.store.password}"
+                        alias="${key.alias}"
+                        keypass="${key.alias.password}"/>
+
+                <!-- Zip aligns the APK -->
+                <zipalign-helper
+                        in.package="${out.unaligned.file}"
+                        out.package="${out.final.file}" />
+                <echo level="info">Release Package: ${out.final.file}</echo>
+            </sequential>
+        </do-only-if-not-library>
+        <record-build-info />
+    </target>
+    <!-- Builds debug signed output package -->
+    <target name="debug-signed" depends="-set-debug-files, -do-debug-signed"
+                description="Builds the application and signs it with release key.">
+        <record-build-info />
+    </target>
+	
+	 <target name="-obfuscate">
+        <if condition="${proguard.enabled}">
+            <then>
+                <property name="obfuscate.absolute.dir" location="${out.absolute.dir}/proguard" />
+                <property name="preobfuscate.jar.file" value="${obfuscate.absolute.dir}/original.jar" />
+                <property name="obfuscated.jar.file" value="${obfuscate.absolute.dir}/obfuscated.jar" />
+                <!-- input for dex will be proguard's output -->
+                <property name="out.dex.input.absolute.dir" value="${obfuscated.jar.file}" />
+
+                <!-- Add Proguard Tasks -->
+                <property name="proguard.jar" location="${android.tools.dir}/proguard/lib/proguard.jar" />
+                <taskdef name="proguard" classname="proguard.ant.ProGuardTask" classpath="${proguard.jar}" />
+
+                <!-- Set the android classpath Path object into a single property. It'll be
+                     all the jar files separated by a platform path-separator.
+                     Each path must be quoted if it contains spaces.
+                -->
+                <pathconvert property="project.target.classpath.value" refid="project.target.class.path">
+                    <firstmatchmapper>
+                        <regexpmapper from='^([^ ]*)( .*)$$' to='"\1\2"'/>
+                        <identitymapper/>
+                    </firstmatchmapper>
+                </pathconvert>
+
+                <!-- Build a path object with all the jar files that must be obfuscated.
+                     This include the project compiled source code and any 3rd party jar
+                     files. -->
+                <path id="project.all.classes.path">
+                    <pathelement location="${preobfuscate.jar.file}" />
+                    <path refid="project.all.jars.path" />
+                </path>
+                <!-- Set the project jar files Path object into a single property. It'll be
+                     all the jar files separated by a platform path-separator.
+                     Each path must be quoted if it contains spaces.
+                -->
+                <pathconvert property="project.all.classes.value" refid="project.all.classes.path">
+                    <firstmatchmapper>
+                        <regexpmapper from='^([^ ]*)( .*)$$' to='"\1\2"'/>
+                        <identitymapper/>
+                    </firstmatchmapper>
+                </pathconvert>
+
+                <!-- Turn the path property ${proguard.config} from an A:B:C property
+                     into a series of includes: -include A -include B -include C
+                     suitable for processing by the ProGuard task. Note - this does
+                     not include the leading '-include "' or the closing '"'; those
+                     are added under the <proguard> call below.
+                -->
+                <path id="proguard.configpath">
+                    <pathelement path="${proguard.config}"/>
+                </path>
+                <pathconvert pathsep='" -include "' property="proguard.configcmd" refid="proguard.configpath"/>
+
+                <mkdir   dir="${obfuscate.absolute.dir}" />
+                <delete file="${preobfuscate.jar.file}"/>
+                <delete file="${obfuscated.jar.file}"/>
+                <jar basedir="${out.classes.absolute.dir}"
+                    destfile="${preobfuscate.jar.file}" />
+                <proguard>
+                    -include      "${proguard.configcmd}"
+                    -include      "${proguard.config}"
+                    -injars       ${project.all.classes.value}
+                    -outjars      "${obfuscated.jar.file}"
+                    -libraryjars  ${project.target.classpath.value}
+                    -dump         "${obfuscate.absolute.dir}/dump.txt"
+                    -printseeds   "${obfuscate.absolute.dir}/seeds.txt"
+                    -printusage   "${obfuscate.absolute.dir}/usage.txt"
+                    -printmapping "${obfuscate.absolute.dir}/mapping.txt"
+                </proguard>
+            </then>
+        </if>
+    </target>
+	
+    <!-- Import the actual build file.
+
+         To customize existing targets, there are two options:
+         - Customize only one target:
+             - copy/paste the target into this file, *before* the
+               <import> task.
+             - customize it to your needs.
+         - Customize the whole content of build.xml
+             - copy/paste the content of the rules files (minus the top node)
+               into this file, replacing the <import> task.
+             - customize to your needs.
+
+         ***********************
+         ****** IMPORTANT ******
+         ***********************
+         In all cases you must update the value of version-tag below to read 'custom' instead of an integer,
+         in order to avoid having your file be overridden by tools such as "android update project"
+    -->
+    <!-- version-tag: 2 -->
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+
+</project>

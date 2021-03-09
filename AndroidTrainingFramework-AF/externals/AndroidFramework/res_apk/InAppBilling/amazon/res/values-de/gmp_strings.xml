@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">Kein Einkauf möglich</string>
+    <string name="billing_not_supported_message">Amazon Market ist momentan nicht verfügbar. Du kannst diese App weiterhin verwenden, aber keine Einkäufe tätigen.</string>
+    <string name="waitting_confirm">Wir warten darauf, dass Amazon deinen Einkauf bestätigt. Sobald der Einkauf abgeschlossen ist, wird deine Artikelliste aktualisiert.</string>
+    <string name="pending_transaction">Es liegt eine ausstehende Transaktion vor.</string>
+	<string name="purchase_success">Einkauf erfolgreich</string>
+	<string name="purchase_unsuccess">Einkauf fehlgeschlagen</string>
+	<string name="iab_retry">Wiederholen</string>
+</resources>

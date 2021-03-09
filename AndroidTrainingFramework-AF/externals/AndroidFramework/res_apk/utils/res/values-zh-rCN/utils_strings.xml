@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="CAN_GO_BACK">你不能返回该阶段。</string>
+</resources>

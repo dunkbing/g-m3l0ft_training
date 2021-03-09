@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="GET_THE_GAME">Oyunu al</string>
+	<string name="CHECKING_LICENSE">Lisansı kontrol ediyor...</string>
+	<string name="UNLICENSED_DIALOG_TITLE">Lisans Kontrolü</string>
+	<string name="UNLICENSED_DIALOG_BODY">Geçersiz Lisans</string>
+	<string name="BUY_BUTTON">Oyunu satın al</string>
+	<string name="QUIT_BUTTON">Çıkış</string>
+	<string name="RETRY">Tekrar Dene</string>
+	<string name="NETWORK_ERROR_TITLE">Dikkat</string>
+	<string name="NETWORK_ERROR_BODY">Bir ağ hatası oluştu. Tekrar denemek ister misin?</string>
+</resources>

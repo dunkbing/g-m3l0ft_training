@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/someID"
+	android:layout_width="320dp"
+	android:layout_height="240dp"
+	android:background="@drawable/banana_corner"
+	android:gravity="center"
+	android:layout_gravity="center"
+	android:orientation="vertical"
+	android:weightSum="1">
+	
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:background="@drawable/banana_titlebar">
+		
+		<ImageView
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:gravity="left"
+			android:padding="10dp"
+			android:src="@drawable/banana_logo" />
+
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:gravity="center"
+		    android:text="V\u00E9fication des droits"
+		    android:textColor="#d0d1cd"
+		    android:textSize="13dp"
+		    android:textStyle="bold" />
+			
+	</RelativeLayout>
+	
+	<TextView
+		android:id="@+id/errorMessage"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:textColor="#565B62"
+		android:text=""
+		android:gravity="center"
+		android:textStyle="bold"
+		android:textSize="13dp"
+		android:padding="10dp"
+		android:layout_weight="0.96"> </TextView>
+		
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="55dp" android:weightSum="1"
+		android:layout_weight="0.02" >
+		
+		<FrameLayout
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:layout_weight="0.5" 
+			>
+			
+		<Button
+			android:id="@+id/banana_button_quit"
+			android:layout_width="140dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:textColor="@color/button_text"
+			android:textStyle="bold"
+			android:textSize="13dp"
+			android:background="@drawable/banana_button"
+			android:padding="10dp"/>
+			
+		</FrameLayout>
+		
+		<FrameLayout
+			android:id="@+id/banana_button_settings_frame"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:visibility="gone"
+			android:layout_weight="0.5">
+			
+			<Button
+				android:id="@+id/banana_button_settings"
+				android:layout_width="140dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:textColor="@color/button_text"
+				android:textStyle="bold"
+				android:textSize="13dp"
+				android:background="@drawable/banana_button"
+				android:padding="10dp"/>
+				
+		</FrameLayout>
+	</LinearLayout>
+</LinearLayout>

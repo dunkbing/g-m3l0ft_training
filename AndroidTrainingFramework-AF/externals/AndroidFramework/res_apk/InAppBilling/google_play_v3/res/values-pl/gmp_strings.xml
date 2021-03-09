@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">Dokonywanie zakupów niemożliwe</string>
+	<string name="billing_not_supported_message">Usługa dokonywania opłat Google Play Store nie jest w tej chwili dostępna. Możesz kontynuować używanie tej aplikacji, ale niemożliwe będzie dokonywanie jakichkolwiek zakupów.</string>
+	<string name="cannot_connect_title">Nie udało się połączyć z Google Play Store</string>
+	<string name="cannot_connect_message">Aplikacja nie może się połączyć z Google Play Store. Twoja wersja Google Play Store może być nieaktualna. Możesz kontynuować używanie tej aplikacji, ale niemożliwe będzie dokonywanie jakichkolwiek zakupów.</string>
+	<string name="waitting_confirm">Czekamy, aż Google zweryfikuje twój zakup. Po zakończeniu zakupu, zaktualizujemy twoją listę przedmiotów.</string>
+	<string name="pending_transaction">Transakcja w toku.</string>
+	<string name="purchase_success">Zakup udany.</string>
+	<string name="purchase_unsuccess">Zakup nieudany.</string>
+	<string name="iab_retry">Ponów</string>
+	<string name="iab_cancel">Anuluj</string>
+	<string name="iab_ok">OK</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DRM_NETWORK_DIALOGUE_1">Mevcut internet bağlantısı yok. Wi-Fi bağlantını şimdi yapılandırmak mı yoksa operatör ağını kullanmak mı istiyorsun?</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">Sistem yerel sistemindeki lisansın geçersiz olduğunu saptadı. Uygulama lisansını kontrol etmek için bir ağ bağlantısı kullanacak. Devam etmek istiyor musun?</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">Sunucu uygulamanın satın alınmadığını gösteriyor. Bundan dolayı lisans uygulamaya gönderilemedi.</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">Sunucu uygulamanın parametrelerini kontrol etti ve en azından birinin boş bir değere sahip olduğunu belirledi. (Bu telefon kapalı olduğunda meydana gelebilir.)</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">Sunucuda, veri tabanına ulaşma hatası benzeri bir hata oluşması nedeniyle sunucu uygulamanın satın alındığını onaylayamıyor.</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">Lisans bir hata oluşması nedeniyle (uygulama sunucudan bir yanıt alamadı) uygulamaya gönderilemedi.</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">Bir ağ hatası nedeniyle (uygulamanın bir talebi sunucuya gönderilemedi) lisans uygulamaya gönderilemedi.</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">Lisans yerel diske kaydedilemedi. Olası nedenler: Disk G/Ç hatası, dosyada yeterli alan olmaması, lisansın diske kaydedilmek için izin olmaması. </string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">Bu, istemci Zirconia kitaplığında olmayan bir lisans talep ettiğinde meydana gelir. </string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">Bu, istemci sunucudan Zirconia kitaplığının geçersiz bir sürümüne ait  ve lisans sunucusu tarafından desteklenmeyen bir lisans talep ettiğinde meydana gelir. </string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">Sunucudan gelen lisans geçersiz. </string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">Lisans, uygulamaya geçersiz bir sunucu tarafından gönderildi.</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">Kullanıcı uygulama üzerinde değişiklik yapmış.</string>
+
+	<string name="DRM_EZIRCONIA_SUCCESS_1">Geçerli bir lisans başarıyla elde edildi.</string>
+</resources>

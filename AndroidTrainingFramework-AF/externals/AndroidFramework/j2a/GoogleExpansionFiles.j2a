@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - GoogleExpansionFiles">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/GoogleExpansionFiles"/>
+			<preprocess/>
+		</java>
+		<libs>
+			<dir path="../res_apk/GoogleExpansionFiles/libs"/>
+		</libs>
+	</sources>
+</j2a>

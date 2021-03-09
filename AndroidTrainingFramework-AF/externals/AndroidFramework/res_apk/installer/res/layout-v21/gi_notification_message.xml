@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:weightSum="1">
+	<ImageView
+		android:id="@+id/ImageView_notif"
+		android:layout_height="match_parent"
+		android:layout_width="0dp"
+		android:layout_gravity="center_vertical"
+		android:layout_margin="5dp"
+		android:layout_weight="0.1">
+	</ImageView>
+	<LinearLayout
+		android:orientation="vertical"
+		android:id="@+id/linearLayout1"
+		android:layout_height="match_parent"
+		android:layout_width="0dp"
+		android:layout_weight="0.9"
+		android:weightSum="1.6">
+		<TextView
+			android:textColor="#000"
+			style="@android:style/TextAppearance.StatusBar.EventContent.Title"
+			android:id="@+id/title_notif"
+			android:paddingLeft="3dp"
+			android:layout_gravity="center_vertical"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="" android:layout_width="wrap_content"
+			android:layout_height="0dp"
+			android:layout_weight="0.6">
+		</TextView>
+		<TextView
+			
+			style="@android:style/TextAppearance.StatusBar.EventContent"
+			android:id="@+id/txDownloading_notif"
+			android:layout_gravity="center_vertical"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="0dp"
+			android:layout_weight="0.6">
+		</TextView>
+	</LinearLayout>
+</LinearLayout>

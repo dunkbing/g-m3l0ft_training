@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DRM_NETWORK_DIALOGUE_1">Non è stata trovata alcuna connessione a internet. Vuoi configurare la tua connessione Wi-Fi in questo momento o usare la rete dell\'operatore?</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">Il sistema ha riscontrato che la licenza trovata sul tuo sistema non è valida. L\'applicazione userà la connessione di rete per verificare la licenza. Vuoi continuare?</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">Il server indica che l\'applicazione non è stata acquistata, quindi può inviare la licenza all\'applicazione.</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">Il server ha verificato i parametri dell\'applicazione e ha riscontrato che almeno uno dei parametri ha un valore nullo. (Questo può accadere quando il telefono è spento).</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">Poiché si è verificato un errore del server come ad esempio l\'impossibilità di accedere al database, il server non può confermare l\'acquisto dell\'applicazione.</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">La licenza non è stata inviata all\'applicazione a causa di un errore di rete (non è stato possibile ricevere la risposta dal server).</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">La licenza non è stata inviata all\'applicazione a causa di un errore di rete (non è stato possibile contattare il server).</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">La licenza non può essere salvata sul disco locale. Le possibili ragioni sono: errore I/O disco, spazio nella cartella insufficiente, assenza di permessi per salvare la licenza sul disco.</string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">Questo si può verificare quando il client richiede una licenza da un server che non fa parte della libreria di Zirconia.</string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">Questo si può verificare quando il client richiede una licenza da un server che appartiene a una versione non valida della libreria di Zirconia e che non è supportato dal server della licenza.</string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">La licenza del server non è valida.</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">La licenza inviata all\'applicazione proviene da un server non valido.</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">L\'utente ha modificato l\'applicazione.</string>
+
+	<string name="DRM_EZIRCONIA_SUCCESS_1">Una licenza valida è stata ricevuta con successo.</string>
+</resources>

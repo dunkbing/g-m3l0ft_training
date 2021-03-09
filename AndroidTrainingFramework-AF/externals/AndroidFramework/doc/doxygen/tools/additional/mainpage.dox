@@ -1,0 +1,27 @@
+/**
+\mainpage Android Framework
+
+**Android Framework** (AF)  is the full collection of Android API, Modules and entry-point required for a Game to port an iOS application to Android. The exposure comes 100% through C++, and completly eliminates the need for Java code at game-side level.
+The Android Framework repository also comes with a complete set of tools for building an android project.
+
+
+More information can be found on the [Gameloft Docs](https://docs.gameloft.org/android-framework/).
+
+Useful Links
+------------
+    - SVN Trunk - https://svn01/vc/android_tools/AndroidFramework/release
+
+Prerequisits
+------------
+Tool	 				| Repository 																		| Min. Version
+-----------------------	| ------------------------------------------------------------------------			| -----
+cygwin           	  	| http://www.cygwin.com/						        							| N/A
+JDK             	  	| http://www.oracle.com/technetwork/java/javase/downloads/index.html             	| 1.7
+Android NDK             | https://svn01/vc/tools/FreemiumLib/trunk             								| 9c
+Android SDK             | https://svn01/vc/pantheon/stand_alone/2_0/glwebtools 								| 22
+Apache Ant 				| https://svn01/vc/android_tools/Installer/Package     								| N/A
+
+
+or just run **start_build_configurator.bat** from the root of Android Framework, and follow the GLLegacy Installer requirements.
+
+*/

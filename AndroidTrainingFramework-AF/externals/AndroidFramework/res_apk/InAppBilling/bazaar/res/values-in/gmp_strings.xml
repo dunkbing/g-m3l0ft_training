@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">Tidak dapat melakukan pembelian</string>
+	<string name="billing_not_supported_message">Layanan penagihan Market tidak tersedia saat ini. Kamu dapat tetap menggunakan aplikasi ini, namun tidak dapat melakukan pembelian apa pun.</string>
+	<string name="cannot_connect_title">Tidak dapat tersambung ke Market</string>
+	<string name="cannot_connect_message">Aplikasi ini tidak dapat tersambung ke Market. Versi Market mungkin telah kedaluwarsa. Kamu dapat tetap menggunakan aplikasi ini, namun tidak dapat melakukan pembelian apa pun.</string>
+	<string name="waitting_confirm">Kami menunggu Cafe Bazaar untuk memvalidasi pembelian. Setelah pembelian selesai, kami akan memperbarui daftar item.</string>
+	<string name="pending_transaction">Kamu memiliki transaksi yang sedang diproses.</string>
+	<string name="purchase_success">Pembelian berhasil.</string>
+	<string name="purchase_unsuccess">Pembelian Gagal.</string>
+	<string name="iab_retry">Coba lagi</string>
+	<string name="iab_cancel">Batal</string>
+	<string name="iab_ok">OK</string>
+</resources>

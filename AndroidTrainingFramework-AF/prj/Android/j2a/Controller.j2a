@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="Controller">
+	<build type="Copy"/>
+	<sources>
+		<java>
+			<dir path="../java/"/>
+			<preprocess/>
+		</java>
+		<res>
+			<dir path="../res"/>
+		</res>
+	</sources>
+</j2a>

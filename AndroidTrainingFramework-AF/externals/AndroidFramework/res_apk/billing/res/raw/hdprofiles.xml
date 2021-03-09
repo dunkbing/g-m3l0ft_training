@@ -1,0 +1,916 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<profiles>
+	<profile id="347">
+		<name>Australia $6,60 HD+</name>
+		<status>qa_level_2</status>
+		<country>Australia(61:AU:AUS:505)</country>
+		<mcc>505</mcc>
+		<carrier name="OPTUS">
+
+			<mnc>02|90</mnc>
+		</carrier>
+		<carrier name="Telstra">
+			<mnc>01|71|72</mnc>
+		</carrier>
+		<carrier name="VODAFONE">
+			<mnc>03|06</mnc>
+
+		</carrier>
+		<carrier name="Virgin Mobile">
+			<mnc></mnc>
+		</carrier>
+		<carrier name="3">
+			<mnc>12</mnc>
+		</carrier>
+		<type>0</type>
+
+		<languages>
+			<tnc value='EN'>Gameloft: The cost of the full version of this game is $6.60 + the cost of a standard text message according to your messaging plan. The game will be purchased via text message and the transaction will appear on your mobile phone bill. You will only need 1 text message to purchase the full version. You must have sufficient credit to process your order. Support Number:  1300 78 50 25 Support email: support@gameloft.com</tnc>
+			<buyscreen value='EN'>Price $6.60 - Message and Data rates may apply</buyscreen>
+			<ompd_ed_sc value='EN'>You enjoyed the demo? Get the full version of [game]!</ompd_ed_sc>
+			<ompb_sc value='EN'>Get the full version of [game].</ompb_sc>
+			<ompb_ed_mc value='EN'>You enjoyed the demo? Choose your carrier to complete the purchase of [game].</ompb_ed_mc>
+
+			<ompb_mcc value='EN'>Choose your carrier to complete the purchase of [game].</ompb_mcc>
+			<support value='EN'>For any comment or enquiry please send an email to support@gameloft.com, call 1300 78 50 25 or go to the Support section of Gameloft's website. (toll free number)</support>
+			<double_optin value='EN'>Try the game and buy the Full Version for $6.60 only!</double_optin>
+			<double_optin_2 value='EN'>Price $6.60 - Message and data rates may apply</double_optin_2>
+		</languages>
+		<currency value="1">AUD</currency>
+
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+		<sms_price>6.60</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>6.60</game_price>
+		<alias></alias>
+
+		<double_optin>1</double_optin>
+		<server_number>19901199</server_number>
+	</profile>
+	<profile id="383">
+		<name>Austria 2&#8364; HD+</name>
+		<status>new</status>
+
+		<country>Austria(43:AT:AUT:232)</country>
+		<mcc>232</mcc>
+		<carrier name="T-Mobile">
+			<mnc>03|07</mnc>
+		</carrier>
+		<carrier name="Mobilkom">
+			<mnc>01|11</mnc>
+
+		</carrier>
+		<carrier name="Orange">
+			<mnc>05</mnc>
+		</carrier>
+		<carrier name="Tele.ring">
+			<mnc>03|07</mnc>
+		</carrier>
+		<carrier name="H3G">
+
+			<mnc>10</mnc>
+		</carrier>
+		<carrier name="Drei">
+			<mnc>10</mnc>
+		</carrier>
+		<carrier name="One">
+			<mnc>01</mnc>
+
+		</carrier>
+		<type>0</type>
+		<languages>
+			<tnc value='DE'>Gameloft: Der Preis fr die Vollversion dieses Spiels betrgt 2&#8364; + die in deinem Mobilfunkvertrag angegebenen Gebhren fr eine SMS. Der Kauf erfolgt per SMS und wird ber deine Handyrechnung verrechnet. Fr den Kauf der Vollversion bentigst du nur 1 SMS. Du musst ber ausreichend Guthaben verfgen, um den Kauf durchfhren zu knnen. Telefonnummer Customer Care:  +43 0720 88 0558 E-Mail-Adresse Customer Care: support@gameloft.com</tnc>
+			<buyscreen value='DE'>Preis: 2&#8364; - Es fallen die blichen SMS- und Datentransfergebhren an.</buyscreen>
+
+			<ompd_ed_sc value='DE'>Hat dir die Demoversion Spa gemacht? Kaufe die Vollversion von [game]!</ompd_ed_sc>
+			<ompb_sc value='DE'>Kaufe die Vollversion von [game].</ompb_sc>
+			<ompb_ed_mc value='DE'>Hat dir die Demoversion Spa gemacht? Whle deinen Anbieter, um [game] zu kaufen!</ompb_ed_mc>
+			<ompb_mcc value='DE'>Whle deinen Anbieter, um [game] zu kaufen.</ompb_mcc>
+			<support value='DE'>Fr Kommentare oder Fragen sende bitte eine E-Mail an support@gameloft.com, rufe uns ber die gebhrenfreie Nummer +43 0720 88 0558 an oder besuche die Rubrik Support auf der Gameloft-Website.</support>
+		</languages>
+
+		<currency value="1">&#8364;</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+		<sms_price>2</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>2</game_price>
+
+		<alias>GAMELOFT</alias>
+		<double_optin>0</double_optin>
+		<server_number>0900506506</server_number>
+	</profile>
+	<profile id="337">
+		<name>Brazil R$7 VIVO HD+</name>
+		<status>qa_level_2</status>
+
+		<country>Brasil(55:BR:BRA:724)</country>
+		<mcc>724</mcc>
+		<carrier name="VIVO">
+			<mnc>06|10|11|23</mnc>
+		</carrier>
+		<type>0</type>
+		<languages>
+
+			<tnc value='BR'>Gameloft: A verso completa deste jogo custa R$7 + o custo de uma mensagem de texto normal, de acordo com seu plano de mensagens. O jogo ser comprado atravs de uma mensagem de texto e a transao aparecer na conta do seu celular. Voc precisa de apenas uma mensagem para comprar a verso completa. Voc deve ter crditos suficientes para que seu pedido seja processado. E-mail de suporte: support@gameloft.com</tnc>
+			<buyscreen value='BR'>Preo: R$7 - Tarifas de envio de mensagem e transferncia de dados podero ser cobradas</buyscreen>
+			<ompd_ed_sc value='BR'>Gostou do demo? Baixe a verso completa de [game]!</ompd_ed_sc>
+			<ompb_sc value='BR'>Baixe a verso completa de [game].</ompb_sc>
+			<ompb_ed_mc value='BR'>Gostou do demo? Escolha sua operadora para completar a compra de [game].</ompb_ed_mc>
+			<ompb_mcc value='BR'>Escolha sua operadora para concluir a compra de [game].</ompb_mcc>
+
+			<support value='BR'>Para comentrios ou questes, favor enviar um e-mail para support@gameloft.com ou usar a seo de Suporte do site da Gameloft.</support>
+		</languages>
+		<currency value="0">R$</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>0</taxes>
+		<sms_price>7</sms_price>
+
+		<sms_count>1</sms_count>
+		<game_price>7</game_price>
+		<alias></alias>
+		<double_optin>0</double_optin>
+		<server_number>80200</server_number>
+	</profile>
+	<profile id="349">
+
+		<name>Brazil R$5.99 TIM HD+</name>
+		<status>qa_level_2</status>
+		<country>Brasil(55:BR:BRA:724)</country>
+		<mcc>724</mcc>
+		<carrier name="TIM">
+			<mnc>02|03|04|08</mnc>
+
+		</carrier>
+		<type>0</type>
+		<languages>
+			<tnc value='BR'>Gameloft: A verso completa deste jogo custa R$5.99 + o custo de uma mensagem de texto normal, de acordo com seu plano de mensagens. O jogo ser comprado atravs de uma mensagem de texto e a transao aparecer na conta do seu celular. Voc precisa de apenas uma mensagem para comprar a verso completa. Voc deve ter crditos suficientes para que seu pedido seja processado. E-mail de suporte: support@gameloft.com</tnc>
+			<buyscreen value='BR'>Preo: R$5.99 - Tarifas de envio de mensagem e transferncia de dados podero ser cobradas</buyscreen>
+			<ompd_ed_sc value='BR'>Gostou do demo? Baixe a verso completa de [game]!</ompd_ed_sc>
+			<ompb_sc value='BR'>Baixe a verso completa de [game].</ompb_sc>
+
+			<ompb_ed_mc value='BR'>Gostou do demo? Escolha sua operadora para completar a compra de [game].</ompb_ed_mc>
+			<ompb_mcc value='BR'>Escolha sua operadora para concluir a compra de [game].</ompb_mcc>
+			<support value='BR'>Para comentrios ou questes, favor enviar um e-mail para support@gameloft.com ou usar a seo de Suporte do site da Gameloft.</support>
+		</languages>
+		<currency value="0">R$</currency>
+		<delivery-type>SMS</delivery-type>
+
+		<taxes>0</taxes>
+		<sms_price>5.99</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>5.99</game_price>
+		<alias></alias>
+		<double_optin>0</double_optin>
+
+		<server_number>80200</server_number>
+	</profile>
+	<profile id="351">
+		<name>Brazil R$5.99 Claro HD+</name>
+		<status>qa_level_2</status>
+		<country>Brasil(55:BR:BRA:724)</country>
+		<mcc>724</mcc>
+
+		<carrier name="Claro">
+			<mnc>05</mnc>
+		</carrier>
+		<type>0</type>
+		<languages>
+			<tnc value='BR'>Gameloft: A verso completa deste jogo custa R$5.99 + o custo de uma mensagem de texto normal, de acordo com seu plano de mensagens. O jogo ser comprado atravs de uma mensagem de texto e a transao aparecer na conta do seu celular. Voc precisa de apenas uma mensagem para comprar a verso completa. Voc deve ter crditos suficientes para que seu pedido seja processado. E-mail de suporte: support@gameloft.com</tnc>
+			<buyscreen value='BR'>Preo: R$5.99 - Tarifas de envio de mensagem e transferncia de dados podero ser cobradas</buyscreen>
+
+			<ompd_ed_sc value='BR'>Gostou do demo? Baixe a verso completa de [game]!</ompd_ed_sc>
+			<ompb_sc value='BR'>Baixe a verso completa de [game].</ompb_sc>
+			<ompb_ed_mc value='BR'>Gostou do demo? Escolha sua operadora para completar a compra de [game].</ompb_ed_mc>
+			<ompb_mcc value='BR'>Escolha sua operadora para concluir a compra de [game].</ompb_mcc>
+			<support value='BR'>Para comentrios ou questes, favor enviar um e-mail para support@gameloft.com ou usar a seo de Suporte do site da Gameloft.</support>
+		</languages>
+
+		<currency value="0">R$</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>0</taxes>
+		<sms_price>5.99</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>5.99</game_price>
+
+		<alias></alias>
+		<double_optin>0</double_optin>
+		<server_number>80200</server_number>
+	</profile>
+	<profile id="353">
+		<name>Brazil R$6.99 Oi HD+</name>
+		<status>qa_level_2</status>
+
+		<country>Brasil(55:BR:BRA:724)</country>
+		<mcc>724</mcc>
+		<carrier name="Oi">
+			<mnc>16|24|31</mnc>
+		</carrier>
+		<type>0</type>
+		<languages>
+
+			<tnc value='BR'>Gameloft: A verso completa deste jogo custa R$6.99 + o custo de uma mensagem de texto normal, de acordo com seu plano de mensagens. O jogo ser comprado atravs de uma mensagem de texto e a transao aparecer na conta do seu celular. Voc precisa de apenas uma mensagem para comprar a verso completa. Voc deve ter crditos suficientes para que seu pedido seja processado. E-mail de suporte: support@gameloft.com</tnc>
+			<buyscreen value='BR'>Preo: R$6.99 - Tarifas de envio de mensagem e transferncia de dados podero ser cobradas</buyscreen>
+			<ompd_ed_sc value='BR'>Gostou do demo? Baixe a verso completa de [game]!</ompd_ed_sc>
+			<ompb_sc value='BR'>Baixe a verso completa de [game].</ompb_sc>
+			<ompb_ed_mc value='BR'>Gostou do demo? Escolha sua operadora para completar a compra de [game].</ompb_ed_mc>
+			<ompb_mcc value='BR'>Escolha sua operadora para concluir a compra de [game].</ompb_mcc>
+
+			<support value='BR'>Para comentrios ou questes, favor enviar um e-mail para support@gameloft.com ou usar a seo de Suporte do site da Gameloft.</support>
+		</languages>
+		<currency value="0">R$</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>0</taxes>
+		<sms_price>6.99</sms_price>
+
+		<sms_count>1</sms_count>
+		<game_price>6.99</game_price>
+		<alias></alias>
+		<double_optin>0</double_optin>
+		<server_number>80200</server_number>
+	</profile>
+	<profile id="363">
+
+		<name>Denmark 30DKK HD+</name>
+		<status>production</status>
+		<country>Denmark(45:DK:DNK:238)</country>
+		<mcc>238</mcc>
+		<carrier name="Telenor">
+			<mnc>02|77</mnc>
+
+		</carrier>
+		<carrier name="Telia">
+			<mnc>20|30</mnc>
+		</carrier>
+		<carrier name="TDC Mobil">
+			<mnc>01|10</mnc>
+		</carrier>
+		<carrier name="3">
+
+			<mnc>06</mnc>
+		</carrier>
+		<carrier name="Telmore">
+			<mnc></mnc>
+		</carrier>
+		<type>0</type>
+		<languages>
+			<tnc value='DA'>Gameloft: Den fulde version af dette spil koster 30 kr. + din udbyders pris for en almindelig SMS. Spillet kbes vis SMS og transaktionen kan ses p din mobilregning. Du behver kun en enkelt SMS for at kbe den fulde version. Du skal have tilstrkkelig med penge p mobilkontoen for at bestillingen kan gennemfres. Tlf. til Support: 72274222. E-mail til Support: support@gameloft.com</tnc>
+
+			<buyscreen value='DA'>Pris 30 kr. + evt. betaling til udbyder for data og SMS</buyscreen>
+			<ompd_ed_sc value='DA'>Kunne du lide demoen? Hent den fulde version af [game]!</ompd_ed_sc>
+			<ompb_sc value='DA'>Hent den fulde version af [game].</ompb_sc>
+			<ompb_ed_mc value='DA'>Kunne du lide demoen? Vlg din udbyder for at gennemfre kbet af [game].</ompb_ed_mc>
+			<ompb_mcc value='DA'>Vlg din udbyder for at gennemfre kbet af [game].</ompb_mcc>
+			<support value='DA'>Hvis du har kommentarer eller sprgsml, er du velkommen til at kontakte os via e-mail til support@gameloft.com, p tlf. 72274222 eller via Support-sektionen af Gamelofts hjemmeside.</support>
+
+		</languages>
+		<currency value="1">DKK</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+		<sms_price>30</sms_price>
+		<sms_count>1</sms_count>
+
+		<game_price>30</game_price>
+		<alias>SPIL</alias>
+		<double_optin>0</double_optin>
+		<server_number>1279</server_number>
+	</profile>
+	<profile id="367">
+		<name>Finland 4 &#8364; HD+</name>
+
+		<status>production</status>
+		<country>Finland(358:FI:FIN:244)</country>
+		<mcc>244</mcc>
+		<carrier name="Sonera">
+			<mnc>91</mnc>
+		</carrier>
+		<carrier name="DNA">
+
+			<mnc>03|12</mnc>
+		</carrier>
+		<carrier name="Elisa">
+			<mnc>05|21</mnc>
+		</carrier>
+		<carrier name="Saunalahti">
+			<mnc>21</mnc>
+
+		</carrier>
+		<carrier name="Kolumbus">
+			<mnc></mnc>
+		</carrier>
+		<carrier name="Tele Finland">
+			<mnc></mnc>
+		</carrier>
+		<carrier name="Zeroforty">
+			<mnc></mnc>
+
+		</carrier>
+		<carrier name="Cubio">
+			<mnc></mnc>
+		</carrier>
+		<type>0</type>
+		<languages>
+			<tnc value='FI'>Gameloft: Pelin koko version hinta on 4 &#8364; + operaattorisi tavallisen tekstiviestin hinta. Peli ostetaan tekstiviestill ja maksu nkyy matkapuhelinlaskussasi. Sinun tarvitsee lhett vain 1 tekstiviesti pelin koko version ostamiseksi. Tarvitset riittvsti luottoa tilauksen ksittelemiseksi. Tukinumero:  09 725 190 22 Tuen shkposti: support@gameloft.com</tnc>
+
+			<buyscreen value='FI'>Hinta 4 &#8364;. Tekstiviestin ja tiedonsiirron kulut voidaan list hintaan.</buyscreen>
+			<ompd_ed_sc value='FI'>Piditk pelin demosta? Osta pelin [game] koko versio!</ompd_ed_sc>
+			<ompb_sc value='FI'>Osta pelin [game] koko versio.</ompb_sc>
+			<ompb_ed_mc value='FI'>Piditk pelin demosta? Osta [game] valitsemalla operaattorisi.</ompb_ed_mc>
+			<ompb_mcc value='FI'>Osta [game] valitsemalla operaattorisi.</ompb_mcc>
+			<support value='FI'>Jos sinulla on palautetta tai kysyttv, lhet shkpostia osoitteeseen support@gameloft.com, soita numeroon 09 725 190 22 tai ky Gameloftin sivuston tukiosiossa. (maksuton numero)</support>
+
+		</languages>
+		<currency value="1">&#8364;</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+		<sms_price>4</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>4</game_price>
+
+		<alias>PELIT</alias>
+		<double_optin>0</double_optin>
+		<server_number>173372</server_number>
+	</profile>
+	<profile id="355">
+		<name>France 3&#8364; HD+</name>
+
+		<status>development</status>
+		<country>France(33:FR:FRA:208)</country>
+		<mcc>208</mcc>
+		<carrier name="Orange">
+			<mnc>00|01|02</mnc>
+		</carrier>
+		<carrier name="SFR">
+
+			<mnc>10|11|13</mnc>
+		</carrier>
+		<carrier name="Bouygues Telecom">
+			<mnc>20|21|88</mnc>
+		</carrier>
+		<carrier name="NRJ Mobile">
+			<mnc></mnc>
+		</carrier>
+
+		<carrier name="Virgin Mobile">
+			<mnc></mnc>
+		</carrier>
+		<carrier name="Tele2">
+			<mnc></mnc>
+		</carrier>
+		<carrier name="Universal Mobile">
+			<mnc></mnc>
+		</carrier>
+
+		<type>0</type>
+		<languages>
+			<tnc value='FR'>Gameloft : Le cot de la version complte de ce jeu est de 3&#8364; + le cot d'un SMS standard selon les tarifs de votre oprateur. Le jeu sera achet par SMS et la transaction figurera sur la facture de votre tlphone mobile. L'achat de la version complte ne ncessite qu'un seul message. Vous devez disposer d'un crdit suffisant pour passer votre commande. Numro d'assistance :  0800903778 E-mail d'assistance : support@gameloft.com</tnc>
+			<buyscreen value='FR'>Prix 3&#8364; - Cot SMS et connexion en sus selon tarif oprateur</buyscreen>
+			<ompd_ed_sc value='FR'>Vous avez aim la dmo ? Achetez la version complte de [game] !</ompd_ed_sc>
+
+			<ompb_sc value='FR'>Achetez la version complte de [game].</ompb_sc>
+			<ompb_ed_mc value='FR'>Vous avez aim la dmo ? Slectionnez votre oprateur pour complter l'achat de [game].</ompb_ed_mc>
+			<ompb_mcc value='FR'>Slectionnez votre oprateur pour complter l'achat de [game].</ompb_mcc>
+			<support value='FR'>Veuillez nous faire parvenir vos commentaires ou vos questions par e-mail  support@gameloft.com, composez le 0800903778 ou visitez la rubrique Assistance du site web de Gameloft. (numro gratuit)</support>
+		</languages>
+		<currency value="1">&#8364;</currency>
+		<delivery-type>SMS</delivery-type>
+
+		<taxes>1</taxes>
+		<sms_price>3</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>3</game_price>
+		<alias></alias>
+		<double_optin>0</double_optin>
+
+		<server_number>83399</server_number>
+	</profile>
+	<profile id="331">
+		<name>Germany 2.99&#8364; HD+</name>
+		<status>check_tracking_2</status>
+		<country>Germany(49:DE:DEU:262)</country>
+
+		<mcc>262</mcc>
+		<carrier name="T-Mobile">
+			<mnc>01|06</mnc>
+		</carrier>
+		<carrier name="Vodafone">
+			<mnc>02|04|09</mnc>
+		</carrier>
+
+		<carrier name="O2">
+			<mnc>07|08|11</mnc>
+		</carrier>
+		<carrier name="E-Plus">
+			<mnc>03|05|77</mnc>
+		</carrier>
+		<carrier name="Debitel">
+			<mnc>901</mnc>
+
+		</carrier>
+		<carrier name="Mobilcom">
+			<mnc>13</mnc>
+		</carrier>
+		<type>0</type>
+		<languages>
+			<tnc value='DE'>Gameloft: Der Preis fr die Vollversion dieses Spiels betrgt 2.99&#8364; + die in deinem Mobilfunkvertrag angegebenen Gebhren fr eine SMS. Der Kauf erfolgt per SMS und wird ber deine Handyrechnung verrechnet. Fr den Kauf der Vollversion bentigst du nur 1 SMS. Du musst ber ausreichend Guthaben verfgen, um den Kauf durchfhren zu knnen. Telefonnummer Support:  0800 560 0819 E-Mail-Adresse Support: support@gameloft.com</tnc>
+
+			<buyscreen value='DE'>Preis: 2.99&#8364;. Es fallen die blichen SMS- und Datentransfergebhren an.</buyscreen>
+			<ompd_ed_sc value='DE'>Hat dir die Demoversion Spa gemacht? Kaufe die Vollversion von [game]!</ompd_ed_sc>
+			<ompb_sc value='DE'>Kaufe die Vollversion von [game].</ompb_sc>
+			<ompb_ed_mc value='DE'>Hat dir die Demoversion Spa gemacht? Whle deinen Anbieter, um [game] zu kaufen!</ompb_ed_mc>
+			<ompb_mcc value='DE'>Whle deinen Anbieter, um [game] zu kaufen.</ompb_mcc>
+			<support value='DE'>Fr Kommentare oder Fragen sende bitte eine E-Mail an support@gameloft.com, rufe uns ber die gebhrenfreie Nummer 0800 560 0819 an oder besuche die Rubrik Support auf der Gameloft-Website.</support>
+
+			<double_optin value='DE'>Probiere das Spiel aus und kaufe die Vollversion fr nur 2,99&#8364; !</double_optin>
+			<double_optin_2 value='DE'>Preis 2.99&#8364; - Es fallen die blichen Nachrichten- und Datentransfergebhren an.</double_optin_2>
+		</languages>
+		<currency value="1">&#8364;</currency>
+		<delivery-type>SMS</delivery-type>
+
+		<taxes>1</taxes>
+		<sms_price>2.99</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>2.99</game_price>
+		<alias>HD</alias>
+		<double_optin>1</double_optin>
+
+		<server_number>88044</server_number>
+	</profile>
+	<profile id="385">
+		<name>Ireland 2.5&#8364; HD+</name>
+		<status>qa_level_1</status>
+		<country>Ireland(353:IE:IRL:272)</country>
+
+		<mcc>272</mcc>
+		<carrier name="O2">
+			<mnc>086</mnc>
+		</carrier>
+		<carrier name="Meteor">
+			<mnc>085</mnc>
+		</carrier>
+
+		<carrier name="Vodafone">
+			<mnc>087</mnc>
+		</carrier>
+		<carrier name="H3G">
+			<mnc>05</mnc>
+		</carrier>
+		<type>0</type>
+
+		<languages>
+			<tnc value='EN'>Gameloft
+
+Contact Details of our Customer Care
+Phone Number: +35 076 606 0041
+Email: support@gameloft.com 
+
+The cost of the full version of this game is 2.50&#8364; + the cost of a standard text message according to your messaging plan. 
+The game will be purchased via text message and the transaction will appear on your mobile phone bill. 
+You will only need 1 text message to purchase the full version. You must have sufficient credit to process your order.
+Complete Terms and Conditions: gameloft.com/conditions</tnc>
+			<buyscreen value='EN'>Price 2.50&#8364; Message and Data rates may apply</buyscreen>
+			<ompd_ed_sc value='EN'>You enjoyed the demo? Get the full version of [game]!</ompd_ed_sc>
+			<ompb_sc value='EN'>Get the full version of [game]</ompb_sc>
+
+			<ompb_ed_mc value='EN'>You enjoyed the demo? Choose your carrier to complete the purchase of [game]</ompb_ed_mc>
+			<ompb_mcc value='EN'>Choose your carrier to complete the purchase of [game]</ompb_mcc>
+			<support value='EN'>For any comment or enquiry please send an email to support@gameloft.com, call +35 076 606 0041 or go to the Support section of Gameloft's website. (toll free number)</support>
+		</languages>
+		<currency value="1">&#8364;</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+
+		<sms_price>2.50</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>2.50</game_price>
+		<alias>GAMELOFT</alias>
+		<double_optin>0</double_optin>
+		<server_number>57977</server_number>
+
+	</profile>
+	<profile id="359">
+		<name>NZ 7$ HD+</name>
+		<status>qa_level_2</status>
+		<country>New Zealand(64:NZ:NZL:530)</country>
+		<mcc>530</mcc>
+		<carrier name="Vodafone">
+
+			<mnc>01</mnc>
+		</carrier>
+		<carrier name="Telecom">
+			<mnc>00|02</mnc>
+		</carrier>
+		<type>0</type>
+		<languages>
+
+			<tnc value='EN'>Gameloft:
+
+The cost of the full version of this game is 7$ + the cost of a standard text message according to your messaging plan. The game will be purchased via text message and the transaction will appear on your mobile phone bill.
+
+You will only need 1 text message to purchase the full version. You must have sufficient credit to process your order.
+
+Support Number: +64 99 25 0467
+Support email: support@gameloft.com</tnc>
+			<buyscreen value='EN'>Price 7$ Message and Data rates may apply</buyscreen>
+			<ompd_ed_sc value='EN'>You enjoyed the demo? Get the full version of [game]!</ompd_ed_sc>
+			<ompb_sc value='EN'>Get the full version of [game]</ompb_sc>
+			<ompb_ed_mc value='EN'>You enjoyed the demo? Choose your carrier to complete the purchase of [game]</ompb_ed_mc>
+			<ompb_mcc value='EN'>Choose your carrier to complete the purchase of [game]</ompb_mcc>
+
+			<support value='EN'>For any comment or enquiry please send an email to support@gameloft.com, call +64 99 25 0467 or go to the Support section of Gameloft's website. (toll free number)</support>
+		</languages>
+		<currency value="1">$</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+		<sms_price>7</sms_price>
+
+		<sms_count>1</sms_count>
+		<game_price>7</game_price>
+		<alias></alias>
+		<double_optin>0</double_optin>
+		<server_number>340</server_number>
+	</profile>
+	<profile id="365">
+
+		<name>Norway 30NOK HD+</name>
+		<status>production</status>
+		<country>Norway(47:NO:NOR:242)</country>
+		<mcc>242</mcc>
+		<carrier name="Telenor">
+			<mnc>01</mnc>
+
+		</carrier>
+		<carrier name="Netcom">
+			<mnc>02</mnc>
+		</carrier>
+		<carrier name="TELE2">
+			<mnc>04</mnc>
+		</carrier>
+		<carrier name="Ventelo">
+
+			<mnc>07</mnc>
+		</carrier>
+		<type>0</type>
+		<languages>
+			<tnc value='NO'>Gameloft: Fullversjonen av spillet koster 30 kr. + kostnaden av en vanlig tekstmelding i henhold til abonnementet ditt. Spillet blir kjpt via tekstmelding, og transaksjonen vil vises p telefonregningen din. Du trenger bare bruke 1 tekstmelding for  kjpe fullversjonen. Du m ha tilstrekkelig med penger p telefonen for  kunne fullfre bestillingen. Telefon til kundesttte:  241 59 512  E-post til kundesttte: support@gameloft.com</tnc>
+			<buyscreen value='NO'>Pris 30 kr. - Kostnader for tekstmelding og dataoverfring kan tilkomme</buyscreen>
+			<ompd_ed_sc value='NO'>Likte du demoen? F fullversjonen av [game]!</ompd_ed_sc>
+
+			<ompb_sc value='NO'>F fullversjonen av [game].</ompb_sc>
+			<ompb_ed_mc value='NO'>Likte du demoen? Velg mobiloperatren din for  fullfre kjpet av [game].</ompb_ed_mc>
+			<ompb_mcc value='NO'>Velg mobiloperatren din for  fullfre kjpet av [game].</ompb_mcc>
+			<support value='NO'>Hvis du har kommentarer eller sprsml, kan du sende en e-post til support@gameloft.com, ringe 241 59 512 eller g til hjelpeomrdet p nettsiden til Gameloft. (gratisnummer)</support>
+		</languages>
+		<currency value="1">NOK</currency>
+
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+		<sms_price>30</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>30</game_price>
+		<alias>SPILL</alias>
+
+		<double_optin>0</double_optin>
+		<server_number>2011</server_number>
+	</profile>
+	<profile id="395">
+		<name>Poland 9 PLN HD+</name>
+		<status>new</status>
+		<country>Poland(48:PL:POL:260)</country>
+
+		<mcc>260</mcc>
+		<carrier name="Era">
+			<mnc>02</mnc>
+		</carrier>
+		<carrier name="Plus">
+			<mnc>01</mnc>
+		</carrier>
+
+		<carrier name="Orange">
+			<mnc>03</mnc>
+		</carrier>
+		<carrier name="Play">
+			<mnc>06</mnc>
+		</carrier>
+		<type>0</type>
+
+		<languages>
+			<tnc value='PL'>Gameloft: Koszt pe&#322;nej wersji gry to 9 PLN + koszt zwyk&#322;ego SMSa, zgodnie z twoim planem taryfowym. Gra zostanie zakupiona poprzez SMS, a transakcja zostanie doliczona do twojego rachunku. Aby kupi&#263; pe&#322;n&#261; wersj&#281;, potrzebujesz tylko 1 SMSa. Musisz posiada&#263; wystarczaj&#261;ce &#347;rodki na koncie, by zamwienie zosta&#322;o przetworzone.
+Email pomocy: support@gameloft.com</tnc>
+
+			<buyscreen value='PL'>Cena 9 PLN - mog&#261; obowi&#261;zywa&#263; op&#322;aty za SMS i przesy&#322; danych
+</buyscreen>
+			<ompd_ed_sc value='PL'>Podoba&#322;o ci si&#281; demo? Pobierz pe&#322;n&#261; wersj&#281; gry [game]!</ompd_ed_sc>
+
+			<ompb_sc value='PL'>Pobierz pe&#322;n&#261; wersj&#281; gry [game].</ompb_sc>
+			<ompb_ed_mc value='PL'>Podoba&#322;o ci si&#281; demo? Wybierz operatora, by sfinalizowa&#263; zakup gry [game].
+</ompb_ed_mc>
+			<ompb_mcc value='PL'>Wybierz operatora, by sfinalizowa&#263; zakup gry [game].
+
+</ompb_mcc>
+			<support value='PL'>Uwagi i zapytania prosimy przesy&#322;a&#263; poczt&#261; email na adres support@gameloft.com. Mo&#380;na te&#380; odwiedzi&#263; dzia&#322; pomocy na stronie WWW firmy Gameloft. </support>
+		</languages>
+
+		<currency value="1">&#8364;</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+		<sms_price>9</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>9</game_price>
+
+		<alias>GL</alias>
+		<double_optin>0</double_optin>
+		<server_number>7965</server_number>
+	</profile>
+	<profile id="393">
+		<name>Portugal 2,02&#8364; HD+</name>
+
+		<status>new</status>
+		<country>Portugal(351:PT:PRT:268)</country>
+		<mcc>268</mcc>
+		<carrier name="TMN">
+			<mnc>06</mnc>
+		</carrier>
+		<carrier name="Optimus">
+
+			<mnc>03</mnc>
+		</carrier>
+		<carrier name="Vodafone">
+			<mnc>01</mnc>
+		</carrier>
+		<carrier name="ONI WAY Infocomunicacoes SA">
+			<mnc></mnc>
+		</carrier>
+
+		<type>0</type>
+		<languages>
+			<tnc value='PT'>Gameloft: O custo da verso completa deste jogo  de 2.02&#8364; + o custo de uma mensagem de texto normal de acordo com o teu plano tarifrio. O jogo ser comprado por mensagem de texto, e a transaco ir figurar na factura do teu telemvel. Para comprar a verso completa s precisars de 1 mensagem de texto. Precisas de ter crdito suficiente para processar a tua encomenda. Email de apoio ao cliente:: support@gameloft.com</tnc>
+			<buyscreen value='PT'>Preo 2.02&#8364; - Podero ser cobradas tarifas de envio de mensagens e transferncia de dados
+</buyscreen>
+			<ompd_ed_sc value='PT'>Gostaste da demo? Obtm a verso completa do [game]!</ompd_ed_sc>
+
+			<ompb_sc value='PT'>Obtm a verso completa do [game].
+</ompb_sc>
+			<ompb_ed_mc value='PT'>Gostaste da demo? Escolhe a tua operadora para concluir a compra do [game].
+</ompb_ed_mc>
+			<ompb_mcc value='PT'>Escolhe a tua operadora para concluir a compra do [game].</ompb_mcc>
+			<support value='PT'>Para qualquer comentrio ou questo, por favor envia um email para support@gameloft.com ou vai  Seco de Apoio ao Cliente do Website da Gameloft.</support>
+		</languages>
+		<currency value="1">&#8364;</currency>
+		<delivery-type>SMS</delivery-type>
+
+		<taxes>1</taxes>
+		<sms_price>2.02</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>2.02</game_price>
+		<alias>GAMELOFT</alias>
+		<double_optin>0</double_optin>
+
+		<server_number>68304</server_number>
+	</profile>
+	<profile id="357">
+		<name>Spain 4&#8364; HD+</name>
+		<status>qa_level_1</status>
+		<country>Spain(34:ES:ESP:214)</country>
+
+		<mcc>214</mcc>
+		<carrier name="Vodafone">
+			<mnc>01|06</mnc>
+		</carrier>
+		<carrier name="Telefonica-Movistar">
+			<mnc>07</mnc>
+		</carrier>
+
+		<carrier name="Orange">
+			<mnc>03|09</mnc>
+		</carrier>
+		<carrier name="Yoigo">
+			<mnc>04</mnc>
+		</carrier>
+		<type>0</type>
+
+		<languages>
+			<tnc value='ES'>Gameloft: La versin completa de este juego te costar 4&#8364; + el coste de un SMS. Debers comprar el juego a travs de un SMS y la transaccin aparecer en tu factura telefnica. Solo necesitas un SMS para comprar la versin completa. Debes tener suficiente dinero para realizar tu pedido. Correo electrnico de asistencia: support@gameloft.com</tnc>
+			<buyscreen value='ES'>Precio 4&#8364; - Se podrn aplicar las tarifas estndar por mensajera y transmisin de datos.</buyscreen>
+			<ompd_ed_sc value='ES'>Te ha gustado esta demo? Hazte con la versin completa de [game]!</ompd_ed_sc>
+			<ompb_sc value='ES'>Hazte con la versin completa de [game].</ompb_sc>
+
+			<ompb_ed_mc value='ES'>Te ha gustado esta demo? Elige tu operadora para completar la compra de [game].</ompb_ed_mc>
+			<ompb_mcc value='ES'>Elige tu operadora para completar la compra de [game]</ompb_mcc>
+			<support value='ES'>Para cualquier comentario o pregunta, por favor envanos un correo electrnico a la direccin support@gameloft.com o visita la seccin de Asistencia en la pgina web de Gameloft. </support>
+			<double_optin value='ES'>Prueba este juego y compra la versin completa por solo 4&#8364;!</double_optin>
+			<double_optin_2 value='ES'>Juego completo 4&#8364;. Al comprarlo solo pagas con 1 sms por valor de 4&#8364;. Haz clic en comprar
+
+</double_optin_2>
+		</languages>
+		<currency value="1">&#8364;</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+		<sms_price>4</sms_price>
+		<sms_count>1</sms_count>
+
+		<game_price>4</game_price>
+		<alias></alias>
+		<double_optin>1</double_optin>
+		<server_number>37273</server_number>
+	</profile>
+	<profile id="369">
+		<name>Sweden 30SEK HD+</name>
+
+		<status>production</status>
+		<country>Sweden(46:SE:SWE:240)</country>
+		<mcc>240</mcc>
+		<carrier name="Tele2-Comviq">
+			<mnc></mnc>
+		</carrier>
+		<carrier name="Telenor">
+
+			<mnc>06|08</mnc>
+		</carrier>
+		<carrier name="3">
+			<mnc>3</mnc>
+		</carrier>
+		<carrier name="Telia Mobile">
+			<mnc>01</mnc>
+
+		</carrier>
+		<type>0</type>
+		<languages>
+			<tnc value='SV'>Gameloft: Den fullstndiga versionen av spelet kostar 30 kr. + mobiloperatrens kostnad fr ett vanligt SMS. Spelet kps via SMS och transaktionen visas p din faktura om du har ett mobilabonnemang. Det krvs endast ett (1) SMS fr att kpa spelet. Du mste ha tillrckligt mycket pengar p mobilen fr att bestllningen ska genomfras. Supporttelefon: 08-50163257 E-post: support@gameloft.com</tnc>
+			<buyscreen value='SV'>Pris: 30 kr. - Kostnad fr SMS och datatrafik kan tillkomma.</buyscreen>
+			<ompd_ed_sc value='SV'>Gillade du provversionen? Kp den fullstndiga versionen av [game]!</ompd_ed_sc>
+			<ompb_sc value='SV'>Kp den fullstndiga versionen av [game].</ompb_sc>
+
+			<ompb_ed_mc value='SV'>Gillade du provversionen? Vlj din operatr fr att kpa [game].</ompb_ed_mc>
+			<ompb_mcc value='SV'>Vlj din operatr fr att kpa [game].</ompb_mcc>
+			<support value='SV'>Om du har synpunkter eller frgor: Skicka e-post till support@gameloft.com, ring 08-50163257 (kostnadsfritt) eller g till sidan Support p Gamelofts webbplats.</support>
+			<double_optin value='SV'>Prova spelet och kp den fullstndiga versionen fr bara 30 kr.!</double_optin>
+			<double_optin_2 value='SV'>Det hr spelet kostar 30 kr. (+ SMS-avgift)</double_optin_2>
+		</languages>
+
+		<currency value="1">SEK</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+		<sms_price>30</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>30</game_price>
+
+		<alias>MOBIL</alias>
+		<double_optin>1</double_optin>
+		<server_number>72727</server_number>
+	</profile>
+	<profile id="381">
+		<name>Switzerland 5 CHF HD+</name>
+		<status>new</status>
+
+		<country>Switzerland(41:CH:CHE:228)</country>
+		<mcc>228</mcc>
+		<carrier name="Orange">
+			<mnc>03</mnc>
+		</carrier>
+		<carrier name="Swisscom Mobile">
+			<mnc>01</mnc>
+
+		</carrier>
+		<carrier name="Sunrise">
+			<mnc>02</mnc>
+		</carrier>
+		<carrier name="Tele2">
+			<mnc>08</mnc>
+		</carrier>
+		<type>0</type>
+
+		<languages>
+			<tnc value='EN'>Gameloft
+
+Contact Details of our Customer Care
+Phone Number: +41 0435 00 2460
+Email: support@gameloft.com 
+
+Payment "On my phone bill"
+
+The cost of the full version of this game is 5 CHF + the cost of a standard text message according to your messaging plan. 
+The game will be purchased via text message and the transaction will appear on your mobile phone bill. 
+You will only need 1 text message to purchase the full version. You must have sufficient credit to process your order.
+Complete Terms and Conditions: gameloft.com/conditions
+
+Payment by Credit Card
+
+The cost of the full version of this game is 3.99&#8364;. 
+Gameloft Peace of Mind Guarantee: Gameloft uses advanced encryption security technology to protect your Crecit Card information. 
+Your email address will be used exclusively to send you the bill. 
+</tnc>
+			<buyscreen value='EN'>Price 5 CHF - Message and Data rates may apply</buyscreen>
+			<ompd_ed_sc value='EN'>You enjoyed the demo? Get the full version of [game]!</ompd_ed_sc>
+			<ompb_sc value='EN'>Get the full version of [game].</ompb_sc>
+			<ompb_ed_mc value='EN'>You enjoyed the demo? Choose your carrier to complete the purchase of [game].</ompb_ed_mc>
+
+			<ompb_mcc value='EN'>Choose your carrier to complete the purchase of [game].</ompb_mcc>
+			<support value='EN'>For any comment or enquiry please send an email to support@gameloft.com, call +41 0435 00 2460 or go to the Support section of Gameloft's website. </support>
+		</languages>
+		<currency value="1">CHF</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+
+		<sms_price>5</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>5</game_price>
+		<alias>NOW</alias>
+		<double_optin>0</double_optin>
+		<server_number>83111</server_number>
+
+	</profile>
+	<profile id="345">
+		<name>UK 2.5 HD+</name>
+		<status>check_tracking_2</status>
+		<country>United Kingdom(44:GB:GBR:234|235)</country>
+		<mcc>234|235</mcc>
+		<carrier name="T-Mobile">
+
+			<mnc>30</mnc>
+		</carrier>
+		<carrier name="Vodafone">
+			<mnc>15</mnc>
+		</carrier>
+		<carrier name="O2">
+			<mnc>02|10|11</mnc>
+
+		</carrier>
+		<carrier name="Orange UK">
+			<mnc>33|34</mnc>
+		</carrier>
+		<carrier name="Virgin">
+			<mnc>31|32</mnc>
+		</carrier>
+		<carrier name="Tesco Mobile">
+
+			<mnc></mnc>
+		</carrier>
+		<carrier name="3">
+			<mnc>20</mnc>
+		</carrier>
+		<type>0</type>
+		<languages>
+			<tnc value='EN'>Gameloft:
+
+The cost of the full version of this game is 2.50 + the cost of a standard text message according to your messaging plan. The game will be purchased via text message and the transaction will appear on your mobile phone bill.
+
+You will only need 1 text message to purchase the full version. You must have sufficient credit to process your order.
+
+Support Number: 08082348679
+Support email: support@gameloft.com</tnc>
+
+			<buyscreen value='EN'>Price 2.50 Message and Data rates may apply</buyscreen>
+			<ompd_ed_sc value='EN'>You enjoyed the demo? Get the full version of [game]!</ompd_ed_sc>
+			<ompb_sc value='EN'>Get the full version of [game]</ompb_sc>
+			<ompb_ed_mc value='EN'>You enjoyed the demo? Choose your carrier to complete the purchase of [game]</ompb_ed_mc>
+			<ompb_mcc value='EN'>Choose your carrier to complete the purchase of [game]</ompb_mcc>
+			<support value='EN'>For any comment or enquiry please send an email to support@gameloft.com, call 08082348679 or go to the Support section of Gameloft's website. (toll free number)</support>
+
+		</languages>
+		<currency value="1"></currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+		<sms_price>2.50</sms_price>
+		<sms_count>1</sms_count>
+
+		<game_price>2.50</game_price>
+		<alias></alias>
+		<double_optin>0</double_optin>
+		<server_number>88000</server_number>
+	</profile>
+	<profile id="361">
+		<name>US $4,99 T-Mobile HD+</name>
+
+		<status>production</status>
+		<country>United States(1:US:USA:310|311|312|313|314|315|316)</country>
+		<mcc>310|311|312|313|314|315|316</mcc>
+		<carrier name="T-Mobile (r)">
+			<mnc>026|260|330|490|660</mnc>
+		</carrier>
+		<type>0</type>
+
+		<languages>
+			<tnc value='EN'>Gameloft charges $4.99 for one-time purchases of games at T-Mobile&#174;. This is not a subscription service. Complete Terms and Conditions: gameloft.com/conditions Support: For help, email us at support@gameloft.com or text HELP to 84149. Fees: Messages and data rates may apply. These charges are billed to your mobile phone bill or deducted from your prepaid balance. They will appear under "Gameloft". Text STOP to 84149 to opt-out.</tnc>
+			<buyscreen value='EN'>Price $4,99 Message and Data rates may apply</buyscreen>
+			<ompd_ed_sc value='EN'>You enjoyed the demo? Get the full version of [game]!</ompd_ed_sc>
+			<ompb_sc value='EN'>Get the full version of [game]</ompb_sc>
+			<ompb_ed_mc value='EN'>You enjoyed the demo? Choose your carrier to complete the purchase of [game]</ompb_ed_mc>
+
+			<ompb_mcc value='EN'>Choose your carrier to complete the purchase of [game]</ompb_mcc>
+			<support value='EN'>For any comment or enquiry please send an email to support@gameloft.com go to the Support section of Gameloft's website. </support>
+		</languages>
+		<currency value="0">$</currency>
+		<delivery-type>SMS</delivery-type>
+		<taxes>1</taxes>
+
+		<sms_price>4.99</sms_price>
+		<sms_count>1</sms_count>
+		<game_price>4.99</game_price>
+		<alias></alias>
+		<double_optin>0</double_optin>
+		<server_number>84149</server_number>
+
+	</profile>
+</profiles>

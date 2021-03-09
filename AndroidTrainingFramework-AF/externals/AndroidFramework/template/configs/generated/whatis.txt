@@ -1,0 +1,1 @@
+Find here: config_Android.h, java_defines.h, buildConfigH.bat

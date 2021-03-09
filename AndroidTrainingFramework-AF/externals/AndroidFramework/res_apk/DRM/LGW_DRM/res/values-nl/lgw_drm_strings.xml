@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<string name="checklicense_dialog_message">Bezig…</string>
+<string name="unlicensed_dialog_title">De verificatie is mislukt</string>
+<string name="unlicensed_dialog_message">In uw aankoopgeschiedenis komen geen overeenkomende records voor.</string>
+<string name="no_lgworld_dialog_title">Verificatie is vereist</string>
+<string name="no_lgworld_dialog_message">Installeer de nieuwste versie van  LG World om deze app te verifiëren.</string>
+<string name="no_network_dialog_title">Netwerk niet beschikbaar</string>
+<string name="no_network_dialog_message">Graag uw netwerkverbinding controleren.</string>
+<string name="warning_dialog_title">Waarschuwing</string>
+<string name="warning_dialog_message">Service niet beschikbaar. Probeer het opnieuw.</string>
+<string name="ok_button">OK</string>
+<string name="cancel_button">Terug</string>
+<string name="exit_button">AFSLUITEN</string>
+
+</resources>

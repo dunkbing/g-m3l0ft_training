@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<string name="checklicense_dialog_message">Wird ausgeführt…</string>
+<string name="unlicensed_dialog_title">Verifikation gescheitert</string>
+<string name="unlicensed_dialog_message">Keine Notiz gefunden in Kauf Geschichte.</string>
+<string name="no_lgworld_dialog_title">Verifikation erforderlich</string>
+<string name="no_lgworld_dialog_message">Bitte installieren Sie die neueste Version von LG World, um diese App zu verifizieren.</string>
+<string name="no_network_dialog_title">Kein Netz</string>
+<string name="no_network_dialog_message">Bitte überprüfen Sie Ihre Netzverbindung.</string>
+<string name="warning_dialog_title">Warnung</string>
+<string name="warning_dialog_message">Service nicht verfügbar. Bitte erneut versuchen.</string>
+<string name="ok_button">OK</string>
+<string name="cancel_button">Abbrechen</string>
+<string name="exit_button">Beenden</string>
+
+</resources>

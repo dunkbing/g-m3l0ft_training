@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB20_SK_OK">OK</string>
+	<string name="IAB20_SK_BACK">Zurück</string>
+	<string name="IAB20_SK_NEXT">Weiter</string>
+</resources>

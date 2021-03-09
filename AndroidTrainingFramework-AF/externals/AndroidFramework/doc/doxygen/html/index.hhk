@@ -1,0 +1,462 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_user_location.html#aaa571000ba80f775a619021c36d8fea9"><param name="Name" value="accuracy"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceacp__utils.html"><param name="Name" value="acp_utils"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html"><param name="Name" value="acp_utils::api::PackageUtils"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a4693ebfdefecf841dc0f277083e451d0"><param name="Name" value="CloseLogo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#afabec3370e6c593a885b22d3542574b9"><param name="Name" value="DeleteFile"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a34ca294e4f98cc5e649c31b1179a5b3e"><param name="Name" value="DisableUserLocation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aa5359350a0af69cc8672b09ae20b8037"><param name="Name" value="EnableUserLocation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a8b4215de81c5b9a1edc5ad4cb8099c9e"><param name="Name" value="ExitApplication"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#afd158b9ba27d36ad4ea515067162abc2"><param name="Name" value="GenericUnzipArchive"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a30d20918a263a51a98677c4ae2569854"><param name="Name" value="GetAndroidId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a757164b50b49b46c86b212984e5b85ac"><param name="Name" value="GetApkPath"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a99b4648fe3bce5bd368d145f3eb1f192"><param name="Name" value="GetAssetResource"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a283e304754907b6d4b9f14f3338b21cb"><param name="Name" value="GetBatteryStatus"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ac8ef96bce98ba2a923ceacf572d84a04"><param name="Name" value="GetBuildDevice"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a0c56cc6385b7a7b0abfefda3c390c0eb"><param name="Name" value="GetBuildProduct"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a03be69b7199fbd00d114ea579046e27d"><param name="Name" value="GetCacheFolderPath"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a1fe2828cecf6085fba8f1ac08197e112"><param name="Name" value="GetCarrierName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#adef40a4183cbe2cd2525403f6fe79dea"><param name="Name" value="GetClass"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aa8852a9ab4898eb456ada4eb0ddaa46e"><param name="Name" value="GetConnectionType"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a8064f10e7320828ed6dfe3643fbfc8c9"><param name="Name" value="GetCountry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#afbbebac517003739ecf3a0dcad0a8e77"><param name="Name" value="GetCPUSerial"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a1e6b4777cdb6024d3c199de258f3c08f"><param name="Name" value="GetCurrentAvailableRamInMegaBytes"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a07530e9adc1b954de721fead64442f8b"><param name="Name" value="GetCurrentCpuSpeedInHz"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a5a8f02aee62c9cfa6b782e257d1229ce"><param name="Name" value="GetDataFolderPath"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aa17d9a92efeacf8774e1c0e66f7b0105"><param name="Name" value="GetDefaultIGP"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a8c011cddc04cd51349cd822f36f11615"><param name="Name" value="GetDeviceArchitecture"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ae1e923f9d1faedaf470ed65fa2ebc5a1"><param name="Name" value="GetDeviceChipset"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a1f3ffea6eda745b5c5da8e1ccf70d1ce"><param name="Name" value="GetDeviceLanguage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a3384737fe83b21ab2d4f89c3f3319b5f"><param name="Name" value="GetDeviceManufacturer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#af1d5b49c32995d2de0593aa0e4497abc"><param name="Name" value="GetDeviceMicroArch"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ade536b4abd0e87718e8f8a4a88259701"><param name="Name" value="GetDeviceModel"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a11aac4b8a996488b11367ce525f7b77f"><param name="Name" value="GetDiskFreeSpace"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a077303c5bded21a69fed2efd4f0e124b"><param name="Name" value="GetFirmware"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a69f5c168a30d225504709759d1c416f4"><param name="Name" value="GetGameName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a5d6ea2196db3925dd50ea8fb66cb0884"><param name="Name" value="GetGoogleAdId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a6252319adff82086060f3ed0f890b817"><param name="Name" value="GetGoogleAdIdStatus"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a3ff9dfcd20f2dfa2b58f7c158117147b"><param name="Name" value="GetHDIDFVStr"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a27a446857ad98b2fda9d7c088c3189cd"><param name="Name" value="GetHeight"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a05f44c4c6fa2511972ed1662366a9a63"><param name="Name" value="GetHeightInInch"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#acb2a45e000dc48b96987c80b99ecb806"><param name="Name" value="GetIMEI"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ad2ac675523eb8e5492fc735589255c0c"><param name="Name" value="GetInjectedIGP"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aeda82965bb21659b9e1c5203cdc03ddb"><param name="Name" value="GetInjectedSerialKey"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ad5c35e7878780b0452d150b0c3722eaa"><param name="Name" value="GetIsACCharging"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a3831539d016dae1ba8a5f88fabc4a5f8"><param name="Name" value="GetIsBatteryCharging"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a40fed617642c7f338c491d2c5723076c"><param name="Name" value="GetIsUsbCharging"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a70da6678dccc5a9e8e143e2c3c57fe0c"><param name="Name" value="GetJavaVm"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ad05e7c1840ea0624a0a60c9e71ebaaa7"><param name="Name" value="GetMacAddress"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#acbe230fe3fa1017a1bc7d4858623066b"><param name="Name" value="GetMaxAvailableRamInMegaBytes"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a9eac1df25c4b43f3235338eaf85d3a42"><param name="Name" value="GetMaxCpuSpeedInHz"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a179b8874f9444873e9e06917a77b5d14"><param name="Name" value="GetMetaDataValue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a5018622344e7364d70cf812722fba4a5"><param name="Name" value="GetNativeWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aad8f9533561b6c46a61e0023d5bee76b"><param name="Name" value="GetNumberOfCpuCores"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aec55bead6f936d635748d4e7506bff1a"><param name="Name" value="GetObbFolderPath"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a9053cc844923fc76aac678eaa95f5629"><param name="Name" value="GetSaveFolderPath"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aa71ed8738220a6cd22f631ab6cc0beab"><param name="Name" value="GetSdCardPath"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a22139c6a2347b0bba338abdd131982a0"><param name="Name" value="GetSerial"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#acad75897c734fb5e86b69a091553f7b5"><param name="Name" value="GetUserLocation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#adbca7ca324a620dd28372f701d5a773c"><param name="Name" value="GetWebviewUserAgent"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ae9b0bf8799e944483d261f07b219ba8e"><param name="Name" value="GetWidth"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aa66dd9f6a193c877692a9b33807d0098"><param name="Name" value="GetWidthInInch"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a194d197824e8a025fd650ae54d70946c"><param name="Name" value="HttpExecuteAsync"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ade52ff8657e91c3eceeecf3edc49e593"><param name="Name" value="IsAppEnc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aafdac827dac714dfa1ee7651d88b6ab7"><param name="Name" value="IsDeviceRouted"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#abd3e8c46aed96796ae5d484d7baeb428"><param name="Name" value="IsVideoCompleted"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ae117bec5fd3e5da576816180a268b1aa"><param name="Name" value="Jni_CheckForExceptions"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a92e5307361a9131a3b70c518e2f48915"><param name="Name" value="LaunchBrowser"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ae0224edcd890c4d128299b4069ee6777"><param name="Name" value="LaunchVideoPlayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#acc78769dc58f0db9eb448c76576ec081"><param name="Name" value="MinimizeApplication"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ae0db8b0fbd9e52e213a344d64eba8b8f"><param name="Name" value="ReadInfoFromSystemFile"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aa65d3a5d6dddf212fa7d49513eca6fd1"><param name="Name" value="ReadSharedPreference"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a73a8637ba58c006999a3139ed6433874"><param name="Name" value="ReadSharedPreferenceBool"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#af5485ef8b9a87c3f16dc7fad15238271"><param name="Name" value="ReadSharedPreferenceInt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a66a621dbd390e7483536d416e4a86ccb"><param name="Name" value="ReadSharedPreferenceLong"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a48c05bb767f25daf68169c4d0f4fcc40"><param name="Name" value="ReadSharedPreferenceString"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a3e7a1f97cb5b3cfe0826e52c43ca92d8"><param name="Name" value="RemoveDirectoryRecursively"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a85587c7095a02555d03726697b517034"><param name="Name" value="SavePreferenceBool"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a64504426698f6acfc02028985a4c969f"><param name="Name" value="SavePreferenceBundle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a614ba39e17f2d91ef31ab6d70cf79c34"><param name="Name" value="SavePreferenceInt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ab44ae095ff01c29d4bb572e5edf495ea"><param name="Name" value="SavePreferenceLong"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a7eecda1bb42e37116e56c86c9324e7cd"><param name="Name" value="SavePreferenceString"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ada36799fb829ba0550a8ff588e268e3b"><param name="Name" value="SetKeepScreenOn"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aff7ccb424639fd15a84a0d2e0d062279"><param name="Name" value="SetOrientationState"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#af6996e62223f59e479c333bd155861a0"><param name="Name" value="ShowCannotGoBack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#abc62cdd53a9a4936d6d2ef1651706bb5"><param name="Name" value="ShowLogo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a4f69a2d7d736ca78c53de4532b8ab118"><param name="Name" value="ShowWelcomeScreen"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_battery_info.html"><param name="Name" value="acp_utils::helpers::BatteryInfo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_battery_info.html#aca9e7c7489047fec312e47bfc283efe7"><param name="Name" value="sACCharge"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_battery_info.html#a74cd36b9b5cbb105ffb6df28dbd7966f"><param name="Name" value="sBatteryStatus"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_battery_info.html#a7930a9a65c02265d7f407adb552e3ae9"><param name="Name" value="sIsCharging"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_battery_info.html#adbf0650b6912dfc4d82eaf2a12cddbf2"><param name="Name" value="sUsbCharge"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_display_info.html"><param name="Name" value="acp_utils::helpers::DisplayInfo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_display_info.html#a48594939c2f67b516b9de0a84858725e"><param name="Name" value="nHeight"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_display_info.html#a56ad77de19ec568afc23b9b0cc5edeb1"><param name="Name" value="nWidth"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_display_info.html#a861c4f3145849f4f1b936e853974ffea"><param name="Name" value="xDpi"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_display_info.html#a33fc80d692ebab37e805741e809ce96e"><param name="Name" value="yDpi"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_game_specific_identifiers.html"><param name="Name" value="acp_utils::helpers::GameSpecificIdentifiers"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_game_specific_identifiers.html#aa1a4bcb3fe6c76708e5b6da6080f63e8"><param name="Name" value="sDefaultIgp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_game_specific_identifiers.html#aab0cda5637ba578f5b5ceace4c399930"><param name="Name" value="sGameName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_game_specific_identifiers.html#a0d93954e25e28df27aca36600ccc9e96"><param name="Name" value="sInjectedIgp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_game_specific_identifiers.html#a6e6a6caf06b20d23beea3e802c720092"><param name="Name" value="sInjectedSerialKey"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html"><param name="Name" value="acp_utils::helpers::HardwareIdentifiers"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a21d9289c520901d7393917fcc6d8bfac"><param name="Name" value="sAndroidId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a1aff9b0a815eb8804f55a59d15c86a77"><param name="Name" value="sBuildDevice"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a624816afb42f2c3f222136a4f6239c21"><param name="Name" value="sBuildProduct"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#af8cbfbb679e30f3f97ac825804c04189"><param name="Name" value="sCpuSerial"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a6e3e8c9d62716f3f5dc31491821ab101"><param name="Name" value="sDeviceManufacturer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#aca8c1b62bd6ebdace952323f2f3b0105"><param name="Name" value="sDeviceModel"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a7b3b3e6c523191363b07ae02637aa4df"><param name="Name" value="sEthernetMacAddress"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a1c93fb51ea23f97b244f66bde467f35f"><param name="Name" value="sFirmware"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a4b7a66b4a40ad47e166bacd0b744f523"><param name="Name" value="sHdidfv"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#ae7fd22e3fe38b448476717dc28980ca7"><param name="Name" value="sImei"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#aba20e110082c82707de117dc752ce397"><param name="Name" value="sSerial"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a86edcffb36eda2a12c7a19af7e079f2c"><param name="Name" value="sWiFiMacAddress"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_local_pn.html"><param name="Name" value="acp_utils::helpers::LocalPn"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_local_pn.html#afcb4f7066b064ab8e43dd8654165ba0f"><param name="Name" value="pn_data"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_local_pn.html#aea1c94b39d05f9e01e88084570f8b1d3"><param name="Name" value="pn_group"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_local_pn.html#abce8fab3e21a95c769f300d18673cc54"><param name="Name" value="pn_schedule"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_shared_preference_container.html"><param name="Name" value="acp_utils::helpers::SharedPreferenceContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_shared_preference_container.html#a4f4f126b39848e9ec708c2a066dc7334"><param name="Name" value="key"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_shared_preference_container.html#aaabc32ac90a83280eb1874a0c628a947"><param name="Name" value="pName"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_software_identifiers.html"><param name="Name" value="acp_utils::helpers::SoftwareIdentifiers"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_software_identifiers.html#acf6af0930cbb0dd70c45615a68442602"><param name="Name" value="sApkPath"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_software_identifiers.html#a9dd94a0b768c80caad5b6b1335ea2871"><param name="Name" value="sCarrierName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_software_identifiers.html#ae8e70c6f53cc9c485c54f03c607a7263"><param name="Name" value="sCountry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_software_identifiers.html#a09564392b6708bf31664cc7cc5f4d5df"><param name="Name" value="sDeviceLanguage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_software_identifiers.html#a4bbc715f4cd007682ff5a18c82c56188"><param name="Name" value="sWebviewUserAgent"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_system_path.html"><param name="Name" value="acp_utils::helpers::SystemPath"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_system_path.html#a4de88f07230939afec73a24c7fa4ada5"><param name="Name" value="sData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_system_path.html#a9e8e62b4b0ffe17cbd5c9be18acc7504"><param name="Name" value="sObb"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_system_path.html#a5394a5f3369691ef4e8e8ddde74530c0"><param name="Name" value="sSave"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_system_path.html#aed94b8964ff77140fed93ad9fd9ac9d9"><param name="Name" value="sSdCard"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_system_path.html#a4d50629392a0abf6ae84517ad549fefe"><param name="Name" value="sTemp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_user_location.html"><param name="Name" value="acp_utils::helpers::UserLocation"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_user_location.html#aaa571000ba80f775a619021c36d8fea9"><param name="Name" value="accuracy"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_user_location.html#a1f166c265d2318aa5b4b5650d7e84aa8"><param name="Name" value="latitude"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_user_location.html#ab62d6f6a6526e6c782e88ead5ab88898"><param name="Name" value="longitude"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_user_location.html#af18b22bb6576c49bc580ddee078723dc"><param name="Name" value="status"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_user_location.html#a7463af68388797f59103394a6900ee0c"><param name="Name" value="time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html"><param name="Name" value="acp_utils::modules::AdManager"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#a72317abf4f8503fc7ac4e84e7f76d4a5"><param name="Name" value="HideBanner"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#a2f9aec623ec1e05f1d8392331e1babbc"><param name="Name" value="IsFreeCashReady"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#afbafefc5d2248af33d14ec359c6975bf"><param name="Name" value="LoadFreeCash"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#ac124c985ae75827941a3231f08dc2971"><param name="Name" value="MarkPAU"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#a4e39757bbd7c5dd47a4d3ef365eff5f7"><param name="Name" value="ResponseForUrlRequest"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#a47b9f849ded88f074114de810e345f02"><param name="Name" value="SetBannerProperties"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#a37f82a376bbd5e2b8681c0ef31f1a92f"><param name="Name" value="ShowBanner"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#abba3add4e4044e8de01aeec76b88af16"><param name="Name" value="ShowFreeCash"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#a2a3f636730e52d30c6c8d3708a26e6af"><param name="Name" value="ShowInterstitial"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html"><param name="Name" value="acp_utils::modules::AndroidSensorManager"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html#ab911c61e35711c21364a6cf5538a45a9"><param name="Name" value="AndroidDestroySensors"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html#a01673f1ad3432a2dc252ba1a2a2ac98f"><param name="Name" value="AndroidDisableSensors"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html#a5e0d0d7b3864648a18f25aa379baf78c"><param name="Name" value="AndroidEnableSensors"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html#a05f2d4665311d2a5d24b4f056714abb1"><param name="Name" value="AndroidInitSensors"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html#a8a52d9d770ad9e85ccc14de0519ae66a"><param name="Name" value="RegisterCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html#a6d514e489df2bcd17a321389098f72dc"><param name="Name" value="UnregisterCallback"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html"><param name="Name" value="acp_utils::modules::AssetReader"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#a991a7e82d337bdcfc6d117d6eb14714c"><param name="Name" value="assetManager"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#a68eb734350d0e9ddf9f49ff8f6b4c901"><param name="Name" value="close"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#a5c3e2e87945265f4f7c59577c6497699"><param name="Name" value="InitAssetManager"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#af79535fd367899421dfca33a93b856cb"><param name="Name" value="open"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#a05e581ed0c5e91dd8bf44db21cddfce1"><param name="Name" value="read"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#a606a2c74c36a24a80ca006abbbd03df0"><param name="Name" value="seek"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#a0daa5ca440aaa1185845615f749efd07"><param name="Name" value="write"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_data_sharing.html"><param name="Name" value="acp_utils::modules::DataSharing"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_data_sharing.html#a9a87af42d46f20e67b6456690bfdb9f8"><param name="Name" value="DeleteSharedValue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_data_sharing.html#a8710203ab40a074328cd9eb9caaa5740"><param name="Name" value="GetSharedValue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_data_sharing.html#a01b45f17a0aea01e80369cdc4a0255ea"><param name="Name" value="IsSharedValue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_data_sharing.html#afb7cc4c48e5151907203d32c9694413c"><param name="Name" value="SetSharedValue"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html"><param name="Name" value="acp_utils::modules::HidController"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#ade6c18e35fa98499b6745606d16d6f0a"><param name="Name" value="DispatchEventToCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a93fa5caba4f3ce17484dc94c8c5ac668"><param name="Name" value="GetControllerName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a5e964ed00876b72db30b58c23545fe56"><param name="Name" value="OnControllerStateChanged"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a8fe3635d577b580d87260fd0661f3caa"><param name="Name" value="RegisterEventCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a8c66cb665f86aa3101271cc5624f79f1"><param name="Name" value="RegisterStateCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a5055142668ae792f3751697d559709ca"><param name="Name" value="s_ControllerName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a969df83bbab712f2478911e356e81c3c"><param name="Name" value="UnRegisterEventCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a5336b4327650bb8c07972d233bc00e29"><param name="Name" value="UnRegisterStateCallback"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html"><param name="Name" value="acp_utils::modules::InGameBrowser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a84ff05da9e93326403bcebbe3313dc04"><param name="Name" value="GetUnreadNewsNumber"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a87c0a853be54494a533d3c3ebeda2167"><param name="Name" value="LaunchBrowser"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a77142af7b88fb012f7db63b6b5e9a9b1"><param name="Name" value="RedirectNewVersionScreen"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a6ee05b1b7873e9dafab2ee7737b9bc4c"><param name="Name" value="RedirectRateThisApp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a0bddb3e1e1654cb50616e0484b76b372"><param name="Name" value="RefreshUnreadNewsNumber"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a6beb9c74ddf177d055ff2691e015e70f"><param name="Name" value="ShowCustomerCare"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a62e13091af6b2327a9fdd5e9acc3da0c"><param name="Name" value="ShowForum"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a1652d82d17efaa7ab4e17b76fafae9b9"><param name="Name" value="ShowNews"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#ade0a645a4c87a0e6a1c10f4ad8850735"><param name="Name" value="ShowPrivacyPolicy"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a79ddf68cf502e7f14fa0fae313f8d8cf"><param name="Name" value="ShowTermsOfUse"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_promotion.html"><param name="Name" value="acp_utils::modules::InGamePromotion"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_promotion.html#a4810e5ae8b3c8bb29ed054a3292375b1"><param name="Name" value="LaunchIGP"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_promotion.html#a742a91ddfa21938ecb43591980f9b7f9"><param name="Name" value="RetrieveItems"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1modules_1_1_keyboard_options.html"><param name="Name" value="acp_utils::modules::KeyboardOptions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1modules_1_1_keyboard_options.html#ab224679497e9592af79dc25799dea84b"><param name="Name" value="enterKeyFunction"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1modules_1_1_keyboard_options.html#a5d494f1be65171dee2197da9baa28e33"><param name="Name" value="fullscreenOption"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1modules_1_1_keyboard_options.html#a1d5e9a902a78129af26a0b2d9cf053c1"><param name="Name" value="keyboardType"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html"><param name="Name" value="acp_utils::modules::SimplifiedPN"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#a1181268363eaf16ffbb6da4771de2972"><param name="Name" value="AllowOnlineNotifications"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#a04b73de1b41ccfccd3158b4efc4fb9d7"><param name="Name" value="AreOnlineNotificationsEnabled"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#a72062508b79b832c6987f4db7bc2fb73"><param name="Name" value="DeleteMessageGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#a474c241ffc9a98f33ef4df8b0d0430bb"><param name="Name" value="GetDeviceToken"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#ad54200bf0c55cc64dcf21b2146abd9e8"><param name="Name" value="IsAppLaunchedFromPN"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#a60f287f7a3b50c32d8601b4e03143ee1"><param name="Name" value="SendMessage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#ae55f97f071942afb5cc5b9a12693aaf3"><param name="Name" value="SendPnCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#a4b0db6b8e139c510df7fbe12b77adda9"><param name="Name" value="ShowAppDetailsSettings"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html"><param name="Name" value="acp_utils::modules::VirtualKeyboard"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#a8a6fccd6a2559a8f9d87173dece376ec"><param name="Name" value="GetKeyboardText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#aafe9f4f4eb2e3168523946d7101929a8"><param name="Name" value="HideKeyboard"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#a63b804647f1d8f9f9496d9eb1881d27c"><param name="Name" value="IsKeyboardVisible"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#a8dc7fd5d20cf483c4af32ecdb93c86bf"><param name="Name" value="s_vKeyboardCB"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#a7d470d5299e3329a463e0eb3c3796dde"><param name="Name" value="SetKeyboardCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#a3adf838fb2660e641d233d61c2ab1232"><param name="Name" value="SetKeyboardText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#a7c1a76c2f16eeddfb17bfbfd41f9c1b5"><param name="Name" value="ShowKeyboard"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1_scope_get_env.html"><param name="Name" value="acp_utils::ScopeGetEnv"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1_scope_get_env.html#a5b603e9f271bc77801eb3cf6000a40c3"><param name="Name" value="ScopeGetEnv"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceacp__utils.html"><param name="Name" value="acp_utils"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#a1181268363eaf16ffbb6da4771de2972"><param name="Name" value="AllowOnlineNotifications"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html#ab911c61e35711c21364a6cf5538a45a9"><param name="Name" value="AndroidDestroySensors"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html#a01673f1ad3432a2dc252ba1a2a2ac98f"><param name="Name" value="AndroidDisableSensors"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html#a5e0d0d7b3864648a18f25aa379baf78c"><param name="Name" value="AndroidEnableSensors"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html#a05f2d4665311d2a5d24b4f056714abb1"><param name="Name" value="AndroidInitSensors"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#a04b73de1b41ccfccd3158b4efc4fb9d7"><param name="Name" value="AreOnlineNotificationsEnabled"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#a991a7e82d337bdcfc6d117d6eb14714c"><param name="Name" value="assetManager"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#a68eb734350d0e9ddf9f49ff8f6b4c901"><param name="Name" value="close"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a4693ebfdefecf841dc0f277083e451d0"><param name="Name" value="CloseLogo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#afabec3370e6c593a885b22d3542574b9"><param name="Name" value="DeleteFile"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#a72062508b79b832c6987f4db7bc2fb73"><param name="Name" value="DeleteMessageGroup"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_data_sharing.html#a9a87af42d46f20e67b6456690bfdb9f8"><param name="Name" value="DeleteSharedValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="deprecated.html"><param name="Name" value="Deprecated List"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a34ca294e4f98cc5e649c31b1179a5b3e"><param name="Name" value="DisableUserLocation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#ade6c18e35fa98499b6745606d16d6f0a"><param name="Name" value="DispatchEventToCallback"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aa5359350a0af69cc8672b09ae20b8037"><param name="Name" value="EnableUserLocation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1modules_1_1_keyboard_options.html#ab224679497e9592af79dc25799dea84b"><param name="Name" value="enterKeyFunction"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a8b4215de81c5b9a1edc5ad4cb8099c9e"><param name="Name" value="ExitApplication"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1modules_1_1_keyboard_options.html#a5d494f1be65171dee2197da9baa28e33"><param name="Name" value="fullscreenOption"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#afd158b9ba27d36ad4ea515067162abc2"><param name="Name" value="GenericUnzipArchive"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a30d20918a263a51a98677c4ae2569854"><param name="Name" value="GetAndroidId"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a757164b50b49b46c86b212984e5b85ac"><param name="Name" value="GetApkPath"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a99b4648fe3bce5bd368d145f3eb1f192"><param name="Name" value="GetAssetResource"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a283e304754907b6d4b9f14f3338b21cb"><param name="Name" value="GetBatteryStatus"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ac8ef96bce98ba2a923ceacf572d84a04"><param name="Name" value="GetBuildDevice"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a0c56cc6385b7a7b0abfefda3c390c0eb"><param name="Name" value="GetBuildProduct"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a03be69b7199fbd00d114ea579046e27d"><param name="Name" value="GetCacheFolderPath"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a1fe2828cecf6085fba8f1ac08197e112"><param name="Name" value="GetCarrierName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#adef40a4183cbe2cd2525403f6fe79dea"><param name="Name" value="GetClass"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aa8852a9ab4898eb456ada4eb0ddaa46e"><param name="Name" value="GetConnectionType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a93fa5caba4f3ce17484dc94c8c5ac668"><param name="Name" value="GetControllerName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a8064f10e7320828ed6dfe3643fbfc8c9"><param name="Name" value="GetCountry"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#afbbebac517003739ecf3a0dcad0a8e77"><param name="Name" value="GetCPUSerial"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a1e6b4777cdb6024d3c199de258f3c08f"><param name="Name" value="GetCurrentAvailableRamInMegaBytes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a07530e9adc1b954de721fead64442f8b"><param name="Name" value="GetCurrentCpuSpeedInHz"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a5a8f02aee62c9cfa6b782e257d1229ce"><param name="Name" value="GetDataFolderPath"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aa17d9a92efeacf8774e1c0e66f7b0105"><param name="Name" value="GetDefaultIGP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a8c011cddc04cd51349cd822f36f11615"><param name="Name" value="GetDeviceArchitecture"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ae1e923f9d1faedaf470ed65fa2ebc5a1"><param name="Name" value="GetDeviceChipset"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a1f3ffea6eda745b5c5da8e1ccf70d1ce"><param name="Name" value="GetDeviceLanguage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a3384737fe83b21ab2d4f89c3f3319b5f"><param name="Name" value="GetDeviceManufacturer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#af1d5b49c32995d2de0593aa0e4497abc"><param name="Name" value="GetDeviceMicroArch"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ade536b4abd0e87718e8f8a4a88259701"><param name="Name" value="GetDeviceModel"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#a474c241ffc9a98f33ef4df8b0d0430bb"><param name="Name" value="GetDeviceToken"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a11aac4b8a996488b11367ce525f7b77f"><param name="Name" value="GetDiskFreeSpace"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a077303c5bded21a69fed2efd4f0e124b"><param name="Name" value="GetFirmware"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a69f5c168a30d225504709759d1c416f4"><param name="Name" value="GetGameName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a5d6ea2196db3925dd50ea8fb66cb0884"><param name="Name" value="GetGoogleAdId"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a6252319adff82086060f3ed0f890b817"><param name="Name" value="GetGoogleAdIdStatus"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a3ff9dfcd20f2dfa2b58f7c158117147b"><param name="Name" value="GetHDIDFVStr"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a27a446857ad98b2fda9d7c088c3189cd"><param name="Name" value="GetHeight"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a05f44c4c6fa2511972ed1662366a9a63"><param name="Name" value="GetHeightInInch"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#acb2a45e000dc48b96987c80b99ecb806"><param name="Name" value="GetIMEI"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ad2ac675523eb8e5492fc735589255c0c"><param name="Name" value="GetInjectedIGP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aeda82965bb21659b9e1c5203cdc03ddb"><param name="Name" value="GetInjectedSerialKey"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ad5c35e7878780b0452d150b0c3722eaa"><param name="Name" value="GetIsACCharging"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a3831539d016dae1ba8a5f88fabc4a5f8"><param name="Name" value="GetIsBatteryCharging"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a40fed617642c7f338c491d2c5723076c"><param name="Name" value="GetIsUsbCharging"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a70da6678dccc5a9e8e143e2c3c57fe0c"><param name="Name" value="GetJavaVm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#a8a6fccd6a2559a8f9d87173dece376ec"><param name="Name" value="GetKeyboardText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ad05e7c1840ea0624a0a60c9e71ebaaa7"><param name="Name" value="GetMacAddress"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#acbe230fe3fa1017a1bc7d4858623066b"><param name="Name" value="GetMaxAvailableRamInMegaBytes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a9eac1df25c4b43f3235338eaf85d3a42"><param name="Name" value="GetMaxCpuSpeedInHz"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a179b8874f9444873e9e06917a77b5d14"><param name="Name" value="GetMetaDataValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a5018622344e7364d70cf812722fba4a5"><param name="Name" value="GetNativeWindow"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aad8f9533561b6c46a61e0023d5bee76b"><param name="Name" value="GetNumberOfCpuCores"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aec55bead6f936d635748d4e7506bff1a"><param name="Name" value="GetObbFolderPath"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a9053cc844923fc76aac678eaa95f5629"><param name="Name" value="GetSaveFolderPath"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aa71ed8738220a6cd22f631ab6cc0beab"><param name="Name" value="GetSdCardPath"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a22139c6a2347b0bba338abdd131982a0"><param name="Name" value="GetSerial"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_data_sharing.html#a8710203ab40a074328cd9eb9caaa5740"><param name="Name" value="GetSharedValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a84ff05da9e93326403bcebbe3313dc04"><param name="Name" value="GetUnreadNewsNumber"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#acad75897c734fb5e86b69a091553f7b5"><param name="Name" value="GetUserLocation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceacp__utils.html#ade6a9dcde52ed5f3f460588de7f29a29"><param name="Name" value="GetVM"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#adbca7ca324a620dd28372f701d5a773c"><param name="Name" value="GetWebviewUserAgent"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ae9b0bf8799e944483d261f07b219ba8e"><param name="Name" value="GetWidth"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aa66dd9f6a193c877692a9b33807d0098"><param name="Name" value="GetWidthInInch"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#a72317abf4f8503fc7ac4e84e7f76d4a5"><param name="Name" value="HideBanner"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#aafe9f4f4eb2e3168523946d7101929a8"><param name="Name" value="HideKeyboard"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a194d197824e8a025fd650ae54d70946c"><param name="Name" value="HttpExecuteAsync"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#a5c3e2e87945265f4f7c59577c6497699"><param name="Name" value="InitAssetManager"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ade52ff8657e91c3eceeecf3edc49e593"><param name="Name" value="IsAppEnc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#ad54200bf0c55cc64dcf21b2146abd9e8"><param name="Name" value="IsAppLaunchedFromPN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aafdac827dac714dfa1ee7651d88b6ab7"><param name="Name" value="IsDeviceRouted"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#a2f9aec623ec1e05f1d8392331e1babbc"><param name="Name" value="IsFreeCashReady"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#a63b804647f1d8f9f9496d9eb1881d27c"><param name="Name" value="IsKeyboardVisible"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_data_sharing.html#a01b45f17a0aea01e80369cdc4a0255ea"><param name="Name" value="IsSharedValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#abd3e8c46aed96796ae5d484d7baeb428"><param name="Name" value="IsVideoCompleted"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ae117bec5fd3e5da576816180a268b1aa"><param name="Name" value="Jni_CheckForExceptions"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_shared_preference_container.html#a4f4f126b39848e9ec708c2a066dc7334"><param name="Name" value="key"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1modules_1_1_keyboard_options.html#a1d5e9a902a78129af26a0b2d9cf053c1"><param name="Name" value="keyboardType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_user_location.html#a1f166c265d2318aa5b4b5650d7e84aa8"><param name="Name" value="latitude"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a92e5307361a9131a3b70c518e2f48915"><param name="Name" value="LaunchBrowser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a92e5307361a9131a3b70c518e2f48915"><param name="Name" value="acp_utils::api::PackageUtils"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a87c0a853be54494a533d3c3ebeda2167"><param name="Name" value="acp_utils::modules::InGameBrowser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_promotion.html#a4810e5ae8b3c8bb29ed054a3292375b1"><param name="Name" value="LaunchIGP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ae0224edcd890c4d128299b4069ee6777"><param name="Name" value="LaunchVideoPlayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#afbafefc5d2248af33d14ec359c6975bf"><param name="Name" value="LoadFreeCash"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_user_location.html#ab62d6f6a6526e6c782e88ead5ab88898"><param name="Name" value="longitude"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#ac124c985ae75827941a3231f08dc2971"><param name="Name" value="MarkPAU"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#acc78769dc58f0db9eb448c76576ec081"><param name="Name" value="MinimizeApplication"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_display_info.html#a48594939c2f67b516b9de0a84858725e"><param name="Name" value="nHeight"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_display_info.html#a56ad77de19ec568afc23b9b0cc5edeb1"><param name="Name" value="nWidth"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a5e964ed00876b72db30b58c23545fe56"><param name="Name" value="OnControllerStateChanged"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#af79535fd367899421dfca33a93b856cb"><param name="Name" value="open"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_local_pn.html#afcb4f7066b064ab8e43dd8654165ba0f"><param name="Name" value="pn_data"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_local_pn.html#aea1c94b39d05f9e01e88084570f8b1d3"><param name="Name" value="pn_group"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_local_pn.html#abce8fab3e21a95c769f300d18673cc54"><param name="Name" value="pn_schedule"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_shared_preference_container.html#aaabc32ac90a83280eb1874a0c628a947"><param name="Name" value="pName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#a05e581ed0c5e91dd8bf44db21cddfce1"><param name="Name" value="read"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ae0db8b0fbd9e52e213a344d64eba8b8f"><param name="Name" value="ReadInfoFromSystemFile"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aa65d3a5d6dddf212fa7d49513eca6fd1"><param name="Name" value="ReadSharedPreference"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a73a8637ba58c006999a3139ed6433874"><param name="Name" value="ReadSharedPreferenceBool"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#af5485ef8b9a87c3f16dc7fad15238271"><param name="Name" value="ReadSharedPreferenceInt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a66a621dbd390e7483536d416e4a86ccb"><param name="Name" value="ReadSharedPreferenceLong"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a48c05bb767f25daf68169c4d0f4fcc40"><param name="Name" value="ReadSharedPreferenceString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a77142af7b88fb012f7db63b6b5e9a9b1"><param name="Name" value="RedirectNewVersionScreen"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a6ee05b1b7873e9dafab2ee7737b9bc4c"><param name="Name" value="RedirectRateThisApp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a0bddb3e1e1654cb50616e0484b76b372"><param name="Name" value="RefreshUnreadNewsNumber"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html#a8a52d9d770ad9e85ccc14de0519ae66a"><param name="Name" value="RegisterCallback"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a8fe3635d577b580d87260fd0661f3caa"><param name="Name" value="RegisterEventCallback"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a8c66cb665f86aa3101271cc5624f79f1"><param name="Name" value="RegisterStateCallback"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a3e7a1f97cb5b3cfe0826e52c43ca92d8"><param name="Name" value="RemoveDirectoryRecursively"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="req.html"><param name="Name" value="Requirements"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#a4e39757bbd7c5dd47a4d3ef365eff5f7"><param name="Name" value="ResponseForUrlRequest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_promotion.html#a742a91ddfa21938ecb43591980f9b7f9"><param name="Name" value="RetrieveItems"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a5055142668ae792f3751697d559709ca"><param name="Name" value="s_ControllerName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#a8dc7fd5d20cf483c4af32ecdb93c86bf"><param name="Name" value="s_vKeyboardCB"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_battery_info.html#aca9e7c7489047fec312e47bfc283efe7"><param name="Name" value="sACCharge"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a21d9289c520901d7393917fcc6d8bfac"><param name="Name" value="sAndroidId"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_software_identifiers.html#acf6af0930cbb0dd70c45615a68442602"><param name="Name" value="sApkPath"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a85587c7095a02555d03726697b517034"><param name="Name" value="SavePreferenceBool"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a64504426698f6acfc02028985a4c969f"><param name="Name" value="SavePreferenceBundle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a614ba39e17f2d91ef31ab6d70cf79c34"><param name="Name" value="SavePreferenceInt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ab44ae095ff01c29d4bb572e5edf495ea"><param name="Name" value="SavePreferenceLong"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a7eecda1bb42e37116e56c86c9324e7cd"><param name="Name" value="SavePreferenceString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_battery_info.html#a74cd36b9b5cbb105ffb6df28dbd7966f"><param name="Name" value="sBatteryStatus"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a1aff9b0a815eb8804f55a59d15c86a77"><param name="Name" value="sBuildDevice"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a624816afb42f2c3f222136a4f6239c21"><param name="Name" value="sBuildProduct"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_software_identifiers.html#a9dd94a0b768c80caad5b6b1335ea2871"><param name="Name" value="sCarrierName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1_scope_get_env.html#a5b603e9f271bc77801eb3cf6000a40c3"><param name="Name" value="ScopeGetEnv"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_software_identifiers.html#ae8e70c6f53cc9c485c54f03c607a7263"><param name="Name" value="sCountry"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#af8cbfbb679e30f3f97ac825804c04189"><param name="Name" value="sCpuSerial"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_system_path.html#a4de88f07230939afec73a24c7fa4ada5"><param name="Name" value="sData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_game_specific_identifiers.html#aa1a4bcb3fe6c76708e5b6da6080f63e8"><param name="Name" value="sDefaultIgp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_software_identifiers.html#a09564392b6708bf31664cc7cc5f4d5df"><param name="Name" value="sDeviceLanguage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a6e3e8c9d62716f3f5dc31491821ab101"><param name="Name" value="sDeviceManufacturer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#aca8c1b62bd6ebdace952323f2f3b0105"><param name="Name" value="sDeviceModel"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#a606a2c74c36a24a80ca006abbbd03df0"><param name="Name" value="seek"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#a60f287f7a3b50c32d8601b4e03143ee1"><param name="Name" value="SendMessage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#ae55f97f071942afb5cc5b9a12693aaf3"><param name="Name" value="SendPnCallback"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#a47b9f849ded88f074114de810e345f02"><param name="Name" value="SetBannerProperties"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a7b3b3e6c523191363b07ae02637aa4df"><param name="Name" value="sEthernetMacAddress"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#ada36799fb829ba0550a8ff588e268e3b"><param name="Name" value="SetKeepScreenOn"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#a7d470d5299e3329a463e0eb3c3796dde"><param name="Name" value="SetKeyboardCallback"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#a3adf838fb2660e641d233d61c2ab1232"><param name="Name" value="SetKeyboardText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#aff7ccb424639fd15a84a0d2e0d062279"><param name="Name" value="SetOrientationState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_data_sharing.html#afb7cc4c48e5151907203d32c9694413c"><param name="Name" value="SetSharedValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a1c93fb51ea23f97b244f66bde467f35f"><param name="Name" value="sFirmware"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_game_specific_identifiers.html#aab0cda5637ba578f5b5ceace4c399930"><param name="Name" value="sGameName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a4b7a66b4a40ad47e166bacd0b744f523"><param name="Name" value="sHdidfv"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_simplified_p_n.html#a4b0db6b8e139c510df7fbe12b77adda9"><param name="Name" value="ShowAppDetailsSettings"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#a37f82a376bbd5e2b8681c0ef31f1a92f"><param name="Name" value="ShowBanner"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#af6996e62223f59e479c333bd155861a0"><param name="Name" value="ShowCannotGoBack"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a6beb9c74ddf177d055ff2691e015e70f"><param name="Name" value="ShowCustomerCare"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a62e13091af6b2327a9fdd5e9acc3da0c"><param name="Name" value="ShowForum"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#abba3add4e4044e8de01aeec76b88af16"><param name="Name" value="ShowFreeCash"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_ad_manager.html#a2a3f636730e52d30c6c8d3708a26e6af"><param name="Name" value="ShowInterstitial"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_virtual_keyboard.html#a7c1a76c2f16eeddfb17bfbfd41f9c1b5"><param name="Name" value="ShowKeyboard"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#abc62cdd53a9a4936d6d2ef1651706bb5"><param name="Name" value="ShowLogo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a1652d82d17efaa7ab4e17b76fafae9b9"><param name="Name" value="ShowNews"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#ade0a645a4c87a0e6a1c10f4ad8850735"><param name="Name" value="ShowPrivacyPolicy"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_in_game_browser.html#a79ddf68cf502e7f14fa0fae313f8d8cf"><param name="Name" value="ShowTermsOfUse"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1api_1_1_package_utils.html#a4f69a2d7d736ca78c53de4532b8ab118"><param name="Name" value="ShowWelcomeScreen"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#ae7fd22e3fe38b448476717dc28980ca7"><param name="Name" value="sImei"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_game_specific_identifiers.html#a0d93954e25e28df27aca36600ccc9e96"><param name="Name" value="sInjectedIgp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_game_specific_identifiers.html#a6e6a6caf06b20d23beea3e802c720092"><param name="Name" value="sInjectedSerialKey"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_battery_info.html#a7930a9a65c02265d7f407adb552e3ae9"><param name="Name" value="sIsCharging"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_system_path.html#a9e8e62b4b0ffe17cbd5c9be18acc7504"><param name="Name" value="sObb"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_system_path.html#a5394a5f3369691ef4e8e8ddde74530c0"><param name="Name" value="sSave"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_system_path.html#aed94b8964ff77140fed93ad9fd9ac9d9"><param name="Name" value="sSdCard"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#aba20e110082c82707de117dc752ce397"><param name="Name" value="sSerial"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_user_location.html#af18b22bb6576c49bc580ddee078723dc"><param name="Name" value="status"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_system_path.html#a4d50629392a0abf6ae84517ad549fefe"><param name="Name" value="sTemp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_battery_info.html#adbf0650b6912dfc4d82eaf2a12cddbf2"><param name="Name" value="sUsbCharge"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_software_identifiers.html#a4bbc715f4cd007682ff5a18c82c56188"><param name="Name" value="sWebviewUserAgent"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_hardware_identifiers.html#a86edcffb36eda2a12c7a19af7e079f2c"><param name="Name" value="sWiFiMacAddress"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_user_location.html#a7463af68388797f59103394a6900ee0c"><param name="Name" value="time"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_android_sensor_manager.html#a6d514e489df2bcd17a321389098f72dc"><param name="Name" value="UnregisterCallback"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a969df83bbab712f2478911e356e81c3c"><param name="Name" value="UnRegisterEventCallback"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_hid_controller.html#a5336b4327650bb8c07972d233bc00e29"><param name="Name" value="UnRegisterStateCallback"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classacp__utils_1_1modules_1_1_asset_reader.html#a0daa5ca440aaa1185845615f749efd07"><param name="Name" value="write"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_display_info.html#a861c4f3145849f4f1b936e853974ffea"><param name="Name" value="xDpi"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structacp__utils_1_1helpers_1_1_display_info.html#a33fc80d692ebab37e805741e809ce96e"><param name="Name" value="yDpi"></OBJECT>
+</UL>
+</BODY>
+</HTML>

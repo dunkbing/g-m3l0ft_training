@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="VZW_ITEM_NOT_FOUND">Данный предмет недоступен для вашего устройства или удален из каталога V Cast Apps.</string>
+	<string name="INVALID_LICENSE">Вы не покупали данное приложение или срок покупки истек. Для покупки запустите клиент V Cast Apps.</string>
+	<string name="VZW_GENERAL_ERROR">В данный момент проверить вашу копию игры не удалось. Пожалуйста, попробуйте позже.</string>
+	<string name="VZW_SERVER_VALIDATION_REQUIRED">Пожалуйста, включите соединение с интернет, чтобы проверить вашу игру.</string>
+</resources>

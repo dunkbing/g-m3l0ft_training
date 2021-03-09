@@ -1,0 +1,7 @@
+If you tried to update to a revision higher then 3368 and encounter the following SVN error in this folder:
+
+External failed:.\Package\res_apk\InAppBilling\amazon\res 
+Error: The node Error: '.\Package\res_apk\InAppBilling\amazon\res\res_apk\InAppBilling\amazon\res\values\gmp_strings.xml' 
+Error: is not installable 
+
+please delete the res folder and update again.

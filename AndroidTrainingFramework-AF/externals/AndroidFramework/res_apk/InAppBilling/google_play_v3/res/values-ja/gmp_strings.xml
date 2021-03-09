@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">購入できません</string>
+	<string name="billing_not_supported_message">Google Play ストアの決済サービスは現在利用できません。ゲームは通常通りプレイできますが、アイテム等の購入はできません。</string>
+	<string name="cannot_connect_title">Google Play ストアに接続できません</string>
+	<string name="cannot_connect_message">このアプリはGoogle Play ストアに接続できません。お使いのGoogle Play ストアのバージョンが古い可能性があります。ゲームは通常通りプレイできますが、アイテム等の購入はできません。</string>
+	<string name="waitting_confirm">Googleがお取引内容を認証中です。購入手続きが完了するとアイテムリストが更新されます。</string>
+	<string name="pending_transaction">未処理のお取引があります</string>
+	<string name="purchase_success">購入完了しました</string>
+	<string name="purchase_unsuccess">購入できませんでした</string>
+	<string name="iab_retry">リトライ</string>
+	<string name="iab_cancel">キャンセル</string>
+	<string name="iab_ok">OK</string>
+</resources>

@@ -1,0 +1,15 @@
+@echo off
+if exist "%ANDROID_FRAMEWORK_CONFIG%\config.bat" (
+	call %ANDROID_FRAMEWORK_CONFIG%\config.bat
+)
+
+set OUTFILE=%DOWNLOAD_FILE_NAME_PVR%
+set DST_FOLDER=%WORK_FOLDER%\%OUTFILE%
+
+if not exist "%DST_FOLDER%" (
+	md %DST_FOLDER%
+)
+%TESTPACK% %WORK_FOLDER%\%OUTFILE%.info %OUTFILE% %DST_FOLDER%
+
+:END
+pause

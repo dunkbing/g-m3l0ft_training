@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="drmlib_optusjg_message_checking"><![CDATA[<div>檢查您對此遊戲的授權。我們正在連線您的伺服器以進行驗證，請耐心等候。</div>]]></string>
+	<string name="drmlib_optusjg_message_validated"><![CDATA[<div>已驗證您的授權。<br/><br/><a href="action:finish">馬上玩遊戲</a></div>]]></string>
+	<string name="drmlib_optusjg_message_noinet"><![CDATA[<div>我們無法驗證您對此遊戲的授權。需要網際網路連線。請<a href="action:retry">再試一次</a>或參閱<a href="action:help">說明</a>頁面。</div>]]></string>
+	<string name="drmlib_optusjg_message_refused"><![CDATA[<div>您對此遊戲的授權似乎無效。請閱讀我們的<a href="action:help">說明</a>區段。</div>]]></string>
+	<string name="drmlib_optusjg_message_help"><![CDATA[<div><b>說明</b><br/><br/>若要驗證您的遊戲，您必須連線到網際網路 (行動網路 (GPRS) 或 Wi-Fi)。<br/><br/>此授權僅適用於您的手機，您不可在另一支手機上安裝該遊戲。<br/><br/>如果您有任何問題，請諮詢我們的<a href="action:cs">客戶服務</a>。]]></string>
+	<string name="DOWNLOAD_FILES_NO_WIFI_QUESTION_OPTUS">您可以選擇使用 Wi-Fi 和 Optus 網路來下載此遊戲。在 Optus 網路下載此遊戲無需支付任何資料費用。</string>
+	<string name="USE_OPTUS">Optus 網路</string>
+</resources>

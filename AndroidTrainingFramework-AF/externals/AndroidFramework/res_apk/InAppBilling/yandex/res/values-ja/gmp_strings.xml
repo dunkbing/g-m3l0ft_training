@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">購入できません</string>
+    <string name="billing_not_supported_message">Market内課金サービスは現在利用できない状態となっているため、購入できません。（ゲームは通常通りプレイできます。）</string>
+    <string name="cannot_connect_title">Marketに接続できません</string>
+    <string name="cannot_connect_message">Marketのバージョンが古い可能性があるため、このアプリではMarketに接続できません。このアプリを引き続きご利用いただけますが、購入はできないでしょう。</string>
+    <string name="waitting_confirm">Yandexによる確認中です。購入が完了次第アイテムリストがアップデートされます。</string>
+    <string name="pending_transaction">処理が滞っている注文があります。</string>
+	<string name="purchase_success">購入しました</string>
+	<string name="purchase_unsuccess">購入できませんでした</string>	
+	<string name="iab_retry">リトライ</string>
+	<string name="iab_cancel">キャンセル</string>
+	<string name="iab_ok">OK</string>
+</resources>

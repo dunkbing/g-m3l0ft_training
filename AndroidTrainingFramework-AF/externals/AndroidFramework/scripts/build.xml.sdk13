@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="GLGame" default="help">
+  <!-- keep reference to environment vars -->
+  <property environment="env"/>
+
+  <property name="adb.device.arg" value="-d" />
+  <property name="java.encoding" value="ISO-8859-1" />
+
+  <condition property="Compile.Native.Enabled">
+    <and>
+      <equals arg1="${env.COMPILE_NATIVE}" arg2="1" />
+    </and>
+  </condition>
+
+  <!-- import properties -->
+  <property file="build.properties" />
+
+  <!-- The default.properties file is created and updated by the 'android'
+         tool, as well as ADT.
+         This file is an integral part of the build system for your
+         application and should be checked into Version Control Systems. -->
+  <!-- property file="default.properties" / -->
+
+  <!-- Custom Android task to deal with the project target, and import the
+         proper rules.
+         This requires ant 1.6.0 or above. -->
+  <path id="android.antlibs">
+    <pathelement path="${sdk.dir}/tools/lib/anttasks.jar" />
+    <pathelement path="${sdk.dir}/tools/lib/sdklib.jar" />
+    <pathelement path="${sdk.dir}/tools/lib/androidprefs.jar" />
+  </path>
+
+  <taskdef name="setup"
+      classname="com.android.ant.SetupTask"
+      classpathref="android.antlibs" />
+
+
+  <!-- Prebuild and precompile events -->
+  <target name="-pre-build">
+  </target>
+
+  <target name="-pre-compile">
+		<echo>Adding external jar libs to classpath...</echo>
+		<path id="tested.project.classpath">
+			<fileset dir="${ext.libs.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		</path>
+  </target>
+
+  <!-- Post compilation events-->
+  <target name="-post-compile">
+  </target>
+
+  <setup />
+
+  <!-- Override -obfuscate, should only include the classes of the game, not the 3rd party libs -->
+  <target name="-obfuscate" unless="do.not.compile">
+    <if condition="${proguard.enabled}">
+      <then>
+        <property name="obfuscate.absolute.dir" location="${out.absolute.dir}/proguard" />
+        <property name="preobfuscate.jar.file" value="${obfuscate.absolute.dir}/original.jar" />
+        <property name="obfuscated.jar.file" value="${obfuscate.absolute.dir}/obfuscated.jar" />
+        <!-- input for dex will be proguard's output -->
+        <property name="out.dex.input.absolute.dir" value="${obfuscated.jar.file}" />
+
+        <!-- Add Proguard Tasks -->
+        <property name="proguard.jar" location="${android.tools.dir}/proguard/lib/proguard.jar" />
+        <taskdef name="proguard" classname="proguard.ant.ProGuardTask" classpath="${proguard.jar}" />
+
+        <!-- Set the android classpath Path object into a single property. It'll be
+                     all the jar files separated by a platform path-separator.
+                -->
+        <property name="android.libraryjars" refid="android.target.classpath"/>
+
+        <mkdir dir="${obfuscate.absolute.dir}" />
+        <delete file="${preobfuscate.jar.file}"/>
+        <delete file="${obfuscated.jar.file}"/>
+        <jar basedir="${out.classes.dir}" destfile="${preobfuscate.jar.file}" />
+        <proguard>
+		  -ignorewarnings	
+          -injars ${preobfuscate.jar.file}
+          @${proguard.config}
+          -outjars ${obfuscated.jar.file}
+          -libraryjars ${android.libraryjars}
+          -dump ${obfuscate.absolute.dir}/dump.txt
+          -printseeds ${obfuscate.absolute.dir}/seeds.txt
+          -printusage ${obfuscate.absolute.dir}/usage.txt
+          -printmapping ${obfuscate.absolute.dir}/mapping.txt
+        </proguard>
+      </then>
+	  <else>
+        <echo>... Skipped.</echo>
+      </else>
+    </if>
+  </target>  
+
+  <!-- Generates the R.java file for this project's resources. -->
+  <target name="-resource-src" depends="-dirs, -pre-build">
+    <if condition="${manifest.hasCode}">
+      <then>
+        <echo>Generating R.java / Manifest.java from the resources...</echo>
+        <aapt executable="${aapt}"
+                command="package"
+                verbose="${verbose}"
+                manifest="${manifest.file}"
+                androidjar="${android.jar}"
+                rfolder="${gen.absolute.dir}">
+          <res path="${resource.absolute.dir}" />
+        </aapt>
+      </then>
+      <else>
+        <echo>hasCode = false. Skipping...</echo>
+      </else>
+    </if>
+  </target>
+
+  <target name="-package-resources">
+    <echo>Packaging resources</echo>
+    <aapt executable="${aapt}"
+            command="package"
+            versioncode="${version.code}"
+            debug="${build.packaging.debug}"
+            manifest="${manifest.file}"
+            assets="${asset.absolute.dir}"
+            androidjar="${android.jar}"
+            apkfolder="${out.absolute.dir}"
+            resourcefilename="${resource.package.file.name}"
+            resourcefilter="${aapt.resource.filter}">
+      <res path="${resource.absolute.dir}" />
+      <!-- <nocompress /> forces no compression on any files in assets or res/raw -->
+      <!-- <nocompress extension="xml" /> forces no compression on specific file extensions in assets and res/raw -->
+    </aapt>
+  </target>
+
+  <!--target name="-preprocess">
+    <echo>Preprocessing Manifest and sources and resources...</echo>
+    <exec executable="preprocess.bat" failonerror="true"> </exec>
+  </target-->
+
+  
+  <target name="uninstall" depends="-uninstall-error" if="uninstall.run"
+                description="Uninstalls the application from a running emulator or device.">
+    <echo>Currently not implemented, use #uninstall.bat</echo>
+  </target>
+
+  <target name="clean" description="Removes output files created by other targets.">
+    <echo>Clean ...</echo>
+    <delete dir="${out.absolute.dir}" verbose="${verbose}" />
+    <delete dir="${gen.absolute.dir}" verbose="${verbose}" />
+  </target>
+
+  <!-- Override  compile, ignore all warning -->
+  <target name="compile" depends="-resource-src, -aidl, -pre-compile"
+              description="Compiles project's .java files into .class files">
+    <if condition="${manifest.hasCode}">
+      <then>
+        <condition property="extensible.classpath"
+                value="${tested.project.absolute.dir}/bin/classes"
+                else=".">
+          <isset property="tested.project.absolute.dir" />
+        </condition>
+        <condition property="extensible.libs.classpath"
+                value="${tested.project.absolute.dir}/libs"
+                else="${jar.libs.dir}">
+          <isset property="tested.project.absolute.dir" />
+        </condition>
+        <javac encoding="${java.encoding}"
+                source="${java.source}" target="${java.target}"
+                debug="true" extdirs=""
+                destdir="${out.classes.absolute.dir}"
+                bootclasspathref="android.target.classpath"
+                verbose="${verbose}"
+                classpath="${extensible.classpath}"
+                classpathref="jar.libs.ref">
+          <compilerarg value="-Xlint:none"/>
+          <src path="${source.absolute.dir}" />
+          <src path="${gen.absolute.dir}" />
+          <src refid="project.libraries.src" />
+          <classpath>
+            <fileset dir="${extensible.libs.classpath}" includes="*.jar" />
+          </classpath>
+        </javac>
+      </then>
+      <else>
+        <echo>hasCode = false. Skipping...</echo>
+      </else>
+    </if>
+  </target>
+  	
+  <target name="-set-debug-signed-mode" depends="-debug-obfuscation-check">
+        <!-- property only set in debug mode.
+             Useful for if/unless attributes in target node
+             when using Ant before 1.8 -->
+        <property name="build.mode.debug" value="true"/>
+
+        <!-- whether the build is a debug build. always set. -->
+        <property name="build.packaging.debug" value="true" />
+
+        <!-- signing mode: debug -->
+        <property name="build.signing.debug" value="false" />
+
+    </target>
+	
+  <target name="debug-signed" depends="-set-debug-signed-mode, -compile-tested-if-test, -package-debug-sign"
+                description="Builds the application on debug mode but signs it with a release key.">
+				
+		<!-- Signs the APK -->
+        <echo>Signing final apk...</echo>
+        <signjar
+                jar="${out.debug.unaligned.file}"
+                signedjar="${out.debug.file}"
+                keystore="${key.store}"
+                storepass="${key.store.password}"
+                alias="${key.alias}"
+                keypass="${key.alias.password}"
+                verbose="${verbose}" />
+				
+        <!--zipalign-helper in.package="${out.debug.tosign.file}"
+                                   out.package="${out.debug.file}" /-->
+        <echo>Debug Package: ${out.debug.file}</echo>
+    </target>
+
+</project>

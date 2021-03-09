@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">구매 불가</string>
+	<string name="billing_not_supported_message">현재 Google Play Store 결제 서비스를 사용할 수 없습니다. 해당 앱은 계속 사용할 수 있으나 구매는 할 수 없습니다.</string>
+	<string name="cannot_connect_title">Google Play Store 연결 불가</string>
+	<string name="cannot_connect_message">보유하고 있는 Google Play Store 버전이 구버전이라 이 앱에서 Google Play Store를 연결할 수 없습니다. 해당 앱은 계속 사용할 수 있으나 구매는 할 수 없습니다.</string>
+	<string name="waitting_confirm">Google에서 구매 확인을 기다리고 있습니다. 구매가 완료되면 아이템 목록이 업데이트됩니다.</string>
+	<string name="pending_transaction">보류 중인 거래가 있습니다.</string>
+	<string name="purchase_success">구매 성공</string>
+	<string name="purchase_unsuccess">구매 실패</string>
+	<string name="iab_retry">재시도</string>
+	<string name="iab_cancel">취소</string>
+	<string name="iab_ok">확인</string>
+</resources>

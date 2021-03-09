@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">无法完成购买</string>
+    <string name="billing_not_supported_message">Amazon Market服务器暂不可用。你可以继续使用该应用，但是你无法进行任何购买。</string>
+    <string name="waitting_confirm">正在等待Amazon回应以验证购买。一旦购买完成，就将更新你的物品列表。</string>
+    <string name="pending_transaction">你有一个等待中的交易。</string>
+	<string name="purchase_success">购买成功。</string>
+	<string name="purchase_unsuccess">购买失败。</string>
+	<string name="iab_retry">重试</string>
+</resources>

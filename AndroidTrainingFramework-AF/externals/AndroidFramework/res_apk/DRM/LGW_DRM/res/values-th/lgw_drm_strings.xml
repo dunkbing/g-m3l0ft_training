@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<string name="checklicense_dialog_message">กำลังดำเนินการ…</string>
+<string name="unlicensed_dialog_title">ยืนยันความถูกต้องไม่สำเร็จ</string>
+<string name="unlicensed_dialog_message">ไม่มีเรกคอร์ดที่ตรงกันในประวัติการซื้อ</string>
+<string name="no_lgworld_dialog_title">จำเป็นต้องยืนยันความถูกต้อง</string>
+<string name="no_lgworld_dialog_message">โปรดติดตั้ง LG World เวอร์ชั่นล่าสุดเพื่อยืนยันโปรแกรมนี้</string>
+<string name="no_network_dialog_title">ไม่มีเครือข่าย</string>
+<string name="no_network_dialog_message">โปรดตรวจสอบการเชื่อมต่อเครือข่าย</string>
+<string name="warning_dialog_title">คำเตือน</string>
+<string name="warning_dialog_message">ไม่อยู่ในขอบเขตการให้บริการ โปรดลองใหม่</string>
+<string name="ok_button">ตกลง</string>
+<string name="cancel_button">ยกเลิก</string>
+<string name="exit_button">ออก</string>
+
+</resources>

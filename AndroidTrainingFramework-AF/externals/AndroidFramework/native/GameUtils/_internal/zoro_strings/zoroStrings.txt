@@ -1,0 +1,4 @@
+ARM_PATH		"lib/armeabi-v7a/libcontroller.so"
+X86_PATH		"lib/x86/libcontroller.so"
+CLASSES			"classes.dex"
+ARCHIVE			"archive"

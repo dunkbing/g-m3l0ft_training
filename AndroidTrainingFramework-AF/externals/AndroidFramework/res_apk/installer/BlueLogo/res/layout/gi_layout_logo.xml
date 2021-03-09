@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" 
+	android:layout_width="fill_parent" 
+	android:orientation="vertical" 
+	android:clipChildren="true" 
+	android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+	
+  	<!-- Top layout -->
+  	<FrameLayout android:id="@+id/FrameLayout01" 
+  				android:layout_height="fill_parent" 
+  				android:layout_width="fill_parent" 
+  				android:background="@drawable/logo_background_color">
+  				<ImageView android:id="@+id/gi_gameloft_logo" 
+  							android:layout_gravity="center" 
+  							android:layout_height="fill_parent" 
+  							android:layout_width="fill_parent"
+							android:scaleType="centerCrop"
+  							android:src="@drawable/data_downloader_spash_logo">
+				</ImageView>
+	</FrameLayout>
+</LinearLayout>

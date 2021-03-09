@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">Nie udało się dokonać zakupów</string>
+    <string name="billing_not_supported_message">Usługa Amazon Market jest w tej chwili niedostępna. Możesz wciąż korzystać z tej aplikacji, ale niemożliwe będzie dokonywanie zakupów.</string>
+    <string name="waitting_confirm">Czekamy na potwierdzenie zakupu od Amazon. Po dokonaniu zakupu zaktualizujemy Twoją listę przedmiotów.</string>
+    <string name="pending_transaction">Transakcja w toku.</string>
+	<string name="purchase_success">Zakup dokonany.</string>
+	<string name="purchase_unsuccess">Zakup nieudany.</string>
+	<string name="iab_retry">Ponów</string>
+</resources>

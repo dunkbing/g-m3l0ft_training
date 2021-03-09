@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<java2android>
+	<!-- Game Specific Java To Android Properties and Libraries -->
+	
+
+	<libs>
+	
+		<j2a path="../../../../prj/Android/j2a/Controller.j2a"/>
+	
+		<!-- GL Legacy -->	<!--
+		<j2a if="USE_GLLEGACY"	path="../GLLegacy/_AndroidToolBox/GLLegacy SRC.j2a"/>
+		<j2a if=""				path="../GLLegacy/_AndroidToolBox/GLLegacy RES.j2a"/>
+		-->		
+
+		<!-- GL Social Lib -->	<!--
+		<group if="USE_SOCIALLIB">
+		
+			<j2a if="" path="../GLSocialLib/j2a/Android Framework.j2a"/>
+			<j2a if="" path="../GLSocialLib/j2a/SinaWeibo.j2a"/>
+			<j2a if="" path="../GLSocialLib/j2a/RenRen.j2a"/>
+			<j2a if="" path="../GLSocialLib/j2a/VK.j2a"/>
+			<j2a if="" path="../GLSocialLib/j2a/Game API.j2a"/>
+			<j2a if="" path="../GLSocialLib/j2a/Utils.j2a"/>
+
+			<j2a if="IS_OPERATOR_ANMP" path="../GLSocialLib/j2a/GL Social Lib ANMP.j2a"/>
+			<j2a if="IS_OPERATOR_AMAZ" path="../GLSocialLib/j2a/GL Social Lib AMAZ.j2a"/>
+
+			<j2a if="" path="../GLSocialLib/j2a/Facebook.j2a"/>
+			<j2a if="" path="../GLSocialLib/SDK/Facebook_v3/android/facebook/Facebook.j2a"/>
+			
+			<j2a if="" path="../GLSocialLib/j2a/Kakao.j2a"/>
+			<j2a if="" path="../GLSocialLib/SDK/Kakao/android/Kakao.j2a"/>
+			
+			<group if="USE_AMAZON_GAME_CIRCLE">
+				<j2a if="" path="../GLSocialLib/j2a/GameCircle.j2a"/>
+				<j2a if="" path="../GLSocialLib/SDK/GameCircle/android/GameCircle.j2a"/>
+			</group>
+
+		</group>
+		-->		
+
+		<!-- Gaia -->	<!--
+		<j2a if="USE_GAIA" path="../Gaia/source/Android/Gaia.j2a"/>
+		-->		
+
+		<!-- GameOptions -->	<!--
+		<j2a if="USE_GAMEOPTIONS2" path="../GameOptions2/android/GameOptions.j2a"/>
+		-->		
+
+		<!-- Pop-Ups Lib -->	<!--
+		<j2a if="USE_POPUPSLIB" path="../PopupsLib/src/PopUpsLib/os/android/PopUpLib.j2a"/>
+		-->	
+
+		<!-- In App Billing -->	<!--
+		<group if="USE_IN_APP_BILLING_CRM">
+			<j2a if="USE_IN_APP_BILLING" path="../in_app_purchase/project/android/crm/common/Common.j2a"/>
+			<j2a if="AMAZON_STORE" path="../in_app_purchase/project/android/crm/shops/amazon/Amazon.j2a"/>
+			<j2a if="GOOGLE_STORE_V3" path="../in_app_purchase/project/android/crm/shops/google_play_v3/GooglePlayV3.j2a"/>
+			<group if="SKT_STORE">
+				<j2a if="TEST_SKT_STORE" path="../in_app_purchase/project/android/crm/shops/skt/SKT Test - armeabi-v7a.j2a"/>
+				<j2a if="!TEST_SKT_STORE" path="../in_app_purchase/project/android/crm/shops/skt/SKT - armeabi-v7a.j2a"/>
+			</group>
+		</group>
+		-->				
+	</libs>
+	
+</java2android>

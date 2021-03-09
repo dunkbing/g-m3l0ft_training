@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="gi_button_text">#ff000000</color>
+   <color name="gi_info_text">#ff000000</color>
+   <color name="gi_tittle_text">#ff010101</color>
+   <color name="gi_black">#ff000000</color>
+</resources>

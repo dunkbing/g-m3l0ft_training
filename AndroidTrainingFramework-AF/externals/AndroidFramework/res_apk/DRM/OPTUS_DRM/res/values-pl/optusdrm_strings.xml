@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="drmlib_optusjg_message_checking"><![CDATA[<div>Potwierdzanie licencji na tę grę. Zaczekaj na połączenie z serwerami w celu potwierdzenia.</div>]]></string>
+	<string name="drmlib_optusjg_message_validated"><![CDATA[<div>Licencja została potwierdzona.<br/><br/><a href="action:finish">ZAGRAJ TERAZ</a></div>]]></string>
+	<string name="drmlib_optusjg_message_noinet"><![CDATA[<div>Nie udało się zweryfikować licencji na tę grę. Wymagane jest połączenie z internetem. <a href="action:retry">SPRÓBUJ PONOWNIE</a> lub skonsultuj się z naszą stroną <a href="action:help">POMOCY</a>.</div>]]></string>
+	<string name="drmlib_optusjg_message_refused"><![CDATA[<div>Twoja licencja na tę grę nie jest prawidłowa. Skonsultuj się z naszą stroną <a href="action:help">POMOCY</a>.</div>]]></string>
+	<string name="drmlib_optusjg_message_help">	<![CDATA[<div><b>POMOC</b><br/><br/>Aby potwierdzić licencję musisz posiadać połączenie z internetem (sieć mobilna (GPRS) lub Wi-Fi).<br/><br/>Licencja przeznaczona jest tylko i wyłącznie na Twój telefon, nie możesz zainstalować gry na innym telefonie. <br/><br/>Jeśli masz problemy, skonsultuj się z naszym działem <a href="action:cs">OBSŁUGI KLIENTA</a>.]]></string>
+	<string name="DOWNLOAD_FILES_NO_WIFI_QUESTION_OPTUS">Możesz wybrać pomiędzy siecią Wi-Fi, a siecią Optus, by pobrać tę grę. W przypadku pobierania gry przez sieć Optus nie zostaną pobrane opłaty za przesył danych.</string>
+	<string name="USE_OPTUS">Sieć Optus</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAP_SAMSUNG_DIALOG_TITLE">Zakupy w aplikacji</string>
+	<string name="IAP_SAMSUNG_UPGRADE_REQUIRED">Wymagana jest aktualizacja systemu zakupów w aplikacji Samsung. Kontynuować?</string>
+	<string name="IAP_SAMSUNG_CLIENT_NOT_INSTALLED">System zakupów w aplikacji Samsung nie jest zainstalowany na tym urządzeniu. Chcesz go zainstalować?</string>
+	<string name="IAP_SAMSUNG_APP_STORE_NOT_INSTALLED">Usługa Samsung Store nie jest w tej chwili dostępna. Możesz kontynuować używanie tej aplikacji, ale niemożliwe będzie dokonywanie żadnych zakupów.</string>
+	<string name="IAP_SAMSUNG_ERROR_ALREADY_PURCHASED">Ten element został już zakupiony. Opłata nie zostanie pobrana.</string>
+	<string name="IAP_SAMSUNG_WAITING">Proszę czekać...</string>
+	<string name="IAP_SAMSUNG_OK_BUTTON">OK</string>
+	<string name="IAP_SAMSUNG_CANCEL_BUTTON">Anuluj</string>
+</resources>

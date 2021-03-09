@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:id="@+id/llymv"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical" 
+		android:background="@color/iab_fade">
+		<LinearLayout
+			android:id="@+id/llymvt"
+			android:layout_width="wrap_content"
+			android:layout_height="0dp"
+			android:layout_weight="@integer/iab_cptb_dialog_margin" >
+		</LinearLayout>    
+		
+		<LinearLayout
+			android:id="@+id/llymh"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:orientation="horizontal" 
+			android:layout_weight="100" >
+
+
+			<LinearLayout
+				android:id="@+id/llymhl"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="@integer/iab_cplr_dialog_margin" >
+			</LinearLayout>
+				
+			<LinearLayout
+			    android:id="@+id/llyroot"
+			    android:layout_width="0dp"
+			    android:layout_height="match_parent"
+			    android:layout_weight="100"
+			    android:gravity="center"
+			    android:orientation="vertical" >
+
+				<LinearLayout
+					android:id="@+id/LlMainLayout"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="#FFFFFF"
+					android:orientation="vertical" >
+
+					<FrameLayout android:id="@+id/frameLayout1" 
+						android:layout_width="fill_parent" 
+						android:layout_height="35dip" 
+						android:background="#95C400">
+						<TextView android:layout_marginLeft="@dimen/iab_select_billing_method_txtVPurchaseTitle_marginLeft" 
+							android:textColor="#fff" 
+							android:textStyle="bold" 
+							android:text="Testing Custom Dialog" 
+							android:layout_width="wrap_content" 
+							android:layout_gravity="left" 
+							android:layout_height="wrap_content" 
+							android:id="@+id/txtVPurchaseTitle" 
+							android:textSize="15dip" 
+							android:layout_marginTop="7dip"></TextView>
+					</FrameLayout>
+					<LinearLayout android:layout_height="wrap_content" 
+						android:layout_width="fill_parent" 
+						android:id="@+id/itemspricelayout"
+						android:layout_marginLeft="@dimen/iab_select_billing_method_itemspricelayout_marginLeftRight" 
+						android:layout_marginRight="@dimen/iab_select_billing_method_itemspricelayout_marginLeftRight" 
+						android:layout_marginBottom="3dip" 
+						android:layout_marginTop="5dip">
+						<TextView android:layout_height="wrap_content" 
+							android:layout_width="wrap_content" 
+							android:gravity="left"
+							android:text="N ITEM FOR" 
+							android:textColor="#000000" 
+							android:id="@+id/txtVItemInfo" 
+							android:layout_weight="1"/>
+						
+						<TextView android:layout_width="wrap_content" 
+							android:textColor="#000000" 
+							android:text="PRICE" 
+							android:layout_height="wrap_content"
+							android:id="@+id/txtVPriceItems"/>
+					</LinearLayout>
+					<RelativeLayout android:layout_width="fill_parent" 
+						android:id="@+id/totalpriceLayout" 
+						android:layout_marginBottom="10dip" 
+						android:gravity="center" 
+						android:background="#8E8E8E" 
+						android:layout_marginLeft="@dimen/iab_select_billing_method_totalpriceLayout_marginLeftRight" 
+						android:layout_marginRight="@dimen/iab_select_billing_method_totalpriceLayout_marginLeftRight" 
+						android:layout_height="wrap_content">
+						<TextView android:layout_width="wrap_content" 
+							android:textColor="#000" 
+							android:textStyle="bold" 
+							android:layout_height="wrap_content" 
+							android:gravity="center" 
+							android:id="@+id/txtVTotal" 
+							android:text="Total: ">
+						</TextView>
+						<TextView android:layout_height="wrap_content" 
+							android:textStyle="bold" 
+							android:layout_width="wrap_content" 
+							android:text="PRICE" 
+							android:textColor="#000000" 
+							android:id="@+id/txtVPriceTotal" 
+							android:layout_alignParentRight="true">
+						</TextView>
+					</RelativeLayout>
+					    <TextView android:layout_height="wrap_content" 
+					        android:gravity="center" 
+					        android:text="Pay for this with:" 
+					        android:layout_width="wrap_content" 
+					        android:id="@+id/txtVPayWith" 
+					        android:layout_gravity="left" 
+					        android:layout_marginLeft="@dimen/iab_select_billing_method_txtVPayWith_marginLeft" 
+					        android:textColor="#000"></TextView>
+
+					<RelativeLayout
+					    android:id="@+id/relativeLayout1"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:id="@+id/linearLayout4"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical" >
+
+							<LinearLayout
+								android:id="@+id/linearLayout3"
+								android:layout_width="fill_parent"
+								android:layout_height="0dp"
+								android:layout_weight="1"
+								android:orientation="vertical" >
+
+								<ScrollView
+									android:id="@+id/scrollView1"
+									android:layout_width="fill_parent"
+	                   						android:layout_height="fill_parent"
+									android:fadeScrollbars="false" >
+
+									<LinearLayout
+										android:id="@+id/linearLayout1"
+										android:layout_width="wrap_content"
+										android:layout_height="fill_parent"
+										android:gravity="center" >
+
+										<RadioGroup
+											android:id="@+id/itemsGroup"
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:layout_gravity="left"
+											android:layout_marginLeft="10dip"
+											android:fadeScrollbars="false"
+											android:gravity="left"
+											android:scrollbarAlwaysDrawVerticalTrack="true"
+											android:scrollbars="vertical" >
+
+											<RadioButton
+												android:id="@+id/itemCarrier"
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:checked="true"
+												android:text="Carrier"
+												android:textColor="#000" 
+												android:buttonTint="#00BCD4"
+												/>
+
+											<RadioButton
+												android:id="@+id/itemPaypal"
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:text="Paypal"
+												android:textColor="#000" 
+												android:buttonTint="#00BCD4"
+												/>
+
+											<RadioButton
+												android:id="@+id/itemShenzhoufu"
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:text="Shenzhoufu"
+												android:textColor="#000" 
+												android:buttonTint="#00BCD4"
+												/>
+
+											<RadioButton
+												android:id="@+id/itemCreditCard"
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:text="Credit Card"
+												android:textColor="#000" 
+												android:buttonTint="#00BCD4"
+												/>
+
+											<RadioButton
+												android:id="@+id/itemChangePaymentMethod"
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:text="Change Payment Method"
+												android:textColor="#000" 
+												android:buttonTint="#00BCD4"
+												/>
+
+											<RadioButton
+												android:id="@+id/itemAddNewCreditCard"
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:text="Add New Credit Card"
+												android:textColor="#000" 
+												android:buttonTint="#00BCD4"
+												/>
+										</RadioGroup>
+									</LinearLayout>
+								</ScrollView>
+							</LinearLayout>
+
+							<LinearLayout
+								android:id="@+id/linearLayout2"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:orientation="vertical" android:gravity="right">
+
+								<LinearLayout
+									android:id="@+id/buttonBar"
+									android:layout_width="fill_parent"
+									android:layout_height="@dimen/iab_cc_button_height"
+									android:gravity="center"
+									android:background="@drawable/iab_button_gradient">
+
+									<Button
+										android:id="@+id/OkButton"
+										android:layout_width="wrap_content"
+										android:layout_height="@dimen/iab_cc_button_height"
+										android:text="OK"
+										android:textStyle="bold" 
+										android:textSize="@dimen/iab_button_text_size"/>
+								</LinearLayout>
+
+								<TextView
+									android:id="@+id/txtVTnC"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginRight="2dip"
+									android:layout_marginTop="2dip"
+									android:clickable="true"
+									android:text="Terms and Conditions"
+									android:textColor="#0000FF"
+									android:textSize="10dip" />
+							</LinearLayout>
+						</LinearLayout>
+					</RelativeLayout>
+				</LinearLayout>
+				</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/llymhr"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="@integer/iab_cplr_dialog_margin" >
+			</LinearLayout>
+			</LinearLayout>
+		
+			<LinearLayout
+				android:id="@+id/llymvb"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="@integer/iab_cptb_dialog_margin" >
+			</LinearLayout>
+		
+		</LinearLayout>
+</merge>

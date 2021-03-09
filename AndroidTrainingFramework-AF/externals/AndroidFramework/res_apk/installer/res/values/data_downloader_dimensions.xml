@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="data_downloader_title_height">50dp</dimen>
+	<dimen name="data_downloader_title_text_size">25dp</dimen>
+	<color name="data_downloader_title_text_color">#000</color>
+	<dimen name="data_downloader_title_logo_paddingTop">5dp</dimen>
+	<dimen name="data_downloader_title_logo_paddingBottom">5dp</dimen>
+	<dimen name="data_downloader_title_logo_paddingLeft">5dp</dimen>
+	<dimen name="data_downloader_title_logo_paddingRight">5dp</dimen>
+	
+	<dimen name="data_downloader_button_height">30dp</dimen>
+	<dimen name="data_downloader_button_width">150dp</dimen>
+	<dimen name="data_downloader_button_text_size">12dp</dimen>
+	<color name="data_downloader_button_text_color">#FFF</color>
+	<dimen name="data_downloader_button_padding_left">25dp</dimen>
+	<dimen name="data_downloader_button_padding_right">25dp</dimen>
+	<dimen name="data_downloader_button_padding_top">0dp</dimen>
+	<dimen name="data_downloader_button_padding_bottom">10dp</dimen>
+	
+	<dimen name="data_downloader_main_text_frame_padding_side">25dp</dimen>
+	<dimen name="data_downloader_main_text_frame_padding_top">0dp</dimen>
+	<dimen name="data_downloader_main_text_padding_top">7dp</dimen>
+	<dimen name="data_downloader_main_text_padding_bottom">7dp</dimen>
+	<dimen name="data_downloader_main_text_padding_left">7dp</dimen>
+	<dimen name="data_downloader_main_text_padding_right">7dp</dimen>
+	<color name="data_downloader_main_text_color">#000</color>
+	<dimen name="data_downloader_main_text_size">15dp</dimen>
+	
+	<style name="data_downloader_title_text_default_style">
+		<item name="android:textStyle">bold</item>
+		<item name="android:typeface">normal</item>
+	</style>
+	<style name="data_downloader_button_text_default_style">
+		<item name="android:textStyle">bold</item>
+		<item name="android:typeface">normal</item>
+	</style>
+	<style name="data_downloader_main_text_image_color">
+		<item name="android:background">#7FFF</item>
+		<!-- <item name="android:background">@drawable/data_downloader_main_text_image</item> -->
+		<item name="android:textStyle">normal</item>
+		<item name="android:typeface">normal</item>
+	</style>
+	
+	<dimen name="data_downloader_progress_text_size">10dp</dimen>
+	<color name="data_downloader_progress_text_color">#000</color>
+	<dimen name="data_downloader_progress_bar_padding_top">10dp</dimen>
+	<dimen name="data_downloader_progress_spin_padding">5dp</dimen>
+	<dimen name="data_downloader_horizontal_progessbar_width">300dp</dimen>
+	<dimen name="data_downloader_horizontal_progessbar_height">15dp</dimen>
+	<style name="data_downloader_progress_text_extra_style">
+		<item name="android:textStyle">normal</item>
+		<item name="android:typeface">normal</item>
+	</style>
+	
+	<string name="data_downloader_custom_font_name">font.ttf</string>
+	
+	<color name="gi_gameloft_logo_background_color">#000</color>
+</resources>

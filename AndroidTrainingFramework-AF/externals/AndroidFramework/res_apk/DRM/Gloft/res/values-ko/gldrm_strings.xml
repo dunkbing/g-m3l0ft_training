@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="SERVER_VALIDATE_REQUIRED">{GAME_NAME} 게임을 등록하려면 인터넷에 연결하세요.</string>
+	<string name="INVALID_LICENSE">{GAME_NAME} 게임의 원본이 아닙니다.</string>
+</resources>

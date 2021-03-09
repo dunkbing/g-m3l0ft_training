@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="GET_THE_GAME">Dapatkan game</string>
+	<string name="CHECKING_LICENSE">Memeriksa lisensi...</string>
+	<string name="UNLICENSED_DIALOG_TITLE">Periksa Lisensi</string>
+	<string name="UNLICENSED_DIALOG_BODY">Lisensi tidak valid</string>
+	<string name="BUY_BUTTON">Beli game</string>
+	<string name="QUIT_BUTTON">Keluar</string>
+	<string name="RETRY">Coba lagi</string>
+	<string name="NETWORK_ERROR_TITLE">Perhatian</string>
+	<string name="NETWORK_ERROR_BODY">Terjadi kesalahan jaringan. Ingin mencoba lagi?</string>
+</resources>

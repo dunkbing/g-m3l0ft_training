@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:background="#006899"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_dlg_title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:paddingLeft="10dp"
+	        android:gravity="center"
+	        android:textSize="25sp"
+	        android:textColor="@color/ebpay_white"
+	        android:text="@string/aipay_tip"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="#e4e4e4">
+
+	    <LinearLayout
+	        android:id="@+id/v_content"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:orientation="vertical">
+	        
+	    </LinearLayout>
+    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="12dp"
+	        android:layout_marginBottom="12dp"
+	        android:orientation="horizontal">
+	        <Button
+		        android:id="@+id/btn_2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/iapppay_oneclickpay_tv_button_selector"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:textSize="25sp"
+				android:textColor="#7e4900"
+		        android:text="@string/aipay_subimt_sure"
+		        android:layout_weight="1"
+		        />
+		    <Button
+		        android:id="@+id/btn_1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:textSize="25sp"
+				android:textColor="#323234"
+		        android:text="@string/aipay_submit_cancle"
+		        android:background="@drawable/iapppay_tv_gray_button_selector"
+		        android:layout_weight="1"/>
+		   	
+	    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- *********************************************************** -->
+	<!-- *************** Customize the title layout **************** -->
+	<!-- *********************************************************** -->
+	<style name="data_downloader_title_layout">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">@dimen/data_downloader_title_height</item>
+	</style>
+	<style name="data_downloader_title_background_style">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:scaleType">fitXY</item> <!-- matrix, fitXY, fitStart, fitCenter, fitEnd, center, centerCrop, centerInside http://developer.android.com/reference/android/widget/ImageView.html#attr_android:scaleType -->
+		<item name="android:adjustViewBounds">true</item> <!-- true, false http://developer.android.com/reference/android/widget/ImageView.html#attr_android:adjustViewBounds -->
+	</style>
+	<style name="data_downloader_title_logo_style">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:scaleType">centerInside</item> <!-- matrix, fitXY, fitStart, fitCenter, fitEnd, center, centerCrop, centerInside http://developer.android.com/reference/android/widget/ImageView.html#attr_android:scaleType -->
+		<item name="android:adjustViewBounds">true</item> <!-- true, false http://developer.android.com/reference/android/widget/ImageView.html#attr_android:adjustViewBounds -->
+		<item name="android:paddingTop">@dimen/data_downloader_title_logo_paddingTop</item>
+		<item name="android:paddingBottom">@dimen/data_downloader_title_logo_paddingBottom</item>
+		<item name="android:paddingLeft">@dimen/data_downloader_title_logo_paddingLeft</item>
+		<item name="android:paddingRight">@dimen/data_downloader_title_logo_paddingRight</item>
+	</style>
+	<style name="data_downloader_title_text_style" parent="data_downloader_title_text_default_style">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center</item> <!-- top, bottom, left, right, center_vertical, fill_vertical, center_horizontal, fill_horizontal, center, fill, clip_vertical, clip_horizontal, start, end http://developer.android.com/reference/android/widget/LinearLayout.LayoutParams.html#attr_android:layout_gravity -->
+		<item name="android:textColor">@color/data_downloader_title_text_color</item>
+		<!-- <item name="android:background">#7FFF</item> -->
+		<item name="android:textSize">@dimen/data_downloader_title_text_size</item>
+	</style>
+	<style name="data_downloader_title_included">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">@dimen/data_downloader_title_height</item>
+		<item name="android:layout_centerVertical">false</item>
+		<item name="android:layout_centerHorizontal">false</item>
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_alignParentTop">true</item>
+		<item name="android:layout_alignParentBottom">false</item>
+		<item name="android:layout_below">@+id/buttonsLayout</item>
+		<item name="android:scaleType">fitXY</item> <!-- matrix, fitXY, fitStart, fitCenter, fitEnd, center, centerCrop, centerInside http://developer.android.com/reference/android/widget/ImageView.html#attr_android:scaleType -->
+		<item name="android:adjustViewBounds">true</item> <!-- true, false http://developer.android.com/reference/android/widget/ImageView.html#attr_android:adjustViewBounds -->
+	</style>
+	<!-- *********************************************************** -->
+	<!-- ****************** Three Buttons Layout ******************* -->
+	<!-- *********************************************************** -->
+	<style name="data_downloader_buttons_root_layout_style" >
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:background">@drawable/data_downloader_background</item>
+	</style>
+	<!-- *********************************************************** -->
+	<!-- ************************ Buttons ************************** -->
+	<!-- *********************************************************** -->
+	<style name="data_downloader_button_style" parent="data_downloader_button_text_default_style">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:minWidth">@dimen/data_downloader_button_width</item>
+		<item name="android:maxWidth">@dimen/data_downloader_button_width</item>
+		<item name="android:minHeight">@dimen/data_downloader_button_height</item>
+		<item name="android:maxHeight">@dimen/data_downloader_button_height</item>
+		<item name="android:background">@drawable/data_downloader_button_selector</item>
+		<item name="android:textColor">@color/data_downloader_button_text_color</item>
+		<item name="android:textSize">@dimen/data_downloader_button_text_size</item>
+	</style>
+	<style name="data_downloader_frame_button_style">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:paddingLeft">@dimen/data_downloader_button_padding_left</item>
+		<item name="android:paddingRight">@dimen/data_downloader_button_padding_right</item>
+		<item name="android:layout_gravity">bottom</item>
+		<item name="android:paddingTop">@dimen/data_downloader_button_padding_top</item>
+		<item name="android:paddingBottom">@dimen/data_downloader_button_padding_bottom</item>
+	</style>
+	<style name="data_downloader_buttons_layout_style">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:orientation">horizontal</item>
+	</style>
+	<style name="data_downloader_buttons_frame_layout_style">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerVertical">false</item>
+		<item name="android:layout_centerHorizontal">false</item>
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_alignParentTop">false</item>
+		<item name="android:layout_alignParentBottom">true</item>
+		<!-- <item name="android:minWidth">100dp</item> -->
+		<!--<item name="android:maxWidth">100dp</item>-->
+		<!-- <item name="android:minHeight">20dp</item> -->
+		<!--<item name="android:maxHeight">20dp</item>-->
+	</style>
+	<!-- *********************************************************** -->
+	<!-- ************************* Texts *************************** -->
+	<!-- *********************************************************** -->
+	<style name="data_downloader_frame_main_text_style">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:paddingLeft">@dimen/data_downloader_main_text_frame_padding_side</item>
+		<item name="android:paddingRight">@dimen/data_downloader_main_text_frame_padding_side</item>
+		<item name="android:paddingTop">@dimen/data_downloader_main_text_frame_padding_top</item>
+		<item name="android:paddingBottom">@dimen/data_downloader_main_text_frame_padding_top</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_alignParentTop">false</item>
+		<item name="android:layout_alignParentBottom">false</item>
+		<item name="android:layout_below">@+id/titleLayout</item>
+		<item name="android:layout_above">@+id/buttonsLayout</item>
+	</style>
+	<style name="data_downloader_main_text_background_frame">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center</item>
+
+		<!-- <item name="android:minWidth">100dp</item> -->
+		<!--<item name="android:maxWidth">100dp</item>-->
+		<!-- <item name="android:minHeight">20dp</item> -->
+		<!--<item name="android:maxHeight">20dp</item>-->
+	</style>
+	<style name="data_downloader_main_text_background_frame2">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:orientation">vertical</item>
+
+		<!-- <item name="android:minWidth">100dp</item> -->
+		<!--<item name="android:maxWidth">100dp</item>-->
+		<!-- <item name="android:minHeight">20dp</item> -->
+		<!--<item name="android:maxHeight">20dp</item>-->
+	</style>
+	<style name="data_downloader_main_text" parent="data_downloader_main_text_image_color">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:paddingTop">@dimen/data_downloader_main_text_padding_top</item>
+		<item name="android:paddingBottom">@dimen/data_downloader_main_text_padding_bottom</item>
+		<item name="android:paddingLeft">@dimen/data_downloader_main_text_padding_left</item>
+		<item name="android:paddingRight">@dimen/data_downloader_main_text_padding_right</item>
+		<!-- <item name="android:minWidth">100dp</item> -->
+		<!-- <item name="android:maxWidth">100dp</item> -->
+		<!-- <item name="android:minHeight">20dp</item> -->
+		<!-- <item name="android:maxHeight">20dp</item> -->
+		<item name="android:gravity">center</item> <!-- top, bottom, left, right, center_vertical, fill_vertical, center_horizontal, fill_horizontal, center, fill, clip_vertical, clip_horizontal, start, end http://developer.android.com/reference/android/widget/LinearLayout.LayoutParams.html#attr_android:layout_gravity -->
+		<item name="android:textColor">@color/data_downloader_main_text_color</item>
+		<item name="android:textSize">@dimen/data_downloader_main_text_size</item>
+	</style>
+	<style name="data_downloader_progress_text" parent="data_downloader_progress_text_extra_style">
+		<item name="android:textSize">@dimen/data_downloader_progress_text_size</item>
+		<item name="android:textColor">@color/data_downloader_progress_text_color</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="data_downloader_progreeBar" parent="Theme.acp.progressbar.horizontal">
+		 <item name="android:progressDrawable">@drawable/data_downloader_progressbar</item>
+		 <item name="android:layout_width">@dimen/data_downloader_horizontal_progessbar_width</item>
+		 <item name="android:layout_height">@dimen/data_downloader_horizontal_progessbar_height</item>
+		 <item name="android:indeterminate">false</item>
+		 <item name="android:layout_gravity">bottom|center_horizontal</item>
+	</style>
+	<style name="data_downloader_progreeBar_spin" parent="Theme.acp.progressbar">
+		 <item name="android:layout_width">wrap_content</item>
+		 <item name="android:layout_height">wrap_content</item>
+		 <item name="android:padding">@dimen/data_downloader_progress_spin_padding</item>
+		 <item name="android:layout_gravity">bottom|center_horizontal</item>
+	</style>
+	<style name="data_downloader_webview_style">
+		 <item name="android:layout_weight">1</item>
+		 <item name="android:layout_height">wrap_content</item>
+		 <item name="android:layout_width">match_parent</item>
+		 <item name="android:layout_gravity">center</item>
+		 <item name="android:padding">5dp</item>
+		 <item name="android:layout_marginTop">15dp</item>
+		 <item name="android:layout_marginBottom">5dp</item>
+		 <item name="android:layout_marginRight">5dp</item>
+		 <item name="android:layout_marginLeft">5dp</item>
+	</style>
+</resources>

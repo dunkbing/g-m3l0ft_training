@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="SERVER_VALIDATE_REQUIRED">『{GAME_NAME}』を登録するには、インターネット接続を有効にしてください</string>
+	<string name="INVALID_LICENSE">正規の『{GAME_NAME}』ではありません</string>
+</resources>

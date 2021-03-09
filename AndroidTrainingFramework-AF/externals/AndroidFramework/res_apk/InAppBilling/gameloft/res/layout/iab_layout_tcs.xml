@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/LinearLayout01" 
+				android:gravity="center" 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:background="@color/iab_background">
+				<FrameLayout android:id="@+id/FrameLayout00"
+							android:layout_height="fill_parent" 
+							android:layout_width="fill_parent">
+							<ScrollView android:id="@+id/ScrollViewInfo" 
+										android:layout_height="fill_parent" 
+										android:layout_width="fill_parent"
+										android:paddingTop="@dimen/iab_tcs_top_margin"
+										android:paddingBottom="@dimen/iab_tcs_bottom_margin">
+									    <TextView android:id="@+id/tvTCSInfo" 
+													android:layout_height="fill_parent" 
+													android:textSize="@dimen/iab_tcs_text_size" 
+													android:layout_width="fill_parent"
+													android:fadingEdge="vertical">
+										</TextView>
+							</ScrollView>
+							<Button android:id="@+id/bt_ly_tcs_back" 
+									android:layout_height="wrap_content" 
+									android:layout_gravity="bottom|left" 
+									android:text="@string/IAB_SKB_BACK" 
+									android:layout_width="wrap_content"
+									android:layout_marginBottom="@dimen/iab_button_bottom_margin">
+							</Button>
+							<Button android:id="@+id/bt_ly_tcs_exit" 
+									android:layout_height="wrap_content" 
+									android:layout_gravity="bottom|right" 
+									android:text="@string/IAB_SKB_EXIT" 
+									android:layout_width="wrap_content" 
+									android:layout_marginBottom="@dimen/iab_button_bottom_margin" 
+									android:minWidth="@dimen/iab_small_button_width">
+							</Button>
+							<FrameLayout android:id="@+id/FrameLayoutHeader"
+										android:layout_width="fill_parent" 
+										android:layout_gravity="top"
+										android:background="@drawable/iab_top_bar"
+										android:layout_height="@dimen/iab_tittle_bar_size_h">
+										<ImageView android:id="@+id/ImageView01"
+													android:layout_width="wrap_content"
+													android:layout_height="wrap_content"
+													android:src="@drawable/iab_logo_tittle_horiz"
+													android:paddingTop="@dimen/iab_logo_tittle_gap"
+													android:paddingLeft="@dimen/iab_logo_tittle_gap">
+										</ImageView>
+							</FrameLayout>
+				</FrameLayout>
+</LinearLayout>

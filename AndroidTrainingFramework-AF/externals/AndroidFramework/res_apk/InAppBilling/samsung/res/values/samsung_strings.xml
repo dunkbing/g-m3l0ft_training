@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAP_SAMSUNG_DIALOG_TITLE">In-App Purchase</string>
+	<string name="IAP_SAMSUNG_UPGRADE_REQUIRED">Samsung In-App Purchase upgrade required. Do you want to proceed?</string>
+	<string name="IAP_SAMSUNG_CLIENT_NOT_INSTALLED">Samsung In-App Purchase not installed on this device. Do you want to install it?</string>
+	<string name="IAP_SAMSUNG_APP_STORE_NOT_INSTALLED">The Samsung Store service is not available at this time. You can continue to use this app, but you won\'t be able to make any purchases.</string>
+	<string name="IAP_SAMSUNG_ERROR_ALREADY_PURCHASED">This item was already purchased. It will not be charged to your account.</string>
+	<string name="IAP_SAMSUNG_WAITING">Please wait...</string>
+	<string name="IAP_SAMSUNG_OK_BUTTON">OK</string>
+	<string name="IAP_SAMSUNG_CANCEL_BUTTON">Cancel</string>
+</resources>

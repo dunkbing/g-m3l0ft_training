@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<string name="checklicense_dialog_message">İşlemde...</string>
+<string name="non_login_information_title">Lütfen LG World\'de oturum aç</string>
+<string name="non_login_information_message">Bu uygulamanın lisansını almak için oturum açman gerekiyor.</string>
+<string name="unlicensed_dialog_title">Doğrulama başarısız oldu</string>
+<string name="unlicensed_dialog_message">Satın alma geçmişinde eşleşen kayıt yok.</string>
+<string name="no_lgworld_dialog_title">Doğrulama gerekiyor</string>
+<string name="no_lgworld_dialog_message">Bu uygulamayı doğrulamak için lütfen LG World\'un son sürümünü yükle.</string>
+<string name="no_network_dialog_title">Ağ yok</string>
+<string name="no_network_dialog_message">Lütfen internet bağlantını kontrol et</string>
+<string name="warning_dialog_title">Uyarı</string>
+<string name="warning_dialog_message">Hizmete erişilemiyor. Lütfen tekrar dene.</string>
+<string name="ok_button">Tamam</string>
+<string name="cancel_button">İptal</string>
+<string name="exit_button">Çıkış</string>
+
+</resources>

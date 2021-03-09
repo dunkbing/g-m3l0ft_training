@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="billing_not_supported_title">Não foi possível fazer compras</string>
+    <string name="billing_not_supported_message">O serviço de cobrança do Market não está disponível neste momento. Você pode continuar a usar o aplicativo, mas não poderá fazer compras.</string>
+    <string name="cannot_connect_title">Não foi possível se conectar ao Market</string>
+    <string name="cannot_connect_message">Este aplicativo não pôde se conectar ao Market. Ou então, a sua versão do Market está desatualizada. Você pode continuar a usar este aplicativo, mas não poderá realizar compras.</string>
+    <string name="waitting_confirm">Estamos aguardando a validação da compra pelo Cafe Bazaar. Assim que o processo for finalizado, sua lista de itens será atualizada.</string>
+    <string name="pending_transaction">Você tem uma transação pendente.</string>
+	<string name="purchase_success">Compra efetuada com sucesso.</string>
+	<string name="purchase_unsuccess">Falha na compra.</string>
+	<string name="iab_retry">Tentar de novo</string>
+	<string name="iab_cancel">Cancelar</string>
+	<string name="iab_ok">OK</string>
+</resources>

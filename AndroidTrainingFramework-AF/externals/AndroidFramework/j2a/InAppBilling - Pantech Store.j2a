@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - In App Billing - Pantech Store">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/InAppBilling/pantech"/>
+			<preprocess>
+				<include path="../native/InAppBilling/InAppBillingConst.h"/>
+			</preprocess>
+		</java>
+		<res>
+			<dir path="../res_apk/InAppBilling/pantech/res"/>
+		</res>
+		<libs>
+			<dir path="../res_apk/InAppBilling/pantech/libs"/>
+		</libs>
+	</sources>
+</j2a>

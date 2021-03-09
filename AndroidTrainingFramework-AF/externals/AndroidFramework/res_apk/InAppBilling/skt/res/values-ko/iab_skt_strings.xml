@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB_SKT_CONFIRM_DIALOG_TITLE">결제 확인</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_QUESTION">다음 상품을 구매하시겠습니까?</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_ITEM_NAME">상품: {NAME}</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_ITEM_PRICE">가격: {PRICE}</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_YES">예</string>
+	<string name="IAB_SKT_CONFIRM_DIALOG_NO">아니요</string>
+	<string name="IAB_SKT_RESTORING_TRANSACTIONS_TITLE">이전 구매 내역 복원</string>
+	<string name="IAB_SKT_RESTORING_TRANSACTIONS">이전 구매 내역을 복원하는 동안 잠시만 기다려 주세요.</string>
+</resources>

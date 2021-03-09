@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB20_SK_OK">확인</string>
+	<string name="IAB20_SK_BACK">뒤로</string>
+	<string name="IAB20_SK_NEXT">다음</string>
+</resources>

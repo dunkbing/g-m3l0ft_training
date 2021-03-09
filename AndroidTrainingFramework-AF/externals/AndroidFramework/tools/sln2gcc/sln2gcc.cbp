@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sln2gcc" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\sln2gcc" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin\" />
+				<Option object_output="obj\debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="-i w:\AndroidPortTemplateSample\Engine3D\MyAndroidPort\GameSpecific\sln2android.xml -t release -p engine3d -v -r -j 4" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DUSE_CONSOLE" />
+					<Add option="-DDEBUG" />
+					<Add option="-D__WXDEBUG__" />
+				</Compiler>
+				<Environment>
+					<Variable name="WX_SUFFIX" value="ud" />
+				</Environment>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\sln2gcc" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin\" />
+				<Option object_output="obj\release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="w:\AndroidPortTemplateSample\Engine3D\MyAndroidPort\GameSpecific\debug\engine3d\Makefile.raw" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-w" />
+					<Add option="-mtune=generic" />
+					<Add option="-fpermissive" />
+					<Add option="-DUSE_CONSOLE" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<Environment>
+					<Variable name="WX_SUFFIX" value="u" />
+				</Environment>
+			</Target>
+			<Environment>
+				<Variable name="MAIN_TOOLS_DIRECTORY" value="T:\" />
+				<Variable name="DIR_NAME" value="$(EXE_NAME)" />
+				<Variable name="COMPILER_PATH" value="T:\MinGW32" />
+				<Variable name="WX_VERSION" value="28" />
+				<Variable name="EXE_NAME" value="Monolith" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-O2" />
+			<Add option="-fexceptions" />
+			<Add option="-mthreads" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DNO_GCC_PRAGMA" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-DHAVE_W32API_H" />
+			<Add directory="$(#wx)\include" />
+			<Add directory="$(#wx)\contrib\include" />
+			<Add directory="$(wx)\lib\gcc_dll\msw$(WX_SUFFIX)" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx.include)" />
+			<Add directory="$(#wx)\contrib\include" />
+			<Add directory="$(#wx)\lib\gcc_dll$(WX_CFG)\msw$(WX_SUFFIX)" />
+		</ResourceCompiler>
+		<Linker>
+			<Add library="wxbase$(WX_VERSION)$(WX_SUFFIX)" />
+			<Add library="wxbase$(WX_VERSION)$(WX_SUFFIX)_xml" />
+			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_core" />
+			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_adv" />
+			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_aui" />
+			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_html" />
+			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_media" />
+			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_richtext" />
+			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_xrc" />
+			<Add library="wxbase$(WX_VERSION)$(WX_SUFFIX)_net" />
+			<Add directory="$(#WX.lib)\gcc_dll$(WX_CFG)" />
+		</Linker>
+		<Unit filename="src\CompileThread.cpp" />
+		<Unit filename="src\CompileThread.h" />
+		<Unit filename="src\VcProject.cpp" />
+		<Unit filename="src\VcProject.h" />
+		<Unit filename="src\VcSln.cpp" />
+		<Unit filename="src\VcSln.h" />
+		<Unit filename="src\main.cpp" />
+		<Unit filename="src\main.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="..\..\src\main\main.cpp" main="-- None --" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxDialog wxs="wxsmith/ColumnWidth.wxs" src="..\..\src\grid\ColumnWidth\ColumnWidth.cpp" hdr="..\..\src\grid\ColumnWidth\ColumnWidth.h" xrc="..\..\data\xrc\ColumnWidth.xrc" fwddecl="0" i18n="1" name="ColumnWidth" language="CPP" />
+					<wxDialog wxs="wxsmith/EditLanguage.wxs" src="..\..\src\project\EditLanguage\EditLanguage.cpp" hdr="..\..\src\project\EditLanguage\EditLanguage.h" xrc="..\..\data\xrc\EditLanguage.xrc" fwddecl="0" i18n="1" name="EditLanguage" language="CPP" />
+					<wxDialog wxs="wxsmith/OpenSVNDialog.wxs" src="..\..\src\base\OpenSVNDialog\OpenSVNDialog.cpp" hdr="..\..\src\base\OpenSVNDialog\OpenSVNDialog.h" xrc="..\..\data\xrc\OpenSVNDialog.xrc" fwddecl="0" i18n="1" name="OpenSVNDialog" language="CPP" />
+					<wxPanel wxs="wxsmith/FontPanel16.wxs" src="..\..\src\base\FontPanel\FontPanel16.cpp" hdr="..\..\src\base\FontPanel\FontPanel16.h" xrc="..\..\data\xrc\FontPanel16.xrc" fwddecl="0" i18n="1" name="FontPanel16" language="CPP" />
+					<wxPanel wxs="wxsmith/FontPanel48.wxs" src="..\..\src\base\FontPanel\FontPanel48.cpp" hdr="..\..\src\base\FontPanel\FontPanel48.h" xrc="..\..\data\xrc\FontPanel48.xrc" fwddecl="0" i18n="1" name="FontPanel48" language="CPP" />
+					<wxPanel wxs="wxsmith/SearchDialog.wxs" src="..\..\src\base\SearchDialog\SearchDialog.cpp" hdr="..\..\src\base\SearchDialog\SearchDialog.h" xrc="..\..\data\xrc\SearchDialog.xrc" fwddecl="0" i18n="1" name="SearchDialog" language="CPP" />
+					<wxPanel wxs="wxsmith/SymbolDialog.wxs" src="..\..\src\base\SymbolDialog\SymbolDialog.cpp" hdr="..\..\src\base\SymbolDialog\SymbolDialog.h" xrc="..\..\data\xrc\SymbolDialog.xrc" fwddecl="0" i18n="1" name="SymbolDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/ASpellSettings.wxs" src="..\..\src\wxTextCtrlAspell\ASpellSettings.cpp" hdr="..\..\src\wxTextCtrlAspell\ASpellSettings.h" xrc="..\..\data\xrc\ASpellSettings.xrc" fwddecl="0" i18n="1" name="ASpellSettings" language="CPP" />
+				</resources>
+			</wxsmith>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

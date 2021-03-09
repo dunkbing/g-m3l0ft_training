@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - In Game Browser">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/InGameBrowser"/>
+			<preprocess/>
+		</java>
+		<res>
+			<dir path="../res_apk/InGameBrowser/res"/>
+		</res>
+	</sources>
+</j2a>

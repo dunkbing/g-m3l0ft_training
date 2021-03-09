@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Help/Docs/Info: https://docs.gameloft.org/sln2gcc-compile-utility-tool/ -->
+
+<Makefile>
+
+<!--Solution: 	here you have to insert the path to VisualStudio Solution file aka sln file. You can use the relative or absolute path. 
+                Our advice it is to use relative path! -->
+<Solution Path="../../../../prj/AndroidTrainingFramework.sln" /> 
+
+    
+    <CommonGccConfig>
+        
+        <GccConfig Name="armeabi-v7a">
+    
+            <Macro Name="MAIN_PROJECT" 			Value="Android" />
+            <Macro Name="GENERATE_DSYM"			Value="True" />
+            <Macro Name="STRIP_DEBUG_SYMBOLS_FOR_RELEASE"	Value="True" />
+            <Macro Name="STRIP_DEBUG_SYMBOLS_FOR_DEBUG"	    Value="False" />
+            
+            
+            <!--ANDROID_NDK_PATH: user defined macro. The value for this macro it is taken from Environment Variables. If ANDROID_NDK_HOME it is not declared the value for 
+                ANDROID_NDK_PATH will be blank/empty/nothing/nada :) -->
+            <Macro Name="ANDROID_NDK_PATH" 		Value="$(ANDROID_NDK_HOME)" />
+            <!--ANDROID_PLATFORM: user defined macro. -->
+            <Macro Name="ANDROID_PLATFORM" 		Value="android-$(NATIVE_API_LEVEL)" />
+            <!--TOOLCHAIN_FOLDERNAME: user defined macro. -->
+            <!-- <Macro Name="TOOLCHAIN_VERSION"		Value="4.4.3" /> -->
+            <Macro Name="TOOLCHAIN_VERSION"		Value="4.9" />
+            <Macro Name="TOOLCHAIN_FOLDERNAME"	Value="arm-linux-androideabi-$(TOOLCHAIN_VERSION)" />            
+            
+            
+            <!--TOOLCHAIN: required macro. This it is used to specify the path to the compile/link tools-->
+            <Macro Name="TOOLCHAIN" 			Value="$(ANDROID_NDK_PATH)\toolchains\$(TOOLCHAIN_FOLDERNAME)\prebuilt\windows-x86_64\bin\" />
+            <Macro Name="TOOLCHAIN_BACKUP"		Value="$(ANDROID_NDK_PATH)\toolchains\$(TOOLCHAIN_FOLDERNAME)\prebuilt\windows-x86_64\arm-linux-androideabi\bin\" />
+            
+            
+            
+            <!--DISTCC: this it is used if you want to speed up the compile process. DISTCC can distribute the compiling process on multiple computers-->	
+            <!--        HOST computer means the computer that must help your computer to compile the project. The HOST computer it is like a server that waits for requests.-->
+            <Macro Name="DISTCC_ENABLE" 		        Value="$(USE_DISTCC)" /> <!-- Enable or disable DISTCC. You can use 0, 1, false, true for Value.-->
+            <Macro Name="DISTCC_HOSTS" 		        	Value="$(USE_DISTCC_HOSTS)" /> <!-- the ip's of the HOSTS machines-->
+            <Macro Name="DITSCC_JOBS" 			        Value="8" /> <!-- How many threads will be created on HOST machine.-->
+            <Macro Name="DISTCC" 				        Value="$(CYGWIN_BIN)\distcc.exe" /> <!-- The path to distcc.exe . The path must be from HOST machine.-->
+            <Macro Name="DISTCC_USE_FULL_PATH"   		Value="1" /> <!-- Use or not the full path for compiler. You can use 0, 1, false, true for Value.-->
+        
+                        
+            
+            
+            
+            <!--CONVERT_ERRORS_TO_MSVC: used to convert the errors from gcc type to MSVC type-->
+            <Macro Name="CONVERT_ERRORS_TO_MSVC" Value="1" />
+            
+
+
+            
+            <!--CPP: 	the compiler for cpp files
+                CC: 	the compiler for c files
+                LD: 	the linker for dynamic libraryes, aka *.so files
+                LS: 	the linker for static libraryes, aka *.a files	
+                This macros are required!
+                -->
+            <Macro Name="CPP" 			Value="$(TOOLCHAIN)\arm-linux-androideabi-g++.exe" />
+            <Macro Name="CC" 			Value="$(TOOLCHAIN)\arm-linux-androideabi-gcc.exe" />
+            <Macro Name="LD" 			Value="$(TOOLCHAIN)\arm-linux-androideabi-g++.exe" />
+            <Macro Name="LS" 			Value="$(TOOLCHAIN)\arm-linux-androideabi-ar.exe" />
+            <Macro Name="OBJCOPY"		Value="$(TOOLCHAIN)\arm-linux-androideabi-objcopy.exe" />
+            <Macro Name="STRIP"		    Value="$(TOOLCHAIN)\arm-linux-androideabi-strip.exe" />
+            
+            
+            
+            <!--COMPILE_CPP_COMMAND_LINE: this is the command line to compile the cpp files -->
+            <!--COMPILE_CC_COMMAND_LINE: this is the command line to compile the c files -->
+            <!--DYNAMIC_LINK_COMMAND_LINE: this is the command line that creates *.so files (dynamic libraryes)-->
+            <!--DYNAMIC_LINK_COMMAND_LINE: this is the command line that creates *.a files	(static libraryes)-->
+            <!--This Macro needs a little bit more explanation. You can see that this Macros use $(DEFINES), $(CFLAGS).
+                For instance if we have to compile a file from project Android, the final value of $(DEFINES) will be 
+                $(DEFINES) from <Project Name="Android">     +       $(DEFINES) from <CommonGccConfig> .
+                The same algorithm it is used also for $(INCLUDE_PATHS), $(CFLAGS) etc...-->
+            <Macro Name="COMPILE_CPP_COMMAND_LINE" 	Value="$(CPP) $(DEFINES) $(CFLAGS) $(INCLUDE_PATHS) -c $(SRC_FILE) -o $(OBJ_FILE)" />
+            <Macro Name="COMPILE_CC_COMMAND_LINE" 	Value="$(CC) $(DEFINES) $(CFLAGS) $(INCLUDE_PATHS) -c $(SRC_FILE) -o $(OBJ_FILE)" />
+            <Macro Name="DYNAMIC_LINK_COMMAND_LINE" Value="$(LD) -Wl,-soname,$(OUT) -shared $(OBJ_FILES) $(LDLIBS)  $(LDFLAGS) $(LINK_PATHS) -o $(OUT)" />
+            <Macro Name="STATIC_LINK_COMMAND_LINE" 	Value="$(LS) -r -s $(OUT) $(OBJ_FILES)" />
+            <Macro Name="EXE_LINK_COMMAND_LINE" 	Value="$(LD) $(OBJ_FILES) $(LDLIBS)  $(LDFLAGS) $(LINK_PATHS) -o $(OUT)" />
+            <Macro Name="DSYM_COMMAND_LINE" 	    Value="$(OBJCOPY) --only-keep-debug $(INPUT) $(OUT)" />
+            <Macro Name="STRIP_COMMAND_LINE" 	    Value="$(STRIP) --strip-debug --strip-unneeded $(INPUT)" />
+
+            
+            <!--TYPES_OF_FILES_TO_BE_COMPILED: this macro specify what files to compile. Add here the extension and ';' as a separator-->
+            <Macro Name="TYPES_OF_FILES_TO_BE_COMPILED"	Value="cpp;cc;c" />
+            
+            
+            <!--DEFINES: this is mandatory and it is very important. You can see here CommonValue, DebugValue and ReleaseValue. 
+                        The DEFINES for <CommonGccConfig> will be calculated like this:
+                            for release:  	DEFINES = CommonValue + ReleaseValue 
+                            for debug:		DEFINES = CommonValue + DebugValue 
+                        Separators: ';' space or new line -->
+            <Macro Name="DEFINES" 	CommonValue="	__ANDROID__;
+													ANDROID;
+													_ANDROID;
+													ANDROID_NDK;
+													OS_ANDROID;" 
+                                    DebugValue="_DEBUG"
+                                    ReleaseValue=""	/>
+                <!-- Note: _GLIBCXX_USE_C99_MATH=1 is needed to have std:isnan, which is used by the smath part of Jet engine -->
+                                    
+                                    
+            <!--CFLAGS: Represents the Gcc standard compiler flags that you want to use. 
+                        This is mandatory and it is very important. You can see here CommonValue, DebugValue and ReleaseValue. 
+                        The CFLAGS for <CommonGccConfig> will be calculated like this:
+                            for release:  	CFLAGS = CommonValue + ReleaseValue 
+                            for debug:		CFLAGS = CommonValue + DebugValue 
+                        Separators: ';' space or new line -->
+            <!-- -ffunction-sections -->
+            <Macro Name="CFLAGS" 	CommonValue="	-mandroid
+													-marm
+													-march=armv7-a
+													-mfpu=vfpv3-d16
+													-mfloat-abi=softfp
+													-fpic
+													-ffunction-sections
+													-funwind-tables
+													-fstack-protector
+													-no-canonical-prefixes
+													-fomit-frame-pointer
+													-fno-strict-aliasing
+													-fno-unit-at-a-time
+													-funswitch-loops
+													-finline-limit=300
+													-ffast-math
+													-Wno-psabi
+													-Wno-write-strings
+													-fomit-frame-pointer
+													-fsigned-char
+													-libstdc++
+													-fpermissive
+													"
+                                    DebugValue="-g"
+                                    ReleaseValue="-w -g0 -Ofast"	/>
+                                    
+            <!--INCLUDE_PATHS: 	Specify the paths where the headers are searched 
+                                Do not use paths with space in it.
+                                Separators: ';' space or new line -->							
+            <Macro Name="INCLUDE_PATHS" CommonValue="$(ANDROID_NDK_PATH)\sources\cxx-stl\gnu-libstdc++\$(TOOLCHAIN_VERSION)\include
+													 $(ANDROID_NDK_PATH)\sources\cxx-stl\gnu-libstdc++\$(TOOLCHAIN_VERSION)\include\backward
+                                                     $(ANDROID_NDK_PATH)\sources\cxx-stl\gnu-libstdc++\$(TOOLCHAIN_VERSION)\libs\armeabi-v7a\include
+													 $(ANDROID_NDK_PATH)\toolchains\$(TOOLCHAIN_FOLDERNAME)\prebuilt\windows-x86_64\include
+                                                     $(ANDROID_NDK_PATH)\platforms\$(ANDROID_PLATFORM)\arch-arm\usr\include
+													 $(ANDROID_TOOLBOX)\src\jni\" 
+                                        DebugValue="$(ANDROID_FRAMEWORK_CONFIG)\src\jni\debug\"
+                                        ReleaseValue="$(ANDROID_FRAMEWORK_CONFIG)\src\jni\release\"	/>
+            
+            
+            <!--LDLIBS: Here you can specify the static libraryes that you need use at linking step. You have to use the Gcc naming convention.
+                        For example: -lstdc++  means that you want to use libstdc++.a library file
+                        Separators: ';' space or new line -->							
+            <Macro Name="LDLIBS" Value="-lGLESv2 -llog -lc -lm -lz -ldl -lgnustl_static -lsupc++ -lgcc -landroid -lOpenSLES -lEGL" />
+            
+            
+            <!--LDFLAGS: Gcc standard linker flags used to create *.so files
+                         The LDFLAGS for <CommonGccConfig> will be calculated like this:
+                            for release:  	LDFLAGS = CommonValue + ReleaseValue 
+                            for debug:		LDFLAGS = CommonValue + DebugValue 
+                         Separators: ';' space or new line -->	
+            <Macro Name="LDFLAGS" 	CommonValue="	-Wl,--no-undefined -Wl,-z,noexecstack
+												    -Wl,-rpath-link=$(ANDROID_NDK_PATH)\platforms\$(ANDROID_PLATFORM)\arch-arm\usr\lib\
+												    --sysroot=$(ANDROID_NDK_PATH)\platforms\$(ANDROID_PLATFORM)\arch-arm
+												    -no-canonical-prefixes
+												    -march=armv7-a
+												    -Wl,--fix-cortex-a8
+													-Wl,--allow-multiple-definition" 
+                                    DebugValue=""
+                                    ReleaseValue=""	/>
+                            
+                            
+            <!--LINK_PATHS: 	Specify the paths where the to search the libraries specified in LDLIBS
+                                Do not use paths with space in it.
+                                Separators: ';' space or new line -->			
+
+            <Macro Name="LINK_PATHS" Value="$(ANDROID_NDK_PATH)\sources\cxx-stl\gnu-libstdc++\$(TOOLCHAIN_VERSION)\libs\armeabi-v7a\
+										    $(ANDROID_NDK_PATH)\toolchains\$(TOOLCHAIN_FOLDERNAME)\prebuilt\windows-x86_64\lib\gcc\arm-linux-androideabi\$(TOOLCHAIN_VERSION)\
+										    $(ANDROID_NDK_PATH)\platforms\$(ANDROID_PLATFORM)\arch-arm\usr\lib\
+										    $(ANDROID_NDK_PATH)\toolchains\$(TOOLCHAIN_FOLDERNAME)\prebuilt\windows-x86_64\arm-linux-androideabi\lib\armv7-a\" />
+        </GccConfig>
+        
+    
+    </CommonGccConfig>
+
+    
+    
+    
+    
+    
+    
+    <Project Name="Android" UseS2GFile="s2g/Android.s2g">
+	
+										  
+
+    </Project>
+     
+	<Project Name="GameSpecific"    UseS2GFile="s2g/Game.s2g" />
+	  
+</Makefile>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+<string name="app_name">Ứng dụng mẫu LG Coconut</string>
+<string name="checklicense_dialog_message">Đang tiến triển…</string>
+<string name="unlicensed_dialog_title">Việc xác minh bị lỗi</string>
+<string name="unlicensed_dialog_message">Không tìm thấy hồ sơ lịch sử mua hàng của bạn.</string>
+<string name="no_lgworld_dialog_title">Cần phải xác minh</string>
+<string name="no_lgworld_dialog_message">Hãy cài phiên bản LG World mới nhất để xác minh ứng dụng này.</string>
+<string name="no_network_dialog_title">Không có mạng</string>
+<string name="no_network_dialog_message">Hãy kiểm tra kết nốt mạng của bạn</string>
+<string name="warning_dialog_title">Cảnh báo</string>
+<string name="warning_dialog_message">Dịch vụ không có sẵn. Hãy thử lại.</string>
+<string name="ok_button">OK</string>
+<string name="cancel_button">Hủy bỏ</string>
+<string name="exit_button">Thoát</string>
+
+</resources>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<string name="checklicense_dialog_message">Em progresso…</string>
+<string name="unlicensed_dialog_title">A verificação falhou</string>
+<string name="unlicensed_dialog_message">Não foram encontrados registos correspondentes no seu histórico de compras.</string>
+<string name="no_lgworld_dialog_title">Verificação necessária</string>
+<string name="no_lgworld_dialog_message">Por favor, instale a última versão do LG World para verificar esta aplicação</string>
+<string name="no_network_dialog_title">Sem rede</string>
+<string name="no_network_dialog_message">Por favor, verifique a sua ligação à rede.</string>
+<string name="warning_dialog_title">Aviso</string>
+<string name="warning_dialog_message">Serviço não disponível Tente de novo.</string>
+<string name="ok_button">OK</string>
+<string name="cancel_button">Cancelar</string>
+<string name="exit_button">SAIR</string>
+
+</resources>

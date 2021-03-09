@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+	<style name="Theme.NoTitleBar">
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	<style name="Theme.NoTitleBar.Fullscreen">
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+
+	 <style name="Theme.Translucent">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowAnimationStyle">@android:style/Animation</item>
+	</style>
+	<style name="Theme.Translucent.NoTitleBar">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+
+	<style name="Theme.Translucent.NoTitleBar.Fullscreen">
+		<item name="android:windowFullscreen">true</item>
+	</style>
+
+	<style name="Theme.Holo.NoActionBar">
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	<style name="Theme.Holo.NoActionBar.Fullscreen">
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+-->
+	<!--
+	android:theme="@android:style/Theme.Translucent.NoTitleBar"
+	android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+	-->
+	<style name="Theme.acp.translucent.notitlebar" parent="@android:style/Theme.Holo.NoActionBar">
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:windowAnimationStyle">@android:style/Animation</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<!--<item name="android:backgroundDimEnabled">true</item>-->
+	</style>
+	
+	<style name="Theme.acp.translucent.notitlebar.fullscreen" parent="Theme.acp.translucent.notitlebar">
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+
+	<style name="Theme.acp.notitlebar.fullscreen" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+	</style>
+
+	<style name="Theme.acp.notitlebar" parent="@android:style/Theme.Holo.NoActionBar">
+	</style>
+	
+	<style name="Theme.acp.progressbar.horizontal" parent="android:Widget.Holo.ProgressBar.Horizontal">
+	</style>
+	<style name="Theme.acp.progressbar" parent="android:Widget.Holo.ProgressBar">
+	</style>
+	
+</resources>

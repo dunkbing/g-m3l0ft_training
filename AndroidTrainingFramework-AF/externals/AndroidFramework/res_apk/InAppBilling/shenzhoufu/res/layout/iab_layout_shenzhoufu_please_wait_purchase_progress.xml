@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/LinearLayout01" 
+				android:gravity="center" 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent" 
+				android:background="@color/iab_background">
+				<FrameLayout android:id="@+id/FrameLayout00"
+							android:layout_height="fill_parent" 
+							android:layout_width="fill_parent">
+							<FrameLayout android:id="@+id/FrameLayoutDialog"
+										android:layout_height="fill_parent" 
+										android:layout_width="fill_parent" 
+										android:paddingLeft="@dimen/iab_main_layout_padding" 
+										android:paddingRight="@dimen/iab_main_layout_padding" 
+										android:paddingTop="@dimen/iab_main_layout_padding_top">
+														<LinearLayout android:id="@+id/LinearLayoutParent"
+																		android:layout_width="fill_parent" 
+																		android:orientation="vertical" 
+																		android:layout_height="fill_parent">			
+																		<LinearLayout android:layout_width="fill_parent" 
+																						android:gravity="center" 
+																						android:layout_height="wrap_content" 
+																						android:id="@+id/LinearLayoutDialogTop">
+																						<TableLayout android:id="@+id/TableLayout01" 
+																								android:layout_width="fill_parent" 
+																								android:layout_height="wrap_content">
+																								<TableRow>
+																										<TextView android:layout_width="wrap_content"
+																													android:layout_height="wrap_content"
+																													android:id="@+id/lblGameName" 
+																													android:gravity="left|center"
+																													android:typeface="normal"
+																													android:layout_weight=".5" 
+																													android:textSize="@dimen/iab_ccard_header_text_size">
+																										</TextView>
+																								</TableRow>
+																								<TableRow>
+																										<TextView android:layout_width="wrap_content"
+																													android:layout_height="wrap_content"
+																													android:id="@+id/lblGamePrice"
+																													android:gravity="left|center"
+																													android:typeface="normal"
+																													android:layout_weight=".5" 
+																													android:textSize="@dimen/iab_ccard_header_text_size">
+																										</TextView>
+																								</TableRow>
+																						</TableLayout>
+																	</LinearLayout>
+																		<LinearLayout android:layout_width="fill_parent" 
+																						android:gravity="center" 
+																						android:layout_height="@dimen/iab_separation_height" 
+																						android:paddingLeft="@dimen/iab_separation_padding" 
+																						android:paddingRight="@dimen/iab_separation_padding" 
+																						android:background="@color/iab_separation"
+																						android:id="@+id/LinearLayoutSeparation">
+																		</LinearLayout>				
+																		<LinearLayout android:layout_width="fill_parent"
+																							android:orientation="vertical" 
+																							android:layout_height="wrap_content" 
+																							android:id="@+id/LinearLayoutForm"
+																							android:layout_marginTop="@dimen/iab_center_margin_top">
+																						<TextView android:layout_height="wrap_content"
+																									android:id="@+id/lblShenzhoufuPurchaseProgressTitle" 
+																									android:text="@string/IAB_SHENZHOUFU_LAYOUT_PURCHASE_PROGRESS_TITLE" 
+																									android:layout_gravity="center_horizontal|center" 
+																									android:textStyle="bold" 
+																									android:typeface="normal" 
+																									android:layout_width="fill_parent" 
+																									android:textSize="@dimen/iab_cc_transaction_success_text_size" 
+																									android:visibility="visible">
+																						</TextView>
+																						<TextView android:layout_height="wrap_content"
+																									android:id="@+id/lblShenzhoufuPurchaseProgressMessage" 
+																									android:text="@string/IAB_SHENZHOUFU_LAYOUT_PURCHASE_PROGRESS_MESSAGE" 
+																									android:layout_gravity="center_horizontal|center"
+																									android:typeface="normal" 
+																									android:layout_width="fill_parent" 
+																									android:textSize="@dimen/iab_ccard_form_text_size"
+																									android:layout_marginTop="@dimen/iab_center_margin_top">
+																						</TextView>
+																						<ProgressBar android:id="@+id/ProgressBar01" 
+																									android:layout_width="wrap_content" 
+																									android:layout_height="wrap_content" 
+																									style="?android:attr/progressBarStyleLargeInverse"
+																									android:layout_gravity="center" 
+																									android:layout_marginTop="@dimen/iab_progress_center_gap">
+																						</ProgressBar>
+																		</LinearLayout>																		
+														</LinearLayout>
+							</FrameLayout>
+							<FrameLayout android:id="@+id/FrameLayoutHeader"
+										android:layout_width="fill_parent" 
+										android:layout_gravity="top"
+										android:background="@drawable/iab_top_bar" 
+										android:layout_height="@dimen/iab_tittle_bar_size_h">
+										<ImageView android:id="@+id/ImageViewGLLogo"
+													android:layout_width="wrap_content"
+													android:layout_height="wrap_content"
+													android:src="@drawable/iab_logo_tittle_horiz"
+													android:paddingTop="@dimen/iab_logo_tittle_gap"
+													android:paddingLeft="@dimen/iab_logo_tittle_gap">
+										</ImageView>
+										<ImageView android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:paddingTop="@dimen/iab_logo_tittle_gap"
+											android:paddingRight="@dimen/iab_logo_tittle_gap" 
+											android:src="@drawable/shenzhoufu_logo" 
+											android:id="@+id/ImageViewCCLogos" 
+											android:layout_gravity="right">
+										</ImageView>
+							</FrameLayout>
+				</FrameLayout>
+</LinearLayout>

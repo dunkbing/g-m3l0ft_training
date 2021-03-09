@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="iab_main_layout_padding_top">90dp</dimen>
+
+	<!-- Tittle Bar -->
+	<dimen name="iab_tittle_bar_size_h">100dp</dimen>
+	<dimen name="iab_logo_tittle_gap">25dp</dimen>
+	
+	<!-- TextView -->
+	<dimen name="iab_ccard_form_text_size">24sp</dimen>
+	<dimen name="iab_ccard_form_aux_text_size">26sp</dimen>
+	<dimen name="iab_ccard_help_text_size">16sp</dimen>
+	<dimen name="iab_bottom_msg_text_size">16sp</dimen>
+	<dimen name="iab_ccard_header_text_size">34sp</dimen>
+	
+	<dimen name="iab_cc_transaction_failed_text_size">40sp</dimen>
+	<dimen name="iab_cc_transaction_success_text_size">28sp</dimen>
+	<dimen name="iab_tcs_top_margin">200dp</dimen>
+	<dimen name="iab_tcs_bottom_margin">120dp</dimen>
+	<dimen name="iab_tcs_text_size">30sp</dimen>
+	
+	<!-- Button -->
+	<dimen name="iab_button_text_size">28dp</dimen>
+	<dimen name="iab_button_tcs_text_size">18dp</dimen>
+	<dimen name="iab_button_width">160dp</dimen>
+	<dimen name="iab_cc_button_height">76dp</dimen>
+	<dimen name="iab_large_button_width">400dp</dimen>
+	<dimen name="iab_small_button_width">80dp</dimen>
+	
+	
+	
+	<!-- EditText -->
+	<dimen name="iab_EditText_height">66dp</dimen>
+	<dimen name="iab_EditText_text_size">22sp</dimen>
+	
+	<!-- Form -->
+	<dimen name="iab_center_margin_top">100dp</dimen>
+	
+	<dimen name="iab_left_column_max_width">250dp</dimen>
+	<!-- Progress Bar -->
+	<dimen name="iab_progressBar_marginBottom">64dp</dimen>
+	
+	<integer name="iab_size_dialog">3</integer>
+</resources>

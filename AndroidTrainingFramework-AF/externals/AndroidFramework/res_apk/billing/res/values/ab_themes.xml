@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!-- Base application theme is the default theme. -->
+	<style parent="@android:style/Theme.NoTitleBar.Fullscreen" name="Theme.AndroidBilling">
+		<item name="android:windowBackground">@drawable/ab_background</item>
+		<!--<item name="android:textStyle">bold</item>-->
+		<!--<item name="android:textColor">#ffffffff</item>-->
+		<item name="android:buttonStyle">@style/ab_Widget.Button</item>
+		<item name="android:textViewStyle">@style/ab_Widget.TextView</item>
+	</style>
+	<style parent="@android:style/Theme.NoTitleBar.Fullscreen" name="Theme.AndroidBillingNoBG">
+		<item name="android:buttonStyle">@style/ab_Widget.Button</item>
+		<item name="android:textViewStyle">@style/ab_Widget.TextView</item>
+	</style>
+</resources>

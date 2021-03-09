@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <include layout="@layout/iapppay_oneclickpay_layout_orderinfo" />
+        
+        <!-- 持卡人身份信息 -->
+
+        <LinearLayout
+            android:id="@+id/gp_card_holder_identify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/line_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.iapppay.fastpay.ui.InputCarItemEditText
+                android:id="@+id/identifyInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <!--
+       <ImageView
+                 android:contentDescription="@string/iapppay_img"               
+                style="@style/icon_common_style"
+                android:src="@drawable/iapppay_oneclickpay_ic_identity" />
+       <ImageView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/iapppay_oneclickpay_shape_line_gray"
+           android:layout_marginRight="5dp"
+           />
+
+        <com.iapppay.fastpay.keyboard.KeyBoardEditText
+            android:id="@+id/identifyNumber"
+            style="@style/edit_common_style"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            
+            android:background="@null"
+            android:hint="@string/identity_no"/>
+            -->
+        </LinearLayout>
+
+        <!-- 信用卡有效期 和CVV2 -->
+
+        <LinearLayout
+            android:id="@+id/gp_credit_card_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/line_margin"
+            android:gravity="center_vertical" 
+            android:orientation="horizontal">
+            
+            
+            <com.iapppay.fastpay.ui.InputCarItemEditText
+                android:id="@+id/validateInput"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+            
+            
+            <com.iapppay.fastpay.ui.InputCarItemEditText
+                android:id="@+id/cvv2Input"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:layout_weight="1"/>
+
+           <!--  <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8.0dip"
+                android:layout_weight="5.0"
+                android:background="@drawable/iapppay_oneclickpay_bg_edit_seletor"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/icon_common_style"
+                    android:contentDescription="@string/iapppay_img"
+                    android:src="@drawable/iapppay_oneclickpay_ic_valid_date" />
+
+                <TextView
+                    android:id="@+id/validateTextView"
+                    style="@style/edit_common_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/iapppay_oneclickpay_shape_line_gray"
+                    android:drawablePadding="5.0dip"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:hint="@string/valid_date"
+                    android:maxLength="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="0dip"
+                android:layout_weight="9.0"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/icon_common_style"
+                    android:contentDescription="@string/iapppay_img"
+                    android:src="@drawable/iapppay_oneclickpay_ic_cvv2" />
+
+                <TextView
+                    android:id="@+id/cvv2_id"
+                    style="@style/edit_common_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/iapppay_oneclickpay_bg_edit_seletor"
+                    android:drawableLeft="@drawable/iapppay_oneclickpay_shape_line_gray"
+                    android:drawablePadding="5.0dip"
+                    android:gravity="center"
+                    android:hint="@string/card_end_dim"
+                    android:maxLength="3" />
+            </LinearLayout> -->
+        </LinearLayout>
+
+        <!-- 借記卡銀行卡密碼 -->
+
+        <LinearLayout
+            android:id="@+id/gp_card_password"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginTop="@dimen/line_margin"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                style="@style/icon_common_style"
+                android:contentDescription="@string/iapppay_img"
+                android:src="@drawable/iapppay_oneclickpay_ic_mobile" />
+
+            <EditText
+                android:id="@+id/card_password"
+                style="@style/edit_common_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/iapppay_oneclickpay_bg_edit_seletor"
+                android:drawableLeft="@drawable/iapppay_oneclickpay_shape_line_gray"
+                android:drawablePadding="5.0dip"
+                android:hint="@string/bank_bind_phone"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <!-- 持卡人姓名 -->
+
+        <LinearLayout
+            android:id="@+id/gp_card_holder_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/line_margin"
+            android:gravity="center_vertical" >
+
+            <!-- <ImageView
+                style="@style/icon_common_style"
+                android:contentDescription="@string/iapppay_img"
+                android:src="@drawable/iapppay_oneclickpay_ic_people" />
+
+            <EditText
+                android:id="@+id/ownerNameEditText"
+                style="@style/edit_common_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iapppay_oneclickpay_bg_edit_seletor"
+                android:drawableLeft="@drawable/iapppay_oneclickpay_shape_line_gray"
+                android:drawablePadding="5.0dip"
+                android:hint="@string/true_name" /> -->
+            
+            <com.iapppay.fastpay.ui.InputCarItemEditText
+                android:id="@+id/ownerNameInput"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        
+
+        <!-- 持卡人手機號碼信息 -->
+
+        <LinearLayout
+            android:id="@+id/gp_card_holder_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/line_margin"
+            android:gravity="center_vertical" >
+
+            <com.iapppay.fastpay.ui.InputCarItemEditText
+                android:id="@+id/phoneNumberInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <!--
+        <ImageView
+                 android:contentDescription="@string/iapppay_img"           
+            style="@style/icon_common_style"
+            android:src="@drawable/iapppay_oneclickpay_ic_mobile" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            style="@style/edit_common_style"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/iapppay_oneclickpay_shape_line_gray"
+            android:drawablePadding="5.0dip"
+            android:hint="@string/bank_bind_phone"
+            android:inputType="number"
+            android:maxLength="11" />
+            -->
+        </LinearLayout>
+
+        <!-- 持卡人手機號碼校驗 -->
+
+        <LinearLayout
+            android:id="@+id/gp_card_holder_phone_valid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/line_margin"
+            android:orientation="horizontal" >
+
+            
+            <!--
+             <EditText
+            android:id="@+id/smsCode"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/iapppay_oneclickpay_bg_edit_seletor"
+            android:hint="@string/input_sms_code"
+            android:maxLength="8"
+            android:paddingLeft="10.0dip"
+            android:inputType="number"
+            android:singleLine="true" />
+            -->
+
+            <Button
+                android:id="@+id/getSmsCodeButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                
+                android:background="@drawable/iapppay_oneclickpay_tv_button_selector"
+                android:drawableLeft="@drawable/iapppay_oneclickpay_ic_airplane"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:text="@string/get_sms_code"
+                android:textColor="#c7c7c7"
+                android:textSize="20sp" />
+            
+            <com.iapppay.fastpay.ui.InputCarItemEditText
+                android:id="@+id/smsCodeInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 />
+        </LinearLayout>
+
+        <!-- 是否查看支付協議 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginTop="@dimen/line_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/protocolCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/iapppay_oneclickpay_bg_checkbox_seletor"
+                android:checked="true"
+                android:clickable="true" 
+                android:focusable="true"/>
+			<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" 
+                android:text="同意"
+                android:clickable="true"
+                android:focusable="true"/>
+            <TextView
+                android:id="@+id/agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_size_20" 
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/line_margin_20"
+            android:layout_marginTop="@dimen/line_margin_15"
+            android:background="@drawable/iapppay_oneclickpay_tv_button_selector"
+            android:text="确定支付"
+            android:textColor="#c7c7c7"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3" >
+    </LinearLayout>
+
+</LinearLayout>

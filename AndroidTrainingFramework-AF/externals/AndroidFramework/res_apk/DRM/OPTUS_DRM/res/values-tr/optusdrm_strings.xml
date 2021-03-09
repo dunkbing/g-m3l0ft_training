@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="drmlib_optusjg_message_checking"><![CDATA[<div>Bu oyun için lisansını kontrol ediyor. Lütfen doğrulama için sunucularımız hazırlanırken bekle.</div>]]></string>
+	<string name="drmlib_optusjg_message_validated"><![CDATA[<div>Lisansın doğrulandı. <br/><br/><a href="action:finish">ŞİMDİ OYNA</a></div>]]></string>
+	<string name="drmlib_optusjg_message_noinet"><![CDATA[<div>Bu oyun için lisans doğrulanamadı. Bir internet bağlantısı gerekiyor. Lütfen <a href="action:retry">TEKRAR DENE</a> veya <a href="action:help">YARDIM</a> sayfamıza başvur.</div>]]></string>
+	<string name="drmlib_optusjg_message_refused"><![CDATA[<div>Bu oyun için lisansın geçerli değil gibi görünüyor. Lütfen  <a href="action:help">YARDIM</a> bölümümüzü oku.</div>]]></string>
+	<string name="drmlib_optusjg_message_help">	<![CDATA[<div><b>YARDIM</b><br/><br/>Oyununun doğrulanması için internete bağlı olmalısın (Mobil Ağ (GPRS) veya Wi-Fi). <br/><br/>Lisans sadece telefonun için geçerli, oyunu başka bir telefona indiremezsin. <br/><br/>Bir sorunla karşılaşırsan lütfen <a href="action:cs">MÜŞTERİ HİZMETLERİ</a> birimimizle temas kur.]]></string>	
+	<string name="DOWNLOAD_FILES_NO_WIFI_QUESTION_OPTUS">Bu oyunu indirmek için Wi-Fi ve Optus ağı arasında seçim yapabilirsin. Bu oyunu Optus üzerinden indirmek herhangi bir veri ücretine mal olmaz.</string>															
+	<string name="USE_OPTUS">Optus Ağı</string>
+</resources>

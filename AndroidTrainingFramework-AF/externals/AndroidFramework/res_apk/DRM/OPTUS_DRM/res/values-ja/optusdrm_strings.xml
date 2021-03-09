@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="drmlib_optusjg_message_checking"><![CDATA[<div>このゲームのライセンスを確認しています。しばらくお待ちください。</div>]]></string>
+	<string name="drmlib_optusjg_message_validated"><![CDATA[<div>ライセンスは有効になりました。<br/><br/><a href="action:finish">今すぐプレイ</a></div>]]></string>
+	<string name="drmlib_optusjg_message_noinet"><![CDATA[<div>ライセンスを確認できませんでした。インターネット接続をお確かめの上<a href="action:retry">再度お試しください。</a>または弊社の<a href="action:help">ヘルプ</a>ページをご覧ください。</div>]]></string>
+	<string name="drmlib_optusjg_message_refused"><![CDATA[<div>このゲームのライセンスは有効ではないようです。弊社の<a href="action:help">ヘルプ</a>セクションをご覧ください。</div>]]></string>
+	<string name="drmlib_optusjg_message_help"><![CDATA[<div><b>ヘルプ</b><br/><br/>お客様のゲームを有効にするためにはインターネット接続（GPRSモバイルネットワークまたはWi-Fi）が必要です。<br/><br/>このライセンスはお客様の携帯電話専用です。他の携帯電話にゲームをインストールすることはできません。<br/><br/>万が一不具合が発生した場合は、弊社<a href="action:cs">カスタマーサービス</a>までお問い合わせください。]]></string>
+	<string name="DOWNLOAD_FILES_NO_WIFI_QUESTION_OPTUS">Wi-FiまたはOptusネットワークを使ってこのゲームをダウンロードすることができます。Optusネットワークをご利用の場合はデータ通信料金は発生しません。</string>
+	<string name="USE_OPTUS">Optusネットワーク</string>
+</resources>

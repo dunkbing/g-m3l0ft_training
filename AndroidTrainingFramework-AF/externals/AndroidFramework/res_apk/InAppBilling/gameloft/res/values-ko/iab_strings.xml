@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <string name="app_name">Android Billing</string> -->
+	<string name="IAB_PURCHASE_IN_PROGRESS">구매 절차를 진행 중입니다. 잠시만 기다려 주세요.</string>
+	<string name="IAB_TRANSACTION_FAILED">거래 실패</string>
+	<string name="IAB_TRANSACTION_FAILED_RETRY">다시 시도하시겠습니까?</string>
+	<string name="IAB_CC_PURCHASE_WITH_CCARD">신용 카드로 {GAME_NAME} 게임을 {PRICE}의 가격에 구매할 수 있습니다.</string>
+	<string name="IAB_CC_CREATE_ACCOUNT_ONE_CLICK">아래 과금 정보를 입력하세요.</string>
+	<string name="IAB_CC_CREATE_ACCOUNT">계정 만들기</string>
+	<string name="IAB_CC_FORGOT_PASSWORD">암호 찾기</string>
+	<string name="IAB_CC_EMAIL">메일 주소</string>
+	<string name="IAB_CC_PASSWORD">암호</string>
+	<string name="IAB_CC_NAME">카드 소지자</string>
+	<string name="IAB_CC_CARD_NUMBER">카드 번호</string>
+	<string name="IAB_CC_EXPIRATION_DATE">유효 기간</string>
+	<string name="IAB_CC_EXPIRATION_DATE_FORMAT">MM/YYYY</string>
+	<string name="IAB_CC_DF_MONTH">MM</string>
+	<string name="IAB_CC_DF_YEAR">YYYY</string>	
+	<string name="IAB_CC_SECURE_CODE">보안 코드</string>
+	<string name="IAB_CC_SECURE_CODE_HELP">카드 뒷면의 마지막 3자리</string>
+	<string name="IAB_CC_ALREADY_HAS_ACCOUNT">"이미 Gameloft 계정을 가지고 있습니다."</string>
+	<string name="IAB_CC_PAY_WO_ACCOUNT">계정 생성 없이 바로 결제</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND">* Gameloft 안심 보장</string>
+	<string name="IAB_CC_GL_PEACE_OF_MIND2">Gameloft는 고객님의 신용 카드 정보를 보호하기 위하여 진보된 암호화 보안 기술을 사용합니다.</string>
+	<string name="IAB_CC_EMAIL_PRIVACY">** 귀하의 메일 주소는 청구서 발송에만 사용됩니다.</string>
+	<string name="IAB_CC_EMAIL_PRIVACY2">사용 약관 전문입니다.</string>
+	<string name="IAB_CC_GAME">게임</string>
+	<string name="IAB_CC_PRICE">가격</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_WRONG_DATA">입력한 정보 중 일부가 정확하지 않습니다. 아래 빨간색 부분을 확인하세요.</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_EMAIL_EXISTS">"다른 계정에서 이미 메일 주소를 사용 중입니다. 이 메일 주소로 로그인하거나, 새로운 계정을 만드세요."</string>
+	<string name="IAB_CC_CREATING_ACCOUNT_PAY_WO_ACCOUNT">결제 과정을 진행하려면 아래 과금 정보를 입력하세요.</string>
+	<string name="IAB_CC_LOGIN_WRONG_EMAIL_PASSWORD">입력한 메일 주소 또는 암호가 올바르지 않습니다. 다시 입력하세요.</string>
+	<string name="IAB_CC_CREDIT_CARD_EXPIRED">사용 기간이 만료되었거나 사용할 수 없는 신용 카드입니다. 아래 과금 정보를 업데이트하세요.</string>
+	<string name="IAB_CC_INVOICE_SENT">증빙용 청구서가 귀하의 메일 주소로 발송되었습니다.</string>
+	<string name="IAB_CC_ACCOUNT_CREATED_SUCCESSFULLY">계정이 생성되었습니다!</string>
+	<string name="IAB_CC_FORGOT_PASSWORD_QUESTION">암호 찾기</string>
+	<string name="IAB_CC_ENTER_EMAIL_FOR_RECOVERY_PASSWORD">아래에 메일 주소를 입력하세요. 몇 초 후에 암호를 받을 수 있습니다.</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_FAIL">죄송합니다. 귀하의 메일 주소를 찾을 수 없습니다. 다시 입력하거나 새로 등록하세요.</string>
+	<string name="IAB_CC_RECOVERY_PASSWORD_SUCCES">새로운 암호가 발송되었으니 메일을 확인하세요.</string>
+	<string name="IAB_CC_SHORT_EMAIL_EXIST">이 메일 계정이 이미 존재합니다.</string>
+	
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP_TITLE">구매 확인</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_HTTP_WAP">{ITEM}을(를) {PRICE}에 구매하시겠습니까?</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_LAYOUT">{ITEM}을(를) {PRICE}에 구매하길 원합니다.</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC_TITLE">신용 카드 구매</string>
+	<string name="IAB_PURCHASE_ITEM_CONFIRMATION_CC">이 아이템은 신용 카드로만 구매할 수 있습니다. {ITEM}을(를) {PRICE}에 구매하시겠습니까?</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TITLE">구매 실패</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE">본 서비스로는 결제를 진행할 수 없습니다. 다른 결제 방법으로 구매를 계속하시겠습니까?</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TRY_AGAIN">현재 구매를 처리할 수 없습니다. 나중에 다시 시도하시겠어요?</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_TITLE">아이템을 구매했습니다.</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS">구매해 주셔서 감사합니다. 아이템이 계정에 추가됐습니다!</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING_TITLE">콘텐츠를 구매했습니다.</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_PENDING">구매해 주셔서 감사합니다. 현재 서비스에 문제가 있어 아이템은 계정에 나중에 추가됩니다.</string>
+	<string name="IAB_PURCHASE_ITEM_CHARGE_APPLY">데이터 요금 부과</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_INFO">{QUANTITY} {ITEM}을(를) {PRICE}에 구매하시겠습니까?</string>
+	<string name="IAB_PURCHASE_ITEM_CHOOSE_BILLING_METHOD_MESSAGE">결제 방법을 선택하세요.</string>
+	<string name="IAB_NETWORK_ERROR_TITLE">네트워크 오류</string>
+
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD_TITLE">결제 방법 선택</string>
+	<string name="IAB_PURCHASE_ITEM_SELECT_BILLING_METHOD">구매를 진행하기 전에 원하는 결제 방법을 선택하세요.</string>
+	<string name="IAB_BTN_OTHER">결제 방법 변경</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_TITLE">보류 중인 거래가 있습니다.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING">Boku의 구매 승인을 기다리고 있습니다. 구매가 완료되면 아이템 목록이 업데이트됩니다.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_SUCCESSFUL">구매 성공.</string>
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_UNSUCCESSFUL">구매 실패.</string>
+	
+	
+	<string name="IAB_PURCHASE_TITLE">구매</string>
+	<string name="IAB_PURCHASE_PAY_FOR_THIS_WITH">결제 방법 선택</string>
+	<string name="IAB_PURCHASE_CHOOSE_PAYMENT_METHOD">결제 방법 선택</string>
+	<string name="IAB_PURCHASE_CHANGE_PAYMENT_METHOD">결제 방법 변경</string>
+	<string name="IAB_PURCHASE_ITEM_CREDIT_CARD">신용 카드</string>
+	<string name="IAB_PURCHASE_ITEM_ACCOUNT">GAMELOFT 계정</string>
+	<string name="IAB_PURCHASE_ITEM_ADD_NEW_CREDIT_CARD">새로운 신용 카드를 추가하세요.</string>
+	<string name="IAB_PURCHASE_ITEM_INFO">{ITEM}: {PRICE}</string>
+	<string name="IAB_PURCHASE_ITEM_TOTAL">합계: </string>
+	
+	<string name="IAB_PURCHASE_ITEM_PHONE_BILLL">전화 요금 고지서</string>
+	<string name="IAB_SKB_CONFIRM">확인</string>	
+	<string name="IAB_NETWORK_ERROR">유효한 콘텐츠 프로필을 가져올 수 없습니다. </string>
+
+	<string name="IAB_SKB_TCS">사용 약관</string>
+	<string name="IAB_SKB_CANCEL">취소</string>
+	<string name="IAB_SKB_RETRY">재시도</string>
+	<string name="IAB_SKB_EXIT">X</string>
+	<string name="IAB_SKB_LOGIN">로그인</string>
+	<string name="IAB_SKB_YES">예</string>
+	<string name="IAB_SKB_NO">아니요</string>
+	<string name="IAB_SKB_OK">OK</string>
+	<string name="IAB_SKB_PAY_WITH_CCARD">내 신용카드로 결제</string>
+	<string name="IAB_SKB_NEXT">다음</string>
+	<string name="IAB_SKB_CONTINUE">계속</string>
+	<string name="IAB_SKB_BUY_NOW">바로 구매</string>
+	<string name="IAB_SKB_BACK">뒤로</string>
+	<string name="IAB_SKB_PLAY_GAME">게임 플레이!</string>
+	<string name="IAB_CONTINUE">계속을 터치하여 구매를 완료하세요.</string>
+	<string name="IAB_LOADING">불러오는 중...</string>
+	<string name="IAB_DOCOMO_CONTINUE">계속을 터치하여 구매를 완료하세요.</string>
+
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_PSMS">구매를 확인할 수 있는 아이템 전달 확인을 기다리고 있습니다. 구매가 완료되면 아이템 목록을 업데이트하겠습니다.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_PSMS">이전 구매가 완료되지 않아 요금이 부과되지 않았습니다.</string>
+	
+	<string name="IAB_UMP_R3_PAYMENT_INFO">결제 정보</string>
+	<string name="IAB_UMP_R3_PRODUCT_NAME">제품명: {PRODUCT_NAME}</string>
+	<string name="IAB_UMP_R3_PRICE">가격: {PRICE}(SMS 요금 미포함)</string>
+	<string name="IAB_UMP_R3_CUSTOMER_SERVICE">\n고객 서비스: 4006125880</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_1">\n\n고객님께, 제품을 구매할 수 있는 {SHORTCODE1}이(가) 포함된 SMS를 보낼 수 있도록 "정보 확인"을 클릭해 주세요.</string>
+	<string name="IAB_UMP_R3_BTN_CONFIRM_INFO">정보 확인</string>
+	<string name="IAB_UMP_R3_PLEASE_WAIT">잠시만 기다려 주세요.</string>
+	<string name="IAB_UMP_R3_SENDING_SMS">SMS 보내는 중...</string>
+	<string name="IAB_UMP_R3_CONFIRM_PAYMENT">결제 확인</string>
+	<string name="IAB_UMP_R3_CONFIRMATION_TEXT_2">고객님께, 제품을 구매할 수 있는 {SHORTCODE2}이(가) 포함된 SMS를 보낼 수 있도록 "결제 확인"을 클릭해 주세요.\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT_THANKS">UMP 과금 서비스를 이용해 주셔서 감사합니다.\n\n</string>
+	<string name="IAB_UMP_R3_SUCESS_TEXT">{PRODUCT_NAME} 게임을 구매하여 {PRICE}이 청구되었습니다.\n</string>
+	<string name="IAB_UMP_R3_PAYMENT_FAILURE">귀하의 아이템 구매에 문제가 있습니다. 이 거래에 필요한 잔고가 충분한지 확인하고 네트워크 연결 상태도 확인하세요.</string>
+	<string name="IAB_UMP_R3_PAYMENT_FINISHED">결제 완료</string>
+
+</resources>

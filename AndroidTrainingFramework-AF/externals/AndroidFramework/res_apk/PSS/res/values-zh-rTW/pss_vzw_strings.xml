@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="pss_vzw_confirm_buy_title">{GAME}!</string>
+<string name="pss_vzw_confirm_buy">價格：{PRICE} 美元\n\n按一下\'取得遊戲\'確認。\n購買費用將記錄在您的 Verizon Wireless 帳戶。\n\n下載與使用的數據費用將視您的資費方案或數據封包而定。</string>
+<string name="pss_vzw_cancel">取消</string>
+<string name="pss_vzw_get_game">取得遊戲</string>
+<string name="pss_vzw_please_wait">請稍候…</string>
+<string name="pss_vzw_try_again">您必須連線至 Verizon Wireless Network 以繼續。\n\n要再試一次嗎？</string>
+<string name="pss_vzw_try_again_glshop">您必須連線至 Verizon Wireless Network 以繼續。\n\n\n\n請再試一次以完成購買。</string>
+<string name="pss_vzw_yes">是</string>
+<string name="pss_vzw_no">否</string>
+<string name="pss_vzw_transaction_complete_title">交易完成</string>
+<string name="pss_vzw_transaction_complete">感謝您購買 \n{GAME}！\n\n購買費用將顯示於您的 Verizon Wireless 帳單。\n\n您的狀態列會顯示開始下載。</string>
+<string name="pss_vzw_downlaod">開始下載</string>
+</resources>

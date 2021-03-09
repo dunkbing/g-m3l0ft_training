@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Ads Server">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/AdServer/adserver"/>
+			<preprocess/>
+		</java>
+		<res>
+			<dir path="../res_apk/AdServer/adserver/res"/>
+		</res>
+	</sources>
+</j2a>

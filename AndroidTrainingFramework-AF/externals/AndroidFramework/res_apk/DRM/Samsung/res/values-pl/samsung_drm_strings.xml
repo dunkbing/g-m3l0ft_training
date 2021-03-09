@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DRM_NETWORK_DIALOGUE_1">Brak dostępnego połączenia internetowego. Chcesz skonfigurować połączenie Wi-Fi czy połączyć się przez sieć operatora?</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">System wykrył, że licencja na Twoim systemie lokalnym jest błędna. Aplikacja użyje połączenia z siecią, by zweryfikować licencję. Kontynuować?</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">Serwer informuje, że aplikacja nie została zakupiona, a więc licencja nie została przesłana do aplikacji.</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">Serwer sprawdził parametry aplikacji i stwierdził, że co najmniej jeden z nich ma wartość zerową. (Może się to zdarzyć jeśli telefon jest wyłączony).</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">Z powodu błędu serwera (np. błędu dostępu do bazy danych) serwer nie może potwierdzić zakupu aplikacji.</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">Licencja nie została przesłana do aplikacji z powodu błędu sieci (aplikacja nie otrzymała odpowiedzi od serwera).</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">Licencja nie została przesłana do aplikacji z powodu błędu sieci (żądania nie udało się przesłać do serwera).</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">Licencji nie udało się zapisać na dysk lokalny. Możliwe powody to: błąd we/wy dysku, brak miejsca w folderze, brak pozwolenia zapisu licencji na dysk.</string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">Zdarza się to gdy klient żąda licencji od serwera, który nie znajduje się w bibliotece Zirconia.</string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">Zdarza się to gdy klient żąda licencji od serwera, który ma zainstalowaną błędną wersję biblioteki Zirconia i nie jest obsługiwany przez serwer licencji.</string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">Licencja od serwera nie jest prawidłowa.</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">Licencja została przesłana do aplikacji z błędnego serwera.</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">Użytkownik zmodyfikował aplikację.</string>
+
+	<string name="DRM_EZIRCONIA_SUCCESS_1">Otrzymano prawidłową licencję.</string>
+</resources>

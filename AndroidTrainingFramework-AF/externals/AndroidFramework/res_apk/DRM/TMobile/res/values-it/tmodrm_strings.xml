@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="TMO_SERVER_VALIDATE_REQUIRED">Non è stata rilevata nessuna connessione alla rete. Devi essere connesso alla rete di T-Mobile per poter convalidare la licenza.</string>
+	<string name="INVALID_LICENSE">L\'abbonamento è scaduto oppure devi acquistare l\'applicazione.</string>
+	<string name="TMO_LICENSE">http://projps.t-mobile.com/DS/server/123/extCheckSubscriptionForItem?item_id={E}</string>
+	<string name="VALIDATING_LICENSE">Convalida licenza in corso...</string>
+</resources>

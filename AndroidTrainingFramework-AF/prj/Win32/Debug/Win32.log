@@ -1,0 +1,7 @@
+﻿  Application.cpp
+  main.cpp
+  videoDriver.cpp
+d:\code\c++\consoleapplication1\androidtrainingframework-af\src\platform\win32\render\videodriver.cpp(130): warning C4244: 'argument': conversion from 'float' to 'BYTE', possible loss of data
+  stdafx.cpp
+  Generating Code...
+  Win32.vcxproj -> D:\Code\C++\ConsoleApplication1\AndroidTrainingFramework-AF\prj\..\build\Debug\Win32.exe

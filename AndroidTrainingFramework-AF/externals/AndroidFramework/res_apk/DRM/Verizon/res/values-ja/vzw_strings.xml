@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="VZW_ITEM_NOT_FOUND">この商品はご利用のデバイスに対応していないか、V Cast Appsカタログに存在しません。</string>
+	<string name="INVALID_LICENSE">このアプリを購入していないか、購入期間が過ぎています。V cast Appsクライアントを起動して購入してください。</string>
+	<string name="VZW_GENERAL_ERROR">現在、このゲームを有効にすることはできません。のちほどお試しください。</string>
+	<string name="VZW_SERVER_VALIDATION_REQUIRED">このゲームを有効にするためにはインターネット接続を有効にしてください。</string>
+</resources>

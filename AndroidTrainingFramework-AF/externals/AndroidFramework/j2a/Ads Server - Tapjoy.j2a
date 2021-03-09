@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Ads Server - Tapjoy">
+	<build type="Copy">
+	</build>
+	<sources>
+		<libs>
+			<dir path="../res_apk/AdServer/tapjoy/libs"/>
+		</libs>
+	</sources>
+</j2a>

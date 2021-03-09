@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="Library Name">
+	<!-- Root node. -->
+	<!-- arguments:  -->
+		<!-- mandatory: "name" -- The name of the library in question -->
+	<!-- children: -->
+		<!-- mandatory: "build" -->
+		<!-- mandatory: "sources" -->
+	<build type="AndroidLibrary" artefact="lib-name-v1.2.4">
+		<!-- arguments:  -->
+			<!-- mandatory: "type" -- The build type -->
+				<!-- possible values: -->
+					<!-- Copy or cpy: contents are copied directly into the main workspace after preprocessing -->
+					<!-- JavaLibrary or jar: assembles a .jar file that will be copied to the main workspace -->
+					<!-- AndroidLibrary or aar: assembles an .aar file that will be copied to the main workspace -->
+			<!-- conditional: "artefact" -- The name of the build artefact. Must be a valid file name -->
+				<!-- mandatory if type is not "Copy" -->
+		<!-- children: -->
+			<!-- optional: "minSdkVersion" -->
+			<!-- optional: "targetSdkVersion" -->
+			<!-- conditional: "compileSdkVersion" -->
+				<!-- mandatory if <build>type is not "Copy" -->
+			<!-- conditional: "buildToolsVersion" -->
+				<!-- mandatory if <build> type is not "Copy" -->
+		<minSdkVersion value="9" />
+			<!-- arguments:  -->
+				<!-- mandatory: "value" -->
+					<!-- possible values: -->
+						<!-- Integer -->
+						<!-- greater than 0 -->
+						<!-- lower or equal to targetSdkVersion -->
+		<targetSdkVersion value="19" />
+			<!-- arguments:  -->
+				<!-- mandatory: "value" -->
+					<!-- possible values: -->
+						<!-- Integer -->
+						<!-- lower or equal to compileSdkVersion -->
+						<!-- lower or equal to buildToolsVersion -->
+		<compileSdkVersion value="19" />
+			<!-- arguments:  -->
+				<!-- mandatory: "value" -->
+					<!-- possible values: -->
+						<!-- Integer -->
+						<!-- a valid Android SDK version number able to compile the library in question -->
+		<buildToolsVersion value="19.1" />
+			<!-- arguments:  -->
+				<!-- mandatory: "value" -->
+					<!-- possible values: -->
+						<!-- String matching the following expression: "Integer[.Integer[.Integer]]" -->
+						<!-- a valid Android SDK Build-Tools version number able to compile the library in question -->
+	</build>
+	<sources>
+		<!-- children: -->
+			<!-- all children nodes are required or not needed depending on the <build> type -->
+			<!-- +---------------+----------+----------+----------+----------+----------+----------+----------+----------+ -->
+			<!-- |               | manifest | proguard |   java   |   aidl   |    res   |  assets  |   libs   |  jniLibs | -->
+			<!-- +---------------+----------+----------+----------+----------+----------+----------+----------+----------+ -->
+			<!-- |Copy           |       No |    Maybe |    Maybe |    Maybe |    Maybe |    Maybe |    Maybe |    Maybe | -->
+			<!-- |JavaLibrary    |       No |    Maybe |    Maybe |    Maybe |       No |    Maybe |    Maybe |       No | -->
+			<!-- |AndroidLibrary |      Yes |    Maybe |    Maybe |    Maybe |    Maybe |    Maybe |    Maybe |    Maybe | -->
+			<!-- +---------------+----------+----------+----------+----------+----------+----------+----------+----------+ -->
+			<!-- conditional: "manifest" -->
+			<!-- conditional: "proguard" -->
+			<!-- conditional: "java" -->
+			<!-- conditional: "aidl" -->
+			<!-- conditional: "res" -->
+			<!-- conditional: "assets" -->
+			<!-- conditional: "libs" -->
+			<!-- conditional: "jniLibs" -->
+		<manifest path="AndroidManifest.xml"/>
+			<!-- arguments:  -->
+				<!-- mandatory: "path" -- A valid path to the manifest file, local to the .j2a file -->
+		<proguard path="proguard.file"/>
+			<!-- arguments:  -->
+				<!-- mandatory: "path" -- A valid path to the proguard rules file, local to the .j2a file -->
+		<java>
+			<!-- children: -->
+				<!-- at least one: "dir" -->
+				<!-- optional: "preprocess" -->
+			<dir path="javapath0"/>
+				<!-- arguments:  -->
+					<!-- mandatory: "path" -- A valid path to the directly in question, local to the .j2a file -->
+				<!-- children: -->
+					<!-- zero or more: "ignore" -->
+			<dir path="javapath1">
+				<ignore type="folder" name="thisfolder"/>
+					<!-- arguments:  -->
+						<!-- optional: "type" -- The build type -->
+							<!-- possible values: -->
+								<!-- file: the ignored name or path represents a file -->
+								<!-- folder: the ignored name or path represents a folder -->
+								<!-- defaults to file -->
+						<!-- mutually exclusive: -->		
+							<!-- : "name" -- A name to ignore when going through the folder -->
+								<!-- The extension of the file must be explicitly specified -->
+							<!-- : "path" -- A path relative to the <dir> path which to ignore when going through the folder -->
+				<ignore type="file" name="thisfile.java"/>
+				<ignore type="file" path="relative/path/to/thisfile.java"/>
+				<ignore name="thisotherfile.java"/>
+			</dir>
+			
+			<preprocess>
+				<!-- if omitted, sources will be copied over without being proeprocessed -->
+				<!-- if empty, global preprocess headers may still be applied -->
+				<!-- children: -->
+					<!-- zero or more: "include" -->
+					<!-- zero or more: "macros" -->
+				<include path="include0.h"/>
+					<!-- arguments:  -->
+						<!-- mandatory: "path" -- A valid path to the relative to the .j2a file -->
+				<include path="include1.h"/>
+				<include path="include2.h"/>
+				<macros path="macros0.h"/>
+					<!-- arguments:  -->
+						<!-- mandatory: "path" -- A valid path to the relative to the .j2a file -->
+				<macros path="macros1.h"/>
+			</preprocess>
+		</java>
+		<aidl>
+			<!-- children: -->
+				<!-- at least one: "dir" -->
+			<dir path="aidlpath"/>
+		</aidl>
+		<res>
+			<!-- children: -->
+				<!-- at least one: "dir" -->
+			<dir path="respath"/>
+		</res>
+		<assets>
+			<!-- children: -->
+				<!-- at least one: "dir" -->
+			<dir path="assetspath"/>
+		</assets>
+		<libs>
+			<!-- children: -->
+				<!-- at least one: "dir" -->
+			<dir path="jarpath"/>
+		</libs>
+		<jniLibs>
+			<!-- children: -->
+				<!-- at least one: "dir" -->
+			<dir path="sopath" type="armeabi"/> <!-- type optional -->
+				<!-- same as the other <dir> tags except it can have an additional argument -->
+				<!-- arguments:  -->
+					<!-- optional: "path" -- A valid path to the relative to the .j2a file -->
+						<!-- possible values: armeabi, armeabi-v7a, mips, x86 -->
+		</jniLibs>
+	</sources>
+</j2a>

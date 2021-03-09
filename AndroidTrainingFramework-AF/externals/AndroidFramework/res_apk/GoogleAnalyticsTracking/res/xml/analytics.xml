@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+	<!--Set Tracking id-->
+	<string name="ga_trackingId">GA_TRACKING_ID</string>
+	<!--Set Sample frequency-->
+	<string name="ga_sampleFrequency">GA_SAMPLE_FREQUENCY</string>
+	<!--Enable Activity tracking-->
+#if GA_AUTO_ACTIVITY_TRACKING
+	<bool name="ga_autoActivityTracking">true</bool>
+#else
+	<bool name="ga_autoActivityTracking">false</bool>
+#endif
+	<!--Enable Trackings anonymously-->
+	<bool name="ga_anonymizeIp">GA_ANONYMIZELP</bool>
+
+	<!--Reporting Uncaught Exceptions-->
+	<bool name="ga_reportUncaughtExceptions">GA_REPORT_UNCAUGHT_EXCEPTION</bool>
+
+	<!--Session Timeout-->
+	<integer name="ga_sessionTimeout">GA_SESSION_TIMEOUT</integer>
+	
+	<screenName name=GA_INSTALLER_ACTIVITY>Installer</screenName> <!-- The Installer Activity -->
+	<screenName name=GA_MAIN_ACTIVITY>Game</screenName> <!-- The game main activity-->
+	<screenName name=GA_SKT_DRM_ACTIVITY>SKT DRM</screenName> <!-- SKT licensing activity -->
+	<screenName name=GA_LGW_DRM_ACTIVITY>LGW DRM</screenName> <!-- LGW licensing activity -->
+	<screenName name=GA_LGU_DRM_ACTIVITY>LGU DRM</screenName> <!-- LGU licensing activity -->
+	<screenName name=GA_KT_DRM_ACTIVITY>KT DRM</screenName> <!-- KT licensing activity -->
+	<screenName name=GA_PANTECH_DRM_ACTIVITY>Pantech DRM</screenName> <!-- Pantech licensing activity -->
+	<screenName name=GA_ZIRCONIA_DRM_ACTIVITY>Zirconia DRM</screenName> <!-- Zirconia licensing activity -->
+	<screenName name="com.msap.store.drm.android.CheckLicense">Optus DRM</screenName> <!-- Optus licensing activity -->
+	<screenName name="com.msap.store.drm.android.SimpleCheckerActivity">Simple Optus DRM</screenName> <!-- Simple Optus licensing activity -->
+	<screenName name="com.msap.store.drm.android.WebsiteActivity">Optus DRM - Website</screenName> <!-- Simple Optus website activity -->
+	<screenName name="com.msap.store.drm.android.projects.optusjg.OptusGamesHelpActivity">Optus DRM - Games Help</screenName> <!-- Optus games help activity -->
+	<screenName name=GA_GAMELOFT_IAB_ACTIVITY>Gameloft IAP</screenName> <!-- Helper code to handle the Gameloft IAP API-->
+	<screenName name=GA_SKT_IAB_ACTIVITY>SKT IAP</screenName> <!-- Helper code to handle the SKT IAP API -->
+	<screenName name="com.feelingk.iap.PwdActivity">SKT IAP API</screenName> <!-- SKT IAP API -->
+	<screenName name=GA_KT_IAB_ACTIVITY>KT In App Billing</screenName> <!-- Helper code to handle the KT IAP API -->
+	<screenName name=GA_BOKU_IAB_ACTIVITY>BOKU IAP</screenName> <!-- Helper code to handle the BOKU IAP API -->
+	<screenName name="com.boku.mobile.android.PaymentPanelActivity">BOKU IAP API</screenName> <!-- BOKU IAP API -->
+	<screenName name=GA_PAYPAL_IAB_ACTIVITY>PayPal IAP</screenName> <!-- Helper code to handle the PayPal IAP API -->
+	<screenName name="com.paypal.android.MEP.PayPalActivity">PayPal IAP API</screenName> <!-- PayPal IAP API -->
+	<screenName name=GA_SAMSUNG_IAB_ACTIVITY>Samsung IAP</screenName> <!-- Helper code to handle the Samsung IAP API -->
+	<screenName name=GA_VERIZON_IAB_ACTIVITY>Verizon SCM IAP</screenName> <!-- Helper code to handle the Verizon SCM IAP API -->
+	<screenName name=GA_VERIZON_IABT_ACTIVITY>Verizon Microtransactions IAP</screenName> <!-- Helper code to handle the Verizon MicroTransactions (VCast) IAP API -->
+	<screenName name=GA_PANTECH_IAB_ACTIVITY>Pantech IAP</screenName> <!-- Helper code to handle the Pantech -->
+	<screenName name=GA_VIDEO_PLAYER_ACTIVITY>Video Player</screenName> <!-- Android Core Package Video Player activity -->
+	<screenName name=GA_GLLIVE_SHOP_ACTIVITY>GL Live Shop</screenName> <!--  Used to purchase GL Cash in GL Live -->
+	<screenName name=GA_GLLIVE_SHOP_BOKU_ACTIVITY>GL Live Shop Boku</screenName> <!-- Used to purchase GL Cash in GL Live -->
+	<screenName name=GA_GLLIVE_SHOP_PAYPAL_ACTIVITY>GL Live Shop PayPal</screenName> <!--  Used to purchase GL Cash in GL Live -->
+	<screenName name=GA_ADS_SERVER_ACTIVITY>Ads Server</screenName> <!-- A test activity that shows the features of the Ads Server (should not be displayed to the user) -->
+	<screenName name=GA_ADS_BURSTLY_INTERSTITIAL_ACTIVITY>Ads Server - Burstly Interstitial</screenName> <!-- Full screen Burstly Interstitial Ad-->
+	<screenName name="com.google.ads.AdActivity">Ads Server - AdMob</screenName> <!-- Full Screen AdMob Interstitial Ad-->
+	<screenName name="com.inmobi.androidsdk.IMBrowserActivity">Ads Server - InMobi</screenName> <!-- Full Screen InMobi Interstitial Ad -->
+	<screenName name="com.burstly.lib.component.networkcomponent.jumptap.JumptapActivity">Ads Server - Jumptag</screenName> <!-- Jumptag activity (used by Burstly) -->
+	<screenName name="com.millennialmedia.android.MMAdViewOverlayActivity">Ads Server - Millennial</screenName> <!-- Millenial activity (used by Burstly) -->
+	<screenName name="com.millennialmedia.android.VideoPlayer">Ads Server - Millennial Video Player</screenName> <!-- Millenial activity (used by Burstly) -->
+	<screenName name="com.burstly.lib.component.networkcomponent.burstly.BurstlyFullscreenActivity">Ads Server - Native Burstly Interstitials</screenName> <!-- Full screen Burstly Interstitial Ad-->
+	<!-- <screenName name=GA_INMOBI_IMBROWSER_ACTIVITY>Ads Server - InMobi IM Browser</screenName> -->
+	<!-- <screenName name=GA_GOOGLE_AD_ACTIVITY>Ads Server - Google Ads</screenName> -->
+	<screenName name="com.tapjoy.TJCOffersWebView">Ads Server - TapJoy Offers</screenName> <!--  Tapjoy Offer Wall for Free Cash -->
+	<screenName name="com.tapjoy.TapjoyFeaturedAppWebView">AAds Server - TapJoy Features</screenName> <!-- Tapjoy Offers Featured App -->
+	<screenName name="com.tapjoy.TapjoyVideoView">Ads Server - TapJoy Video Player</screenName> <!-- Tapjoy Video View for Free Cash -->
+	<screenName name="com.jirbo.adcolony.AdColonyOverlay">Ads Server - AdColony - Overlay</screenName> <!-- AdColony video for Free Cash -->
+	<screenName name="com.jirbo.adcolony.AdColonyFullscreen">Ads Server - AdColony - Fullscreen</screenName> <!-- AdColony video for Free Cash -->
+	<screenName name="com.jirbo.adcolony.AdColonyBrowser">Ads Server - AdColony - Browser</screenName> <!--  AdColony video for Free Cash -->
+	<screenName name="com.mopub.mobileads.MoPubActivity">Ads Server - MoPub</screenName> <!-- MoPub full screen interstitial ad -->
+	<screenName name=GA_BILLING_ACTIVITY>Android TnB Module</screenName> <!-- Try and Buy Module -->
+	<screenName name=GA_PSS_ACTIVITY>Promotional Splash Screen</screenName> <!-- Activity used as purchase catalog in some Verizon Wireless games -->
+	<screenName name=GA_BEAM_ACTIVITY>Beam Receiver</screenName> <!-- The Beam receiver activity -->
+</resources>

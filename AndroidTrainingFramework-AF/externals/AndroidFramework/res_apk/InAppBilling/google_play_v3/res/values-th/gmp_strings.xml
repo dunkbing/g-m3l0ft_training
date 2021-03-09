@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">ไม่สามารถทำการซื้อได้</string>
+	<string name="billing_not_supported_message">ไม่สามารถใช้บริการการชำระเงินของ Google Play Store ได้ในขณะนี้ คุณสามารถใช้แอปนี้ได้ต่อไป แต่คุณจะไม่สามารถทำการซื้อใด ๆ ได้</string>
+	<string name="cannot_connect_title">ไม่สามารถเชื่อมต่อกับ Google Play Store</string>
+	<string name="cannot_connect_message">แอปนี้ไม่สามารถเชื่อมต่อกับ Google Play Store ได้ เวอร์ชั่น Google Play Store ของคุณอาจจะตกรุ่นแล้ว คุณสามารถใช้แอปนี้ได้ต่อไป แต่คุณจะไม่สามารถทำการซื้อใด ๆ ได้</string>
+	<string name="waitting_confirm">เรากำลังรอให้ Google ตรวจสอบการซื้อของคุณอยู่ เมื่อการซื้อเสร็จสมบูรณ์แล้ว เราจะอัพเดตรายการไอเท็มของคุณ</string>
+	<string name="pending_transaction">คุณมีการทำรายการที่รอดำเนินการอยู่</string>
+	<string name="purchase_success">การซื้อประสบความสำเร็จ</string>
+	<string name="purchase_unsuccess">การซื้อไม่ประสบความสำเร็จ</string>
+	<string name="iab_retry">ลองอีกครั้ง</string>
+	<string name="iab_cancel">ยกเลิก</string>
+	<string name="iab_ok">ตกลง</string>
+</resources>

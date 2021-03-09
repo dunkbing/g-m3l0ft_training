@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="GET_THE_GAME">รับเกม</string>
+	<string name="CHECKING_LICENSE">กำลังตรวจสอบการอนุญาต...</string>
+	<string name="UNLICENSED_DIALOG_TITLE">ตรวจสอบการอนุญาต</string>
+	<string name="UNLICENSED_DIALOG_BODY">การอนุญาตไม่สามารถใช้งานได้</string>
+	<string name="BUY_BUTTON">ซื้อเกม</string>
+	<string name="QUIT_BUTTON">ออก</string>
+	<string name="RETRY">ลองอีกครั้ง</string>
+	<string name="NETWORK_ERROR_TITLE">การแจ้งเตือนข้อผิดพลาด</string>
+	<string name="NETWORK_ERROR_BODY">เกิดปัญหาทางเครือข่าย คุณต้องการลองอีกครั้งหรือไม่</string>
+</resources>

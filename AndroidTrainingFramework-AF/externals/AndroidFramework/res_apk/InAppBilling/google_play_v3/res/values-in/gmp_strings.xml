@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">Tidak dapat melakukan pembelian</string>
+	<string name="billing_not_supported_message">Saat ini layanan Pembayaran Google Play Store tidak tersedia. Kamu dapat menggunakan aplikasi ini, tapi kamu tidak akan bisa melakukan pembelian.</string>
+	<string name="cannot_connect_title">Tidak dapat menghubungkan dengan Google Play Store</string>
+	<string name="cannot_connect_message">Aplikasi ini tidak dapat terhubung dengan Google Play Store. Versi Google Play Store milikmu mungkin bukan yang terbaru. Kamu dapat terus menggunakan aplikasi ini, tapi kamu tidak dapat melakukan pembelian.</string>
+	<string name="waitting_confirm">Kami sedang menunggu pengesahan Google atas pembelianmu. Kami akan memperbarui daftar barangmu bila pembelian sudah selesai.</string>
+	<string name="pending_transaction">Kamu memiliki transaksi yang belum selesai.</string>
+	<string name="purchase_success">Pembelian berhasil.</string>
+	<string name="purchase_unsuccess">Pembelian gagal.</string>
+	<string name="iab_retry">Coba lagi</string>
+	<string name="iab_cancel">Batal</string>
+	<string name="iab_ok">OKE</string>
+</resources>

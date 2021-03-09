@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="SERVER_VALIDATE_REQUIRED">請啟動您的網際網路連線，才能註冊您的 {GAME_NAME} 版本。</string>
+	<string name="INVALID_LICENSE">這不是原版的 {GAME_NAME}。</string>
+</resources>

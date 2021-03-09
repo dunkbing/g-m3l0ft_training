@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <include layout="@layout/iapppay_oneclickpay_layout_title" />
+    
+    
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" >
+            </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/wares_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#949494"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/wares_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f2b72b"
+                        android:textSize="50sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:background="#252526"
+                android:gravity="center" 
+                android:orientation="horizontal">
+
+                <com.iapppay.fastpay.ui.InputCarItemEditText
+                android:id="@+id/input_card_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                 />
+
+                
+                 <Button
+                    android:id="@+id/nextStepButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/iapppay_oneclickpay_tv_button_selector"
+                    android:text="确定"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" 
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+                
+                <TextView 
+                     android:layout_width="fill_parent"
+                	android:layout_height="fill_parent"
+                	android:gravity="center|left"
+                	android:textColor="#ffffff"
+                	android:text="采用银行级标准安全加密技术，保障您的信息安全！所有银行卡信息都不会保存在非金融机构。"
+                    />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                 >
+                
+                 <TextView 
+                     android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:textColor="#ffffff"
+                	android:text="电视银行卡一键支付是一种新型的银行卡支付方式；ATET与国内优质第3方支付公司合作推出。此服务只需一次添加银行卡，就可以在电视上流畅的购买数字商品。安全、快捷、省心！"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                 >
+                 <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                 >
+                 <ImageView
+                      android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:background="@drawable/iapppay_tv_server"
+                	android:layout_marginRight="10dp"
+                     />
+                  <TextView 
+                     android:layout_width="wrap_content"
+                	android:layout_height="fill_parent"
+                	android:gravity="center"
+                	android:textColor="#ffffff"
+                	android:text="支付客服电话：4007888580"
+                    />
+                  </LinearLayout>
+                  
+                  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                 >
+                 <ImageView
+                      android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:background="@drawable/iapppay_tv_bank_logo"/>
+                 
+                  </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+        
+        
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" >
+            </LinearLayout>
+</LinearLayout>
+</LinearLayout>

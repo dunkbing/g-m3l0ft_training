@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Billing for China">
+	<build type="Copy">
+	</build>
+	<sources>
+		<res>
+			<dir path="../res_apk/billing/ChinaBilling/res"/>
+		</res>
+		<libs>
+			<dir path="../res_apk/billing/ChinaBilling/libs"/>
+		</libs>
+	</sources>
+</j2a>

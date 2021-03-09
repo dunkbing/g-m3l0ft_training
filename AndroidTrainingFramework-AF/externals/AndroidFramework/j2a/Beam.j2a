@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Beam">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/Beam"/>
+			<preprocess/>
+		</java>
+	</sources>
+</j2a>

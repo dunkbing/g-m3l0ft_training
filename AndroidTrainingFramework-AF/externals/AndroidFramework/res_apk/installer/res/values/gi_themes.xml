@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!-- Base application theme is the default theme. -->
+	<style name="Theme.GameInstaller" parent="@style/Theme.acp.notitlebar.fullscreen">
+		<!--<item name="android:windowBackground">#000</item>-->
+		<!--<item name="android:textStyle">bold</item>-->
+		<!--<item name="android:textColor">#ffffffff</item>-->
+		<item name="android:buttonStyle">@style/gi_Widget.Button</item>
+		<item name="android:textViewStyle">@style/gi_Widget.TextView</item>
+	</style>
+	<style name="Theme.GameInstallerNoBG" parent="@style/Theme.acp.notitlebar.fullscreen">
+		<item name="android:buttonStyle">@style/gi_Widget.Button</item>
+		<item name="android:textViewStyle">@style/gi_Widget.TextView</item>
+	</style>
+</resources>

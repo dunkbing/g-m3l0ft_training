@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">Невозможно осуществить покупку</string>
+	<string name="billing_not_supported_message">В данный момент биллинг Google Play Store недоступен. Вы можете и дальше использовать это приложение, но вы не сможете осуществлять покупки.</string>
+	<string name="cannot_connect_title">Невозможно подключиться к Google Play Store</string>
+	<string name="cannot_connect_message">Это приложение не может подключиться к Google Play Store. Ваша версия Google Play Store устарела. Вы можете и дальше использовать это приложение, но вы не сможете осуществлять покупки.</string>
+	<string name="waitting_confirm">Подтверждение покупки, ожидание ответа от Google. Как только покупка будет выполнена, мы обновим список предметов.</string>
+	<string name="pending_transaction">У вас есть незавершенная транзакция.</string>
+	<string name="purchase_success">Покупка выполнена.</string>
+	<string name="purchase_unsuccess">Покупка не выполнена.</string>
+	<string name="iab_retry">Еще раз</string>
+	<string name="iab_cancel">Отмена </string>
+	<string name="iab_ok">ОК</string>
+</resources>

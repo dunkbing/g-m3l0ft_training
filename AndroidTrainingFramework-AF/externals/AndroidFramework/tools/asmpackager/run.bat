@@ -1,0 +1,1 @@
+%JAVA_HOME%\bin\java -cp "_tools/tools_local/asmpackager\lib\commons-cli-1.1.jar;_tools/tools_local/asmpackager\lib\asm-all-3.1.jar;_tools/tools_local/asmpackager\lib\asmpackager.jar" gameloft.cor.asm.ASMPackager %1 %2 %3 %4 %5 %6 %7 %8 %9

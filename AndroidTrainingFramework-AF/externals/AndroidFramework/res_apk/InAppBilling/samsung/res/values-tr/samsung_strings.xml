@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAP_SAMSUNG_DIALOG_TITLE">Uygulama İçi Satın Alım</string>
+	<string name="IAP_SAMSUNG_UPGRADE_REQUIRED">Samsung Uygulama İçi Satın Alım güncellemesi gerekiyor. Güncellemek istiyor musun?</string>
+	<string name="IAP_SAMSUNG_CLIENT_NOT_INSTALLED">Samsung Uygulama İçi Satın Alım bu cihazda yüklü değil. Yüklemek istiyor musun?</string>
+	<string name="IAP_SAMSUNG_APP_STORE_NOT_INSTALLED">Samsung Store servisi şu anda kullanılamıyor. Bu uygulamayı kullanmaya devam edebilirsin ancak satın alım işlemi yapamayacaksın.</string>
+	<string name="IAP_SAMSUNG_ERROR_ALREADY_PURCHASED">Bu ürün daha önce satın alındı. Hesabından ücret alınmayacak.</string>
+	<string name="IAP_SAMSUNG_WAITING">Lütfen bekle...</string>
+	<string name="IAP_SAMSUNG_OK_BUTTON">Tamam</string>
+	<string name="IAP_SAMSUNG_CANCEL_BUTTON">İptal</string>
+</resources>

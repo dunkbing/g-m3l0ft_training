@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="GET_THE_GAME">获取游戏</string>
+	<string name="CHECKING_LICENSE">校验许可中……</string>
+	<string name="UNLICENSED_DIALOG_TITLE">校验许可</string>
+	<string name="UNLICENSED_DIALOG_BODY">无效许可</string>
+	<string name="BUY_BUTTON">购买游戏</string>
+	<string name="QUIT_BUTTON">退出</string>
+	<string name="RETRY">重试</string>
+	<string name="NETWORK_ERROR_TITLE">注意</string>
+	<string name="NETWORK_ERROR_BODY">网络出错。您要重试吗？</string>
+</resources>

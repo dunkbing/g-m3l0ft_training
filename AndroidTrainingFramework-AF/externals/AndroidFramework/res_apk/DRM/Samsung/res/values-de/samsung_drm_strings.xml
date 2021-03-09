@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DRM_NETWORK_DIALOGUE_1">Keine Internetverbindung verfügbar. Möchtest du jetzt deine Wi-Fi-Verbindung konfigurieren oder das Netzwerk deines Mobilfunkanbieters benutzen?</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">Das System hat festgestellt, dass die Lizenz auf deinem lokalen System ungültig ist. Die Anwendung wird jetzt die Netzwerkverbindung benutzen, um eine Lizenz zu suchen. Möchtest du fortfahren?</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">Der Server hat festgestellt, dass die Anwendung nicht gekauft wurde. Daher wird die Lizenz nicht an die Anwendung gesendet.</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">Der Server überprüft die Parameter der Anwendung. Mindestens einer der Parameter ist Null. (Ein möglicher Grund ist, dass das Handy ausgeschaltet ist.)</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">Aufgrund eines Serverfehlers (z.B. Datenbankzugriffsfehler) kann nicht überprüft werden, ob die Anwendung gekauft wurde.</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">Aufgrund eines Netzwerkfehlers kann die Lizenz nicht an die Anwendung gesendet werden. (Die Anwendung konnte vom Server keine Antwort erhalten.)</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">Aufgrund eines Netzwerkfehlers kann die Lizenz nicht an die Anwendung gesendet werden. (Die Anforderung der Anwendung konnte nicht an den Server gesendet werden.)</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">Die Lizenz konnte nicht auf der lokalen Festplatte gespeichert werden. Mögliche Gründe: Ein-/Ausgabefehler der Festplatte, nicht ausreichend freier Speicherplatz im Ordner, keine Berechtigung zur Speicherung der Lizenz auf der Festplatte.</string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">Dies kann geschehen, wenn der Client eine Lizenz von einem Server anfordert, der nicht zur Zirconia-Bibliothek gehört. </string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">Dies kann geschehen, wenn der Client eine Lizenz vom Server anfordert, die zu einer ungültigen Version der Zirconia-Bibliothek gehört und nicht vom Lizenz-Server unterstützt wird.</string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">Die Lizenz vom Server ist ungültig.</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">Die Lizenz wurde der Anwendung von einem ungültigen Server gesendet.</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">Der Benutzer hat die Anwendung verändert.</string>
+
+	<string name="DRM_EZIRCONIA_SUCCESS_1">Eine gültige Lizenz wurde erfolgreich erhalten.</string>
+</resources>

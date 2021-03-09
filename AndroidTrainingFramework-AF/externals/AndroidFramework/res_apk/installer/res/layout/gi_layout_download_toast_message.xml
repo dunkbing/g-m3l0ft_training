@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/toast_layout"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:gravity="center_vertical">
+    
+	<ImageView
+		android:scaleType="fitXY"
+		android:src="@drawable/data_downloader_toast_background"
+		android:layout_height="@dimen/gi_notif_toast_sizeH"
+		android:layout_width="@dimen/gi_notif_toast_sizeW"
+		android:id="@+id/imageView2"/>
+    <ImageView
+		android:padding="@dimen/gi_notif_toast_image_padding"
+		android:layout_width="@dimen/gi_notif_toast_sizeH"
+		android:id="@+id/imageView1"
+		android:scaleType="fitXY"
+		android:layout_height="@dimen/gi_notif_toast_sizeH"
+		android:src="@drawable/icon"
+		android:layout_centerVertical="true"
+		android:layout_alignParentLeft="true"/>
+    <TextView
+		android:textColor="#000"
+		android:layout_height="@dimen/gi_notif_toast_text_sizeH"
+		android:textStyle="bold"
+		android:text="@string/app_name"
+		android:layout_width="wrap_content"
+		android:padding="2dp"
+		android:gravity="bottom|left"
+		android:textSize="@dimen/gi_notif_toast_title_size"
+		android:id="@+id/data_downloader_toast_title"
+		android:layout_alignParentTop="true"
+		android:layout_alignLeft="@+id/data_downloader_toast_message"
+		android:layout_alignRight="@+id/imageView2"/>
+    <TextView
+		android:textColor="#000"
+		android:layout_height="@dimen/gi_notif_toast_text_sizeH"
+		android:layout_width="wrap_content"
+		android:textSize="@dimen/gi_notif_toast_text_size"
+		android:id="@+id/data_downloader_toast_message"
+		android:padding="0dp"
+		android:gravity="top|left"
+		android:layout_below="@+id/data_downloader_toast_title"
+		android:layout_toRightOf="@+id/imageView1"
+		android:layout_alignRight="@+id/imageView2"/>
+
+		
+</RelativeLayout>

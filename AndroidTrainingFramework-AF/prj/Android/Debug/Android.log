@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.Cpp.props(31,3): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.Makefile.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.cpp.props (31,3)". This is most likely a build authoring error. This subsequent import will be ignored. [D:\Code\C++\ConsoleApplication1\AndroidTrainingFramework-AF\prj\Android\Android.vcxproj]
+  'make.bat' is not recognized as an internal or external command,
+  operable program or batch file.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(41,5): error MSB3073: The command "make.bat debug" exited with code 9009.

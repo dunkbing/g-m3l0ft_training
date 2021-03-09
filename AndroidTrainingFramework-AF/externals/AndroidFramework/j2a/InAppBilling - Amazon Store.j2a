@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - In App Billing - Amazon Store">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/InAppBilling/amazon"/>
+			<preprocess>
+				<include path="../native/InAppBilling/iab_strings_encoded.h"/>
+				<include path="../native/InAppBilling/InAppBillingConst.h"/>
+			</preprocess>
+		</java>
+		<res>
+			<dir path="../res_apk/InAppBilling/amazon/res"/>
+		</res>
+		<libs>
+			<dir path="../res_apk/InAppBilling/amazon/libs"/>
+		</libs>
+	</sources>
+</j2a>

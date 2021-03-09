@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<string name="checklicense_dialog_message">…قيد التقدم</string>
+<string name="unlicensed_dialog_title">تعذر التحقق</string>
+<string name="unlicensed_dialog_message">لم يتم العثور على سجلات مطابقة في سجلات الشراء الخاصة بك.</string>
+<string name="no_lgworld_dialog_title">يجب التحقق</string>
+<string name="no_lgworld_dialog_message">الرجاء تثبيت أحدث إصدار من LG World للتحقق من هذا التطبيق</string>
+<string name="no_network_dialog_title">لا توجد شبكة</string>
+<string name="no_network_dialog_message">الرجاء التحقق من وصلة الشبكة لديك.</string>
+<string name="warning_dialog_title">تحذير</string>
+<string name="warning_dialog_message">الخدمة غير متوفرة. الرجاء المحاولة مرة أخرى.</string>
+<string name="ok_button">موافق</string>
+<string name="cancel_button">إلغاء</string>
+<string name="exit_button">ﺧﺮﻭﺝ</string>
+
+</resources>

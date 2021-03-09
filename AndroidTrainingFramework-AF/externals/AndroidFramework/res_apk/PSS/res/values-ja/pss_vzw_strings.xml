@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="pss_vzw_confirm_buy_title">{GAME}!</string>
+<string name="pss_vzw_confirm_buy">価格：USD{PRICE}\n\n\'ゲームをゲット\'をクリックして決定してください。\n料金はVerizon Wirelessの料金に加算されます。\n\nお客様のプランやデータパッケージによっては購入ダウンロード中のデータ転送料がかかる場合がございます。</string>
+<string name="pss_vzw_cancel">キャンセル</string>
+<string name="pss_vzw_get_game">ゲームをゲット</string>
+<string name="pss_vzw_please_wait">しばらくお待ちください…</string>
+<string name="pss_vzw_try_again">Verizon Wirelessのネットワークに接続しておく必要があります。\n\nもう一度試しますか？</string>
+<string name="pss_vzw_try_again_glshop">Verizon Wirelessのネットワークに接続しておく必要があります。\n\n購入を完了するためにはもう一度お試しください。</string>
+<string name="pss_vzw_yes">はい</string>
+<string name="pss_vzw_no">いいえ</string>
+<string name="pss_vzw_transaction_complete_title">処理が完了しました</string>
+<string name="pss_vzw_transaction_complete">{GAME}をお買い上げいただきありがとうございます。\n\n代金はVerizon Wirelessの料金に加算されます。\n\nダウンロードは通知バーで行われます。</string>
+<string name="pss_vzw_downlaod">ダウンロード
+</string>
+</resources>

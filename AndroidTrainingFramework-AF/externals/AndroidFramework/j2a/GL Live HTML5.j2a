@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - GL Live HTML 5">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/GLiveHTML5"/>
+			<preprocess/>
+		</java>
+		<res>
+			<dir path="../res_apk/GLiveHTML5/res"/>
+		</res>
+	</sources>
+</j2a>

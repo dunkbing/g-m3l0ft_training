@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="GET_THE_GAME">Conseguir el juego</string>
+	<string name="CHECKING_LICENSE">Comprobando licencia...</string>
+	<string name="UNLICENSED_DIALOG_TITLE">Comprobar licencia</string>
+	<string name="UNLICENSED_DIALOG_BODY">Licencia no válida</string>
+	<string name="BUY_BUTTON">Comprar juego</string>
+	<string name="QUIT_BUTTON">Salir</string>
+	<string name="RETRY">Volver a intentar</string>
+	<string name="NETWORK_ERROR_TITLE">Atención</string>
+	<string name="NETWORK_ERROR_BODY">Ha ocurrido un error de red. ¿Quieres volver a intentarlo?</string>
+</resources>

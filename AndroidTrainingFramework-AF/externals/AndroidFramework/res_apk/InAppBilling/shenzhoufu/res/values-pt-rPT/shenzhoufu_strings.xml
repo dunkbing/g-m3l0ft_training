@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <string name="app_name">Android Billing</string> -->
+	<string name="IAB_SKB_BUY">Comprar</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_WARNING_MESSAGE">Clica em Comprar e inicia o processo de compra.</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_TYPE">Tipo de cartão pré-pago</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_DENOMINATION">Valor do cartão pré-pago</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_NUMBER">Número do cartão pré-pago</string>
+	<string name="IAB_SHENZHOUFU_PREPAID_CARD_PASSWORD">Password do cartão pré-pago</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_CHECKBOX_SAVE_INFO">Informação guardada no cartão pré-pago</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PREPAID_CARD_TYPE_CHINA_MOBILE">China Mobile</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PREPAID_CARD_TYPE_CHINA_UNICOM">China Unicom</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PREPAID_CARD_TYPE_CHINA_TELECOM">China Telecom</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_DIALOG_TITLE">Atenção</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_DIALOG_MESSAGE">Poderás perder dinheiro se a selecção do montante do cartão pré-pago for errada.</string>
+	<string name="IAB_SHENZHOUFU_LAYOUT_PURCHASE_PROGRESS_TITLE">A pagar pelo Shenzhoufu...</string>	
+	<string name="IAB_SHENZHOUFU_LAYOUT_PURCHASE_PROGRESS_MESSAGE">Por favor, aguarda o progresso da transacção...</string>	
+	<string name="IAB_PURCHASE_ITEM_PURCHASE_PENDING_SHENZHOUFU">A aguardar a confirmação de entrega do teu item para validar a compra. Assim que a compra se concluir, a tua lista de itens será actualizada.</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE_SHENZHOUFU">A tua compra anterior não foi bem sucedida, e não te foi cobrada.</string>	
+	<string name="IAB_PURCHASE_ITEM_FAILURE_INSUFFICIENT_BALANCE_SHENZHOUFU">Saldo insuficiente</string>	
+	<string name="IAB_PURCHASE_ITEM_FAILURE_VERIFICATION_FAILED">A verificação falhou</string>	
+	<string name="IAB_PURCHASE_ITEM_FAILURE_VERIFICATION_INTERRUPTED">Ocorreu um erro na rede. A tua transacção está pendente e irá continuar quando a conexão estiver de novo activa.</string>	
+	<string name="IAB_SHENZHOUFU_PENDING_TITLE">Transacção Pendente</string>
+	<string name="IAB_SHENZHOUFU_CONFIRM_PENDING_TRANSACTION">Caro cliente, por favor escolhe "OK" para continuares com a tua compra pendente.</string>
+	<string name="IAB_SHENZHOUFU_PENDING_TRANSACTION_FAILED">A tua compra anterior não foi bem sucedida.</string>
+</resources>

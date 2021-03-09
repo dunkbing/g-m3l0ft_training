@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - In App Billing - Bazaar Store">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/InAppBilling/bazaar"/>
+			<preprocess>
+				<include path="../native/InAppBilling/iab_strings_encoded.h"/>
+				<include path="../native/InAppBilling/InAppBillingConst.h"/>
+			</preprocess>
+		</java>
+		<aidl>
+			<dir path="../res_apk/InAppBilling/bazaar/libs"/>
+		</aidl>
+		<res>
+			<dir path="../res_apk/InAppBilling/bazaar/res"/>
+		</res>
+	</sources>
+</j2a>

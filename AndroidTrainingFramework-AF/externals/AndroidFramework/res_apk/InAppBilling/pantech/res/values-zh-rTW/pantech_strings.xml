@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB_PANTECH_NO_APPSPLAY">使用者必須下載 AppsPlay 應用程式。</string>
+	<string name="IAB_PANTECH_NO_LOGIN">使用者必須登入 AppsPlay 應用程式。</string>
+	<string name="IAB_PANTECH_ERROR">發生錯誤，請稍後再試。</string>
+</resources>

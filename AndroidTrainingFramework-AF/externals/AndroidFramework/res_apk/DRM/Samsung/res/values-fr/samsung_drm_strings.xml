@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DRM_NETWORK_DIALOGUE_1">Aucune connexion Internet disponible. Voulez-vous configurer votre connexion Wi-Fi ou utiliser le réseau de votre opérateur ?</string>
+	<string name="DRM_ZIRCONIA_LOCAL_LICENSE_INVALID">Le système a déterminé que la licence sur votre système local est invalide. L\'application va utiliser une connexion réseau pour rechercher une licence. Continuer ?</string>
+	<string name="DRM_EZIRCONIA_NOT_PURCHASED_1">Le serveur indique que l\'application n\'a pas été achetée. La licence n\'a donc pas été envoyée à l\'application.</string>
+	<string name="DRM_EZIRCONIA_INVALID_VALUE_1">Le serveur a vérifié les paramètres de l\'application et déterminé qu\'au moins un de ces paramètres a une valeur nulle. (Ceci peut se produire quand le téléphone est éteint).</string>
+	<string name="DRM_EZIRCONIA_CANNOT_CHECK_1">En raison d\'une panne de serveur, comme l\'impossibilité d\'accéder à la base de données, le serveur ne peut pas confirmer que l\'application a été achetée.</string>
+	<string name="DRM_EZIRCONIA_RECEIVE_FAILED_1">La licence n\'a pas été envoyée à l\'application en raison d\'une panne de réseau (l\'application n\'a reçu aucune réponse du serveur).</string>
+	<string name="DRM_EZIRCONIA_SEND_FAILED_1">La licence n\'a pas été envoyée à l\'application en raison d\'une panne de réseau (l\'application n\'a pu envoyer aucune demande au serveur).</string>
+	<string name="DRM_EZIRCONIA_KEY_CREATION_FAILED_1">La licence n\'a pas pu être enregistrée sur le disque local. Raisons possibles : erreur E/S disque, espace insuffisant dans le dossier, interdiction d\'enregistrer la licence sur le disque. </string>
+	<string name="DRM_EZIRCONIA_CLIENT_MISMATCH_1">Cela se produit lorsque le client demande une licence à un serveur n\'appartenant pas à la bibliothèque Zirconia.</string>
+	<string name="DRM_EZIRCONIA_VERSION_MISMATCH_1">Cela se produit lorsque le client demande une licence à un serveur appartenant  à une version invalide de la bibliothèque Zirconia et qui n\'est pas supporté par le serveur de licences.</string>
+	<string name="DRM_EZIRCONIA_LICENSE_MISMATCH_1">La licence du serveur est invalide.</string>
+	<string name="DRM_EZIRCONIA_SERVER_MISMATCH_1">La licence a été envoyée à l\'application depuis un serveur invalide.</string>
+	<string name="DRM_EZIRCONIA_APPLICATION_MODIFIED_1">L\'utilisateur a modifié l\'application.</string>
+
+	<string name="DRM_EZIRCONIA_SUCCESS_1">Une licence valide a été reçue.</string>
+</resources>

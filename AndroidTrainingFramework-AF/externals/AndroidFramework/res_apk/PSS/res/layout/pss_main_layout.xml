@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:background="#FFFFFF" android:id="@+id/RelativeLayout_main">
+<!--	<WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/webview"
+			android:layout_width="wrap_content" android:layout_y="140px" android:layout_height="755px" android:fadingEdge="vertical"/>-->
+    <TableLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/TableLayout01">
+        <TableRow android:background="@drawable/pss_top_bar_small" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/TableRow01">
+        	<ImageView android:background="@drawable/pss_logo_tittle_horiz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal" android:layout_marginBottom="5px" android:id="@+id/ImageView_Gameloft"></ImageView>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#FFFFFF" android:gravity="center_horizontal" android:id="@+id/TableRow02">
+            <LinearLayout android:layout_height="fill_parent" android:orientation="horizontal" android:id="@+id/LinearLayout02" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_marginLeft="3px">
+                <ImageView android:background="@drawable/pss_background_tile" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:id="@+id/ImageView_game_screen"></ImageView>
+                <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/LinearLayout01">
+                    <TextView android:layout_height="wrap_content" android:id="@+id/TextView01" android:layout_width="wrap_content" android:text="@string/pss_title" style="@style/GameTitle"></TextView>
+                    <TextView android:layout_height="wrap_content" android:id="@+id/TextView02" android:layout_width="wrap_content" android:text="@string/pss_description" style="@style/GameDescription"></TextView>
+                    <Button android:layout_height="wrap_content" android:id="@+id/bt_play_now" android:text="@string/pss_PlayNowButton" android:layout_width="wrap_content" android:textStyle="bold" android:minWidth="255px"></Button>
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/pss_background1" android:id="@+id/TableRow03">
+            <LinearLayout android:layout_height="fill_parent" android:id="@+id/LinearLayout03" android:layout_width="wrap_content" android:layout_weight="1">
+                <ImageView android:background="@drawable/pss_background1_arrow" android:layout_height="wrap_content" android:minWidth="23px" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:minHeight="23px" android:layout_marginLeft="15dip" android:id="@+id/ImageView03" android:layout_marginTop="-5px"></ImageView>
+                <TextView android:layout_height="wrap_content" android:layout_marginBottom="3dip" android:layout_gravity="center_vertical" android:id="@+id/TextView03" android:text="@+id/TextView03" android:layout_marginLeft="10dip" android:layout_width="fill_parent" style="@style/DeviceText"></TextView>
+            </LinearLayout>
+        </TableRow>
+        <!--<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/TableRow04">
+            <WebView android:id="@+id/webView1" android:layout_width="fill_parent" android:layout_marginBottom="50dip" android:fadingEdge="vertical" android:layout_height="wrap_content"></WebView>
+        </TableRow>-->
+        <!--<TableRow android:layout_height="wrap_content" android:id="@+id/TableRow04" android:layout_width="fill_parent"></TableRow>-->
+		<RelativeLayout android:id="@+id/webview_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"></RelativeLayout>
+    </TableLayout>
+
+<!-- <TableLayout android:id="@+id/TableLayout02" android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_y="893px">
+<TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_horizontal">
+<Button android:id="@+id/bt_more_games" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="moreGamesButtonPressed" android:textStyle="bold" android:width="255px" android:text="@string/MoreGamesButton"></Button>
+</TableRow>
+</TableLayout> -->
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:id="@+id/RelativeLayout_bottom_bar">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:layout_height="47px">
+            <CheckBox android:text="@string/pss_checkBox1Text" android:layout_width="wrap_content" android:id="@+id/checkBox1" android:layout_height="wrap_content" android:textColor="#000000" android:checked="true" android:textSize="12dip"></CheckBox>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

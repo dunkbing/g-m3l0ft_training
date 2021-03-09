@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - In App Billing - Shenzhoufu Store">
+	<build type="Copy">
+	</build>
+	<sources>
+		<res>
+			<dir path="../res_apk/InAppBilling/shenzhoufu/res"/>
+		</res>
+	</sources>
+</j2a>

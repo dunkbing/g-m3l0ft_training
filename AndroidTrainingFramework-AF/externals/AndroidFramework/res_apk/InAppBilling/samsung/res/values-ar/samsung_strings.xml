@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAP_SAMSUNG_DIALOG_TITLE">عملية شراء داخل التطبيق</string>
+	<string name="IAP_SAMSUNG_UPGRADE_REQUIRED">مطلوب تحديث عمليات شراء سامسونج داخل التطبيق. هل تريد المتابعة؟</string>
+	<string name="IAP_SAMSUNG_CLIENT_NOT_INSTALLED">عمليات شراء سامسونج داخل التطبيق غير مثبت على هذا الجهاز. هل تريد تثبيته؟</string>
+	<string name="IAP_SAMSUNG_APP_STORE_NOT_INSTALLED">خدمة متجر سامسونج غير متوفرة الآن. يمكنك استخدام هذا التطبيق لكن لا يمكنك إجراء أي عملية شراء.</string>
+	<string name="IAP_SAMSUNG_ERROR_ALREADY_PURCHASED">لقد تم شراء هذا العنصر مسبقاً. لن يتم احتساب تكلفته من حسابك.</string>
+	<string name="IAP_SAMSUNG_WAITING">يرجى الانتظار....</string>
+	<string name="IAP_SAMSUNG_OK_BUTTON">حسناً</string>
+	<string name="IAP_SAMSUNG_CANCEL_BUTTON">إلغاء</string>
+</resources>

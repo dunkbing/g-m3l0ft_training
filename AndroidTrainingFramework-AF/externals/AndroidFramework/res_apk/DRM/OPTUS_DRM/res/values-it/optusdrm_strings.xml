@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="drmlib_optusjg_message_checking"><![CDATA[<div>Verifica licenza in corso. Ti preghiamo di attendere la convalida da parte dei nostri server.</div>]]></string>
+	<string name="drmlib_optusjg_message_validated"><![CDATA[<div>La tua licenza è stata convalidata.<br/><br/><a href="action:finish">GIOCA</a></div>]]></string>
+	<string name="drmlib_optusjg_message_noinet"><![CDATA[<div>Non è stato possibile verificare la licenza per questo gioco. È necessario collegarsi a internet. <a href="action:retry">RIPROVA</a> o visita la nostra pagina di<a href="action:help">AIUTO</a>.</div>]]></string>
+	<string name="drmlib_optusjg_message_refused"><![CDATA[<div>La tua licenza per questo gioco non è valida. Ti preghiamo di visitare la nostra pagina di <a href="action:help">AIUTO</a>.</div>]]></string>
+	<string name="drmlib_optusjg_message_help"><![CDATA[<div><b>AIUTO</b><br/><br/>Per convalidare il tuo gioco ti devi collegare a internet (rete per cellulari (GPRS) o Wi-Fi).<br/><br/>La licenza è valida solo per il tuo telefono, non puoi installare il gioco su un altro dispositivo.<br/><br/>Se riscontri dei problemi ti preghiamo di contattare il nostro <a href="action:cs">SERVIZIO CLIENTI</a>.]]></string>
+	<string name="DOWNLOAD_FILES_NO_WIFI_QUESTION_OPTUS">Puoi scegliere se usare il Wi-Fi o la rete Optus per scaricare questo gioco. Non ti verranno addebitate spese di trasferimento dati sulla rete Optus.</string>
+	<string name="USE_OPTUS">Rete Optus</string>
+</resources>

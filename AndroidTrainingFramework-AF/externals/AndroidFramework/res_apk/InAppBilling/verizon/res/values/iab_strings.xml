@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS_TITLE">Purchase successful</string>
+	<string name="IAB_PURCHASE_ITEM_SUCCESS">Your content has been purchased correctly.</string>
+	
+	<string name="IAB_PURCHASE_ITEM_FAILURE_TITLE">Purchase Failed</string>
+	<string name="IAB_PURCHASE_ITEM_FAILURE">Your purchase could not be processed by our service. Do you want to try again?</string>
+	
+	<string name="IAB_NETWORK_ERROR_TITLE">Network Error</string>
+	<string name="IAB_NETWORK_ERROR">A network error has occurred. Do you want to try again?</string>
+	<string name="IAB_NETWORK_ERROR_NO_DATA_CONNECTION">Your need to be connected to the Verizon Network to continue. Do you want to try again?</string>
+	
+	<string name="IAB_SKB_OK">OK</string>
+	<string name="IAB_SKB_CANCEL">Cancel</string>
+	<string name="IAB_SKB_RETRY">Retry</string>
+	
+    <string name="IAB_GETTING_SERVER_INFORMATION">Getting information from server...</string>
+	<string name="IAB_CANNOT_DISPLAY_AVAILABLE_ITEMS">Cannot Display Available Items</string>
+	<string name="IAB_TRANSACTION_FAILED">Transaction failed</string>
+	<string name="IAB_VZW_INFO">The charge will appear on the Verizon Wireless bill.</string>
+</resources>

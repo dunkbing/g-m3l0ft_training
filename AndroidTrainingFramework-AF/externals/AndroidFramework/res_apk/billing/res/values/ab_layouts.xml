@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="ab_main_layout_padding">20dp</dimen>
+
+	<!-- Tittle Bar -->
+	<dimen name="ab_tittle_bar_size_h">80dp</dimen>
+	<dimen name="ab_tittle_mrc_bar_size_h">70dp</dimen>
+	<dimen name="ab_logo_tittle_gap">10dp</dimen>
+	<dimen name="ab_text_tittle_size">25dp</dimen>
+	
+	<!-- TextView -->
+	<dimen name="ab_textview_padding_lr">30dp</dimen>
+	<dimen name="ab_textview_margin_from_header">50dp</dimen>
+	<dimen name="ab_textview_mrc_margin_from_header">40dp</dimen>
+	<dimen name="ab_textview_margin_from_header_offset">80dp</dimen>
+	<dimen name="ab_text_size">20sp</dimen>
+	<dimen name="ab_aux_text_size">15sp</dimen>
+	<dimen name="ab_aux_mrc_text_size">12sp</dimen>
+	<dimen name="ab_tcs_text_size">15sp</dimen>
+	<dimen name="ab_tcs_top_margin">80dp</dimen>
+	<dimen name="ab_tcs_bottom_margin">60dp</dimen>
+	
+	
+	<!-- Button -->
+	<dimen name="ab_button_bottom_lr_margin">10dp</dimen>
+	<dimen name="ab_button_bottom_margin">10dp</dimen>
+	<dimen name="ab_button_center_margin">30dp</dimen>
+	<dimen name="ab_buttons_gap">7dp</dimen>
+	<dimen name="ab_webview_top_margin">9dp</dimen>
+	<dimen name="ab_webview_bottom_margin">22dp</dimen>
+	<dimen name="ab_button_text_size">20sp</dimen>
+	<dimen name="ab_button_next_size">2sp</dimen>
+	<dimen name="ab_button_tcs_text_size">15sp</dimen>
+	<dimen name="ab_button_tcs_mrc_text_size">10sp</dimen>
+	<dimen name="ab_button_width">100dp</dimen>
+	<dimen name="ab_large_button_width">300dp</dimen>
+	<dimen name="ab_small_button_width">60dp</dimen>
+	<dimen name="ab_play_button_bottom_margin">100dp</dimen>
+	
+	<!-- EditText -->
+	<dimen name="ab_unlock_code_width">175dp</dimen>
+	<dimen name="ab_unlock_code_gap">5dp</dimen>
+	
+	
+	<!-- ProgressBar -->
+	<dimen name="ab_progress_center_gap">40dp</dimen>
+	
+	<!-- Separation lines -->
+	<dimen name="ab_separation_height">1px</dimen>
+	<dimen name="ab_separation_padding">5dp</dimen>
+	
+	<!-- MRC confirmation screen -->
+	<dimen name="ab_mrc_confirmation_textview1_text_size">15dp</dimen>
+	<dimen name="ab_mrc_confirmation_textview2_text_size">10dp</dimen>
+	<dimen name="ab_mrc_pricetext_size">25sp</dimen>
+	
+	<dimen name="ab_mrc_price_right_margin_question">38sp</dimen>
+	<dimen name="ab_mrc_pricetext_right_margin_question">16sp</dimen>
+	
+	<dimen name="ab_mrc_price_right_margin_confirmation">38sp</dimen>
+	<dimen name="ab_mrc_pricetext_right_margin_confirmation">18sp</dimen>
+	
+</resources>

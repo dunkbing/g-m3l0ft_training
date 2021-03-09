@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="GET_THE_GAME">게임 구매</string>
+	<string name="CHECKING_LICENSE">라이선스 확인 중...</string>
+	<string name="UNLICENSED_DIALOG_TITLE">라이선스 확인</string>
+	<string name="UNLICENSED_DIALOG_BODY">유효하지 않은 라이선스</string>
+	<string name="BUY_BUTTON">게임 구매</string>
+	<string name="QUIT_BUTTON">종료</string>
+	<string name="RETRY">재시도</string>
+	<string name="NETWORK_ERROR_TITLE">주의</string>
+	<string name="NETWORK_ERROR_BODY">네트워크 오류가 발생했습니다. 다시 시도하시겠습니까?</string>
+</resources>

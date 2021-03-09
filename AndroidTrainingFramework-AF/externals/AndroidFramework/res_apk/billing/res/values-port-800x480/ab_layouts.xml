@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="ab_main_layout_padding_top">35dp</dimen>
+	
+	<!-- Tittle Bar -->
+	<dimen name="ab_tittle_bar_size_h">40dp</dimen>
+	
+	<!-- Form -->
+	<dimen name="ab_center_margin_top">25dp</dimen>
+	
+</resources>

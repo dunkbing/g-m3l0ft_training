@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="Game">
+
+	<!-- Assuming a trunk structure with 'libs'/'externals' and 'prj' folders. -->	
+	<!-- Assuming the Android project resources are mirroring the iOS ones. -->
+	<!-- All paths are relative to the current file. -->
+	
+		
+	<build type="Copy"/>
+	<sources>
+	
+		<proguard path="../../../../prj/Android/proguard.file"/>
+		
+		<java>
+			<dir path="../../../../prj/Android/java"/>
+			<preprocess/>
+		</java>
+		
+		<aidl>
+			<dir path="../../../../prj/Android/aidl"/>
+		</aidl>
+		
+		<res>
+			<dir path="../../../../prj/Android/res"/>
+		</res>
+		
+		<assets>
+			<dir path="../../../../prj/Android/assets"/>
+		</assets>
+		
+		<libs>
+			<dir path="../../../../prj/Android/libs"/>
+		</libs>
+		
+		<!-- Only use jniLibs for preexisting .so files, not for the one generated at build. -->
+		<jniLibs>
+			<dir path="../../../../prj/Android/jniLibs"/>
+		</jniLibs>
+		
+	</sources>
+</j2a>

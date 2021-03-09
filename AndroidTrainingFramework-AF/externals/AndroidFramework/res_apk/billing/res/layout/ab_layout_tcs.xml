@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/LinearLayout01" 
+				android:gravity="center" 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:background="@color/background">
+				<FrameLayout android:id="@+id/FrameLayout00"
+							android:layout_height="fill_parent" 
+							android:layout_width="fill_parent">
+							<ScrollView android:id="@+id/ScrollViewInfo" 
+										android:layout_height="fill_parent" 
+										android:layout_width="fill_parent"
+										android:paddingTop="@dimen/ab_tcs_top_margin"
+										android:paddingBottom="@dimen/ab_tcs_bottom_margin">
+									    <TextView android:id="@+id/tvTCSInfo" 
+													android:layout_height="fill_parent" 
+													android:textSize="@dimen/ab_tcs_text_size" 
+													android:layout_width="fill_parent"
+													android:fadingEdge="vertical">
+										</TextView>
+							</ScrollView>
+							<Button android:id="@+id/bt_ly_tcs_back" 
+									android:layout_height="wrap_content" 
+									android:layout_gravity="bottom|left" 
+									android:text="@string/SKB_BACK" 
+									android:layout_width="wrap_content"
+									android:layout_marginBottom="@dimen/ab_button_bottom_margin">
+							</Button>
+							<Button android:id="@+id/bt_ly_tcs_exit" 
+									android:layout_height="wrap_content" 
+									android:layout_gravity="bottom|right" 
+									android:text="@string/SKB_EXIT" 
+									android:layout_width="wrap_content" 
+									android:layout_marginBottom="@dimen/ab_button_bottom_margin" 
+									android:minWidth="@dimen/ab_small_button_width">
+							</Button>
+							<FrameLayout android:id="@+id/FrameLayoutHeader"
+										android:layout_width="fill_parent" 
+										android:layout_gravity="top"
+										android:background="@drawable/ab_top_bar"
+										android:layout_height="@dimen/ab_tittle_bar_size_h">
+										<ImageView android:id="@+id/ImageView01"
+													android:layout_width="wrap_content"
+													android:layout_height="wrap_content"
+													android:src="@drawable/ab_logo_tittle_horiz"
+													android:paddingTop="@dimen/ab_logo_tittle_gap"
+													android:paddingLeft="@dimen/ab_logo_tittle_gap">
+										</ImageView>
+							</FrameLayout>
+				</FrameLayout>
+</LinearLayout>

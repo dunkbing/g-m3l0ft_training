@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="IAP_SAMSUNG_DIALOG_TITLE">Pembelian Dalam Aplikasi</string>
+	<string name="IAP_SAMSUNG_UPGRADE_REQUIRED">Dibutuhkan peningkatan Samsung In-App Purchase. Apa kamu ingin melanjutkan?</string>
+	<string name="IAP_SAMSUNG_CLIENT_NOT_INSTALLED">Pembelian Dalam Aplikasi Samsung tidak terinstal di perangkatmu. Apa kamu ingin menginstalnya?</string>
+	<string name="IAP_SAMSUNG_APP_STORE_NOT_INSTALLED">Layanan Toko Samsung tidak tersedia saat ini. Kamu bisa melanjutkan memakai aplikasi ini, namun kamu tidak bisa melakukan pembelian.</string>
+	<string name="IAP_SAMSUNG_ERROR_ALREADY_PURCHASED">Barang ini telah dibeli. Biaya tidak akan dibebankan kepada akunmu.</string>
+	<string name="IAP_SAMSUNG_WAITING">Silakan tunggu...</string>
+	<string name="IAP_SAMSUNG_OK_BUTTON">OKE</string>
+	<string name="IAP_SAMSUNG_CANCEL_BUTTON">Batal</string>
+</resources>

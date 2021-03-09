@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="billing_not_supported_title">Satın alım işlemi yapılamıyor</string>
+	<string name="billing_not_supported_message">Google Play Store faturalandırma servisi şu anda kullanılamıyor. Bu uygulamayı kullanmaya devam edebilirsin ama satın alım işlemi yapamayacaksın.</string>
+	<string name="cannot_connect_title">Google Play Store\'a bağlanılamıyor</string>
+	<string name="cannot_connect_message">Bu uygulama Google Play\'e bağlanamıyor. Google Play sürümün güncel olmayabilir. Bu uygulamayı kullanmaya devam edebilirsin ama satın alım işlemi yapamayacaksın.</string>
+	<string name="waitting_confirm">Google Play\'in satın alımını doğrulamasını bekliyoruz. Satın alım tamamlandığında ürünler listeni güncelleyeceğiz.</string>
+	<string name="pending_transaction">Bekleyen bir işlemin var.</string>
+	<string name="purchase_success">Satın alım başarılı.</string>
+	<string name="purchase_unsuccess">Satın alım başarısız.</string>
+	<string name="iab_retry">Tekrar Dene</string>
+	<string name="iab_cancel">İptal</string>
+	<string name="iab_ok">Tamam</string>
+</resources>

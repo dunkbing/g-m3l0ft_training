@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<j2a name="AndroidFramework - Gloft DRM">
+	<build type="Copy">
+	</build>
+	<sources>
+		<java>
+			<dir path="../java/DRM/GloftNew"/>
+			<preprocess/>
+		</java>
+		<res>
+			<dir path="../res_apk/DRM/Gloft/res"/>
+		</res>
+	</sources>
+</j2a>

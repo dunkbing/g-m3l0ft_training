@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="VZW_ITEM_NOT_FOUND">该物品在你的设备上不可用或在V Cast Apps目录中不再可用。</string>
+	<string name="INVALID_LICENSE">你还没有购买该应用，或购买已过期。启动V Cast Apps客户端可进行购买。</string>
+	<string name="VZW_GENERAL_ERROR">暂时无法验证你的游戏，请稍后重试。</string>
+	<string name="VZW_SERVER_VALIDATION_REQUIRED">请开启你的网络连接，才能验证游戏。</string>
+</resources>
