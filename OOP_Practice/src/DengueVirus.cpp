@@ -21,7 +21,7 @@ void DengueVirus::DoBorn() {
 }
 
 DengueVirus* DengueVirus::DoClone() {
-    auto* clones = new std::vector<DengueVirus*>({ new DengueVirus(), new DengueVirus });
+    auto* clones = DBG_NEW std::vector<DengueVirus*>({ DBG_NEW DengueVirus(), DBG_NEW DengueVirus });
     return reinterpret_cast<DengueVirus*>(clones);
 }
 

@@ -1,5 +1,6 @@
 #include <numeric>
 #include <functional>
+#include <algorithm>
 
 #include <Globals.h>
 #include "Patient.h"
@@ -23,9 +24,9 @@ void Patient::DoStart() {
     const size_t size = Rng(10, 20);
     for (size_t i = 0; i < size; i++) {
         if (Rng(1, 2) == 1) {
-            m_viruses.push_back(new FluVirus());
+            m_viruses.push_back(DBG_NEW FluVirus());
         } else {
-            m_viruses.push_back(new DengueVirus());
+            m_viruses.push_back(DBG_NEW DengueVirus());
         }
     }
     if (TotalVirusesResist() > m_resistance) {
@@ -38,7 +39,7 @@ void Patient::TakeMedicine(int medicine_resistance) {
         virus->ReduceResistance(medicine_resistance);
     }
     std::vector<Virus*> clonedViruses;
-    const std::function<bool(Virus*)> pred = [&clonedViruses](Virus* v)->bool {
+    const std::function<void(Virus*)> pred = [&clonedViruses](Virus* v)->void {
         if (v->GetState() == ALIVE) {
             if (typeid(v).name() == typeid(FluVirus*).name()) {
                 auto* flu = dynamic_cast<FluVirus*>(v);
@@ -47,19 +48,13 @@ void Patient::TakeMedicine(int medicine_resistance) {
                 auto* dengue = dynamic_cast<DengueVirus*>(v);
                 auto* dengueClones = reinterpret_cast<std::vector<DengueVirus*>*>(dengue->DoClone());
                 clonedViruses.insert(clonedViruses.end(), dengueClones->begin(), dengueClones->end());
+                SAFE_DEL(dengueClones);
             }
-            return true;
         }
-        return false;
     };
-    m_viruses.erase(
-        std::remove_if(
-            m_viruses.begin(),
-            m_viruses.end(),
-            pred
-        ),
-        m_viruses.end()
-    );
+    std::for_each(m_viruses.begin(), m_viruses.end(), pred);
+    Release();
+    m_viruses.clear();
     m_viruses.insert(m_viruses.end(), clonedViruses.begin(), clonedViruses.end());
     if (m_resistance < this->TotalVirusesResist()) {
         DoDie();
@@ -72,6 +67,12 @@ void Patient::DoDie() {
         for (auto* virus : m_viruses) {
             SAFE_DEL<Virus*>(virus);
         }
+    }
+}
+
+void Patient::Release() {
+    for (auto* virus : m_viruses) {
+        SAFE_DEL(virus);
     }
 }
 

@@ -10,9 +10,7 @@ FluVirus::FluVirus(const FluVirus& otherFlu) : Virus(otherFlu) {
     m_color = otherFlu.m_color;
 }
 
-FluVirus::~FluVirus() {
-    FluVirus::DoDie();
-}
+FluVirus::~FluVirus() = default;
 
 void FluVirus::DoBorn() {
     srand(time(nullptr));
@@ -21,7 +19,7 @@ void FluVirus::DoBorn() {
 }
 
 FluVirus* FluVirus::DoClone() {
-    return new FluVirus;
+    return DBG_NEW FluVirus;
 }
 
 void FluVirus::DoDie() {
@@ -32,4 +30,5 @@ void FluVirus::InitResistance() {
     // from 10 to 20 if red
     // else 10 to 15
     m_resistance = m_color == RED ? Utils::Rng(10, 20) : Utils::Rng(10, 15);
+    DoBorn();
 }

@@ -11,6 +11,7 @@ public:
     void DoStart();
     void TakeMedicine(int);
     void DoDie();
+    void Release();
     State GetState() const;
     int TotalResist() const;
     int TotalVirusesResist() const;

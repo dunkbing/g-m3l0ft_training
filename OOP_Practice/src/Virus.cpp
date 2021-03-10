@@ -7,6 +7,7 @@ Virus::Virus() {
     m_dna = nullptr;
     m_resistance = 0;
     m_state = ALIVE;
+    LoadADNInformation();
 }
 
 Virus::Virus(Virus* p_virus): m_dna(nullptr) {
@@ -19,9 +20,7 @@ Virus::Virus(const Virus& p_virus): m_dna(nullptr) {
     m_resistance = p_virus.m_resistance;
 }
 
-Virus::~Virus() {
-    SAFE_DEL(m_dna);
-}
+Virus::~Virus() = default;
 
 void Virus::LoadADNInformation() {
     std::ifstream ifs("ATGX.bin", std::ifstream::in);
@@ -30,7 +29,7 @@ void Virus::LoadADNInformation() {
         std::getline(ifs, line);
         ifs.close();
         if (!m_dna) {
-            m_dna = new char[strlen(line.c_str())+1];
+            m_dna = DBG_NEW char[strlen(line.c_str())+1];
         }
         strcpy_s(m_dna, strlen(line.c_str()) + 1, line.c_str());
     }
@@ -40,6 +39,7 @@ void Virus::ReduceResistance(int medicine_resistance) {
     m_resistance -= medicine_resistance;
     if (m_resistance <= 0) {
         m_state = DIE;
+        SAFE_DEL(m_dna);
     }
 }
 

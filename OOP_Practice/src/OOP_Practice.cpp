@@ -7,27 +7,29 @@
 #include "Patient.h"
 
 int main() {
-    Patient p;
-    while (p.GetState() == ALIVE) {
-        if (p.TotalVirusesResist() <= 0) {
+    Patient* p = new Patient;
+    while (p->GetState() == ALIVE) {
+        if (p->TotalVirusesResist() <= 0) {
             std::cout << "viruses are dead" << std::endl;
-            std::cout << p;
-            _CrtMemState s1;
-            _CrtMemCheckpoint(&s1);
+            std::cout << *p;
+            p->Release();
+            SAFE_DEL(p);
+            // _CrtMemState s1;
+            // _CrtMemCheckpoint(&s1);
             // OutputDebugString("dump memory leak\n");
             _CrtDumpMemoryLeaks();
             // OutputDebugString("dump statistic\n");
-            _CrtMemDumpStatistics(&s1);
+            // _CrtMemDumpStatistics(&s1);
             return 0;
         }
-        std::cout << p;
+        std::cout << *p;
         printf("Take Medicine (0 = NO, 1 = YES): ");
         const int t = Utils::GetInt(0, 1);
         if (t == 1) {
             const int min = 1;
             const int max = 60;
             const int medicine_resistance = min + (rand() % (max - min + 1));
-            p.TakeMedicine(medicine_resistance);
+            p->TakeMedicine(medicine_resistance);
         }
     }
 }
