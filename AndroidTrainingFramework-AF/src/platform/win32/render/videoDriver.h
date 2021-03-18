@@ -1,6 +1,7 @@
 #ifndef __VIDEO_DRIVER_H__
 #define __VIDEO_DRIVER_H__
 
+#include "define.h"
 #include <objidl.h>
 #include <gdiplus.h>
 using namespace Gdiplus;
