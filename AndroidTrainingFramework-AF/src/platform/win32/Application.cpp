@@ -1,11 +1,8 @@
 #include "Application.h"
+#include "game.h"
 #include "render\videoDriver.h"
 #include <iostream>
 #include <sstream>
-
-#include "define.h"
-#include "Game.h"
-
 using namespace std;
 
 Application* Application::s_instance = nullptr;
@@ -75,12 +72,12 @@ bool Application::Init(HINSTANCE hInstance)
 
 void Application::Update(float dt)
 {
-
+    Game::GetInstance()->GetScene()->Update(dt/100);
 }
 
 void Application::Render()
 {
-    Game::GetInstance()->Draw();
+	Game::GetInstance()->Draw();
 }
 
 void Application::Run()
@@ -113,7 +110,6 @@ void Application::Run()
 
 LRESULT Application::ProcessWindowMessage(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
-
 	switch (msg)
 	{
 	case WM_CREATE:
@@ -159,15 +155,19 @@ LRESULT Application::ProcessWindowMessage(HWND hwnd, UINT msg, WPARAM wParam, LP
 
 void Application::OnMouseDown(WPARAM btnState, int x, int y)
 {
-
+    Game::GetInstance()->GetScene()->Select(Vector2(x, y));
 }
+
 void Application::OnMouseUp(WPARAM btnState, int x, int y)
 {
-
+    Game::GetInstance()->GetScene()->UnSelect();
 }
+
 void Application::OnMouseMove(WPARAM btnState, int x, int y)
 {
-
+    if (btnState) {
+        Game::GetInstance()->GetScene()->MoveObject(Vector2(x, y));
+    }
 }
 
 void Application::OnKeyDown(WPARAM wParam)
