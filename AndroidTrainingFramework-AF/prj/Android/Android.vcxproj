@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{56B1FDCE-40BA-49DD-BFA6-8AF80B3A06DB}</ProjectGuid>
+    <RootNamespace>Android</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>make.bat debug</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>clean.bat debug</NMakeCleanCommandLine>
+    <NMakeOutput>
+    </NMakeOutput>
+    <NMakePreprocessorDefinitions>_DEBUG;OS_ANDROID;ANDROID;_ANDROID;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\externals\AndroidFramework\native\ABundle.cpp" />
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\AssetReader\AssetReader.cpp" />
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\DataSharing\DataSharing.cpp" />
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\Keyboard\virtual_keyboard.cpp" />
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\Orientation\native_sensors.cpp" />
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\package_utils.cpp" />
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\_internal\internal.cpp" />
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\_internal\jni_bridge.cpp" />
+    <ClCompile Include="..\..\src\platform\android\matrix.cpp" />
+    <ClCompile Include="..\..\src\platform\android\render\videoDriver.cpp" />
+    <ClCompile Include="..\..\src\platform\android\shaderManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\ABundle.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\acp_utils.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\AssetReader\AssetReader.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\DataSharing\DataSharing.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\GameFunctionsToImplement.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\helpers.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\Keyboard\virtual_keyboard.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\Orientation\native_sensors.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\package_utils.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\ScopeGetEnv.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\ScopeMutex.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\ScopeStringChars.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\_internal\internal.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\_internal\jni_bridge.h" />
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\_internal\logger.h" />
+    <ClInclude Include="..\..\src\platform\android\gles2\GLES2\gl2.h" />
+    <ClInclude Include="..\..\src\platform\android\gles2\GLES2\gl2ext.h" />
+    <ClInclude Include="..\..\src\platform\android\gles2\GLES2\gl2platform.h" />
+    <ClInclude Include="..\..\src\platform\android\matrix.h" />
+    <ClInclude Include="..\..\src\platform\android\openGLESv2.h" />
+    <ClInclude Include="..\..\src\platform\android\render\videoDriver.h" />
+    <ClInclude Include="..\..\src\platform\android\shaderManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

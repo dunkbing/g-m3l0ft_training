@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AdServer">
+      <UniqueIdentifier>{41702A53-2D3D-855E-5656-73064282BAEC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BokuForBilling">
+      <UniqueIdentifier>{7EFDBACD-6ACB-AED3-535F-1FFA3FCC8A38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils">
+      <UniqueIdentifier>{B0FCF97D-1C67-AEF4-65A5-5F9AD14E8C49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils\Ads">
+      <UniqueIdentifier>{57BC23AF-C37C-9FE5-8CB7-E862F836E4C1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils\AssetReader">
+      <UniqueIdentifier>{92BE0636-FE2A-C230-C71E-5A8E334AE498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils\Controller">
+      <UniqueIdentifier>{43BA01EC-2F49-8BB5-D867-9FB0C4D59B5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils\DataSharing">
+      <UniqueIdentifier>{4577A487-B1E3-5F82-7AD7-F7DFE60282EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils\InGameBrowser">
+      <UniqueIdentifier>{94D08C58-0008-D5EF-0912-391375C8FBE8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils\InGamePromotion">
+      <UniqueIdentifier>{779D3DF6-E35F-7180-2C10-000D98114A5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils\Keyboard">
+      <UniqueIdentifier>{3077818E-1C5B-42E4-85BB-3C3771BE2C66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils\Orientation">
+      <UniqueIdentifier>{8BC56571-F731-216C-C025-B9C92C5143D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils\PushNotification">
+      <UniqueIdentifier>{867CB606-728C-62D7-DB45-C7F5C7745170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils\_internal">
+      <UniqueIdentifier>{3B100104-A771-DE11-30DF-24C49C3F15D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils\_internal\libzip">
+      <UniqueIdentifier>{344ADD0E-205A-89DF-8913-EEFD75427878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtils\_internal\zoro_strings">
+      <UniqueIdentifier>{5DE009C9-4931-F50A-7295-E3CC5E458874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InAppBilling">
+      <UniqueIdentifier>{BE631CCB-AAC6-AB6F-534C-E4253F8E77F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KDDIGifting">
+      <UniqueIdentifier>{49D700B6-B58C-79AB-3E81-7382AA3570AF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SplashScreen">
+      <UniqueIdentifier>{9096CC97-7CF9-5B3C-257F-94F211C127BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{75b15a08-41f3-4cb7-bd40-45a9f8a34ede}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\native\ABundle.h" />
+    <ClInclude Include="..\..\native\ADebug.h" />
+    <ClInclude Include="..\..\native\BokuForBilling\BokuConst.h">
+      <Filter>BokuForBilling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\Ads\AdManager.h">
+      <Filter>GameUtils\Ads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\AssetReader\AssetReader.h">
+      <Filter>GameUtils\AssetReader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\Controller\native_hid_controllers.h">
+      <Filter>GameUtils\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\DataSharing\DataSharing.h">
+      <Filter>GameUtils\DataSharing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\GameFunctionsToImplement.h">
+      <Filter>GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\InGameBrowser\InGameBrowser.h">
+      <Filter>GameUtils\InGameBrowser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\InGamePromotion\InGamePromotion.h">
+      <Filter>GameUtils\InGamePromotion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\Keyboard\virtual_keyboard.h">
+      <Filter>GameUtils\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\Orientation\native_sensors.h">
+      <Filter>GameUtils\Orientation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\PushNotification\jni_bridge_pn.h">
+      <Filter>GameUtils\PushNotification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\PushNotification\simplified_pn.h">
+      <Filter>GameUtils\PushNotification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\ScopeGetEnv.h">
+      <Filter>GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\ScopeMutex.h">
+      <Filter>GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\ScopeStringChars.h">
+      <Filter>GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\_internal\internal.h">
+      <Filter>GameUtils\_internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\_internal\jni_bridge.h">
+      <Filter>GameUtils\_internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\_internal\libzip\config.h">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\_internal\libzip\zip.h">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\_internal\libzip\zipint.h">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\_internal\logger.h">
+      <Filter>GameUtils\_internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\_internal\zoro_strings\ZOROstrings_cpp.h">
+      <Filter>GameUtils\_internal\zoro_strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\_internal\zoro_strings\ZOROstrings_java.h">
+      <Filter>GameUtils\_internal\zoro_strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\helpers.h">
+      <Filter>GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\package_utils.h">
+      <Filter>GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\GameUtils\zoro.h">
+      <Filter>GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\InAppBilling\IABilling.h">
+      <Filter>InAppBilling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\InAppBilling\IABstrings_cpp.h">
+      <Filter>InAppBilling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\InAppBilling\IABstrings_java.h">
+      <Filter>InAppBilling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\InAppBilling\InAppBilling.h">
+      <Filter>InAppBilling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\InAppBilling\InAppBillingConst.h">
+      <Filter>InAppBilling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\InAppBilling\iab_strings_encoded.h">
+      <Filter>InAppBilling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\KDDIGifting\KDDIGifting.h">
+      <Filter>KDDIGifting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\KDDIGifting\kddi_gifting.h">
+      <Filter>KDDIGifting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\native\acp_utils.h" />
+    <ClInclude Include="..\..\native\acp_version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\native\ABundle.cpp" />
+    <ClCompile Include="..\..\native\AdServer\jni_AdServer.cpp">
+      <Filter>AdServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\Ads\AdManager.cpp">
+      <Filter>GameUtils\Ads</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\AssetReader\AssetReader.cpp">
+      <Filter>GameUtils\AssetReader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\Controller\native_hid_controllers.cpp">
+      <Filter>GameUtils\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\DataSharing\DataSharing.cpp">
+      <Filter>GameUtils\DataSharing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\InGameBrowser\InGameBrowser.cpp">
+      <Filter>GameUtils\InGameBrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\InGamePromotion\InGamePromotion.cpp">
+      <Filter>GameUtils\InGamePromotion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\Keyboard\virtual_keyboard.cpp">
+      <Filter>GameUtils\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\Orientation\native_sensors.cpp">
+      <Filter>GameUtils\Orientation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\PushNotification\jni_bridge_pn.cpp">
+      <Filter>GameUtils\PushNotification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\PushNotification\simplified_pn.cpp">
+      <Filter>GameUtils\PushNotification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\internal.cpp">
+      <Filter>GameUtils\_internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\jni_bridge.cpp">
+      <Filter>GameUtils\_internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\mkstemp.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_add.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_add_dir.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_close.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_delete.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_dirent.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_entry_free.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_entry_new.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_err_str.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_error.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_error_clear.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_error_get.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_error_get_sys_type.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_error_strerror.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_error_to_str.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_fclose.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_file_error_clear.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_file_error_get.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_file_get_offset.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_file_strerror.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_filerange_crc.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_fopen.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_fopen_index.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_fread.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_free.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_get_archive_comment.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_get_archive_flag.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_get_file_comment.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_get_name.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_get_num_files.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_memdup.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_name_locate.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_new.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_open.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_rename.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_replace.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_set_archive_comment.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_set_archive_flag.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_set_file_comment.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_set_name.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_source_buffer.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_source_file.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_source_filep.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_source_free.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_source_function.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_source_zip.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_stat.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_stat_index.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_stat_init.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_strerror.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_unchange.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_unchange_all.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_unchange_archive.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\_internal\libzip\zip_unchange_data.c">
+      <Filter>GameUtils\_internal\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\GameUtils\package_utils.cpp">
+      <Filter>GameUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\InAppBilling\IABGMP.cpp">
+      <Filter>InAppBilling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\InAppBilling\InAppBilling.cpp">
+      <Filter>InAppBilling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\KDDIGifting\KDDIGifting.cpp">
+      <Filter>KDDIGifting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\SplashScreen\jni_SplashScreen.cpp">
+      <Filter>SplashScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\native\Platform\GeoLocator.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

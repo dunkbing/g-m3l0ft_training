@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AndroidFramework">
+      <UniqueIdentifier>{d1512022-51d2-4990-a52c-4b42234f4d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AndroidFramework\native">
+      <UniqueIdentifier>{39795050-789a-4943-bcdb-dd16eee8de4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AndroidFramework\native\GameUtils">
+      <UniqueIdentifier>{461c8654-ac71-461a-8232-15dc962ebbda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AndroidFramework\native\GameUtils\_internal">
+      <UniqueIdentifier>{ddf4e707-2032-4d31-b185-d6731b5ad13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AndroidFramework\native\GameUtils\AssetReader">
+      <UniqueIdentifier>{919d140c-4776-4b02-99ef-4000125df532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AndroidFramework\native\GameUtils\DataSharing">
+      <UniqueIdentifier>{a26e6989-8ed4-4f96-8d24-43e87e0efd06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AndroidFramework\native\GameUtils\Keyboard">
+      <UniqueIdentifier>{223a99da-a8f7-4816-833c-25490c7a089b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AndroidFramework\native\GameUtils\Orientation">
+      <UniqueIdentifier>{e7d5983d-0c92-446b-a30a-7fd79081e915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AndroidFramework\native\GameUtils\PushNotification">
+      <UniqueIdentifier>{76be2214-f041-4644-90b9-b0ac6da90f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\gles2">
+      <UniqueIdentifier>{668d370a-23e4-4e54-b465-062e3f5e01f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src\gles2\GLES2">
+      <UniqueIdentifier>{70e387f5-530b-4e14-9373-ac0c4b9452d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render">
+      <UniqueIdentifier>{3031be14-120d-4e42-8f97-ff1a372e6e63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\package_utils.cpp">
+      <Filter>AndroidFramework\native\GameUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\_internal\internal.cpp">
+      <Filter>AndroidFramework\native\GameUtils\_internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\_internal\jni_bridge.cpp">
+      <Filter>AndroidFramework\native\GameUtils\_internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\AssetReader\AssetReader.cpp">
+      <Filter>AndroidFramework\native\GameUtils\AssetReader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\DataSharing\DataSharing.cpp">
+      <Filter>AndroidFramework\native\GameUtils\DataSharing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\Keyboard\virtual_keyboard.cpp">
+      <Filter>AndroidFramework\native\GameUtils\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\externals\AndroidFramework\native\GameUtils\Orientation\native_sensors.cpp">
+      <Filter>AndroidFramework\native\GameUtils\Orientation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\externals\AndroidFramework\native\ABundle.cpp">
+      <Filter>AndroidFramework\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\android\render\videoDriver.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\android\matrix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\android\shaderManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\acp_utils.h">
+      <Filter>AndroidFramework\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\GameFunctionsToImplement.h">
+      <Filter>AndroidFramework\native\GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\helpers.h">
+      <Filter>AndroidFramework\native\GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\package_utils.h">
+      <Filter>AndroidFramework\native\GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\ScopeGetEnv.h">
+      <Filter>AndroidFramework\native\GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\ScopeMutex.h">
+      <Filter>AndroidFramework\native\GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\ScopeStringChars.h">
+      <Filter>AndroidFramework\native\GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\_internal\internal.h">
+      <Filter>AndroidFramework\native\GameUtils\_internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\_internal\jni_bridge.h">
+      <Filter>AndroidFramework\native\GameUtils\_internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\_internal\logger.h">
+      <Filter>AndroidFramework\native\GameUtils\_internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\AssetReader\AssetReader.h">
+      <Filter>AndroidFramework\native\GameUtils\AssetReader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\DataSharing\DataSharing.h">
+      <Filter>AndroidFramework\native\GameUtils\DataSharing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\Keyboard\virtual_keyboard.h">
+      <Filter>AndroidFramework\native\GameUtils\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\GameUtils\Orientation\native_sensors.h">
+      <Filter>AndroidFramework\native\GameUtils\Orientation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\AndroidFramework\native\ABundle.h">
+      <Filter>AndroidFramework\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\platform\android\render\videoDriver.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\platform\android\shaderManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\platform\android\matrix.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\platform\android\openGLESv2.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\platform\android\gles2\GLES2\gl2.h">
+      <Filter>src\gles2\GLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\platform\android\gles2\GLES2\gl2ext.h">
+      <Filter>src\gles2\GLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\platform\android\gles2\GLES2\gl2platform.h">
+      <Filter>src\gles2\GLES2</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

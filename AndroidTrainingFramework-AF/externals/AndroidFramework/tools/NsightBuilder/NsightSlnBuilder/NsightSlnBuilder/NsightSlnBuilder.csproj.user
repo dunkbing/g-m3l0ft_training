@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <StartArguments>F:\__Projects\AE_05\trunk\AndroidCorePackage\tools\NsightBuilder\NsightSolution    F:\__Projects\AE_05\trunk\prj\Android\GameSpecific      F:\__Projects\AE_05\trunk\prj\Android\GameSpecific\sln2gcc.xml</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <StartArguments>F:\__Projects\AE_05\trunk\AndroidCorePackage\tools\NsightBuilder\NsightSolution    F:\__Projects\AE_05\trunk\prj\Android\GameSpecific      F:\__Projects\AE_05\trunk\prj\Android\GameSpecific\sln2gcc.xml</StartArguments>
+  </PropertyGroup>
+</Project>

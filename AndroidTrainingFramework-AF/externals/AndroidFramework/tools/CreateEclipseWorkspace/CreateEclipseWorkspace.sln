@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateEclipseWorkspace", "CreateEclipseWorkspace\CreateEclipseWorkspace.csproj", "{A098C132-B64F-416B-9E08-52F2096B2C6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A098C132-B64F-416B-9E08-52F2096B2C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A098C132-B64F-416B-9E08-52F2096B2C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A098C132-B64F-416B-9E08-52F2096B2C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A098C132-B64F-416B-9E08-52F2096B2C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
