@@ -1,0 +1,52 @@
+* SVN:
+- Commits that modify files should be commented with the purpose of your changes.
+	E.g. Modify Rand() function (instead of "Modify Utils.cpp")
+1. 5. There are 2 common ways: create directly on server (through repo-browser) and commit through working copy
+2. 5. You did not explain why. The reason is because of .svn folder
+3. 5. You should state the correct reason of conflicts. Update/merge not always lead to conflicts. They only lead to conflicts when 2 or more people editting the same places
+4. 9. OK. To be more precise, file conflicts occur when 2 or more people modify the same lines in a file
+5. 5. You should answer with more details on how to resolve conflicts. After editting conflicts you have to choose Mark as resolve. And there are options for resolving conflicts: Resolve using theirs/mine
+6. 8. There are some more reasons that lead to Update failed: connection problems, authentication problems or working copy is corrupted
+7. 10. OK
+8. 10. OK
+9. 10. OK
+10. 8. Quite OK, but to be more precise we create patches for projects that we don't have permissions to commit (usually external)
+==================================================
+* Debug with VS:
+1. No answer
+2. OK
+3. You should show what SAFE_DEL is
+4.
+- Request 1: 1st method is correct
+- Request 2: It should be (m_aVertices+9, 6)
+- Request 3-5: OK
+==================================================
+* Tictactoe:
+- SVN:
+	+ Don't commit 2 tasks at once
+	+ You should place TicTactoe task in a separate folder
+- Committed project cannot be compiled
+- Hard code in project property:
+	D:\Code\binh.buidang\Cpp_Practice\Lib\include;
+=> Should be: $(ProjectDir)\include
+- You should include redundant code. E.g. Utils::Rng()
+=> Other projects should use their own code
+- Coding conventions: OK
+- CheckWin: OK. It's better if you return the player who wins, not just true/false
+- Validation: You should ask player to enter their move and validate. Currently, you ask player to enter a number between 11 and 33, then you check if it's in the board or not
+=> You have to separate into 2 steps to reuse your Utils function (which is quite not necessary). Just keep it simple
+==================================================
+* Practice questions:
+1. 10. OK but the explanation for &a+1 should be clearer
+2. 10 OK
+3. 10. OK
+4. 5. You should show the solutions. Also ,thereis problem in the macro MAX
+==================================================
+* OOP:
+- SVN:
+	+ Don't commit 2 tasks at once
+- Using enums: OK
+- DoClne() should clone fom current virus, not just generating totally new ones
+- Patient::TakeMedicine(): Every time taking medicine, you delete virus list then add the cloned ones => the old viruses are removed even if they are not dead
+- TotalVirusesResist() is not good. You make use of std::accumulate but it's slower than a simple loop. And you can also make use of your 1st loop to avoid using many loops
+==================================================
