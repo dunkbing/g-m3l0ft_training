@@ -20,7 +20,8 @@ void Entity::Rectangle::Update(float frameTime) {
         m_velocityY = 0;
     }
     const int y = m_velocityY < 100 ? (m_velocityY += m_mass) * frameTime : m_velocityY * frameTime;
-    SetPosition(m_position + Vector2(0, y));
+    Vector2 newPos(0, y);
+    SetPosition(m_position + newPos);
 }
 
 bool Entity::Rectangle::Contains(const Vector2& p_coord) {

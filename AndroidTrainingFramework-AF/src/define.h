@@ -20,7 +20,6 @@
 #include <sstream>
 #include <vector>
 
-
 /**
  * \brief extract integers from a string
  * \param str 

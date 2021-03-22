@@ -21,7 +21,6 @@ struct Vector2
     Vector2& operator = (const Vector2 & vector);
     Vector2 Modulate(Vector2 & vector) const;
     float Dot(Vector2 & vector) const;
-    static Vector2& Lerp(const Vector2& v1, const Vector2& v2, float t);
 
     // access to elements
     float operator[] (unsigned int idx) const;

@@ -23,6 +23,6 @@ public:
     void UnSelect();
 private:
     std::vector<Entity::Object*> m_objects;
-    Entity::Object* selectedObject = nullptr;
+    Entity::Object* selectedObject = NULL;
     Vector2 offset;
 };

@@ -72,7 +72,7 @@ bool Application::Init(HINSTANCE hInstance)
 
 void Application::Update(float dt)
 {
-    Game::GetInstance()->GetScene()->Update(dt/100);
+    Game::GetInstance()->Update(dt/100);
 }
 
 void Application::Render()

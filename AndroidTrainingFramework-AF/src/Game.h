@@ -1,6 +1,8 @@
+#pragma once
 #include "define.h"
 #include "SceneManager.h"
 #include "SingleTon.h"
+#include "TouchData.h"
 
 class Game : public SingleTon<Game>
 {
@@ -10,11 +12,12 @@ public:
 	}
     ~Game() {
         delete m_scene;
-        m_scene = nullptr;
+        m_scene = NULL;
 	}
 	void Draw();
+    void Update(float dt) const;
 	void Exit();
-    void MoveObject(int x, int y);
+    void MoveObject(int x, int y) const;
     SceneManager* GetScene();
 private:
     SceneManager* m_scene;

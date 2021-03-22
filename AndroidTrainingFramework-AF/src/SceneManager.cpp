@@ -9,26 +9,27 @@
 
 SceneManager::SceneManager() {
     Init("SceneManager.txt");
+    m_objects.push_back(new Entity::Rectangle(Vector2(100, 100), 100, 100));
 }
 
 SceneManager::~SceneManager() {
-    for (auto* object : m_objects) {
-        if (object) {
-            delete object;
-            object = nullptr;
+    for (int i = 0; i < m_objects.size(); i++) {
+        if (m_objects[i]) {
+            delete m_objects[i];
+            m_objects[i] = NULL;
         }
     }
 }
 
 // update objects' information between each frame
 void SceneManager::Update(float deltaTime) {
-    for (auto* object : m_objects) {
-        if (object != selectedObject) {
-            object->Update(deltaTime);
+    for (int i = 0; i < m_objects.size(); i++) {
+        if (m_objects[i] != selectedObject) {
+            m_objects[i]->Update(deltaTime);
         }
-        for (auto* obj : m_objects) {
-            if (obj != object) {
-                CollisionManager::Intersect(obj, object);
+        for (int j = 0; j < m_objects.size(); j++) {
+            if (m_objects[j] != m_objects[i]) {
+                CollisionManager::Intersect(m_objects[j], m_objects[i]);
             }
         }
     }
@@ -36,8 +37,8 @@ void SceneManager::Update(float deltaTime) {
 
 // render all object to screen
 void SceneManager::Render() {
-    for (auto* object : m_objects) {
-        object->Render();
+    for (int i = 0; i < m_objects.size(); i++) {
+        m_objects[i]->Render();
     }
 }
 
@@ -45,7 +46,6 @@ void SceneManager::Render() {
 void SceneManager::AddObject(Entity::Object* object) {
     m_objects.push_back(object);
 }
-
 
 // load object's info from file
 void SceneManager::Init(const std::string& filePath) {
@@ -55,7 +55,11 @@ void SceneManager::Init(const std::string& filePath) {
     const std::string TYPE = "TYPE";
     const std::string RECT = "RECT";
     const std::string CIRCLE = "CIRCLE";
-    std::ifstream ifs(filePath);
+    std::ofstream ofs("filePath.txt");
+    ofs << "test";
+    ofs.close();
+
+    std::ifstream ifs(filePath.c_str());
 
     std::string line;
     while(std::getline(ifs, line)) {
@@ -77,11 +81,11 @@ void SceneManager::Init(const std::string& filePath) {
                 }
             }
             if (type.find(RECT) != std::string::npos) {
-                auto* rectangle = new Entity::Rectangle(Vector2(position[0], position[1]), position[2], position[3]);
+                Entity::Rectangle* rectangle = new Entity::Rectangle(Vector2(position[0], position[1]), position[2], position[3]);
                 rectangle->SetVelocityY(velocity);
                 m_objects.push_back(rectangle);
             } else if (type.find(CIRCLE) != std::string::npos) {
-                auto* circle = new Entity::Circle(Vector2(position[0], position[1]), position[2]);
+                Entity::Circle* circle = new Entity::Circle(Vector2(position[0], position[1]), position[2]);
                 circle->SetVelocityY(velocity);
                 m_objects.push_back(circle);
             }
@@ -91,13 +95,13 @@ void SceneManager::Init(const std::string& filePath) {
 
 // move object to a new position
 void SceneManager::MoveObject(Vector2& p_coord) {
-    if (selectedObject != nullptr) {
+    if (selectedObject != NULL) {
         selectedObject->SetPosition(p_coord+offset);
         if (CollisionManager::CollideWithEdge(selectedObject)) {
             printf("edge collision detected\n");
         }
-        for (auto* object : m_objects) {
-            if (object != selectedObject && CollisionManager::Intersect(selectedObject, object)) {
+        for (int i = 0; i < m_objects.size(); i++) {
+            if (m_objects[i] != selectedObject && CollisionManager::Intersect(selectedObject, m_objects[i])) {
                 printf("object collision detected\n");
             }
         }
@@ -106,11 +110,11 @@ void SceneManager::MoveObject(Vector2& p_coord) {
 
 // select an object to move around
 void SceneManager::Select(Vector2& p_coord) {
-    for (auto* object : m_objects) {
-        if (object->Contains(p_coord)) {
-            selectedObject = object;
+    for (int i = 0; i < m_objects.size(); i++) {
+        if (m_objects[i]->Contains(p_coord)) {
+            selectedObject = m_objects[i];
             selectedObject->SetVelocityX(0);
-            const auto objPos = selectedObject->GetPosition();
+            const Vector2 objPos = selectedObject->GetPosition();
             offset = objPos - p_coord;
             break;
         }
@@ -119,7 +123,7 @@ void SceneManager::Select(Vector2& p_coord) {
 
 // unselect the object
 void SceneManager::UnSelect() {
-    if (selectedObject != nullptr) {
-        selectedObject = nullptr;
+    if (selectedObject != NULL) {
+        selectedObject = NULL;
     }
 }

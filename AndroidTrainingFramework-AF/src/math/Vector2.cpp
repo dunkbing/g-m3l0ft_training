@@ -68,10 +68,6 @@ float Vector2::Dot(Vector2& vector) const {
     return x * vector.x + y * vector.y;
 }
 
-Vector2& Vector2::Lerp(const Vector2& v1, const Vector2& v2, float t) {
-    return v1 * (1 - t) + v2 * t ;
-}
-
 float Vector2::operator[](unsigned int idx) const {
     return (&x)[idx];
 }

@@ -14,13 +14,18 @@ void Game::Draw()
     m_scene->Render();
 }
 
+void Game::Update(float dt) const {
+    m_scene->Update(dt);
+}
+
 void Game::Exit()
 {
 
 }
 
-void Game::MoveObject(int x, int y) {
-    m_scene->MoveObject(Vector2(x, y));
+void Game::MoveObject(int x, int y) const {
+    Vector2 position(x, y);
+    m_scene->MoveObject(position);
 }
 
 SceneManager* Game::GetScene() {
