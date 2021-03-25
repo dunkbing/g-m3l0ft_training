@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="res">
+      <UniqueIdentifier>a14f88dc-2265-462d-b32d-242dc223247d</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\values">
+      <UniqueIdentifier>d182ed55-cf5a-4a1c-ad1a-314f59fc78be</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{6d64cdc3-e3da-42fd-8cf4-d46bc8cfbd2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\com">
+      <UniqueIdentifier>{f7b7f03a-0b69-4861-b75b-66c3528f1a1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\com\gameloft">
+      <UniqueIdentifier>{930908d9-25b5-41e4-aec0-e89c79544d3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jni">
+      <UniqueIdentifier>{51f1742d-37f1-4f62-b348-1aba4299abad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AndroidManifest.xml" />
+    <None Include="build.xml" />
+    <None Include="project.properties" />
+    <None Include="proguard.cfg" />
+    <None Include="res\values\strings.xml">
+      <Filter>res\values</Filter>
+    </None>
+    <None Include="src\com\gameloft\NSightDebug.java">
+      <Filter>src\com\gameloft</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="jni\NSightDebug.c">
+      <Filter>jni</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

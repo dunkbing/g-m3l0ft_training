@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E12A7625-6EDF-774B-8758-2EB0EA8384F2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AndroidCorePackage</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\lib\android_s2g\</OutDir>
+    <IntDir>obj\Debug\</IntDir>
+    <TargetName>AndroidCorePackage_d</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\lib\android_s2g\</OutDir>
+    <IntDir>obj\Release\</IntDir>
+    <TargetName>AndroidCorePackage</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;PLATFORM_ANDROID;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\java;..\..\native;..\..\native\GameUtils;$(EXTERNALS_FOLDER)\acp_config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)AndroidCorePackage_d.pdb</ProgramDataBaseFileName>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;PLATFORM_ANDROID;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\java;..\..\native;..\..\native\GameUtils;$(EXTERNALS_FOLDER)\acp_config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;_SECURE_SCL=0;_SECURE_SCL_THROWS=0;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;PLATFORM_ANDROID;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\java;..\..\native;..\..\native\GameUtils;$(EXTERNALS_FOLDER)\acp_config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)AndroidCorePackage.pdb</ProgramDataBaseFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_SECURE_SCL=0;_SECURE_SCL_THROWS=0;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;PLATFORM_ANDROID;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\java;..\..\native;..\..\native\GameUtils;$(EXTERNALS_FOLDER)\acp_config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\native\ABundle.h" />
+    <ClInclude Include="..\..\native\ADebug.h" />
+    <ClInclude Include="..\..\native\BokuForBilling\BokuConst.h" />
+    <ClInclude Include="..\..\native\GameUtils\Ads\AdManager.h" />
+    <ClInclude Include="..\..\native\GameUtils\AssetReader\AssetReader.h" />
+    <ClInclude Include="..\..\native\GameUtils\Controller\native_hid_controllers.h" />
+    <ClInclude Include="..\..\native\GameUtils\DataSharing\DataSharing.h" />
+    <ClInclude Include="..\..\native\GameUtils\GameFunctionsToImplement.h" />
+    <ClInclude Include="..\..\native\GameUtils\InGameBrowser\InGameBrowser.h" />
+    <ClInclude Include="..\..\native\GameUtils\InGamePromotion\InGamePromotion.h" />
+    <ClInclude Include="..\..\native\GameUtils\Keyboard\virtual_keyboard.h" />
+    <ClInclude Include="..\..\native\GameUtils\Orientation\native_sensors.h" />
+    <ClInclude Include="..\..\native\GameUtils\PushNotification\jni_bridge_pn.h" />
+    <ClInclude Include="..\..\native\GameUtils\PushNotification\simplified_pn.h" />
+    <ClInclude Include="..\..\native\GameUtils\ScopeGetEnv.h" />
+    <ClInclude Include="..\..\native\GameUtils\ScopeMutex.h" />
+    <ClInclude Include="..\..\native\GameUtils\ScopeStringChars.h" />
+    <ClInclude Include="..\..\native\GameUtils\_internal\internal.h" />
+    <ClInclude Include="..\..\native\GameUtils\_internal\jni_bridge.h" />
+    <ClInclude Include="..\..\native\GameUtils\_internal\logger.h" />
+    <ClInclude Include="..\..\native\GameUtils\_internal\zoro_strings\ZOROstrings_cpp.h" />
+    <ClInclude Include="..\..\native\GameUtils\_internal\zoro_strings\ZOROstrings_java.h" />
+    <ClInclude Include="..\..\native\GameUtils\helpers.h" />
+    <ClInclude Include="..\..\native\GameUtils\package_utils.h" />
+    <ClInclude Include="..\..\native\GameUtils\zoro.h" />
+    <ClInclude Include="..\..\native\InAppBilling\IABilling.h" />
+    <ClInclude Include="..\..\native\InAppBilling\IABstrings_cpp.h" />
+    <ClInclude Include="..\..\native\InAppBilling\IABstrings_java.h" />
+    <ClInclude Include="..\..\native\InAppBilling\InAppBilling.h" />
+    <ClInclude Include="..\..\native\InAppBilling\InAppBillingConst.h" />
+    <ClInclude Include="..\..\native\InAppBilling\iab_strings_encoded.h" />
+    <ClInclude Include="..\..\native\KDDIGifting\KDDIGifting.h" />
+    <ClInclude Include="..\..\native\KDDIGifting\kddi_gifting.h" />
+    <ClInclude Include="..\..\native\acp_utils.h" />
+    <ClInclude Include="..\..\native\acp_version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\native\ABundle.cpp" />
+    <ClCompile Include="..\..\native\AdServer\jni_AdServer.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\Ads\AdManager.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\AssetReader\AssetReader.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\Controller\native_hid_controllers.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\DataSharing\DataSharing.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\InGameBrowser\InGameBrowser.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\InGamePromotion\InGamePromotion.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\Keyboard\virtual_keyboard.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\Orientation\native_sensors.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\PushNotification\jni_bridge_pn.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\PushNotification\simplified_pn.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\_internal\internal.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\_internal\jni_bridge.cpp" />
+    <ClCompile Include="..\..\native\GameUtils\package_utils.cpp" />
+    <ClCompile Include="..\..\native\InAppBilling\IABGMP.cpp" />
+    <ClCompile Include="..\..\native\InAppBilling\InAppBilling.cpp" />
+    <ClCompile Include="..\..\native\KDDIGifting\KDDIGifting.cpp" />
+    <ClCompile Include="..\..\native\Platform\GeoLocator.cpp" />
+    <ClCompile Include="..\..\native\SplashScreen\jni_SplashScreen.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

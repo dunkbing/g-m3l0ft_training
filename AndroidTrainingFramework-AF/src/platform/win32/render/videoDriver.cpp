@@ -1,7 +1,5 @@
 #include "videoDriver.h"
 
-#include "../../../define.h"
-
 VideoDriver* VideoDriver::s_Instance = NULL;
 
 static Gdiplus::Bitmap*				g_MemoryDevice;

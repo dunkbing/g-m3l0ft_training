@@ -1,11 +1,5 @@
-/.svn
-/*/Debug
-/Debug
-*.bin
-*.vcxproj
-*.filters
-*.user
-*.sln
-/.vs
-/build
-/.vscode
+.svn/
+NotePad/bin/
+BMI_Demo_Android/.idea/
+Cpp_Practice/build/
+build/

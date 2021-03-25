@@ -2,6 +2,7 @@
 //
 
 #include "stdafx.h"
+#include "define.h"
 #include "main.h"
 #include "Application.h"
 
@@ -10,9 +11,6 @@
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
 #include <crtdbg.h>
-
-#include "define.h"
-
 
 #ifdef _DEBUG
 #ifndef DBG_NEW
@@ -23,6 +21,11 @@
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
+    AllocConsole();
+    freopen("conin$", "r", stdin);
+    freopen("conout$", "w", stdout);
+    freopen("conout$", "w", stderr);
+    printf("Debugging Window:\n");
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 	Application *win = new Application(SCREEN_W, SCREEN_H);
 	win->Init(hInstance);
