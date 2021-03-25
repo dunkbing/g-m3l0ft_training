@@ -3,5 +3,6 @@ project(G@m3l0ft VERSION 1.0.0)
 
 add_subdirectory(Lib)
 add_subdirectory(OOP_Practice)
+add_subdirectory(RestApi)
 add_subdirectory(AndroidTrainingFramework-AF)
 add_subdirectory(Tictactoe)
