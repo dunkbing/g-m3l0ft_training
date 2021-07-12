@@ -2,9 +2,6 @@
 #define SOUND_H_
 
 #include "Setting.h"
-#include <iostream>
-#include <iomanip>
-#include <string>
 using namespace std;
 
 class Sound : public Setting {

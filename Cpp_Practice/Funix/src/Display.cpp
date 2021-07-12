@@ -10,7 +10,7 @@ Display::Display() {
 	_taploLightLevel = 0;
 }
 
-Display::~Display(){}
+Display::~Display() = default;
 
 int Display::getLightLevel() const
 {

@@ -1,8 +1,10 @@
+#define _CRTDBG_MAP_ALLOC
 #include <iostream>
 #include <fstream>
 
-#include "List.h"
+#include "General.h"
 #include "Utils.h"
+#include "List.h"
 
 using namespace Utils;
 
@@ -12,6 +14,7 @@ int menu();
 int main() {
     // detect memory leak
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+    _CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_DEBUG);
     try
     {
         SettingList list;
@@ -19,8 +22,8 @@ int main() {
         General::loadLanguages();
         General::loadTimeZones();
         list.loadSettings();
-
-        while (true) {
+        bool exit = false;
+        while (!exit) {
             const int selection = menu();
             switch (selection) {
             case 1:
@@ -30,16 +33,20 @@ int main() {
                 list.outputSettings();
                 break;
             case 3:
-                exit(0);
+                list.release();
+                exit = true;
+                break;
             default:
                 break;
             }
         }
+        list.release();
     }
     catch (exception& e)
     {
         cout << e.what() << endl;
     }
+    _CrtDumpMemoryLeaks();
 }
 
 // Print out menu for selection

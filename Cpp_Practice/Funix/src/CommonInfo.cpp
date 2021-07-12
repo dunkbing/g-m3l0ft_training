@@ -2,22 +2,22 @@
 
 #include "Utils.h"
 
-string CommonInfo::getNumber() const
+std::string CommonInfo::getNumber() const
 {
     return _number;
 }
 
-string CommonInfo::getName() const
+std::string CommonInfo::getName() const
 {
     return _name;
 }
 
-void CommonInfo::setNumber(string& number)
+void CommonInfo::setNumber(std::string& number)
 {
     _number = number;
 }
 
-void CommonInfo::setName(string& name)
+void CommonInfo::setName(std::string& name)
 {
     _name = name;
 }

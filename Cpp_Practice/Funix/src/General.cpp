@@ -3,8 +3,10 @@
 #include "General.h"
 #include "Utils.h"
 
-std::vector<CommonInfo> General::_timeZones;
-std::vector<CommonInfo> General::_languages;
+using namespace std;
+
+std::vector<CommonInfo> General::_timeZones;  // NOLINT(clang-diagnostic-exit-time-destructors)
+std::vector<CommonInfo> General::_languages;  // NOLINT(clang-diagnostic-exit-time-destructors)
 
 General::General() {
     _language = "N/A";
@@ -60,9 +62,9 @@ void General::loadTimeZones() {
                 _timeZones.push_back(common);
             }
             f.close();
-            std::sort(_timeZones.begin(), _timeZones.end(), [](const CommonInfo c1, const CommonInfo c2) {
+            std::sort(_timeZones.begin(), _timeZones.end(), [](const CommonInfo& c1, const CommonInfo& c2) {
                 return c1.getName() < c2.getName();
-                });
+            });
         }
     }
     catch (exception& e)
@@ -88,7 +90,7 @@ void General::loadLanguages() {
             f.close();
             std::sort(_languages.begin(), _languages.end(), [](const CommonInfo& c1, const CommonInfo& c2) {
                 return c1.getName() < c2.getName();
-                });
+            });
             for (size_t i = 0; i < _languages.size(); i++) {
                 auto number = to_string(i + 1);
                 _languages[i].setNumber(number);
@@ -105,7 +107,8 @@ int General::selectTimeZone() {
     for (unsigned int i = 0; i < _timeZones.size(); i++) {
         cout << i + 1 << ": " << _timeZones[i].getNumber() << " " << _timeZones[i].getName() << endl;
     }
-    return Utils::getInt(1, _timeZones.size()) - 1;  // NOLINT(clang-diagnostic-shorten-64-to-32)
+    const int size = static_cast<int>(_timeZones.size());
+    return Utils::getInt(1, size) - 1;
 }
 
 int General::selectLanguage() {
@@ -113,5 +116,6 @@ int General::selectLanguage() {
     for (auto& language : _languages) {
         cout << language.getNumber() << ": " << language.getName() << endl;
     }
-    return Utils::getInt(1, _languages.size()) - 1;  // NOLINT(clang-diagnostic-shorten-64-to-32)
+    const int size = static_cast<int>(_languages.size());
+    return Utils::getInt(1, size) - 1;
 }

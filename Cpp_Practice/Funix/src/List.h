@@ -1,13 +1,8 @@
 #ifndef CAR_H
 #define CAR_H
 #include <vector>
-#include "General.h"
-#include "CommonInfo.h"
-#include "Utils.h"
 
-using namespace std;
-
-class SettingList {
+class SettingList final {
 public:
     // Default constructor and destructor
     SettingList();
@@ -15,7 +10,7 @@ public:
 
     void inputSettings();
     template<class T = Setting>
-    void inputSettings(vector<Setting*>& settings);
+    static void inputSettings(std::vector<Setting*>& settings);
     void outputSettings();
 
     void outputSoundSettings();
@@ -23,23 +18,20 @@ public:
     void outputDisplaySettings();
     void outputAllSettings();
 
-    void inputSoundSettings();
-    void inputGeneralSettings();
-    void inputDisplaySettings();
-
     // load infos
     void loadSettings();
-    
 
-    static void sort(vector<Setting*> settings);
+    void release();
+
+    static void sort(std::vector<Setting*> settings);
 private:
-    vector<Setting*> _displays;
-    vector<Setting*> _sounds;
-    vector<Setting*> _generals;
+    std::vector<Setting*> _displays;
+    std::vector<Setting*> _sounds;
+    std::vector<Setting*> _generals;
 };
 
 template <class T>
-void SettingList::inputSettings(vector<Setting*>& settings)
+void SettingList::inputSettings(std::vector<Setting*>& settings)
 {
     char continues = 'n';
     do {
@@ -48,13 +40,13 @@ void SettingList::inputSettings(vector<Setting*>& settings)
             settings[index] = new T();
         }
         settings[index]->inputInfo();
-        cout << "Will you input for Car " << index + 1 << " ? (y/n): ";
-        cin >> continues;
-        cin.ignore();
-        cout << endl;
+        std::cout << "Will you input for Car " << index + 1 << " ? (y/n): ";
+        std::cin >> continues;
+        std::cin.ignore();
+        std::cout << std::endl;
     } while (continues == 'y');
+    std::cout << "Saving-----" << std::endl;
     sort(settings);
 }
-
 
 #endif // CAR_H

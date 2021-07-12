@@ -1,6 +1,10 @@
 #include "Sound.h"
+
+#include <iomanip>
+
 #include "Utils.h"
 
+using namespace std;
 using namespace Utils;
 
 Sound::Sound(): Setting(){
@@ -10,7 +14,7 @@ Sound::Sound(): Setting(){
 	_notificationLevel = 0;
 }
 
-Sound::~Sound(){}
+Sound::~Sound() = default;
 
 // Input sound setting information
 void Sound::inputInfo() {

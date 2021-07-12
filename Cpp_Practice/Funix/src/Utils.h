@@ -5,19 +5,17 @@
 #include <algorithm>
 #include <regex>
 
-// message constants
-constexpr auto LOGIN_MESSAGE = "NHAP MA SO CA NHAN: ";
-constexpr auto PARK_MESSAGE_P = "DA VE SO P.\nCHU Y SU DUNG PHANH TAY DE DAM BAO AN TOAN\n";
-constexpr auto PARK_MESSAGE_N = "DA VE SO N.\nCHU Y SU DUNG PHANH TAY DE DAM BAO AN TOAN\n";
-constexpr auto PARK_FAIL_MSG = "HAY CHAC CHAN XE DA DUNG VA VAN TOC LA 0 KM/H\n";
-constexpr auto SPEED_WARNING = "TOC DO NGUY HIEM, BAN NEN GIAM TOC DO\n";
+#ifdef _DEBUG
+#define DBG_NEW new ( _NORMAL_BLOCK , __FILE__ , __LINE__ )
+// Replace _NORMAL_BLOCK with _CLIENT_BLOCK if you want the
+// allocations to be of _CLIENT_BLOCK type
+#else
+#define DBG_NEW new
+#endif
 
 namespace Utils
 {
     using namespace std;
-
-    // main menu options
-    // string options[8] = { "P", "R", "N", "D", "POWER OFF", "RESET ID" };
 
     // clear screen
     inline void clearScr()
@@ -60,30 +58,6 @@ namespace Utils
             }
         }
     }
-
-    /// <summary>
-    /// split string into an array of strings.
-    /// </summary>
-    /// <param name="s">string to be split</param>
-    /// <param name="c"></param>
-    /// <returns></returns>
-    /*inline vector<string> explode(const string& s, const char& c) {
-        string buff;
-        vector<string> v;
-
-        for (auto n : s) {
-            if (n != c)
-                buff += n;
-            else if (n == c && !buff.empty()) {
-                v.push_back(buff);
-                buff = "";
-            }
-        }
-        if (!buff.empty())
-            v.push_back(buff);
-
-        return v;
-    }*/
 
     /// <summary>
     /// split string into an array of strings by a regex.
@@ -148,7 +122,7 @@ namespace Utils
     /// <param name="arr">arr to be sorted</param>
     inline void selectionSort(string& arr) {
         int count = 0;
-        for (auto i = 0; i < arr.size() - 1; i++) {
+        for (int i = 0; i < arr.size() - 1; i++) {
             int minIndex = i;
             count++;
             for (int j = i + 1; j < arr.size(); j++) {
@@ -169,6 +143,14 @@ namespace Utils
         cout << "2. XE SO 2" << endl;
         const int option = getInt(1, 2, "choose an option (1 or 2)");
         return option;
+    }
+
+    template<typename T>
+    constexpr auto safeDel(T x) {
+        if (x) {
+        
+            x = nullptr;
+        }
     }
 }
 #endif // UTILS_H

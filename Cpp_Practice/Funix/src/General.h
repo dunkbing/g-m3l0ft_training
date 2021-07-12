@@ -2,6 +2,7 @@
 #define GENERAL_H
 #include "Setting.h"
 #include <string>
+#include <vector>
 
 #include "CommonInfo.h"
 
@@ -11,20 +12,20 @@ public:
     ~General() override;
     void inputInfo() override;
     void outputInfo() override;
-    string getLanguage() const;
-    string getTimeZone() const;
-    void setTimeZone(const string& timeZone);
-    void setLanguage(const string& language);
+    std::string getLanguage() const;
+    std::string getTimeZone() const;
+    void setTimeZone(const std::string& timeZone);
+    void setLanguage(const std::string& language);
     static void loadTimeZones();
     static void loadLanguages();
 
     static int selectTimeZone();
     static int selectLanguage();
 private:
-    string _timeZone;
-    string _language;
-    static vector<CommonInfo> _timeZones;
-    static vector<CommonInfo> _languages;
+    std::string _timeZone;
+    std::string _language;
+    static std::vector<CommonInfo> _timeZones;
+    static std::vector<CommonInfo> _languages;
 };
 
 #endif // GENERAL_H
