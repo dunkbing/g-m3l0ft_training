@@ -14,6 +14,14 @@ Sound::Sound(): Setting(){
 	_notificationLevel = 0;
 }
 
+Sound::Sound(const Setting& s):Setting(s)
+{
+	_mediaLevel = 0;
+	_callLevel = 0;
+	_naviLevel = 0;
+	_notificationLevel = 0;
+}
+
 Sound::~Sound() = default;
 
 // Input sound setting information

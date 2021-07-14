@@ -7,6 +7,7 @@
 class General final : public Setting {
 public:
     General();
+    explicit General(const Setting& s);
     ~General() override;
     void inputInfo() override;
     void outputInfo() override;

@@ -12,8 +12,9 @@ public:
 
     void inputSettings();
     template<class T = Setting>
-    static Setting* inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys);
-    static void copyTo(std::vector<Setting*>& settings, Setting* setting);
+    static int inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys);
+    template<class T = Setting>
+    static void copyTo(std::vector<Setting*>& settings, int index, Setting* setting);
     void outputSettings();
 
     void outputSoundSettings();
@@ -36,7 +37,7 @@ private:
 };
 
 template <class T>
-Setting* SettingList::inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys)
+int SettingList::inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys)
 {
     char continues = 'n';
     const int index = Utils::getInt(1, 100, "Car index: ") - 1;
@@ -54,7 +55,25 @@ Setting* SettingList::inputSettings(std::vector<Setting*>& settings, std::set<st
     } while (continues == 'y');
     std::cout << "Saving-----" << std::endl;
     sort(settings);
-    return settings[index];
+    return index;
+}
+
+template <class T>
+void SettingList::copyTo(std::vector<Setting*>& settings, int index, Setting* setting)
+{
+    const auto it = std::find_if(settings.begin(), settings.end(), [setting](Setting* s)->bool {
+        if (s == nullptr) return false;
+        return s->getPersonalKey() == setting->getPersonalKey();
+        });
+    if (it != settings.end()) {
+        *it = setting;
+    }
+    else {
+        Setting s = *setting;
+        T* t = new T(s);
+        settings[index] = t;
+    }
+    sort(settings);
 }
 
 #endif // CAR_H

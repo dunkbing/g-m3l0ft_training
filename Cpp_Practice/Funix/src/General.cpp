@@ -13,6 +13,12 @@ General::General() {
     _timeZone = "N/A";
 }
 
+General::General(const Setting& s) : Setting(s)
+{
+    _language = "N/A";
+    _timeZone = "N/A";
+}
+
 General::~General() = default;
 
 void General::inputInfo(){

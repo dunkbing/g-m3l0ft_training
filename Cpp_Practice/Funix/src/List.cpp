@@ -21,20 +21,6 @@ SettingList::~SettingList() {
     
 }
 
-void SettingList::copyTo(std::vector<Setting*>& settings, Setting* setting) {
-    std::vector<Setting*>::iterator it = std::find_if(settings.begin(), settings.end(), [setting](Setting* s)->bool{
-        if (s == nullptr) return false;
-        return s->getPersonalKey() == setting->getPersonalKey();
-    });
-    if (it != settings.end()) {
-        *it = setting;
-    } else {
-        Setting s = *setting;
-        settings.push_back(&s);
-    }
-    sort(settings);
-}
-
 void SettingList::inputSettings() {
     Utils::clearScr();
     cout << "--- SELECT MENU ---" << endl;
@@ -50,25 +36,25 @@ void SettingList::inputSettings() {
         case 1:
         {
             cout << " --- Input Display setting --- " << endl;
-            Setting* s = inputSettings<Display>(_displays, _keys);
-            copyTo(_sounds, s);
-            copyTo(_generals, s);
+            const int  index = inputSettings<Display>(_displays, _keys);
+            copyTo<Sound>(_sounds, index, _displays[index]);
+            copyTo<General>(_generals, index, _displays[index]);
             break;
         }
         case 2:
         {
             cout << " --- Input Sound setting --- " << endl;
-            Setting* s = inputSettings<Sound>(_sounds, _keys);
-            copyTo(_displays, s);
-            copyTo(_generals, s);
+            const int  index = inputSettings<Sound>(_sounds, _keys);
+            copyTo<Display>(_displays, index, _sounds[index]);
+            copyTo<General>(_generals, index, _sounds[index]);
             break;
         }
         case 3:
         {
             cout << " --- Input General setting --- " << endl;
-            Setting* s = inputSettings<General>(_generals, _keys);
-            copyTo(_displays, s);
-            copyTo(_sounds, s);
+            const int  index = inputSettings<General>(_generals, _keys);
+            copyTo<Display>(_displays, index, _generals[index]);
+            copyTo<Sound>(_sounds, index, _generals[index]);
             break;
         }
         default:
