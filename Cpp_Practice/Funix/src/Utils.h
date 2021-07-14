@@ -146,9 +146,8 @@ namespace Utils
     }
 
     template<typename T>
-    constexpr auto safeDel(T x) {
+    constexpr auto safeDel(T x) -> void {
         if (x) {
-        
             x = nullptr;
         }
     }

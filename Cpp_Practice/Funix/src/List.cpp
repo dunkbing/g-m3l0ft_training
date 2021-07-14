@@ -1,10 +1,10 @@
 #include <fstream>
 #include <algorithm>
+#include <iomanip>
 #include "Sound.h"
 #include "Utils.h"
 #include "List.h"
 #include "Display.h"
-#include <iomanip>
 
 #include "General.h"
 
@@ -19,6 +19,20 @@ SettingList::SettingList()
 
 SettingList::~SettingList() {
     
+}
+
+void SettingList::copyTo(std::vector<Setting*>& settings, Setting* setting) {
+    std::vector<Setting*>::iterator it = std::find_if(settings.begin(), settings.end(), [setting](Setting* s)->bool{
+        if (s == nullptr) return false;
+        return s->getPersonalKey() == setting->getPersonalKey();
+    });
+    if (it != settings.end()) {
+        *it = setting;
+    } else {
+        Setting s = *setting;
+        settings.push_back(&s);
+    }
+    sort(settings);
 }
 
 void SettingList::inputSettings() {
@@ -36,19 +50,25 @@ void SettingList::inputSettings() {
         case 1:
         {
             cout << " --- Input Display setting --- " << endl;
-            inputSettings<Display>(_displays);
+            Setting* s = inputSettings<Display>(_displays, _keys);
+            copyTo(_sounds, s);
+            copyTo(_generals, s);
             break;
         }
         case 2:
         {
             cout << " --- Input Sound setting --- " << endl;
-            inputSettings<Sound>(_sounds);
+            Setting* s = inputSettings<Sound>(_sounds, _keys);
+            copyTo(_displays, s);
+            copyTo(_generals, s);
             break;
         }
         case 3:
         {
             cout << " --- Input General setting --- " << endl;
-            inputSettings<General>(_generals);
+            Setting* s = inputSettings<General>(_generals, _keys);
+            copyTo(_displays, s);
+            copyTo(_sounds, s);
             break;
         }
         default:
@@ -59,7 +79,7 @@ void SettingList::inputSettings() {
 }
 
 void SettingList::outputSettings() {
-    system("cls");
+    Utils::clearScr();
     cout << "--- SELECT MENU ---" << endl;
     cout << "1. Print Display setting information" << endl;
     cout << "2. Print Sound setting information" << endl;
@@ -69,7 +89,7 @@ void SettingList::outputSettings() {
     cout << "Your selection: ";
     const int selection = Utils::getInt(1, 5);
 
-    system("cls");
+    Utils::clearScr();
     switch (selection) {
         case 1:
             outputDisplaySettings();
@@ -216,6 +236,6 @@ void SettingList::sort(vector<Setting*> settings)
     std::sort(settings.begin(), settings.end(), [](Setting* a, Setting* b)->bool {
         if (a == nullptr) return false;
         if (b == nullptr) return true;
-        return a->getCarName() < b->getCarName();
+        return a->getPersonalKey() < b->getPersonalKey();
     });
 }

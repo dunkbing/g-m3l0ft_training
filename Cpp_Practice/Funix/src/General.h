@@ -1,10 +1,8 @@
 #ifndef GENERAL_H
 #define GENERAL_H
-#include "Setting.h"
 #include <string>
 #include <vector>
-
-#include "CommonInfo.h"
+#include "Setting.h"
 
 class General final : public Setting {
 public:
@@ -22,6 +20,12 @@ public:
     static int selectTimeZone();
     static int selectLanguage();
 private:
+    struct CommonInfo
+    {
+        std::string number;
+        std::string name;
+    };
+
     std::string _timeZone;
     std::string _language;
     static std::vector<CommonInfo> _timeZones;

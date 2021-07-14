@@ -7,6 +7,7 @@
 class Setting {
 public:
     Setting();
+    Setting(const Setting& s);
     virtual ~Setting();
     virtual void inputInfo();
     virtual void outputInfo();

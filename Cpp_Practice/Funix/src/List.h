@@ -1,6 +1,8 @@
 #ifndef CAR_H
 #define CAR_H
 #include <vector>
+#include <set>
+#include <algorithm>
 
 class SettingList final {
 public:
@@ -10,7 +12,8 @@ public:
 
     void inputSettings();
     template<class T = Setting>
-    static void inputSettings(std::vector<Setting*>& settings);
+    static Setting* inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys);
+    static void copyTo(std::vector<Setting*>& settings, Setting* setting);
     void outputSettings();
 
     void outputSoundSettings();
@@ -28,18 +31,22 @@ private:
     std::vector<Setting*> _displays;
     std::vector<Setting*> _sounds;
     std::vector<Setting*> _generals;
+
+    std::set<std::string> _keys;
 };
 
 template <class T>
-void SettingList::inputSettings(std::vector<Setting*>& settings)
+Setting* SettingList::inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys)
 {
     char continues = 'n';
+    const int index = Utils::getInt(1, 100, "Car index: ") - 1;
     do {
-        const int index = Utils::getInt(1, 100, "Car index: ") - 1;
         if (settings[index] == nullptr) {
             settings[index] = new T();
         }
         settings[index]->inputInfo();
+        std::string key = settings[index]->getPersonalKey();
+        keys.insert(key);
         std::cout << "Will you input for Car " << index + 1 << " ? (y/n): ";
         std::cin >> continues;
         std::cin.ignore();
@@ -47,6 +54,7 @@ void SettingList::inputSettings(std::vector<Setting*>& settings)
     } while (continues == 'y');
     std::cout << "Saving-----" << std::endl;
     sort(settings);
+    return settings[index];
 }
 
 #endif // CAR_H

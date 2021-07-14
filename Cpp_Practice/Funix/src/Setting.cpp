@@ -9,6 +9,14 @@ Setting::Setting() {
     _serviceRemind = 0;
 }
 
+Setting::Setting(const Setting& s) {
+    _carName = s.getCarName();
+    _personalKey = s.getPersonalKey();
+    _email = s.getEmail();
+    _odo = s.getOdo();
+    _serviceRemind = s.getServiceRemind();
+}
+
 Setting::~Setting() = default;
 
 string Setting::getCarName() const {
