@@ -5,7 +5,6 @@
 #include "Utils.h"
 #include "List.h"
 #include "Display.h"
-
 #include "General.h"
 
 using namespace std;
@@ -17,9 +16,7 @@ SettingList::SettingList()
     _generals.resize(100, nullptr);
 }
 
-SettingList::~SettingList() {
-    
-}
+SettingList::~SettingList() = default;
 
 void SettingList::inputSettings() {
     Utils::clearScr();
@@ -36,25 +33,19 @@ void SettingList::inputSettings() {
         case 1:
         {
             cout << " --- Input Display setting --- " << endl;
-            const int  index = inputSettings<Display>(_displays, _keys);
-            copyTo<Sound>(_sounds, index, _displays[index]);
-            copyTo<General>(_generals, index, _displays[index]);
+            inputSettings<Display>(_displays, _keys);
             break;
         }
         case 2:
         {
             cout << " --- Input Sound setting --- " << endl;
-            const int  index = inputSettings<Sound>(_sounds, _keys);
-            copyTo<Display>(_displays, index, _sounds[index]);
-            copyTo<General>(_generals, index, _sounds[index]);
+            inputSettings<Sound>(_sounds, _keys);
             break;
         }
         case 3:
         {
             cout << " --- Input General setting --- " << endl;
-            const int  index = inputSettings<General>(_generals, _keys);
-            copyTo<Display>(_displays, index, _generals[index]);
-            copyTo<Sound>(_sounds, index, _generals[index]);
+            inputSettings<General>(_generals, _keys);
             break;
         }
         default:
@@ -131,13 +122,28 @@ void SettingList::outputDisplaySettings() {
 
 void SettingList::outputAllSettings() {
     cout << setw(20) << "TEN CHU XE" << setw(25) << "Email" << setw(10) << "MSC" << setw(10) << "ODO" << setw(10) << "SERVICES" << setw(10) << "Light" << setw(10) << "Taplo" << setw(10) << "Screen" << setw(10) << "Media" << setw(15) << "Call" << setw(15) << "Navigation" << setw(15) << "Notification" << setw(10) << "Timezone" << setw(10) << "Language" << endl;
-    for (int i = 0; i < 100; i++) {
-        if (_displays[i] != nullptr) {
-            auto* d = dynamic_cast<Display*>(_displays[i]);
-            auto* s = dynamic_cast<Sound*>(_sounds[i]);
-            auto* g = dynamic_cast<General*>(_generals[i]);
-            cout << setw(20) << d->getCarName() << setw(25) << d->getEmail() << setw(10) << d->getPersonalKey() << setw(10) << d->getOdo() << setw(10) << d->getServiceRemind() << setw(10) << d->getLightLevel() << setw(10) << d->getTaploLightLevel() << setw(10) << d->getScreenLightLevel() << setw(10) << s->getMediaLevel() << setw(15) << s->getCallLevel() << setw(15) << s->getNaviLevel() << setw(15) << s->getNotificationLevel() << setw(10) << g->getTimeZone() << setw(10) << g->getLanguage() << endl;
+
+    for (const auto& key : _keys)
+    {
+        auto* d = getSetting<Display>(_displays, key);
+        auto* s = getSetting<Sound>(_sounds, key);
+        auto* g = getSetting<General>(_generals, key);
+
+        if (d != nullptr && s == nullptr && g == nullptr)
+        {
+            s = new Sound(*dynamic_cast<Setting*>(d));
+            g = new General(*dynamic_cast<Setting*>(d));
+        } else if (d == nullptr && s != nullptr && g == nullptr)
+        {
+            d = new Display(*dynamic_cast<Setting*>(s));
+            g = new General(*dynamic_cast<Setting*>(s));
+        } else if (d == nullptr && s == nullptr && g != nullptr)
+        {
+            d = new Display(*dynamic_cast<Setting*>(g));
+            s = new Sound(*dynamic_cast<Setting*>(g));
         }
+
+        cout << setw(20) << d->getCarName() << setw(25) << d->getEmail() << setw(10) << d->getPersonalKey() << setw(10) << d->getOdo() << setw(10) << d->getServiceRemind() << setw(10) << d->getLightLevel() << setw(10) << d->getTaploLightLevel() << setw(10) << d->getScreenLightLevel() << setw(10) << s->getMediaLevel() << setw(15) << s->getCallLevel() << setw(15) << s->getNaviLevel() << setw(15) << s->getNotificationLevel() << setw(10) << g->getTimeZone() << setw(10) << g->getLanguage() << endl;
     }
     cin.get();
 }
@@ -170,8 +176,6 @@ void SettingList::loadSettings()
                         display->setPersonalKey(commons[2]);
                         display->setOdo(stoi(commons[3]));
                         display->setServiceRemind(stoi(commons[4]));
-                        // general->copy(display);
-                        // sound->copy(display);
                     }
                     if (generalsStr.size() >= 2) {
                         general->setLanguage(generalsStr[0]);
