@@ -11,9 +11,7 @@ using namespace std;
 
 SettingList::SettingList()
 {
-    _displays.resize(100, nullptr);
-    _sounds.resize(100, nullptr);
-    _generals.resize(100, nullptr);
+    loadSettings();
 }
 
 SettingList::~SettingList() = default;
@@ -129,18 +127,38 @@ void SettingList::outputAllSettings() {
         auto* s = getSetting<Sound>(_sounds, key);
         auto* g = getSetting<General>(_generals, key);
 
-        if (d != nullptr && s == nullptr && g == nullptr)
+        if (d == nullptr)
         {
-            s = new Sound(*dynamic_cast<Setting*>(d));
-            g = new General(*dynamic_cast<Setting*>(d));
-        } else if (d == nullptr && s != nullptr && g == nullptr)
+            if (s != nullptr)
+            {
+                d = new Display(*dynamic_cast<Setting*>(s));
+            }
+            else if (g != nullptr)
+            {
+                d = new Display(*dynamic_cast<Setting*>(g));
+            }
+        }
+        if (s == nullptr)
         {
-            d = new Display(*dynamic_cast<Setting*>(s));
-            g = new General(*dynamic_cast<Setting*>(s));
-        } else if (d == nullptr && s == nullptr && g != nullptr)
+            if (d != nullptr)
+            {
+                s = new Sound(*dynamic_cast<Setting*>(d));
+            }
+            else if (g != nullptr)
+            {
+                s = new Sound(*dynamic_cast<Setting*>(g));
+            }
+        }
+        if (g == nullptr)
         {
-            d = new Display(*dynamic_cast<Setting*>(g));
-            s = new Sound(*dynamic_cast<Setting*>(g));
+            if (d != nullptr)
+            {
+                g = new General(*dynamic_cast<Setting*>(d));
+            }
+            else if (s != nullptr)
+            {
+                g = new General(*dynamic_cast<Setting*>(s));
+            }
         }
 
         cout << setw(20) << d->getCarName() << setw(25) << d->getEmail() << setw(10) << d->getPersonalKey() << setw(10) << d->getOdo() << setw(10) << d->getServiceRemind() << setw(10) << d->getLightLevel() << setw(10) << d->getTaploLightLevel() << setw(10) << d->getScreenLightLevel() << setw(10) << s->getMediaLevel() << setw(15) << s->getCallLevel() << setw(15) << s->getNaviLevel() << setw(15) << s->getNotificationLevel() << setw(10) << g->getTimeZone() << setw(10) << g->getLanguage() << endl;
@@ -157,50 +175,98 @@ void SettingList::loadSettings()
             int index = 0;
             std::string line;
             while (std::getline(file, line)) {
-                vector<string> rawSett = Utils::splitString(line, "|");
-                if (rawSett.size() >= 4) {
-                    rawSett[0] = rawSett[0].substr(7, rawSett[0].length());
-                    rawSett[1] = rawSett[1].substr(8, rawSett[1].length());
-                    rawSett[2] = rawSett[2].substr(6, rawSett[2].length());
-                    rawSett[3] = rawSett[3].substr(8, rawSett[3].length());
-                    vector<string> commons = Utils::splitString(rawSett[0], ",");
-                    vector<string> generalsStr = Utils::splitString(rawSett[1], ",");
-                    vector<string> soundsStr = Utils::splitString(rawSett[2], ",");
-                    vector<string> displaysStr = Utils::splitString(rawSett[3], ",");
-                    auto* display = new Display();
-                    auto* general = new General();
-                    auto* sound = new Sound();
-                    if (commons.size() >= 5) {
-                        display->setCarName(commons[0]);
-                        display->setEmail(commons[1]);
-                        display->setPersonalKey(commons[2]);
-                        display->setOdo(stoi(commons[3]));
-                        display->setServiceRemind(stoi(commons[4]));
-                    }
-                    if (generalsStr.size() >= 2) {
-                        general->setLanguage(generalsStr[0]);
-                        general->setTimeZone(generalsStr[1]);
-                    }
-                    if (soundsStr.size() >= 4) {
-                        sound->setMediaLevel(stoi(soundsStr[0]));
-                        sound->setCallLevel(stoi(soundsStr[1]));
-                        sound->setNaviLevel(stoi(soundsStr[2]));
-                        sound->setNotificationLevel(stoi(soundsStr[3]));
-                    }
-                    if (displaysStr.size() >= 3) {
-                        display->setLightLevel(stoi(displaysStr[0]));
-                        display->setTaploLightLevel(stoi(displaysStr[1]));
-                        display->setScreenLightLevel(stoi(displaysStr[2]));
-                    }
+                if (line.find("Display") != string::npos)
+                {
+                    line = line.substr(8, line.length());
+                    vector<string> displays = Utils::splitString(line, ",");
+                    auto* display = new Display;
+                    display->setCarName(displays[0]);
+                    display->setEmail(displays[1]);
+                    display->setPersonalKey(displays[2]);
+                    display->setOdo(stoi(displays[3]));
+                    display->setServiceRemind(stoi(displays[4]));
+                    display->setLightLevel(stoi(displays[5]));
+                    display->setScreenLightLevel(stoi(displays[6]));
+                    display->setTaploLightLevel(stoi(displays[7]));
                     _displays.push_back(display);
-                    _generals.push_back(general);
+                    _keys.insert(display->getPersonalKey());
+                }
+                else if (line.find("Sound") != string::npos)
+                {
+                    line = line.substr(6, line.length());
+                    vector<string> sounds = Utils::splitString(line, ",");
+                    auto* sound = new Sound;
+                    sound->setCarName(sounds[0]);
+                    sound->setEmail(sounds[1]);
+                    sound->setPersonalKey(sounds[2]);
+                    sound->setOdo(stoi(sounds[3]));
+                    sound->setServiceRemind(stoi(sounds[4]));
+                    sound->setMediaLevel(stoi(sounds[5]));
+                    sound->setCallLevel(stoi(sounds[6]));
+                    sound->setNaviLevel(stoi(sounds[7]));
+                    sound->setNotificationLevel(stoi(sounds[8]));
                     _sounds.push_back(sound);
-                    index++;
+                    _keys.insert(sound->getPersonalKey());
+                }
+                else if (line.find("General") != string::npos)
+                {
+                    line = line.substr(8, line.length());
+                    vector<string> generals = Utils::splitString(line, ",");
+                    auto* general = new General;
+                    general->setCarName(generals[0]);
+                    general->setEmail(generals[1]);
+                    general->setPersonalKey(generals[2]);
+                    general->setOdo(stoi(generals[3]));
+                    general->setServiceRemind(stoi(generals[4]));
+                    general->setLanguage(generals[5]);
+                    general->setTimeZone(generals[6]);
+                    _generals.push_back(general);
+                    _keys.insert(general->getPersonalKey());
                 }
             }
         }
     }
     catch (exception& e) {
+        cout << e.what() << endl;
+    }
+    _displays.resize(100, nullptr);
+    _sounds.resize(100, nullptr);
+    _generals.resize(100, nullptr);
+}
+
+void SettingList::saveSettings()
+{
+    const string path = "settings.txt";
+    try {
+        ofstream file(path);
+        if (file.is_open()) {
+            for (auto & _display : _displays)
+            {
+                if (_display != nullptr)
+                {
+                    auto* display = dynamic_cast<Display*>(_display);
+                    file << "Display:" << display->getCarName() << ',' << display->getEmail() << ',' << display->getPersonalKey() << ',' << display->getOdo() << ',' << display->getServiceRemind() << ',' << display->getLightLevel() << ',' << display->getScreenLightLevel() << ',' << display->getTaploLightLevel() << endl;
+                }
+            }
+            for (auto& _sound : _sounds)
+            {
+                if (_sound != nullptr)
+                {
+                    auto* sound = dynamic_cast<Sound*>(_sound);
+                    file << "Sound:" << sound->getCarName() << ',' << sound->getEmail() << ',' << sound->getPersonalKey() << ',' << sound->getOdo() << ',' << sound->getServiceRemind() << ',' << sound->getMediaLevel() << ',' << sound->getCallLevel() << ',' << sound->getNaviLevel() << ',' << sound->getNotificationLevel() << endl;
+                }
+            }
+            for (auto& _general : _generals)
+            {
+                if (_general != nullptr)
+                {
+                    auto* general = dynamic_cast<General*>(_general);
+                    file << "General:" << general->getCarName() << ',' << general->getEmail() << ',' << general->getPersonalKey() << ',' << general->getOdo() << ',' << general->getServiceRemind() << ',' << general->getLanguage() << ',' << general->getTimeZone() << endl;
+                }
+            }
+            file.close();
+        }
+    } catch (exception& e) {
         cout << e.what() << endl;
     }
 }
@@ -221,7 +287,7 @@ void SettingList::release()
     }
 }
 
-void SettingList::sort(vector<Setting*> settings)
+void SettingList::sort(vector<Setting*>& settings)
 {
     std::sort(settings.begin(), settings.end(), [](Setting* a, Setting* b)->bool {
         if (a == nullptr) return false;

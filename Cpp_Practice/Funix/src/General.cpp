@@ -21,8 +21,8 @@ General::General(const Setting& s) : Setting(s)
 
 General::~General() = default;
 
-void General::inputInfo(){
-    Setting::inputInfo();
+void General::inputInfo(const std::set<std::string>& keys){
+    Setting::inputInfo(keys);
     const CommonInfo language = _languages[selectLanguage()];
     const CommonInfo timezone = _timeZones[selectTimeZone()];
     setLanguage(language.name);

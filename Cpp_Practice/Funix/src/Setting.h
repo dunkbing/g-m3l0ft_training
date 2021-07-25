@@ -2,6 +2,7 @@
 #define SETTING_H_
 
 #include <string>
+#include <set>
 
 
 class Setting {
@@ -9,7 +10,7 @@ public:
     Setting();
     Setting(const Setting& s);
     virtual ~Setting();
-    virtual void inputInfo();
+    virtual void inputInfo(const std::set<std::string>& keys);
     virtual void outputInfo();
 
     std::string getCarName() const;

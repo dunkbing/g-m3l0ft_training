@@ -9,7 +9,7 @@ public:
     General();
     explicit General(const Setting& s);
     ~General() override;
-    void inputInfo() override;
+    void inputInfo(const std::set<std::string>& keys) override;
     void outputInfo() override;
     std::string getLanguage() const;
     std::string getTimeZone() const;

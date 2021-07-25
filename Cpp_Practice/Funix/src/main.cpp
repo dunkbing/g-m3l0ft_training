@@ -23,7 +23,6 @@ int main() {
         // load languages and timezones data
         General::loadLanguages();
         General::loadTimeZones();
-        list.loadSettings();
         bool exit = false;
         while (!exit) {
             const int selection = menu();

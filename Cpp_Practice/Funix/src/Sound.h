@@ -9,7 +9,7 @@ public:
     Sound();
     explicit Sound(const Setting& s);
     ~Sound() override;
-    void inputInfo() override;
+    void inputInfo(const std::set<std::string>& keys) override;
     void outputInfo() override;
     int getMediaLevel() const;
     int getCallLevel() const;

@@ -40,11 +40,6 @@ void Setting::setCarName(const string& name) {
 }
 
 void Setting::setPersonalKey(const string key) {
-    if (key == _personalKey) {
-        cout << "    -> This car already existed, data will be overwritten" << endl;
-    } else {
-        cout << "    -> This car is new, data will be appended to your list" << endl;
-    }
     this->_personalKey = key;
 }
 
@@ -64,14 +59,21 @@ void Setting::setEmail(const string& email) {
     this->_email = email;
 }
 
-void Setting::inputInfo(){
+void Setting::inputInfo(const std::set<std::string>& keys)
+{
     const string emailReg = R"((\w+)(\.|_)?(\w*)@(\w+)(\.(\w+))+)";
     setCarName(Utils::getLine("Owner name: "));
     setEmail(Utils::getLine("Email: ", emailReg, "Email must be a string in format abc@xyz.def: "));
-    const string oldKey = _personalKey;
     setOdo(Utils::getInt(1, 10, "Odo: "));
     setServiceRemind(Utils::getInt(1, 10, "Service remind: "));
-    setPersonalKey(Utils::getLine("Personal key: ", "^[0-9]{8}$", "Personal key must be 8 digits: "));
+    const string key = Utils::getLine("Personal key: ", "^[0-9]{8}$", "Personal key must be 8 digits: ");
+    if (keys.find(key) != keys.end()) {
+        cout << "    -> This car already existed, data will be overwritten" << endl;
+    }
+    else {
+        cout << "    -> This car is new, data will be appended to your list" << endl;
+    }
+    setPersonalKey(key);
 }
 
 void Setting::outputInfo(){

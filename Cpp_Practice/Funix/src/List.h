@@ -12,7 +12,7 @@ public:
 
     void inputSettings();
     template<class T = Setting>
-    static void inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys);
+    void inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys);
     template<class T = Setting>
     static void copyTo(std::vector<Setting*>& settings, Setting* setting);
     void outputSettings();
@@ -27,10 +27,12 @@ public:
 
     // load infos
     void loadSettings();
+    // save infos
+    void saveSettings();
 
     void release();
 
-    static void sort(std::vector<Setting*> settings);
+    static void sort(std::vector<Setting*>& settings);
 private:
     std::vector<Setting*> _displays;
     std::vector<Setting*> _sounds;
@@ -43,11 +45,16 @@ template <class T>
 void SettingList::inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys)
 {
     char c = 'n';
-    const int index = Utils::getInt(1, 100, "Car index: ") - 1;
-    Setting* s = new T();
     do {
-        s->inputInfo();
-        settings[index] = s;
+        const int index = Utils::getInt(1, 100, "Car index: ") - 1;
+        Setting* s = new T();
+        std::vector<Setting*>::iterator it = settings.begin();
+        while (*it != nullptr)
+        {
+            it++;
+        }
+        s->inputInfo(keys);
+        *it = s;
         std::string key = s->getPersonalKey();
         keys.insert(key);
         std::cout << "Will you input for Car " << index + 1 << " ? (y/n): ";
@@ -57,6 +64,7 @@ void SettingList::inputSettings(std::vector<Setting*>& settings, std::set<std::s
     } while (c == 'y');
     std::cout << "Saving-----" << std::endl;
     sort(settings);
+    saveSettings();
 }
 
 template <class T>

@@ -12,7 +12,7 @@ public:
     Display();
     explicit Display(const Setting& s);
     ~Display() override;
-    void inputInfo() override;
+    void inputInfo(const std::set<std::string>& keys) override;
     void outputInfo() override;
     int getLightLevel() const;
     int getScreenLightLevel() const;

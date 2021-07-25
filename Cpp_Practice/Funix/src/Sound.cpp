@@ -25,8 +25,8 @@ Sound::Sound(const Setting& s):Setting(s)
 Sound::~Sound() = default;
 
 // Input sound setting information
-void Sound::inputInfo() {
-	Setting::inputInfo();
+void Sound::inputInfo(const std::set<std::string>& keys) {
+	Setting::inputInfo(keys);
 	_mediaLevel = getInt(1, 10, "Media level: ");
 	_callLevel = getInt(1, 10, "Call level: ");
 	_naviLevel = getInt(1, 10, "Navi level: ");

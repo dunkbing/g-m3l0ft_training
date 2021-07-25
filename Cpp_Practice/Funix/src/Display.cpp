@@ -45,8 +45,8 @@ void Display::setTaploLightLevel(const int lightLevel) {
 	_taploLightLevel = lightLevel;
 }
 
-void Display::inputInfo() {
-	Setting::inputInfo();
+void Display::inputInfo(const std::set<std::string>& keys) {
+	Setting::inputInfo(keys);
 	_lightLevel = Utils::getInt(1, 10, "Light level: ");
 	_screenLightLevel = Utils::getInt(1, 10, "Screen light level: ");
 	_taploLightLevel = Utils::getInt(1, 10, "Taplo light level: ");
