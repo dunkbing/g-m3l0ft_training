@@ -64,8 +64,8 @@ void Setting::inputInfo(const std::set<std::string>& keys)
     const string emailReg = R"((\w+)(\.|_)?(\w*)@(\w+)(\.(\w+))+)";
     setCarName(Utils::getLine("Owner name: "));
     setEmail(Utils::getLine("Email: ", emailReg, "Email must be a string in format abc@xyz.def: "));
-    setOdo(Utils::getInt(1, 10, "Odo: "));
-    setServiceRemind(Utils::getInt(1, 10, "Service remind: "));
+    setOdo(Utils::getInt(1, INT_MAX, "Odo: "));
+    setServiceRemind(Utils::getInt(1, 10000, "Service remind: "));
     const string key = Utils::getLine("Personal key: ", "^[0-9]{8}$", "Personal key must be 8 digits: ");
     if (keys.find(key) != keys.end()) {
         cout << "    -> This car already existed, data will be overwritten" << endl;

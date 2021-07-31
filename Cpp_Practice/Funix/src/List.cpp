@@ -31,19 +31,31 @@ void SettingList::inputSettings() {
         case 1:
         {
             cout << " --- Input Display setting --- " << endl;
-            inputSettings<Display>(_displays, _keys);
+            inputSettings<Display>(_displays, _keys, [this](Setting* setting)
+            {
+                copyTo<Sound>(_sounds, setting);
+                copyTo<General>(_generals, setting);
+            });
             break;
         }
         case 2:
         {
             cout << " --- Input Sound setting --- " << endl;
-            inputSettings<Sound>(_sounds, _keys);
+            inputSettings<Sound>(_sounds, _keys, [this](Setting* setting)
+            {
+                copyTo<Display>(_displays, setting);
+                copyTo<General>(_generals, setting);
+            });
             break;
         }
         case 3:
         {
             cout << " --- Input General setting --- " << endl;
-            inputSettings<General>(_generals, _keys);
+            inputSettings<General>(_generals, _keys, [this](Setting* setting)
+            {
+                copyTo<Sound>(_sounds, setting);
+                copyTo<Display>(_displays, setting);
+            });
             break;
         }
         default:

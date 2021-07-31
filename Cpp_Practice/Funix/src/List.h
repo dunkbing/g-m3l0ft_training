@@ -3,6 +3,7 @@
 #include <vector>
 #include <set>
 #include <algorithm>
+#include <functional>
 
 class SettingList final {
 public:
@@ -12,7 +13,7 @@ public:
 
     void inputSettings();
     template<class T = Setting>
-    void inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys);
+    void inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys, std::function<void(Setting*)> callback);
     template<class T = Setting>
     static void copyTo(std::vector<Setting*>& settings, Setting* setting);
     void outputSettings();
@@ -42,7 +43,7 @@ private:
 };
 
 template <class T>
-void SettingList::inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys)
+void SettingList::inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys, std::function<void(Setting*)> callback)
 {
     char c = 'n';
     do {
@@ -54,8 +55,16 @@ void SettingList::inputSettings(std::vector<Setting*>& settings, std::set<std::s
             it++;
         }
         s->inputInfo(keys);
-        *it = s;
-        std::string key = s->getPersonalKey();
+        callback(s);
+        string key = s->getPersonalKey();
+        auto* existedSetting = getSetting(settings, key);
+        if (existedSetting != nullptr)
+        {
+            copyTo(settings, s);
+        } else
+        {
+            *it = s;
+        }
         keys.insert(key);
         std::cout << "Will you input for Car " << index + 1 << " ? (y/n): ";
         std::cin >> c;
@@ -70,18 +79,25 @@ void SettingList::inputSettings(std::vector<Setting*>& settings, std::set<std::s
 template <class T>
 void SettingList::copyTo(std::vector<Setting*>& settings, Setting* setting)
 {
-    const auto it = std::find_if(settings.begin(), settings.end(), [setting](Setting* s)->bool {
-        if (s == nullptr) return false;
-        return s->getPersonalKey() == setting->getPersonalKey();
-    });
-    if (it != settings.end()) {
-        *it = setting;
+    auto* s = getSetting(settings, setting->getPersonalKey());
+    
+    if (s != nullptr)
+    {
+        s->setCarName(setting->getCarName());
+        s->setEmail(setting->getEmail());
+        s->setOdo(setting->getOdo());
+        s->setServiceRemind(setting->getServiceRemind());
     }
-    else {
-        Setting s = *setting;
-        T* t = new T(s);
-        settings.push_back(t);
+    else
+    {
+        s = new T();
+        s->setCarName(setting->getCarName());
+        s->setEmail(setting->getEmail());
+        s->setOdo(setting->getOdo());
+        s->setServiceRemind(setting->getServiceRemind());
+        settings.push_back(s);
     }
+
     sort(settings);
 }
 

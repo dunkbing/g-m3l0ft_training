@@ -35,6 +35,7 @@ int main() {
                 break;
             case 3:
                 list.release();
+                cout << "bye" << endl;
                 exit = true;
                 break;
             default:
