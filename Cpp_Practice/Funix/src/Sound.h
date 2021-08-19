@@ -19,7 +19,6 @@ public:
     void setCallLevel(int level);
     void setNaviLevel(int level);
     void setNotificationLevel(int level);
-    void printSettingInfo();
 private:
     int _mediaLevel;
     int _callLevel;

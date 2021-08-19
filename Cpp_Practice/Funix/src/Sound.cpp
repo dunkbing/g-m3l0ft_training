@@ -1,7 +1,5 @@
-#include "Sound.h"
-
 #include <iomanip>
-
+#include "Sound.h"
 #include "Utils.h"
 
 using namespace std;

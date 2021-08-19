@@ -17,6 +17,7 @@ public:
     void setLanguage(const std::string& language);
     static void loadTimeZones();
     static void loadLanguages();
+    static void release();
 
     static int selectTimeZone();
     static int selectLanguage();

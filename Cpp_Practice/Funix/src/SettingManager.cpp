@@ -3,20 +3,20 @@
 #include <iomanip>
 #include "Sound.h"
 #include "Utils.h"
-#include "List.h"
+#include "SettingManager.h"
 #include "Display.h"
 #include "General.h"
 
 using namespace std;
 
-SettingList::SettingList()
+SettingManager::SettingManager()
 {
     loadSettings();
 }
 
-SettingList::~SettingList() = default;
+SettingManager::~SettingManager() = default;
 
-void SettingList::inputSettings() {
+void SettingManager::inputSettings() {
     Utils::clearScr();
     cout << "--- SELECT MENU ---" << endl;
     cout << "1. Display setting" << endl;
@@ -65,7 +65,7 @@ void SettingList::inputSettings() {
     }
 }
 
-void SettingList::outputSettings() {
+void SettingManager::outputSettings() {
     Utils::clearScr();
     cout << "--- SELECT MENU ---" << endl;
     cout << "1. Print Display setting information" << endl;
@@ -97,7 +97,31 @@ void SettingList::outputSettings() {
     }
 }
 
-void SettingList::outputSoundSettings() {
+SettingManager::SortType SettingManager::chooseSortType()
+{
+    const int choice = Utils::getInt(1, 2, "Sap xep theo:\n1. Ten\n2. MSCN\n");
+    Utils::clearScr();
+    return static_cast<SortType>(choice);
+}
+
+void SettingManager::outputDisplaySettings()
+{
+    const SortType choice = chooseSortType();
+    sort(_displays, choice);
+    cout << setw(20) << "TEN CHU XE" << setw(25) << "Email" << setw(10) << "MSC" << setw(10) << "ODO" << setw(10) << "SERVICES" << setw(10) << "Light" << setw(10) << "Taplo" << setw(10) << "Screen" << endl;
+    for (auto& display : _displays)
+    {
+        if (display != nullptr)
+        {
+            display->outputInfo();
+        }
+    }
+    cin.get();
+}
+
+void SettingManager::outputSoundSettings() {
+    const SortType choice = chooseSortType();
+    sort(_sounds, choice);
     cout << setw(20) << "TEN CHU XE" << setw(25) << "Email" << setw(10) << "MSC" << setw(10) << "ODO" << setw(10) << "SERVICES" << setw(10) << "Media" << setw(10) << "Call" << setw(10) << "Navi" << setw(10) << "Notify" << endl;
     for (auto& sound : _sounds)
     {
@@ -108,7 +132,9 @@ void SettingList::outputSoundSettings() {
     cin.get();
 }
 
-void SettingList::outputGeneralSettings() {
+void SettingManager::outputGeneralSettings() {
+    const SortType choice = chooseSortType();
+    sort(_generals, choice);
     cout << setw(20) << "TEN CHU XE" << setw(25) << "Email" << setw(10) << "MSC" << setw(10) << "ODO" << setw(10) << "SERVICES" << setw(30) << "TimeZone" << setw(20) << "Language" << endl;
     for (auto& general : _generals)
     {
@@ -119,25 +145,17 @@ void SettingList::outputGeneralSettings() {
     cin.get();
 }
 
-void SettingList::outputDisplaySettings() {
-    cout << setw(20) << "TEN CHU XE" << setw(25) << "Email" << setw(10) << "MSC" << setw(10) << "ODO" << setw(10) << "SERVICES" << setw(10) << "Light" << setw(10) << "Taplo" << setw(10) << "Screen" << endl;
-    for (auto& display : _displays)
-    {
-        if (display != nullptr) {
-            display->outputInfo();
-        }
-    }
-    cin.get();
-}
-
-void SettingList::outputAllSettings() {
+void SettingManager::outputAllSettings() {
+    const SortType choice = chooseSortType();
+    sort(_displays, choice);
+    sort(_sounds, choice);
+    sort(_generals, choice);
     cout << setw(20) << "TEN CHU XE" << setw(25) << "Email" << setw(10) << "MSC" << setw(10) << "ODO" << setw(10) << "SERVICES" << setw(10) << "Light" << setw(10) << "Taplo" << setw(10) << "Screen" << setw(10) << "Media" << setw(15) << "Call" << setw(15) << "Navigation" << setw(15) << "Notification" << setw(10) << "Timezone" << setw(10) << "Language" << endl;
-
-    for (const auto& key : _keys)
+    for (int i = 0; i < _keys.size(); i++)
     {
-        auto* d = getSetting<Display>(_displays, key);
-        auto* s = getSetting<Sound>(_sounds, key);
-        auto* g = getSetting<General>(_generals, key);
+        auto* d = (Display*)_displays[i];
+        auto* s = (Sound*)_sounds[i];
+        auto* g = (General*)_generals[i];
 
         if (d == nullptr)
         {
@@ -178,7 +196,7 @@ void SettingList::outputAllSettings() {
     cin.get();
 }
 
-void SettingList::loadSettings()
+void SettingManager::loadSettings()
 {
     const string path = "settings.txt";
     try {
@@ -246,7 +264,7 @@ void SettingList::loadSettings()
     _generals.resize(100, nullptr);
 }
 
-void SettingList::saveSettings()
+void SettingManager::saveSettings()
 {
     const string path = "settings.txt";
     try {
@@ -283,7 +301,7 @@ void SettingList::saveSettings()
     }
 }
 
-void SettingList::release()
+void SettingManager::release()
 {
     for (auto display : _displays)
     {
@@ -299,11 +317,24 @@ void SettingList::release()
     }
 }
 
-void SettingList::sort(vector<Setting*>& settings)
+void SettingManager::sort(vector<Setting*>& settings, SortType type = SortType::Mscn)
 {
-    std::sort(settings.begin(), settings.end(), [](Setting* a, Setting* b)->bool {
-        if (a == nullptr) return false;
-        if (b == nullptr) return true;
-        return a->getPersonalKey() < b->getPersonalKey();
-    });
+    if (type == SortType::Mscn)
+    {
+        std::sort(settings.begin(), settings.end(), [](Setting* a, Setting* b)->bool
+        {
+            if (a == nullptr) return false;
+            if (b == nullptr) return true;
+            return a->getPersonalKey() < b->getPersonalKey();
+        });
+    }
+    else
+    {
+        std::sort(settings.begin(), settings.end(), [](Setting* a, Setting* b)->bool
+        {
+            if (a == nullptr) return false;
+            if (b == nullptr) return true;
+            return a->getCarName() < b->getCarName();
+        });
+    }
 }

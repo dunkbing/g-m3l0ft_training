@@ -7,13 +7,14 @@
 using namespace std;
 
 class Display : public Setting {
-
 public:
     Display();
     explicit Display(const Setting& s);
     ~Display() override;
     void inputInfo(const std::set<std::string>& keys) override;
     void outputInfo() override;
+    
+    // getters and setters function.
     int getLightLevel() const;
     int getScreenLightLevel() const;
     int getTaploLightLevel() const;

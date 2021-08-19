@@ -85,7 +85,6 @@ void General::loadLanguages() {
         ifstream f(path, ios::in);
         if (f.is_open()) {
             string line;
-            cout << "line: " << line << endl;
             while (std::getline(f, line)) {
                 vector<string> language = Utils::splitString(line, "/");
                 CommonInfo common;
@@ -106,6 +105,12 @@ void General::loadLanguages() {
     catch (exception& e) {
         cout << e.what() << endl;
     }
+}
+
+void General::release()
+{
+    std::vector<CommonInfo>().swap(_languages);
+    std::vector<CommonInfo>().swap(_timeZones);
 }
 
 int General::selectTimeZone() {

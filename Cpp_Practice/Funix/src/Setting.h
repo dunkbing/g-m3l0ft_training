@@ -10,9 +10,12 @@ public:
     Setting();
     Setting(const Setting& s);
     virtual ~Setting();
+    // for inputing information
     virtual void inputInfo(const std::set<std::string>& keys);
+    // for outputing information
     virtual void outputInfo();
 
+    // getters and setters
     std::string getCarName() const;
     std::string getPersonalKey() const;
     int getOdo () const;

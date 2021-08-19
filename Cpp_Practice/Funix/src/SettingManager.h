@@ -5,25 +5,44 @@
 #include <algorithm>
 #include <functional>
 
-class SettingList final {
+class SettingManager final {
 public:
     // Default constructor and destructor
-    SettingList();
-    ~SettingList();
+    SettingManager();
+    ~SettingManager();
 
+    // print a menu for selecting types of input
     void inputSettings();
-    template<class T = Setting>
+    
+    template<typename T = Setting>
+    /// <summary>
+    /// input a setting
+    /// </summary>
+    /// <typeparam name="T">type of Setting(Display, Sound, General)</typeparam>
+    /// <param name="settings">container of the setting</param>
+    /// <param name="keys">contain all of the settings personal key</param>
+    /// <param name="callback">what to do after input the setting</param>
     void inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys, std::function<void(Setting*)> callback);
-    template<class T = Setting>
+    
+    template<typename T = Setting>
+    // copy a setting's value to another in a different container
     static void copyTo(std::vector<Setting*>& settings, Setting* setting);
-    void outputSettings();
 
+    // print a menu for select types of output
+    void outputSettings();
+    void outputDisplaySettings();
     void outputSoundSettings();
     void outputGeneralSettings();
-    void outputDisplaySettings();
     void outputAllSettings();
 
     template<class T = Setting>
+    /// <summary>
+    /// return a setting from a container with specific key
+    /// </summary>
+    /// <typeparam name="T">type of setting</typeparam>
+    /// <param name="settings">container of the setting</param>
+    /// <param name="key">key of the setting</param>
+    /// <returns>a setting in the container, null if not found</returns>
     static T* getSetting(std::vector<Setting*>& settings , const std::string& key);
 
     // load infos
@@ -31,9 +50,17 @@ public:
     // save infos
     void saveSettings();
 
+    enum class SortType
+    {
+        Name = 1, Mscn = 2,
+    };
+    // print a menu for choosing sort type.
+    // return sort type
+    SortType chooseSortType();
+    // sort a setting container with type(name or mscn)
+    static void sort(std::vector<Setting*>& settings, SortType type);
+    
     void release();
-
-    static void sort(std::vector<Setting*>& settings);
 private:
     std::vector<Setting*> _displays;
     std::vector<Setting*> _sounds;
@@ -42,8 +69,8 @@ private:
     std::set<std::string> _keys;
 };
 
-template <class T>
-void SettingList::inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys, std::function<void(Setting*)> callback)
+template <typename T>
+void SettingManager::inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys, std::function<void(Setting*)> callback)
 {
     char c = 'n';
     do {
@@ -76,13 +103,14 @@ void SettingList::inputSettings(std::vector<Setting*>& settings, std::set<std::s
     saveSettings();
 }
 
-template <class T>
-void SettingList::copyTo(std::vector<Setting*>& settings, Setting* setting)
+template <typename T>
+void SettingManager::copyTo(std::vector<Setting*>& settings, Setting* setting)
 {
     auto* s = getSetting(settings, setting->getPersonalKey());
     
     if (s != nullptr)
     {
+        s->setPersonalKey(setting->getPersonalKey());
         s->setCarName(setting->getCarName());
         s->setEmail(setting->getEmail());
         s->setOdo(setting->getOdo());
@@ -91,6 +119,7 @@ void SettingList::copyTo(std::vector<Setting*>& settings, Setting* setting)
     else
     {
         s = new T();
+        s->setPersonalKey(setting->getPersonalKey());
         s->setCarName(setting->getCarName());
         s->setEmail(setting->getEmail());
         s->setOdo(setting->getOdo());
@@ -102,7 +131,7 @@ void SettingList::copyTo(std::vector<Setting*>& settings, Setting* setting)
 }
 
 template <class T>
-T* SettingList::getSetting(std::vector<Setting*>& settings, const std::string& key)
+T* SettingManager::getSetting(std::vector<Setting*>& settings, const std::string& key)
 {
     const auto it = std::find_if(settings.begin(), settings.end(), [key](Setting* s)
         {

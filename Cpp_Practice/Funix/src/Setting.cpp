@@ -61,7 +61,7 @@ void Setting::setEmail(const string& email) {
 
 void Setting::inputInfo(const std::set<std::string>& keys)
 {
-    const string emailReg = R"((\w+)(\.|_)?(\w*)@(\w+)(\.(\w+))+)";
+    const string emailReg = R"((\w{3,})(\.|_)?(\w*)@(\w{3,})(\.(\w{3,}))+)";
     setCarName(Utils::getLine("Owner name: "));
     setEmail(Utils::getLine("Email: ", emailReg, "Email must be a string in format abc@xyz.def: "));
     setOdo(Utils::getInt(1, INT_MAX, "Odo: "));

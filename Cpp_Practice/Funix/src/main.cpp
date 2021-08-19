@@ -1,10 +1,12 @@
 #define _CRTDBG_MAP_ALLOC
+#include <stdlib.h>
+#include <crtdbg.h>
 #include <iostream>
 #include <fstream>
 
 #include "General.h"
 #include "Utils.h"
-#include "List.h"
+#include "SettingManager.h"
 
 using namespace Utils;
 
@@ -12,29 +14,26 @@ int menu();
 
 /* run this program using the console pause or add your own getch, system("pause") or input loop */
 int main() {
-    // detect memory leak
-#if _WIN32
-    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-    _CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_DEBUG);
-#endif
     try
     {
-        SettingList list;
+        SettingManager manager;
         // load languages and timezones data
         General::loadLanguages();
         General::loadTimeZones();
         bool exit = false;
-        while (!exit) {
+        while (!exit)
+        {
             const int selection = menu();
-            switch (selection) {
+            switch (selection)
+            {
             case 1:
-                list.inputSettings();
+                manager.inputSettings();
                 break;
             case 2:
-                list.outputSettings();
+                manager.outputSettings();
                 break;
             case 3:
-                list.release();
+                manager.release();
                 cout << "bye" << endl;
                 exit = true;
                 break;
@@ -42,15 +41,13 @@ int main() {
                 break;
             }
         }
-        list.release();
+        General::release();
+        manager.release();
     }
     catch (exception& e)
     {
         cout << e.what() << endl;
     }
-#if _WIN32
-    _CrtDumpMemoryLeaks();
-#endif
 }
 
 // Print out menu for selection
