@@ -84,10 +84,10 @@ void SettingManager::inputSettings(std::vector<Setting*>& settings, std::set<std
         s->inputInfo(keys);
         callback(s);
         string key = s->getPersonalKey();
-        auto* existedSetting = getSetting(settings, key);
+        auto* existedSetting = getSetting<T>(settings, key);
         if (existedSetting != nullptr)
         {
-            copyTo(settings, s);
+            *existedSetting = *(T*)s;
         } else
         {
             *it = s;
