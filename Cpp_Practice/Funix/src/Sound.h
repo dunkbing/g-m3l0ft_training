@@ -11,6 +11,7 @@ public:
     ~Sound() override;
     void inputInfo(const std::set<std::string>& keys) override;
     void outputInfo() override;
+    static void outputInfoLabel();
     int getMediaLevel() const;
     int getCallLevel() const;
     int getNaviLevel() const;

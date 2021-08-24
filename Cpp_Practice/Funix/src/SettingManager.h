@@ -4,6 +4,11 @@
 #include <set>
 #include <algorithm>
 #include <functional>
+#include "BinaryTree.h"
+#include "Display.h"
+#include "Sound.h"
+#include "General.h"
+#include "Utils.h"
 
 class SettingManager final {
 public:
@@ -12,9 +17,8 @@ public:
     ~SettingManager();
 
     // print a menu for selecting types of input
-    void inputSettings();
+    void inputSettingsMenu();
     
-    template<typename T = Setting>
     /// <summary>
     /// input a setting
     /// </summary>
@@ -22,20 +26,16 @@ public:
     /// <param name="settings">container of the setting</param>
     /// <param name="keys">contain all of the settings personal key</param>
     /// <param name="callback">what to do after input the setting</param>
-    void inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys, std::function<void(Setting*)> callback);
+    template<class T = Setting> static void inputSettings(BTree<T>& settings, std::set<std::string>& keys, const std::function<void(Setting*)>& callback);
     
-    template<typename T = Setting>
     // copy a setting's value to another in a different container
-    static void copyTo(std::vector<Setting*>& settings, Setting* setting);
+    template<class T = Setting> static void copyTo(BTree<T>& settings, Setting* setting);
 
+    void outputSettingsMenu();
     // print a menu for select types of output
-    void outputSettings();
-    void outputDisplaySettings();
-    void outputSoundSettings();
-    void outputGeneralSettings();
+    template<class T = Setting> void outputSettings(BTree<T>& settings);
     void outputAllSettings();
 
-    template<class T = Setting>
     /// <summary>
     /// return a setting from a container with specific key
     /// </summary>
@@ -43,55 +43,37 @@ public:
     /// <param name="settings">container of the setting</param>
     /// <param name="key">key of the setting</param>
     /// <returns>a setting in the container, null if not found</returns>
-    static T* getSetting(std::vector<Setting*>& settings , const std::string& key);
+    template<class T = Setting>
+    static T* getSetting(BTree<T>& settings , const std::string& key);
 
     // load infos
     void loadSettings();
     // save infos
     void saveSettings();
 
-    enum class SortType
-    {
-        Name = 1, Mscn = 2,
-    };
-    // print a menu for choosing sort type.
-    // return sort type
-    SortType chooseSortType();
-    // sort a setting container with type(name or mscn)
-    static void sort(std::vector<Setting*>& settings, SortType type);
-    
-    void release();
 private:
-    std::vector<Setting*> _displays;
-    std::vector<Setting*> _sounds;
-    std::vector<Setting*> _generals;
+    BTree<Display> _displays;
+    BTree<Sound> _sounds;
+    BTree<General> _generals;
 
     std::set<std::string> _keys;
 };
 
-template <typename T>
-void SettingManager::inputSettings(std::vector<Setting*>& settings, std::set<std::string>& keys, std::function<void(Setting*)> callback)
+template<class T>
+inline void SettingManager::inputSettings(
+        BTree<T>& settings,
+        std::set<std::string>& keys,
+        const std::function<void(Setting*)>& callback)
 {
     char c = 'n';
-    do {
+    do
+    {
         const int index = Utils::getInt(1, 100, "Car index: ") - 1;
-        Setting* s = new T();
-        std::vector<Setting*>::iterator it = settings.begin();
-        while (*it != nullptr)
-        {
-            it++;
-        }
+        T* s = new T();
         s->inputInfo(keys);
-        callback(s);
+        callback(dynamic_cast<Setting*>(s));
         string key = s->getPersonalKey();
-        auto* existedSetting = getSetting<T>(settings, key);
-        if (existedSetting != nullptr)
-        {
-            *existedSetting = *(T*)s;
-        } else
-        {
-            *it = s;
-        }
+        settings.insert(*s);
         keys.insert(key);
         std::cout << "Will you input for Car " << index + 1 << " ? (y/n): ";
         std::cin >> c;
@@ -99,15 +81,24 @@ void SettingManager::inputSettings(std::vector<Setting*>& settings, std::set<std
         std::cout << std::endl;
     } while (c == 'y');
     std::cout << "Saving-----" << std::endl;
-    sort(settings);
-    saveSettings();
 }
 
-template <typename T>
-void SettingManager::copyTo(std::vector<Setting*>& settings, Setting* setting)
+template<class T>
+inline void SettingManager::outputSettings(BTree<T>& settings)
 {
-    auto* s = getSetting(settings, setting->getPersonalKey());
-    
+    T::outputInfoLabel();
+    settings.inOrder([](T t)
+    {
+        t.outputInfo();
+    });
+    cin.get();
+}
+
+template<class T>
+inline void SettingManager::copyTo(BTree<T>& settings, Setting* setting)
+{
+    T* s = getSetting<T>(settings, setting->getPersonalKey());
+
     if (s != nullptr)
     {
         s->setPersonalKey(setting->getPersonalKey());
@@ -124,29 +115,21 @@ void SettingManager::copyTo(std::vector<Setting*>& settings, Setting* setting)
         s->setEmail(setting->getEmail());
         s->setOdo(setting->getOdo());
         s->setServiceRemind(setting->getServiceRemind());
-        settings.push_back(s);
+        settings.insert(*dynamic_cast<T*>(s));
     }
-
-    sort(settings);
 }
 
-template <class T>
-T* SettingManager::getSetting(std::vector<Setting*>& settings, const std::string& key)
+template <typename T>
+T* SettingManager::getSetting(BTree<T>& settings, const std::string& key)
 {
-    const auto it = std::find_if(settings.begin(), settings.end(), [key](Setting* s)
+    Setting* st = nullptr;
+    settings.preOrder([&st, &key](T& s) {
+        if (s.getPersonalKey() == key)
         {
-            if (s == nullptr)
-            {
-                return false;
-            }
-            return s->getPersonalKey() == key;
-        });
-    if (it != settings.end())
-    {
-        return dynamic_cast<T*>(*it);
-    }
-    return nullptr;
+            st = dynamic_cast<Setting*>(&s);
+        }
+    });
+    return dynamic_cast<T*>(st);
 }
-
 
 #endif // CAR_H

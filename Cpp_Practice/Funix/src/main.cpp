@@ -1,9 +1,4 @@
-#define _CRTDBG_MAP_ALLOC
-#include <stdlib.h>
-#include <crtdbg.h>
 #include <iostream>
-#include <fstream>
-
 #include "General.h"
 #include "Utils.h"
 #include "SettingManager.h"
@@ -12,7 +7,6 @@ using namespace Utils;
 
 int menu();
 
-/* run this program using the console pause or add your own getch, system("pause") or input loop */
 int main() {
     try
     {
@@ -27,13 +21,13 @@ int main() {
             switch (selection)
             {
             case 1:
-                manager.inputSettings();
+                manager.inputSettingsMenu();
                 break;
             case 2:
-                manager.outputSettings();
+                manager.outputSettingsMenu();
                 break;
             case 3:
-                manager.release();
+                manager.saveSettings();
                 cout << "bye" << endl;
                 exit = true;
                 break;
@@ -42,7 +36,6 @@ int main() {
             }
         }
         General::release();
-        manager.release();
     }
     catch (exception& e)
     {

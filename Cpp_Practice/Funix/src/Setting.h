@@ -26,6 +26,9 @@ public:
     void setEmail(const std::string& email);
     void setOdo(int odo);
     void setServiceRemind(int service);
+    friend bool operator == (const Setting& s1, const Setting& s2);
+    friend bool operator < (const Setting& s1, const Setting& s2);
+    friend bool operator > (const Setting& s1, const Setting& s2);
 private:
     std::string _carName;
     std::string _personalKey; 	// Chuoi 8 ky tu so

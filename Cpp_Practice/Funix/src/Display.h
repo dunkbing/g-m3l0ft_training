@@ -13,6 +13,7 @@ public:
     ~Display() override;
     void inputInfo(const std::set<std::string>& keys) override;
     void outputInfo() override;
+    static void outputInfoLabel();
     
     // getters and setters function.
     int getLightLevel() const;

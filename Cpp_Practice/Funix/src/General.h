@@ -11,6 +11,7 @@ public:
     ~General() override;
     void inputInfo(const std::set<std::string>& keys) override;
     void outputInfo() override;
+    static void outputInfoLabel();
     std::string getLanguage() const;
     std::string getTimeZone() const;
     void setTimeZone(const std::string& timeZone);

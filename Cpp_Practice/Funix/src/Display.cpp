@@ -57,3 +57,8 @@ void Display::outputInfo() {
 	cout << setw(10) << _lightLevel << setw(10) << _taploLightLevel << setw(10) << _screenLightLevel << endl;
 }
 
+void Display::outputInfoLabel()
+{
+	cout << setw(20) << "TEN CHU XE" << setw(25) << "Email" << setw(10) << "MSC" << setw(10) << "ODO" << setw(10) << "SERVICES" << setw(10) << "Light" << setw(10) << "Taplo" << setw(10) << "Screen" << endl;
+}
+

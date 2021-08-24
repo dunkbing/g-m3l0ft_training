@@ -79,3 +79,18 @@ void Setting::inputInfo(const std::set<std::string>& keys)
 void Setting::outputInfo(){
     cout << setw(20) << _carName << setw(25) << _email << setw(10) << _personalKey << setw(10) << _odo << setw(10) << _serviceRemind;
 }
+
+bool operator==(const Setting& s1, const Setting& s2)
+{
+    return s1.getPersonalKey() == s2.getPersonalKey();
+}
+
+bool operator<(const Setting& s1, const Setting& s2)
+{
+    return s1.getPersonalKey() < s2.getPersonalKey();
+}
+
+bool operator>(const Setting& s1, const Setting& s2)
+{
+    return s1.getPersonalKey() > s2.getPersonalKey();
+}
