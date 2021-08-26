@@ -74,7 +74,9 @@ void General::loadTimeZones() {
             }
             f.close();
             std::sort(_timeZones.begin(), _timeZones.end(), [](const CommonInfo& c1, const CommonInfo& c2) {
-                return c1.name < c2.name;
+                int c1Num = std::stoi(c1.number.substr(4, 3));
+                int c2Num = std::stoi(c2.number.substr(4, 3));
+                return c1Num < c2Num;
             });
         }
     }
